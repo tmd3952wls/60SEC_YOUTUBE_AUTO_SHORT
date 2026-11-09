@@ -1,0 +1,47 @@
+{
+ "text": "결국 게스트 투자자의 첫 투자로 계약 성사!",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.321,
+   "aligned": true
+  },
+  {
+   "word": "게스트",
+   "start": 0.522,
+   "end": 0.843,
+   "aligned": true
+  },
+  {
+   "word": "투자자의",
+   "start": 0.923,
+   "end": 1.244,
+   "aligned": true
+  },
+  {
+   "word": "첫",
+   "start": 1.344,
+   "end": 1.445,
+   "aligned": true
+  },
+  {
+   "word": "투자로",
+   "start": 1.545,
+   "end": 1.886,
+   "aligned": true
+  },
+  {
+   "word": "계약",
+   "start": 2.147,
+   "end": 2.308,
+   "aligned": true
+  },
+  {
+   "word": "성사!",
+   "start": 2.388,
+   "end": 2.729,
+   "aligned": true
+  }
+ ]
+}

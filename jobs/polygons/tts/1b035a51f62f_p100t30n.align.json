@@ -1,0 +1,29 @@
+{
+ "text": "조건이 똑같아지자 라울의 역제안은",
+ "words": [
+  {
+   "word": "조건이",
+   "start": 0.04,
+   "end": 0.343,
+   "aligned": true
+  },
+  {
+   "word": "똑같아지자",
+   "start": 0.423,
+   "end": 0.987,
+   "aligned": true
+  },
+  {
+   "word": "라울의",
+   "start": 1.269,
+   "end": 1.511,
+   "aligned": true
+  },
+  {
+   "word": "역제안은",
+   "start": 1.551,
+   "end": 1.914,
+   "aligned": true
+  }
+ ]
+}

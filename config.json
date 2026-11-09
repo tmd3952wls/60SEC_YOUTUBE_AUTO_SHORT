@@ -75,6 +75,7 @@
     "glow_bord": 4,
     "glow_blur": 6,
     "text_bord": 0.8,
+    "text_outline": 3,
     "text_blur": 0.4,
     "show_tags": false,
     "shadow_bord": 5,
@@ -141,6 +142,12 @@
       "pop": 1.5,
       "ding": 1.5
     }
+  },
+  "watermark": {
+    "text": "60초쇼츠",
+    "size": 40,
+    "gap": 22,
+    "alpha": "&HA8&"
   },
   "face": {
     "enabled": true,

@@ -88,7 +88,8 @@ def pick(category, seed):
         cp = ASSETS / "sfx_clap.json"
         clap = json.loads(cp.read_text(encoding="utf-8")) if cp.exists() else {}
         _cache = {c: [{**it, "lead": clap.get(it["file"], {}).get("lead", 0.0)} for it in items
-                      if clap.get(it["file"], {}).get("ok", True)] for c, items in _cache.items()}
+                      if clap.get(it["file"], {}).get("ok", True) and Path(it["file"]).exists()]
+                  for c, items in _cache.items()}
     if "/" in category:  # "pop/카툰 팝" = 편집기에서 고른 특정 파일 고정
         cat, name = category.split("/", 1)
         hit = next((it for it in _cache.get(cat, []) if it["name"] == name), None)

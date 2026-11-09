@@ -49,9 +49,54 @@ FAMILY = {
     "tension": ["tick/fs-403001-clock-tick-tik-tak-2", "tick/fs-130388-clock-ticking-1"],
     "caption": [_p("267_캡션 사운드 타탁.mp3"), "key/fs-194795-vintage-keyboard-1-1"],
     "camera": [_p("502_카메라 플래시 셔터.mp3"), "click/kenney-ui-audio-switch16"],
+    # 돈 금액 + 지폐 아이콘 (2026-11-10): Freesound CC0 금전등록기 — sfx.py search 로 찾아 add
+    "cash": ["chime/own-ov-deafdf72", "chime/own-ov-62dd2f8f"],
 }
 HERO = {"impact"}  # 한 영상의 큰 한 방: 직전 정적 + 짧게 차오르는 소리
 BUILD = "riser/fs-503802-reverse-fx-4-wav-1"  # 큰 한 방 직전: 역재생 심벌 스웰 (참고 영상에 많음)
+
+
+# 효과음 폴더(PACK)·opus 키트가 없는 PC 에서 쓰는 저장소 안 기본 소리 (2026-11-10)
+_A, _S = ROOT / "assets" / "sfx", ROOT / "sfx"
+LOCAL = {
+    "whoosh": [str(_S / "punchy_whoosh_02_Swish hit (13lrs).mp3"), str(_A / "whoosh.wav"),
+               str(_S / "punchy_whoosh_03_Crunch whoosh with end punch reverb.mp3")],
+    "swell": [str(_A / "whoosh.wav")],
+    "impact": [str(_A / "boom.wav")], "fail": [str(_A / "boom.wav")],
+    "ding": [str(_A / "ding.wav")], "success": [str(_A / "ding.wav")], "tension": [str(_A / "ding.wav")],
+    "pop": [str(_A / "pop.wav")], "question": [str(_A / "pop.wav")], "surprise": [str(_A / "pop.wav")],
+    "caption": [str(_A / "pop.wav")], "camera": [str(_A / "pop.wav")],
+    # 금전등록기 (Freesound CC0: MaoDin204 #721774, clubmydia+ #584168) — 키트 없는 PC 에서도 지폐 아이콘 소리
+    "cash": [str(_A / "cash_register_1.wav"), str(_A / "cash_register_2.wav")],
+}
+
+
+# 효과음 폴더(PACK)가 없을 때: opus 키트(Freesound CC0)에서 종류별로 여러 개 → 같은 소리 반복 방지 (2026-11-10 사용자 요청)
+KIT_FAMILY = {
+    "ding": ["chime/fs-615949-ding-effect-wav-1", "chime/fs-404104-glass-ding-3", "chime/fs-127149-ding-wav-1",
+             "chime/fs-571513-soft-notifications-bell-ding-2", "chime/fs-611113-bell-ding-1-wav-1",
+             "chime/fs-404104-glass-ding-1", "chime/fs-159011-ding2-wav-1"],
+    "success": ["shimmer/fs-389789-chimes-3", "chime/fs-243701-correct-1", "shimmer/fs-462095-sparkling-star-01-wav-2"],
+    "pop": ["pop/fs-188381-3-popping-pops-1", "pop/fs-206152-bottlepop44-wav-1",
+            "pop/fs-503162-mouth-pops-magic-bottle-cork-3", "pop/fs-796298-bubble-pop-1"],
+    "question": ["chime/fs-570243-point-in-space-ogg-1", "shimmer/fs-376746-fantasy-ui-button-2-wav-2"],
+    "surprise": ["shimmer/fs-452371-small-bell-2", "riser/fs-503799-reverse-fx-9-wav-1"],
+    "whoosh": ["transition/fs-444623-swoosh-10-wav-1", "whoosh/fs-30240-swoop1-flac-1",
+               "transition/fs-432294-swoosh-2-wav-2", "whoosh/fs-449992-whoosh-short-low-wav-1",
+               "transition/fs-234533-wet-transition-1"],
+    "swell": ["riser/fs-503802-reverse-fx-4-wav-1", "riser/fs-275512-reversed-riser-wav-1"],
+    "impact": ["boom/fs-636624-deep-hit-2", "boom/fs-535615-low-bit-boom-1"],
+    "fail": ["thump/fs-405537-thud-2-wav-1", "boom/fs-535615-low-bit-boom-1"],
+}
+
+
+def _exists(s):
+    if os.path.isfile(s):
+        return True
+    if "/" in s:
+        typ, rest = s.split("/", 1)
+        return (KIT / typ / f"{rest}.wav").exists()
+    return False
 
 
 def available():
@@ -66,7 +111,10 @@ def _sound(cat, used):
         if (KIT / typ / f"{rest}.wav").exists():
             return cat
         cat = typ  # 예전 효과음 폴더의 고정 이름("pop/카툰 팝") → 같은 종류에서 고름
-    opts = FAMILY.get(cat) or FAMILY["pop"]
+    opts = [o for o in (FAMILY.get(cat) or FAMILY["pop"]) if _exists(o)]
+    if not PACK.exists():  # 사용자 효과음 폴더가 없는 PC: 키트에서 종류별 여러 개를 더해 돌려 씀
+        opts += [o for o in KIT_FAMILY.get(cat, []) if _exists(o) and o not in opts]
+    opts = opts or [o for o in LOCAL.get(cat, LOCAL["pop"]) if os.path.isfile(o)]
     k = used.get(cat, 0)
     used[cat] = k + 1
     return opts[k % len(opts)]

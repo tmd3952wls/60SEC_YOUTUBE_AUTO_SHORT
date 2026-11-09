@@ -30,5 +30,11 @@ cd ext/opus-sound-layer && uv run scripts/sfx.py kit
 - `sfx.py kit`에 적힌 Kenney 다운로드 주소는 낡아서, Kenney 묶음 7개를 받지 못하고 830개만 생깁니다.
 - 나머지는 Kenney 페이지에서 받은 zip을 `audio/kit/_raw/kenney_<이름>.zip`에 넣고 `kit`을 다시 실행하면 됩니다.
 
+## 효과음 600개 폴더가 없는 PC (2026-11-10)
+- `sfx_opus.py`의 `FAMILY`는 대부분 사용자 효과음 폴더(`PACK`) 파일이에요. 폴더가 없으면 `KIT_FAMILY`(키트에서 종류별로 고른 소리)를 더해 차례로 돌려 써서, 같은 소리가 반복되지 않습니다.
+- 키트도 없으면 저장소 안의 `assets/sfx`, `sfx/` 기본 소리를 씁니다(`LOCAL`).
+- 지폐 아이콘 소리(`cash`): 키트의 `chime/own-ov-*` → 없으면 `assets/sfx/cash_register_*.wav`.
+- 키트 만들기: `python -I ext/opus-sound-layer/scripts/sfx.py kit --out ext/opus-sound-layer/audio/kit` (uv 없이 `pip install soundfile matplotlib` 만으로 됨).
+
 ## 출처
 라이브러리 소리는 모두 CC0입니다. 출처 목록은 `ext/opus-sound-layer/audio/kit/CREDITS.md`에 있습니다.

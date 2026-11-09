@@ -28,3 +28,8 @@ CC BY 소리는 영상 설명란 등에 **제목·만든 사람·라이선스**�
 - 출처: https://freesound.org/people/alexkandrell/sounds/170519 (via Openverse, freesound)
 - 표기 예: "Crunch whoosh with end punch reverb.wav" by alexkandrell, CC BY 3.0
 - earshot 판정: z +2.7
+
+## assets/sfx/cash_register_1.wav, cash_register_2.wav (지폐 아이콘 소리, 2026-11-10 추가)
+- cash_register_1: "Cash register" by MaoDin204 — CC0 — https://freesound.org/people/MaoDin204/sounds/721774
+- cash_register_2: "old cash register open and close with a bing" by clubmydia+ — CC0 — https://freesound.org/people/clubmydia+/sounds/584168
+- opus-sound-layer `sfx.py search "cash register"` 로 찾아 `sfx.py add` 로 손질(자르기·필터·-3dBFS)한 파일

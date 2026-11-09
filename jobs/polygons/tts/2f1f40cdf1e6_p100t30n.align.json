@@ -1,0 +1,47 @@
+{
+ "text": "자석이라 다 쓰면 냉장고에 척 붙여두면 되고",
+ "words": [
+  {
+   "word": "자석이라",
+   "start": 0.06,
+   "end": 0.443,
+   "aligned": true
+  },
+  {
+   "word": "다",
+   "start": 0.504,
+   "end": 0.564,
+   "aligned": true
+  },
+  {
+   "word": "쓰면",
+   "start": 0.685,
+   "end": 0.967,
+   "aligned": true
+  },
+  {
+   "word": "냉장고에",
+   "start": 1.289,
+   "end": 1.692,
+   "aligned": true
+  },
+  {
+   "word": "척",
+   "start": 1.773,
+   "end": 1.874,
+   "aligned": true
+  },
+  {
+   "word": "붙여두면",
+   "start": 1.974,
+   "end": 2.337,
+   "aligned": true
+  },
+  {
+   "word": "되고",
+   "start": 2.418,
+   "end": 2.579,
+   "aligned": true
+  }
+ ]
+}

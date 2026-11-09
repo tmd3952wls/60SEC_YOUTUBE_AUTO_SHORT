@@ -15,7 +15,7 @@ from .align import align_all
 from .common import ASSETS, duration, ffmpeg, filter_path, read_json, run, write_json
 from .render import ass_time, lufs_of, plain, voice_gain
 from .sfxlib import pick as pick_sfx
-from .subfx import _ellipse, bgr, merge_short, money_green, neon_events, parse_spans, ref_sub_events
+from .subfx import _ellipse, bgr, merge_short, money_green, money_icon_events, neon_events, parse_spans, ref_sub_events
 from .tts import synth
 
 import subprocess
@@ -192,6 +192,7 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
     top = cfg["layout"]["title_h"]
     seg_files, timeline, ass_ev, sfx_ev, log, sub_list = [], 0.0, [], [], [], []
     exp_items, exp_sfx = [], []  # CapCut 내보내기용 구조 정보 (edl_tmp/export.json)
+    money_done = False  # 지폐 아이콘은 영상 전체에서 한 번만 (제품 매출 금액, 2026-11-10 사용자 규칙)
 
     def add(t0, t1, text, layer=3, style="Narr"):
         # ASS 시간은 0.01초 단위 → 30fps 프레임 경계(0.0333초)에 정확히 걸리도록 4ms 앞당겨 반올림
@@ -356,7 +357,11 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
             b = st[j + 1] if j + 1 < len(st) else dur
             spans = money_green(parse_spans(s_["text"].replace("|", chr(10)), it.get("accent", "yellow")))  # 초록 = 돈 금액만
             sub_list.append({"a": timeline + a, "b": timeline + b, "spans": spans, "item": n, "text": s_["text"],
-                             "krw": s_.get("krw", ""), "note": s_.get("note", ""), "solo": s_.get("solo", False)})
+                             "krw": s_.get("krw", ""), "note": s_.get("note", ""), "solo": s_.get("solo", False),
+                             "icon": "money" if s_.get("icon") == "money" and not money_done else ""})
+            if s_.get("icon") == "money" and not money_done:  # 지폐 아이콘이 뜨는 프레임에 돈 소리 (카칭), 한 번만
+                sfx_ev.append((timeline + a, s_.get("icon_sfx", "cash")))
+                money_done = True
             log.append(f"  자막 {timeline + a:.2f}~{timeline + b:.2f}: {plain(s_['text'])} [{s_.get('anim', 'normal')}]")
         if it.get("sfx_word") is not None and it.get("sfx2"):
             # 자막·컷과 같은 계산(단어 시작 0.03초 전, 30fps 프레임 경계) → 소리·자막·그림이 같은 프레임에
@@ -390,6 +395,22 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
         sub_pos, sub_an = (PW // 2, int(top + PH * S_["center_ratio"])), 5
     for ly, t0, t1, sb in ref_sub_events(sub_list, cfg, sub_pos, sub_an):
         add(t0, t1, sb, ly + 1)
+    # 돈 금액 자막 아래 지폐 이미지 (assets/money_icon.png, 사용자 지정 그림). 최종 합성 때 overlay 로 얹음
+    icon = None
+    ICON_W = 330
+    for x in sub_list:
+        if x.get("icon") == "money":
+            lines = "".join(t for t, _ in x["spans"]).count("\n") + 1
+            lh = S_["narr_size"] * 1.25
+            top_y = sub_pos[1] + (lines * lh / 2 if sub_an == 5 else 0) + 25
+            icon = (x["a"], x["b"], int(top_y))
+            log.append(f"  💵 지폐 아이콘 {x['a']:.2f}~{x['b']:.2f}s (위쪽 y={top_y:.0f}): {plain(x['text'])}")
+            break
+    wm = cfg.get("watermark", {})
+    if wm.get("text"):  # 영상 하단 워터마크 (잘 안 보이는 흰색)
+        # 영상 패널 바로 아래 검은 바탕 (위쪽 제목처럼 검은 띠 위). y = 패널 아래 끝 + gap, 글자 위쪽 기준(an8)
+        add(0, 99999, rf"{{\an8\pos({PW // 2},{top + PH + wm.get('gap', 22)})\fs{wm.get('size', 40)}\1c&HFFFFFF&"
+                      rf"\alpha{wm.get('alpha', '&HA8&')}\bord0\shad0\blur0.5}}" + wm["text"], 20)
     head = _ass_head(cfg)
     T = edl["title_lines"]
     add(0, total, rf"{{\pos({PW // 2},{int(top - 30 - S_['title_size'] * 1.65)})\c{bgr(T[0]['color'])}\fs{S_['title_size']}}}" + T[0]["text"], 1, "Title")
@@ -439,6 +460,14 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
                   f"aresample=48000,aformat=channel_layouts=stereo,volume={g:.1f}dB,"
                   f"adelay={int(t * 1000)}:all=1[s{k}]")
         mix.append(f"[s{k}]")
+    if icon and (ASSETS / "money_icon.png").exists():  # 지폐 이미지: 살짝 떠오르며 나타남
+        ia, ib, iy = icon
+        n_in = sum(1 for v in inputs if v == "-i")
+        inputs += ["-loop", "1", "-framerate", "30", "-t", f"{total:.3f}", "-i", str(ASSETS / "money_icon.png")]
+        fc[0] = fc[0].replace("[v]", "[v0]")
+        fc.append(f"[{n_in}:v]format=rgba,scale={ICON_W}:-2,fade=t=in:st={ia:.3f}:d=0.12:alpha=1[ic];"
+                  f"[v0][ic]overlay=x=(W-w)/2:y='{iy}+40*max(0,1-(t-{ia:.3f})/0.2)':eval=frame:"
+                  f"enable='between(t,{ia:.3f},{ib:.3f})'[v]")
     R = cfg["render"]
     master = R["loudness_lufs"] - (lufs_of(body) or R["voice_lufs"])
     fc.append(f"{''.join(mix)}amix=inputs={len(mix)}:normalize=0:duration=first,volume={master:.2f}dB,"

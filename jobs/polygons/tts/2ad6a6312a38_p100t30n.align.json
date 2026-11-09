@@ -1,0 +1,59 @@
+{
+ "text": "큰 판은 큰술 3종, 작은 판은 티스푼 3종으로 변신하고",
+ "words": [
+  {
+   "word": "큰",
+   "start": 0.04,
+   "end": 0.06,
+   "aligned": true
+  },
+  {
+   "word": "판은",
+   "start": 0.261,
+   "end": 0.462,
+   "aligned": true
+  },
+  {
+   "word": "큰술",
+   "start": 0.563,
+   "end": 0.965,
+   "aligned": true
+  },
+  {
+   "word": "3종,",
+   "start": 0.985,
+   "end": 1.186,
+   "aligned": true
+  },
+  {
+   "word": "작은",
+   "start": 1.447,
+   "end": 1.648,
+   "aligned": true
+  },
+  {
+   "word": "판은",
+   "start": 1.749,
+   "end": 1.93,
+   "aligned": true
+  },
+  {
+   "word": "티스푼",
+   "start": 2.01,
+   "end": 2.312,
+   "aligned": true
+  },
+  {
+   "word": "3종으로",
+   "start": 2.332,
+   "end": 2.754,
+   "aligned": true
+  },
+  {
+   "word": "변신하고",
+   "start": 2.814,
+   "end": 3.216,
+   "aligned": true
+  }
+ ]
+}

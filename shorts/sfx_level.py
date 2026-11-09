@@ -18,12 +18,12 @@ from pathlib import Path
 import numpy as np
 from scipy.signal import lfilter
 
-from .sfx_opus import BUILD, FAMILY, HERO, KIT, _sound
+from .sfx_opus import BUILD, FAMILY, HERO, KIT, _exists, _sound
 
 SR = 48000
 # 목소리 대비 들리는 크기(dB). 0 = 목소리와 같은 크기로 들림
 OFFSET = {"impact": 0.0, "success": -1.5, "ding": -2.5, "pop": -2.5, "question": -2.5, "surprise": -2.5,
-          "camera": -3.0, "whoosh": -3.0, "fail": -1.5, "caption": -4.0, "swell": -5.0, "tension": -7.0}
+          "camera": -3.0, "cash": -1.5, "whoosh": -3.0, "fail": -1.5, "caption": -4.0, "swell": -5.0, "tension": -7.0}
 PRE_MAX, POST_MAX = 1.5, 1.2  # 가장 센 지점 앞뒤로 쓰는 최대 길이(초)
 
 
@@ -103,7 +103,7 @@ def render(job, body, video, out, sfx_ev, total, work, master_lufs=-14.0):
         base = cat.split("/")[0]
         events.append((t, base, _sound(cat, used)))
         if base in HERO and t >= 1.0:  # 큰 한 방 앞: 역재생 심벌이 차오르다 그 프레임에서 터짐 (영상 맨 앞이면 차오를 자리가 없어 생략)
-            events.append((t, "swell", BUILD))
+            events.append((t, "swell", BUILD if _exists(BUILD) else _sound("swell", used)))
     sfx = np.zeros_like(voice)
     log, capcut, rows = [f"효과음(고른 크기): 목소리 {v_int:.1f} LUFS 기준"], [], []
     for t, cat, sound in events:

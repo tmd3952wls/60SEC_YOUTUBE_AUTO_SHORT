@@ -1,0 +1,47 @@
+{
+ "text": "한 투자자가 35만 달러에 지분 15%를 부르자",
+ "words": [
+  {
+   "word": "한",
+   "start": 0.04,
+   "end": 0.141,
+   "aligned": true
+  },
+  {
+   "word": "투자자가",
+   "start": 0.261,
+   "end": 0.744,
+   "aligned": true
+  },
+  {
+   "word": "35만",
+   "start": 0.764,
+   "end": 1.387,
+   "aligned": true
+  },
+  {
+   "word": "달러에",
+   "start": 1.468,
+   "end": 1.769,
+   "aligned": true
+  },
+  {
+   "word": "지분",
+   "start": 1.95,
+   "end": 2.312,
+   "aligned": true
+  },
+  {
+   "word": "15%를",
+   "start": 2.332,
+   "end": 2.875,
+   "aligned": true
+  },
+  {
+   "word": "부르자",
+   "start": 2.976,
+   "end": 3.157,
+   "aligned": true
+  }
+ ]
+}

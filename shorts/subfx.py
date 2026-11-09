@@ -107,6 +107,27 @@ def circle_events(face_out, t0, t1, cfg):
     return [(t0, t1, "Narr", body, 2)]
 
 
+def money_icon_events(t0, t1, cx, cy, layer=9):
+    """돈 금액 자막 아래 지폐 3장 아이콘 (2026-11-10 사용자 요청: 매출 자막 밑에 지폐 이모티콘 + 효과음).
+    컬러 이모지는 libass 가 못 그려서 ASS 드로잉으로: 초록 지폐 3장이 부채꼴로 톡 튀어나옴."""
+    W, H = 200, 100
+    rect = lambda x0, y0, x1, y1: f"m {x0} {y0} l {x1} {y0} l {x1} {y1} l {x0} {y1}"
+    # 드로잉 좌표는 0 부터 (빨간 원 _ellipse 와 같은 방식) → an5 가 상자 가운데를 move 점에 맞춤
+    pop = r"\fscx0\fscy0\t(0,130,\fscx118\fscy118)\t(130,230,\fscx100\fscy100)"
+    evs = []
+    for k, (dx, rot, dy) in enumerate(((-70, 16, 10), (70, -16, 10), (0, 0, 0))):  # 가운데 장이 맨 위
+        x, y = cx + dx, cy + dy
+        mv = rf"\move({x},{y + 34},{x},{y},0,180)"
+        body = rf"{{\an5\org({x},{y}){mv}\frz{rot}\p1\1c&H5ABE3D&\3c&H2A6B1A&\bord4\shad3\4c&H000000&\4a&H80&{pop}}}"
+        # 지폐 본체 (an5: 드로잉 상자 가운데가 move 점)
+        evs.append((layer + 2 * k, t0, t1, body + rect(0, 0, W, H) + r"{\p0}"))
+        inner = rf"{{\an5\org({x},{y}){mv}\frz{rot}\p1\1a&HFF&\3c&HD6F5CF&\bord2\shad0{pop}}}"
+        evs.append((layer + 2 * k + 1, t0, t1, inner + rect(0, 0, W - 22, H - 20) + r"{\p0}"))
+        won = rf"{{\an5\org({x},{y}){mv}\frz{rot}\b1\fs72\1c&HEFFFEF&\3c&H2A6B1A&\bord4\shad0{pop}}}₩"
+        evs.append((layer + 2 * k + 1, t0, t1, won))
+    return evs
+
+
 FRAME = 1 / 30
 SMALL = 0.68  # 보조 줄(원화 환산) 글자 크기 비율
 
@@ -211,8 +232,9 @@ def neon_events(spans, t0, t1, cfg, layer_base=3, pos=None, an=5):
     glow = ("{" + head + rf"\shad0\bord{S['glow_bord']}\blur{S['glow_blur']}}}"
             + typed(lambda c: S["glow_alpha_white"] if c == "white" else S["glow_alpha"],
                     lambda c: rf"\1c{bgr(c)}\3c{bgr(c)}"))
-    # ③ 글자 본체
-    text = ("{" + head + rf"\shad0\bord{S['text_bord']}\blur{S['text_blur']}}}"
-            + typed("&H00&", lambda c: rf"\1c{bgr(c)}\3c{bgr(c)}"))
+    # ③ 글자 본체. text_outline 이 있으면 글자 외곽선을 검은색으로 (네온 위 가독성, 2026-11-10 사용자 요청)
+    ol = S.get("text_outline")
+    text = ("{" + head + rf"\shad0\bord{ol if ol else S['text_bord']}\blur{S['text_blur']}}}"
+            + typed("&H00&", (lambda c: rf"\1c{bgr(c)}\3c&H000000&") if ol else (lambda c: rf"\1c{bgr(c)}\3c{bgr(c)}")))
     return [(layer_base, t0, t1, shadow), (layer_base + 1, t0, t1, glow),
             (layer_base + 2, t0, t1, text)]

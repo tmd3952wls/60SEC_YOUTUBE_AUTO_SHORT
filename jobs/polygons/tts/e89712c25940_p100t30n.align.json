@@ -1,0 +1,35 @@
+{
+ "text": "게스트 투자자가 다른 투자자와 손잡고",
+ "words": [
+  {
+   "word": "게스트",
+   "start": 0.04,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "투자자가",
+   "start": 0.421,
+   "end": 0.882,
+   "aligned": true
+  },
+  {
+   "word": "다른",
+   "start": 1.023,
+   "end": 1.243,
+   "aligned": true
+  },
+  {
+   "word": "투자자와",
+   "start": 1.343,
+   "end": 1.684,
+   "aligned": true
+  },
+  {
+   "word": "손잡고",
+   "start": 1.744,
+   "end": 2.165,
+   "aligned": true
+  }
+ ]
+}

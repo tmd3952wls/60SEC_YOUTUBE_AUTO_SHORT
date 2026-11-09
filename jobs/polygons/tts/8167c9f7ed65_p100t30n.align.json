@@ -1,0 +1,47 @@
+{
+ "text": "그래서 접기만 하면 숟가락이 되는 판을 만들었다고",
+ "words": [
+  {
+   "word": "그래서",
+   "start": 0.04,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "접기만",
+   "start": 0.363,
+   "end": 0.746,
+   "aligned": true
+  },
+  {
+   "word": "하면",
+   "start": 0.766,
+   "end": 1.028,
+   "aligned": true
+  },
+  {
+   "word": "숟가락이",
+   "start": 1.049,
+   "end": 1.593,
+   "aligned": true
+  },
+  {
+   "word": "되는",
+   "start": 1.653,
+   "end": 1.835,
+   "aligned": true
+  },
+  {
+   "word": "판을",
+   "start": 1.916,
+   "end": 2.077,
+   "aligned": true
+  },
+  {
+   "word": "만들었다고",
+   "start": 2.137,
+   "end": 2.641,
+   "aligned": true
+  }
+ ]
+}

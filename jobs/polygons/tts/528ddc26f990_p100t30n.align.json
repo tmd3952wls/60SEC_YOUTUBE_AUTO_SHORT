@@ -1,0 +1,41 @@
+{
+ "text": "가루든 액체든 다 재는데 실험실급으로 정확하다고",
+ "words": [
+  {
+   "word": "가루든",
+   "start": 0.06,
+   "end": 0.362,
+   "aligned": true
+  },
+  {
+   "word": "액체든",
+   "start": 0.402,
+   "end": 0.724,
+   "aligned": true
+  },
+  {
+   "word": "다",
+   "start": 0.805,
+   "end": 0.926,
+   "aligned": true
+  },
+  {
+   "word": "재는데",
+   "start": 0.966,
+   "end": 1.368,
+   "aligned": true
+  },
+  {
+   "word": "실험실급으로",
+   "start": 1.63,
+   "end": 2.234,
+   "aligned": true
+  },
+  {
+   "word": "정확하다고",
+   "start": 2.274,
+   "end": 2.777,
+   "aligned": true
+  }
+ ]
+}

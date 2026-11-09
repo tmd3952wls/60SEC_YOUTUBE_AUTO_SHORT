@@ -1,0 +1,35 @@
+{
+ "text": "숟가락을 종이처럼 납작하게 만든 남자",
+ "words": [
+  {
+   "word": "숟가락을",
+   "start": 0.08,
+   "end": 0.422,
+   "aligned": true
+  },
+  {
+   "word": "종이처럼",
+   "start": 0.502,
+   "end": 0.924,
+   "aligned": true
+  },
+  {
+   "word": "납작하게",
+   "start": 1.004,
+   "end": 1.386,
+   "aligned": true
+  },
+  {
+   "word": "만든",
+   "start": 1.426,
+   "end": 1.626,
+   "aligned": true
+  },
+  {
+   "word": "남자",
+   "start": 1.687,
+   "end": 1.867,
+   "aligned": true
+  }
+ ]
+}

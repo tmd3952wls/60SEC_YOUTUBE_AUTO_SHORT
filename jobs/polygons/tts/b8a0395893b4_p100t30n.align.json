@@ -1,0 +1,47 @@
+{
+ "text": "그때 로리가 게스트 투자자 민디와 손을 잡는데",
+ "words": [
+  {
+   "word": "그때",
+   "start": 0.04,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "로리가",
+   "start": 0.281,
+   "end": 0.582,
+   "aligned": true
+  },
+  {
+   "word": "게스트",
+   "start": 0.843,
+   "end": 1.144,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 1.224,
+   "end": 1.485,
+   "aligned": true
+  },
+  {
+   "word": "민디와",
+   "start": 1.565,
+   "end": 1.886,
+   "aligned": true
+  },
+  {
+   "word": "손을",
+   "start": 1.946,
+   "end": 2.107,
+   "aligned": true
+  },
+  {
+   "word": "잡는데",
+   "start": 2.167,
+   "end": 2.448,
+   "aligned": true
+  }
+ ]
+}

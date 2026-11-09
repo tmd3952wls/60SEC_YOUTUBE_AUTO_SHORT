@@ -1,0 +1,23 @@
+{
+ "text": "원가는 단 7달러인데",
+ "words": [
+  {
+   "word": "원가는",
+   "start": 0.04,
+   "end": 0.403,
+   "aligned": true
+  },
+  {
+   "word": "단",
+   "start": 0.484,
+   "end": 0.605,
+   "aligned": true
+  },
+  {
+   "word": "7달러인데",
+   "start": 0.686,
+   "end": 1.21,
+   "aligned": true
+  }
+ ]
+}

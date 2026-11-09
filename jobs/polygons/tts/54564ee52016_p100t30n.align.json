@@ -1,0 +1,53 @@
+{
+ "text": "꿀처럼 끈적한 것도 펼쳐서 그릇에 쓱 긁으면 끝이고",
+ "words": [
+  {
+   "word": "꿀처럼",
+   "start": 0.06,
+   "end": 0.403,
+   "aligned": true
+  },
+  {
+   "word": "끈적한",
+   "start": 0.484,
+   "end": 0.846,
+   "aligned": true
+  },
+  {
+   "word": "것도",
+   "start": 0.886,
+   "end": 1.088,
+   "aligned": true
+  },
+  {
+   "word": "펼쳐서",
+   "start": 1.148,
+   "end": 1.632,
+   "aligned": true
+  },
+  {
+   "word": "그릇에",
+   "start": 1.914,
+   "end": 2.317,
+   "aligned": true
+  },
+  {
+   "word": "쓱",
+   "start": 2.418,
+   "end": 2.438,
+   "aligned": true
+  },
+  {
+   "word": "긁으면",
+   "start": 2.559,
+   "end": 2.861,
+   "aligned": true
+  },
+  {
+   "word": "끝이고",
+   "start": 2.962,
+   "end": 3.224,
+   "aligned": true
+  }
+ ]
+}

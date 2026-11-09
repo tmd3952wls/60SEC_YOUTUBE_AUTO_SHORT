@@ -1,0 +1,245 @@
+{
+ "title_lines": [
+  {"text": "접으면 숟가락이 되는", "color": "yellow"},
+  {"text": "납작한 판의 정체?!", "color": "white"}
+ ],
+ "flash_alpha": 0.6,
+ "flash_sec": 0.4,
+ "krw_rate": "1달러=1,356원 (2026-11-06 매매기준율, goldberg·brooklyn_pizza 와 같은 값). 금액은 원화만",
+ "structure_ref": "brooklyn_pizza v7 / goldberg v5 문법: 내레이션 최소, 원본 대사+얼굴 위주, 끝은 거래 결과 + 고정댓글 안내",
+ "source": "https://www.youtube.com/watch?v=xm1ShtnwIgU (Shark Tank Global, 2026-10-15 업로드, 250만 회)",
+ "items": [
+  {
+   "type": "narration",
+   "text": "납작한 판 하나로 투자금 4억 7천만 원을 받아냈다는데",
+   "subs": ["납작한 판 하나로", "투자금 4억 7천만 원을|받아냈다는데"],
+   "shots": [
+    {"src": 79.6, "crop": [1360, 600, 1000], "zoom": [1.0, 1.08], "why": "제품: 판이 접혀 숟가락이 되는 그래픽"},
+    {"file": "broll/o6e2J_K-254.mp4", "src": 109.0, "at_word": 3, "crop": [900, 560, 1080], "zoom": [1.0, 1.06], "why": "실사용: 접은 숟가락으로 가루 뜨기 (Wiggins Honest Reviews)"}
+   ],
+   "note": "B1 훅: 무엇으로 얼마를",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [9, 10],
+   "max_gap": 0.35,
+   "audio_end": 52.05,
+   "subs": [
+    {"text": "이렇게 [yellow:주렁주렁 엉킨]|계량스푼들", "at_word": 0},
+    {"text": "[red:저리 가!]", "at_word": 6, "solo": true}
+   ],
+   "shots": [
+    {"src": 46.2, "crop": [760, 480, 1000], "why": "라울이 예전 계량스푼을 꺼냄"},
+    {"src": 48.92, "at_word": 4, "crop": [440, 440, 880], "why": "제품 문제: 엉킨 계량스푼 클로즈업"},
+    {"src": 50.6, "at_word": 6, "crop": [1000, 560, 1080], "why": "엉킨 스푼을 던져 버림"}
+   ],
+   "note": "B2 문제 제기 (창업자 본인 말)",
+   "sfx_word": 6,
+   "sfx2": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [15],
+   "word_range": [0, 12],
+   "subs": [
+    {"text": "짠! 이게 [yellow:2큰술]", "at_word": 0},
+    {"text": "이건 [yellow:1큰술]", "at_word": 4},
+    {"text": "이건 [yellow:반 큰술]", "at_word": 7}
+   ],
+   "shots": [
+    {"src": 66.97, "crop": [950, 540, 1080], "why": "제품 중심: 접은 숟가락(2큰술) — 숟가락이 화면 안에서 크게 움직여 넓게"},
+    {"src": 69.12, "at_word": 4, "crop": [1060, 520, 880], "why": "제품 중심: 1큰술"},
+    {"src": 71.12, "at_word": 7, "crop": [560, 480, 880], "why": "제품 중심: 반 큰술"}
+   ],
+   "note": "B3 시연: 한 판으로 세 가지 크기 (창업자 본인 말)",
+   "sfx": "pop"
+  },
+  {
+   "type": "narration",
+   "text": "판을 접는 방법만 바꾸면 크기 세 가지를 한 번에 잰다는데",
+   "subs": ["[yellow:판]을 접는 방법만 바꾸면", "[cyan:크기 세 가지]를|한 번에 잰다는데"],
+   "shots": [
+    {"src": 459.4, "crop": [740, 570, 1080], "zoom": [1.0, 1.04], "no_guard": true, "why": "제품 설명판: 펼친 판과 접은 숟가락 3개",
+     "circle": {"box": [340, 290, 240, 590], "at_word": 0, "hold": 1.4, "pad": 1.2, "target": "펼친 판 (TABLESPOON FLAT)", "why": "이 납작한 판을 접으면 옆의 숟가락 세 개가 됨", "sfx": "pop"}},
+    {"file": "broll/z1FHCnk6QT8.mp4", "src": 13.0, "at_word": 4, "crop": [1000, 560, 1080], "why": "실사용: 사용자가 판을 접어 숟가락으로 (Southern Palette)"},
+    {"file": "broll/z1FHCnk6QT8.mp4", "src": 25.6, "at_word": 7, "crop": [900, 540, 1080], "zoom": [1.0, 1.05], "why": "실사용: 설탕을 떠서 계량 (Southern Palette)"}
+   ],
+   "flash": "cyan",
+   "note": "B4 제품 요약 (~다는데)"
+  },
+  {
+   "type": "clip",
+   "ids": [19, 20, 21, 22, 23],
+   "word_range": [16, 31],
+   "audio_end": 106.25,
+   "subs": [
+    {"text": "한 번 쓱 닦으면|[yellow:세척 끝]", "at_word": 0},
+    {"text": "두 번 닦을 필요도 없어요", "at_word": 5},
+    {"text": "[yellow:와우!]", "at_word": 12, "solo": true}
+   ],
+   "shots": [
+    {"src": 100.3, "crop": [1040, 500, 820], "why": "제품 중심: 한 번 닦아 세척"},
+    {"src": "sync", "at_word": 12, "crop": [860, 480, 860], "why": "말하는 사람: 투자자 '와우'"}
+   ],
+   "note": "B5 장점1 세척 + 리액션 (컷을 나누지 않고 한 항목으로)",
+   "sfx_word": 12,
+   "sfx2": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [26, 27, 28],
+   "word_range": [12, 35],
+   "subs": [
+    {"text": "끈적한 것도 그릇 끝에|[yellow:쓱 긁으면 끝]", "at_word": 0},
+    {"text": "다 쓰면 [cyan:자석]이라|냉장고에 [yellow:척!]", "at_word": 13}
+   ],
+   "shots": [
+    {"src": 118.1, "crop": [1000, 560, 1000], "why": "제품 중심: 그릇 끝에 긁어내기 클로즈업"},
+    {"src": 120.15, "at_word": 10, "crop": [1000, 560, 1000], "why": "라울: 자석이라 붙여 둠"}
+   ],
+   "note": "B6 장점2 끈적한 재료·자석 (창업자 본인 말)",
+   "sfx_word": 18,
+   "sfx2": "pop"
+  },
+  {
+   "type": "clip",
+   "ids": [54, 55],
+   "word_range": [0, 22],
+   "subs": [
+    {"text": "지금까지 누적 매출만", "at_word": 0},
+    {"text": "약 54억 원이에요", "at_word": 6, "icon": "money"},
+    {"text": "[yellow:세상에]", "at_word": 9, "solo": true},
+    {"text": "약 17억 원이", "at_word": 13},
+    {"text": "작년에만 들어왔어요", "at_word": 18}
+   ],
+   "shots": [
+    {"src": "sync", "crop": [880, 520, 860], "why": "말하는 사람: 라울"},
+    {"src": "sync", "at_word": 9, "crop": [880, 480, 860], "why": "로리 '세상에' → 원본 컷 그대로 라울로 (0.4초 컷 방지)"}
+   ],
+   "note": "B7 실적 (누적 400만 달러, 작년 125만 달러) — 금액 자막은 따로 + 지폐 아이콘 + 카칭(아이콘이 효과음 담당)"
+  },
+  {
+   "type": "clip",
+   "ids": [106, 107, 108],
+   "audio_end": 331.05,
+   "subs": [
+    {"text": "좋아요 라울, [yellow:충분히 들었어요]", "at_word": 0},
+    {"text": "제안 하나 할게요", "at_word": 5},
+    {"text": "4억 7천만 원에|지분 [yellow:15%]", "at_word": 13}
+   ],
+   "shots": [
+    {"src": "sync", "crop": [960, 480, 860], "why": "말하는 사람: 케빈"},
+    {"src": "sync", "at_word": 13, "crop": [900, 480, 860], "why": "제안을 듣는 라울"}
+   ],
+   "note": "B8 첫 제안: 케빈 35만 달러에 15%",
+   "sfx_word": 16,
+   "sfx2": "ding"
+  },
+  {
+   "type": "narration",
+   "text": "그때 로리가 게스트 투자자 민디와 손을 잡는데",
+   "subs": ["그때 로리가", "게스트 투자자 [pink:민디]와|손을 잡는데"],
+   "shots": [
+    {"src": 451.5, "crop": [860, 440, 760], "why": "로리"},
+    {"src": 422.3, "at_word": 2, "crop": [1000, 480, 860], "why": "민디"}
+   ],
+   "flash": "pink",
+   "note": "B9 반전 인물",
+   "sfx": "swell"
+  },
+  {
+   "type": "clip",
+   "ids": [169, 170, 171],
+   "max_gap": 3.0,
+   "subs": [
+    {"text": "저희가 제안할게요", "at_word": 0},
+    {"text": "4억 7천만 원에|지분 [yellow:10%]", "at_word": 4},
+    {"text": "[pink:저희 둘]이 함께요", "at_word": 12}
+   ],
+   "shots": [
+    {"src": "sync", "crop": [1560, 470, 760], "why": "말하는 사람: 로리 (와이드에서 로리 쪽)"},
+    {"src": "sync", "at_word": 4, "crop": [860, 440, 760], "why": "듣는 라울 → 원본 컷 그대로 로리가 금액을 말함 (소리를 끊지 않음)"}
+   ],
+   "note": "B10 로리·민디 제안: 35만 달러에 10% (아래 방송 자막바는 크롭으로 피함)",
+   "sfx_word": 9,
+   "sfx2": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [180, 181, 182],
+   "audio_end": 474.3,
+   "subs": [
+    {"text": "그럼 재밌게 만들어 볼까요?", "at_word": 0},
+    {"text": "저도 지분 [yellow:10%]로 낮출게요", "at_word": 5},
+    {"text": "[yellow:와우]", "at_word": 13, "solo": true}
+   ],
+   "shots": [
+    {"src": "sync", "crop": [1180, 500, 900], "why": "케빈 말을 듣는 라울 (얼굴이 오른쪽에 있음)"},
+    {"src": "sync", "at_word": 7, "crop": [1000, 450, 860], "why": "말하는 사람: 케빈"},
+    {"src": "sync", "at_word": 13, "crop": [960, 560, 1080], "why": "투자자석 와이드 '와우'"}
+   ],
+   "note": "B11 케빈도 10%로 맞춤",
+   "sfx_word": 8,
+   "sfx2": "impact"
+  },
+  {
+   "type": "narration",
+   "text": "조건이 똑같아지자 라울의 역제안은",
+   "subs": ["조건이 똑같아지자", "라울의 [cyan:역제안]은"],
+   "shots": [
+    {"src": 555.0, "crop": [900, 480, 860], "why": "고민하는 라울"}
+   ],
+   "note": "B12 역제안 예고",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [232],
+   "subs": [
+    {"text": "지분 [yellow:8%]에|자문 [yellow:2%]는 어때요?", "at_word": 0}
+   ],
+   "shots": [
+    {"src": "sync", "crop": [900, 480, 860], "why": "말하는 사람: 라울"}
+   ],
+   "note": "B13 역제안 8% + 자문 2%",
+   "sfx_word": 3,
+   "sfx2": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [234, 235],
+   "max_gap": 0.7,
+   "audio_cut": 589.42,
+   "subs": [
+    {"text": "전 [yellow:좋아요]|민디는요?", "at_word": 0},
+    {"text": "[yellow:네, 좋아요!]", "at_word": 10, "solo": true}
+   ],
+   "shots": [
+    {"src": "sync", "crop": [900, 430, 760], "why": "말하는 사람: 로리 (자막바 피함)"},
+    {"src": "sync", "at_word": 7, "crop": [1060, 480, 860], "why": "민디: '민디는요?' 질문부터 대답까지 한 컷 (2초 넘게)"}
+   ],
+   "note": "B14 수락",
+   "sfx_word": 10,
+   "sfx2": "success"
+  },
+  {
+   "type": "clip",
+   "ids": [236, 237],
+   "audio_end": 598.05,
+   "note_audio": "끝 1.4초 무음 대신 원본 환호 소리를 598.05(다음 컷 직전)까지 그대로",
+   "subs": [
+    {"text": "[yellow:좋았어!]", "at_word": 0, "solo": true},
+    {"text": "[yellow:계약 성사!]", "at_word": 3},
+    {"text": "", "note": "(자세한 내용은 고정댓글 참조)", "at_t": 2.6}
+   ],
+   "shots": [
+    {"src": "sync", "crop": [860, 500, 860], "why": "말하는 사람: 로리 'Come on, baby'"},
+    {"src": "sync", "at_word": 3, "crop": [880, 520, 860], "why": "웃는 라울"},
+    {"src": 596.03, "at_t": 2.6, "crop": [960, 560, 1080], "zoom": [1.0, 1.06], "no_guard": true, "sfx": "whoosh", "why": "로리가 라울에게 걸어감 + 고정댓글 안내"}
+   ],
+   "note": "B15 계약 성사 → 뒷이야기는 고정댓글"
+  }
+ ],
+ "sfx_note": "컷·숫자 공개 = ding, 장면 전환 = whoosh, 제품 톡 등장 = pop, 반전 = impact(직전 스웰), 수락 = success"
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "text": "숟가락을 종이처럼",
+    "start": 0.0,
+    "end": 0.954,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.0
+  },
+  {
+    "text": "납작하게 만든 남자",
+    "start": 0.954,
+    "end": 2.0,
+    "method": "whisperx",
+    "prop_start": 1.278,
+    "seg_start": 0.0,
+    "seg_end": 2.0
+  },
+  {
+    "text": "요리할 때마다 주렁주렁",
+    "start": 2.0,
+    "end": 3.099,
+    "method": "whisperx",
+    "prop_start": 2.0,
+    "seg_start": 2.0,
+    "seg_end": 4.733
+  },
+  {
+    "text": "엉킨 계량스푼이",
+    "start": 3.099,
+    "end": 3.987,
+    "method": "whisperx",
+    "prop_start": 2.954,
+    "seg_start": 2.0,
+    "seg_end": 4.733
+  },
+  {
+    "text": "거슬렸는데",
+    "start": 3.987,
+    "end": 4.733,
+    "method": "whisperx",
+    "prop_start": 4.305,
+    "seg_start": 2.0,
+    "seg_end": 4.733
+  },
+  {
+    "text": "그래서 접기만 하면",
+    "start": 6.433,
+    "end": 7.432,
+    "method": "whisperx",
+    "prop_start": 6.433,
+    "seg_start": 6.433,
+    "seg_end": 9.5
+  },
+  {
+    "text": "숟가락이 되는 판을",
+    "start": 7.432,
+    "end": 8.52,
+    "method": "whisperx",
+    "prop_start": 8.062,
+    "seg_start": 6.433,
+    "seg_end": 9.5
+  },
+  {
+    "text": "만들었다고",
+    "start": 8.52,
+    "end": 9.5,
+    "method": "whisperx",
+    "prop_start": 9.019,
+    "seg_start": 6.433,
+    "seg_end": 9.5
+  },
+  {
+    "text": "큰 판은 큰술 3종,",
+    "start": 9.5,
+    "end": 10.897,
+    "method": "whisperx",
+    "prop_start": 9.5,
+    "seg_start": 9.5,
+    "seg_end": 12.933
+  },
+  {
+    "text": "작은 판은 티스푼",
+    "start": 10.897,
+    "end": 11.782,
+    "method": "whisperx",
+    "prop_start": 11.299,
+    "seg_start": 9.5,
+    "seg_end": 12.933
+  },
+  {
+    "text": "3종으로 변신하고",
+    "start": 11.782,
+    "end": 12.933,
+    "method": "whisperx",
+    "prop_start": 12.108,
+    "seg_start": 9.5,
+    "seg_end": 12.933
+  },
+  {
+    "text": "가루든 액체든 다",
+    "start": 12.933,
+    "end": 13.849,
+    "method": "whisperx",
+    "prop_start": 12.933,
+    "seg_start": 12.933,
+    "seg_end": 15.81
+  },
+  {
+    "text": "재는데 실험실급으로",
+    "start": 13.849,
+    "end": 15.157,
+    "method": "whisperx",
+    "prop_start": 13.769,
+    "seg_start": 12.933,
+    "seg_end": 15.81
+  },
+  {
+    "text": "정확하다고",
+    "start": 15.157,
+    "end": 15.81,
+    "method": "whisperx",
+    "prop_start": 15.347,
+    "seg_start": 12.933,
+    "seg_end": 15.81
+  },
+  {
+    "text": "한 번 쓱 닦으면",
+    "start": 15.81,
+    "end": 16.987,
+    "method": "whisperx",
+    "prop_start": 15.81,
+    "seg_start": 15.81,
+    "seg_end": 18.177
+  },
+  {
+    "text": "세척까지 끝이라",
+    "start": 16.987,
+    "end": 18.177,
+    "method": "whisperx",
+    "prop_start": 17.26,
+    "seg_start": 15.81,
+    "seg_end": 18.177
+  },
+  {
+    "text": "꿀처럼 끈적한 것도",
+    "start": 20.944,
+    "end": 22.042,
+    "method": "whisperx",
+    "prop_start": 20.944,
+    "seg_start": 20.944,
+    "seg_end": 24.288
+  },
+  {
+    "text": "펼쳐서 그릇에 쓱",
+    "start": 22.042,
+    "end": 23.453,
+    "method": "whisperx",
+    "prop_start": 22.759,
+    "seg_start": 20.944,
+    "seg_end": 24.288
+  },
+  {
+    "text": "긁으면 끝이고",
+    "start": 23.453,
+    "end": 24.288,
+    "method": "whisperx",
+    "prop_start": 23.619,
+    "seg_start": 20.944,
+    "seg_end": 24.288
+  },
+  {
+    "text": "자석이라 다 쓰면",
+    "start": 24.288,
+    "end": 25.527,
+    "method": "whisperx",
+    "prop_start": 24.288,
+    "seg_start": 24.288,
+    "seg_end": 26.988
+  },
+  {
+    "text": "냉장고에 척 붙여두면",
+    "start": 25.527,
+    "end": 26.656,
+    "method": "whisperx",
+    "prop_start": 25.777,
+    "seg_start": 24.288,
+    "seg_end": 26.988
+  },
+  {
+    "text": "되고",
+    "start": 26.656,
+    "end": 26.988,
+    "method": "whisperx",
+    "prop_start": 26.801,
+    "seg_start": 24.288,
+    "seg_end": 26.988
+  },
+  {
+    "text": "원가는 단 7달러인데",
+    "start": 28.454,
+    "end": 29.888,
+    "method": "whisperx",
+    "prop_start": 28.454,
+    "seg_start": 28.454,
+    "seg_end": 29.888
+  },
+  {
+    "text": "한 투자자가 35만",
+    "start": 35.121,
+    "end": 36.539,
+    "method": "whisperx",
+    "prop_start": 35.121,
+    "seg_start": 35.121,
+    "seg_end": 38.421
+  },
+  {
+    "text": "달러에 지분 15%를",
+    "start": 36.539,
+    "end": 38.047,
+    "method": "whisperx",
+    "prop_start": 36.12,
+    "seg_start": 35.121,
+    "seg_end": 38.421
+  },
+  {
+    "text": "부르자",
+    "start": 38.047,
+    "end": 38.421,
+    "method": "whisperx",
+    "prop_start": 38.119,
+    "seg_start": 35.121,
+    "seg_end": 38.421
+  },
+  {
+    "text": "게스트 투자자가 다른",
+    "start": 38.421,
+    "end": 39.714,
+    "method": "whisperx",
+    "prop_start": 38.421,
+    "seg_start": 38.421,
+    "seg_end": 40.788
+  },
+  {
+    "text": "투자자와 손잡고",
+    "start": 39.714,
+    "end": 40.788,
+    "method": "whisperx",
+    "prop_start": 39.968,
+    "seg_start": 38.421,
+    "seg_end": 40.788
+  },
+  {
+    "text": "대표는 지분 8%에",
+    "start": 42.054,
+    "end": 43.473,
+    "method": "whisperx",
+    "prop_start": 42.054,
+    "seg_start": 42.054,
+    "seg_end": 45.021
+  },
+  {
+    "text": "자문 2%로 역제안했고",
+    "start": 43.473,
+    "end": 45.021,
+    "method": "whisperx",
+    "prop_start": 43.074,
+    "seg_start": 42.054,
+    "seg_end": 45.021
+  },
+  {
+    "text": "결국 게스트 투자자의",
+    "start": 48.921,
+    "end": 50.215,
+    "method": "whisperx",
+    "prop_start": 48.921,
+    "seg_start": 48.921,
+    "seg_end": 51.654
+  },
+  {
+    "text": "첫 투자로 계약 성사!",
+    "start": 50.215,
+    "end": 51.654,
+    "method": "whisperx",
+    "prop_start": 49.889,
+    "seg_start": 48.921,
+    "seg_end": 51.654
+  }
+]

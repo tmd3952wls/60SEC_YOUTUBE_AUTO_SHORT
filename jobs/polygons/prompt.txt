@@ -1,0 +1,337 @@
+너는 조회수 500만~1300만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+해외 방송(샤크탱크 등)의 원본 대사 전사본을 받아서, **한국어 내레이션(TTS)** 과 **원본 대사(한국어 자막)** 를 섞은 40~55초 쇼츠 대본을 만든다.
+
+## 구성 — 반드시 이 순서와 시간 배분 (참고 채널 15편 분석 결과)
+| 구간 | 시간 | 내용 | 비중 |
+|---|---|---|---|
+| ① 훅 | 0~3초 | 제품/장면을 바로 보여주며 한 줄 티저. 숫자 티저 가능 ("출시 3년 만에 140억을 벌었다는 이 제품") | 내레이션 |
+| ② 제품 소개 | 3~27초 | **어떤 불편(문제)** → **제품이 어떻게 해결하는지(원리·사용법)** → **시연 장면** → 장점 2~3개 | 내레이션 위주 + 감탄·시연 원본 대사 짧게 |
+| ③ 거래 | 27~45초 | 판매가·원가·매출 질문 → 요구 금액/지분 → 투자자 반응·제안·협상 | **원본 대사 위주** + 연결 내레이션 |
+| ④ 결과·후일담 | 마지막 5~10초 | 방송 속 결과(성사/거절) → **방송 이후 이야기**(아래 조사 결과에서만) | 내레이션 |
+
+- **②제품 소개 구간(27초 전)에는 가격·지분·투자금·기업가치·매출 이야기를 절대 하지 않는다.** (①의 숫자 티저 한 줄만 예외)
+- ② 의 내레이션 broll_id 는 **제품이 보이는 장면**(시연, 제품 클로즈업, 사용 영상, 출연자의 제품 설명)을 고른다.
+  전사본에서 출연자가 제품을 설명/시연하는 부분(대개 앞부분 피치)의 id 를 쓰고, 투자자 얼굴만 나오는 부분은 피한다.
+- ③ 에서 원본 대사는 질문과 답이 오가는 흐름을 살린다 (예: "판매가는요?" → "59달러요" → "작년 매출은요?" → "230만 달러요").
+
+## 문체
+- 내레이션은 **반말 요약체**: "~는데", "~다고", "~고", "~했고", "~자". 존댓말 금지.
+  예) "3분 내로 15리터 물을 빨아들이는 봉투가 있는데", "누르기만 하면 벽면까지 싹 긁어서 짜준다고"
+- 내레이션 한 문장 12~30자. 숫자는 구체적으로("15kg짜리", "3분 내로"). 달러는 "30만 달러", 필요하면 원화("약 4억").
+- clip 은 **연속으로 말하는 한두 줄**(1.5~5초). 중간에 긴 침묵이 있는 줄들을 한 clip 에 묶지 마라.
+- 출연자는 "대표", "남자", "여자" 등, 투자자는 "투자자"(이름은 필요할 때만). "상어/샤크" 금지.
+
+## 사실성
+- 방송 내용은 전사본에 나온 것만. 방송 이후 이야기는 **아래 '후일담 조사 결과'에 있는 사실만** 쓴다. 없으면 방송 속 결과로 끝낸다.
+- 이 문서의 예시 문장은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 색 강조 [ ]
+- 자막은 기본 흰색, [ ] 부분만 컬러. 문장마다 0~1곳, 핵심 숫자·제품명·감정 단어. [yellow:...], [cyan:...], [pink:...], [green:...], [orange:...], [red:...] 로 색 지정 가능.
+- 짧은 감탄 대사는 줄 전체를 감싸도 좋다. 예) "[cyan:오 와우]". 대괄호는 어절에 붙여 쓴다.
+
+## 상단 제목(title_lines) — 썸네일 역할
+- 2줄, 각 줄 8~12자. 1줄 = 신기한 제품/상황, 2줄 = 궁금증·반전 "~다고?!", "~한 이유", "~의 정체"
+  예) ["땅콩잼을 이제는", "안 긁어도 된다고?!"], ["홍수를 막아주는", "역대급 모래 주머니?!"]
+- **제목은 제품의 신기함에 초점** (가격·지분 숫자로 제목 짓지 마라). color: 1줄 "yellow", 2줄 "white".
+
+## 효과음(sfx) — 세그먼트 시작 시점. 아래 이름 중 하나 또는 null. 전체 5~8개
+- "whoosh": 장면 전환·빠른 등장
+- "pop": 자막/물건 톡 등장
+- "ding": 숫자·가격·정답 공개
+- "impact": 반전·충격 쾅
+- "surprise": 놀람 리액션
+- "question": 의문·황당
+- "success": 성공·계약 성사
+- "fail": 실패·거절·오답
+- "tension": 긴장·궁금증
+- "caption": 자막 강조·말풍선
+- "camera": 사진·순간 포착
+- 훅에는 "whoosh"/"pop", 제품 기능 공개엔 "pop"/"ding", 금액 공개엔 "ding", 거절엔 "fail", 성사엔 "success".
+
+## 빨간 동그라미(mark) — clip 에 "mark": true → 말하는 사람 얼굴에 빨간 원. 결정적 한마디 clip 2~3개에만.
+## 감정 태그(tag) — 사용 안 함. 항상 null.
+
+## 출력 형식 — JSON 하나만 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "yellow"}, {"text": "...", "color": "white"}],
+  "credit": "© 원본 방송사",
+  "upload": {"title": "호기심형 30자 이내", "description": "1~2문장 + 해시태그 3~5개", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "mark": false}
+  ]
+}
+- narration.broll_id: 내레이션 동안 보여줄 장면이 시작되는 전사 id (내용에 맞는 장면). 같은 id 반복 금지.
+- clip.from_id~to_id: 연속된 전사 id. subs 길이 = (to_id - from_id + 1). 빼고 싶은 줄은 "".
+- 전체 길이(내레이션 ≈ 글자수/9 초 + clip 길이 합) 40~55초.
+
+## 방송 이후 후일담 조사 결과 (웹 검색)
+(조사 결과 없음 — 후일담은 쓰지 말 것)
+
+## 원본 정보
+프로그램/맥락 메모: 샤크탱크 US, 제품 Polygons, 게스트 샤크 민디 케일링이 독창적이라고 칭찬
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [1.9-5.4] First up is a product reshaping the way you cook
+1 [5.9-18.4] Hi sharks, I'm Rahul Agarwal from New Jersey, and I'm here seeking
+2 [19.2-24.2] 350,000 for 7% of my company polygons. Wow, which is a steal as soon about to find out
+3 [25.6-28.7] For me ego is the wonder of invention
+4 [28.9-32.8] So back in design school when a senior of mine told me Rahul, whatever you do
+5 [33.0-37.4] Do not try to redesign products that are already perfect. For example a spoon
+6 [37.4-42.4] My only logical response to that was, challenge accepted.
+7 [42.4-45.4] Seriously, humanity has split the atom.
+8 [45.4-47.4] And we're still struggling with these in the kitchen.
+9 [47.4-50.4] These tangled, cluttered messes, measuring spoons.
+10 [50.4-52.4] Get out of here.
+11 [52.4-57.4] And behold, polygons.
+12 [57.4-59.4] Raul, that's a bookmark.
+13 [59.4-62.4] Shut your mousetrap. We just made a better one.
+14 [62.4-64.4] Are you ready for a magic trick?
+15 [64.4-73.7] Bam, that's two tablespoons, that's one tablespoon, and that's half a tablespoon, and his little
+16 [73.7-79.0] brother here, the teaspoon, that's one teaspoon, that's half a teaspoon, and a quarter teaspoon,
+17 [79.0-84.3] that's right, polygons are flat, three in one measuring spoons, and they measure anything,
+18 [84.3-93.7] solids, liquids, sugars, spice and everything nice, they are lake proof, and lab grade precise.
+19 [93.7-101.7] You can use one to level the other, but here's the best part of this device, one wipe and
+20 [101.7-102.7] it's clean.
+21 [102.7-104.4] You don't have to do that twice.
+22 [104.4-105.4] Wow.
+23 [105.4-106.4] So cool.
+24 [106.4-109.0] With these caveman measuring spoons, you've got to really dig in there to get the sticky
+25 [109.0-112.0] stuff out like honey and peanut butter.
+26 [112.0-118.5] With polygons, you just pop it open and spread it out or just scrape it onto the edge
+27 [118.5-122.0] of the bowl and once you're done, because it's magnetic, you can slap it onto your
+28 [122.0-123.0] fridge.
+29 [123.0-125.0] Wow Raul, that's so attractive.
+30 [125.0-127.0] There are more ways than one.
+31 [127.0-130.0] But Sharks, the spoon is not the only ace up our sleeve.
+32 [130.0-132.0] Measuring cups, funnels, power strips.
+33 [132.0-135.0] There's a lot more that we flatten back in our labs.
+34 [135.0-138.0] Because we are in the business of making products invisible
+35 [138.0-140.0] when you don't need them.
+36 [140.0-141.0] Wow.
+37 [141.0-144.0] So Sharks, who's ready to spoon with me
+38 [144.0-147.0] into a very serious business relationship?
+39 [147.0-148.0] Well that was...
+40 [148.0-150.0] Great hesitation.
+41 [150.0-152.8] So how in the world did you come up with this?
+42 [152.8-154.4] So whenever I design something,
+43 [154.4-158.5] I try to go back to how we would be doing this naturally.
+44 [158.5-159.8] So 3,000 years back,
+45 [159.8-162.4] when you imagine there were no spoons or tools, right?
+46 [162.4-164.1] When you had to pick up water or sand,
+47 [164.1-166.0] you used to, you have this flat hand,
+48 [166.0-168.4] and you cup it up, and you drink it,
+49 [168.4-170.6] and that's something I try to replicate here.
+50 [170.6-172.6] But that's just a story I came up with later
+51 [172.6-175.3] for the marketing, that's what the two said.
+52 [175.3-177.8] So Raul, your comment right there
+53 [177.8-183.5] I'm going to assume you have no sales right you just put a valuation on this based on the innovation
+54 [183.5-186.1] We have a lifetime sales of four million total
+55 [186.1-188.8] Oh my god, it's one point two five million came in last year
+56 [188.8-194.0] We have seriously our only problem right now is that we cannot make these fast enough. Wow. Why not?
+57 [194.0-196.0] What's holding you back on manufacturing?
+58 [196.0-198.3] So this is a product where there are many small
+59 [198.6-204.0] Intersecting hinges on a very small level right so I don't think you might have seen any other product in the world like this
+60 [204.0-208.5] We had to spend almost three years, we had to change manufacturers seven times
+61 [208.5-212.0] I had to travel to China 16 times before I could start shipping this
+62 [213.3-218.4] That's a lot to go through well, can you tell us about you? Yeah, absolutely
+63 [218.4-224.2] So I'm originally from India just moved here just a few months back back in school. I was a really mischievous kid
+64 [224.2-230.3] I used to get good grades, but I got suspended at least three times because I was just a rule breaker
+65 [230.3-236.2] I just wanted to break room just just for the heck of it. What design and innovation did was channelize my
+66 [236.4-241.8] Rule breaking tendencies into something very very productive because in design and innovation it asks you okay
+67 [241.8-248.1] What's the next rule you can break sensitively? I love the design. I cook a lot
+68 [248.1-253.4] Yeah, it's a huge part of my social media presence is how much I cook. I know I love to cook Indian food
+69 [253.4-257.9] And it annoys me so much when I have to wear this bracelet
+70 [257.9-261.3] of dangling, jangling teaspoons and everything.
+71 [261.3-263.3] I think this is really ingenious.
+72 [263.3-264.5] Thank you so much.
+73 [264.5-267.7] So walks to the economics of just, let's say, a spoon set.
+74 [267.7-269.5] I assume you sell them together.
+75 [269.5-272.0] Yeah, so it cost me, landed $7 to make.
+76 [272.0-273.4] And what do you sell it for?
+77 [273.4-275.6] Anywhere between $25 to $29,
+78 [275.6-277.6] depending on the season and the demand.
+79 [277.6-280.6] $25 to $29 for the packet, too.
+80 [280.6-282.8] Yeah. And how are you selling them?
+81 [282.8-286.6] online through Amazon, TikTok shop, and our own website.
+82 [286.6-288.4] How much are you spending on advertising?
+83 [288.4-292.6] Our caq right now blended is around $7.5.
+84 [292.6-294.2] And what were your sales last year?
+85 [294.2-295.1] Just last year.
+86 [295.1-295.9] It was 1.25 million.
+87 [295.9-296.8] 1.25 million.
+88 [296.8-297.7] Did you make any money on that?
+89 [297.7-298.6] Yeah, of course.
+90 [298.6-300.2] So we made around, I love that.
+91 [300.2-301.0] Of course.
+92 [301.0-302.1] Of course, Robert.
+93 [302.1-303.0] Robert!
+94 [303.0-303.8] Hey, wait.
+95 [303.8-304.7] We don't hear that a lot.
+96 [304.7-307.2] So we're, that's not usually of course, okay?
+97 [307.2-308.0] I understand.
+98 [308.0-310.7] We made around $210,000 out of which we spent
+99 [310.7-313.8] 40,000 more on reinvesting into trade shows and stuff,
+100 [313.8-316.0] so we were left with around 175k.
+101 [316.0-317.4] And are you paying yourself?
+102 [317.4-320.5] So I just took a basic salary of around $500 per month.
+103 [320.5-321.8] Yes, I'm loving hearing this.
+104 [321.8-323.4] How are you living on $500 a month?
+105 [323.4-325.7] Don't ask, crap, great news, yes.
+106 [325.7-327.3] OK, Raul, I've heard enough.
+107 [327.3-329.2] I'm going to make you an offer, OK?
+108 [329.2-333.6] I'll do the 350,000 for 15%.
+109 [333.6-334.5] Yeah, that's the thank you.
+110 [334.5-335.3] Thank you for the offer.
+111 [335.3-337.6] I'm betting on the future and obviously going
+112 [337.6-338.8] to get you distribution.
+113 [338.8-340.0] That's what matters.
+114 [340.0-341.2] and your chef wonderfully.
+115 [341.2-342.4] Thanks, absolutely.
+116 [342.4-345.3] Are you gonna stay in the kitchen or you go out to other...
+117 [345.3-347.7] So yes, I want to describe that.
+118 [347.7-350.9] So because right now we've launched the measuring spoons,
+119 [350.9-353.0] the low-hanging fruit is the kitchen space
+120 [353.0-354.3] because when you go to a retailer,
+121 [354.3-356.4] they'll ask you for more things in the same category, right?
+122 [356.4-359.2] So I want to expand this a little bit more
+123 [359.2-362.2] but we already have fully finished prototypes of stuff
+124 [362.2-363.4] in the rest of the house as well.
+125 [363.4-364.6] For example, power strips.
+126 [364.6-366.4] We have flattened power strips.
+127 [366.4-367.4] We have a lot more.
+128 [367.4-369.4] But at the start, I want to focus on the kitchen
+129 [369.4-371.2] so that we can expand it properly.
+130 [371.2-372.9] Are you selling to any retailers?
+131 [372.9-374.4] We were selling to MoMA.
+132 [374.4-376.8] We are in talks with William Sonoma.
+133 [376.8-379.2] How much is the one you threw away?
+134 [379.2-379.6] Yeah.
+135 [379.6-380.7] How much would I buy those?
+136 [380.7-382.8] Like the really cheap ones, even $2.
+137 [382.8-386.0] It doesn't surprise me that MoMA bought your product.
+138 [386.0-386.9] It's gorgeous.
+139 [386.9-388.2] It's like a piece of art.
+140 [388.2-390.3] That's my concern.
+141 [390.3-393.4] I think you have to educate people on it.
+142 [393.4-395.8] It's a high-end design product.
+143 [395.8-397.0] There'll be a market for it.
+144 [397.0-400.4] But you're gonna compete with something that costs a dollar.
+145 [400.4-401.4] So it's not for me.
+146 [401.4-402.2] I wish y'all the best.
+147 [402.2-405.5] You're a very impressive guy, but I'm out.
+148 [405.5-408.6] You know, Raul, Mindy and I were talking.
+149 [408.6-411.0] You check all the boxes for us.
+150 [411.0-413.5] And I think between the two of us,
+151 [413.5-416.8] like we can really help you blow up this product
+152 [416.8-421.4] and your brand and be a funnel for all your fantastic ideas.
+153 [421.4-423.5] Raul, I love your background.
+154 [423.5-425.3] You know, I am a child of immigrants.
+155 [425.3-426.3] I love how smart you are.
+156 [426.3-428.1] I love how scrappy you are.
+157 [428.1-429.5] You're so much humility.
+158 [429.5-430.9] And honestly, I love this.
+159 [430.9-431.8] I'm impatient.
+160 [431.8-432.5] I'm a chef.
+161 [432.5-433.5] I want things done quickly.
+162 [433.5-435.7] And I like things that look cool.
+163 [435.7-438.1] I would feel cool using this and talking about it.
+164 [438.1-439.9] Tell my followers.
+165 [439.9-441.3] And I know you have Chef Wonderful,
+166 [441.3-443.1] and you have an offer from him.
+167 [443.1-445.4] But I think Lori and I have a lot to offer.
+168 [445.4-446.5] And are you going to make an offer?
+169 [446.5-447.5] Well, here's our offer.
+170 [447.5-451.5] We're going to give you $350,000 for 10%
+171 [451.5-453.3] and the two of us.
+172 [453.3-457.1] Look, I can't beat that.
+173 [457.1-458.5] I honestly have to say, I think this
+174 [458.5-460.6] is one of the best design products I have ever
+175 [460.6-462.2] seen in tank history.
+176 [462.2-463.1] I really do.
+177 [463.1-465.8] But I can't beat the deal that Lori and Mindy just gave you.
+178 [465.8-468.0] They would be incredible sharks for you.
+179 [468.0-469.7] So for that reason, I'm out.
+180 [469.7-471.5] Just to make it interesting, I'm
+181 [471.5-473.1] going to drop mine down to 10.
+182 [473.1-474.1] Wow.
+183 [474.1-476.1] He's matching their shells.
+184 [476.1-477.3] That's amazing, Lori, yes.
+185 [477.3-490.7] This is getting so spicy.
+186 [490.7-492.1] Two sharks are out.
+187 [492.1-495.5] Raul has two equal and competing offers from Kevin
+188 [495.5-498.2] and Mindy and Lori for his innovative kitchen tool
+189 [498.2-500.7] company, Polygons.
+190 [500.7-502.9] Raul, same offers.
+191 [502.9-504.2] Yes, same offers.
+192 [504.2-507.6] Are you getting in bed with Lori and Mindy?
+193 [507.6-508.6] Or Kelsey?
+194 [508.6-512.0] I'm spawning them, yeah.
+195 [512.0-513.6] Who are you going to spoon?
+196 [513.6-516.5] Who are you going to spoon?
+197 [516.5-520.1] I will be all over my socials using this, selling it.
+198 [520.1-521.6] I love it to moms.
+199 [521.6-523.5] It's a big opportunity.
+200 [523.5-524.4] Yeah, absolutely.
+201 [524.4-526.1] And I love being an entrepreneur
+202 [526.1-530.2] because I love the freedom to make and create
+203 [530.2-531.7] and to get everything out there.
+204 [531.7-532.6] You have to make a decision.
+205 [532.6-533.4] I understand your mind.
+206 [533.4-534.3] You have to make a decision.
+207 [534.3-536.5] And I want to be there to help you unleash it.
+208 [536.5-537.6] Lori, let the guy think.
+209 [537.6-539.3] I can help you blow this up.
+210 [539.3-540.9] I know that.
+211 [540.9-542.9] What we want to do is really blitz this
+212 [542.9-543.9] all across the globe.
+213 [543.9-545.1] That's what you need to do.
+214 [545.1-545.9] Yeah.
+215 [545.9-546.7] That's what I do.
+216 [546.7-547.6] Yeah, yeah.
+217 [547.6-549.3] By the way, all sharks do that.
+218 [549.3-553.8] No, I do that the best.
+219 [553.8-555.6] Can we throw in a line of credit for that
+220 [555.6-557.6] because we really want to amp up our production?
+221 [557.6-558.4] What do you need?
+222 [558.4-559.3] Make a counter.
+223 [559.3-563.6] Yeah, so $250,000, can we go down to 8%
+224 [563.6-566.0] and with a $500,000 line of credit?
+225 [566.0-566.8] Ooh.
+226 [566.8-567.6] Oh.
+227 [567.6-570.7] I never have a problem helping to pay for inventory
+228 [570.7-573.7] because inventory is helping us to make money.
+229 [573.7-576.5] That is a champagne problem, we call that.
+230 [576.5-578.0] But you're saying a 10%.
+231 [578.0-579.1] A 10%.
+232 [579.1-583.4] Can you do eight plus two advisory?
+233 [583.4-585.0] It's really the same thing.
+234 [585.0-588.6] I'm OK with the eight plus two advisory, are you?
+235 [588.6-590.9] Yeah, we are.
+236 [590.9-594.4] Come on, baby.
+237 [594.4-595.4] Let's go.
+238 [595.4-596.4] Oh.
+239 [596.4-600.1] I'm wishing you did it.
+240 [600.1-601.1] I'm wishing you did it.
+241 [601.1-602.1] You did it.
+242 [602.1-604.6] Oh, I love it.
+243 [604.6-605.4] Exciting.
+244 [605.4-606.4] I'm so excited.
+245 [606.4-607.4] You made the right choice.
+246 [607.4-608.4] Congratulations.
+247 [608.4-609.4] Thank you.
+248 [609.4-610.4] Thank you so much.
+249 [610.4-611.4] So exciting.
+250 [611.4-612.4] I love it.
+251 [612.4-613.4] Is America not the land of opportunity?
+252 [613.4-614.4] It definitely is.
+253 [614.4-615.3] It definitely is.
+254 [615.3-619.7] I just want to tell you that I've been watching this show from the other side of the globe for years.
+255 [619.7-622.9] It's just surreal for me to be here. So thank you so much.
+256 [622.9-624.3] Oh, thank you.
+257 [624.3-625.3] Thank you.
+258 [625.3-627.3] Mindy, your first deal.
+259 [627.3-628.3] How do you feel?
+260 [628.3-630.3] This is a great product.
+261 [630.3-636.3] I need to go and rush up on my vocabulary because I need new words to describe whatever I'm just feeling right now.
+262 [636.3-638.3] Really, this is...

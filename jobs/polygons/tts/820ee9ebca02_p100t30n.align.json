@@ -1,0 +1,41 @@
+{
+ "text": "한 번 쓱 닦으면 세척까지 끝이라",
+ "words": [
+  {
+   "word": "한",
+   "start": 0.06,
+   "end": 0.141,
+   "aligned": true
+  },
+  {
+   "word": "번",
+   "start": 0.221,
+   "end": 0.563,
+   "aligned": true
+  },
+  {
+   "word": "쓱",
+   "start": 0.583,
+   "end": 0.604,
+   "aligned": true
+  },
+  {
+   "word": "닦으면",
+   "start": 0.724,
+   "end": 1.106,
+   "aligned": true
+  },
+  {
+   "word": "세척까지",
+   "start": 1.227,
+   "end": 1.65,
+   "aligned": true
+  },
+  {
+   "word": "끝이라",
+   "start": 1.73,
+   "end": 1.972,
+   "aligned": true
+  }
+ ]
+}

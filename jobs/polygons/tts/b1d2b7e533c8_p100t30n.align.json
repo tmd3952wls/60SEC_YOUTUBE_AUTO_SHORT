@@ -1,0 +1,53 @@
+{
+ "text": "납작한 판 하나로 투자금 4억 7천만 원을 받아냈다는데",
+ "words": [
+  {
+   "word": "납작한",
+   "start": 0.04,
+   "end": 0.383,
+   "aligned": true
+  },
+  {
+   "word": "판",
+   "start": 0.403,
+   "end": 0.423,
+   "aligned": true
+  },
+  {
+   "word": "하나로",
+   "start": 0.484,
+   "end": 0.826,
+   "aligned": true
+  },
+  {
+   "word": "투자금",
+   "start": 0.967,
+   "end": 1.249,
+   "aligned": true
+  },
+  {
+   "word": "4억",
+   "start": 1.39,
+   "end": 1.551,
+   "aligned": true
+  },
+  {
+   "word": "7천만",
+   "start": 1.652,
+   "end": 1.975,
+   "aligned": true
+  },
+  {
+   "word": "원을",
+   "start": 2.055,
+   "end": 2.176,
+   "aligned": true
+  },
+  {
+   "word": "받아냈다는데",
+   "start": 2.257,
+   "end": 2.841,
+   "aligned": true
+  }
+ ]
+}
