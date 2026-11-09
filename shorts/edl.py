@@ -15,7 +15,7 @@ from .align import align_all
 from .common import ASSETS, duration, ffmpeg, filter_path, read_json, run, write_json
 from .render import ass_time, lufs_of, plain, voice_gain
 from .sfxlib import pick as pick_sfx
-from .subfx import _ellipse, bgr, merge_short, neon_events, parse_spans, ref_sub_events
+from .subfx import _ellipse, bgr, merge_short, money_green, neon_events, parse_spans, ref_sub_events
 from .tts import synth
 
 import subprocess
@@ -33,13 +33,64 @@ def _env_db(path, hop=160):
 
 PW, PH = 1080, 1050  # 영상 패널
 
+# 자막에만 쓰는 재미 표현 (참고: 셀 인사이트 쇼츠 "ㄹㅇ 간단한 아이디어죠", "괜찮아용;;", "보시죠 ㅎ")
+# TTS 에는 읽을 말로 바꾸거나 빼고, 자막 어절 수 셀 때도 같은 규칙으로 → 자막·목소리 싱크 유지
+SAY = {"ㄹㅇ": "진짜"}
+
+
+def tts_say(text):
+    out = []
+    for w in text.split():
+        w = SAY.get(w, w)
+        w = re.sub(r"[ㄱ-ㅎㅏ-ㅣ;@~]+", "", w)  # ㅎㅎ ㅋㅋ ㅠㅠ ;; @ 같은 건 소리 내지 않음
+        if w.strip():
+            out.append(w)
+    return " ".join(out)
+
+
+def _snap_onsets(wav, wl, log, tag):
+    """단어 시작을 '실제로 목소리가 다시 나는 순간'에 붙임 (2026-11-09).
+    정렬기는 앞 단어 뒤 쉼(0.1~0.3초)을 다음 단어에 붙여 시작을 일찍 잡곤 함 → 자막이 말보다 먼저 뜸.
+    0.09초 이상 조용한 구간이 단어 시작 근처(앞 0.25초 ~ 뒤 0.15초)에서 끝나면 그 끝을 단어 시작으로."""
+    e = _env_db(wav)  # 10ms 간격
+    if not len(e) or not wl:
+        return wl
+    thr = np.percentile(e, 95) - 28
+    quiet = e < thr
+    runs, i = [], 0  # (조용 시작, 조용 끝) 초
+    while i < len(quiet):
+        if quiet[i]:
+            j = i
+            while j < len(quiet) and quiet[j]:
+                j += 1
+            if j - i >= 9 and j < len(quiet):
+                runs.append((i / 100, j / 100))
+            i = j
+        else:
+            i += 1
+    out = []
+    for k, w in enumerate(wl):
+        ws = w[1]
+        lo = out[-1][1] + 0.05 if out else -1.0  # 앞 단어 시작보다 뒤로만 (두 단어가 같은 쉼 끝에 붙지 않게)
+        cand = [b for a, b in runs if a <= ws + 0.15 and ws - 0.25 <= b <= ws + 0.45 and b < w[2] and b > lo]
+        if cand:
+            nb = min(cand, key=lambda b: abs(b - ws))
+            if abs(nb - ws) >= 0.03:
+                d = nb - ws
+                log.append(f"  ⤳ {tag} '{w[0]}' 시작 {ws:.2f} → {nb:.2f}s (실제 목소리 시작에 맞춤 {d * 1000:+.0f}ms)")
+                w = (w[0], nb, w[2]) + ((w[3] + d,) if len(w) > 3 else ())
+        out.append(w)
+    return out
+
+
 
 def _item_audio(job, it, cfg, words_src, tmp, idx):
     """항목 소리 파일 + 출력 기준 단어 시간 [(word, s, e)]."""
     R = cfg["render"]
     if it["type"] == "narration":
-        wav = synth(plain(it["text"]), job / "tts", cfg)
-        al = align_all([(str(wav), plain(it["text"]))], cfg)[str(wav)] or []
+        say = tts_say(plain(it["text"]))
+        wav = synth(say, job / "tts", cfg)
+        al = align_all([(str(wav), say)], cfg)[str(wav)] or []
         wl = [(w["word"], w["start"], w["end"]) for w in al]
         return wav, duration(wav), wl, voice_gain(lufs_of(wav), R)
     # 원본 대사: 지정한 줄(ids)의 단어들, 단어 사이 긴 침묵은 '소리에서만' 잘라냄 (그림은 샷이 따로 채움)
@@ -148,6 +199,7 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
 
     for n, it in enumerate(edl["items"]):
         wav, dur, wl, gain = _item_audio(job, it, cfg, words_src, tmp, n)
+        wl = _snap_onsets(wav, wl, log, f"item{n}")
         # 30fps 프레임 경계로 길이를 맞춤 → 이어 붙일 때 그림이 자막·원보다 밀리는 누적 오차 방지
         dur = max(1, round((dur + it.get("tail", 0.0)) * 30)) / 30  # tail: 마지막 항목 뒤 그림·자막을 조금 더 잡아 둠(영상 끝 전용)
         wt = lambda k: 0.0 if k <= 0 else (wl[min(k, len(wl) - 1)][1] if wl else 0.0)
@@ -163,33 +215,53 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
                 kw = sh.get("at_word", 0)
                 sh = {**sh, "src": wl[kw][3] - (wl[kw][1] - s0), "sync_src": True}
             d = s1 - s0
-            # 원본 컷 가드: 샷 시작/끝이 원본 컷에 걸쳐 1~3프레임짜리 다른 장면이 끼면 원본 샷 안으로 옮김
-            src0 = sh["src"]
-            # 입모양을 맞춘 샷은 옮기면 입이 어긋남 → 끼어드는 다른 장면(0.25초 이내)을 옆 프레임 정지로 덮음
-            pre, keep = 0.0, d + 0.1
-            if sh.get("sync_src") and not sh.get("file"):
-                for c in src_cuts:
-                    if src0 < c < src0 + 0.25:
-                        pre = c + 0.02 - src0
-                    elif src0 + d - 0.25 < c < src0 + d:
-                        keep = c - 0.02 - src0
-                if pre or keep < d:
-                    log.append(f"  ❚ item{n} shot{k}: 원본 컷이 샷 {'시작' if pre else ''}{'끝' if keep < d else ''}에 걸림 → "
-                               f"{pre:.2f}s/{max(0, d - keep):.2f}s 정지 화면으로 덮음 (입모양 유지)")
-            # file: 방송 원본이 아닌 B-roll(실사용·리뷰 영상, 1920x1080·30fps로 맞춰 둔 것) → 원본 컷 가드 미적용
-            for c in (src_cuts if not sh.get("file") and not sh.get("sync_src") else []):
-                if src0 < c < src0 + 0.12:  # 시작 직후 컷 → 컷 뒤에서 시작
-                    src0 = c + 0.04
-                elif src0 + d - 0.15 < c < src0 + d:  # 끝 직전 컷 → 그만큼 앞에서 시작
-                    if not any(src0 - (src0 + d - c) - 0.05 < c2 < src0 for c2 in src_cuts):
-                        src0 = c - d - 0.04
+            # 원본 컷 가드 (2026-11-09 개정: 정지 화면 금지 — 사용자가 '화면이 멈춤'을 싫어함)
+            src0, speed, take = sh["src"], 1.0, d  # speed: 원본 1초를 몇 초로 늘려 보여 주는지
+            if sh.get("hold"):  # 정지 화면 (예전 방식, 새 EDL 에서는 쓰지 않음)
+                take = 1 / 30
+            elif sh.get("sync_src") and not sh.get("file"):
+                # 말하는 사람 샷: 시작/끝 0.3초 안에 원본 컷이 있으면 그 사이만 '살아 있는' 그림
+                a_ = [c + 0.02 for c in src_cuts if src0 < c < src0 + 0.3]
+                b_ = [c - 0.02 for c in src_cuts if src0 + d - 0.3 < c < src0 + d]
+                s_live, e_live = (max(a_) if a_ else src0), (min(b_) if b_ else src0 + d)
+                live = e_live - s_live
+                if live < d - 1e-3:
+                    f = d / live
+                    clear = lambda x0, x1: not any(x0 < c < x1 for c in src_cuts)
+                    if f <= 1.2:  # 살짝 느리게(최대 1.2배) 늘려 채움 → 입모양 차이가 서서히 0~0.25초
+                        src0, take, speed = s_live, live, f
+                        how = f"{f:.2f}배 느리게 늘림"
+                    elif b_ and clear(e_live - d, e_live):  # 끝이 모자라면 그만큼 앞에서 시작
+                        how = f"{src0 - (e_live - d):.2f}초 앞에서 시작"
+                        src0 = e_live - d
+                    elif a_ and clear(s_live, s_live + d):  # 시작이 모자라면 그만큼 뒤에서 시작
+                        how = f"{s_live - src0:.2f}초 뒤에서 시작"
+                        src0 = s_live
+                    else:
+                        src0, take, speed = s_live, live, f
+                        how = f"{f:.2f}배 느리게 늘림(어쩔 수 없음)"
+                    log.append(f"  ❚ item{n} shot{k}: 원본 컷이 샷 {'시작' if a_ else ''}{'끝' if b_ else ''}에 걸림 → {how} (정지 화면 없음)")
+            elif not sh.get("file") and not sh.get("no_guard"):  # no_guard: 불꽃 등으로 가짜 컷이 많은 샷
+                # 내레이션·일반 샷: 샷 안에 원본 컷이 있으면 0.3초짜리 다른 장면이 끼어 '깜빡임' → 컷 없는 구간으로 옮김
+                if any(src0 < c < src0 + d for c in src_cuts):
+                    bounds = [0.0] + sorted(src_cuts) + [1e9]
+                    best = None
+                    for lo_, hi_ in zip(bounds, bounds[1:]):
+                        if hi_ - lo_ >= d + 0.08:
+                            st = min(max(src0, lo_ + 0.04), hi_ - 0.04 - d)
+                            if best is None or abs(st - src0) < abs(best - src0):
+                                best = st
+                    if best is not None:
+                        src0 = best
+                    else:
+                        log.append(f"  ⚠ item{n} shot{k}: {d:.2f}초 동안 컷 없는 원본 구간이 없음")
             if abs(src0 - sh["src"]) > 1e-6:
                 log.append(f"  ↔ item{n} shot{k}: 원본 컷 가드로 src {sh['src']:.2f} → {src0:.2f} "
-                           f"(입모양 차이 {src0 - sh['src']:+.2f}s)")
+                           f"(차이 {src0 - sh['src']:+.2f}s)")
                 sh = {**sh, "src": src0}
             z0, z1 = sh.get("zoom", [1.0, 1.0])
             # 화질: 원본(유튜브 1080p, 약 1.3Mbps)을 너무 늘리면 뭉개짐 → 최종 확대 배율(크롭 늘림 × 줌)을 max_upscale 이하로
-            mu = cfg["render"].get("max_upscale", 1.4)
+            mu = sh.get("max_upscale", cfg["render"].get("max_upscale", 1.4))  # 샷마다: 멀리 찍힌 말하는 사람 얼굴은 더 당겨야 할 때
             if PH / sh["crop"][2] * max(z0, z1) > mu:
                 h_new = min(ih, PH * max(z0, z1) / mu)
                 log.append(f"  ⇲ item{n} shot{k}: 확대 제한 크롭 높이 {sh['crop'][2]} → {h_new:.0f}px "
@@ -197,16 +269,18 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
                 sh = {**sh, "crop": [sh["crop"][0], sh["crop"][1], h_new]}
             x0, y0, w0, h0, S, (fxo, fyo) = _shot_geom(sh, iw, ih)
             z = f"({z0}+({z1}-{z0})*t/{d:.3f})"
-            inputs += ["-ss", f"{sh['src'] + pre:.3f}", "-t", f"{keep - pre:.3f}", "-i", str(job / sh.get("file", "source.mp4"))]
+            inputs += ["-ss", f"{sh['src']:.3f}", "-t", f"{take + (0 if sh.get('hold') else 0.1):.3f}", "-i", str(job / sh.get("file", "source.mp4"))]
             nf = round(d * 30)  # 이 샷의 정확한 프레임 수
-            fc.append(f"[{k}:v]crop={int(w0)}:{int(h0)}:{int(x0)}:{int(y0)},"
+            fc.append(f"[{k}:v]" + (f"setpts=(PTS-STARTPTS)*{speed:.4f}," if speed > 1.0001 else "") + f"crop={int(w0)}:{int(h0)}:{int(x0)}:{int(y0)},"
                       f"scale=w='trunc({PW}*{z}/2)*2':h='trunc({PH}*{z}/2)*2':eval=frame:flags=lanczos,"
                       f"crop={PW}:{PH}:'{fxo:.1f}*({z}-1)':'{fyo:.1f}*({z}-1)',unsharp=5:5:0.35:5:5:0,"
                       # 내레이션(TTS) 구간은 화면을 살짝 어둡게 (참고: 셀 인사이트 쇼츠, 같은 인물·카메라에서 내레이션 때 23~40% 어두움)
                       + (f"colorchannelmixer=rr={dim}:gg={dim}:bb={dim}," if it["type"] == "narration" and dim < 0.999 else "")
                       + f"setsar=1,fps=30,format=yuv420p,"
-                      f"tpad=start_mode=clone:start_duration={pre:.3f}:stop_mode=clone:stop_duration={d + 0.2:.3f},"
+                      f"tpad=stop_mode=clone:stop_duration={d + 0.2:.3f},"
                       f"trim=end_frame={nf},setpts=PTS-STARTPTS[v{k}]")
+            if sh.get("sfx"):  # 샷이 바뀌는 프레임에 효과음 (컷 소리)
+                sfx_ev.append((timeline + s0, sh["sfx"]))
             log.append(f"item{n} shot{k}: src {sh['src']:.2f}~{sh['src'] + d:.2f} → out {timeline + s0:.2f}~{timeline + s1:.2f}  ({sh.get('why', '')})")
             # 빨간 원: 대상 박스(원본 픽셀) → 이 샷의 크롭·확대를 반영한 화면 좌표, 확대에 맞춰 이동·확대
             c = sh.get("circle")
@@ -272,18 +346,21 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
             k, sw = 0, []
             for s_ in subs:
                 sw.append(k)
-                k += len(plain(s_["text"]).replace("|", " ").split())  # | = 자막 줄바꿈 (어절 수에 안 셈)
+                k += len(tts_say(plain(s_["text"]).replace("|", " ")).split())  # | = 줄바꿈, ㅎㅎ 등은 어절 수에 안 셈
         else:
             sw = [s_.get("at_word", 0) for s_ in subs]
         st = [0.0] + [round(max(0.0, wt(k) - 0.03) * 30) / 30 for k in sw[1:]]
+        # at_t: 말과 무관하게 항목 안 시각에 뜨는 자막 (예: 마지막 대사 끝난 뒤 따로 뜨는 '고정댓글 참조')
+        st = [round(s_["at_t"] * 30) / 30 if "at_t" in s_ else t_ for s_, t_ in zip(subs, st)]
         for j, (s_, a) in enumerate(zip(subs, st)):
             b = st[j + 1] if j + 1 < len(st) else dur
-            spans = parse_spans(s_["text"].replace("|", chr(10)), it.get("accent", "yellow"))
+            spans = money_green(parse_spans(s_["text"].replace("|", chr(10)), it.get("accent", "yellow")))  # 초록 = 돈 금액만
             sub_list.append({"a": timeline + a, "b": timeline + b, "spans": spans, "item": n, "text": s_["text"],
                              "krw": s_.get("krw", ""), "note": s_.get("note", ""), "solo": s_.get("solo", False)})
             log.append(f"  자막 {timeline + a:.2f}~{timeline + b:.2f}: {plain(s_['text'])} [{s_.get('anim', 'normal')}]")
         if it.get("sfx_word") is not None and it.get("sfx2"):
-            sfx_ev.append((timeline + max(0.0, wt(it["sfx_word"]) - 0.02), it["sfx2"]))
+            # 자막·컷과 같은 계산(단어 시작 0.03초 전, 30fps 프레임 경계) → 소리·자막·그림이 같은 프레임에
+            sfx_ev.append((timeline + round(max(0.0, wt(it["sfx_word"]) - 0.03) * 30) / 30, it["sfx2"]))
         if it.get("sfx"):
             sfx_ev.append((timeline + it.get("sfx_offset", 0.0), it["sfx"]))
         exp_items.append({"n": n, "type": it["type"], "t0": timeline, "dur": dur,
@@ -325,10 +402,14 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
     # 파일 피크로 맞추면 짧은 소리마다 체감 크기가 -11~+6dB 로 들쭉날쭉해서, 실제 10ms RMS 로 다시 맞춘다.
     vref = np.percentile((ve := _env_db(body))[ve > -45], 60)
     rel = cfg.get("sfx_mix", {}).get("rel_db", -1.8)
-    opus_ev = []
+    opus_ev, level_ev = [], []
+    engine = cfg["render"].get("sfx_engine", "level")
     if cfg["render"].get("no_sfx"):  # 효과음은 따로 믹스할 때 — 목소리만
         sfx_ev = []
-    elif cfg["render"].get("sfx_engine", "opus") == "opus" and sfx_ev:
+    elif engine == "level" and sfx_ev:
+        # 기본(2026-11-09~): 효과음마다 귀에 들리는 크기를 그 순간 목소리에 맞춤 (sfx_level.py)
+        level_ev, sfx_ev = list(sfx_ev), []
+    elif engine == "opus" and sfx_ev:
         # 기본(2026-11-08~): opus-sound-layer 실제 녹음으로 따로 믹스. 여기서는 목소리만 넣고 마지막에 소리를 바꿔 끼움
         from . import sfx_opus
         if sfx_opus.available():
@@ -366,6 +447,13 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
            "-preset", "slow", "-crf", "16", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
            "-movflags", "+faststart", "-t", f"{total:.3f}", out_name, cwd=job)
     log += ["효과음: " + "; ".join(used)]
+    if level_ev:
+        from . import sfx_level
+        tmp_out = job / ("_lvl_" + Path(out_name).name)
+        exp_sfx, master, mlog = sfx_level.render(job, body, job / out_name, tmp_out, level_ev, total, tmp / "level",
+                                                 cfg.get("sfx_mix", {}).get("master_lufs", -14.0))
+        tmp_out.replace(job / out_name)
+        log += mlog
     if opus_ev:
         from . import sfx_opus
         tmp_out = job / ("_opus_" + Path(out_name).name)

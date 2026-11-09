@@ -1,0 +1,35 @@
+{
+ "text": "근데 첫 제안부터 진짜 충격이었는데",
+ "words": [
+  {
+   "word": "근데",
+   "start": 0.04,
+   "end": 0.303,
+   "aligned": true
+  },
+  {
+   "word": "첫",
+   "start": 0.424,
+   "end": 0.525,
+   "aligned": true
+  },
+  {
+   "word": "제안부터",
+   "start": 0.626,
+   "end": 1.009,
+   "aligned": true
+  },
+  {
+   "word": "진짜",
+   "start": 1.131,
+   "end": 1.353,
+   "aligned": true
+  },
+  {
+   "word": "충격이었는데",
+   "start": 1.454,
+   "end": 2.019,
+   "aligned": true
+  }
+ ]
+}

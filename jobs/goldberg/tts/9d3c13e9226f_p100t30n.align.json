@@ -1,0 +1,35 @@
+{
+ "text": "결국 창업자들의 선택은 바로 케빈",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "창업자들의",
+   "start": 0.382,
+   "end": 0.904,
+   "aligned": true
+  },
+  {
+   "word": "선택은",
+   "start": 0.965,
+   "end": 1.367,
+   "aligned": true
+  },
+  {
+   "word": "바로",
+   "start": 1.588,
+   "end": 1.809,
+   "aligned": true
+  },
+  {
+   "word": "케빈",
+   "start": 1.909,
+   "end": 2.07,
+   "aligned": true
+  }
+ ]
+}

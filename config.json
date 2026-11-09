@@ -37,7 +37,8 @@
       "voice": "Microsoft Heami Desktop",
       "rate": 3
     },
-    "max_pause": 0.15
+    "max_pause": 0.1,
+    "pause_threshold_db": -30
   },
   "layout": {
     "width": 1080,

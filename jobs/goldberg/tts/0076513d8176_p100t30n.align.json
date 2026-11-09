@@ -1,0 +1,53 @@
+{
+ "text": "근데 WWE 전설 골드버그는 여기서 대체 왜 나옴?",
+ "words": [
+  {
+   "word": "근데",
+   "start": 0.02,
+   "end": 0.322,
+   "aligned": true
+  },
+  {
+   "word": "WWE",
+   "start": 0.342,
+   "end": 1.147,
+   "aligned": true
+  },
+  {
+   "word": "전설",
+   "start": 1.187,
+   "end": 1.449,
+   "aligned": true
+  },
+  {
+   "word": "골드버그는",
+   "start": 1.509,
+   "end": 2.012,
+   "aligned": true
+  },
+  {
+   "word": "여기서",
+   "start": 2.113,
+   "end": 2.354,
+   "aligned": true
+  },
+  {
+   "word": "대체",
+   "start": 2.394,
+   "end": 2.636,
+   "aligned": true
+  },
+  {
+   "word": "왜",
+   "start": 2.716,
+   "end": 2.797,
+   "aligned": true
+  },
+  {
+   "word": "나옴?",
+   "start": 2.857,
+   "end": 3.199,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "text": "그런데 골드버그는 이 회사와 무슨 사이일까",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "골드버그는",
+   "start": 0.361,
+   "end": 0.902,
+   "aligned": true
+  },
+  {
+   "word": "이",
+   "start": 1.243,
+   "end": 1.323,
+   "aligned": true
+  },
+  {
+   "word": "회사와",
+   "start": 1.383,
+   "end": 1.664,
+   "aligned": true
+  },
+  {
+   "word": "무슨",
+   "start": 1.744,
+   "end": 1.925,
+   "aligned": true
+  },
+  {
+   "word": "사이일까",
+   "start": 1.985,
+   "end": 2.306,
+   "aligned": true
+  }
+ ]
+}

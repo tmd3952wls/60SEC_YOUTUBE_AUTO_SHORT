@@ -1,0 +1,65 @@
+{
+ "text": "창업자들은 투자자 다섯 명 모두에게 약 14억 원에 20%를 역제안하는데",
+ "words": [
+  {
+   "word": "창업자들은",
+   "start": 0.06,
+   "end": 0.663,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 0.823,
+   "end": 1.124,
+   "aligned": true
+  },
+  {
+   "word": "다섯",
+   "start": 1.185,
+   "end": 1.385,
+   "aligned": true
+  },
+  {
+   "word": "명",
+   "start": 1.466,
+   "end": 1.566,
+   "aligned": true
+  },
+  {
+   "word": "모두에게",
+   "start": 1.647,
+   "end": 2.148,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 2.389,
+   "end": 2.65,
+   "aligned": true
+  },
+  {
+   "word": "14억",
+   "start": 2.771,
+   "end": 2.912,
+   "aligned": true
+  },
+  {
+   "word": "원에",
+   "start": 2.992,
+   "end": 3.173,
+   "aligned": true
+  },
+  {
+   "word": "20%를",
+   "start": 3.193,
+   "end": 3.855,
+   "aligned": true
+  },
+  {
+   "word": "역제안하는데",
+   "start": 3.915,
+   "end": 4.518,
+   "aligned": true
+  }
+ ]
+}

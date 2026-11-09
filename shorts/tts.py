@@ -83,7 +83,8 @@ def synth(text, tts_dir: Path, cfg):
     pcfg = tcfg.get(prov, {})
     key = hashlib.md5(json.dumps([prov, pcfg, text], ensure_ascii=False).encode()).hexdigest()[:12]
     pause = tcfg.get("max_pause", 0.08)
-    final = tts_dir / f"{key}_p{int(pause * 1000)}n.wav"  # n: 무음 판정 전에 음량을 맞춘 판 (2026-11-08)
+    thr = int(tcfg.get("pause_threshold_db", -35))  # 2026-11-09: -35 로는 숨소리 섞인 0.3초 쉼이 안 줄어 '지루' → -30
+    final = tts_dir / f"{key}_p{int(pause * 1000)}t{-thr}n.wav"  # n: 무음 판정 전에 음량을 맞춘 판 (2026-11-08)
     if final.exists():
         return final
     tts_dir.mkdir(parents=True, exist_ok=True)
@@ -92,7 +93,7 @@ def synth(text, tts_dir: Path, cfg):
         PROVIDERS[prov](text, raw, pcfg)
     # 앞뒤 무음 제거 + 문장 사이 쉼을 max_pause 이하로 압축(말이 비지 않게) + 포맷 통일
     trim = "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.03"
-    squeeze = (f"silenceremove=stop_periods=-1:stop_duration={pause}:stop_threshold=-35dB:"
+    squeeze = (f"silenceremove=stop_periods=-1:stop_duration={pause}:stop_threshold={thr}dB:"
                f"stop_silence={pause}")
     # TTS 원본이 아주 작게 오는 경우(최고 -19dB)가 있어, 고정 -35dB 기준으로는 조용한 말끝("던지는데")까지
     # 무음으로 잘려 나갔음 → 먼저 최고 음량을 -1dB 로 맞춘 뒤 무음을 판정

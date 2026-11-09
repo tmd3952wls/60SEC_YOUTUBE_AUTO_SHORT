@@ -1,0 +1,47 @@
+{
+ "text": "그러자 골드버그가 케빈한테 헤드록 거는 거 실화냐",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.02,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "골드버그가",
+   "start": 0.341,
+   "end": 0.903,
+   "aligned": true
+  },
+  {
+   "word": "케빈한테",
+   "start": 1.044,
+   "end": 1.426,
+   "aligned": true
+  },
+  {
+   "word": "헤드록",
+   "start": 1.506,
+   "end": 1.727,
+   "aligned": true
+  },
+  {
+   "word": "거는",
+   "start": 1.807,
+   "end": 1.948,
+   "aligned": true
+  },
+  {
+   "word": "거",
+   "start": 1.968,
+   "end": 2.048,
+   "aligned": true
+  },
+  {
+   "word": "실화냐",
+   "start": 2.108,
+   "end": 2.349,
+   "aligned": true
+  }
+ ]
+}

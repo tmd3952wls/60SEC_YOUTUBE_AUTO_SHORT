@@ -358,11 +358,14 @@ def build_draft(exp, cfg, shots, voices, sfx, name, folder):
         spans = [tuple(p) for p in x["spans"]]
         if x.get("krw"):
             spans += [("\n", "white"), (x["krw"], "green_s")]
-        if x.get("note"):  # 끝 자막 아래 작은 파란 안내 줄
+        alone = x.get("note") and not "".join(t for t, _ in spans).strip()
+        if alone:  # 안내만 따로 뜨는 자막 (2026-11-09: 마지막 대사 뒤에 따로) → 보통 크기
+            spans = [(x["note"], "5CB8FF")]
+        elif x.get("note"):  # 끝 자막 아래 작은 파란 안내 줄
             spans += [("\n", "white"), (x["note"], "5CB8FF_s")]
         text = "".join(t for t, _ in spans)
         lines = text.split("\n")
-        h = sum(line_px * (SMALL if ln in (x.get("krw"), x.get("note")) else 1.0) for ln in lines)
+        h = sum(line_px * (SMALL if ln in (x.get("krw"), x.get("note")) and not alone else 1.0) for ln in lines)
         if exp["sub_an"] == 2:  # 아래 끝 고정
             cy = exp["sub_pos"][1] - h / 2
         else:

@@ -1,0 +1,29 @@
+{
+ "text": "근데 투자자들은 칼같이 거절",
+ "words": [
+  {
+   "word": "근데",
+   "start": 0.04,
+   "end": 0.283,
+   "aligned": true
+  },
+  {
+   "word": "투자자들은",
+   "start": 0.385,
+   "end": 0.952,
+   "aligned": true
+  },
+  {
+   "word": "칼같이",
+   "start": 1.073,
+   "end": 1.417,
+   "aligned": true
+  },
+  {
+   "word": "거절",
+   "start": 1.498,
+   "end": 1.66,
+   "aligned": true
+  }
+ ]
+}

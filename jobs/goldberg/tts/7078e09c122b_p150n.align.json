@@ -1,0 +1,29 @@
+{
+ "text": "창업자들의 선택은 바로 케빈",
+ "words": [
+  {
+   "word": "창업자들의",
+   "start": 0.081,
+   "end": 0.564,
+   "aligned": true
+  },
+  {
+   "word": "선택은",
+   "start": 0.604,
+   "end": 0.987,
+   "aligned": true
+  },
+  {
+   "word": "바로",
+   "start": 1.208,
+   "end": 1.389,
+   "aligned": true
+  },
+  {
+   "word": "케빈",
+   "start": 1.47,
+   "end": 1.671,
+   "aligned": true
+  }
+ ]
+}

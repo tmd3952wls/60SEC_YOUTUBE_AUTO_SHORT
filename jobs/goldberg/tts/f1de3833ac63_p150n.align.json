@@ -1,0 +1,53 @@
+{
+ "text": "사진만 찍어 보내면 내 차와 똑같이 만들어 준다는데",
+ "words": [
+  {
+   "word": "사진만",
+   "start": 0.1,
+   "end": 0.441,
+   "aligned": true
+  },
+  {
+   "word": "찍어",
+   "start": 0.521,
+   "end": 0.681,
+   "aligned": true
+  },
+  {
+   "word": "보내면",
+   "start": 0.761,
+   "end": 1.102,
+   "aligned": true
+  },
+  {
+   "word": "내",
+   "start": 1.563,
+   "end": 1.623,
+   "aligned": true
+  },
+  {
+   "word": "차와",
+   "start": 1.723,
+   "end": 1.903,
+   "aligned": true
+  },
+  {
+   "word": "똑같이",
+   "start": 2.003,
+   "end": 2.304,
+   "aligned": true
+  },
+  {
+   "word": "만들어",
+   "start": 2.344,
+   "end": 2.604,
+   "aligned": true
+  },
+  {
+   "word": "준다는데",
+   "start": 2.664,
+   "end": 3.205,
+   "aligned": true
+  }
+ ]
+}

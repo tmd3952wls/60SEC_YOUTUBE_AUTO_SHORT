@@ -1,0 +1,47 @@
+{
+ "text": "자동차 덮개 속에서 진짜 WWE 전설이 튀어나왔다는데",
+ "words": [
+  {
+   "word": "자동차",
+   "start": 0.04,
+   "end": 0.342,
+   "aligned": true
+  },
+  {
+   "word": "덮개",
+   "start": 0.403,
+   "end": 0.604,
+   "aligned": true
+  },
+  {
+   "word": "속에서",
+   "start": 0.705,
+   "end": 1.047,
+   "aligned": true
+  },
+  {
+   "word": "진짜",
+   "start": 1.329,
+   "end": 1.55,
+   "aligned": true
+  },
+  {
+   "word": "WWE",
+   "start": 1.57,
+   "end": 2.315,
+   "aligned": true
+  },
+  {
+   "word": "전설이",
+   "start": 2.375,
+   "end": 2.718,
+   "aligned": true
+  },
+  {
+   "word": "튀어나왔다는데",
+   "start": 2.798,
+   "end": 3.442,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "text": "사진만 찍어 보내면 내 차랑 똑같이 뽑아 준다는데",
+ "words": [
+  {
+   "word": "사진만",
+   "start": 0.08,
+   "end": 0.402,
+   "aligned": true
+  },
+  {
+   "word": "찍어",
+   "start": 0.462,
+   "end": 0.623,
+   "aligned": true
+  },
+  {
+   "word": "보내면",
+   "start": 0.683,
+   "end": 1.025,
+   "aligned": true
+  },
+  {
+   "word": "내",
+   "start": 1.326,
+   "end": 1.406,
+   "aligned": true
+  },
+  {
+   "word": "차랑",
+   "start": 1.467,
+   "end": 1.627,
+   "aligned": true
+  },
+  {
+   "word": "똑같이",
+   "start": 1.708,
+   "end": 2.009,
+   "aligned": true
+  },
+  {
+   "word": "뽑아",
+   "start": 2.09,
+   "end": 2.23,
+   "aligned": true
+  },
+  {
+   "word": "준다는데",
+   "start": 2.27,
+   "end": 2.813,
+   "aligned": true
+  }
+ ]
+}

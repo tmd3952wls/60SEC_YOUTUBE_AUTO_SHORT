@@ -48,6 +48,32 @@ def parse_spans(text, accent):
     return spans
 
 
+# 돈 금액: "약 100만 원", "2억 7천만 원", "16억~19억 원", "4만 원짜리"의 "4만 원" 부분
+_NUM = r"\d[\d,.]*\s*(?:조|억|천만|백만|만|천)?(?:\s*\d[\d,.]*\s*(?:억|천만|백만|만|천))*"
+MONEY_RE = re.compile(rf"(?:약\s*)?{_NUM}(?:\s*~\s*{_NUM})?\s*원")
+
+
+def money_green(spans):
+    """초록색은 돈 금액에만 (사용자 요청 2026-11-09).
+    - 금액 부분은 원래 색과 상관없이 초록
+    - 금액이 아닌데 초록으로 적힌 말은 노랑으로 바꿈"""
+    out = []
+    for txt, col in spans:
+        if col.endswith("_s"):  # 보조 줄(원화 환산 등)은 그대로
+            out.append((txt, col))
+            continue
+        base = "yellow" if col == "green" else col
+        k = 0
+        for m in MONEY_RE.finditer(txt):
+            if m.start() > k:
+                out.append((txt[k:m.start()], base))
+            out.append((m.group(0), "green"))
+            k = m.end()
+        if k < len(txt):
+            out.append((txt[k:], base))
+    return out
+
+
 def open_state(text, was_open):
     """덩어리 끝에서 강조 괄호가 열려 있는지."""
     o = was_open
@@ -147,7 +173,9 @@ def ref_sub_events(subs, cfg, pos, an=5):
         a, b, sp = s["a"], s["b"], s["spans"]
         if s.get("krw"):  # 달러 금액 → 아래 줄에 작은 초록 글씨로 원화 환산
             sp = sp + [("\n", "white"), (s["krw"], "green_s")]
-        if s.get("note"):  # 마지막 자막 아래 작은 파란 안내 줄 (참고: 셀 인사이트 끝 자막 "(자세한 내용은 고정댓글 참조)")
+        if s.get("note") and not "".join(t for t, _ in sp).strip():  # 안내만 따로 (마지막 대사 뒤, 2026-11-09)
+            sp = [(s["note"], "5CB8FF")]
+        elif s.get("note"):  # 마지막 자막 아래 작은 파란 안내 줄 (참고: 셀 인사이트 끝 자막 "(자세한 내용은 고정댓글 참조)")
             sp = sp + [("\n", "white"), (s["note"], "5CB8FF_s")]
         evs += _smear(sp, a, a + F, pos, 5, cfg["subtitle"]["narr_size"], an)
         evs += neon_events(sp, a + F, b, sharp_cfg, pos=pos, an=an)
