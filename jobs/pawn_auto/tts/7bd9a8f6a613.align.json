@@ -1,0 +1,29 @@
+{
+ "text": "손님은 중간에서 만나자며 버텼는데요",
+ "words": [
+  {
+   "word": "손님은",
+   "start": 0.0,
+   "end": 0.222,
+   "aligned": true
+  },
+  {
+   "word": "중간에서",
+   "start": 0.303,
+   "end": 0.626,
+   "aligned": true
+  },
+  {
+   "word": "만나자며",
+   "start": 0.646,
+   "end": 0.929,
+   "aligned": true
+  },
+  {
+   "word": "버텼는데요",
+   "start": 1.009,
+   "end": 1.534,
+   "aligned": true
+  }
+ ]
+}

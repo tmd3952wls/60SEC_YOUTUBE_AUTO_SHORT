@@ -1,0 +1,37 @@
+[
+  {
+    "t": 0.0,
+    "category": "whoosh",
+    "name": "휘익"
+  },
+  {
+    "t": 6.93,
+    "category": "pop",
+    "name": "버튼 클릭1"
+  },
+  {
+    "t": 21.74,
+    "category": "pop",
+    "name": "팝"
+  },
+  {
+    "t": 28.84,
+    "category": "ding",
+    "name": "정답음_띠롱_띵동"
+  },
+  {
+    "t": 32.07,
+    "category": "pop",
+    "name": "뽀옹 (폰문자전송)"
+  },
+  {
+    "t": 44.2,
+    "category": "impact",
+    "name": "후욱 -a짧은2"
+  },
+  {
+    "t": 48.63,
+    "category": "success",
+    "name": "레벨업2"
+  }
+]

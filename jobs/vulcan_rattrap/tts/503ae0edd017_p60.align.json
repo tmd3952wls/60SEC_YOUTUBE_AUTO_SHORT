@@ -1,0 +1,29 @@
+{
+ "text": "원가 15달러짜리를 90달러에 파는데",
+ "words": [
+  {
+   "word": "원가",
+   "start": 0.0,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "15달러짜리를",
+   "start": 0.261,
+   "end": 0.964,
+   "aligned": true
+  },
+  {
+   "word": "90달러에",
+   "start": 1.044,
+   "end": 1.405,
+   "aligned": true
+  },
+  {
+   "word": "파는데",
+   "start": 1.506,
+   "end": 1.707,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "text": "케빈과 바바라가 투자를 거절한 뒤",
+ "words": [
+  {
+   "word": "케빈과",
+   "start": 0.04,
+   "end": 0.342,
+   "aligned": true
+  },
+  {
+   "word": "바바라가",
+   "start": 0.402,
+   "end": 0.743,
+   "aligned": true
+  },
+  {
+   "word": "투자를",
+   "start": 0.763,
+   "end": 1.065,
+   "aligned": true
+  },
+  {
+   "word": "거절한",
+   "start": 1.125,
+   "end": 1.366,
+   "aligned": true
+  },
+  {
+   "word": "뒤",
+   "start": 1.447,
+   "end": 1.467,
+   "aligned": true
+  }
+ ]
+}

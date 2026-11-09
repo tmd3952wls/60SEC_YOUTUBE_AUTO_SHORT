@@ -1,0 +1,35 @@
+{
+ "text": "기업가치만 2천만 달러인데 실적이 진짜였고",
+ "words": [
+  {
+   "word": "기업가치만",
+   "start": 0.02,
+   "end": 0.444,
+   "aligned": true
+  },
+  {
+   "word": "2천만",
+   "start": 0.484,
+   "end": 0.746,
+   "aligned": true
+  },
+  {
+   "word": "달러인데",
+   "start": 0.807,
+   "end": 1.13,
+   "aligned": true
+  },
+  {
+   "word": "실적이",
+   "start": 1.231,
+   "end": 1.473,
+   "aligned": true
+  },
+  {
+   "word": "진짜였고",
+   "start": 1.553,
+   "end": 1.937,
+   "aligned": true
+  }
+ ]
+}

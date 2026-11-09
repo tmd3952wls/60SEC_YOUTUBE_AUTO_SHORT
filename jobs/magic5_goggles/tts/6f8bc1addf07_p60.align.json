@@ -1,0 +1,41 @@
+{
+ "text": "그러자 투자자 5명 전부 달려들기 시작했고",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.02,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 0.403,
+   "end": 0.585,
+   "aligned": true
+  },
+  {
+   "word": "5명",
+   "start": 0.726,
+   "end": 0.928,
+   "aligned": true
+  },
+  {
+   "word": "전부",
+   "start": 0.988,
+   "end": 1.19,
+   "aligned": true
+  },
+  {
+   "word": "달려들기",
+   "start": 1.271,
+   "end": 1.513,
+   "aligned": true
+  },
+  {
+   "word": "시작했고",
+   "start": 1.573,
+   "end": 1.896,
+   "aligned": true
+  }
+ ]
+}

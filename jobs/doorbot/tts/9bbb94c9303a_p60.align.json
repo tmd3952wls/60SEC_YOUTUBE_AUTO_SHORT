@@ -1,0 +1,41 @@
+{
+ "text": "문 앞 손님을 폰으로 보는 초인종",
+ "words": [
+  {
+   "word": "문",
+   "start": 0.04,
+   "end": 0.081,
+   "aligned": true
+  },
+  {
+   "word": "앞",
+   "start": 0.121,
+   "end": 0.182,
+   "aligned": true
+  },
+  {
+   "word": "손님을",
+   "start": 0.263,
+   "end": 0.566,
+   "aligned": true
+  },
+  {
+   "word": "폰으로",
+   "start": 0.687,
+   "end": 0.889,
+   "aligned": true
+  },
+  {
+   "word": "보는",
+   "start": 0.95,
+   "end": 1.071,
+   "aligned": true
+  },
+  {
+   "word": "초인종",
+   "start": 1.152,
+   "end": 1.455,
+   "aligned": true
+  }
+ ]
+}

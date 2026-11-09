@@ -1,0 +1,65 @@
+{
+ "text": "문 열기 전엔 밖에 누가 서 있는지 알 수가 없잖아",
+ "words": [
+  {
+   "word": "문",
+   "start": 0.04,
+   "end": 0.121,
+   "aligned": true
+  },
+  {
+   "word": "열기",
+   "start": 0.161,
+   "end": 0.322,
+   "aligned": true
+  },
+  {
+   "word": "전엔",
+   "start": 0.362,
+   "end": 0.503,
+   "aligned": true
+  },
+  {
+   "word": "밖에",
+   "start": 0.604,
+   "end": 0.664,
+   "aligned": true
+  },
+  {
+   "word": "누가",
+   "start": 0.724,
+   "end": 0.805,
+   "aligned": true
+  },
+  {
+   "word": "서",
+   "start": 0.865,
+   "end": 0.925,
+   "aligned": true
+  },
+  {
+   "word": "있는지",
+   "start": 0.946,
+   "end": 1.167,
+   "aligned": true
+  },
+  {
+   "word": "알",
+   "start": 1.207,
+   "end": 1.247,
+   "aligned": true
+  },
+  {
+   "word": "수가",
+   "start": 1.328,
+   "end": 1.408,
+   "aligned": true
+  },
+  {
+   "word": "없잖아",
+   "start": 1.428,
+   "end": 1.73,
+   "aligned": true
+  }
+ ]
+}

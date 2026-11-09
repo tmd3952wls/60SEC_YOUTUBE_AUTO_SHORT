@@ -1,0 +1,54 @@
+[
+  {
+    "kind": "narration",
+    "dur": 2.03
+  },
+  {
+    "kind": "clip",
+    "dur": 5.13
+  },
+  {
+    "kind": "narration",
+    "dur": 2.23
+  },
+  {
+    "kind": "clip",
+    "dur": 3.53
+  },
+  {
+    "kind": "narration",
+    "dur": 2.07
+  },
+  {
+    "kind": "clip",
+    "dur": 4.63
+  },
+  {
+    "kind": "narration",
+    "dur": 2.0
+  },
+  {
+    "kind": "clip",
+    "dur": 1.4
+  },
+  {
+    "kind": "narration",
+    "dur": 3.2
+  },
+  {
+    "kind": "clip",
+    "dur": 2.5
+  },
+  {
+    "kind": "clip",
+    "dur": 1.7
+  },
+  {
+    "kind": "narration",
+    "dur": 2.1
+  },
+  {
+    "kind": "clip",
+    "dur": 2.67
+  }
+]

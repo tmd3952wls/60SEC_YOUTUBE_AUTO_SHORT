@@ -1,0 +1,47 @@
+{
+ "text": "집 밖 어디서든 방문객이랑 대화까지 된다는 거",
+ "words": [
+  {
+   "word": "집",
+   "start": 0.04,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "밖",
+   "start": 0.241,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "어디서든",
+   "start": 0.382,
+   "end": 0.805,
+   "aligned": true
+  },
+  {
+   "word": "방문객이랑",
+   "start": 0.945,
+   "end": 1.388,
+   "aligned": true
+  },
+  {
+   "word": "대화까지",
+   "start": 1.448,
+   "end": 1.79,
+   "aligned": true
+  },
+  {
+   "word": "된다는",
+   "start": 1.83,
+   "end": 2.072,
+   "aligned": true
+  },
+  {
+   "word": "거",
+   "start": 2.092,
+   "end": 2.112,
+   "aligned": true
+  }
+ ]
+}

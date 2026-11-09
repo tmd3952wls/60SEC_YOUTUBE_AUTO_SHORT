@@ -1,0 +1,59 @@
+{
+ "text": "그런데 창업자는 지분을 제일 많이 달라던 데이먼드에게 흥정을 걸어요",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.0,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "창업자는",
+   "start": 0.281,
+   "end": 0.723,
+   "aligned": true
+  },
+  {
+   "word": "지분을",
+   "start": 0.864,
+   "end": 1.125,
+   "aligned": true
+  },
+  {
+   "word": "제일",
+   "start": 1.185,
+   "end": 1.386,
+   "aligned": true
+  },
+  {
+   "word": "많이",
+   "start": 1.446,
+   "end": 1.567,
+   "aligned": true
+  },
+  {
+   "word": "달라던",
+   "start": 1.627,
+   "end": 1.848,
+   "aligned": true
+  },
+  {
+   "word": "데이먼드에게",
+   "start": 1.928,
+   "end": 2.45,
+   "aligned": true
+  },
+  {
+   "word": "흥정을",
+   "start": 2.491,
+   "end": 2.772,
+   "aligned": true
+  },
+  {
+   "word": "걸어요",
+   "start": 2.832,
+   "end": 3.073,
+   "aligned": true
+  }
+ ]
+}

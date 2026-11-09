@@ -1,0 +1,81 @@
+{
+  "title": "편집기 화면 방향 고르기",
+  "question": "쇼츠 편집기 화면을 어떤 방식으로 만들까요? 하나를 고르면 그 방향으로 만듭니다.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "영한 대역 자막 시트",
+      "kicker": "THE ROLL",
+      "lineage": "번역가가 쓰는 원문|번역 2단 대역표",
+      "thesis": "박자 하나가 한 줄: 영어 원문 옆에 한국어 자막. 자막을 고치는 일이 가장 잦으니 자막이 화면의 중심.",
+      "palette": ["#141a24", "#1b2330", "#ffe066", "#5fd4e6", "#ff9d3b"],
+      "materials": ["대역표 줄", "쇼츠 자막 색(노랑·하늘)"],
+      "viewport": "왼쪽 9:16 미리보기, 가운데 B1~B19 대역 시트(시간·원문·자막·효과음), 오른쪽 선택한 박자 편집 칸.",
+      "risk": "타임라인에 익숙한 사람은 '길이'를 눈으로 보기 어렵다고 느낄 수 있음 (시간 열과 아래 막대로 보완).",
+      "raised": [
+        {"from": "challenger-gateboard", "raise": "고쳤지만 아직 렌더 안 한 박자는 주황 표시가 켜진 채로 남음, 렌더하면 꺼짐."},
+        {"from": "challenger-splitflap", "raise": "재생 중인 박자 줄이 따라 움직이고, 그 줄의 자막 글자가 말하는 속도에 맞춰 노랗게 채워짐."}
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "challenger-gateboard",
+      "kind": "challenger",
+      "catalogId": "vernacular-ephemera-boarding-pass-and-gate-board",
+      "label": "공항 출발 안내판",
+      "verdict": "declined",
+      "lineage": "탑승권과 게이트 안내판",
+      "palette": ["#111111", "#f2f2f2", "#ffb000"],
+      "materials": ["고정 열 표", "변경 알림색"],
+      "case": "박자 목록은 시간순 표라 잘 맞지만, 쇼츠 제작자에게 공항 안내판은 낯섦.",
+      "kept": "바뀐 줄은 알아챌 때까지 불이 켜진 채로 남는다는 규칙."
+    },
+    {
+      "id": "challenger-splitflap",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-split-flap-concourse",
+      "label": "역 플랩 안내판",
+      "verdict": "declined",
+      "lineage": "기차역 플랩식 출발 안내판",
+      "palette": ["#0b0b0b", "#ffffff", "#ffb347"],
+      "materials": ["플랩 글자", "줄 단위 표"],
+      "case": "글자가 바뀌는 연출은 재밌지만 편집 도구로는 장식이 됨.",
+      "kept": "줄이 시간 순서대로 살아 움직이는 표."
+    },
+    {
+      "id": "challenger-mascot",
+      "kind": "challenger",
+      "catalogId": "pop-culture-shelf-character-goods-catalog",
+      "label": "캐릭터 굿즈 카탈로그",
+      "verdict": "declined",
+      "lineage": "캐릭터 상품 카탈로그",
+      "palette": ["#fde2e4", "#cde7f0", "#ffffff"],
+      "materials": ["파스텔 칸", "이름표"],
+      "case": "편집 작업과 관련이 없음.",
+      "kept": "칸 단위로 깔끔하게 줄바꿈되는 반응형."
+    },
+    {
+      "id": "challenger-jpdense",
+      "kind": "challenger",
+      "catalogId": "japanese-high-density-web",
+      "label": "일본식 고밀도 웹",
+      "verdict": "declined",
+      "lineage": "일본 쇼핑·포털 사이트",
+      "palette": ["#ffffff", "#111111", "#d0021b"],
+      "materials": ["가는 테두리 모듈", "작은 글씨"],
+      "case": "정보는 많이 담지만 비개발자에게 빽빽하고 작은 글씨는 부담.",
+      "kept": "한 화면에 박자 전체가 들어오는 밀도."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "일반 영상 편집기 (CapCut 식)",
+    "thesis": "트랙 타임라인(영상·자막·목소리·효과음) 위에 클립 블록. 익숙한 방식을 깔끔하게.",
+    "palette": ["#18181b", "#27272a", "#3b82f6"],
+    "materials": ["트랙 타임라인", "속성 패널"],
+    "html": ".impeccable/mocks/decision/canon.html"
+  }
+}

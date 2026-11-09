@@ -1,0 +1,41 @@
+{
+ "text": "그런데 매출을 듣자 분위기가 확 바뀌는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.0,
+   "end": 0.261,
+   "aligned": true
+  },
+  {
+   "word": "매출을",
+   "start": 0.322,
+   "end": 0.623,
+   "aligned": true
+  },
+  {
+   "word": "듣자",
+   "start": 0.684,
+   "end": 0.965,
+   "aligned": true
+  },
+  {
+   "word": "분위기가",
+   "start": 1.106,
+   "end": 1.428,
+   "aligned": true
+  },
+  {
+   "word": "확",
+   "start": 1.448,
+   "end": 1.468,
+   "aligned": true
+  },
+  {
+   "word": "바뀌는데",
+   "start": 1.549,
+   "end": 2.092,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,193 @@
+{
+ "fps": 30,
+ "duration_s": 54.536,
+ "energy": "punchy",
+ "kit": "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit",
+ "room": {
+  "decay_s": 0.5,
+  "wet_db": -18
+ },
+ "voice": [
+  {
+   "file": "vo.wav",
+   "start_s": 0
+  }
+ ],
+ "duck_db": 0,
+ "cues": [
+  {
+   "id": "hook",
+   "t": 0.0,
+   "sound": "chime/fs-571513-soft-notifications-bell-ding-2",
+   "weight": "support",
+   "align": "peak"
+  },
+  {
+   "id": "react-pop",
+   "t": 1.77,
+   "sound": "pop/fs-269583-bubble-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "to-founder",
+   "t": 5.3,
+   "sound": "whoosh/fs-30240-swoop1-flac-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "founder-word",
+   "t": 6.45,
+   "sound": "swish/fs-14175-27-wav-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "narr-pop",
+   "t": 7.67,
+   "sound": "pop/fs-174695-sci-fi-bubble-pop-3",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "to-clip",
+   "t": 9.5,
+   "sound": "whoosh/fs-449992-whoosh-short-low-wav-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "curious",
+   "t": 11.83,
+   "sound": "tap/fs-369710-wood-knock",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "ding",
+   "t": 14.12,
+   "sound": "chime/fs-255101-jingle2-3",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "investor",
+   "t": 15.1,
+   "sound": "whoosh/fs-30241-swoop2g-flac-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "clip-swish",
+   "t": 17.97,
+   "sound": "swish/fs-388003-double-swish-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "curious2",
+   "t": 20.93,
+   "sound": "tap/kenney-impact-impact-wood-light-001",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "mood-turn",
+   "t": 23.11,
+   "sound": "whoosh/fs-449988-whoosh-med-high-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "curious3",
+   "t": 27.68,
+   "sound": "tap/kenney-impact-impact-wood-light-003",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "pop3",
+   "t": 28.8,
+   "sound": "pop/fs-507006-soap-bubbles-pop-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "ding2",
+   "t": 32.14,
+   "sound": "chime/fs-570243-point-in-space-ogg-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "three-rush",
+   "t": 33.97,
+   "sound": "swish/kenney-rpg-cloth1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "pop4",
+   "t": 37.26,
+   "sound": "pop/fs-174695-sci-fi-bubble-pop-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "to-pick",
+   "t": 41.07,
+   "sound": "whoosh/fs-449989-whoosh-long-mid-wav-1",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "impact",
+   "t": 46.33,
+   "sound": "hit/fs-113747-kl-ex1bb-wav-2+boom/fs-636624-deep-hit-2",
+   "weight": "hero",
+   "align": "peak",
+   "visual": "cut",
+   "stop_before": true,
+   "build": true
+  },
+  {
+   "id": "deal",
+   "t": 48.43,
+   "sound": "chime/fs-582655-long-rising-tones-16-wav-2",
+   "weight": "support",
+   "align": "peak",
+   "visual": "cut"
+  },
+  {
+   "id": "impact-build",
+   "t": 46.33,
+   "sound": "riser/fs-531729-energy-riser-3-1",
+   "weight": "support",
+   "align": "peak"
+  }
+ ],
+ "silence_ok": [
+  [
+   53.9,
+   54.54
+  ]
+ ]
+}

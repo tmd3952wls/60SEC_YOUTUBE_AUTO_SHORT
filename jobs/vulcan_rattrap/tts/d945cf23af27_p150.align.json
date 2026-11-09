@@ -1,0 +1,65 @@
+{
+ "text": "지분 12.5%에 손을 잡았고 방송이 나가자마자 홈페이지는 무료배송 할인에 들어갔다고",
+ "words": [
+  {
+   "word": "지분",
+   "start": 0.04,
+   "end": 0.221,
+   "aligned": true
+  },
+  {
+   "word": "12.5%에",
+   "start": 0.321,
+   "end": 1.165,
+   "aligned": true
+  },
+  {
+   "word": "손을",
+   "start": 1.225,
+   "end": 1.406,
+   "aligned": true
+  },
+  {
+   "word": "잡았고",
+   "start": 1.466,
+   "end": 1.808,
+   "aligned": true
+  },
+  {
+   "word": "방송이",
+   "start": 2.169,
+   "end": 2.43,
+   "aligned": true
+  },
+  {
+   "word": "나가자마자",
+   "start": 2.471,
+   "end": 2.973,
+   "aligned": true
+  },
+  {
+   "word": "홈페이지는",
+   "start": 3.073,
+   "end": 3.555,
+   "aligned": true
+  },
+  {
+   "word": "무료배송",
+   "start": 3.656,
+   "end": 3.997,
+   "aligned": true
+  },
+  {
+   "word": "할인에",
+   "start": 4.078,
+   "end": 4.238,
+   "aligned": true
+  },
+  {
+   "word": "들어갔다고",
+   "start": 4.379,
+   "end": 4.801,
+   "aligned": true
+  }
+ ]
+}

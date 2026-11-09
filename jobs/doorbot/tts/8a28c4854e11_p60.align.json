@@ -1,0 +1,47 @@
+{
+ "text": "화면으로 얼굴을 보고 받거나 거절할 수 있다고",
+ "words": [
+  {
+   "word": "화면으로",
+   "start": 0.0,
+   "end": 0.345,
+   "aligned": true
+  },
+  {
+   "word": "얼굴을",
+   "start": 0.385,
+   "end": 0.628,
+   "aligned": true
+  },
+  {
+   "word": "보고",
+   "start": 0.689,
+   "end": 0.872,
+   "aligned": true
+  },
+  {
+   "word": "받거나",
+   "start": 0.892,
+   "end": 1.095,
+   "aligned": true
+  },
+  {
+   "word": "거절할",
+   "start": 1.115,
+   "end": 1.338,
+   "aligned": true
+  },
+  {
+   "word": "수",
+   "start": 1.399,
+   "end": 1.459,
+   "aligned": true
+  },
+  {
+   "word": "있다고",
+   "start": 1.48,
+   "end": 1.581,
+   "aligned": true
+  }
+ ]
+}

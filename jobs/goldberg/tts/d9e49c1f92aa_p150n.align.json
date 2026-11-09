@@ -1,0 +1,35 @@
+{
+ "text": "결국 케빈은 지분을 5%까지 낮추는데",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.243,
+   "aligned": true
+  },
+  {
+   "word": "케빈은",
+   "start": 0.323,
+   "end": 0.627,
+   "aligned": true
+  },
+  {
+   "word": "지분을",
+   "start": 0.748,
+   "end": 0.99,
+   "aligned": true
+  },
+  {
+   "word": "5%까지",
+   "start": 1.112,
+   "end": 1.637,
+   "aligned": true
+  },
+  {
+   "word": "낮추는데",
+   "start": 1.677,
+   "end": 2.062,
+   "aligned": true
+  }
+ ]
+}

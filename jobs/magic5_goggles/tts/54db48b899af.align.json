@@ -1,0 +1,41 @@
+{
+ "text": "그런데 이때 마크가 먼저 치고 들어오는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.0,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "이때",
+   "start": 0.243,
+   "end": 0.445,
+   "aligned": true
+  },
+  {
+   "word": "마크가",
+   "start": 0.85,
+   "end": 1.113,
+   "aligned": true
+  },
+  {
+   "word": "먼저",
+   "start": 1.173,
+   "end": 1.335,
+   "aligned": true
+  },
+  {
+   "word": "치고",
+   "start": 1.416,
+   "end": 1.558,
+   "aligned": true
+  },
+  {
+   "word": "들어오는데",
+   "start": 1.578,
+   "end": 1.982,
+   "aligned": true
+  }
+ ]
+}

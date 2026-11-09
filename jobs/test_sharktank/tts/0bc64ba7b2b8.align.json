@@ -1,0 +1,59 @@
+{
+ "text": "로리와 데이먼드가 손잡고 3만 달러에 지분 3분의 1을 제안하는데요",
+ "words": [
+  {
+   "word": "로리와",
+   "start": 0.06,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "데이먼드가",
+   "start": 0.341,
+   "end": 0.702,
+   "aligned": true
+  },
+  {
+   "word": "손잡고",
+   "start": 0.742,
+   "end": 1.103,
+   "aligned": true
+  },
+  {
+   "word": "3만",
+   "start": 1.123,
+   "end": 1.424,
+   "aligned": true
+  },
+  {
+   "word": "달러에",
+   "start": 1.484,
+   "end": 1.745,
+   "aligned": true
+  },
+  {
+   "word": "지분",
+   "start": 1.845,
+   "end": 2.026,
+   "aligned": true
+  },
+  {
+   "word": "3분의",
+   "start": 2.046,
+   "end": 2.367,
+   "aligned": true
+  },
+  {
+   "word": "1을",
+   "start": 2.407,
+   "end": 2.527,
+   "aligned": true
+  },
+  {
+   "word": "제안하는데요",
+   "start": 2.587,
+   "end": 3.189,
+   "aligned": true
+  }
+ ]
+}

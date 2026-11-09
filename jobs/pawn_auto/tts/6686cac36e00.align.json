@@ -1,0 +1,35 @@
+{
+ "text": "릭은 고대 동전 전문가를 불렀는데요",
+ "words": [
+  {
+   "word": "릭은",
+   "start": 0.041,
+   "end": 0.244,
+   "aligned": true
+  },
+  {
+   "word": "고대",
+   "start": 0.366,
+   "end": 0.528,
+   "aligned": true
+  },
+  {
+   "word": "동전",
+   "start": 0.548,
+   "end": 0.731,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 0.792,
+   "end": 1.117,
+   "aligned": true
+  },
+  {
+   "word": "불렀는데요",
+   "start": 1.178,
+   "end": 1.625,
+   "aligned": true
+  }
+ ]
+}

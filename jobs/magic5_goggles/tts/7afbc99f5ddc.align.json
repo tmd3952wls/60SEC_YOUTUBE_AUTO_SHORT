@@ -1,0 +1,47 @@
+{
+ "text": "물 새고 자국 남는 걸 맞춤으로 해결했다고",
+ "words": [
+  {
+   "word": "물",
+   "start": 0.041,
+   "end": 0.122,
+   "aligned": true
+  },
+  {
+   "word": "새고",
+   "start": 0.182,
+   "end": 0.304,
+   "aligned": true
+  },
+  {
+   "word": "자국",
+   "start": 0.365,
+   "end": 0.567,
+   "aligned": true
+  },
+  {
+   "word": "남는",
+   "start": 0.608,
+   "end": 0.689,
+   "aligned": true
+  },
+  {
+   "word": "걸",
+   "start": 0.851,
+   "end": 0.912,
+   "aligned": true
+  },
+  {
+   "word": "맞춤으로",
+   "start": 0.952,
+   "end": 1.256,
+   "aligned": true
+  },
+  {
+   "word": "해결했다고",
+   "start": 1.317,
+   "end": 1.742,
+   "aligned": true
+  }
+ ]
+}

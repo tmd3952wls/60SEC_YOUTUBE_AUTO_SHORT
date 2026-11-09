@@ -1,0 +1,41 @@
+{
+ "text": "50만 달러를 원했는데 100만 달러를 받아냈다고",
+ "words": [
+  {
+   "word": "50만",
+   "start": 0.121,
+   "end": 0.283,
+   "aligned": true
+  },
+  {
+   "word": "달러를",
+   "start": 0.343,
+   "end": 0.545,
+   "aligned": true
+  },
+  {
+   "word": "원했는데",
+   "start": 0.626,
+   "end": 1.009,
+   "aligned": true
+  },
+  {
+   "word": "100만",
+   "start": 1.11,
+   "end": 1.272,
+   "aligned": true
+  },
+  {
+   "word": "달러를",
+   "start": 1.332,
+   "end": 1.534,
+   "aligned": true
+  },
+  {
+   "word": "받아냈다고",
+   "start": 1.615,
+   "end": 1.978,
+   "aligned": true
+  }
+ ]
+}

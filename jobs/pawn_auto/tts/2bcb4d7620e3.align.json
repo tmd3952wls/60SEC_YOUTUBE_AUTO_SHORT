@@ -1,0 +1,35 @@
+{
+ "text": "기원전 400년경 만든 희귀 동전인데요",
+ "words": [
+  {
+   "word": "기원전",
+   "start": 0.0,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "400년경",
+   "start": 0.303,
+   "end": 0.807,
+   "aligned": true
+  },
+  {
+   "word": "만든",
+   "start": 0.847,
+   "end": 1.029,
+   "aligned": true
+  },
+  {
+   "word": "희귀",
+   "start": 1.049,
+   "end": 1.19,
+   "aligned": true
+  },
+  {
+   "word": "동전인데요",
+   "start": 1.311,
+   "end": 1.816,
+   "aligned": true
+  }
+ ]
+}

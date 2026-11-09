@@ -1,0 +1,47 @@
+{
+ "text": "2만 달러 노린 동전이 5만 달러로 감정됐습니다",
+ "words": [
+  {
+   "word": "2만",
+   "start": 0.0,
+   "end": 0.141,
+   "aligned": true
+  },
+  {
+   "word": "달러",
+   "start": 0.222,
+   "end": 0.363,
+   "aligned": true
+  },
+  {
+   "word": "노린",
+   "start": 0.424,
+   "end": 0.525,
+   "aligned": true
+  },
+  {
+   "word": "동전이",
+   "start": 0.585,
+   "end": 0.908,
+   "aligned": true
+  },
+  {
+   "word": "5만",
+   "start": 0.929,
+   "end": 1.272,
+   "aligned": true
+  },
+  {
+   "word": "달러로",
+   "start": 1.353,
+   "end": 1.555,
+   "aligned": true
+  },
+  {
+   "word": "감정됐습니다",
+   "start": 1.595,
+   "end": 2.1,
+   "aligned": true
+  }
+ ]
+}

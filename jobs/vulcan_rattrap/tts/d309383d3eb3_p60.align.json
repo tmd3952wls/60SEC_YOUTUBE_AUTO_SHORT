@@ -1,0 +1,53 @@
+{
+ "text": "그래도 데이먼드를 고른 건 이 업계를 잘 알아서라고",
+ "words": [
+  {
+   "word": "그래도",
+   "start": 0.0,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "데이먼드를",
+   "start": 0.262,
+   "end": 0.685,
+   "aligned": true
+  },
+  {
+   "word": "고른",
+   "start": 0.766,
+   "end": 0.887,
+   "aligned": true
+  },
+  {
+   "word": "건",
+   "start": 0.947,
+   "end": 1.088,
+   "aligned": true
+  },
+  {
+   "word": "이",
+   "start": 1.109,
+   "end": 1.27,
+   "aligned": true
+  },
+  {
+   "word": "업계를",
+   "start": 1.29,
+   "end": 1.552,
+   "aligned": true
+  },
+  {
+   "word": "잘",
+   "start": 1.592,
+   "end": 1.693,
+   "aligned": true
+  },
+  {
+   "word": "알아서라고",
+   "start": 1.774,
+   "end": 2.076,
+   "aligned": true
+  }
+ ]
+}

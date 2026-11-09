@@ -1,0 +1,95 @@
+{
+ "text": "방송 뒤 로리와의 계약은 성사되지 않았고 지금은 브루클린 매장 3곳과 전국 마트에서 냉동 피자를 판다고",
+ "words": [
+  {
+   "word": "방송",
+   "start": 0.04,
+   "end": 0.321,
+   "aligned": true
+  },
+  {
+   "word": "뒤",
+   "start": 0.401,
+   "end": 0.481,
+   "aligned": true
+  },
+  {
+   "word": "로리와의",
+   "start": 0.561,
+   "end": 0.922,
+   "aligned": true
+  },
+  {
+   "word": "계약은",
+   "start": 1.002,
+   "end": 1.283,
+   "aligned": true
+  },
+  {
+   "word": "성사되지",
+   "start": 1.343,
+   "end": 1.744,
+   "aligned": true
+  },
+  {
+   "word": "않았고",
+   "start": 1.784,
+   "end": 2.125,
+   "aligned": true
+  },
+  {
+   "word": "지금은",
+   "start": 2.686,
+   "end": 2.947,
+   "aligned": true
+  },
+  {
+   "word": "브루클린",
+   "start": 3.087,
+   "end": 3.368,
+   "aligned": true
+  },
+  {
+   "word": "매장",
+   "start": 3.468,
+   "end": 3.628,
+   "aligned": true
+  },
+  {
+   "word": "3곳과",
+   "start": 3.648,
+   "end": 4.19,
+   "aligned": true
+  },
+  {
+   "word": "전국",
+   "start": 4.33,
+   "end": 4.57,
+   "aligned": true
+  },
+  {
+   "word": "마트에서",
+   "start": 4.631,
+   "end": 5.011,
+   "aligned": true
+  },
+  {
+   "word": "냉동",
+   "start": 5.092,
+   "end": 5.332,
+   "aligned": true
+  },
+  {
+   "word": "피자를",
+   "start": 5.412,
+   "end": 5.633,
+   "aligned": true
+  },
+  {
+   "word": "판다고",
+   "start": 5.693,
+   "end": 5.954,
+   "aligned": true
+  }
+ ]
+}

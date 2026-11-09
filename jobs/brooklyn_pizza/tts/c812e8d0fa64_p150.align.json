@@ -1,0 +1,41 @@
+{
+ "text": "결국 첫 번째 투자자가 등을 돌리는데",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.242,
+   "aligned": true
+  },
+  {
+   "word": "첫",
+   "start": 0.322,
+   "end": 0.403,
+   "aligned": true
+  },
+  {
+   "word": "번째",
+   "start": 0.483,
+   "end": 0.685,
+   "aligned": true
+  },
+  {
+   "word": "투자자가",
+   "start": 0.745,
+   "end": 1.088,
+   "aligned": true
+  },
+  {
+   "word": "등을",
+   "start": 1.188,
+   "end": 1.349,
+   "aligned": true
+  },
+  {
+   "word": "돌리는데",
+   "start": 1.43,
+   "end": 1.772,
+   "aligned": true
+  }
+ ]
+}

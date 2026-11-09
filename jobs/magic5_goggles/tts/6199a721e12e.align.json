@@ -1,0 +1,47 @@
+{
+ "text": "고객 4만 명, 누적 매출 300만 달러에",
+ "words": [
+  {
+   "word": "고객",
+   "start": 0.02,
+   "end": 0.181,
+   "aligned": true
+  },
+  {
+   "word": "4만",
+   "start": 0.201,
+   "end": 0.483,
+   "aligned": true
+  },
+  {
+   "word": "명,",
+   "start": 0.564,
+   "end": 0.685,
+   "aligned": true
+  },
+  {
+   "word": "누적",
+   "start": 1.047,
+   "end": 1.208,
+   "aligned": true
+  },
+  {
+   "word": "매출",
+   "start": 1.249,
+   "end": 1.41,
+   "aligned": true
+  },
+  {
+   "word": "300만",
+   "start": 1.43,
+   "end": 1.792,
+   "aligned": true
+  },
+  {
+   "word": "달러에",
+   "start": 1.853,
+   "end": 2.074,
+   "aligned": true
+  }
+ ]
+}

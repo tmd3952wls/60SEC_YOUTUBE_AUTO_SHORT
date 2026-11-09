@@ -1,0 +1,35 @@
+{
+ "text": "140년 넘게 그대로였던 초인종을 바꿨다는데",
+ "words": [
+  {
+   "word": "140년",
+   "start": 0.181,
+   "end": 0.463,
+   "aligned": true
+  },
+  {
+   "word": "넘게",
+   "start": 0.523,
+   "end": 0.725,
+   "aligned": true
+  },
+  {
+   "word": "그대로였던",
+   "start": 0.785,
+   "end": 1.268,
+   "aligned": true
+  },
+  {
+   "word": "초인종을",
+   "start": 1.349,
+   "end": 1.691,
+   "aligned": true
+  },
+  {
+   "word": "바꿨다는데",
+   "start": 1.751,
+   "end": 2.174,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "text": "다른 상어들도 가만있지 않고",
+ "words": [
+  {
+   "word": "다른",
+   "start": 0.0,
+   "end": 0.162,
+   "aligned": true
+  },
+  {
+   "word": "상어들도",
+   "start": 0.223,
+   "end": 0.547,
+   "aligned": true
+  },
+  {
+   "word": "가만있지",
+   "start": 0.608,
+   "end": 0.973,
+   "aligned": true
+  },
+  {
+   "word": "않고",
+   "start": 0.993,
+   "end": 1.176,
+   "aligned": true
+  }
+ ]
+}

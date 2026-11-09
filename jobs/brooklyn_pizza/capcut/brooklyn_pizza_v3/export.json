@@ -1,0 +1,1304 @@
+{
+  "out": "capcut_v3.mp4",
+  "total": 58.701667,
+  "top": 435,
+  "panel": [
+    1080,
+    1050
+  ],
+  "master_db": 1.999389886856079,
+  "items": [
+    {
+      "n": 0,
+      "type": "narration",
+      "t0": 0.0,
+      "dur": 3.033333333333333,
+      "shots": [
+        [
+          0.0,
+          1.0333333333333334,
+          "화덕 피자 만드는 손",
+          "source.mp4"
+        ],
+        [
+          1.0333333333333334,
+          3.033333333333333,
+          "사장님 토머스",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 1,
+      "type": "clip",
+      "t0": 3.033333333333333,
+      "dur": 2.7666666666666666,
+      "shots": [
+        [
+          3.033333333333333,
+          4.566666666666666,
+          "",
+          "source.mp4"
+        ],
+        [
+          4.566666666666666,
+          5.8,
+          "",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 2,
+      "type": "narration",
+      "t0": 5.8,
+      "dur": 3.066666666666667,
+      "shots": [
+        [
+          5.8,
+          6.5,
+          "투자자 다섯 명 와이드",
+          "source.mp4"
+        ],
+        [
+          6.5,
+          8.866666666666667,
+          "투자자석 옆모습",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 3,
+      "type": "clip",
+      "t0": 8.866666666666667,
+      "dur": 3.5,
+      "shots": [
+        [
+          8.866666666666667,
+          9.966666666666667,
+          "와이드 속 케빈",
+          "source.mp4"
+        ],
+        [
+          9.966666666666667,
+          12.366666666666667,
+          "토머스→케빈 단독",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 4,
+      "type": "narration",
+      "t0": 12.366666666666667,
+      "dur": 2.4,
+      "shots": [
+        [
+          12.366666666666667,
+          13.266666666666667,
+          "세트: 셰프와 토머스",
+          "source.mp4"
+        ],
+        [
+          13.266666666666667,
+          14.766666666666667,
+          "포장된 냉동 조각 피자",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 5,
+      "type": "clip",
+      "t0": 14.766666666666667,
+      "dur": 3.6333333333333333,
+      "shots": [
+        [
+          14.766666666666667,
+          18.400000000000002,
+          "",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "type": "clip",
+      "t0": 18.400000000000002,
+      "dur": 1.5333333333333334,
+      "shots": [
+        [
+          18.400000000000002,
+          19.933333333333337,
+          "",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 7,
+      "type": "narration",
+      "t0": 19.933333333333337,
+      "dur": 2.466666666666667,
+      "shots": [
+        [
+          19.933333333333337,
+          20.900000000000002,
+          "케빈",
+          "source.mp4"
+        ],
+        [
+          20.900000000000002,
+          22.400000000000006,
+          "로버트",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "type": "clip",
+      "t0": 22.400000000000006,
+      "dur": 3.8,
+      "shots": [
+        [
+          22.400000000000006,
+          24.933333333333337,
+          "",
+          "source.mp4"
+        ],
+        [
+          24.933333333333337,
+          26.200000000000006,
+          "케빈 (바바라와 투샷)",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 9,
+      "type": "clip",
+      "t0": 26.200000000000006,
+      "dur": 3.7666666666666666,
+      "shots": [
+        [
+          26.200000000000006,
+          29.966666666666672,
+          "",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 10,
+      "type": "clip",
+      "t0": 29.966666666666672,
+      "dur": 2.1666666666666665,
+      "shots": [
+        [
+          29.966666666666672,
+          32.13333333333334,
+          "",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 11,
+      "type": "narration",
+      "t0": 32.13333333333334,
+      "dur": 1.5,
+      "shots": [
+        [
+          32.13333333333334,
+          33.63333333333334,
+          "바바라",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 12,
+      "type": "clip",
+      "t0": 33.63333333333334,
+      "dur": 2.6333333333333333,
+      "shots": [
+        [
+          33.63333333333334,
+          36.26666666666667,
+          "",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 13,
+      "type": "clip",
+      "t0": 36.26666666666667,
+      "dur": 1.9333333333333333,
+      "shots": [
+        [
+          36.26666666666667,
+          38.2,
+          "",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 14,
+      "type": "narration",
+      "t0": 38.2,
+      "dur": 3.1,
+      "shots": [
+        [
+          38.2,
+          39.16666666666667,
+          "케빈",
+          "source.mp4"
+        ],
+        [
+          39.16666666666667,
+          41.300000000000004,
+          "토머스",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 15,
+      "type": "clip",
+      "t0": 41.300000000000004,
+      "dur": 2.3333333333333335,
+      "shots": [
+        [
+          41.300000000000004,
+          42.366666666666674,
+          "바바라(케빈과 투샷)",
+          "source.mp4"
+        ],
+        [
+          42.366666666666674,
+          43.63333333333334,
+          "토머스, 아래 자막바 피함",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 16,
+      "type": "narration",
+      "t0": 43.63333333333334,
+      "dur": 2.3,
+      "shots": [
+        [
+          43.63333333333334,
+          45.93333333333334,
+          "로리",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 17,
+      "type": "clip",
+      "t0": 45.93333333333334,
+      "dur": 1.6333333333333333,
+      "shots": [
+        [
+          45.93333333333334,
+          47.56666666666667,
+          "",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 18,
+      "type": "narration",
+      "t0": 47.56666666666667,
+      "dur": 2.5,
+      "shots": [
+        [
+          47.56666666666667,
+          50.06666666666667,
+          "토머스",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 19,
+      "type": "clip",
+      "t0": 50.06666666666667,
+      "dur": 2.2333333333333334,
+      "shots": [
+        [
+          50.06666666666667,
+          52.300000000000004,
+          "",
+          "source.mp4"
+        ]
+      ]
+    },
+    {
+      "n": 20,
+      "type": "narration",
+      "t0": 52.300000000000004,
+      "dur": 6.4,
+      "shots": [
+        [
+          52.300000000000004,
+          54.7,
+          "셰프와 하이파이브",
+          "source.mp4"
+        ],
+        [
+          54.7,
+          56.333333333333336,
+          "TABLE 87 FROZEN 간판 세트",
+          "source.mp4"
+        ],
+        [
+          56.333333333333336,
+          58.7,
+          "냉동 조각 피자 포장",
+          "source.mp4"
+        ]
+      ]
+    }
+  ],
+  "sfx": [
+    {
+      "t": 0.0,
+      "cat": "00-ding",
+      "name": "fs-404104-glass-ding-3",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\chime\\fs-404104-glass-ding-3.wav",
+      "lead": 0.007666666666666666,
+      "gain_db": -9.14938988685608,
+      "max_dur": null
+    },
+    {
+      "t": 3.0254875,
+      "cat": "01-pop",
+      "name": "fs-269583-bubble-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\pop\\fs-269583-bubble-1.wav",
+      "lead": 0.0,
+      "gain_db": -9.43938988685608,
+      "max_dur": null
+    },
+    {
+      "t": 5.6701875,
+      "cat": "02-whoosh",
+      "name": "fs-30240-swoop1-flac-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\whoosh\\fs-30240-swoop1-flac-1.wav",
+      "lead": 0.0,
+      "gain_db": -19.059389886856078,
+      "max_dur": null
+    },
+    {
+      "t": 9.954429166666666,
+      "cat": "03-question",
+      "name": "fs-369710-wood-knock",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\tap\\fs-369710-wood-knock.wav",
+      "lead": 0.0,
+      "gain_db": -3.619389886856079,
+      "max_dur": null
+    },
+    {
+      "t": 12.311741666666666,
+      "cat": "04-pop",
+      "name": "fs-174695-sci-fi-bubble-pop-3",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\pop\\fs-174695-sci-fi-bubble-pop-3.wav",
+      "lead": 0.0,
+      "gain_db": -26.139389886856076,
+      "max_dur": null
+    },
+    {
+      "t": 14.633304166666667,
+      "cat": "05-whoosh",
+      "name": "fs-449988-whoosh-med-high-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\whoosh\\fs-449988-whoosh-med-high-1.wav",
+      "lead": 0.0,
+      "gain_db": -15.20938988685608,
+      "max_dur": null
+    },
+    {
+      "t": 19.531708333333334,
+      "cat": "06-ding",
+      "name": "fs-255101-jingle2-3",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\chime\\fs-255101-jingle2-3.wav",
+      "lead": 0.0,
+      "gain_db": -20.809389886856078,
+      "max_dur": null
+    },
+    {
+      "t": 19.79055,
+      "cat": "07-whoosh",
+      "name": "fs-449992-whoosh-short-low-wav-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\whoosh\\fs-449992-whoosh-short-low-wav-1.wav",
+      "lead": 0.0,
+      "gain_db": -5.9793898868560795,
+      "max_dur": null
+    },
+    {
+      "t": 24.9553125,
+      "cat": "08-question",
+      "name": "kenney-impact-impact-wood-light-001",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\tap\\kenney-impact-impact-wood-light-001.wav",
+      "lead": 0.0,
+      "gain_db": -7.96938988685608,
+      "max_dur": null
+    },
+    {
+      "t": 31.335158333333336,
+      "cat": "09-fail",
+      "name": "fs-389665-thump-close-wav-2",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\thump\\fs-389665-thump-close-wav-2.wav",
+      "lead": 0.0,
+      "gain_db": -6.29938988685608,
+      "max_dur": null
+    },
+    {
+      "t": 32.11450833333333,
+      "cat": "10-pop",
+      "name": "fs-507006-soap-bubbles-pop-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\pop\\fs-507006-soap-bubbles-pop-1.wav",
+      "lead": 0.0,
+      "gain_db": -31.369389886856077,
+      "max_dur": null
+    },
+    {
+      "t": 34.01452916666667,
+      "cat": "11-ding",
+      "name": "fs-570243-point-in-space-ogg-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\chime\\fs-570243-point-in-space-ogg-1.wav",
+      "lead": 0.0,
+      "gain_db": -27.889389886856076,
+      "max_dur": null
+    },
+    {
+      "t": 36.255408333333335,
+      "cat": "12-pop",
+      "name": "fs-174695-sci-fi-bubble-pop-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\pop\\fs-174695-sci-fi-bubble-pop-1.wav",
+      "lead": 0.0,
+      "gain_db": -43.619389886856084,
+      "max_dur": null
+    },
+    {
+      "t": 38.07745833333334,
+      "cat": "13-whoosh",
+      "name": "fs-30241-swoop2g-flac-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\whoosh\\fs-30241-swoop2g-flac-1.wav",
+      "lead": 0.0,
+      "gain_db": -28.76938988685608,
+      "max_dur": null
+    },
+    {
+      "t": 41.647999999999996,
+      "cat": "14-impact",
+      "name": "fs-113747-kl-ex1bb-wav-2",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\hit\\fs-113747-kl-ex1bb-wav-2.wav",
+      "lead": 0.0,
+      "gain_db": -2.479389886856079,
+      "max_dur": null
+    },
+    {
+      "t": 42.0189375,
+      "cat": "14-impact",
+      "name": "fs-636624-deep-hit-2",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\boom\\fs-636624-deep-hit-2.wav",
+      "lead": 0.0,
+      "gain_db": -6.4793898868560795,
+      "max_dur": null
+    },
+    {
+      "t": 41.530208333333334,
+      "cat": "14-build",
+      "name": "fs-531729-energy-riser-3-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\riser\\fs-531729-energy-riser-3-1.wav",
+      "lead": 0.0,
+      "gain_db": -11.07938988685608,
+      "max_dur": null
+    },
+    {
+      "t": 43.595675,
+      "cat": "15-whoosh",
+      "name": "fs-388003-double-swish-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\swish\\fs-388003-double-swish-1.wav",
+      "lead": 0.0,
+      "gain_db": -6.3593898868560785,
+      "max_dur": null
+    },
+    {
+      "t": 46.54805,
+      "cat": "16-ding",
+      "name": "fs-127149-ding-wav-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\chime\\fs-127149-ding-wav-1.wav",
+      "lead": 0.0,
+      "gain_db": -21.03938988685608,
+      "max_dur": null
+    },
+    {
+      "t": 47.5597,
+      "cat": "17-pop",
+      "name": "fs-253956-bubble-pop-1",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\pop\\fs-253956-bubble-pop-1.wav",
+      "lead": 0.0,
+      "gain_db": -24.939389886856077,
+      "max_dur": null
+    },
+    {
+      "t": 51.21542916666667,
+      "cat": "18-success",
+      "name": "fs-582655-long-rising-tones-16-wav-2",
+      "file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\ext\\opus-sound-layer\\audio\\kit\\chime\\fs-582655-long-rising-tones-16-wav-2.wav",
+      "lead": 0.0,
+      "gain_db": -8.749389886856079,
+      "max_dur": null
+    }
+  ],
+  "title_lines": [
+    {
+      "text": "투자자 셋이 달려든",
+      "color": "yellow"
+    },
+    {
+      "text": "냉동 피자의 정체?!",
+      "color": "white"
+    }
+  ],
+  "subs": [
+    {
+      "a": 0.0,
+      "b": 1.5,
+      "spans": [
+        [
+          "석탄 화덕 피자를\n",
+          "white"
+        ],
+        [
+          "냉동",
+          "yellow"
+        ],
+        [
+          "으로",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 0
+    },
+    {
+      "a": 1.5,
+      "b": 3.033333333333333,
+      "spans": [
+        [
+          "판다는 브루클린 사장님",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 0
+    },
+    {
+      "a": 3.033333333333333,
+      "b": 4.566666666666666,
+      "spans": [
+        [
+          "세상에!",
+          "cyan"
+        ]
+      ],
+      "krw": "",
+      "solo": true,
+      "item": 1
+    },
+    {
+      "a": 4.566666666666666,
+      "b": 5.8,
+      "spans": [
+        [
+          "끝내주는",
+          "yellow"
+        ],
+        [
+          " 피자네",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 1
+    },
+    {
+      "a": 5.8,
+      "b": 7.033333333333333,
+      "spans": [
+        [
+          "하지만 냉동 피자는",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 2
+    },
+    {
+      "a": 7.033333333333333,
+      "b": 8.866666666666667,
+      "spans": [
+        [
+          "경쟁이 치열하기로",
+          "red"
+        ],
+        [
+          "\n유명한 시장인데",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 2
+    },
+    {
+      "a": 8.866666666666667,
+      "b": 9.966666666666667,
+      "spans": [
+        [
+          "피자는 ",
+          "white"
+        ],
+        [
+          "흔한 상품",
+          "yellow"
+        ],
+        [
+          "이에요",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 3
+    },
+    {
+      "a": 9.966666666666667,
+      "b": 12.366666666666667,
+      "spans": [
+        [
+          "크고 작은 회사가\n",
+          "white"
+        ],
+        [
+          "수백 곳",
+          "red"
+        ],
+        [
+          "이에요",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 3
+    },
+    {
+      "a": 12.366666666666667,
+      "b": 13.266666666666667,
+      "spans": [
+        [
+          "화덕에 구운 피자를",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 4
+    },
+    {
+      "a": 13.266666666666667,
+      "b": 14.766666666666667,
+      "spans": [
+        [
+          "급속 냉동",
+          "cyan"
+        ],
+        [
+          "해\n마트에 넣었다는데",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 4
+    },
+    {
+      "a": 14.766666666666667,
+      "b": 16.666666666666668,
+      "spans": [
+        [
+          "마트 ",
+          "white"
+        ],
+        [
+          "250곳",
+          "yellow"
+        ],
+        [
+          "에\n들어가 있어요",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 5
+    },
+    {
+      "a": 16.666666666666668,
+      "b": 18.400000000000002,
+      "spans": [
+        [
+          "홀푸드",
+          "green"
+        ],
+        [
+          " 같은 곳이요",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 5
+    },
+    {
+      "a": 18.400000000000002,
+      "b": 19.933333333333337,
+      "spans": [
+        [
+          "지금까지 총매출이\n",
+          "white"
+        ],
+        [
+          "26만 달러",
+          "yellow"
+        ],
+        [
+          "예요",
+          "white"
+        ]
+      ],
+      "krw": "약 3억 5,256만 원",
+      "solo": false,
+      "item": 6
+    },
+    {
+      "a": 19.933333333333337,
+      "b": 20.900000000000002,
+      "spans": [
+        [
+          "그런데 투자자들은",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 7
+    },
+    {
+      "a": 20.900000000000002,
+      "b": 22.400000000000006,
+      "spans": [
+        [
+          "치명적인 문제",
+          "red"
+        ],
+        [
+          "를\n발견하는데",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 7
+    },
+    {
+      "a": 22.400000000000006,
+      "b": 24.933333333333337,
+      "spans": [
+        [
+          "지금은 저희 ",
+          "white"
+        ],
+        [
+          "가게",
+          "yellow"
+        ],
+        [
+          "에서\n피자를 만들어요",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 8
+    },
+    {
+      "a": 24.933333333333337,
+      "b": 26.200000000000006,
+      "spans": [
+        [
+          "그게 문제네요",
+          "red"
+        ]
+      ],
+      "krw": "",
+      "solo": true,
+      "item": 8
+    },
+    {
+      "a": 26.200000000000006,
+      "b": 28.900000000000006,
+      "spans": [
+        [
+          "어디까지가 ",
+          "white"
+        ],
+        [
+          "우리",
+          "yellow"
+        ],
+        [
+          " 피자고",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 9
+    },
+    {
+      "a": 28.900000000000006,
+      "b": 29.966666666666672,
+      "spans": [
+        [
+          "어디까지가 ",
+          "white"
+        ],
+        [
+          "당신",
+          "yellow"
+        ],
+        [
+          " 건가요?",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 9
+    },
+    {
+      "a": 29.966666666666672,
+      "b": 31.33333333333334,
+      "spans": [
+        [
+          "너무 ",
+          "white"
+        ],
+        [
+          "위험해",
+          "red"
+        ],
+        [
+          " 보여요",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 10
+    },
+    {
+      "a": 31.33333333333334,
+      "b": 32.13333333333334,
+      "spans": [
+        [
+          "전 빠질게요",
+          "red"
+        ]
+      ],
+      "krw": "",
+      "solo": true,
+      "item": 10
+    },
+    {
+      "a": 32.13333333333334,
+      "b": 33.63333333333334,
+      "spans": [
+        [
+          "그때 바바라가",
+          "white"
+        ],
+        [
+          "\n",
+          "white"
+        ],
+        [
+          "첫 제안",
+          "yellow"
+        ],
+        [
+          "을 던지는데",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 11
+    },
+    {
+      "a": 33.63333333333334,
+      "b": 35.10000000000001,
+      "spans": [
+        [
+          "20만 달러",
+          "yellow"
+        ],
+        [
+          "에\n지분 ",
+          "white"
+        ],
+        [
+          "30%",
+          "red"
+        ],
+        [
+          " 주세요",
+          "white"
+        ]
+      ],
+      "krw": "약 2억 7,120만 원",
+      "solo": false,
+      "item": 12
+    },
+    {
+      "a": 35.10000000000001,
+      "b": 36.26666666666667,
+      "spans": [
+        [
+          "아야!",
+          "red"
+        ]
+      ],
+      "krw": "",
+      "solo": true,
+      "item": 12
+    },
+    {
+      "a": 36.26666666666667,
+      "b": 38.2,
+      "spans": [
+        [
+          "피자 한 조각",
+          "yellow"
+        ],
+        [
+          "을\n통째로 가져갔네",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 13
+    },
+    {
+      "a": 38.2,
+      "b": 39.16666666666667,
+      "spans": [
+        [
+          "케빈은 지분 대신",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 14
+    },
+    {
+      "a": 39.16666666666667,
+      "b": 41.300000000000004,
+      "spans": [
+        [
+          "한 조각에 25센트",
+          "cyan"
+        ],
+        [
+          "씩",
+          "white"
+        ],
+        [
+          "\n",
+          "white"
+        ],
+        [
+          "받겠다는데",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 14
+    },
+    {
+      "a": 41.300000000000004,
+      "b": 42.366666666666674,
+      "spans": [
+        [
+          "그건 ",
+          "white"
+        ],
+        [
+          "사채업자",
+          "red"
+        ],
+        [
+          "잖아요",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 15
+    },
+    {
+      "a": 42.366666666666674,
+      "b": 43.63333333333334,
+      "spans": [
+        [
+          "그 돈은 ",
+          "white"
+        ],
+        [
+          "동네",
+          "yellow"
+        ],
+        [
+          "에서도\n빌릴 수 있어요",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 15
+    },
+    {
+      "a": 43.63333333333334,
+      "b": 44.83333333333334,
+      "spans": [
+        [
+          "그런데 이때 로리가",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 16
+    },
+    {
+      "a": 44.83333333333334,
+      "b": 45.93333333333334,
+      "spans": [
+        [
+          "더 큰 돈",
+          "pink"
+        ],
+        [
+          "을 꺼내는데",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 16
+    },
+    {
+      "a": 45.93333333333334,
+      "b": 47.56666666666667,
+      "spans": [
+        [
+          "25만 달러",
+          "yellow"
+        ],
+        [
+          "를 드릴게요",
+          "white"
+        ],
+        [
+          "\n",
+          "white"
+        ],
+        [
+          "지분은 ",
+          "white"
+        ],
+        [
+          "20%",
+          "yellow"
+        ],
+        [
+          "요",
+          "white"
+        ]
+      ],
+      "krw": "약 3억 3,900만 원",
+      "solo": false,
+      "item": 17
+    },
+    {
+      "a": 47.56666666666667,
+      "b": 48.5,
+      "spans": [
+        [
+          "사장님이 지분을",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 18
+    },
+    {
+      "a": 48.5,
+      "b": 50.06666666666667,
+      "spans": [
+        [
+          "19%",
+          "yellow"
+        ],
+        [
+          "까지 깎아 내자",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 18
+    },
+    {
+      "a": 50.06666666666667,
+      "b": 51.26666666666667,
+      "spans": [
+        [
+          "내가 ",
+          "white"
+        ],
+        [
+          "더 좋은 조건",
+          "yellow"
+        ],
+        [
+          " 줄게요",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 19
+    },
+    {
+      "a": 51.26666666666667,
+      "b": 52.300000000000004,
+      "spans": [
+        [
+          "계약하죠!",
+          "green"
+        ]
+      ],
+      "krw": "",
+      "solo": true,
+      "item": 19
+    },
+    {
+      "a": 52.300000000000004,
+      "b": 54.7,
+      "spans": [
+        [
+          "방송 뒤 로리와의\n계약은 ",
+          "white"
+        ],
+        [
+          "성사되지 않았고",
+          "red"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 20
+    },
+    {
+      "a": 54.7,
+      "b": 56.333333333333336,
+      "spans": [
+        [
+          "지금은 브루클린\n매장 ",
+          "white"
+        ],
+        [
+          "3곳",
+          "yellow"
+        ],
+        [
+          "과",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 20
+    },
+    {
+      "a": 56.333333333333336,
+      "b": 58.7,
+      "spans": [
+        [
+          "전국 마트",
+          "green"
+        ],
+        [
+          "에서\n냉동 피자를 판다고",
+          "white"
+        ]
+      ],
+      "krw": "",
+      "solo": false,
+      "item": 20
+    }
+  ],
+  "circles": [],
+  "ass_head": [
+    "[Script Info]",
+    "ScriptType: v4.00+",
+    "PlayResX: 1080",
+    "PlayResY: 1920",
+    "WrapStyle: 2",
+    "ScaledBorderAndShadow: yes",
+    "",
+    "[V4+ Styles]",
+    "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
+    "Style: Title,Cafe24 Ohsquare,128,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,0,3,5,0,0,0,1",
+    "Style: Narr,Cafe24 Ohsquare,88,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1",
+    "",
+    "[Events]",
+    "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"
+  ],
+  "sub_pos": [
+    540,
+    960
+  ],
+  "sub_an": 5
+}

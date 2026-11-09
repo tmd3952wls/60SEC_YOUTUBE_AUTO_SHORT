@@ -1,0 +1,59 @@
+{
+ "text": "그런데 가장 비싼 조건을 건 데이먼드에게 오히려 흥정을 거는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "가장",
+   "start": 0.302,
+   "end": 0.463,
+   "aligned": true
+  },
+  {
+   "word": "비싼",
+   "start": 0.543,
+   "end": 0.704,
+   "aligned": true
+  },
+  {
+   "word": "조건을",
+   "start": 0.765,
+   "end": 0.966,
+   "aligned": true
+  },
+  {
+   "word": "건",
+   "start": 1.046,
+   "end": 1.127,
+   "aligned": true
+  },
+  {
+   "word": "데이먼드에게",
+   "start": 1.207,
+   "end": 1.73,
+   "aligned": true
+  },
+  {
+   "word": "오히려",
+   "start": 1.871,
+   "end": 2.012,
+   "aligned": true
+  },
+  {
+   "word": "흥정을",
+   "start": 2.073,
+   "end": 2.334,
+   "aligned": true
+  },
+  {
+   "word": "거는데",
+   "start": 2.394,
+   "end": 2.696,
+   "aligned": true
+  }
+ ]
+}

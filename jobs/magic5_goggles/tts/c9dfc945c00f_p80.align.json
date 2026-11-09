@@ -1,0 +1,59 @@
+{
+ "text": "지분 3%까지 내려간 쟁탈전 끝에 한 투자자가 판을 엎는데",
+ "words": [
+  {
+   "word": "지분",
+   "start": 0.04,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "3%까지",
+   "start": 0.261,
+   "end": 0.944,
+   "aligned": true
+  },
+  {
+   "word": "내려간",
+   "start": 1.005,
+   "end": 1.226,
+   "aligned": true
+  },
+  {
+   "word": "쟁탈전",
+   "start": 1.286,
+   "end": 1.607,
+   "aligned": true
+  },
+  {
+   "word": "끝에",
+   "start": 1.688,
+   "end": 1.929,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 2.15,
+   "end": 2.21,
+   "aligned": true
+  },
+  {
+   "word": "투자자가",
+   "start": 2.331,
+   "end": 2.612,
+   "aligned": true
+  },
+  {
+   "word": "판을",
+   "start": 2.753,
+   "end": 2.914,
+   "aligned": true
+  },
+  {
+   "word": "엎는데",
+   "start": 2.974,
+   "end": 3.195,
+   "aligned": true
+  }
+ ]
+}

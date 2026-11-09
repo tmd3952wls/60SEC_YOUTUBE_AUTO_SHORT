@@ -1,0 +1,53 @@
+{
+ "text": "근데 투자자 넷이 줄줄이 빠지고 한 명만 남았는데",
+ "words": [
+  {
+   "word": "근데",
+   "start": 0.0,
+   "end": 0.243,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 0.303,
+   "end": 0.505,
+   "aligned": true
+  },
+  {
+   "word": "넷이",
+   "start": 0.526,
+   "end": 0.647,
+   "aligned": true
+  },
+  {
+   "word": "줄줄이",
+   "start": 0.667,
+   "end": 0.728,
+   "aligned": true
+  },
+  {
+   "word": "빠지고",
+   "start": 0.788,
+   "end": 0.95,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 0.97,
+   "end": 0.991,
+   "aligned": true
+  },
+  {
+   "word": "명만",
+   "start": 1.051,
+   "end": 1.213,
+   "aligned": true
+  },
+  {
+   "word": "남았는데",
+   "start": 1.253,
+   "end": 1.455,
+   "aligned": true
+  }
+ ]
+}

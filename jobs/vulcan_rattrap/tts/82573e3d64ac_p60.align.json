@@ -1,0 +1,41 @@
+{
+ "text": "쥐를 한 번에 30마리 잡는 쥐덫",
+ "words": [
+  {
+   "word": "쥐를",
+   "start": 0.081,
+   "end": 0.244,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 0.304,
+   "end": 0.386,
+   "aligned": true
+  },
+  {
+   "word": "번에",
+   "start": 0.467,
+   "end": 0.589,
+   "aligned": true
+  },
+  {
+   "word": "30마리",
+   "start": 0.609,
+   "end": 1.015,
+   "aligned": true
+  },
+  {
+   "word": "잡는",
+   "start": 1.056,
+   "end": 1.259,
+   "aligned": true
+  },
+  {
+   "word": "쥐덫",
+   "start": 1.36,
+   "end": 1.543,
+   "aligned": true
+  }
+ ]
+}

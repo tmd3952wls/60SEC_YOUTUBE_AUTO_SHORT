@@ -1,0 +1,35 @@
+{
+ "text": "로버트는 5%에 로열티 없이 부르고",
+ "words": [
+  {
+   "word": "로버트는",
+   "start": 0.04,
+   "end": 0.404,
+   "aligned": true
+  },
+  {
+   "word": "5%에",
+   "start": 0.827,
+   "end": 1.049,
+   "aligned": true
+  },
+  {
+   "word": "로열티",
+   "start": 1.11,
+   "end": 1.352,
+   "aligned": true
+  },
+  {
+   "word": "없이",
+   "start": 1.392,
+   "end": 1.553,
+   "aligned": true
+  },
+  {
+   "word": "부르고",
+   "start": 1.614,
+   "end": 1.836,
+   "aligned": true
+  }
+ ]
+}

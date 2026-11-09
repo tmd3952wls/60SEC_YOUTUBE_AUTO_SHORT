@@ -1,0 +1,47 @@
+{
+ "text": "이 버튼을 누르면 스마트폰으로 영상 전화가 오고",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.04,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "버튼을",
+   "start": 0.162,
+   "end": 0.404,
+   "aligned": true
+  },
+  {
+   "word": "누르면",
+   "start": 0.465,
+   "end": 0.747,
+   "aligned": true
+  },
+  {
+   "word": "스마트폰으로",
+   "start": 0.848,
+   "end": 1.293,
+   "aligned": true
+  },
+  {
+   "word": "영상",
+   "start": 1.353,
+   "end": 1.555,
+   "aligned": true
+  },
+  {
+   "word": "전화가",
+   "start": 1.595,
+   "end": 1.797,
+   "aligned": true
+  },
+  {
+   "word": "오고",
+   "start": 1.838,
+   "end": 1.959,
+   "aligned": true
+  }
+ ]
+}

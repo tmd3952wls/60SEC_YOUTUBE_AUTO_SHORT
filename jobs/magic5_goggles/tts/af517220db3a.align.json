@@ -1,0 +1,29 @@
+{
+ "text": "기업가치로 치면 약 270억인데",
+ "words": [
+  {
+   "word": "기업가치로",
+   "start": 0.02,
+   "end": 0.444,
+   "aligned": true
+  },
+  {
+   "word": "치면",
+   "start": 0.525,
+   "end": 0.747,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 0.827,
+   "end": 1.15,
+   "aligned": true
+  },
+  {
+   "word": "270억인데",
+   "start": 1.352,
+   "end": 1.715,
+   "aligned": true
+  }
+ ]
+}

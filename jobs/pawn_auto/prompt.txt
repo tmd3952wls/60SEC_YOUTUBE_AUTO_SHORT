@@ -1,0 +1,244 @@
+너는 조회수 수백만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+미국 리얼리티쇼(샤크탱크, 전당포 사나이들 등)의 원본 대사 전사본을 받아서,
+**한국어 TTS 내레이션 + 원본 대사(한국어 자막)** 가 번갈아 나오는 45~58초짜리 쇼츠 대본을 만든다.
+
+## 반드시 지킬 구성 공식
+1. **0~2초 훅(내레이션)**: 결과·숫자·반전을 미리 던지는 한 문장. 예) "평범해 보이는 치킨으로 무려 100만 달러를 제안받은 이들이 있습니다"
+2. **바로 이어서 원본 리액션 한 마디(clip)**: 가장 임팩트 있는 짧은 대사/웃음/놀람 (1~3초)
+3. **상황 설명**: 내레이션과 원본 대사를 3~6초 단위로 교차. 내레이션은 원본이 이미 말한 내용을 반복하지 말고 *맥락만* 채운다.
+4. **반전**: "하지만", "그런데" 로 시작하는 내레이션 → 반전 대사 clip
+5. **클라이맥스**: 협상/감정 장면은 원본 대사를 길게 살린다(clip 여러 줄).
+6. **마무리**: 결과 + 후일담/한 줄 코멘트. "~했다고 하네요", "~진짜 똑 부러지네요" 같은 구어체.
+
+## 사실성 규칙 (매우 중요)
+- 결과(최종 거래 금액, 투자 성사 여부 등)는 반드시 전사본에 나온 내용만 쓴다. 지어내지 마라.
+- 전사본이 결과 전에 끝나면 결과를 단정하지 말고 "과연 거래는 성사됐을까요?" 처럼 궁금증으로 끝낸다.
+- 마지막 내레이션은 결과 + 그 결과에 대한 한 줄 코멘트. 코멘트는 이 영상 내용에 맞게 새로 쓴다.
+- 이 문서의 예시 문장("똑 부러지네요", "100만 달러를 제안받은" 등)은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 문체 규칙
+- 내레이션 한 문장은 25자 이내, 구어체 존댓말("~는데요", "~했죠", "~합니다"). 문장 끝을 "~는데" 로 끊어 다음 컷으로 넘기는 연결을 자주 쓴다.
+- 달러 금액은 "20만 달러"처럼 한국식 단위로. 필요하면 원화 환산("약 2억 원")을 덧붙인다.
+- 대사 자막(subs)은 직역 말고 자연스러운 한국어 구어체 의역, 한 항목 30자 이내. 짧은 감탄은 "와우", "말도 안 돼" 처럼.
+- 내레이션 전체 글자 수 합계는 대략 150~230자 (TTS 1.2배속 기준 약 20~30초).
+- 전체 길이(내레이션 + clip 길이 합)는 58초를 넘기면 안 된다. clip 길이는 전사본의 start/end 로 계산하라.
+
+## 강조어 표시 [ ]
+- 내레이션 text 와 대사 subs 에서 핵심 숫자·금액·충격 단어를 대괄호로 감싼다. 화면에서 색이 바뀐다.
+  예) "평범해 보이는 치킨으로 무려 [100만 달러를] 제안받은 이들이 있습니다"
+- 대괄호는 반드시 어절에 붙여 쓴다("[100만 달러를]" O, "[ 100만 ]" X). 한 문장에 0~1개, 전체 6~10개.
+
+## 상단 제목(title_lines)
+- 2줄, 각 줄 12자 이내. 1줄은 상황, 2줄은 강조(반전/숫자/감정). 예) ["떡잎부터 남다른", "꼬마 CEO"], ["농담인줄 알았던", "물건의 소름돋는 반전"]
+- color: 1줄은 "white" 또는 "yellow", 2줄은 "red" / "cyan" / "orange" 중 하나.
+
+## 효과음(sfx) / 감정 태그(tag)
+- sfx 는 각 세그먼트 시작 시점에 한 번 재생된다. 선택지: "whoosh"(장면 전환/훅), "pop"(가벼운 강조), "ding"(숫자·가격 공개), "boom"(반전·충격), null. 전체 4~7개만, 남발 금지.
+- tag 는 clip 에만, 화면 좌상단에 뜨는 짧은 감정 표시. 예) "(황당)", "(당황)", "ㅋㅋㅋ", "(소름)". 전체 0~3개.
+
+## 출력 형식 — JSON 하나만 출력 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "white"}, {"text": "...", "color": "red"}],
+  "credit": "© 원본 방송사 이름",
+  "upload": {"title": "유튜브 제목 (40자 이내, 호기심 유발)", "description": "2~3문장 요약 + 해시태그 3~5개", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "tag": null}
+  ]
+}
+
+- narration.broll_id: 내레이션이 나오는 동안 보여줄 화면이 시작되는 전사 id (그 장면 내용과 내레이션이 맞도록 고른다). 같은 broll_id 를 반복하지 마라.
+- clip.from_id ~ to_id: 연속된 전사 id 범위. subs 길이는 (to_id - from_id + 1) 과 정확히 같아야 한다. 대사를 빼고 싶은 줄은 ""(빈 문자열).
+- clip 끼리, narration broll 끼리 시간 순서는 원본 순서를 대체로 따른다(훅은 예외).
+
+## 원본 정보
+프로그램/맥락 메모: 전당포 사나이들(Pawn Stars), 판매자 예상보다 감정가가 훨씬 높게 나온 물건
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [0.8-4.7] How's it going? Good. How can I help you? Um, I actually think I can help you
+1 [4.7-9.0] I have what I'm hoping is a very very old very rare coin
+2 [9.5-13.0] Cool. I figured I'd come in and see if it's worth what I think it's worth
+3 [13.5-16.3] Which is a substantial amount. Okay
+4 [17.9-19.9] It sounds like you're in the sales business I
+5 [22.4-23.9] Actually know very little about the coin
+6 [23.9-28.4] I got it from a family member who purchased it at an auction about 30 years ago the little bit of research
+7 [28.4-30.6] that I did, the value is very extensive.
+8 [30.6-33.0] So I'm kind of shooting for about 20 grand.
+9 [33.0-35.7] I don't think it's unreasonable for me to ask for that.
+10 [35.7-38.3] Okay.
+11 [38.3-39.8] I mean, this is really, really cool.
+12 [39.8-41.0] How'd you get it?
+13 [41.0-42.8] From my understanding, it was purchased in auction
+14 [42.8-43.7] 30 years ago.
+15 [43.7-44.5] I got it in a will.
+16 [44.5-45.7] Okay.
+17 [45.7-46.5] It's a little weird.
+18 [46.5-48.7] I can guarantee you it's from the Eastern Mediterranean.
+19 [48.7-49.6] Okay.
+20 [49.6-51.6] And there's literally hundreds,
+21 [51.6-53.9] if not over 1,000 coins like this.
+22 [53.9-55.5] They're all from different city states,
+23 [55.5-56.4] different countries,
+24 [56.4-58.9] Egypt, Greece, Sicily.
+25 [58.9-61.1] They put their own faces on it and everything else like that.
+26 [61.1-63.7] But basically the same amount of silver, same weight.
+27 [63.7-66.9] So it made trade really easy between those cities.
+28 [66.9-68.2] Right.
+29 [68.2-70.3] That's one of the parts that gets confusing with these coins
+30 [70.3-73.5] is dating them and figuring out which city it came from.
+31 [73.5-76.3] There's tons of little ones, but the big ones like this,
+32 [76.3-78.0] there's not a whole lot of them.
+33 [78.0-81.9] What you have here can be worth a lot of money.
+34 [81.9-86.1] These things go from anywhere from $10,000 to $100,000.
+35 [86.1-87.6] I could live with that.
+36 [87.6-90.2] But there's 500 fakes for every real one.
+37 [90.2-94.7] A couple thousand years ago,
+38 [94.7-96.9] cities were making their own coins.
+39 [96.9-99.7] And most large coins like this didn't survive.
+40 [99.7-101.2] When that city was conquered,
+41 [101.2-102.8] they'd usually take all those coins,
+42 [102.8-104.8] melt them down and make their own coins.
+43 [104.8-105.7] If this thing is real,
+44 [105.7-106.8] I imagine it's pretty rare
+45 [106.8-109.5] it could be worth a big chunk of change.
+46 [109.5-111.8] How much do you want for it?
+47 [111.8-113.8] Completely honest, was hoping about 20 grand.
+48 [113.8-114.7] Okay.
+49 [114.7-115.9] And like you said, between 10 and 100,
+50 [115.9-117.4] so I figure right now we're at the low end.
+51 [117.4-121.8] I could probably go higher.
+52 [121.8-124.9] You know, my big concerns are it's like it's in really good shape.
+53 [124.9-125.6] No, absolutely.
+54 [125.6-126.2] OK.
+55 [126.2-127.2] It's struck really well.
+56 [127.2-130.1] Most of these coins, the figure on the front
+57 [130.1-132.1] and these figures on the back are way off-center
+58 [132.1-134.3] because they had the coin dies.
+59 [134.3-136.8] And they put a silver slug in them.
+60 [136.8-140.7] And they stood back five feet with a five foot long hammer.
+61 [140.7-142.4] And then they had to strike them a few times.
+62 [142.4-142.9] OK.
+63 [142.9-145.9] So generally, when it's too good to be true,
+64 [145.9-147.7] I mean, there's a chance this could be real.
+65 [147.7-153.3] but I'm assuming it's fake.
+66 [153.3-154.6] I firmly believe this one's real.
+67 [154.6-157.8] Like, a person who had it actually was an avid collector,
+68 [157.8-160.1] so I don't believe he would have had it if it was fake.
+69 [160.1-161.4] So do you have any paperwork with it?
+70 [161.4-163.6] I do not, no, not personally.
+71 [163.6-165.0] Let me have someone take a look at it.
+72 [165.0-167.2] I have a friend of mine who this is basically
+73 [167.2-168.8] what he deals with is agent coins,
+74 [168.8-171.2] and you need a guy much nerdier than I am
+75 [171.2-172.4] to tell you everything about it.
+76 [172.4-174.1] I think you're doing pretty good as far as being a nerd,
+77 [174.1-176.2] but if you want to bring in a better one, great.
+78 [176.2-178.8] Just give me five minutes, I'm gonna take some more.
+79 [178.8-180.2] No problem, thank you.
+80 [180.2-182.6] He's calling in an expert, which is only gonna help my team.
+81 [182.6-184.4] Like, I know this thing's real.
+82 [184.4-186.4] I have a feeling that he's gonna be pleasantly surprised.
+83 [186.4-187.2] This is the deal.
+84 [188.7-189.5] Is it real?
+85 [190.4-191.7] Wow.
+86 [191.7-193.9] The Syracuse Decadram.
+87 [193.9-195.6] I just know there's like 500 takes of these
+88 [195.6-196.7] for every real one.
+89 [196.7-199.7] The Decadrams of Syracuse are among the most sought after
+90 [199.7-201.1] of all ancient coins.
+91 [201.1-203.9] So if this is real, this is a homerun.
+92 [203.9-204.7] What year?
+93 [205.8-209.5] 400 to 360 BC, right in that range.
+94 [209.5-210.4] Yeah.
+95 [210.4-211.2] Okay.
+96 [211.2-212.8] This is a chariot scene.
+97 [212.8-215.2] Crowning the victorious charioteer.
+98 [215.2-216.8] So who's the person on the front?
+99 [216.8-220.4] This lady is Arathusa, a water nymph.
+100 [220.4-222.8] You know, fresh water was very important to the ancients
+101 [222.8-226.2] and they revered it and they had nymphs that represented it.
+102 [226.2-228.0] He was the only he would know.
+103 [228.0-229.6] You brought another shit nerd, yes.
+104 [229.6-231.0] Yeah.
+105 [231.0-232.3] So is it real?
+106 [232.3-233.4] Let me take a look.
+107 [233.4-236.0] If it's real, it's worth a pretty penny.
+108 [245.6-250.8] Okay, I have news.
+109 [250.8-252.8] It's absolutely genuine.
+110 [252.8-253.8] Absolutely genuine.
+111 [253.8-254.8] That's awesome.
+112 [254.8-255.9] All the features line up.
+113 [255.9-258.3] It has great metal quality.
+114 [258.3-259.8] The strike is excellent.
+115 [259.8-262.7] And cast counterfeits have a soapy look to them.
+116 [262.7-265.0] On this coin, everything was razor sharp.
+117 [265.0-269.2] So how much money we got here?
+118 [269.2-272.9] This one looks to me like a solid $50,000.
+119 [272.9-274.3] Wow.
+120 [274.3-275.5] Almost right on the mark.
+121 [275.5-277.8] I might hug you.
+122 [277.8-279.4] In that case, it's fake.
+123 [279.4-281.5] All right, you're the best, man.
+124 [281.5-282.6] All righty, man.
+125 [282.6-284.4] I know Rick loves these coins,
+126 [284.4-286.1] and usually their counterfeit,
+127 [286.1-288.1] this one happens to be genuine,
+128 [288.1-290.1] so if you can pick it up at the right price,
+129 [290.1-291.8] I think it's a good purchase.
+130 [291.8-295.1] He's at the price, so go ahead, that's fine.
+131 [295.1-297.4] No, I mean, that's what I can get out of it.
+132 [297.4-300.4] Right.
+133 [300.4-302.3] I'll give you 35 grand for it,
+134 [302.3-304.4] which is more than you were looking to get for earlier.
+135 [304.4-306.9] But then I'm leaving like that.
+136 [306.9-307.9] You're not leaving anything on the table.
+137 [307.9-310.4] You know who's gonna buy it for more?
+138 [310.4-312.0] Not personally, but...
+139 [312.0-313.4] Maybe one out of a thousand people
+140 [313.4-315.6] will spend $50,000 on a collectible something
+141 [315.6-317.2] or the other.
+142 [317.2-320.5] I mean, $50,000 down to $35,000.
+143 [320.5-324.2] I just believe that we can meet in the middle somewhere.
+144 [324.2-325.3] Well, you're in it, nothing.
+145 [325.3-326.5] Yeah. Yeah, right?
+146 [326.5-329.9] Exactly. But still, that's not, I mean...
+147 [329.9-331.6] Auctions cost money.
+148 [331.6-332.8] They're real creative with the fees.
+149 [332.8-335.6] I mean, they're worse than banks.
+150 [335.6-337.4] I'll tell you what, I'll give you $40,000.
+151 [337.4-339.6] Anything more than that makes zero sense for me,
+152 [339.6-340.9] and that's what you can get.
+153 [340.9-348.1] Okay, 40,000's fair.
+154 [348.1-350.5] Okay, all right, cool, man, this is great.
+155 [350.5-352.0] Do I get one of those big checks?
+156 [352.0-353.4] No.
+157 [353.4-354.9] Although I could do the responsible thing
+158 [354.9-357.9] and put the $40,000 towards college funds for the kids,
+159 [357.9-359.2] maybe we'll take a family vacation.
+160 [359.2-361.1] There's nothing wrong with having a little bit of fun.
+161 [361.1-363.9] Hey, a rifle, huh?
+162 [363.9-368.8] Well, check it out.
+163 [368.8-370.7] Oh, it's not a rifle.
+164 [370.7-371.6] That's a sword.
+165 [371.6-374.4] Yeah, sir.
+166 [374.4-376.5] What I have is a very old sword.
+167 [376.5-378.2] I got this from my grandfather.
+168 [378.2-380.2] He recently passed away.
+169 [380.2-381.5] I willed it to me.
+170 [381.5-382.9] I don't know much about this sword,
+171 [382.9-385.0] just that it's worth a lot of money.
+172 [385.0-386.7] I'm hoping to get 40,000 from it.
+173 [386.7-388.3] I really don't have much use for it.
+174 [388.3-390.3] And I really don't think he would mind
+175 [390.3-393.5] if I used it for a little bit of personal gain.
+176 [393.5-395.8] It looks pretty cool.
+177 [395.8-397.7] Do you know what it is?
+178 [397.7-400.3] I'm actually not too sure.
+179 [400.3-403.1] I know my grandfather got it at an auction.
+180 [403.1-404.3] I just know that it's valuable.
+181 [404.3-406.0] That's pretty much it, so.
+182 [406.0-407.8] At first glance, it's amazing.
+183 [407.8-408.9] It's very ornate.
+184 [408.9-412.9] It's got some very cool detail, like the head of Medusa,
+185 [412.9-417.0] what looks like a lion right here, a date of 1810 on it,
+186 [417.0-418.1] with some Russian writing.

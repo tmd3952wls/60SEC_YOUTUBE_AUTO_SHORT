@@ -1,0 +1,47 @@
+{
+ "text": "그런데 이때 쥐랑 같이 자랐다는 투자자가 나서는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "이때",
+   "start": 0.341,
+   "end": 0.663,
+   "aligned": true
+  },
+  {
+   "word": "쥐랑",
+   "start": 0.984,
+   "end": 1.185,
+   "aligned": true
+  },
+  {
+   "word": "같이",
+   "start": 1.265,
+   "end": 1.466,
+   "aligned": true
+  },
+  {
+   "word": "자랐다는",
+   "start": 1.506,
+   "end": 1.928,
+   "aligned": true
+  },
+  {
+   "word": "투자자가",
+   "start": 2.009,
+   "end": 2.35,
+   "aligned": true
+  },
+  {
+   "word": "나서는데",
+   "start": 2.39,
+   "end": 2.812,
+   "aligned": true
+  }
+ ]
+}

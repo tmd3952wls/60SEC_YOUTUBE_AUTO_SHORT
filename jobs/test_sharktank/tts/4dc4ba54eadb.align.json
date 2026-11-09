@@ -1,0 +1,47 @@
+{
+ "text": "돈은 더 받고 지분은 덜 주는 조건이었죠",
+ "words": [
+  {
+   "word": "돈은",
+   "start": 0.02,
+   "end": 0.221,
+   "aligned": true
+  },
+  {
+   "word": "더",
+   "start": 0.302,
+   "end": 0.362,
+   "aligned": true
+  },
+  {
+   "word": "받고",
+   "start": 0.403,
+   "end": 0.725,
+   "aligned": true
+  },
+  {
+   "word": "지분은",
+   "start": 0.926,
+   "end": 1.188,
+   "aligned": true
+  },
+  {
+   "word": "덜",
+   "start": 1.269,
+   "end": 1.349,
+   "aligned": true
+  },
+  {
+   "word": "주는",
+   "start": 1.45,
+   "end": 1.55,
+   "aligned": true
+  },
+  {
+   "word": "조건이었죠",
+   "start": 1.611,
+   "end": 2.074,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "text": "얼굴은 다 다른데 수경은 한 사이즈라 물이 샌다고",
+ "words": [
+  {
+   "word": "얼굴은",
+   "start": 0.04,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "다",
+   "start": 0.342,
+   "end": 0.383,
+   "aligned": true
+  },
+  {
+   "word": "다른데",
+   "start": 0.443,
+   "end": 0.886,
+   "aligned": true
+  },
+  {
+   "word": "수경은",
+   "start": 1.128,
+   "end": 1.37,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 1.43,
+   "end": 1.511,
+   "aligned": true
+  },
+  {
+   "word": "사이즈라",
+   "start": 1.571,
+   "end": 1.853,
+   "aligned": true
+  },
+  {
+   "word": "물이",
+   "start": 1.894,
+   "end": 1.934,
+   "aligned": true
+  },
+  {
+   "word": "샌다고",
+   "start": 2.055,
+   "end": 2.337,
+   "aligned": true
+  }
+ ]
+}

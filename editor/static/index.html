@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>쇼츠 편집기</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 4.5h3.5v15H7zM13.5 4.5H17v15h-3.5z"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M18 5v14L8 12zM6 5v14"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M6 5v14l10-7zM18 5v14"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5zM8 4v5h7V4M8 20v-6h8v6"/></symbol>
+    <symbol id="i-render" viewBox="0 0 24 24"><path d="M4 6h16v12H4zM10 9.5v5l4.5-2.5z"/></symbol>
+    <symbol id="i-preview" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M6 14l6-6 6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 10l6 6 6-6"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4zM15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3.5L2.5 20h19zM12 10v4.5M12 17.2v.3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-log" viewBox="0 0 24 24"><path d="M5 5h14M5 10h14M5 15h9M5 20h6"/></symbol>
+  </defs>
+</svg>
+
+<header class="bar">
+  <div class="brand">쇼츠 편집기</div>
+  <label class="pick"><span class="pick-label">작업</span><select id="sel-job" aria-label="작업"></select></label>
+  <label class="pick"><span class="pick-label">편집본</span><select id="sel-edl" aria-label="편집본(EDL) 버전"></select></label>
+  <label class="pick"><span class="pick-label">영상</span><select id="sel-video" aria-label="미리 볼 영상"></select></label>
+  <div class="grow"></div>
+  <button class="task" id="task-chip" hidden><span class="spin" aria-hidden="true"></span><span id="task-text"></span></button>
+  <button class="btn" id="btn-preview" title="선택한 박자만 빠르게 렌더링 (저장하지 않은 내용 포함)"><svg><use href="#i-preview"/></svg>이 박자 미리보기</button>
+  <button class="btn" id="btn-save" title="새 버전으로 저장 (Ctrl+S)"><svg><use href="#i-save"/></svg>새 버전 저장<span class="dirty-count" id="dirty-count" hidden></span></button>
+  <button class="btn primary" id="btn-render"><svg><use href="#i-render"/></svg>전체 렌더링</button>
+  <button class="btn icon" id="btn-settings" title="설정" aria-label="설정"><svg><use href="#i-gear"/></svg></button>
+</header>
+
+<div class="banner" id="draft-banner" hidden>
+  <span>저장하지 않은 편집 내용이 남아 있습니다.</span>
+  <button class="btn small" id="draft-restore">불러오기</button>
+  <button class="btn small ghost" id="draft-discard">버리기</button>
+</div>
+
+<main class="work" id="work">
+  <aside class="side">
+    <div class="tabs" role="tablist">
+      <button role="tab" class="tab" aria-selected="true" data-tab="beats">박자</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="sfx">효과음</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="broll">실사용 영상</button>
+    </div>
+    <section class="pane" data-pane="beats">
+      <div class="title-edit">
+        <div class="field-label">영상 제목 (위쪽 2줄)</div>
+        <div id="title-rows"></div>
+      </div>
+      <ol class="beats" id="beat-list"></ol>
+    </section>
+    <section class="pane" data-pane="sfx" hidden>
+      <p class="hint">소리 버튼으로 들어 보고, "넣기"를 누르면 선택한 박자의 시작 효과음으로 고정됩니다.</p>
+      <div id="sfx-lib"></div>
+    </section>
+    <section class="pane" data-pane="broll" hidden>
+      <p class="hint">리뷰 영상 등에서 가져온 실사용 장면입니다. 장면 칸에서 "영상"을 바꿔 쓸 수 있습니다.</p>
+      <div id="broll-list"></div>
+    </section>
+  </aside>
+
+  <section class="stage">
+    <div class="frame" id="frame">
+      <video id="video" preload="metadata" playsinline></video>
+      <div class="frame-empty" id="frame-empty" hidden>아직 렌더링한 영상이 없습니다.<br>오른쪽 위 <b>전체 렌더링</b>을 누르세요.</div>
+    </div>
+    <div class="transport">
+      <button class="btn icon ghost" id="btn-prevbeat" title="이전 박자 (←)" aria-label="이전 박자"><svg><use href="#i-prev"/></svg></button>
+      <button class="btn icon play" id="btn-play" title="재생/정지 (Space)" aria-label="재생"><svg><use href="#i-play"/></svg></button>
+      <button class="btn icon ghost" id="btn-nextbeat" title="다음 박자 (→)" aria-label="다음 박자"><svg><use href="#i-next"/></svg></button>
+      <span class="tc"><span id="tc-now">0:00.00</span><span class="tc-sep">/</span><span id="tc-dur">0:00.00</span></span>
+      <span class="now-beat" id="now-beat"></span>
+    </div>
+    <div class="stale" id="stale-note" hidden></div>
+  </section>
+
+  <aside class="insp" id="insp" aria-label="박자 편집"></aside>
+</main>
+
+<section class="timeline" id="timeline" aria-label="타임라인">
+  <div class="tl-head">
+    <span class="tl-title">타임라인</span>
+    <span class="tl-src" id="tl-src"></span>
+    <div class="grow"></div>
+    <label class="zoom"><span>확대</span><input type="range" id="tl-zoom" min="20" max="240" value="70" aria-label="타임라인 확대"></label>
+  </div>
+  <div class="tl-body">
+    <div class="tl-labels">
+      <div class="tl-ruler-label"></div>
+      <div class="tl-label">영상</div>
+      <div class="tl-label">자막</div>
+      <div class="tl-label">목소리</div>
+      <div class="tl-label">효과음</div>
+    </div>
+    <div class="tl-scroll" id="tl-scroll">
+      <div class="tl-canvas" id="tl-canvas">
+        <div class="tl-ruler" id="tl-ruler"></div>
+        <div class="tl-track" id="trk-video"></div>
+        <div class="tl-track" id="trk-subs"></div>
+        <div class="tl-track" id="trk-voice"></div>
+        <div class="tl-track sfx" id="trk-sfx"></div>
+        <div class="tl-playhead" id="tl-playhead"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="settings" id="settings" hidden aria-label="설정">
+  <div class="settings-inner">
+    <button class="btn ghost" id="settings-back"><svg><use href="#i-back"/></svg>편집으로 돌아가기</button>
+    <h1>설정</h1>
+    <p class="lead">이 설정은 이 컴퓨터에만 저장됩니다. API 키는 화면에 다시 보여 주지 않고, 다른 사람에게 프로그램을 줄 때도 포함되지 않습니다.</p>
+
+    <div class="set-group">
+      <h2>API 키</h2>
+      <div id="set-keys"></div>
+    </div>
+    <div class="set-group">
+      <h2>목소리 (Typecast)</h2>
+      <label class="set-row"><span class="set-name">목소리 ID</span><input id="set-voice" class="input" spellcheck="false" placeholder="tc_로 시작하는 ID"></label>
+    </div>
+    <div class="set-group">
+      <h2>효과음 폴더</h2>
+      <label class="set-row"><span class="set-name">폴더 경로</span><input id="set-sfxdir" class="input" spellcheck="false" placeholder="예: C:/Users/이름/Desktop/효과음"></label>
+      <div class="set-row"><span class="set-name"></span><span id="set-sfxinfo" class="set-info"></span></div>
+      <div class="set-row"><span class="set-name"></span><button class="btn small" id="set-reindex">효과음 목록 다시 만들기</button></div>
+    </div>
+    <div class="set-group">
+      <h2>렌더링 스타일</h2>
+      <label class="set-row"><span class="set-name">스타일 프리셋</span><select id="set-preset" class="input"></select></label>
+      <div class="set-row"><span class="set-name"></span><ul id="set-rules" class="rules"></ul></div>
+    </div>
+    <div class="set-group">
+      <h2>필요한 프로그램</h2>
+      <div id="set-tools"></div>
+      <div class="set-row"><span class="set-name">작업 폴더</span><span id="set-jobs" class="set-info"></span></div>
+    </div>
+    <div class="set-actions"><button class="btn primary" id="set-save"><svg><use href="#i-save"/></svg>설정 저장</button><span id="set-msg" class="set-info"></span></div>
+  </div>
+</section>
+
+<div class="logbox" id="logbox" hidden>
+  <div class="logbox-head"><span id="logbox-title">작업 기록</span><button class="btn icon ghost small" id="logbox-close" aria-label="닫기"><svg><use href="#i-x"/></svg></button></div>
+  <pre id="logbox-pre"></pre>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<audio id="sfx-audio" preload="none"></audio>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

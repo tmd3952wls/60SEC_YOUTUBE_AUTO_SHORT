@@ -1,0 +1,716 @@
+{
+ "title_lines": [
+  {
+   "text": "투자자 셋이 달려든",
+   "color": "yellow"
+  },
+  {
+   "text": "냉동 피자의 정체?!",
+   "color": "white"
+  }
+ ],
+ "flash_alpha": 0.6,
+ "flash_sec": 0.4,
+ "krw_rate": "1달러=1,356원 (2026-11-06 매매기준율, vulcan_rattrap 과 같은 값)",
+ "structure_ref": "2jJoIbdciDY 19박자 뼈대",
+ "source": "https://www.youtube.com/watch?v=3GPpsLi3Ouk (Shark Tank Global, 2026-11-01 업로드, 58만 회)",
+ "items": [
+  {
+   "type": "narration",
+   "text": "석탄 화덕 피자를 [yellow:냉동]으로 판다는 브루클린 사장님",
+   "subs": [
+    "석탄 화덕 피자를|[yellow:냉동]으로",
+    "판다는 브루클린 사장님"
+   ],
+   "shots": [
+    {
+     "src": 50.6,
+     "crop": [
+      930,
+      600,
+      860
+     ],
+     "zoom": [
+      1.0,
+      1.08
+     ],
+     "why": "화덕 피자 만드는 손"
+    },
+    {
+     "src": 20.0,
+     "at_word": 3,
+     "crop": [
+      960,
+      460,
+      900
+     ],
+     "why": "사장님 토머스"
+    }
+   ],
+   "note": "B1 훅: 무엇을 파는 누구인지",
+   "sfx": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    37,
+    38
+   ],
+   "subs": [
+    {
+     "text": "[cyan:세상에!]",
+     "at_word": 0,
+     "solo": true
+    },
+    {
+     "text": "[yellow:끝내주는] 피자네",
+     "at_word": 3
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      870,
+      430,
+      860
+     ]
+    },
+    {
+     "src": "sync",
+     "crop": [
+      930,
+      420,
+      860
+     ],
+     "at_word": 3
+    }
+   ],
+   "note": "B2 리액션: 케빈 'Oh my God' → 로리 'That's good pie'",
+   "max_gap": 1.5,
+   "audio_end": 83.2,
+   "sfx": "ding"
+  },
+  {
+   "type": "narration",
+   "text": "하지만 냉동 피자는 [red:경쟁이 치열하기로] 유명한 시장인데",
+   "subs": [
+    "하지만 냉동 피자는",
+    "[red:경쟁이 치열하기로]|유명한 시장인데"
+   ],
+   "shots": [
+    {
+     "src": 143.0,
+     "crop": [
+      960,
+      540,
+      1080
+     ],
+     "why": "투자자 다섯 명 와이드"
+    },
+    {
+     "src": 269.5,
+     "at_word": 2,
+     "crop": [
+      900,
+      480,
+      1000
+     ],
+     "why": "투자자석 옆모습"
+    }
+   ],
+   "note": "B3 문제 제기",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    47,
+    49
+   ],
+   "word_range": [
+    0,
+    11
+   ],
+   "subs": [
+    {
+     "text": "피자는 [yellow:흔한 상품]이에요",
+     "at_word": 0
+    },
+    {
+     "text": "크고 작은 회사가|[red:수백 곳]이에요",
+     "at_word": 4
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      1200,
+      450,
+      860
+     ],
+     "why": "와이드 속 케빈"
+    },
+    {
+     "src": "sync",
+     "crop": [
+      930,
+      450,
+      880
+     ],
+     "at_word": 4,
+     "why": "토머스→케빈 단독"
+    }
+   ],
+   "note": "B4 투자자 지적(케빈)",
+   "sfx_word": 4,
+   "sfx2": "ding"
+  },
+  {
+   "type": "narration",
+   "text": "화덕에 구운 피자를 [cyan:급속 냉동]해 마트에 넣었다는데",
+   "subs": [
+    "화덕에 구운 피자를",
+    "[cyan:급속 냉동]해|마트에 넣었다는데"
+   ],
+   "shots": [
+    {
+     "src": 58.2,
+     "crop": [
+      1150,
+      520,
+      1000
+     ],
+     "why": "세트: 셰프와 토머스"
+    },
+    {
+     "src": 86.7,
+     "at_word": 3,
+     "crop": [
+      800,
+      540,
+      1000
+     ],
+     "zoom": [
+      1.0,
+      1.08
+     ],
+     "why": "포장된 냉동 조각 피자"
+    }
+   ],
+   "flash": "cyan",
+   "note": "B5 제품 요약 (~다는데)",
+   "sfx": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    58,
+    59
+   ],
+   "subs": [
+    {
+     "text": "마트 [yellow:250곳]에|들어가 있어요",
+     "at_word": 0
+    },
+    {
+     "text": "[green:홀푸드] 같은 곳이요",
+     "at_word": 9
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      930,
+      450,
+      880
+     ]
+    }
+   ],
+   "note": "B6 창업자 실적",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    68
+   ],
+   "subs": [
+    {
+     "text": "지금까지 총매출이|[yellow:3억 5천만 원]이에요",
+     "at_word": 0
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      990,
+      450,
+      880
+     ]
+    }
+   ],
+   "note": "B7 매출 (냉동 사업 9개월)",
+   "sfx_word": 5,
+   "sfx2": "ding"
+  },
+  {
+   "type": "narration",
+   "text": "그런데 투자자들은 [red:치명적인 문제]를 발견하는데",
+   "subs": [
+    "그런데 투자자들은",
+    "[red:치명적인 문제]를|발견하는데"
+   ],
+   "shots": [
+    {
+     "src": 108.0,
+     "crop": [
+      900,
+      450,
+      880
+     ],
+     "why": "케빈"
+    },
+    {
+     "src": 150.2,
+     "at_word": 2,
+     "crop": [
+      840,
+      450,
+      880
+     ],
+     "why": "로버트"
+    }
+   ],
+   "flash": "green",
+   "note": "B8 반전 예고",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    70,
+    71,
+    72
+   ],
+   "subs": [
+    {
+     "text": "지금은 저희 [yellow:가게]에서|피자를 만들어요",
+     "at_word": 0
+    },
+    {
+     "text": "[red:그게 문제네요]",
+     "at_word": 13,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      1100,
+      500,
+      1000
+     ]
+    },
+    {
+     "src": "sync",
+     "crop": [
+      1410,
+      450,
+      860
+     ],
+     "at_word": 13,
+     "why": "케빈 (바바라와 투샷)"
+    }
+   ],
+   "note": "B9 문제: 가게 주방에서 생산",
+   "audio_end": 154.3,
+   "sfx_word": 13,
+   "sfx2": "question"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    86,
+    87,
+    88
+   ],
+   "word_range": [
+    5,
+    99
+   ],
+   "subs": [
+    {
+     "text": "어디까지가 [yellow:우리] 피자고",
+     "at_word": 0
+    },
+    {
+     "text": "어디까지가 [yellow:당신] 건가요?",
+     "at_word": 11
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      840,
+      450,
+      880
+     ]
+    }
+   ],
+   "note": "B10 바바라의 날카로운 질문",
+   "sfx": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    162,
+    163
+   ],
+   "subs": [
+    {
+     "text": "너무 [red:위험해] 보여요",
+     "at_word": 0
+    },
+    {
+     "text": "[red:전 빠질게요]",
+     "at_word": 7,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      1100,
+      480,
+      1000
+     ]
+    }
+   ],
+   "note": "B12 로버트 아웃",
+   "audio_end": 322.95,
+   "sfx_word": 7,
+   "sfx2": "fail"
+  },
+  {
+   "type": "narration",
+   "text": "그때 바바라가 [yellow:첫 제안]을 던지는데",
+   "subs": [
+    "그때 바바라가",
+    "[yellow:첫 제안]을 던지는데"
+   ],
+   "shots": [
+    {
+     "src": 400.6,
+     "crop": [
+      840,
+      450,
+      880
+     ],
+     "why": "바바라"
+    }
+   ],
+   "note": "B13 제안 예고",
+   "sfx": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    213,
+    214
+   ],
+   "subs": [
+    {
+     "text": "[yellow:2억 7천만 원]에|지분 [red:30%] 주세요",
+     "at_word": 0
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      900,
+      450,
+      880
+     ]
+    }
+   ],
+   "note": "B14 바바라 제안 + 'Ouch' / v4: Whoa·Ouch(다른 사람 감탄사) 뺌",
+   "audio_end": 406.6,
+   "word_range": [
+    0,
+    6
+   ],
+   "sfx_word": 3,
+   "sfx2": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    218
+   ],
+   "subs": [
+    {
+     "text": "[yellow:피자 한 조각]을|통째로 가져갔네",
+     "at_word": 0
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      900,
+      450,
+      880
+     ]
+    }
+   ],
+   "note": "B15 케빈 농담",
+   "sfx": "pop"
+  },
+  {
+   "type": "narration",
+   "text": "케빈은 지분 대신 [cyan:한 조각에 340원]씩 받겠다는데",
+   "subs": [
+    "케빈은 지분 대신",
+    "[cyan:한 조각에 340원]씩",
+    "받겠다는데"
+   ],
+   "shots": [
+    {
+     "src": 458.0,
+     "crop": [
+      900,
+      430,
+      880
+     ],
+     "why": "케빈"
+    },
+    {
+     "src": 468.5,
+     "at_word": 3,
+     "crop": [
+      960,
+      450,
+      880
+     ],
+     "why": "토머스"
+    }
+   ],
+   "note": "B16 케빈 로열티 제안 (60만 달러 받을 때까지)",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    253,
+    254
+   ],
+   "subs": [
+    {
+     "text": "그건 [red:사채업자]잖아요",
+     "at_word": 0
+    },
+    {
+     "text": "그 돈은 [yellow:동네]에서도|빌릴 수 있어요",
+     "at_word": 5
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      600,
+      450,
+      880
+     ],
+     "why": "바바라(케빈과 투샷)"
+    },
+    {
+     "src": "sync",
+     "crop": [
+      1020,
+      400,
+      800
+     ],
+     "at_word": 5,
+     "why": "토머스, 아래 자막바 피함"
+    }
+   ],
+   "note": "B17 펀치라인 'loan shark'",
+   "sfx_word": 4,
+   "sfx2": "impact"
+  },
+  {
+   "type": "narration",
+   "text": "그런데 이때 로리가 [pink:더 큰 돈]을 꺼내는데",
+   "subs": [
+    "그런데 이때 로리가",
+    "[pink:더 큰 돈]을 꺼내는데"
+   ],
+   "shots": [
+    {
+     "src": 509.6,
+     "crop": [
+      900,
+      450,
+      880
+     ],
+     "why": "로리"
+    }
+   ],
+   "flash": "pink",
+   "note": "B18 반전 인물",
+   "sfx": "swell"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    271,
+    272,
+    273
+   ],
+   "word_range": [
+    6,
+    99
+   ],
+   "subs": [
+    {
+     "text": "[yellow:3억 4천만 원]을 드릴게요",
+     "at_word": 0
+    },
+    {
+     "text": "지분은 [yellow:20%]요",
+     "at_word": 6
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      900,
+      420,
+      840
+     ]
+    },
+    {
+     "src": "sync",
+     "crop": [
+      900,
+      420,
+      840
+     ],
+     "at_word": 6
+    }
+   ],
+   "note": "B19 로리 제안 / v4: 가운데 'Whoa'(다른 사람) 뺌, 단어 사이 0.6초까지 이어 붙여 끊김 방지",
+   "skip_words": [
+    6
+   ],
+   "max_gap": 0.6,
+   "sfx_word": 5,
+   "sfx2": "ding"
+  },
+  {
+   "type": "narration",
+   "text": "사장님이 지분을 [yellow:19%]까지 깎아 내자",
+   "subs": [
+    "사장님이 지분을",
+    "[yellow:19%]까지 깎아 내자"
+   ],
+   "shots": [
+    {
+     "src": 615.0,
+     "crop": [
+      960,
+      450,
+      880
+     ],
+     "why": "토머스"
+    }
+   ],
+   "note": "B20 협상 (Daily Meal, sharktankblog: 19%)",
+   "sfx": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    321
+   ],
+   "subs": [
+    {
+     "text": "[green:좋아요!]",
+     "at_word": 0,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      900,
+      420,
+      880
+     ]
+    }
+   ],
+   "audio_end": 622.6,
+   "note": "B21 로리 'Done.' (v4: 바바라의 'I have a better deal' 은 흐름이 끊겨 뺌)",
+   "sfx": "success"
+  },
+  {
+   "type": "narration",
+   "text": "방송 뒤 로리와의 계약은 [red:성사되지 않았고] 지금은 브루클린 매장 [yellow:3곳]과 [green:전국 마트]에서 냉동 피자를 판다고",
+   "subs": [
+    "방송 뒤 로리와의|계약은 [red:성사되지 않았고]",
+    "지금은 브루클린|매장 [yellow:3곳]과",
+    "[green:전국 마트]에서|냉동 피자를 판다고"
+   ],
+   "shots": [
+    {
+     "src": 639.0,
+     "crop": [
+      1000,
+      500,
+      1000
+     ],
+     "why": "셰프와 하이파이브"
+    },
+    {
+     "src": 151.8,
+     "at_word": 6,
+     "crop": [
+      1100,
+      460,
+      1000
+     ],
+     "why": "TABLE 87 FROZEN 간판 세트"
+    },
+    {
+     "src": 86.7,
+     "at_word": 10,
+     "crop": [
+      800,
+      540,
+      1000
+     ],
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "why": "냉동 조각 피자 포장"
+    }
+   ],
+   "tail": 0.6,
+   "note": "B22 근황. 근거: sharktankblog(2025-07 갱신) '로리와 계약 무산, 브루클린 3곳, Wegmans·Whole Foods 등', table87.com '브루클린 3곳·전국 배송'. Daily Meal(2023)은 로리 관여 '불분명'.",
+   "sfx": "whoosh"
+  }
+ ],
+ "sfx_note": "v4: 참고 쇼츠 15개 분석 — 컷마다 '띵'(글로켄슈필) 위주, 장면 전환은 휙/스웰, 펀치라인은 낮은 쿵"
+}

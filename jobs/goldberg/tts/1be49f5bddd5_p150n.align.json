@@ -1,0 +1,53 @@
+{
+ "text": "알고 보니 차와 똑같이 생긴 덮개를 파는 회사였는데",
+ "words": [
+  {
+   "word": "알고",
+   "start": 0.04,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "보니",
+   "start": 0.302,
+   "end": 0.523,
+   "aligned": true
+  },
+  {
+   "word": "차와",
+   "start": 1.025,
+   "end": 1.226,
+   "aligned": true
+  },
+  {
+   "word": "똑같이",
+   "start": 1.327,
+   "end": 1.648,
+   "aligned": true
+  },
+  {
+   "word": "생긴",
+   "start": 1.709,
+   "end": 1.93,
+   "aligned": true
+  },
+  {
+   "word": "덮개를",
+   "start": 1.99,
+   "end": 2.332,
+   "aligned": true
+  },
+  {
+   "word": "파는",
+   "start": 2.412,
+   "end": 2.593,
+   "aligned": true
+  },
+  {
+   "word": "회사였는데",
+   "start": 2.654,
+   "end": 3.015,
+   "aligned": true
+  }
+ ]
+}

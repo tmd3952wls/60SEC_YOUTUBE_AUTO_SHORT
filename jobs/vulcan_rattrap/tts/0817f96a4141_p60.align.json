@@ -1,0 +1,35 @@
+{
+ "text": "원가 15달러짜리를 무려 90달러에 팔았는데",
+ "words": [
+  {
+   "word": "원가",
+   "start": 0.04,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "15달러짜리를",
+   "start": 0.282,
+   "end": 1.048,
+   "aligned": true
+  },
+  {
+   "word": "무려",
+   "start": 1.128,
+   "end": 1.249,
+   "aligned": true
+  },
+  {
+   "word": "90달러에",
+   "start": 1.33,
+   "end": 1.713,
+   "aligned": true
+  },
+  {
+   "word": "팔았는데",
+   "start": 1.773,
+   "end": 2.075,
+   "aligned": true
+  }
+ ]
+}

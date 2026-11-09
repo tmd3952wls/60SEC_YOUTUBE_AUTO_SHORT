@@ -1,0 +1,41 @@
+{
+ "text": "꿈을 이룬 10살 발명가, 진짜 대단하네요",
+ "words": [
+  {
+   "word": "꿈을",
+   "start": 0.0,
+   "end": 0.141,
+   "aligned": true
+  },
+  {
+   "word": "이룬",
+   "start": 0.182,
+   "end": 0.323,
+   "aligned": true
+  },
+  {
+   "word": "10살",
+   "start": 0.343,
+   "end": 0.606,
+   "aligned": true
+  },
+  {
+   "word": "발명가,",
+   "start": 0.666,
+   "end": 1.01,
+   "aligned": true
+  },
+  {
+   "word": "진짜",
+   "start": 1.252,
+   "end": 1.433,
+   "aligned": true
+  },
+  {
+   "word": "대단하네요",
+   "start": 1.494,
+   "end": 1.918,
+   "aligned": true
+  }
+ ]
+}

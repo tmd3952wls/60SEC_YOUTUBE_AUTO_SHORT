@@ -1,0 +1,47 @@
+{
+ "text": "하지만 냉동 피자는 경쟁이 치열하기로 유명한 시장인데",
+ "words": [
+  {
+   "word": "하지만",
+   "start": 0.04,
+   "end": 0.342,
+   "aligned": true
+  },
+  {
+   "word": "냉동",
+   "start": 0.422,
+   "end": 0.684,
+   "aligned": true
+  },
+  {
+   "word": "피자는",
+   "start": 0.784,
+   "end": 1.146,
+   "aligned": true
+  },
+  {
+   "word": "경쟁이",
+   "start": 1.287,
+   "end": 1.609,
+   "aligned": true
+  },
+  {
+   "word": "치열하기로",
+   "start": 1.73,
+   "end": 2.132,
+   "aligned": true
+  },
+  {
+   "word": "유명한",
+   "start": 2.212,
+   "end": 2.474,
+   "aligned": true
+  },
+  {
+   "word": "시장인데",
+   "start": 2.554,
+   "end": 3.118,
+   "aligned": true
+  }
+ ]
+}

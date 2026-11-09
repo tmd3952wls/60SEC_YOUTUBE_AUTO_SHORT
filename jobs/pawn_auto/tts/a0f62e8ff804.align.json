@@ -1,0 +1,35 @@
+{
+ "text": "유산으로 받은 고대 은화를 가져왔는데요",
+ "words": [
+  {
+   "word": "유산으로",
+   "start": 0.04,
+   "end": 0.323,
+   "aligned": true
+  },
+  {
+   "word": "받은",
+   "start": 0.363,
+   "end": 0.545,
+   "aligned": true
+  },
+  {
+   "word": "고대",
+   "start": 0.646,
+   "end": 0.787,
+   "aligned": true
+  },
+  {
+   "word": "은화를",
+   "start": 0.827,
+   "end": 1.029,
+   "aligned": true
+  },
+  {
+   "word": "가져왔는데요",
+   "start": 1.11,
+   "end": 1.634,
+   "aligned": true
+  }
+ ]
+}

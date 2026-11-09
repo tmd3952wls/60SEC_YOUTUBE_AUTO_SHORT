@@ -1,0 +1,32 @@
+[
+  {
+    "t": 0.0,
+    "category": "whoosh",
+    "name": "Whoosh(Transition)"
+  },
+  {
+    "t": 6.78,
+    "category": "surprise",
+    "name": "깜짝 1"
+  },
+  {
+    "t": 11.42,
+    "category": "ding",
+    "name": "티딩_효과음"
+  },
+  {
+    "t": 19.63,
+    "category": "impact",
+    "name": "후욱 -a짧은2"
+  },
+  {
+    "t": 22.43,
+    "category": "pop",
+    "name": "뽀옹 (폰문자전송)"
+  },
+  {
+    "t": 28.42,
+    "category": "ding",
+    "name": "띠링"
+  }
+]

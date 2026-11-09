@@ -1,0 +1,47 @@
+{
+ "text": "그런데 이때 로리가 더 큰 돈을 꺼내는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "이때",
+   "start": 0.281,
+   "end": 0.602,
+   "aligned": true
+  },
+  {
+   "word": "로리가",
+   "start": 0.944,
+   "end": 1.165,
+   "aligned": true
+  },
+  {
+   "word": "더",
+   "start": 1.245,
+   "end": 1.325,
+   "aligned": true
+  },
+  {
+   "word": "큰",
+   "start": 1.426,
+   "end": 1.506,
+   "aligned": true
+  },
+  {
+   "word": "돈을",
+   "start": 1.566,
+   "end": 1.687,
+   "aligned": true
+  },
+  {
+   "word": "꺼내는데",
+   "start": 1.767,
+   "end": 2.129,
+   "aligned": true
+  }
+ ]
+}

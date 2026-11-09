@@ -1,0 +1,47 @@
+{
+ "text": "화덕에 구운 피자를 급속 냉동해 마트에 넣었다는데",
+ "words": [
+  {
+   "word": "화덕에",
+   "start": 0.04,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "구운",
+   "start": 0.382,
+   "end": 0.483,
+   "aligned": true
+  },
+  {
+   "word": "피자를",
+   "start": 0.603,
+   "end": 0.845,
+   "aligned": true
+  },
+  {
+   "word": "급속",
+   "start": 0.945,
+   "end": 1.147,
+   "aligned": true
+  },
+  {
+   "word": "냉동해",
+   "start": 1.207,
+   "end": 1.468,
+   "aligned": true
+  },
+  {
+   "word": "마트에",
+   "start": 1.529,
+   "end": 1.79,
+   "aligned": true
+  },
+  {
+   "word": "넣었다는데",
+   "start": 1.831,
+   "end": 2.253,
+   "aligned": true
+  }
+ ]
+}

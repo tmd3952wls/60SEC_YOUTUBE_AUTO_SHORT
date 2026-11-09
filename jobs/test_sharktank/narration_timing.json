@@ -1,0 +1,200 @@
+[
+  {
+    "text": "겨우 13살 소녀가",
+    "start": 0.0,
+    "end": 1.017,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.5
+  },
+  {
+    "text": "투자자들에게 역제안을",
+    "start": 1.017,
+    "end": 1.883,
+    "method": "whisperx",
+    "prop_start": 0.95,
+    "seg_start": 0.0,
+    "seg_end": 2.5
+  },
+  {
+    "text": "던졌습니다",
+    "start": 1.883,
+    "end": 2.5,
+    "method": "whisperx",
+    "prop_start": 1.98,
+    "seg_start": 0.0,
+    "seg_end": 2.5
+  },
+  {
+    "text": "주머니 달린 양말로",
+    "start": 7.767,
+    "end": 8.747,
+    "method": "whisperx",
+    "prop_start": 7.767,
+    "seg_start": 7.767,
+    "seg_end": 10.048
+  },
+  {
+    "text": "샤크탱크에 나온",
+    "start": 8.747,
+    "end": 9.454,
+    "method": "whisperx",
+    "prop_start": 8.796,
+    "seg_start": 7.767,
+    "seg_end": 10.048
+  },
+  {
+    "text": "소피는",
+    "start": 9.454,
+    "end": 10.048,
+    "method": "whisperx",
+    "prop_start": 9.619,
+    "seg_start": 7.767,
+    "seg_end": 10.048
+  },
+  {
+    "text": "11살 때 직접",
+    "start": 13.848,
+    "end": 14.603,
+    "method": "whisperx",
+    "prop_start": 13.848,
+    "seg_start": 13.848,
+    "seg_end": 16.381
+  },
+  {
+    "text": "시제품을 만들고 모은",
+    "start": 14.603,
+    "end": 15.549,
+    "method": "whisperx",
+    "prop_start": 14.557,
+    "seg_start": 13.848,
+    "seg_end": 16.381
+  },
+  {
+    "text": "돈을 투자했는데",
+    "start": 15.549,
+    "end": 16.381,
+    "method": "whisperx",
+    "prop_start": 15.533,
+    "seg_start": 13.848,
+    "seg_end": 16.381
+  },
+  {
+    "text": "벌써 매출만 1만",
+    "start": 22.014,
+    "end": 22.878,
+    "method": "whisperx",
+    "prop_start": 22.014,
+    "seg_start": 22.014,
+    "seg_end": 23.617
+  },
+  {
+    "text": "6천 달러였죠",
+    "start": 22.878,
+    "end": 23.617,
+    "method": "whisperx",
+    "prop_start": 22.838,
+    "seg_start": 22.014,
+    "seg_end": 23.617
+  },
+  {
+    "text": "케빈과 바바라가",
+    "start": 23.617,
+    "end": 24.33,
+    "method": "whisperx",
+    "prop_start": 23.617,
+    "seg_start": 23.617,
+    "seg_end": 25.324
+  },
+  {
+    "text": "투자를 거절한 뒤",
+    "start": 24.33,
+    "end": 25.324,
+    "method": "whisperx",
+    "prop_start": 24.364,
+    "seg_start": 23.617,
+    "seg_end": 25.324
+  },
+  {
+    "text": "로리와 데이먼드가",
+    "start": 25.324,
+    "end": 26.016,
+    "method": "whisperx",
+    "prop_start": 25.324,
+    "seg_start": 25.324,
+    "seg_end": 28.633
+  },
+  {
+    "text": "손잡고 3만 달러에",
+    "start": 26.016,
+    "end": 27.119,
+    "method": "whisperx",
+    "prop_start": 26.122,
+    "seg_start": 25.324,
+    "seg_end": 28.633
+  },
+  {
+    "text": "지분 3분의 1을",
+    "start": 27.119,
+    "end": 27.861,
+    "method": "whisperx",
+    "prop_start": 27.007,
+    "seg_start": 25.324,
+    "seg_end": 28.633
+  },
+  {
+    "text": "제안하는데요",
+    "start": 27.861,
+    "end": 28.633,
+    "method": "whisperx",
+    "prop_start": 27.982,
+    "seg_start": 25.324,
+    "seg_end": 28.633
+  },
+  {
+    "text": "돈은 더 받고 지분은",
+    "start": 37.233,
+    "end": 38.452,
+    "method": "whisperx",
+    "prop_start": 37.233,
+    "seg_start": 37.233,
+    "seg_end": 39.433
+  },
+  {
+    "text": "덜 주는 조건이었죠",
+    "start": 38.452,
+    "end": 39.433,
+    "method": "whisperx",
+    "prop_start": 38.312,
+    "seg_start": 37.233,
+    "seg_end": 39.433
+  },
+  {
+    "text": "원하는 조건을 따낸",
+    "start": 46.667,
+    "end": 47.464,
+    "method": "whisperx",
+    "prop_start": 46.667,
+    "seg_start": 46.667,
+    "seg_end": 49.433
+  },
+  {
+    "text": "13살 CEO, 진짜",
+    "start": 47.464,
+    "end": 48.794,
+    "method": "whisperx",
+    "prop_start": 47.61,
+    "seg_start": 46.667,
+    "seg_end": 49.433
+  },
+  {
+    "text": "똑 부러지네요",
+    "start": 48.794,
+    "end": 49.433,
+    "method": "whisperx",
+    "prop_start": 48.647,
+    "seg_start": 46.667,
+    "seg_end": 49.433
+  }
+]

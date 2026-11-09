@@ -1,0 +1,35 @@
+{
+ "text": "하지만 이 동전엔 함정이 있었는데",
+ "words": [
+  {
+   "word": "하지만",
+   "start": 0.0,
+   "end": 0.183,
+   "aligned": true
+  },
+  {
+   "word": "이",
+   "start": 0.264,
+   "end": 0.284,
+   "aligned": true
+  },
+  {
+   "word": "동전엔",
+   "start": 0.325,
+   "end": 0.569,
+   "aligned": true
+  },
+  {
+   "word": "함정이",
+   "start": 0.65,
+   "end": 0.873,
+   "aligned": true
+  },
+  {
+   "word": "있었는데",
+   "start": 0.894,
+   "end": 1.3,
+   "aligned": true
+  }
+ ]
+}

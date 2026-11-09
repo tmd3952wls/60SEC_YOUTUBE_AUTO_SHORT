@@ -1,0 +1,35 @@
+{
+ "text": "케빈과 니라브는 로열티 조건을 걸고",
+ "words": [
+  {
+   "word": "케빈과",
+   "start": 0.02,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "니라브는",
+   "start": 0.381,
+   "end": 0.702,
+   "aligned": true
+  },
+  {
+   "word": "로열티",
+   "start": 0.903,
+   "end": 1.164,
+   "aligned": true
+  },
+  {
+   "word": "조건을",
+   "start": 1.204,
+   "end": 1.465,
+   "aligned": true
+  },
+  {
+   "word": "걸고",
+   "start": 1.525,
+   "end": 1.686,
+   "aligned": true
+  }
+ ]
+}

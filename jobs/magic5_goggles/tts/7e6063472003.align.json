@@ -1,0 +1,35 @@
+{
+ "text": "그때 투자금을 두 배로 올려버리는데",
+ "words": [
+  {
+   "word": "그때",
+   "start": 0.0,
+   "end": 0.162,
+   "aligned": true
+  },
+  {
+   "word": "투자금을",
+   "start": 0.243,
+   "end": 0.566,
+   "aligned": true
+  },
+  {
+   "word": "두",
+   "start": 0.667,
+   "end": 0.708,
+   "aligned": true
+  },
+  {
+   "word": "배로",
+   "start": 0.769,
+   "end": 0.87,
+   "aligned": true
+  },
+  {
+   "word": "올려버리는데",
+   "start": 0.91,
+   "end": 1.355,
+   "aligned": true
+  }
+ ]
+}

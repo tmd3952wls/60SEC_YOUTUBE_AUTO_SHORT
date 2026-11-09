@@ -1,0 +1,35 @@
+{
+ "text": "벌써 매출만 1만 6천 달러였죠",
+ "words": [
+  {
+   "word": "벌써",
+   "start": 0.02,
+   "end": 0.223,
+   "aligned": true
+  },
+  {
+   "word": "매출만",
+   "start": 0.284,
+   "end": 0.63,
+   "aligned": true
+  },
+  {
+   "word": "1만",
+   "start": 0.691,
+   "end": 0.873,
+   "aligned": true
+  },
+  {
+   "word": "6천",
+   "start": 0.914,
+   "end": 1.097,
+   "aligned": true
+  },
+  {
+   "word": "달러였죠",
+   "start": 1.158,
+   "end": 1.483,
+   "aligned": true
+  }
+ ]
+}

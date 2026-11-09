@@ -1,0 +1,47 @@
+{
+ "text": "한 번 놓으면 쥐를 30마리까지 잡는 쥐덫",
+ "words": [
+  {
+   "word": "한",
+   "start": 0.02,
+   "end": 0.061,
+   "aligned": true
+  },
+  {
+   "word": "번",
+   "start": 0.162,
+   "end": 0.222,
+   "aligned": true
+  },
+  {
+   "word": "놓으면",
+   "start": 0.303,
+   "end": 0.586,
+   "aligned": true
+  },
+  {
+   "word": "쥐를",
+   "start": 0.747,
+   "end": 0.848,
+   "aligned": true
+  },
+  {
+   "word": "30마리까지",
+   "start": 1.01,
+   "end": 1.394,
+   "aligned": true
+  },
+  {
+   "word": "잡는",
+   "start": 1.434,
+   "end": 1.636,
+   "aligned": true
+  },
+  {
+   "word": "쥐덫",
+   "start": 1.717,
+   "end": 1.757,
+   "aligned": true
+  }
+ ]
+}

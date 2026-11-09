@@ -1,0 +1,47 @@
+{
+ "text": "그런데 가격이 한 장에 약 100만 원이라는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.283,
+   "aligned": true
+  },
+  {
+   "word": "가격이",
+   "start": 0.384,
+   "end": 0.668,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 0.728,
+   "end": 0.809,
+   "aligned": true
+  },
+  {
+   "word": "장에",
+   "start": 0.87,
+   "end": 1.032,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 1.092,
+   "end": 1.173,
+   "aligned": true
+  },
+  {
+   "word": "100만",
+   "start": 1.274,
+   "end": 1.517,
+   "aligned": true
+  },
+  {
+   "word": "원이라는데",
+   "start": 1.558,
+   "end": 1.942,
+   "aligned": true
+  }
+ ]
+}

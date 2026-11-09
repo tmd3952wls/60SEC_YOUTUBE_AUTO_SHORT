@@ -1,0 +1,758 @@
+{
+ "title_lines": [
+  {
+   "text": "투자자 3명이 탐낸",
+   "color": "yellow"
+  },
+  {
+   "text": "쥐덫의 정체?!",
+   "color": "white"
+  }
+ ],
+ "flash_alpha": 0.6,
+ "flash_sec": 0.4,
+ "krw_rate": "1달러=1,356원 (2026-11-06 매매기준율)",
+ "structure_ref": "2jJoIbdciDY 19박자 뼈대",
+ "items": [
+  {
+   "type": "narration",
+   "text": "한 번에 쥐를 [yellow:30마리] 잡는 쥐덫",
+   "subs": [
+    "한 번에 쥐를",
+    "[yellow:30마리] 잡는 쥐덫"
+   ],
+   "shots": [
+    {
+     "src": 88.0,
+     "crop": [
+      960,
+      560,
+      900
+     ],
+     "zoom": [
+      1.0,
+      1.08
+     ]
+    },
+    {
+     "src": 89.62,
+     "at_word": 3,
+     "crop": [
+      1000,
+      560,
+      840
+     ],
+     "focus": [
+      1230,
+      720
+     ],
+     "zoom": [
+      1.0,
+      1.12
+     ],
+     "circle": {
+      "box": [
+       1160,
+       655,
+       140,
+       135
+      ],
+      "target": "양동이에 잡힌 쥐",
+      "why": "30마리=잡힌 결과",
+      "at_word": 3,
+      "hold": 1.0,
+      "pad": 1.5
+     }
+    }
+   ],
+   "sfx": "ding",
+   "note": "B1 훅(참고 0~1.8s): 결과물 클로즈업+원"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    31
+   ],
+   "subs": [
+    {
+     "text": "[red:그만, 그만!]",
+     "at_word": 0,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      450,
+      800
+     ]
+    }
+   ],
+   "audio_end": 112.65,
+   "note": "B2 리액션 한마디(참고 '오 와우' 0.8s): 바바라",
+   "sfx": "pop"
+  },
+  {
+   "type": "narration",
+   "text": "한 마리씩 잡는 덫으론 [red:쥐 떼]를 감당 못 하는데",
+   "subs": [
+    "한 마리씩 잡는 덫으론",
+    "[red:쥐 떼]를 감당 못 하는데"
+   ],
+   "shots": [
+    {
+     "src": 57.1,
+     "crop": [
+      700,
+      420,
+      860
+     ],
+     "zoom": [
+      1.0,
+      1.15
+     ]
+    },
+    {
+     "file": "broll/tNZDmNmSz3g.mp4",
+     "src": 84.2,
+     "crop": [
+      960,
+      540,
+      1000
+     ],
+     "at_word": 4,
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "why": "실사용: 덫에 잡힌 쥐 무더기 (Shawn Woods, Mousetrap Monday)"
+    }
+   ],
+   "note": "B3 문제 제기(참고 2.6~5.2s)"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    21
+   ],
+   "subs": [
+    {
+     "text": "[cyan:세계 최초]",
+     "at_word": 0
+    },
+    {
+     "text": "여러 마리 잡는 양동이 덫",
+     "at_word": 3
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      520,
+      1000
+     ]
+    },
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      560,
+      900
+     ],
+     "at_word": 3
+    }
+   ],
+   "flash": "green",
+   "sfx": "whoosh",
+   "note": "B4 창업자 주장(참고 5.2~8.4s)",
+   "sfx_word": 3,
+   "sfx2": "whoosh"
+  },
+  {
+   "type": "narration",
+   "text": "한 번 놓으면 [yellow:알아서] 계속 잡는다는데",
+   "subs": [
+    "한 번 놓으면|[yellow:알아서] 계속 잡는다는데"
+   ],
+   "shots": [
+    {
+     "file": "broll/QFfkMxSRhJg.mp4",
+     "src": 411.0,
+     "crop": [
+      1300,
+      540,
+      1000
+     ],
+     "why": "실사용: 야간 카메라, 덫 위 쥐 (Shawn Woods)"
+    }
+   ],
+   "flash": "cyan",
+   "sfx": "pop",
+   "note": "B5 요약 주장(참고 8.4~10.4s)"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    28
+   ],
+   "subs": [
+    {
+     "text": "그리고 다음 놈을 잡고|[yellow:또 다음 놈]을 잡죠",
+     "at_word": 0
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      540,
+      1000
+     ]
+    }
+   ],
+   "note": "B6 창업자 설명(참고 10.4~14s, 두 줄 자막 하나)",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "narration",
+   "text": "쥐가 떨어지면 발판이 [cyan:저절로] 돌아와 다음 쥐를 기다린다고",
+   "subs": [
+    "쥐가 떨어지면",
+    "발판이 [cyan:저절로] 돌아와",
+    "다음 쥐를 기다린다고"
+   ],
+   "shots": [
+    {
+     "src": 103.7,
+     "crop": [
+      760,
+      330,
+      760
+     ]
+    },
+    {
+     "file": "broll/tNZDmNmSz3g.mp4",
+     "src": 52.0,
+     "crop": [
+      960,
+      500,
+      1000
+     ],
+     "at_word": 5,
+     "why": "실사용: 다음 쥐가 덫에 올라옴"
+    }
+   ],
+   "note": "B7 작동 원리(참고 14~16.7s, 3덩어리)",
+   "sfx": "question",
+   "sfx_word": 5,
+   "sfx2": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    69,
+    70
+   ],
+   "subs": [
+    {
+     "text": "쥐가 한 마리가 아니라",
+     "at_word": 0
+    },
+    {
+     "text": "[red:수백 마리]였어요",
+     "at_word": 6
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      500,
+      1000
+     ]
+    },
+    {
+     "src": "sync",
+     "crop": [
+      840,
+      430,
+      800
+     ],
+     "at_word": 6
+    }
+   ],
+   "word_range": [
+    4,
+    99
+   ],
+   "flash": "green",
+   "note": "B8 투자자 정체(참고 '난 진짜 땅콩버터 애호가야')",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "narration",
+   "text": "그런데 이때 [pink:쥐랑 같이 자랐다는] 투자자가 나서는데",
+   "subs": [
+    "그런데 이때",
+    "[pink:쥐랑 같이 자랐다는]",
+    "투자자가 나서는데"
+   ],
+   "shots": [
+    {
+     "src": 184.4,
+     "crop": [
+      840,
+      430,
+      800
+     ]
+    },
+    {
+     "src": 60.7,
+     "at_word": 2,
+     "crop": [
+      840,
+      430,
+      800
+     ]
+    },
+    {
+     "src": 54.35,
+     "at_word": 5,
+     "crop": [
+      900,
+      430,
+      800
+     ]
+    }
+   ],
+   "flash": "green",
+   "sfx": "whoosh",
+   "note": "B9 반전 인물 등장(참고 19.3~23.4s, 3덩어리)"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    78,
+    82,
+    84
+   ],
+   "subs": [
+    {
+     "text": "산 쥐가 가득 찬 양동이는|어떻게 해요?",
+     "at_word": 0
+    },
+    {
+     "text": "풀어주면 뭐해요?",
+     "at_word": 11
+    },
+    {
+     "text": "[red:다시 돌아올 텐데]",
+     "at_word": 19
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      450,
+      800
+     ]
+    },
+    {
+     "file": "broll/tNZDmNmSz3g.mp4",
+     "src": 90.3,
+     "crop": [
+      1000,
+      600,
+      900
+     ],
+     "at_word": 11,
+     "why": "실사용: 잡은 쥐 풀어주기"
+    }
+   ],
+   "flash": "green",
+   "note": "B10 날카로운 질문(참고 23.4~29.2s)",
+   "sfx": "question",
+   "sfx_word": 11,
+   "sfx2": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    127,
+    128
+   ],
+   "subs": [
+    {
+     "text": "쥐가 상자에 들어가는 거|[yellow:보고 싶은데요]",
+     "at_word": 0
+    },
+    {
+     "text": "[red:역겨워]",
+     "at_word": 11,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      560,
+      900
+     ]
+    },
+    {
+     "src": "sync",
+     "crop": [
+      840,
+      430,
+      800
+     ],
+     "at_word": 11
+    }
+   ],
+   "word_range": [
+    1,
+    99
+   ],
+   "note": "B11 다른 투자자 농담(참고 29.2~31.6s)",
+   "sfx_word": 11,
+   "sfx2": "question"
+  },
+  {
+   "type": "narration",
+   "text": "그런데 매출을 듣자 분위기가 [yellow:확] 바뀌는데",
+   "subs": [
+    "그런데 매출을 듣자",
+    "분위기가 [yellow:확] 바뀌는데"
+   ],
+   "shots": [
+    {
+     "src": 249.5,
+     "crop": [
+      960,
+      450,
+      800
+     ]
+    },
+    {
+     "src": 251.1,
+     "at_word": 3,
+     "crop": [
+      960,
+      450,
+      800
+     ]
+    }
+   ],
+   "note": "B12 전환 내레이션(참고 31.3~33.6s)",
+   "sfx": "pop"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    94,
+    97,
+    98
+   ],
+   "subs": [
+    {
+     "text": "누적 매출 [yellow:160만 달러]",
+     "at_word": 0,
+     "krw": "약 21억 7천만 원"
+    },
+    {
+     "text": "말도 안 돼",
+     "at_word": 6
+    },
+    {
+     "text": "[cyan:와우!]",
+     "at_word": 8,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      430,
+      800
+     ]
+    },
+    {
+     "src": "sync",
+     "crop": [
+      1000,
+      450,
+      800
+     ],
+     "at_word": 6
+    }
+   ],
+   "audio_end": 243.6,
+   "sfx_word": 4,
+   "sfx2": "ding",
+   "note": "B13 반박 한마디(참고 '아니'+B-roll)"
+  },
+  {
+   "type": "narration",
+   "text": "결국 투자자 [cyan:세 명이] 동시에 달려드는데",
+   "subs": [
+    "결국 투자자 [cyan:세 명이]",
+    "동시에 달려드는데"
+   ],
+   "shots": [
+    {
+     "src": 321.8,
+     "crop": [
+      960,
+      430,
+      860
+     ],
+     "zoom": [
+      1.0,
+      1.1
+     ]
+    }
+   ],
+   "flash": "pink",
+   "sfx": "whoosh",
+   "note": "B14 갈등 고조(참고 '중대한 문제를 발견하게 되는데')"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    133,
+    136,
+    147,
+    149
+   ],
+   "subs": [
+    {
+     "text": "[green:쥐]한테 제안을 받았네",
+     "at_word": 0
+    },
+    {
+     "text": "[yellow:미스터 쥐]라고 불러",
+     "at_word": 8
+    },
+    {
+     "text": "전 [yellow:10만 달러]에 딱 10%",
+     "at_word": 13,
+     "krw": "약 1억 3,560만 원"
+    },
+    {
+     "text": "[green:로열티 없이요]",
+     "at_word": 24
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      500,
+      1000
+     ]
+    },
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      450,
+      800
+     ],
+     "at_word": 8
+    },
+    {
+     "src": 340.05,
+     "at_word": 13,
+     "crop": [
+      1420,
+      430,
+      800
+     ],
+     "why": "바바라"
+    },
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      420,
+      800
+     ],
+     "at_word": 24
+    }
+   ],
+   "note": "B15 투자자 티키타카(참고 38.6~44s)",
+   "sfx_word": 8,
+   "sfx2": "pop"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    232,
+    234,
+    237,
+    238
+   ],
+   "subs": [
+    {
+     "text": "왜 자꾸 [yellow:데이먼드]만 봐요?",
+     "at_word": 0
+    },
+    {
+     "text": "이 업계를 잘 아니까요",
+     "at_word": 6
+    },
+    {
+     "text": "쥐라면 나도 잘 아는데",
+     "at_word": 15
+    },
+    {
+     "text": "[red:본인이 쥐잖아]",
+     "at_word": 21,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      1250,
+      430,
+      800
+     ]
+    },
+    {
+     "src": "sync",
+     "crop": [
+      1350,
+      420,
+      800
+     ],
+     "at_word": 6
+    },
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      450,
+      800
+     ],
+     "at_word": 15
+    },
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      430,
+      800
+     ],
+     "at_word": 21
+    }
+   ],
+   "flash": "green",
+   "sfx_word": 21,
+   "sfx2": "impact",
+   "note": "B16 질문→펀치라인(참고 44.3~49.6s)",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "narration",
+   "text": "결국 고른 건 [yellow:데이먼드]",
+   "subs": [
+    "결국 고른 건",
+    "[yellow:데이먼드]"
+   ],
+   "shots": [
+    {
+     "src": 398.2,
+     "crop": [
+      1000,
+      450,
+      800
+     ]
+    }
+   ],
+   "note": "B17 결말 요약(참고 '결국 남은 넷도 모두 아웃')"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    245
+   ],
+   "subs": [
+    {
+     "text": "[green:계약하죠!]",
+     "at_word": 0,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 546.06,
+     "crop": [
+      960,
+      420,
+      800
+     ]
+    }
+   ],
+   "sfx": "success",
+   "note": "B18 한마디(참고 '행운을 빌어..')"
+  },
+  {
+   "type": "narration",
+   "text": "지분 [yellow:12.5%]에 손을 잡았고 방송이 나가자마자 홈페이지는 [green:무료배송 할인]에 들어갔다고",
+   "subs": [
+    "지분 [yellow:12.5%]에 손을 잡았고",
+    "방송이 나가자마자",
+    "홈페이지는|[green:무료배송 할인]에 들어갔다고"
+   ],
+   "shots": [
+    {
+     "src": 571.8,
+     "crop": [
+      760,
+      430,
+      800
+     ]
+    },
+    {
+     "src": 88.0,
+     "at_word": 4,
+     "crop": [
+      960,
+      560,
+      900
+     ]
+    },
+    {
+     "src": 89.62,
+     "at_word": 6,
+     "crop": [
+      1000,
+      560,
+      840
+     ],
+     "zoom": [
+      1.0,
+      1.1
+     ]
+    }
+   ],
+   "tail": 0.6,
+   "note": "B19 근황(참고 '빈손으로 돌아갔고 / 한 대도 배송 못한 채 / 2024년 생산이 멈췄다고'). 근거: 공식 홈페이지 Rat Rush 무료배송 할인, sharktanksuccess 10/31 '방송 직후 48시간 할인'"
+  }
+ ]
+}

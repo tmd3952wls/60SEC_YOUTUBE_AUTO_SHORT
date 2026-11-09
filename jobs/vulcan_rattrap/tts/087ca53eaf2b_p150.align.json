@@ -1,0 +1,29 @@
+{
+ "text": "결국 고른 건 데이먼드",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.02,
+   "end": 0.244,
+   "aligned": true
+  },
+  {
+   "word": "고른",
+   "start": 0.365,
+   "end": 0.569,
+   "aligned": true
+  },
+  {
+   "word": "건",
+   "start": 0.65,
+   "end": 0.772,
+   "aligned": true
+  },
+  {
+   "word": "데이먼드",
+   "start": 0.873,
+   "end": 1.32,
+   "aligned": true
+  }
+ ]
+}

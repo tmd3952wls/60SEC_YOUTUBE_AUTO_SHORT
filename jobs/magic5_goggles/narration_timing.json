@@ -1,0 +1,146 @@
+[
+  {
+    "text": "얼굴을 13초 스캔하면",
+    "start": 0.0,
+    "end": 1.056,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.033
+  },
+  {
+    "text": "나만의 수경이 온다는데",
+    "start": 1.056,
+    "end": 2.033,
+    "method": "whisperx",
+    "prop_start": 1.082,
+    "seg_start": 0.0,
+    "seg_end": 2.033
+  },
+  {
+    "text": "얼굴은 다 다른데",
+    "start": 7.167,
+    "end": 7.985,
+    "method": "whisperx",
+    "prop_start": 7.167,
+    "seg_start": 7.167,
+    "seg_end": 9.4
+  },
+  {
+    "text": "수경은 한 사이즈라",
+    "start": 7.985,
+    "end": 8.832,
+    "method": "whisperx",
+    "prop_start": 7.906,
+    "seg_start": 7.167,
+    "seg_end": 9.4
+  },
+  {
+    "text": "물이 샌다고",
+    "start": 8.832,
+    "end": 9.4,
+    "method": "whisperx",
+    "prop_start": 8.893,
+    "seg_start": 7.167,
+    "seg_end": 9.4
+  },
+  {
+    "text": "기업가치만 2천만",
+    "start": 12.933,
+    "end": 13.69,
+    "method": "whisperx",
+    "prop_start": 12.933,
+    "seg_start": 12.933,
+    "seg_end": 15.0
+  },
+  {
+    "text": "달러인데 실적이",
+    "start": 13.69,
+    "end": 14.436,
+    "method": "whisperx",
+    "prop_start": 13.828,
+    "seg_start": 12.933,
+    "seg_end": 15.0
+  },
+  {
+    "text": "진짜였고",
+    "start": 14.436,
+    "end": 15.0,
+    "method": "whisperx",
+    "prop_start": 14.633,
+    "seg_start": 12.933,
+    "seg_end": 15.0
+  },
+  {
+    "text": "그러자 투자자 5명",
+    "start": 19.633,
+    "end": 20.571,
+    "method": "whisperx",
+    "prop_start": 19.633,
+    "seg_start": 19.633,
+    "seg_end": 21.633
+  },
+  {
+    "text": "전부 달려들기 시작했고",
+    "start": 20.571,
+    "end": 21.633,
+    "method": "whisperx",
+    "prop_start": 20.548,
+    "seg_start": 19.633,
+    "seg_end": 21.633
+  },
+  {
+    "text": "지분 3%까지 내려간",
+    "start": 23.033,
+    "end": 24.271,
+    "method": "whisperx",
+    "prop_start": 23.033,
+    "seg_start": 23.033,
+    "seg_end": 26.233
+  },
+  {
+    "text": "쟁탈전 끝에 한",
+    "start": 24.271,
+    "end": 25.197,
+    "method": "whisperx",
+    "prop_start": 24.325,
+    "seg_start": 23.033,
+    "seg_end": 26.233
+  },
+  {
+    "text": "투자자가 판을 엎는데",
+    "start": 25.197,
+    "end": 26.233,
+    "method": "whisperx",
+    "prop_start": 25.12,
+    "seg_start": 23.033,
+    "seg_end": 26.233
+  },
+  {
+    "text": "50만 달러를 원했는데",
+    "start": 30.433,
+    "end": 31.489,
+    "method": "whisperx",
+    "prop_start": 30.433,
+    "seg_start": 30.433,
+    "seg_end": 32.533
+  },
+  {
+    "text": "100만 달러를",
+    "start": 31.489,
+    "end": 31.991,
+    "method": "whisperx",
+    "prop_start": 31.354,
+    "seg_start": 30.433,
+    "seg_end": 32.533
+  },
+  {
+    "text": "받아냈다고",
+    "start": 31.991,
+    "end": 32.533,
+    "method": "whisperx",
+    "prop_start": 32.121,
+    "seg_start": 30.433,
+    "seg_end": 32.533
+  }
+]

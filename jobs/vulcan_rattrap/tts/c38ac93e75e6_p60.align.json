@@ -1,0 +1,41 @@
+{
+ "text": "그러자 샤크 세 명이 동시에 달려드는데",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.02,
+   "end": 0.201,
+   "aligned": true
+  },
+  {
+   "word": "샤크",
+   "start": 0.261,
+   "end": 0.402,
+   "aligned": true
+  },
+  {
+   "word": "세",
+   "start": 0.442,
+   "end": 0.502,
+   "aligned": true
+  },
+  {
+   "word": "명이",
+   "start": 0.542,
+   "end": 0.703,
+   "aligned": true
+  },
+  {
+   "word": "동시에",
+   "start": 0.784,
+   "end": 1.005,
+   "aligned": true
+  },
+  {
+   "word": "달려드는데",
+   "start": 1.065,
+   "end": 1.447,
+   "aligned": true
+  }
+ ]
+}

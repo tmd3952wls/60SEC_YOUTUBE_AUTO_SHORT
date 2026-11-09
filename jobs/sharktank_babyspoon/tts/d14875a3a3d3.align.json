@@ -1,0 +1,53 @@
+{
+ "text": "벌써 매출 5천 달러를 올린 이 꼬마 CEO는",
+ "words": [
+  {
+   "word": "벌써",
+   "start": 0.04,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "매출",
+   "start": 0.262,
+   "end": 0.464,
+   "aligned": true
+  },
+  {
+   "word": "5천",
+   "start": 0.505,
+   "end": 0.666,
+   "aligned": true
+  },
+  {
+   "word": "달러를",
+   "start": 0.747,
+   "end": 0.949,
+   "aligned": true
+  },
+  {
+   "word": "올린",
+   "start": 1.009,
+   "end": 1.191,
+   "aligned": true
+  },
+  {
+   "word": "이",
+   "start": 1.272,
+   "end": 1.332,
+   "aligned": true
+  },
+  {
+   "word": "꼬마",
+   "start": 1.413,
+   "end": 1.675,
+   "aligned": true
+  },
+  {
+   "word": "CEO는",
+   "start": 1.695,
+   "end": 1.917,
+   "aligned": true
+  }
+ ]
+}

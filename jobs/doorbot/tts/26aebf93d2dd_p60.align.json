@@ -1,0 +1,41 @@
+{
+ "text": "게다가 초인종은 1880년 발명 이후 그대로라고",
+ "words": [
+  {
+   "word": "게다가",
+   "start": 0.02,
+   "end": 0.242,
+   "aligned": true
+  },
+  {
+   "word": "초인종은",
+   "start": 0.322,
+   "end": 0.725,
+   "aligned": true
+  },
+  {
+   "word": "1880년",
+   "start": 0.886,
+   "end": 1.551,
+   "aligned": true
+  },
+  {
+   "word": "발명",
+   "start": 1.611,
+   "end": 1.813,
+   "aligned": true
+  },
+  {
+   "word": "이후",
+   "start": 1.853,
+   "end": 1.994,
+   "aligned": true
+  },
+  {
+   "word": "그대로라고",
+   "start": 2.054,
+   "end": 2.457,
+   "aligned": true
+  }
+ ]
+}

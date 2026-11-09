@@ -1,0 +1,41 @@
+{
+ "text": "한 남성이 고대 은화를 들고 왔는데요",
+ "words": [
+  {
+   "word": "한",
+   "start": 0.02,
+   "end": 0.061,
+   "aligned": true
+  },
+  {
+   "word": "남성이",
+   "start": 0.142,
+   "end": 0.426,
+   "aligned": true
+  },
+  {
+   "word": "고대",
+   "start": 0.527,
+   "end": 0.689,
+   "aligned": true
+  },
+  {
+   "word": "은화를",
+   "start": 0.71,
+   "end": 0.892,
+   "aligned": true
+  },
+  {
+   "word": "들고",
+   "start": 0.953,
+   "end": 1.095,
+   "aligned": true
+  },
+  {
+   "word": "왔는데요",
+   "start": 1.115,
+   "end": 1.419,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,196 @@
+{
+  "title_lines": [
+    {
+      "text": "얼굴 스캔 수경에",
+      "color": "yellow"
+    },
+    {
+      "text": "상어 5명 전쟁?!",
+      "color": "white"
+    }
+  ],
+  "credit": "© ABC Shark Tank",
+  "upload": {
+    "title": "얼굴 13초 스캔 수경에 상어들이 싸운 이유",
+    "description": "얼굴을 스캔해서 만드는 세계 최초 맞춤 수경에 투자자 5명이 전부 달려들었다. 마지막에 판을 뒤집은 제안은? #샤크탱크 #수영 #수경 #창업 #쇼츠",
+    "tags": [
+      "샤크탱크",
+      "SharkTank",
+      "맞춤수경",
+      "수영",
+      "창업",
+      "투자",
+      "TheMagic5"
+    ]
+  },
+  "segments": [
+    {
+      "type": "narration",
+      "text": "얼굴을 [13초] 스캔하면 끝나는 수경이 있는데",
+      "broll_id": 12,
+      "sfx": "whoosh"
+    },
+    {
+      "type": "clip",
+      "from_id": 11,
+      "to_id": 11,
+      "subs": [
+        "[cyan:와우]"
+      ],
+      "sfx": "surprise",
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "얼굴은 다 다른데 수경은 전부 [원사이즈]라",
+      "broll_id": 8,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "물 새고 자국 남는 걸 [맞춤]으로 해결했다고",
+      "broll_id": 13,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "덴마크에서 온 [삼촌과 조카]가 만든 회사인데",
+      "broll_id": 1,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "투자 [50만 달러]에 지분 2.5%를 요구하고",
+      "broll_id": 16,
+      "sfx": "ding"
+    },
+    {
+      "type": "clip",
+      "from_id": 18,
+      "to_id": 19,
+      "subs": [
+        "[yellow:워!]",
+        "와우"
+      ],
+      "sfx": null,
+      "tag": "(당황)"
+    },
+    {
+      "type": "narration",
+      "text": "기업가치로 치면 [약 270억]인데",
+      "broll_id": 42,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "고객 [4만 명], 누적 매출 300만 달러에",
+      "broll_id": 43,
+      "sfx": "ding"
+    },
+    {
+      "type": "narration",
+      "text": "매년 [3배]씩 성장 중이라고",
+      "broll_id": 45,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 46,
+      "to_id": 46,
+      "subs": [
+        "[완전 논리적이네]"
+      ],
+      "sfx": null,
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "그런데 이때 [마크]가 먼저 치고 들어오는데",
+      "broll_id": 116,
+      "sfx": "impact"
+    },
+    {
+      "type": "clip",
+      "from_id": 117,
+      "to_id": 118,
+      "subs": [
+        "50만 달러 드리죠",
+        "대신 [7.5%] 주세요"
+      ],
+      "sfx": null,
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "다른 상어들도 가만있지 않고",
+      "broll_id": 140,
+      "sfx": "tension"
+    },
+    {
+      "type": "narration",
+      "text": "케빈과 니라브는 [로열티] 조건을 걸고",
+      "broll_id": 142,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "로버트는 [5%]에 로열티 없이 부르고",
+      "broll_id": 153,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "지분 [3%]까지 내려가는 역대급 경쟁 속",
+      "broll_id": 236,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "그때 투자금을 [두 배]로 올려버리는데",
+      "broll_id": 240,
+      "sfx": "impact"
+    },
+    {
+      "type": "clip",
+      "from_id": 242,
+      "to_id": 242,
+      "subs": [
+        "[100만 달러]에 6.5% 드릴게요"
+      ],
+      "sfx": null,
+      "tag": null
+    },
+    {
+      "type": "clip",
+      "from_id": 243,
+      "to_id": 243,
+      "subs": [
+        "[pink:와우]"
+      ],
+      "sfx": "surprise",
+      "tag": "(소름)"
+    },
+    {
+      "type": "narration",
+      "text": "결국 고민도 없이",
+      "broll_id": 244,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 245,
+      "to_id": 245,
+      "subs": [
+        "[green:받을게요]"
+      ],
+      "sfx": "success",
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "평소 가장 원하던 투자자 [로버트]와 손잡았다고",
+      "broll_id": 258,
+      "sfx": "cheer"
+    }
+  ]
+}

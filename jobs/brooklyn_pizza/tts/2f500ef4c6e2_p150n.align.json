@@ -1,0 +1,35 @@
+{
+ "text": "그런데 투자자들은 치명적인 문제를 발견하는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.02,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "투자자들은",
+   "start": 0.381,
+   "end": 0.863,
+   "aligned": true
+  },
+  {
+   "word": "치명적인",
+   "start": 0.963,
+   "end": 1.385,
+   "aligned": true
+  },
+  {
+   "word": "문제를",
+   "start": 1.445,
+   "end": 1.726,
+   "aligned": true
+  },
+  {
+   "word": "발견하는데",
+   "start": 1.806,
+   "end": 2.147,
+   "aligned": true
+  }
+ ]
+}

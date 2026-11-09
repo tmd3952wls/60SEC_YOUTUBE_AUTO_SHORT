@@ -1,0 +1,59 @@
+{
+ "text": "쥐가 발판에 오르면 양동이로 떨어지고, 덫은 저절로 다시 장전돼요",
+ "words": [
+  {
+   "word": "쥐가",
+   "start": 0.02,
+   "end": 0.181,
+   "aligned": true
+  },
+  {
+   "word": "발판에",
+   "start": 0.262,
+   "end": 0.544,
+   "aligned": true
+  },
+  {
+   "word": "오르면",
+   "start": 0.584,
+   "end": 0.785,
+   "aligned": true
+  },
+  {
+   "word": "양동이로",
+   "start": 0.846,
+   "end": 1.168,
+   "aligned": true
+  },
+  {
+   "word": "떨어지고,",
+   "start": 1.248,
+   "end": 1.651,
+   "aligned": true
+  },
+  {
+   "word": "덫은",
+   "start": 1.691,
+   "end": 1.812,
+   "aligned": true
+  },
+  {
+   "word": "저절로",
+   "start": 1.872,
+   "end": 2.114,
+   "aligned": true
+  },
+  {
+   "word": "다시",
+   "start": 2.154,
+   "end": 2.335,
+   "aligned": true
+  },
+  {
+   "word": "장전돼요",
+   "start": 2.355,
+   "end": 2.678,
+   "aligned": true
+  }
+ ]
+}

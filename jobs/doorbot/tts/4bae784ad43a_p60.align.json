@@ -1,0 +1,53 @@
+{
+ "text": "집에 없어도 문 앞을 지킬 수 있는 셈",
+ "words": [
+  {
+   "word": "집에",
+   "start": 0.041,
+   "end": 0.162,
+   "aligned": true
+  },
+  {
+   "word": "없어도",
+   "start": 0.223,
+   "end": 0.486,
+   "aligned": true
+  },
+  {
+   "word": "문",
+   "start": 0.587,
+   "end": 0.628,
+   "aligned": true
+  },
+  {
+   "word": "앞을",
+   "start": 0.648,
+   "end": 0.83,
+   "aligned": true
+  },
+  {
+   "word": "지킬",
+   "start": 0.851,
+   "end": 0.972,
+   "aligned": true
+  },
+  {
+   "word": "수",
+   "start": 0.993,
+   "end": 1.013,
+   "aligned": true
+  },
+  {
+   "word": "있는",
+   "start": 1.033,
+   "end": 1.074,
+   "aligned": true
+  },
+  {
+   "word": "셈",
+   "start": 1.094,
+   "end": 1.114,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "text": "결국 4만 달러에 거래가 성사됐죠",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.0,
+   "end": 0.183,
+   "aligned": true
+  },
+  {
+   "word": "4만",
+   "start": 0.203,
+   "end": 0.407,
+   "aligned": true
+  },
+  {
+   "word": "달러에",
+   "start": 0.529,
+   "end": 0.732,
+   "aligned": true
+  },
+  {
+   "word": "거래가",
+   "start": 0.813,
+   "end": 0.996,
+   "aligned": true
+  },
+  {
+   "word": "성사됐죠",
+   "start": 1.037,
+   "end": 1.464,
+   "aligned": true
+  }
+ ]
+}

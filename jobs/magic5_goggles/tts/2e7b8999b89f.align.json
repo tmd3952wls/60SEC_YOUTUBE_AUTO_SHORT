@@ -1,0 +1,41 @@
+{
+ "text": "덴마크에서 온 삼촌과 조카가 만든 회사인데",
+ "words": [
+  {
+   "word": "덴마크에서",
+   "start": 0.02,
+   "end": 0.446,
+   "aligned": true
+  },
+  {
+   "word": "온",
+   "start": 0.507,
+   "end": 0.527,
+   "aligned": true
+  },
+  {
+   "word": "삼촌과",
+   "start": 0.567,
+   "end": 0.892,
+   "aligned": true
+  },
+  {
+   "word": "조카가",
+   "start": 0.952,
+   "end": 1.216,
+   "aligned": true
+  },
+  {
+   "word": "만든",
+   "start": 1.236,
+   "end": 1.418,
+   "aligned": true
+  },
+  {
+   "word": "회사인데",
+   "start": 1.459,
+   "end": 1.743,
+   "aligned": true
+  }
+ ]
+}

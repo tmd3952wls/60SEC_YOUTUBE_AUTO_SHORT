@@ -1,0 +1,29 @@
+{
+ "text": "릭이 살펴보더니 감탄을 하는데",
+ "words": [
+  {
+   "word": "릭이",
+   "start": 0.081,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "살펴보더니",
+   "start": 0.283,
+   "end": 0.729,
+   "aligned": true
+  },
+  {
+   "word": "감탄을",
+   "start": 0.789,
+   "end": 1.073,
+   "aligned": true
+  },
+  {
+   "word": "하는데",
+   "start": 1.113,
+   "end": 1.336,
+   "aligned": true
+  }
+ ]
+}

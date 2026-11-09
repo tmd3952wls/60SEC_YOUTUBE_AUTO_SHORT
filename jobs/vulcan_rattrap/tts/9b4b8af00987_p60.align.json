@@ -1,0 +1,71 @@
+{
+ "text": "만든 사람은 실리콘밸리 엔지니어예요. 자기 집 쥐를 잡으려고 퇴근 후에 만들었대요",
+ "words": [
+  {
+   "word": "만든",
+   "start": 0.04,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "사람은",
+   "start": 0.302,
+   "end": 0.583,
+   "aligned": true
+  },
+  {
+   "word": "실리콘밸리",
+   "start": 0.724,
+   "end": 1.166,
+   "aligned": true
+  },
+  {
+   "word": "엔지니어예요.",
+   "start": 1.187,
+   "end": 1.448,
+   "aligned": true
+  },
+  {
+   "word": "자기",
+   "start": 1.528,
+   "end": 1.649,
+   "aligned": true
+  },
+  {
+   "word": "집",
+   "start": 1.689,
+   "end": 1.73,
+   "aligned": true
+  },
+  {
+   "word": "쥐를",
+   "start": 1.83,
+   "end": 1.991,
+   "aligned": true
+  },
+  {
+   "word": "잡으려고",
+   "start": 2.051,
+   "end": 2.413,
+   "aligned": true
+  },
+  {
+   "word": "퇴근",
+   "start": 2.534,
+   "end": 2.675,
+   "aligned": true
+  },
+  {
+   "word": "후에",
+   "start": 2.695,
+   "end": 2.795,
+   "aligned": true
+  },
+  {
+   "word": "만들었대요",
+   "start": 2.836,
+   "end": 3.258,
+   "aligned": true
+  }
+ ]
+}

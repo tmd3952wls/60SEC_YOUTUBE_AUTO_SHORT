@@ -1,0 +1,41 @@
+{
+ "text": "주머니 달린 양말로 샤크탱크에 나온 소피는",
+ "words": [
+  {
+   "word": "주머니",
+   "start": 0.04,
+   "end": 0.242,
+   "aligned": true
+  },
+  {
+   "word": "달린",
+   "start": 0.303,
+   "end": 0.485,
+   "aligned": true
+  },
+  {
+   "word": "양말로",
+   "start": 0.525,
+   "end": 0.929,
+   "aligned": true
+  },
+  {
+   "word": "샤크탱크에",
+   "start": 1.03,
+   "end": 1.495,
+   "aligned": true
+  },
+  {
+   "word": "나온",
+   "start": 1.535,
+   "end": 1.676,
+   "aligned": true
+  },
+  {
+   "word": "소피는",
+   "start": 1.737,
+   "end": 1.979,
+   "aligned": true
+  }
+ ]
+}

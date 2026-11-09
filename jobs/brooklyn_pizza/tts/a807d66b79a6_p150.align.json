@@ -1,0 +1,35 @@
+{
+ "text": "그때 바바라가 첫 제안을 던지는데",
+ "words": [
+  {
+   "word": "그때",
+   "start": 0.0,
+   "end": 0.223,
+   "aligned": true
+  },
+  {
+   "word": "바바라가",
+   "start": 0.304,
+   "end": 0.669,
+   "aligned": true
+  },
+  {
+   "word": "첫",
+   "start": 0.75,
+   "end": 0.832,
+   "aligned": true
+  },
+  {
+   "word": "제안을",
+   "start": 0.913,
+   "end": 1.116,
+   "aligned": true
+  },
+  {
+   "word": "던지는데",
+   "start": 1.156,
+   "end": 1.481,
+   "aligned": true
+  }
+ ]
+}

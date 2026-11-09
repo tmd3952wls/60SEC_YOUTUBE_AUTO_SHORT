@@ -1,0 +1,35 @@
+{
+ "text": "마지막 남은 투자자는 로열티를 내걸었는데",
+ "words": [
+  {
+   "word": "마지막",
+   "start": 0.061,
+   "end": 0.263,
+   "aligned": true
+  },
+  {
+   "word": "남은",
+   "start": 0.323,
+   "end": 0.444,
+   "aligned": true
+  },
+  {
+   "word": "투자자는",
+   "start": 0.525,
+   "end": 0.848,
+   "aligned": true
+  },
+  {
+   "word": "로열티를",
+   "start": 0.949,
+   "end": 1.293,
+   "aligned": true
+  },
+  {
+   "word": "내걸었는데",
+   "start": 1.353,
+   "end": 1.757,
+   "aligned": true
+  }
+ ]
+}

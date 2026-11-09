@@ -1,0 +1,41 @@
+{
+ "text": "그러자 투자자 세 명이 동시에 달려드는데",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.0,
+   "end": 0.221,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 0.362,
+   "end": 0.503,
+   "aligned": true
+  },
+  {
+   "word": "세",
+   "start": 0.563,
+   "end": 0.623,
+   "aligned": true
+  },
+  {
+   "word": "명이",
+   "start": 0.684,
+   "end": 0.824,
+   "aligned": true
+  },
+  {
+   "word": "동시에",
+   "start": 0.905,
+   "end": 1.166,
+   "aligned": true
+  },
+  {
+   "word": "달려드는데",
+   "start": 1.226,
+   "end": 1.649,
+   "aligned": true
+  }
+ ]
+}

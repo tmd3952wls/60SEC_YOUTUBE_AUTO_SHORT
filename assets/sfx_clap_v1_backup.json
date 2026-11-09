@@ -1,0 +1,354 @@
+{
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\003_휘익.mp3": {
+  "cat": "whoosh",
+  "name": "휘익",
+  "top": "whoosh",
+  "p": 0.9,
+  "ok": true,
+  "lead": 0.273
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\033_휙(만화적).mp3": {
+  "cat": "whoosh",
+  "name": "휙(만화적)",
+  "top": "whoosh",
+  "p": 0.9,
+  "ok": true,
+  "lead": 0.273
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\086_후욱 -b중간1.mp3": {
+  "cat": "whoosh",
+  "name": "후욱 -b중간1",
+  "top": "whoosh",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.0
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\089_후욱 -b중간2.mp3": {
+  "cat": "whoosh",
+  "name": "후욱 -b중간2",
+  "top": "whoosh",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.001
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\100_후욱 -a짧은2.mp3": {
+  "cat": "whoosh",
+  "name": "후욱 -a짧은2",
+  "top": "whoosh",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.08
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\266_귀여운 엿보기 휙.mp3": {
+  "cat": "whoosh",
+  "name": "귀여운 엿보기 휙",
+  "top": "whoosh",
+  "p": 0.94,
+  "ok": true,
+  "lead": 0.183
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\294_화면전환효과음_19.mp3": {
+  "cat": "whoosh",
+  "name": "화면전환효과음_19",
+  "top": "bubble",
+  "p": 1.0,
+  "ok": false,
+  "lead": 0.069
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\524_화면전환효과음_15.mp3": {
+  "cat": "whoosh",
+  "name": "화면전환효과음_15",
+  "top": "bubble",
+  "p": 1.0,
+  "ok": false,
+  "lead": 0.092
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\573_Whoosh(Transition).mp3": {
+  "cat": "whoosh",
+  "name": "Whoosh(Transition)",
+  "top": "whoosh",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.224
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\008_팝.mp3": {
+  "cat": "pop",
+  "name": "팝",
+  "top": "bubble",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.174
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\032_뽀욕 (고무장난감 누르는).mp3": {
+  "cat": "pop",
+  "name": "뽀욕 (고무장난감 누르는)",
+  "top": "boing",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.076
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\037_카툰 팝.mp3": {
+  "cat": "pop",
+  "name": "카툰 팝",
+  "top": "boing",
+  "p": 0.94,
+  "ok": true,
+  "lead": 0.282
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\049_뽀옹 (폰문자전송).mp3": {
+  "cat": "pop",
+  "name": "뽀옹 (폰문자전송)",
+  "top": "whoosh",
+  "p": 0.65,
+  "ok": false,
+  "lead": 0.002
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\062_뾰옥 (물방울).mp3": {
+  "cat": "pop",
+  "name": "뾰옥 (물방울)",
+  "top": "bubble",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.032
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\301_Poink.mp3": {
+  "cat": "pop",
+  "name": "Poink",
+  "top": "boing",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.273
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\328_띡(버튼음)1.mp3": {
+  "cat": "pop",
+  "name": "띡(버튼음)1",
+  "top": "bell",
+  "p": 0.52,
+  "ok": false,
+  "lead": 0.024
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\337_버튼 클릭5.mp3": {
+  "cat": "pop",
+  "name": "버튼 클릭5",
+  "top": "bubble",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.037
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\338_버튼 클릭1.mp3": {
+  "cat": "pop",
+  "name": "버튼 클릭1",
+  "top": "bubble",
+  "p": 0.99,
+  "ok": true,
+  "lead": 0.037
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\371_뾰잉.mp3": {
+  "cat": "pop",
+  "name": "뾰잉",
+  "top": "boing",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.047
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\016_띠링.mp3": {
+  "cat": "ding",
+  "name": "띠링",
+  "top": "boing",
+  "p": 0.97,
+  "ok": false,
+  "lead": 0.028
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\185_Ting.mp3": {
+  "cat": "ding",
+  "name": "Ting",
+  "top": "ding",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.129
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\192_티딩_효과음.mp3": {
+  "cat": "ding",
+  "name": "티딩_효과음",
+  "top": "boing",
+  "p": 0.68,
+  "ok": false,
+  "lead": 0.16
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\201_코인5.mp3": {
+  "cat": "ding",
+  "name": "코인5",
+  "top": "bell",
+  "p": 0.86,
+  "ok": true,
+  "lead": 0.016
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\239_정답음_띠롱_띵동.mp3": {
+  "cat": "ding",
+  "name": "정답음_띠롱_띵동",
+  "top": "bell",
+  "p": 0.95,
+  "ok": true,
+  "lead": 0.139
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\316_캡션 딩동.mp3": {
+  "cat": "ding",
+  "name": "캡션 딩동",
+  "top": "bell",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.144
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\467_코인4.mp3": {
+  "cat": "ding",
+  "name": "코인4",
+  "top": "register",
+  "p": 0.66,
+  "ok": true,
+  "lead": 0.014
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\021_놀람.발견.mp3": {
+  "cat": "surprise",
+  "name": "놀람.발견",
+  "top": "levelup",
+  "p": 0.84,
+  "ok": false,
+  "lead": 0.127
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\465_깜짝 1.mp3": {
+  "cat": "surprise",
+  "name": "깜짝 1",
+  "top": "boing",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.038
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\144_띠용(빠른).mp3": {
+  "cat": "question",
+  "name": "띠용(빠른)",
+  "top": "boing",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.126
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\171_먼가 이상할때 띠용.mp3": {
+  "cat": "question",
+  "name": "먼가 이상할때 띠용",
+  "top": "boing",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.19
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\243_레벨업2.mp3": {
+  "cat": "success",
+  "name": "레벨업2",
+  "top": "boing",
+  "p": 1.0,
+  "ok": false,
+  "lead": 0.125
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\317_Unlocked.mp3": {
+  "cat": "success",
+  "name": "Unlocked",
+  "top": "ding",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.195
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\341_짜잔_금관악기.mp3": {
+  "cat": "success",
+  "name": "짜잔_금관악기",
+  "top": "levelup",
+  "p": 0.58,
+  "ok": true,
+  "lead": 0.145
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\464_빰빠바바.mp3": {
+  "cat": "success",
+  "name": "빰빠바바",
+  "top": "impact",
+  "p": 0.98,
+  "ok": false,
+  "lead": 0.062
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\019_삐삑 (오답 -짧은).mp3": {
+  "cat": "fail",
+  "name": "삐삑 (오답 -짧은)",
+  "top": "buzzer",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.0
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\189_핑거스냅.mp3": {
+  "cat": "caption",
+  "name": "핑거스냅",
+  "top": "snap",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.087
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\267_캡션 사운드 타탁.mp3": {
+  "cat": "caption",
+  "name": "캡션 사운드 타탁",
+  "top": "boing",
+  "p": 0.96,
+  "ok": false,
+  "lead": 0.028
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\310_핑거 스냅(딱).mp3": {
+  "cat": "caption",
+  "name": "핑거 스냅(딱)",
+  "top": "bubble",
+  "p": 0.87,
+  "ok": true,
+  "lead": 0.009
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\505_일반 캡션.mp3": {
+  "cat": "caption",
+  "name": "일반 캡션",
+  "top": "buzzer",
+  "p": 0.88,
+  "ok": false,
+  "lead": 0.025
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\018_찰칵 (카메라).mp3": {
+  "cat": "camera",
+  "name": "찰칵 (카메라)",
+  "top": "camera",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.001
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\348_초점음,써터음 1회.mp3": {
+  "cat": "camera",
+  "name": "초점음,써터음 1회",
+  "top": "camera",
+  "p": 1.0,
+  "ok": true,
+  "lead": 0.08
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\419_카메라 써터음 1회3.mp3": {
+  "cat": "camera",
+  "name": "카메라 써터음 1회3",
+  "top": "camera",
+  "p": 0.69,
+  "ok": true,
+  "lead": 0.059
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\517_카메라 초점음 1.mp3": {
+  "cat": "camera",
+  "name": "카메라 초점음 1",
+  "top": "buzzer",
+  "p": 1.0,
+  "ok": false,
+  "lead": 0.002
+ },
+ "C:\\Users\\tmd39\\Desktop\\효과음\\효과음600개\\560_카메라 찰칵.mp3": {
+  "cat": "camera",
+  "name": "카메라 찰칵",
+  "top": "whoosh",
+  "p": 1.0,
+  "ok": false,
+  "lead": 0.0
+ }
+}

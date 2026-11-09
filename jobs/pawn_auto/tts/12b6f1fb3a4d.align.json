@@ -1,0 +1,35 @@
+{
+ "text": "결국 고대 동전 전문가를 불렀는데",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.0,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "고대",
+   "start": 0.303,
+   "end": 0.404,
+   "aligned": true
+  },
+  {
+   "word": "동전",
+   "start": 0.465,
+   "end": 0.646,
+   "aligned": true
+  },
+  {
+   "word": "전문가를",
+   "start": 0.707,
+   "end": 1.03,
+   "aligned": true
+  },
+  {
+   "word": "불렀는데",
+   "start": 1.091,
+   "end": 1.515,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "text": "겨우 13살 소녀가 투자자들에게 역제안을 던졌습니다",
+ "words": [
+  {
+   "word": "겨우",
+   "start": 0.0,
+   "end": 0.141,
+   "aligned": true
+  },
+  {
+   "word": "13살",
+   "start": 0.201,
+   "end": 0.483,
+   "aligned": true
+  },
+  {
+   "word": "소녀가",
+   "start": 0.544,
+   "end": 0.825,
+   "aligned": true
+  },
+  {
+   "word": "투자자들에게",
+   "start": 1.067,
+   "end": 1.53,
+   "aligned": true
+  },
+  {
+   "word": "역제안을",
+   "start": 1.59,
+   "end": 1.892,
+   "aligned": true
+  },
+  {
+   "word": "던졌습니다",
+   "start": 1.933,
+   "end": 2.376,
+   "aligned": true
+  }
+ ]
+}

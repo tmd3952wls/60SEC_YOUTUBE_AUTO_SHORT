@@ -1,0 +1,47 @@
+{
+ "text": "2만 달러 바라던 분, 진짜 똑 부러지네요",
+ "words": [
+  {
+   "word": "2만",
+   "start": 0.0,
+   "end": 0.182,
+   "aligned": true
+  },
+  {
+   "word": "달러",
+   "start": 0.263,
+   "end": 0.404,
+   "aligned": true
+  },
+  {
+   "word": "바라던",
+   "start": 0.464,
+   "end": 0.666,
+   "aligned": true
+  },
+  {
+   "word": "분,",
+   "start": 0.767,
+   "end": 0.929,
+   "aligned": true
+  },
+  {
+   "word": "진짜",
+   "start": 1.111,
+   "end": 1.313,
+   "aligned": true
+  },
+  {
+   "word": "똑",
+   "start": 1.353,
+   "end": 1.414,
+   "aligned": true
+  },
+  {
+   "word": "부러지네요",
+   "start": 1.494,
+   "end": 1.959,
+   "aligned": true
+  }
+ ]
+}

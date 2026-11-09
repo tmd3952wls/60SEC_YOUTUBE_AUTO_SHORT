@@ -1,0 +1,47 @@
+{
+ "text": "그러자 투자자 세 명이 한꺼번에 제안을 던졌어요",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.0,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 0.421,
+   "end": 0.602,
+   "aligned": true
+  },
+  {
+   "word": "세",
+   "start": 0.662,
+   "end": 0.722,
+   "aligned": true
+  },
+  {
+   "word": "명이",
+   "start": 0.802,
+   "end": 0.983,
+   "aligned": true
+  },
+  {
+   "word": "한꺼번에",
+   "start": 1.083,
+   "end": 1.384,
+   "aligned": true
+  },
+  {
+   "word": "제안을",
+   "start": 1.424,
+   "end": 1.644,
+   "aligned": true
+  },
+  {
+   "word": "던졌어요",
+   "start": 1.684,
+   "end": 2.065,
+   "aligned": true
+  }
+ ]
+}

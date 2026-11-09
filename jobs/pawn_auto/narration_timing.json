@@ -1,0 +1,173 @@
+[
+  {
+    "text": "2만 달러 노린",
+    "start": 0.0,
+    "end": 0.535,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.233
+  },
+  {
+    "text": "동전이 5만 달러로",
+    "start": 0.535,
+    "end": 1.545,
+    "method": "whisperx",
+    "prop_start": 0.646,
+    "seg_start": 0.0,
+    "seg_end": 2.233
+  },
+  {
+    "text": "감정됐습니다",
+    "start": 1.545,
+    "end": 2.233,
+    "method": "whisperx",
+    "prop_start": 1.615,
+    "seg_start": 0.0,
+    "seg_end": 2.233
+  },
+  {
+    "text": "유산으로 받은 고대",
+    "start": 4.8,
+    "end": 5.577,
+    "method": "whisperx",
+    "prop_start": 4.8,
+    "seg_start": 4.8,
+    "seg_end": 6.567
+  },
+  {
+    "text": "은화를 가져왔는데요",
+    "start": 5.577,
+    "end": 6.567,
+    "method": "whisperx",
+    "prop_start": 5.617,
+    "seg_start": 4.8,
+    "seg_end": 6.567
+  },
+  {
+    "text": "릭은 진품이면 큰돈이",
+    "start": 9.233,
+    "end": 10.513,
+    "method": "whisperx",
+    "prop_start": 9.233,
+    "seg_start": 9.233,
+    "seg_end": 11.133
+  },
+  {
+    "text": "된다고 했죠",
+    "start": 10.513,
+    "end": 11.133,
+    "method": "whisperx",
+    "prop_start": 10.368,
+    "seg_start": 9.233,
+    "seg_end": 11.133
+  },
+  {
+    "text": "하지만 이 동전엔",
+    "start": 15.633,
+    "end": 16.233,
+    "method": "whisperx",
+    "prop_start": 15.633,
+    "seg_start": 15.633,
+    "seg_end": 17.067
+  },
+  {
+    "text": "함정이 있었는데",
+    "start": 16.233,
+    "end": 17.067,
+    "method": "whisperx",
+    "prop_start": 16.249,
+    "seg_start": 15.633,
+    "seg_end": 17.067
+  },
+  {
+    "text": "릭은 고대 동전",
+    "start": 20.033,
+    "end": 20.775,
+    "method": "whisperx",
+    "prop_start": 20.033,
+    "seg_start": 20.033,
+    "seg_end": 21.778
+  },
+  {
+    "text": "전문가를 불렀는데요",
+    "start": 20.775,
+    "end": 21.778,
+    "method": "whisperx",
+    "prop_start": 20.756,
+    "seg_start": 20.033,
+    "seg_end": 21.778
+  },
+  {
+    "text": "기원전 400년경",
+    "start": 21.778,
+    "end": 22.742,
+    "method": "whisperx",
+    "prop_start": 21.778,
+    "seg_start": 21.778,
+    "seg_end": 23.745
+  },
+  {
+    "text": "시라쿠사 은화였죠",
+    "start": 22.742,
+    "end": 23.745,
+    "method": "whisperx",
+    "prop_start": 22.691,
+    "seg_start": 21.778,
+    "seg_end": 23.745
+  },
+  {
+    "text": "그런데 릭의 첫",
+    "start": 30.045,
+    "end": 30.598,
+    "method": "whisperx",
+    "prop_start": 30.045,
+    "seg_start": 30.045,
+    "seg_end": 31.492
+  },
+  {
+    "text": "제안은 달랐는데요",
+    "start": 30.598,
+    "end": 31.492,
+    "method": "whisperx",
+    "prop_start": 30.669,
+    "seg_start": 30.045,
+    "seg_end": 31.492
+  },
+  {
+    "text": "결국 4만 달러에",
+    "start": 44.059,
+    "end": 44.822,
+    "method": "whisperx",
+    "prop_start": 44.059,
+    "seg_start": 44.059,
+    "seg_end": 45.659
+  },
+  {
+    "text": "거래가 성사됐죠",
+    "start": 44.822,
+    "end": 45.659,
+    "method": "whisperx",
+    "prop_start": 44.906,
+    "seg_start": 44.059,
+    "seg_end": 45.659
+  },
+  {
+    "text": "물려받은 동전이 두",
+    "start": 45.659,
+    "end": 46.456,
+    "method": "whisperx",
+    "prop_start": 45.659,
+    "seg_start": 45.659,
+    "seg_end": 47.192
+  },
+  {
+    "text": "배로 효도했네요",
+    "start": 46.456,
+    "end": 47.192,
+    "method": "whisperx",
+    "prop_start": 46.435,
+    "seg_start": 45.659,
+    "seg_end": 47.192
+  }
+]

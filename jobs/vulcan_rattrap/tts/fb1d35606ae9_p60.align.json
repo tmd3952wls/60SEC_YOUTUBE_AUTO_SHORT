@@ -1,0 +1,47 @@
+{
+ "text": "쥐 한 쌍이 1년이면 2천 마리로 불어나는데",
+ "words": [
+  {
+   "word": "쥐",
+   "start": 0.04,
+   "end": 0.06,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 0.141,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "쌍이",
+   "start": 0.302,
+   "end": 0.524,
+   "aligned": true
+  },
+  {
+   "word": "1년이면",
+   "start": 0.645,
+   "end": 1.048,
+   "aligned": true
+  },
+  {
+   "word": "2천",
+   "start": 1.068,
+   "end": 1.31,
+   "aligned": true
+  },
+  {
+   "word": "마리로",
+   "start": 1.371,
+   "end": 1.552,
+   "aligned": true
+  },
+  {
+   "word": "불어나는데",
+   "start": 1.613,
+   "end": 1.996,
+   "aligned": true
+  }
+ ]
+}

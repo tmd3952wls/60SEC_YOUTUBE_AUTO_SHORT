@@ -1,0 +1,29 @@
+{
+ "text": "기원전 400년경 시라쿠사 은화였죠",
+ "words": [
+  {
+   "word": "기원전",
+   "start": 0.0,
+   "end": 0.284,
+   "aligned": true
+  },
+  {
+   "word": "400년경",
+   "start": 0.304,
+   "end": 0.892,
+   "aligned": true
+  },
+  {
+   "word": "시라쿠사",
+   "start": 1.014,
+   "end": 1.399,
+   "aligned": true
+  },
+  {
+   "word": "은화였죠",
+   "start": 1.419,
+   "end": 1.825,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-11-07T09:48:29.841Z",
+        "reason": "Claude: throwaway decision sketch, not shipped"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/canon.html"
+        ],
+        "createdAt": "2026-11-07T09:48:30.091Z",
+        "reason": "Claude: throwaway decision sketch, not shipped"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "editor/static/index.html"
+        ],
+        "createdAt": "2026-11-07T09:48:30.364Z",
+        "reason": "Claude: tab underline and timeline tracks sit flush by design (NLE convention)"
+      }
+    ]
+  }
+}

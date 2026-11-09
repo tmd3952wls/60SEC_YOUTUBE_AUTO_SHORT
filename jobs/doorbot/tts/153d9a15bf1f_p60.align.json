@@ -1,0 +1,53 @@
+{
+ "text": "결국 거절하고 나왔지만 이름을 링으로 바꿔 다시 냈고",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "거절하고",
+   "start": 0.342,
+   "end": 0.604,
+   "aligned": true
+  },
+  {
+   "word": "나왔지만",
+   "start": 0.644,
+   "end": 0.966,
+   "aligned": true
+  },
+  {
+   "word": "이름을",
+   "start": 1.086,
+   "end": 1.288,
+   "aligned": true
+  },
+  {
+   "word": "링으로",
+   "start": 1.368,
+   "end": 1.569,
+   "aligned": true
+  },
+  {
+   "word": "바꿔",
+   "start": 1.63,
+   "end": 1.811,
+   "aligned": true
+  },
+  {
+   "word": "다시",
+   "start": 1.851,
+   "end": 1.992,
+   "aligned": true
+  },
+  {
+   "word": "냈고",
+   "start": 2.032,
+   "end": 2.193,
+   "aligned": true
+  }
+ ]
+}

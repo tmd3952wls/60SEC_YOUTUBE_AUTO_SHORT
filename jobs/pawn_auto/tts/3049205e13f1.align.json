@@ -1,0 +1,35 @@
+{
+ "text": "그런데 릭의 첫 제안은 달랐는데요",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.0,
+   "end": 0.221,
+   "aligned": true
+  },
+  {
+   "word": "릭의",
+   "start": 0.281,
+   "end": 0.382,
+   "aligned": true
+  },
+  {
+   "word": "첫",
+   "start": 0.462,
+   "end": 0.543,
+   "aligned": true
+  },
+  {
+   "word": "제안은",
+   "start": 0.603,
+   "end": 0.784,
+   "aligned": true
+  },
+  {
+   "word": "달랐는데요",
+   "start": 0.844,
+   "end": 1.327,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+  "title_lines": [
+    {"text": "상어들도 감탄한", "color": "yellow"},
+    {"text": "10살 발명가", "color": "red"}
+  ],
+  "credit": "© Sony Pictures Television",
+  "upload": {
+    "title": "투자자들이 \"정체가 뭐야?\" 외친 10살 발명가",
+    "description": "7살 때 동생을 위해 발명한 아기 숟가락으로 샤크탱크에 나온 10살 캐시디. 전문 용어까지 술술 설명하는 꼬마 CEO의 투자 결과는? #샤크탱크 #발명 #꼬마CEO #창업",
+    "tags": ["샤크탱크", "Shark Tank", "발명", "꼬마CEO", "창업", "투자"]
+  },
+  "segments": [
+    {"type": "narration", "text": "겨우 [10살] 소녀의 발명품에 투자자들이 [깜짝] 놀랐습니다", "broll_id": 116, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 95, "to_id": 95, "subs": ["이 아가씨 [정체가] 뭐야?"], "sfx": "boom", "tag": "(당황)"},
+    {"type": "narration", "text": "7살 때 아기 숟가락에 동생이 다칠까 걱정돼", "broll_id": 5, "sfx": "whoosh"},
+    {"type": "narration", "text": "숟가락과 치발기를 [하나로] 합친 제품을 만들었는데요", "broll_id": 9, "sfx": null},
+    {"type": "clip", "from_id": 2, "to_id": 2, "subs": ["[5만 달러에 지분 50%를] 원합니다"], "sfx": "ding", "tag": null},
+    {"type": "narration", "text": "벌써 매출 [5천 달러를] 올린 이 꼬마 CEO는", "broll_id": 56, "sfx": "pop"},
+    {"type": "narration", "text": "전문 용어까지 술술 설명하는데요", "broll_id": 87, "sfx": null},
+    {"type": "clip", "from_id": 91, "to_id": 92, "subs": ["경도계가 뭐죠?", "실리콘이 얼마나 [단단한지] 재는 단위예요"], "sfx": null, "tag": null},
+    {"type": "clip", "from_id": 95, "to_id": 96, "subs": ["이 아가씨 정체가 뭐야?", "정확히 맞아요"], "sfx": null, "tag": "ㅋㅋㅋ"},
+    {"type": "narration", "text": "하지만 케빈과 바바라는 연이어 거절하고", "broll_id": 111, "sfx": "pop"},
+    {"type": "clip", "from_id": 107, "to_id": 108, "subs": ["20년 뒤에 우리 애랑 결혼해 준다면", "정말 기쁠 것 같네요"], "sfx": null, "tag": "ㅋㅋㅋ"},
+    {"type": "narration", "text": "그때 [로리가] 나서는데", "broll_id": 120, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 123, "to_id": 123, "subs": ["[5만 달러에 50%] 드릴게요"], "sfx": "ding", "tag": null},
+    {"type": "clip", "from_id": 125, "to_id": 125, "subs": ["좋아요, 계약할게요!"], "sfx": "boom", "tag": "(소름)"},
+    {"type": "narration", "text": "꿈을 이룬 10살 발명가, 진짜 [대단하네요]", "broll_id": 140, "sfx": null}
+  ]
+}

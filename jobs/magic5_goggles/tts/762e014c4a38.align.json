@@ -1,0 +1,41 @@
+{
+ "text": "지분 3%까지 내려가는 역대급 경쟁 속",
+ "words": [
+  {
+   "word": "지분",
+   "start": 0.04,
+   "end": 0.242,
+   "aligned": true
+  },
+  {
+   "word": "3%까지",
+   "start": 0.302,
+   "end": 0.846,
+   "aligned": true
+  },
+  {
+   "word": "내려가는",
+   "start": 0.887,
+   "end": 1.189,
+   "aligned": true
+  },
+  {
+   "word": "역대급",
+   "start": 1.27,
+   "end": 1.592,
+   "aligned": true
+  },
+  {
+   "word": "경쟁",
+   "start": 1.693,
+   "end": 1.915,
+   "aligned": true
+  },
+  {
+   "word": "속",
+   "start": 2.015,
+   "end": 2.036,
+   "aligned": true
+  }
+ ]
+}

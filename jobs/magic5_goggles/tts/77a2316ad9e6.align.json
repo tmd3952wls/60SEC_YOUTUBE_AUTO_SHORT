@@ -1,0 +1,23 @@
+{
+ "text": "결국 고민도 없이",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.0,
+   "end": 0.204,
+   "aligned": true
+  },
+  {
+   "word": "고민도",
+   "start": 0.286,
+   "end": 0.552,
+   "aligned": true
+  },
+  {
+   "word": "없이",
+   "start": 0.592,
+   "end": 0.776,
+   "aligned": true
+  }
+ ]
+}

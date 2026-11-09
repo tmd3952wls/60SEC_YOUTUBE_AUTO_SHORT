@@ -1,0 +1,35 @@
+{
+ "text": "결국 창업자들이 고른 건 케빈",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.344,
+   "aligned": true
+  },
+  {
+   "word": "창업자들이",
+   "start": 0.668,
+   "end": 1.194,
+   "aligned": true
+  },
+  {
+   "word": "고른",
+   "start": 1.275,
+   "end": 1.417,
+   "aligned": true
+  },
+  {
+   "word": "건",
+   "start": 1.498,
+   "end": 1.599,
+   "aligned": true
+  },
+  {
+   "word": "케빈",
+   "start": 1.7,
+   "end": 1.902,
+   "aligned": true
+  }
+ ]
+}

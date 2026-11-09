@@ -1,0 +1,209 @@
+너는 조회수 수백만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+미국 리얼리티쇼(샤크탱크, 전당포 사나이들 등)의 원본 대사 전사본을 받아서,
+**한국어 TTS 내레이션 + 원본 대사(한국어 자막)** 가 번갈아 나오는 45~58초짜리 쇼츠 대본을 만든다.
+
+## 반드시 지킬 구성 공식
+1. **0~2초 훅(내레이션)**: 결과·숫자·반전을 미리 던지는 한 문장. 예) "평범해 보이는 치킨으로 무려 100만 달러를 제안받은 이들이 있습니다"
+2. **바로 이어서 원본 리액션 한 마디(clip)**: 가장 임팩트 있는 짧은 대사/웃음/놀람 (1~3초)
+3. **상황 설명**: 내레이션과 원본 대사를 3~6초 단위로 교차. 내레이션은 원본이 이미 말한 내용을 반복하지 말고 *맥락만* 채운다.
+4. **반전**: "하지만", "그런데" 로 시작하는 내레이션 → 반전 대사 clip
+5. **클라이맥스**: 협상/감정 장면은 원본 대사를 길게 살린다(clip 여러 줄).
+6. **마무리**: 결과 + 후일담/한 줄 코멘트. "~했다고 하네요", "~진짜 똑 부러지네요" 같은 구어체.
+
+## 문체 규칙
+- 내레이션 한 문장은 25자 이내, 구어체 존댓말("~는데요", "~했죠", "~합니다"). 문장 끝을 "~는데" 로 끊어 다음 컷으로 넘기는 연결을 자주 쓴다.
+- 달러 금액은 "20만 달러"처럼 한국식 단위로. 필요하면 원화 환산("약 2억 원")을 덧붙인다.
+- 대사 자막(subs)은 직역 말고 자연스러운 한국어 구어체 의역, 한 항목 30자 이내. 짧은 감탄은 "와우", "말도 안 돼" 처럼.
+- 내레이션 전체 글자 수 합계는 대략 150~230자 (TTS 1.2배속 기준 약 20~30초).
+- 전체 길이(내레이션 + clip 길이 합)는 58초를 넘기면 안 된다. clip 길이는 전사본의 start/end 로 계산하라.
+
+## 강조어 표시 [ ]
+- 내레이션 text 와 대사 subs 에서 핵심 숫자·금액·충격 단어를 대괄호로 감싼다. 화면에서 색이 바뀐다.
+  예) "평범해 보이는 치킨으로 무려 [100만 달러를] 제안받은 이들이 있습니다"
+- 대괄호는 반드시 어절에 붙여 쓴다("[100만 달러를]" O, "[ 100만 ]" X). 한 문장에 0~1개, 전체 6~10개.
+
+## 상단 제목(title_lines)
+- 2줄, 각 줄 12자 이내. 1줄은 상황, 2줄은 강조(반전/숫자/감정). 예) ["떡잎부터 남다른", "꼬마 CEO"], ["농담인줄 알았던", "물건의 소름돋는 반전"]
+- color: 1줄은 "white" 또는 "yellow", 2줄은 "red" / "cyan" / "orange" 중 하나.
+
+## 효과음(sfx) / 감정 태그(tag)
+- sfx 는 각 세그먼트 시작 시점에 한 번 재생된다. 선택지: "whoosh"(장면 전환/훅), "pop"(가벼운 강조), "ding"(숫자·가격 공개), "boom"(반전·충격), null. 전체 4~7개만, 남발 금지.
+- tag 는 clip 에만, 화면 좌상단에 뜨는 짧은 감정 표시. 예) "(황당)", "(당황)", "ㅋㅋㅋ", "(소름)". 전체 0~3개.
+
+## 출력 형식 — JSON 하나만 출력 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "white"}, {"text": "...", "color": "red"}],
+  "credit": "© 원본 방송사 이름",
+  "upload": {"title": "유튜브 제목 (40자 이내, 호기심 유발)", "description": "2~3문장 요약 + 해시태그 3~5개", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "tag": null}
+  ]
+}
+
+- narration.broll_id: 내레이션이 나오는 동안 보여줄 화면이 시작되는 전사 id (그 장면 내용과 내레이션이 맞도록 고른다). 같은 broll_id 를 반복하지 마라.
+- clip.from_id ~ to_id: 연속된 전사 id 범위. subs 길이는 (to_id - from_id + 1) 과 정확히 같아야 한다. 대사를 빼고 싶은 줄은 ""(빈 문자열).
+- clip 끼리, narration broll 끼리 시간 순서는 원본 순서를 대체로 따른다(훅은 예외).
+
+## 원본 정보
+프로그램/맥락 메모: Shark Tank US, 10살 소녀의 아기 숟가락 발명품
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [0.1-4.1] Next up is a product that began as an elementary school project
+1 [15.7-19.4] And I'm Lori Crowley Cassidy's mom and we're from Honolulu, Hawaii
+2 [19.7-25.8] I'm seeking $50,000 in exchange for 50% of my company Wow sharks
+3 [25.8-31.2] I love to create an event when I was seven years old my baby sister Emily
+4 [31.7-33.7] Would always play their spirit
+5 [33.9-37.8] And my mom would always get worried that she might accidentally poke or stab her throat
+6 [37.8-43.0] So I wanted to create a product that eliminated that long and sharp design of a traditional
+7 [43.0-44.0] spoon.
+8 [44.0-46.2] So I invented the baby tune.
+9 [46.2-52.1] The baby tune is a combination of a baby spoon and a teeter all in one.
+10 [52.1-56.9] The rectangular body makes it easy for babies to grasp and self-feed.
+11 [56.9-62.0] The baby tune is made of 100% soft silicone, there are no-sherp edges such gentle on
+12 [62.0-65.0] baby's gums and it works great for teething.
+13 [65.0-68.5] Sharks, all parents know that babies love throwing
+14 [68.5-70.4] their spoons on the floor.
+15 [70.4-72.7] Well, we have a solution for this.
+16 [72.7-76.1] Just put a pacifier clip around the baby tune.
+17 [76.1-77.4] Oh.
+18 [77.4-79.9] And attach it to the baby's shirt.
+19 [79.9-82.5] No more baby spoons getting thrown on the floor.
+20 [82.5-84.3] But wait, there's more.
+21 [84.3-85.1] What?
+22 [85.1-87.5] The baby tune is made right here in the USA.
+23 [87.5-90.8] And it was designed and created by me.
+24 [90.8-93.7] So Sharks, who's ready to take a bite out of the baby
+25 [93.7-97.7] Together, we can bring baby tunes to every baby in the world.
+26 [97.7-98.7] Wow.
+27 [98.7-99.7] Nice.
+28 [99.7-100.7] Good job, Cassidy.
+29 [100.7-101.7] Great.
+30 [101.7-102.7] Oh, my gosh.
+31 [102.7-105.7] So we have some samples we'd like to pass out.
+32 [105.7-106.7] Cool.
+33 [106.7-107.7] Teesharks.
+34 [107.7-108.7] How old was Cassidy?
+35 [108.7-109.7] I'm 10.
+36 [109.7-110.7] She's 10.
+37 [110.7-111.7] 10 going on 34.
+38 [111.7-113.7] Oh, are we going to eat?
+39 [113.7-117.7] Just since we're Lori.
+40 [117.7-118.7] That's for me?
+41 [118.7-119.7] Yep.
+42 [119.7-120.7] Okay.
+43 [120.7-122.7] Should I feed Lori?
+44 [122.7-130.0] We brought from Hawaii, we have poi which is a Hawaiian baby food.
+45 [130.0-134.3] How did you come up with the design and what did you do to figure that out?
+46 [134.3-138.9] So in first grade I entered a local science fair when I was seven years old and we have
+47 [138.9-141.9] actually my sample if you guys want to see it too right here.
+48 [141.9-142.9] We do.
+49 [142.9-143.9] Oh wow, so that's your prototype?
+50 [143.9-146.6] Yeah, this is the one that I made in first grade.
+51 [146.6-147.8] Look at this.
+52 [147.8-153.8] I mean partially why I'm just very thankful I'm here is I wanted to show other kids
+53 [153.8-157.8] that they can be open to opportunities they have at school or even at home to
+54 [157.8-162.3] create an event. I just really hope I inspire them. It's a dream come true.
+55 [162.3-165.9] So are you selling it already or is it? Yeah we sell our products so since
+56 [165.9-173.5] September of 2018 we had $5,000 in sales. Wow. Thank you. What does it cost?
+57 [173.5-178.7] Our total cost is $6.60. Can you sell it for how much? We sell it for $15.
+58 [178.7-183.2] $15 for you. Cassie, are you gonna be a superstar at your school because
+59 [183.2-184.8] Did you run Shark Tank?
+60 [184.8-187.0] Well, that's obviously not why I'm here.
+61 [187.0-189.0] Oh, you got a better answer.
+62 [189.0-191.8] Oh my God, I love you.
+63 [191.8-194.4] Cassidy, it's pretty rare that somebody comes in here
+64 [194.4-196.8] and offers us 50%.
+65 [196.8-198.3] Why did you do that?
+66 [198.3-200.7] I mean, let's face it, I'm only 10 years old.
+67 [200.7-201.6] I need a partner.
+68 [201.6-204.2] I mean, I still have to go to high school.
+69 [204.2-206.2] I think you're more of a shark than we are.
+70 [206.2-208.8] Cassidy, you've done an amazing, amazing job.
+71 [208.8-210.6] I mean, it's incredible.
+72 [210.6-212.0] Thank you.
+73 [212.0-214.4] to have started a business, to develop a product,
+74 [214.4-217.1] to see it through, to make your way here.
+75 [218.1-221.4] I mean, just, I can't even imagine what's next for you.
+76 [221.4-225.0] The challenge I have is just, it's really not a fit for me.
+77 [225.0-228.4] So, I'm out, but great, great job, Cassidy.
+78 [229.9-231.6] Cassidy, I've been doing little businesses
+79 [231.6-233.0] since I was a kid.
+80 [233.0-235.2] I can already tell from your presence,
+81 [235.2-237.6] from your voice, from your grit
+82 [237.6-239.6] that you're gonna go very, very far.
+83 [239.6-242.0] This was three years ago and you didn't give up.
+84 [242.0-245.2] You know, manufacturing can be very tricky.
+85 [245.2-247.7] I find it fascinating that you pulled this up.
+86 [247.7-249.4] Well actually, just recently,
+87 [249.4-252.4] we had to change the durometer of silicone we're using.
+88 [252.4-254.1] So we had to lower it.
+89 [254.1-255.1] You had to change what?
+90 [255.1-256.6] Change the durometer of silicone.
+91 [256.6-257.6] What's a durometer?
+92 [257.6-260.6] Durometer is how you measure the firmness of silicone.
+93 [260.6-261.8] For example, if you have something
+94 [261.8-263.2] that's a higher durometer.
+95 [263.2-264.3] Who are you, lady?
+96 [264.3-265.6] You're exactly right.
+97 [265.6-267.2] If you have something that's a higher durometer
+98 [267.2-269.6] of silicone, it's gonna be more stiff and hard.
+99 [269.6-271.8] And if you have something that's a lot of silicone,
+100 [271.8-273.9] it's gonna be more flexible.
+101 [274.8-276.4] Cassidy, do you have a patent on it?
+102 [276.4-278.5] Yeah, we have our patents right here, actually.
+103 [278.5-279.3] Wow.
+104 [280.5-283.4] Cassidy, I am beyond impressed.
+105 [283.4-284.6] I know you're not allowed to do this
+106 [284.6-286.0] in the United States of America,
+107 [286.0-289.3] but if in 20 years you wanna marry one of my kids,
+108 [289.3-290.7] I'd be very delighted.
+109 [290.7-292.9] But in those years, you're so impressive,
+110 [292.9-294.7] but don't understand the baby space
+111 [294.7-296.5] and for those reasons, I'm out.
+112 [296.5-297.6] Thank you so much.
+113 [297.6-303.6] Cassidy, I'm torn because I don't feel that you're willing to quit elementary school.
+114 [303.6-310.3] And I can go straight to college.
+115 [310.3-316.3] Honestly, I don't want you to quit school. It's a little early. I'm out.
+116 [316.3-323.3] Cassidy, this is a great product. You just absolutely blow me away.
+117 [323.3-326.3] You said you always wanted to go on Shark Tank,
+118 [326.3-329.6] I'm so proud if we had any part in your wanting
+119 [329.6-331.5] to become an entrepreneur.
+120 [331.5-334.4] So guess what, young lady?
+121 [334.4-336.5] I'm going to make you an offer.
+122 [336.5-341.6] Because I have to be along with this journey,
+123 [341.6-346.4] I'm giving you $50,000 for 50%.
+124 [346.4-350.5] Wow.
+125 [350.5-351.7] You have a deal.
+126 [351.7-352.2] Congratulations.
+127 [352.2-352.7] Thank you.
+128 [352.7-353.2] Congratulations.
+129 [353.2-357.3] Thank you.
+130 [357.3-358.5] Oh my gosh.
+131 [358.5-360.5] You are just amazing.
+132 [360.5-361.5] Amazing.
+133 [361.5-362.5] So excited.
+134 [362.5-363.5] So cool.
+135 [363.5-364.5] High five.
+136 [364.5-365.5] Oh.
+137 [365.5-366.5] I'll see you soon.
+138 [366.5-367.5] Congratulations, guys.
+139 [367.5-368.5] Well done.
+140 [368.5-372.5] Before you leave, come up here, sit in the shark chair.
+141 [372.5-373.5] Oh, yes.
+142 [373.5-375.5] That's where you're going.
+143 [375.5-376.5] Let's see you.
+144 [376.5-379.2] Is it real?
+145 [379.2-380.2] Yeah.
+146 [380.2-381.2] Congratulations, Cassidy.
+147 [381.2-385.2] Cassidy, look at Kevin and say, you're dead to me.
+148 [385.2-389.4] Congratulations, Cassidy.
+149 [389.4-390.4] Thank you.
+150 [390.4-391.4] Congratulations, guys.
+151 [391.4-398.4] Lastly, we got a deal.
+152 [398.4-401.4] What's fascinating about shark things, I have four kids.
+153 [401.4-403.4] My youngest is six years old,
+154 [403.4-405.4] and she gets glued to the TV.
+155 [405.4-406.4] It's very engaging.
+156 [406.4-407.4] It's not amazing.
+157 [407.4-408.4] It's amazing.

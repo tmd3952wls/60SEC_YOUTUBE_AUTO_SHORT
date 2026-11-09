@@ -1,0 +1,35 @@
+{
+ "text": "물려받은 동전이 두 배로 효도했네요",
+ "words": [
+  {
+   "word": "물려받은",
+   "start": 0.04,
+   "end": 0.363,
+   "aligned": true
+  },
+  {
+   "word": "동전이",
+   "start": 0.403,
+   "end": 0.625,
+   "aligned": true
+  },
+  {
+   "word": "두",
+   "start": 0.645,
+   "end": 0.665,
+   "aligned": true
+  },
+  {
+   "word": "배로",
+   "start": 0.847,
+   "end": 0.948,
+   "aligned": true
+  },
+  {
+   "word": "효도했네요",
+   "start": 0.968,
+   "end": 1.412,
+   "aligned": true
+  }
+ ]
+}

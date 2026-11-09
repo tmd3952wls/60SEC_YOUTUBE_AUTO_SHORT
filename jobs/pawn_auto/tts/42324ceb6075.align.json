@@ -1,0 +1,35 @@
+{
+ "text": "릭은 진품이면 큰돈이 된다고 했죠",
+ "words": [
+  {
+   "word": "릭은",
+   "start": 0.081,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "진품이면",
+   "start": 0.363,
+   "end": 0.846,
+   "aligned": true
+  },
+  {
+   "word": "큰돈이",
+   "start": 1.008,
+   "end": 1.29,
+   "aligned": true
+  },
+  {
+   "word": "된다고",
+   "start": 1.33,
+   "end": 1.511,
+   "aligned": true
+  },
+  {
+   "word": "했죠",
+   "start": 1.552,
+   "end": 1.753,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "text": "투자 계약이 마무리됐는지는 아직 발표 전이지만, 방송 뒤 홈페이지는 무료배송 할인을 걸고 주문을 받고 있어요",
+ "words": [
+  {
+   "word": "투자",
+   "start": 0.02,
+   "end": 0.201,
+   "aligned": true
+  },
+  {
+   "word": "계약이",
+   "start": 0.241,
+   "end": 0.462,
+   "aligned": true
+  },
+  {
+   "word": "마무리됐는지는",
+   "start": 0.502,
+   "end": 1.125,
+   "aligned": true
+  },
+  {
+   "word": "아직",
+   "start": 1.186,
+   "end": 1.326,
+   "aligned": true
+  },
+  {
+   "word": "발표",
+   "start": 1.427,
+   "end": 1.588,
+   "aligned": true
+  },
+  {
+   "word": "전이지만,",
+   "start": 1.648,
+   "end": 2.03,
+   "aligned": true
+  },
+  {
+   "word": "방송",
+   "start": 2.171,
+   "end": 2.331,
+   "aligned": true
+  },
+  {
+   "word": "뒤",
+   "start": 2.392,
+   "end": 2.432,
+   "aligned": true
+  },
+  {
+   "word": "홈페이지는",
+   "start": 2.492,
+   "end": 2.954,
+   "aligned": true
+  },
+  {
+   "word": "무료배송",
+   "start": 3.035,
+   "end": 3.356,
+   "aligned": true
+  },
+  {
+   "word": "할인을",
+   "start": 3.417,
+   "end": 3.618,
+   "aligned": true
+  },
+  {
+   "word": "걸고",
+   "start": 3.678,
+   "end": 3.879,
+   "aligned": true
+  },
+  {
+   "word": "주문을",
+   "start": 3.999,
+   "end": 4.18,
+   "aligned": true
+  },
+  {
+   "word": "받고",
+   "start": 4.241,
+   "end": 4.381,
+   "aligned": true
+  },
+  {
+   "word": "있어요",
+   "start": 4.401,
+   "end": 4.663,
+   "aligned": true
+  }
+ ]
+}

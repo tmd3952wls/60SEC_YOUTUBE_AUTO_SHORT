@@ -1,0 +1,53 @@
+{
+ "text": "이건 누가 벨을 누르면 스마트폰으로 전화처럼 알림이 오고",
+ "words": [
+  {
+   "word": "이건",
+   "start": 0.0,
+   "end": 0.161,
+   "aligned": true
+  },
+  {
+   "word": "누가",
+   "start": 0.242,
+   "end": 0.383,
+   "aligned": true
+  },
+  {
+   "word": "벨을",
+   "start": 0.444,
+   "end": 0.626,
+   "aligned": true
+  },
+  {
+   "word": "누르면",
+   "start": 0.666,
+   "end": 0.949,
+   "aligned": true
+  },
+  {
+   "word": "스마트폰으로",
+   "start": 0.989,
+   "end": 1.493,
+   "aligned": true
+  },
+  {
+   "word": "전화처럼",
+   "start": 1.554,
+   "end": 1.897,
+   "aligned": true
+  },
+  {
+   "word": "알림이",
+   "start": 1.938,
+   "end": 2.16,
+   "aligned": true
+  },
+  {
+   "word": "오고",
+   "start": 2.422,
+   "end": 2.462,
+   "aligned": true
+  }
+ ]
+}

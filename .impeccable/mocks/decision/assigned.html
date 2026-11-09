@@ -1,0 +1,48 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><style>
+:root{--ground:#141a24;--panel:#1b2330;--line:#2a3445;--ink:#e6ebf2;--mute:#8d99ab;--sub:#ffe066;--dial:#5fd4e6;--lamp:#ff9d3b}
+*{box-sizing:border-box;margin:0}body{width:1440px;height:900px;overflow:hidden;background:var(--ground);color:var(--ink);font:14px/1.45 "Malgun Gothic",system-ui,sans-serif}
+.top{height:52px;display:flex;align-items:center;gap:14px;padding:0 20px;border-bottom:1px solid var(--line);background:#101620}
+.top b{font-size:15px}.sel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.sp{flex:1}.btn{border-radius:6px;padding:7px 14px;border:1px solid var(--line);background:var(--panel)}.pri{background:var(--sub);color:#141a24;border:0;font-weight:700}
+.main{display:grid;grid-template-columns:330px 1fr 380px;height:848px}
+.pv{padding:18px;border-right:1px solid var(--line)}.phone{width:294px;height:522px;background:#000;border-radius:10px;position:relative;overflow:hidden}
+.ttl{position:absolute;top:22px;width:100%;text-align:center;font-weight:800;font-size:24px;line-height:1.25}.ttl span{color:var(--sub)}
+.vid{position:absolute;top:118px;height:286px;width:100%;background:#2b2a26}
+.cap{position:absolute;top:360px;width:100%;text-align:center;font-weight:800;font-size:21px;color:#fff}.cap i{font-style:normal;color:#ff6b6b}
+.tc{margin-top:12px;font:13px Consolas,monospace;color:var(--mute)}
+.hd,.row{display:grid;grid-template-columns:44px 80px 1fr 1fr 96px;border-bottom:1px solid var(--line)}
+.hd{font-size:12px;color:var(--mute);padding:10px 0;background:#101620}.hd div,.row div{padding:0 12px}
+.row{padding:11px 0}.n,.t{font:600 13px Consolas,monospace;color:var(--mute)}
+.en{color:var(--mute)}.ko{font-weight:600}.tag{font-size:11px;padding:1px 6px;border-radius:4px;margin-right:6px}
+.tn{background:#3b3420;color:var(--sub)}.td{background:#173640;color:var(--dial)}
+.on{background:#202b3b;box-shadow:inset 3px 0 var(--sub)}.on .ko em{font-style:normal;color:var(--sub)}
+.lamp{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--lamp);margin-left:6px}.sfx{font-size:12px;color:var(--mute)}
+.ed{border-left:1px solid var(--line);padding:18px;background:var(--panel)}.ed h3{font-size:15px;margin-bottom:12px}
+.lb{font-size:12px;color:var(--mute);margin:14px 0 5px}.in{background:#111823;border:1px solid var(--line);border-radius:6px;padding:9px 10px}
+.chip{display:inline-block;padding:4px 9px;border:1px solid var(--line);border-radius:999px;font-size:12px;margin:0 4px 4px 0}
+.bar{position:absolute;bottom:0;left:330px;right:380px;height:44px;border-top:1px solid var(--line);background:#101620;display:flex;align-items:center;padding:0 16px;gap:10px;font-size:12px;color:var(--mute)}
+</style></head><body>
+<div class="top"><b>쇼츠 편집기</b><span class="sel">vulcan_rattrap ▾</span><span class="sel">v5_edl.json ▾</span><span class="sel">full_v5.mp4 · 54.5초 ▾</span><div class="sp"></div><span class="btn">이 박자만 미리보기</span><span class="btn">새 버전 저장</span><span class="btn pri">전체 렌더링</span><span class="btn">설정</span></div>
+<div class="main">
+<div class="pv"><div class="phone"><div class="ttl"><span>투자자 3명이 탐낸</span><br>쥐덫의 정체?!</div><div class="vid"></div><div class="cap"><i>쥐 떼</i>를 감당 못 하는데</div></div><div class="tc">00:04.31 / 00:54.50 · B3</div></div>
+<div style="position:relative">
+<div class="hd"><div>#</div><div>시간</div><div>원문 (영어)</div><div>한국어 자막</div><div>효과음</div></div>
+<div class="row"><div class="n">B1</div><div class="t">0:00.0</div><div class="en"><span class="tag tn">내레이션</span></div><div class="ko">한 번에 쥐를 / 30마리 잡는 쥐덫</div><div class="sfx">딩</div></div>
+<div class="row"><div class="n">B2</div><div class="t">0:01.8</div><div class="en"><span class="tag td">대사</span>Enough, enough.</div><div class="ko">그만, 그만! <span class="sfx">· 단독</span></div><div class="sfx">팝</div></div>
+<div class="row on"><div class="n">B3</div><div class="t">0:02.7</div><div class="en"><span class="tag tn">내레이션</span></div><div class="ko">한 마리씩 잡는 덫으론 / <em>쥐 떼를 감당</em> 못 하는데<span class="lamp"></span></div><div class="sfx">—</div></div>
+<div class="row"><div class="n">B4</div><div class="t">0:05.3</div><div class="en"><span class="tag td">대사</span>The world&#39;s first multi-catch bucket trap</div><div class="ko">세계 최초 / 여러 마리 잡는 양동이 덫</div><div class="sfx">휙 ×2</div></div>
+<div class="row"><div class="n">B5</div><div class="t">0:07.7</div><div class="en"><span class="tag tn">내레이션</span></div><div class="ko">한 번 놓으면 / 알아서 계속 잡는다는데</div><div class="sfx">팝</div></div>
+<div class="row"><div class="n">B6</div><div class="t">0:09.5</div><div class="en"><span class="tag td">대사</span>And then it catches the next one and the next one.</div><div class="ko">그리고 다음 놈을 잡고 / 또 다음 놈을 잡죠</div><div class="sfx">휙</div></div>
+<div class="row"><div class="n">B7</div><div class="t">0:11.8</div><div class="en"><span class="tag tn">내레이션</span></div><div class="ko">쥐가 떨어지면 / 덫은 다시 / 다음 쥐를 기다린다고</div><div class="sfx">물음</div></div>
+<div class="row"><div class="n">B8</div><div class="t">0:15.1</div><div class="en"><span class="tag td">대사</span>It was not one rat, it was hundreds.</div><div class="ko">쥐가 한 마리가 아니라 / 수백 마리였어요</div><div class="sfx">휙</div></div>
+<div class="row"><div class="n">B9</div><div class="t">0:17.6</div><div class="en"><span class="tag tn">내레이션</span></div><div class="ko">그런데 이때 / 쥐랑 같이 자랐다는 / 투자자가 나서는데</div><div class="sfx">휙</div></div>
+</div>
+<div class="ed"><h3>B3 · 내레이션 <span class="lamp"></span> <span class="sfx">고친 뒤 아직 렌더 안 함</span></h3>
+<div class="lb">내레이션 대본 (고치면 목소리를 새로 만듭니다)</div><div class="in">한 마리씩 잡는 덫으론 [red:쥐 떼]를 감당 못 하는데</div>
+<div class="lb">자막 나누기</div><div class="in" style="margin-bottom:6px">한 마리씩 잡는 덫으론</div><div class="in">[red:쥐 떼]를 감당 못 하는데</div>
+<div class="lb">강조 색</div><span class="chip">노랑</span><span class="chip" style="border-color:#ff5a5a;color:#ff7a7a">빨강</span><span class="chip">초록</span><span class="chip">하늘</span>
+<div class="lb">장면</div><div class="in">원본 0:57.1 → 실사용 영상 1:24.2</div>
+<div class="lb">효과음</div><div class="in">없음 ▾</div></div>
+</div>
+<div class="bar"><span style="color:var(--lamp)">● 1개 박자 고침</span><span>렌더링하면 full_v6.mp4 로 새로 저장 (기존 영상 보관)</span></div>
+</body></html>

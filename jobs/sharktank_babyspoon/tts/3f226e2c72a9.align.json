@@ -1,0 +1,35 @@
+{
+ "text": "하지만 케빈과 바바라는 연이어 거절하고",
+ "words": [
+  {
+   "word": "하지만",
+   "start": 0.0,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "케빈과",
+   "start": 0.363,
+   "end": 0.665,
+   "aligned": true
+  },
+  {
+   "word": "바바라는",
+   "start": 0.746,
+   "end": 1.109,
+   "aligned": true
+  },
+  {
+   "word": "연이어",
+   "start": 1.129,
+   "end": 1.491,
+   "aligned": true
+  },
+  {
+   "word": "거절하고",
+   "start": 1.572,
+   "end": 1.874,
+   "aligned": true
+  }
+ ]
+}

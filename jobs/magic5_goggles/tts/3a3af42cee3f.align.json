@@ -1,0 +1,41 @@
+{
+ "text": "얼굴을 13초 스캔하면 끝나는 수경이 있는데",
+ "words": [
+  {
+   "word": "얼굴을",
+   "start": 0.04,
+   "end": 0.242,
+   "aligned": true
+  },
+  {
+   "word": "13초",
+   "start": 0.262,
+   "end": 0.624,
+   "aligned": true
+  },
+  {
+   "word": "스캔하면",
+   "start": 0.685,
+   "end": 1.027,
+   "aligned": true
+  },
+  {
+   "word": "끝나는",
+   "start": 1.127,
+   "end": 1.369,
+   "aligned": true
+  },
+  {
+   "word": "수경이",
+   "start": 1.47,
+   "end": 1.631,
+   "aligned": true
+  },
+  {
+   "word": "있는데",
+   "start": 1.671,
+   "end": 1.892,
+   "aligned": true
+  }
+ ]
+}

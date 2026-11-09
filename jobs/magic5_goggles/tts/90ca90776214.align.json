@@ -1,0 +1,41 @@
+{
+ "text": "투자 50만 달러에 지분 2.5%를 요구하고",
+ "words": [
+  {
+   "word": "투자",
+   "start": 0.04,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "50만",
+   "start": 0.364,
+   "end": 0.525,
+   "aligned": true
+  },
+  {
+   "word": "달러에",
+   "start": 0.606,
+   "end": 0.889,
+   "aligned": true
+  },
+  {
+   "word": "지분",
+   "start": 1.01,
+   "end": 1.374,
+   "aligned": true
+  },
+  {
+   "word": "2.5%를",
+   "start": 1.455,
+   "end": 1.798,
+   "aligned": true
+  },
+  {
+   "word": "요구하고",
+   "start": 1.879,
+   "end": 2.182,
+   "aligned": true
+  }
+ ]
+}

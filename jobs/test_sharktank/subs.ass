@@ -1,0 +1,65 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,Malgun Gothic,150,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,5,0,5,40,40,525,1
+Style: Narr,Malgun Gothic,96,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Dial,Malgun Gothic,86,&H001AE8FF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Tag,Malgun Gothic,70,&H00FFE035,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,0,7,40,40,525,1
+Style: Credit,Malgun Gothic,30,&H009A9A9A,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:49.45,Title,,0,0,0,,{\pos(540,222)\fs150\c&H00FFFFFF}투자자들 당황시킨
+Dialogue: 1,0:00:00.00,0:00:49.45,Title,,0,0,0,,{\pos(540,380)\fs136\c&H002E2EFF}13살 소녀의 역제안
+Dialogue: 0,0:00:00.00,0:00:49.45,Credit,,0,0,0,,{\pos(540,1530)}© Sony Pictures Television
+Dialogue: 1,0:00:00.00,0:00:00.55,Narr,,0,0,0,,{\bord0\shad0\blur24\1c&H0066E0FF\alpha&H20&\t(0,500,\fscx155\fscy190\alpha&HFF&)}겨우 13살 소녀가
+Dialogue: 2,0:00:00.00,0:00:01.02,Narr,,0,0,0,,{\shad0\bord14\blur18\1c&H0066E0FF\3c&H0066E0FF\alpha&H60&\t(0,250,\bord20\blur24\alpha&H90&)}겨우 13살 소녀가
+Dialogue: 3,0:00:00.00,0:00:01.02,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)\bord3\3c&H0066E0FF\shad0}겨우 {\1c&H001AE8FF}13살{\1c&H00FFFFFF} 소녀가
+Dialogue: 1,0:00:01.02,0:00:01.57,Narr,,0,0,0,,{\bord0\shad0\blur24\1c&H0066E0FF\alpha&H20&\t(0,500,\fscx155\fscy190\alpha&HFF&)}투자자들에게 역제안을
+Dialogue: 2,0:00:01.02,0:00:01.88,Narr,,0,0,0,,{\shad0\bord14\blur18\1c&H0066E0FF\3c&H0066E0FF\alpha&H60&\t(0,250,\bord20\blur24\alpha&H90&)}투자자들에게 역제안을
+Dialogue: 3,0:00:01.02,0:00:01.88,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)\bord3\3c&H0066E0FF\shad0}투자자들에게 {\1c&H001AE8FF}역제안을{\1c&H00FFFFFF}
+Dialogue: 1,0:00:01.88,0:00:02.43,Narr,,0,0,0,,{\bord0\shad0\blur24\1c&H0066E0FF\alpha&H20&\t(0,500,\fscx155\fscy190\alpha&HFF&)}던졌습니다
+Dialogue: 2,0:00:01.88,0:00:02.50,Narr,,0,0,0,,{\shad0\bord14\blur18\1c&H0066E0FF\3c&H0066E0FF\alpha&H60&\t(0,250,\bord20\blur24\alpha&H90&)}던졌습니다
+Dialogue: 3,0:00:01.88,0:00:02.50,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)\bord3\3c&H0066E0FF\shad0}던졌습니다
+Dialogue: 3,0:00:02.60,0:00:06.72,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H00FFFFFF}3만 5천 달러에{\1c&H001AE8FF}\N지분 25% 어떠세요?
+Dialogue: 3,0:00:06.72,0:00:07.56,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}와우
+Dialogue: 2,0:00:02.50,0:00:07.77,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}(소름)
+Dialogue: 3,0:00:07.77,0:00:08.75,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}주머니 달린 양말로
+Dialogue: 3,0:00:08.75,0:00:09.45,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}샤크탱크에 나온
+Dialogue: 3,0:00:09.45,0:00:10.05,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}소피는
+Dialogue: 3,0:00:10.15,0:00:13.67,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}3만 달러에 지분\N15%를 제안합니다
+Dialogue: 3,0:00:13.85,0:00:14.60,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}11살 때 직접
+Dialogue: 3,0:00:14.60,0:00:15.55,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}시제품을 만들고 모은
+Dialogue: 3,0:00:15.55,0:00:16.38,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}돈을 투자했는데
+Dialogue: 3,0:00:16.48,0:00:19.96,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}제 돈 {\1c&H00FFFFFF}1만\N달러를{\1c&H001AE8FF} 투자했어요
+Dialogue: 3,0:00:19.96,0:00:20.96,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}1만 달러?
+Dialogue: 3,0:00:20.96,0:00:21.80,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}1만 달러라고?
+Dialogue: 2,0:00:16.38,0:00:22.01,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}(놀람)
+Dialogue: 3,0:00:22.01,0:00:22.88,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}벌써 매출만 {\1c&H001AE8FF}1만
+Dialogue: 3,0:00:22.88,0:00:23.62,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H001AE8FF}6천 달러였죠{\1c&H00FFFFFF}
+Dialogue: 3,0:00:23.62,0:00:24.33,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}케빈과 바바라가
+Dialogue: 3,0:00:24.33,0:00:25.32,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}투자를 거절한 뒤
+Dialogue: 3,0:00:25.32,0:00:26.02,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}로리와 데이먼드가
+Dialogue: 3,0:00:26.02,0:00:27.12,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}손잡고 3만 달러에
+Dialogue: 3,0:00:27.12,0:00:27.86,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H001AE8FF}지분 3분의 1을{\1c&H00FFFFFF}
+Dialogue: 3,0:00:27.86,0:00:28.63,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}제안하는데요
+Dialogue: 3,0:00:28.73,0:00:30.97,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}역제안을 하고 싶어요
+Dialogue: 3,0:00:31.27,0:00:35.39,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H00FFFFFF}3만 5천\N달러에{\1c&H001AE8FF} 25%요
+Dialogue: 3,0:00:35.39,0:00:36.23,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}와우
+Dialogue: 3,0:00:36.23,0:00:37.05,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}우와!
+Dialogue: 3,0:00:37.23,0:00:38.45,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}돈은 {\1c&H001AE8FF}더 받고{\1c&H00FFFFFF} 지분은
+Dialogue: 3,0:00:38.45,0:00:39.43,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H001AE8FF}덜 주는{\1c&H00FFFFFF} 조건이었죠
+Dialogue: 3,0:00:39.53,0:00:42.85,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}양말 속에 칼을 숨겨 왔네
+Dialogue: 2,0:00:39.43,0:00:43.03,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}ㅋㅋㅋ
+Dialogue: 3,0:00:43.13,0:00:44.49,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}그 제안 받을게요
+Dialogue: 3,0:00:44.49,0:00:45.61,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}정말 감사합니다
+Dialogue: 3,0:00:45.61,0:00:46.45,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}야호!
+Dialogue: 3,0:00:46.67,0:00:47.46,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}원하는 조건을 따낸
+Dialogue: 3,0:00:47.46,0:00:48.79,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}13살 CEO, 진짜
+Dialogue: 3,0:00:48.79,0:00:49.43,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}똑 부러지네요

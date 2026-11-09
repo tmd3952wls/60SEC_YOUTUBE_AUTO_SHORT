@@ -1,0 +1,59 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,Malgun Gothic,150,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,5,0,5,40,40,525,1
+Style: Narr,Malgun Gothic,96,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Dial,Malgun Gothic,86,&H001AE8FF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Tag,Malgun Gothic,70,&H00FFE035,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,0,7,40,40,525,1
+Style: Credit,Malgun Gothic,30,&H009A9A9A,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:47.21,Title,,0,0,0,,{\pos(540,207)\fs150\c&H001AE8FF}유산으로 받은 동전
+Dialogue: 1,0:00:00.00,0:00:47.21,Title,,0,0,0,,{\pos(540,372)\fs150\c&H002E2EFF}감정가 보고 소름
+Dialogue: 0,0:00:00.00,0:00:47.21,Credit,,0,0,0,,{\pos(540,1530)}© History Channel
+Dialogue: 1,0:00:00.00,0:00:00.53,Narr,,0,0,0,,{\bord0\shad0\blur24\1c&H0066E0FF\alpha&H20&\t(0,500,\fscx155\fscy190\alpha&HFF&)}2만 달러 노린
+Dialogue: 2,0:00:00.00,0:00:00.53,Narr,,0,0,0,,{\shad0\bord16\blur16\1c&H0066E0FF\3c&H0066E0FF\alpha&H30&\t(0,300,\bord22\blur24\alpha&H78&)}2만 달러 노린
+Dialogue: 3,0:00:00.00,0:00:00.53,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)\bord3\3c&H0066E0FF\shad0}2만 달러 노린
+Dialogue: 1,0:00:00.53,0:00:01.08,Narr,,0,0,0,,{\bord0\shad0\blur24\1c&H0066E0FF\alpha&H20&\t(0,500,\fscx155\fscy190\alpha&HFF&)}동전이 5만 달러로
+Dialogue: 2,0:00:00.53,0:00:01.54,Narr,,0,0,0,,{\shad0\bord16\blur16\1c&H0066E0FF\3c&H0066E0FF\alpha&H30&\t(0,300,\bord22\blur24\alpha&H78&)}동전이 5만 달러로
+Dialogue: 3,0:00:00.53,0:00:01.54,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)\bord3\3c&H0066E0FF\shad0}동전이 {\1c&H001AE8FF}5만 달러로{\1c&H00FFFFFF}
+Dialogue: 1,0:00:01.54,0:00:02.09,Narr,,0,0,0,,{\bord0\shad0\blur24\1c&H0066E0FF\alpha&H20&\t(0,500,\fscx155\fscy190\alpha&HFF&)}감정됐습니다
+Dialogue: 2,0:00:01.54,0:00:02.23,Narr,,0,0,0,,{\shad0\bord16\blur16\1c&H0066E0FF\3c&H0066E0FF\alpha&H30&\t(0,300,\bord22\blur24\alpha&H78&)}감정됐습니다
+Dialogue: 3,0:00:01.54,0:00:02.23,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)\bord3\3c&H0066E0FF\shad0}감정됐습니다
+Dialogue: 3,0:00:02.33,0:00:04.61,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}안아드리고 싶네요
+Dialogue: 2,0:00:02.23,0:00:04.80,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}(감격)
+Dialogue: 3,0:00:04.80,0:00:05.58,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}유산으로 받은 고대
+Dialogue: 3,0:00:05.58,0:00:06.57,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}은화를 가져왔는데요
+Dialogue: 3,0:00:06.67,0:00:09.07,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H00FFE035}2만 달러{\1c&H001AE8FF}\N정도 생각해요
+Dialogue: 3,0:00:09.23,0:00:10.51,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}릭은 진품이면 큰돈이
+Dialogue: 3,0:00:10.51,0:00:11.13,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}된다고 했죠
+Dialogue: 3,0:00:11.23,0:00:15.47,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}1만에서 {\1c&H00FFE035}10만\N달러{\1c&H001AE8FF}까지 가요
+Dialogue: 3,0:00:15.63,0:00:16.23,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}하지만 이 동전엔
+Dialogue: 3,0:00:16.23,0:00:17.07,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H001AE8FF}함정이{\1c&H00FFFFFF} 있었는데
+Dialogue: 3,0:00:17.17,0:00:19.83,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}근데 진짜 하나에\N가짜가 {\1c&H00FFE035}500개{\1c&H001AE8FF}예요
+Dialogue: 2,0:00:17.07,0:00:20.03,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}(불안)
+Dialogue: 3,0:00:20.03,0:00:20.78,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}릭은 고대 동전
+Dialogue: 3,0:00:20.78,0:00:21.78,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}전문가를 불렀는데요
+Dialogue: 3,0:00:21.78,0:00:22.74,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}기원전 400년경
+Dialogue: 3,0:00:22.74,0:00:23.74,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}시라쿠사 은화였죠
+Dialogue: 3,0:00:23.84,0:00:25.84,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}완전한 진품입니다
+Dialogue: 3,0:00:26.14,0:00:29.86,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}제가 보기엔 확실히\N{\1c&H00FFE035}5만 달러{\1c&H001AE8FF}예요
+Dialogue: 2,0:00:26.04,0:00:30.04,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}(소름)
+Dialogue: 3,0:00:30.04,0:00:30.60,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}그런데 릭의 첫
+Dialogue: 3,0:00:30.60,0:00:31.49,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}제안은 달랐는데요
+Dialogue: 3,0:00:31.59,0:00:33.55,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H00FFE035}3만 5천\N달러{\1c&H001AE8FF} 드릴게요
+Dialogue: 3,0:00:33.55,0:00:35.63,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}처음 원하신 것보단 많죠
+Dialogue: 3,0:00:35.93,0:00:39.65,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}중간 어디쯤에서 만나죠
+Dialogue: 3,0:00:39.93,0:00:41.69,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}좋아요, {\1c&H00FFE035}4만\N달러{\1c&H001AE8FF} 드리죠
+Dialogue: 3,0:00:41.69,0:00:43.85,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}그 이상은 저한테\N말이 안 돼요
+Dialogue: 3,0:00:44.06,0:00:44.82,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}결국 {\1c&H001AE8FF}4만 달러에{\1c&H00FFFFFF}
+Dialogue: 3,0:00:44.82,0:00:45.66,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}거래가 성사됐죠
+Dialogue: 3,0:00:45.66,0:00:46.46,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}물려받은 동전이 {\1c&H001AE8FF}두
+Dialogue: 3,0:00:46.46,0:00:47.19,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H001AE8FF}배로{\1c&H00FFFFFF} 효도했네요

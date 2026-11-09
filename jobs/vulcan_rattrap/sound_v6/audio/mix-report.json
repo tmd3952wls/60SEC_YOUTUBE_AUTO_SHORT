@@ -1,0 +1,495 @@
+{
+ "cues_file": "C:\\Users\\tmd39\\Desktop\\YOUTUBE_AUTO\\jobs\\vulcan_rattrap\\sound_v6\\cues.json",
+ "fps": 30,
+ "duration_s": 54.536,
+ "target_lufs": -14,
+ "master_lufs": -14.06,
+ "master_true_peak_db": -2.0,
+ "master_gain_db": 1.96,
+ "events": [
+  {
+   "id": "hook",
+   "sound": "chime/fs-571513-soft-notifications-bell-ding-2",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\chime/fs-571513-soft-notifications-bell-ding-2.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 0.0,
+   "peak_s": 0.0,
+   "pan": 0.0,
+   "gain_db": -12.46,
+   "limited_by": "best-band target",
+   "band_hz": [
+    4000,
+    8000
+   ],
+   "win_s": [
+    0.0,
+    0.15
+   ],
+   "visual": null
+  },
+  {
+   "id": "react-pop",
+   "sound": "pop/fs-269583-bubble-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\pop/fs-269583-bubble-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 1.77,
+   "peak_s": 1.77,
+   "pan": 0.0,
+   "gain_db": -17.66,
+   "limited_by": "best-band target",
+   "band_hz": [
+    500,
+    1000
+   ],
+   "win_s": [
+    1.76,
+    1.81
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "to-founder",
+   "sound": "whoosh/fs-30240-swoop1-flac-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\whoosh/fs-30240-swoop1-flac-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 5.3,
+   "peak_s": 5.3,
+   "pan": 0.0,
+   "gain_db": -34.91,
+   "limited_by": "best-band target",
+   "band_hz": [
+    125,
+    250
+   ],
+   "win_s": [
+    5.29,
+    5.34
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "founder-word",
+   "sound": "swish/fs-14175-27-wav-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\swish/fs-14175-27-wav-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 6.45,
+   "peak_s": 6.45,
+   "pan": 0.0,
+   "gain_db": 1.47,
+   "limited_by": "2-8 kHz cap",
+   "band_hz": [
+    125,
+    250
+   ],
+   "win_s": [
+    6.44,
+    6.5978
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "narr-pop",
+   "sound": "pop/fs-174695-sci-fi-bubble-pop-3",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\pop/fs-174695-sci-fi-bubble-pop-3.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 7.67,
+   "peak_s": 7.67,
+   "pan": 0.0,
+   "gain_db": -30.17,
+   "limited_by": "best-band target",
+   "band_hz": [
+    500,
+    1000
+   ],
+   "win_s": [
+    7.66,
+    7.71
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "to-clip",
+   "sound": "whoosh/fs-449992-whoosh-short-low-wav-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\whoosh/fs-449992-whoosh-short-low-wav-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 9.5,
+   "peak_s": 9.5,
+   "pan": 0.0,
+   "gain_db": -3.5,
+   "limited_by": "best-band target",
+   "band_hz": [
+    250,
+    500
+   ],
+   "win_s": [
+    9.49,
+    9.6161
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "curious",
+   "sound": "tap/fs-369710-wood-knock",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\tap/fs-369710-wood-knock.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 11.83,
+   "peak_s": 11.83,
+   "pan": 0.0,
+   "gain_db": -38.78,
+   "limited_by": "best-band target",
+   "band_hz": [
+    250,
+    500
+   ],
+   "win_s": [
+    11.82,
+    11.87
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "ding",
+   "sound": "chime/fs-255101-jingle2-3",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\chime/fs-255101-jingle2-3.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 14.12,
+   "peak_s": 14.12,
+   "pan": 0.0,
+   "gain_db": -9.39,
+   "limited_by": "best-band target",
+   "band_hz": [
+    1000,
+    2000
+   ],
+   "win_s": [
+    14.11,
+    14.27
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "investor",
+   "sound": "whoosh/fs-30241-swoop2g-flac-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\whoosh/fs-30241-swoop2g-flac-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 15.1,
+   "peak_s": 15.1,
+   "pan": 0.0,
+   "gain_db": -14.18,
+   "limited_by": "best-band target",
+   "band_hz": [
+    250,
+    500
+   ],
+   "win_s": [
+    15.09,
+    15.1432
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "clip-swish",
+   "sound": "swish/fs-388003-double-swish-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\swish/fs-388003-double-swish-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 17.97,
+   "peak_s": 17.97,
+   "pan": 0.0,
+   "gain_db": -5.68,
+   "limited_by": "best-band target",
+   "band_hz": [
+    500,
+    1000
+   ],
+   "win_s": [
+    17.96,
+    18.12
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "curious2",
+   "sound": "tap/kenney-impact-impact-wood-light-001",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\tap/kenney-impact-impact-wood-light-001.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 20.93,
+   "peak_s": 20.93,
+   "pan": 0.0,
+   "gain_db": -3.51,
+   "limited_by": "best-band target",
+   "band_hz": [
+    250,
+    500
+   ],
+   "win_s": [
+    20.92,
+    20.9723
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "mood-turn",
+   "sound": "whoosh/fs-449988-whoosh-med-high-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\whoosh/fs-449988-whoosh-med-high-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 23.11,
+   "peak_s": 23.11,
+   "pan": 0.0,
+   "gain_db": -1.19,
+   "limited_by": "best-band target",
+   "band_hz": [
+    1000,
+    2000
+   ],
+   "win_s": [
+    23.1,
+    23.26
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "curious3",
+   "sound": "tap/kenney-impact-impact-wood-light-003",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\tap/kenney-impact-impact-wood-light-003.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 27.68,
+   "peak_s": 27.68,
+   "pan": 0.0,
+   "gain_db": -1.84,
+   "limited_by": "best-band target",
+   "band_hz": [
+    250,
+    500
+   ],
+   "win_s": [
+    27.67,
+    27.7218
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "pop3",
+   "sound": "pop/fs-507006-soap-bubbles-pop-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\pop/fs-507006-soap-bubbles-pop-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 28.8,
+   "peak_s": 28.8,
+   "pan": 0.0,
+   "gain_db": -28.23,
+   "limited_by": "best-band target",
+   "band_hz": [
+    500,
+    1000
+   ],
+   "win_s": [
+    28.79,
+    28.84
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "ding2",
+   "sound": "chime/fs-570243-point-in-space-ogg-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\chime/fs-570243-point-in-space-ogg-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 32.14,
+   "peak_s": 32.14,
+   "pan": 0.0,
+   "gain_db": -7.07,
+   "limited_by": "best-band target",
+   "band_hz": [
+    1000,
+    2000
+   ],
+   "win_s": [
+    32.13,
+    32.2445
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "three-rush",
+   "sound": "swish/kenney-rpg-cloth1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\swish/kenney-rpg-cloth1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 33.97,
+   "peak_s": 33.97,
+   "pan": 0.0,
+   "gain_db": -1.64,
+   "limited_by": "best-band target",
+   "band_hz": [
+    500,
+    1000
+   ],
+   "win_s": [
+    33.96,
+    34.12
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "pop4",
+   "sound": "pop/fs-174695-sci-fi-bubble-pop-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\pop/fs-174695-sci-fi-bubble-pop-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 37.26,
+   "peak_s": 37.26,
+   "pan": 0.0,
+   "gain_db": -9.25,
+   "limited_by": "best-band target",
+   "band_hz": [
+    250,
+    500
+   ],
+   "win_s": [
+    37.25,
+    37.3162
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "to-pick",
+   "sound": "whoosh/fs-449989-whoosh-long-mid-wav-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\whoosh/fs-449989-whoosh-long-mid-wav-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 41.07,
+   "peak_s": 41.07,
+   "pan": 0.0,
+   "gain_db": -4.92,
+   "limited_by": "best-band target",
+   "band_hz": [
+    250,
+    500
+   ],
+   "win_s": [
+    41.06,
+    41.22
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "impact",
+   "sound": "hit/fs-113747-kl-ex1bb-wav-2+boom/fs-636624-deep-hit-2",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\hit/fs-113747-kl-ex1bb-wav-2.wav",
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\boom/fs-636624-deep-hit-2.wav"
+   ],
+   "weight": "hero",
+   "align": "peak",
+   "cue_s": 46.33,
+   "peak_s": 46.33,
+   "pan": 0.0,
+   "gain_db": -22.0,
+   "limited_by": "main-band target (hero)",
+   "band_hz": [
+    125,
+    250
+   ],
+   "win_s": [
+    46.32,
+    46.48
+   ],
+   "visual": "cut"
+  },
+  {
+   "id": "impact-build",
+   "sound": "riser/fs-531729-energy-riser-3-1",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\riser/fs-531729-energy-riser-3-1.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 46.33,
+   "peak_s": 46.33,
+   "pan": 0.0,
+   "gain_db": -27.29,
+   "limited_by": "best-band target + cluster x0.6",
+   "band_hz": [
+    125,
+    250
+   ],
+   "win_s": [
+    46.32,
+    46.4294
+   ],
+   "visual": null
+  },
+  {
+   "id": "deal",
+   "sound": "chime/fs-582655-long-rising-tones-16-wav-2",
+   "files": [
+    "C:/Users/tmd39/Desktop/YOUTUBE_AUTO/ext/opus-sound-layer/audio/kit\\chime/fs-582655-long-rising-tones-16-wav-2.wav"
+   ],
+   "weight": "support",
+   "align": "peak",
+   "cue_s": 48.43,
+   "peak_s": 48.43,
+   "pan": 0.0,
+   "gain_db": -28.66,
+   "limited_by": "best-band target",
+   "band_hz": [
+    1000,
+    2000
+   ],
+   "win_s": [
+    48.42,
+    48.58
+   ],
+   "visual": "cut"
+  }
+ ]
+}

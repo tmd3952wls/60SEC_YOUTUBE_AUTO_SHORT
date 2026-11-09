@@ -1,0 +1,255 @@
+너는 조회수 수백만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+미국 리얼리티쇼(샤크탱크, 전당포 사나이들 등)의 원본 대사 전사본을 받아서,
+**한국어 TTS 내레이션 + 원본 대사(한국어 자막)** 가 번갈아 나오는 45~58초짜리 쇼츠 대본을 만든다.
+
+## 반드시 지킬 구성 공식
+1. **0~2초 훅(내레이션)**: 결과·숫자·반전을 미리 던지는 한 문장. 예) "평범해 보이는 치킨으로 무려 100만 달러를 제안받은 이들이 있습니다"
+2. **바로 이어서 원본 리액션 한 마디(clip)**: 가장 임팩트 있는 짧은 대사/웃음/놀람 (1~3초)
+3. **상황 설명**: 내레이션과 원본 대사를 3~6초 단위로 교차. 내레이션은 원본이 이미 말한 내용을 반복하지 말고 *맥락만* 채운다.
+4. **반전**: "하지만", "그런데" 로 시작하는 내레이션 → 반전 대사 clip
+5. **클라이맥스**: 협상/감정 장면은 원본 대사를 길게 살린다(clip 여러 줄).
+6. **마무리**: 결과 + 후일담/한 줄 코멘트. "~했다고 하네요", "~진짜 똑 부러지네요" 같은 구어체.
+
+## 문체 규칙
+- 내레이션 한 문장은 25자 이내, 구어체 존댓말("~는데요", "~했죠", "~합니다"). 문장 끝을 "~는데" 로 끊어 다음 컷으로 넘기는 연결을 자주 쓴다.
+- 달러 금액은 "20만 달러"처럼 한국식 단위로. 필요하면 원화 환산("약 2억 원")을 덧붙인다.
+- 대사 자막(subs)은 직역 말고 자연스러운 한국어 구어체 의역, 한 항목 30자 이내. 짧은 감탄은 "와우", "말도 안 돼" 처럼.
+- 내레이션 전체 글자 수 합계는 대략 150~230자 (TTS 1.2배속 기준 약 20~30초).
+- 전체 길이(내레이션 + clip 길이 합)는 58초를 넘기면 안 된다. clip 길이는 전사본의 start/end 로 계산하라.
+
+## 상단 제목(title_lines)
+- 2줄, 각 줄 12자 이내. 1줄은 상황, 2줄은 강조(반전/숫자/감정). 예) ["떡잎부터 남다른", "꼬마 CEO"], ["농담인줄 알았던", "물건의 소름돋는 반전"]
+- color: 1줄은 "white" 또는 "yellow", 2줄은 "red" / "cyan" / "orange" 중 하나.
+
+## 효과음(sfx) / 감정 태그(tag)
+- sfx 는 각 세그먼트 시작 시점에 한 번 재생된다. 선택지: "whoosh"(장면 전환/훅), "pop"(가벼운 강조), "ding"(숫자·가격 공개), "boom"(반전·충격), null. 전체 4~7개만, 남발 금지.
+- tag 는 clip 에만, 화면 좌상단에 뜨는 짧은 감정 표시. 예) "(황당)", "(당황)", "ㅋㅋㅋ", "(소름)". 전체 0~3개.
+
+## 출력 형식 — JSON 하나만 출력 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "white"}, {"text": "...", "color": "red"}],
+  "credit": "© 원본 방송사 이름",
+  "upload": {"title": "유튜브 제목 (40자 이내, 호기심 유발)", "description": "2~3문장 요약 + 해시태그 3~5개", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "tag": null}
+  ]
+}
+
+- narration.broll_id: 내레이션이 나오는 동안 보여줄 화면이 시작되는 전사 id (그 장면 내용과 내레이션이 맞도록 고른다). 같은 broll_id 를 반복하지 마라.
+- clip.from_id ~ to_id: 연속된 전사 id 범위. subs 길이는 (to_id - from_id + 1) 과 정확히 같아야 한다. 대사를 빼고 싶은 줄은 ""(빈 문자열).
+- clip 끼리, narration broll 끼리 시간 순서는 원본 순서를 대체로 따른다(훅은 예외).
+
+## 원본 정보
+프로그램/맥락 메모: Shark Tank US, 13살 창업자의 협상
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [0.0-5.0] Oh my goodness, I can't believe that I'm doing this.
+1 [5.0-9.5] Chick with social anxiety about to go talk to a couple billion or millionaires.
+2 [12.4-16.2] First in the tank is a stylish and functional accessory.
+3 [27.3-29.9] I'm Sophie Overton. I'm from Bentonville, Arkansas,
+4 [29.9-33.4] and I am seeking $30,000 for 15% equity in my company.
+5 [34.3-37.9] Sharks, I'm 13 years old. And even though I'm still in the eighth grade,
+6 [37.9-42.6] I have a PhD in sockology. Heck, I know more about thread counts than I do about
+7 [42.6-43.8] the periodic table.
+8 [43.8-46.6] I created a sock for kids made by this kid
+9 [46.6-49.0] to make life easier for whatever we're doing.
+10 [49.0-51.9] Introducing Wise Pocket Products,
+11 [51.9-55.9] an innovative line of socks and leggings with pockets in them.
+12 [55.9-58.7] Big enough for kids' most important items, like your phone,
+13 [58.7-60.6] so you don't have to worry about the life-threatening event
+14 [60.6-62.8] of missing a call or text from your mom anymore.
+15 [62.8-64.3] And I know what you're probably thinking.
+16 [64.3-66.5] There's gotta be tons of socks like this.
+17 [66.5-68.8] Well, I created a patent-pending sock design
+18 [68.8-71.2] for kids to safely stick their important items
+19 [71.2-72.9] into our sock pockets.
+20 [72.9-77.0] So if you're playing soccer, rock climbing,
+21 [78.0-80.2] or, you know, spontaneously breaking out
+22 [80.2-81.6] and to dance with your friends,
+23 [81.6-88.1] why is Pocket Products as you covered it?
+24 [88.1-94.8] Whoa.
+25 [94.8-115.6] Nice.
+26 [115.6-116.5] Love you guys.
+27 [116.5-117.3] Nice.
+28 [117.3-118.2] Are you alive?
+29 [118.2-119.4] Just like my Zumba class.
+30 [119.4-120.7] I just wanna let you guys know
+31 [120.7-123.0] you're all gonna have arthritis when you get old.
+32 [123.0-125.9] So as you can see sharks,
+33 [125.9-128.3] even after all that, our design sock pockets
+34 [128.3-130.2] will keep your important items in.
+35 [130.2-132.3] without falling out.
+36 [132.3-134.9] And the best part is, for every pair of socks that we sell,
+37 [134.9-137.7] we donate a pair of socks to kids in need.
+38 [137.7-140.3] Sharks, I know I'm young, but give me five years,
+39 [140.3-142.8] and I hope I'll be sitting in one of those shares.
+40 [142.8-144.9] So tell me, who's wise enough to join me
+41 [144.9-147.5] in getting wise pocket products to kids everywhere?
+42 [147.5-149.2] Thank you for letting me tell you about wise.
+43 [149.2-150.3] And thanks, guys.
+44 [150.3-151.2] All right, good job.
+45 [151.2-152.0] All right, thank you.
+46 [152.0-153.1] Good job, guys.
+47 [153.1-154.6] Excellent, excellent, excellent.
+48 [154.6-156.7] You're going to show us some Sophie in person here?
+49 [156.7-160.5] Yeah, sure.
+50 [160.5-162.9] Here you go, you can take three.
+51 [162.9-163.7] Thank you.
+52 [164.8-165.8] You take eight.
+53 [165.8-167.0] Thank you.
+54 [167.0-168.1] Thank you.
+55 [168.1-169.1] Thank you.
+56 [169.1-170.4] Nice color, so, huh?
+57 [171.3-172.2] Thanks, Sophie.
+58 [172.2-173.4] Thank you.
+59 [173.4-176.8] Tell us about you, how you got into this business.
+60 [176.8-180.1] Well, I got into this business when I was 11
+61 [180.1-183.1] and my cousin put her phone in her boot
+62 [183.1-185.2] because, you know, kids in women's clothing
+63 [185.2-188.1] don't have pockets, so I tried it too
+64 [188.1-189.3] and it was really uncomfortable
+65 [189.3-193.7] because it slipped down to my ankle and I couldn't reach it
+66 [193.7-197.4] and it was just all in all a bad idea.
+67 [197.4-199.5] And so I asked her on my school
+68 [199.5-202.8] to see if other kids had this problem and they did.
+69 [202.8-205.8] And so I came up with my prototype
+70 [205.8-209.4] where I cut off the top of another sock
+71 [209.4-211.1] and stuck it inside the sock.
+72 [211.1-212.0] That's cool.
+73 [212.0-214.5] And I sewed it up the sides and voila.
+74 [214.5-216.4] How did you get your money for the business?
+75 [216.4-218.7] I save everything that I earn
+76 [218.7-219.5] and I-
+77 [219.5-222.2] How much money did you actually put in to make your socks?
+78 [222.2-225.7] I invested 10,000 of my own money.
+79 [225.7-226.7] 10,000?
+80 [226.7-227.5] 10,000?
+81 [227.5-230.1] I think your parents overpaid you for your job.
+82 [230.1-232.0] No, I'd saved 5,000,
+83 [232.0-235.2] and I earned 5,000 more through business pitches
+84 [235.2-236.2] and competitions.
+85 [236.2-237.1] Nice.
+86 [237.1-237.9] Oh, wow.
+87 [237.9-239.5] Good for you.
+88 [239.5-241.6] Have you been watching Shark Tank very long?
+89 [241.6-243.1] Since I was like six years old.
+90 [243.1-244.0] Oh my gosh.
+91 [244.0-244.8] Oh my gosh.
+92 [244.8-246.0] You know, I'd stand up in the living room and say,
+93 [246.0-247.3] I'm gonna be on Shark Tank.
+94 [247.3-249.6] This has been my goal since before I even had
+95 [249.6-251.8] the idea for the business.
+96 [251.8-253.3] You sold any of these yet?
+97 [253.3-254.1] Yes.
+98 [254.1-255.0] How much?
+99 [255.0-256.5] A little under $16,000 in sales.
+100 [256.5-257.7] Sophie, let me just tell you,
+101 [257.7-259.9] you're a perfect example of what every kid
+102 [259.9-261.6] pernure should do, right?
+103 [261.6-264.3] You got a job, you saved up some money,
+104 [264.3-266.7] you did all the prototypes yourself,
+105 [266.7-268.7] then you made actual products,
+106 [268.7-273.7] then you sold those products $16,000 worth of products.
+107 [273.7-274.8] Now the only question is,
+108 [274.8-277.0] did you sell those products profitably?
+109 [277.0-279.5] Tell us what it cost you to make a sock
+110 [279.5-281.5] and what you're selling them for.
+111 [281.5-284.3] To make the sock, it's $5.47.
+112 [284.3-285.3] Because that's expensive.
+113 [285.3-287.4] Yes, it's because of the process
+114 [287.4-290.3] to make the double welt for my pocket.
+115 [290.3-291.5] What are you selling for?
+116 [291.5-294.8] $15 retail and $11 wholesale.
+117 [294.8-296.9] What do you want with the $30,000, Sophia?
+118 [296.9-297.8] What are you going to do with it?
+119 [297.8-301.1] Well, my main goal is to streamline the production
+120 [301.1-303.7] because right now I'm only able to produce
+121 [303.7-306.4] around 100 units per month because I have...
+122 [306.4-307.9] A month?
+123 [307.9-308.3] Yes.
+124 [308.3-309.4] That's horrible.
+125 [309.4-312.5] So there's other things out there on the market
+126 [312.5-314.1] that hold in socks.
+127 [314.1-315.5] They have pockets, right?
+128 [315.5-318.7] I do have competition, although my competitors
+129 [318.7-322.7] only have small pockets for keys and stuff.
+130 [322.7-324.3] Well, Sophie, look, I love what you're doing.
+131 [324.3-326.5] And it's wonderful to see this at such a young age.
+132 [326.5-329.4] But I don't want a sock company in my portfolio.
+133 [329.4-332.0] So I'm out.
+134 [332.0-332.7] Thank you.
+135 [332.7-334.5] Sophie, I think it's a great idea.
+136 [334.5-336.7] I'm gonna get some for my kids.
+137 [336.7-339.0] For me though, it's not a great fit as an investment
+138 [339.0-340.9] simply because this isn't my strength.
+139 [340.9-344.2] I couldn't tell you about thread counts, you know.
+140 [344.2-346.8] But I mean, congratulations.
+141 [346.8-348.9] You should be so proud, but it's not a fit for me.
+142 [348.9-351.4] So for those reasons, I'm out.
+143 [351.4-352.3] Thank you very much.
+144 [352.3-353.8] Congrats though, Sophie.
+145 [353.8-356.5] Do you feel that you want to be
+146 [356.5-358.4] running a business right now?
+147 [358.4-360.7] Or is it a little stressful
+148 [360.7-363.7] when you're going to school and all of that?
+149 [363.7-366.9] I mean, going into high school is stressful on its own,
+150 [366.9-369.4] but with the Wise Pocket product,
+151 [369.4-370.8] it's kind of a boost for me.
+152 [370.8-372.6] I feel a confidence boost.
+153 [372.6-374.4] Like if I can own a business,
+154 [374.4-377.9] then I can go through school and turn in that essay.
+155 [377.9-379.1] Good for you Sophie.
+156 [379.1-380.1] Thank you.
+157 [380.1-382.0] You're already out there hustling, thinking,
+158 [382.0-384.0] creating, doing it yourself.
+159 [384.0-386.5] So you've got everything that it takes
+160 [386.5-388.6] to really be a great entrepreneur.
+161 [388.6-393.6] And Damon and I wanna help you.
+162 [393.6-396.5] He does quite a bit in the soccer arena,
+163 [396.5-401.1] and he would like to do an offer with me.
+164 [401.1-403.3] I started off with bombs, they would do an 800,000,
+165 [403.3-405.0] and they were donating to people,
+166 [405.0-407.2] and they would donate over 10 million pairs of socks,
+167 [407.2-409.2] and they're doing 120 million now.
+168 [409.2-412.0] And the donation is way more important to them
+169 [412.0-413.1] than the money.
+170 [413.1-416.8] So what do you think, Lori?
+171 [416.8-420.3] We'll do the $30,000.
+172 [420.3-425.2] We'll be a third partner.
+173 [425.2-429.1] Our goal is to try to find somebody to license it.
+174 [429.1-430.8] And then when we get to that point,
+175 [430.8-433.5] we'll figure out what the licensing deal is.
+176 [433.5-435.4] Do you want to take the $30,000
+177 [435.4-437.7] and give up one third of your company?
+178 [437.7-442.4] You got to make a decision, yes or no?
+179 [442.4-444.2] You are right, Mr. Wonderful.
+180 [444.2-446.6] It's a lot of my company.
+181 [446.6-448.9] I'd like to make a counter offer.
+182 [448.9-449.9] Yeah, Sophie.
+183 [449.9-453.2] OK, let's hear it.
+184 [453.2-457.4] $35,000 for 25%.
+185 [457.4-458.2] Wow.
+186 [458.2-459.0] Woo!
+187 [460.0-461.2] Well, well, well.
+188 [461.2-463.4] Sophie's got negotiating skills.
+189 [463.4-464.3] So you're going up.
+190 [464.3-467.6] She got a little switchblade in her sock on that one, huh?
+191 [467.6-475.7] 25%.
+192 [475.7-477.1] We will take that offer.
+193 [477.1-478.2] Thank you so much.
+194 [478.2-479.0] Yay!
+195 [479.0-479.9] Oh my god.
+196 [479.9-480.7] Yay.
+197 [480.7-481.6] We're in the sock business again.
+198 [481.6-482.4] Yes.
+199 [482.4-483.2] High five.
+200 [483.2-484.1] Thank you.
+201 [484.1-484.9] Thank you so much.
+202 [484.9-487.5] I'm so impressed by you, wow.
+203 [487.5-489.2] Congratulations Sophie, well done.
+204 [489.2-491.6] Thank you.
+205 [491.6-493.1] I'm very overwhelmed.
+206 [493.1-496.5] And I'm really excited that I got a deal with Lauren Damon
+207 [496.5-499.2] and I'm just, I'm in heaven.
+208 [499.2-500.6] I mean, I'm so excited.

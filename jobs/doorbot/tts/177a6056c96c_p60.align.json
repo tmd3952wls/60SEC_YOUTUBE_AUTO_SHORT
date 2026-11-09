@@ -1,0 +1,41 @@
+{
+ "text": "떼어 가기도 어렵고 도난당하면 무료로 바꿔준다고",
+ "words": [
+  {
+   "word": "떼어",
+   "start": 0.02,
+   "end": 0.161,
+   "aligned": true
+  },
+  {
+   "word": "가기도",
+   "start": 0.221,
+   "end": 0.423,
+   "aligned": true
+  },
+  {
+   "word": "어렵고",
+   "start": 0.463,
+   "end": 0.805,
+   "aligned": true
+  },
+  {
+   "word": "도난당하면",
+   "start": 0.825,
+   "end": 1.429,
+   "aligned": true
+  },
+  {
+   "word": "무료로",
+   "start": 1.51,
+   "end": 1.711,
+   "aligned": true
+  },
+  {
+   "word": "바꿔준다고",
+   "start": 1.751,
+   "end": 2.154,
+   "aligned": true
+  }
+ ]
+}

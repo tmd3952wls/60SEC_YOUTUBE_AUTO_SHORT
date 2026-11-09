@@ -1,0 +1,161 @@
+{
+  "whisper_model": "small",
+  "script": {
+    "mode": "auto",
+    "claude_model": "claude-sonnet-5-5",
+    "openai_model": "gpt-5",
+    "cli_path": "",
+    "cli_model": "",
+    "cli_timeout": 600,
+    "retries": 3,
+    "research": true,
+    "structure": {
+      "intro_sec": 25,
+      "chars_per_sec": 10.0,
+      "min_total": 40,
+      "max_total": 56
+    }
+  },
+  "tts": {
+    "provider": "typecast",
+    "extra_tempo": 1.0,
+    "fish": {
+      "model": "s2.1-pro",
+      "reference_id": "",
+      "speed": 1.2
+    },
+    "typecast": {
+      "model": "ssfm-v31",
+      "voice_id": "tc_61c2f7741330d213c238cba6",
+      "speed": 1.0,
+      "pitch": 0,
+      "emotion_preset": "",
+      "emotion_intensity": 1.0,
+      "smart_emotion": true
+    },
+    "sapi": {
+      "voice": "Microsoft Heami Desktop",
+      "rate": 3
+    },
+    "max_pause": 0.15
+  },
+  "layout": {
+    "width": 1080,
+    "height": 1920,
+    "title_h": 435,
+    "video_h": 1050,
+    "crop_keep_h": 0.78,
+    "crop_top": 0.0
+  },
+  "subtitle": {
+    "font": "Cafe24 Ohsquare",
+    "title_size": 128,
+    "title_outline": 0,
+    "title_bottom_margin": 30,
+    "narr_size": 88,
+    "narr_color": "white",
+    "narr_max_chars": 12,
+    "dial_size": 84,
+    "dial_color": "yellow",
+    "dial_max_chars": 14,
+    "tag_size": 70,
+    "tag_color": "cyan",
+    "outline": 7,
+    "bottom_margin_in_video": 90,
+    "title_char_em": 0.66,
+    "narr_keyword_color": "yellow",
+    "dial_keyword_color": "cyan",
+    "neon_hook": true,
+    "neon_all": false,
+    "neon_color": "FFE066",
+    "style": "neon_center",
+    "center_ratio": 0.68,
+    "glow_alpha": "&H30&",
+    "glow_bord": 4,
+    "glow_blur": 6,
+    "text_bord": 0.8,
+    "text_blur": 0.4,
+    "show_tags": false,
+    "shadow_bord": 5,
+    "shadow_blur": 10,
+    "shadow_alpha": "&H60&",
+    "title_weight": 0,
+    "zoom_in_ms": 200,
+    "zoom_from": 0,
+    "zoom_accel": 0.6,
+    "font_bold": false,
+    "glow_alpha_white": "&H90&"
+  },
+  "render": {
+    "clip_pad_before": 0.1,
+    "clip_pad_after": 0.15,
+    "narration_gap": 0.0,
+    "narration_original_volume": 0.0,
+    "bgm_file": "",
+    "bgm_volume": 0.18,
+    "sfx_volume": 1.0,
+    "loudness_lufs": -10,
+    "voice_lufs": -16,
+    "voice_gain_max": 18,
+    "min_shot_sec": 0.7,
+    "max_inner_gap": 0.25,
+    "word_pad_before": 0.04,
+    "word_pad_after": 0.06,
+    "sfx_min_gap": 2.5,
+    "piece_min_sec": 0.6,
+    "broll_shot_min": 0.9,
+    "broll_shot_max": 1.6,
+    "ramp_max_gap": 0.6,
+    "ramp_frames": 2
+  },
+  "align": {
+    "enabled": true,
+    "python": ".venv-whisperx/Scripts/python.exe",
+    "device": "cpu"
+  },
+  "transition": {
+    "punch": 0.06,
+    "punch_in_sec": 0.12,
+    "punch_out_sec": 0.1,
+    "narration_drift": 0.05,
+    "clip_drift": 0.015,
+    "blur_frames": 2,
+    "blur_radius": 6
+  },
+  "sfx_library": {
+    "dir": "C:/Users/tmd39/Desktop/효과음/효과음600개",
+    "max_sec": 1.2,
+    "voice_max": 0.5,
+    "target_peak_db": -9,
+    "max_sec_by_cat": {
+      "impact": 3.7,
+      "success": 2.2,
+      "tension": 2.0,
+      "whoosh": 3.3,
+      "surprise": 2.0,
+      "caption": 1.3,
+      "question": 2.0,
+      "pop": 1.5,
+      "ding": 1.5
+    }
+  },
+  "face": {
+    "enabled": true,
+    "max_zoom": 1.6,
+    "target_face_h": 0.4,
+    "face_y": 0.36,
+    "jump_zoom": 1.15
+  },
+  "marks": {
+    "enabled": true,
+    "max_per_video": 3,
+    "min_gap_sec": 8,
+    "auto_on_keyword": true,
+    "hold_sec": 1.4,
+    "size_x": 1.5,
+    "size_y": 1.45,
+    "width": 9,
+    "color": "FF2E2E",
+    "sfx": "pop"
+  }
+}

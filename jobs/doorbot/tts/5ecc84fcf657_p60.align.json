@@ -1,0 +1,59 @@
+{
+ "text": "아마존이 10억 달러 넘게 주고 사간 회사의 첫 초인종",
+ "words": [
+  {
+   "word": "아마존이",
+   "start": 0.04,
+   "end": 0.403,
+   "aligned": true
+  },
+  {
+   "word": "10억",
+   "start": 0.423,
+   "end": 0.685,
+   "aligned": true
+  },
+  {
+   "word": "달러",
+   "start": 0.766,
+   "end": 0.927,
+   "aligned": true
+  },
+  {
+   "word": "넘게",
+   "start": 0.967,
+   "end": 1.189,
+   "aligned": true
+  },
+  {
+   "word": "주고",
+   "start": 1.25,
+   "end": 1.35,
+   "aligned": true
+  },
+  {
+   "word": "사간",
+   "start": 1.411,
+   "end": 1.653,
+   "aligned": true
+  },
+  {
+   "word": "회사의",
+   "start": 1.713,
+   "end": 1.935,
+   "aligned": true
+  },
+  {
+   "word": "첫",
+   "start": 2.036,
+   "end": 2.096,
+   "aligned": true
+  },
+  {
+   "word": "초인종",
+   "start": 2.197,
+   "end": 2.439,
+   "aligned": true
+  }
+ ]
+}

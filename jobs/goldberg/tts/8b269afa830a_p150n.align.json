@@ -1,0 +1,35 @@
+{
+ "text": "그러자 케빈이 로열티를 걸고 뛰어드는데",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.04,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "케빈이",
+   "start": 0.382,
+   "end": 0.744,
+   "aligned": true
+  },
+  {
+   "word": "로열티를",
+   "start": 0.805,
+   "end": 1.207,
+   "aligned": true
+  },
+  {
+   "word": "걸고",
+   "start": 1.267,
+   "end": 1.489,
+   "aligned": true
+  },
+  {
+   "word": "뛰어드는데",
+   "start": 1.569,
+   "end": 2.193,
+   "aligned": true
+  }
+ ]
+}

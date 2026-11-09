@@ -1,0 +1,41 @@
+{
+ "text": "결국 빈손으로 나왔지만 이름을 Ring으로 바꿨고",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.0,
+   "end": 0.161,
+   "aligned": true
+  },
+  {
+   "word": "빈손으로",
+   "start": 0.262,
+   "end": 0.604,
+   "aligned": true
+  },
+  {
+   "word": "나왔지만",
+   "start": 0.645,
+   "end": 0.967,
+   "aligned": true
+  },
+  {
+   "word": "이름을",
+   "start": 1.108,
+   "end": 1.269,
+   "aligned": true
+  },
+  {
+   "word": "Ring으로",
+   "start": 1.289,
+   "end": 1.632,
+   "aligned": true
+  },
+  {
+   "word": "바꿨고",
+   "start": 1.672,
+   "end": 1.914,
+   "aligned": true
+  }
+ ]
+}

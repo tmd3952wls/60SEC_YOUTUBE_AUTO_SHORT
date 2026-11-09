@@ -1,0 +1,37 @@
+{
+ "name": "해외쇼쇼 스타일",
+ "description": "참고 영상 2jJoIbdciDY(해외쇼쇼)의 문법을 재현한 설정. 자막은 화면 가운데(2026-11-08부터).",
+ "config": {
+  "subtitle": {
+   "center_ratio": 0.5,
+   "narr_size": 88,
+   "min_sub_sec": 0.75,
+   "sub_anchor": "center",
+   "bottom_margin": 70
+  },
+  "render": {
+   "narration_dim": 0.72
+  }
+ },
+ "rules": {
+  "banned_words": [
+   "샤크",
+   "싸운"
+  ],
+  "banned_hint": "투자자를 '샤크'라고 부르지 않기, 과장 표현 피하기",
+  "solo_words": [
+   "와우",
+   "맙소사",
+   "오 마이 갓",
+   "세상에"
+  ],
+  "min_sub_sec": 1.0,
+  "narr_syllables_per_sec": 6.7,
+  "notes": [
+   "감탄사(와우! 등)는 단독 자막",
+   "1초보다 짧은 문장 자막 금지",
+   "내레이션은 장면 설명이 아니라 이야기를 전개 (~다는데 / ~다고)",
+   "마지막은 사업의 현재 상황으로 마무리"
+  ]
+ }
+}

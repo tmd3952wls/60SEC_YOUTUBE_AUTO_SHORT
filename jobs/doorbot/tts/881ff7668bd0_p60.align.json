@@ -1,0 +1,53 @@
+{
+ "text": "밤에 누가 문 두드려도 열기 전엔 누군지 모르는데",
+ "words": [
+  {
+   "word": "밤에",
+   "start": 0.02,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "누가",
+   "start": 0.141,
+   "end": 0.363,
+   "aligned": true
+  },
+  {
+   "word": "문",
+   "start": 0.444,
+   "end": 0.484,
+   "aligned": true
+  },
+  {
+   "word": "두드려도",
+   "start": 0.565,
+   "end": 0.907,
+   "aligned": true
+  },
+  {
+   "word": "열기",
+   "start": 1.069,
+   "end": 1.21,
+   "aligned": true
+  },
+  {
+   "word": "전엔",
+   "start": 1.25,
+   "end": 1.391,
+   "aligned": true
+  },
+  {
+   "word": "누군지",
+   "start": 1.431,
+   "end": 1.633,
+   "aligned": true
+  },
+  {
+   "word": "모르는데",
+   "start": 1.694,
+   "end": 1.996,
+   "aligned": true
+  }
+ ]
+}

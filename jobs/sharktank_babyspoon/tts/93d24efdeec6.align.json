@@ -1,0 +1,29 @@
+{
+ "text": "전문 용어까지 술술 설명하는데요",
+ "words": [
+  {
+   "word": "전문",
+   "start": 0.0,
+   "end": 0.202,
+   "aligned": true
+  },
+  {
+   "word": "용어까지",
+   "start": 0.242,
+   "end": 0.564,
+   "aligned": true
+  },
+  {
+   "word": "술술",
+   "start": 0.645,
+   "end": 0.846,
+   "aligned": true
+  },
+  {
+   "word": "설명하는데요",
+   "start": 0.887,
+   "end": 1.491,
+   "aligned": true
+  }
+ ]
+}

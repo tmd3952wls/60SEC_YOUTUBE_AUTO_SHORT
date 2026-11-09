@@ -1,0 +1,140 @@
+{
+  "title_lines": [
+    {
+      "text": "13초 얼굴 스캔으로",
+      "color": "yellow"
+    },
+    {
+      "text": "투자 2배 받았다고?!",
+      "color": "white"
+    }
+  ],
+  "credit": "© ABC Shark Tank",
+  "upload": {
+    "title": "얼굴 스캔 수경에 투자자 5명이 싸운 이유",
+    "description": "50만 달러를 요청했는데 100만 달러를 받아낸 맞춤 수경 대표들 #수경 #투자 #창업 #수영 #쇼츠",
+    "tags": [
+      "수경",
+      "맞춤수경",
+      "투자",
+      "창업",
+      "수영",
+      "TheMagic5",
+      "샤크탱크"
+    ]
+  },
+  "segments": [
+    {
+      "type": "narration",
+      "text": "얼굴을 [13초] 스캔하면 나만의 수경이 온다는데",
+      "broll_id": 12,
+      "sfx": "whoosh"
+    },
+    {
+      "type": "clip",
+      "from_id": 10,
+      "to_id": 11,
+      "subs": [
+        "그래서 저희가 [세계 최초] 맞춤형 수경을 만들었습니다",
+        "[cyan:와우]"
+      ],
+      "sfx": "surprise",
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "얼굴은 다 다른데 수경은 [한 사이즈]라 물이 샌다고",
+      "broll_id": 8,
+      "sfx": "pop"
+    },
+    {
+      "type": "clip",
+      "from_id": 16,
+      "to_id": 17,
+      "subs": [
+        "그래서 저희는 [50만 달러]를",
+        "지분 [2.5%]에 투자받고 싶습니다"
+      ],
+      "sfx": "ding",
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "기업가치만 [2천만 달러]인데 실적이 진짜였고",
+      "broll_id": 42,
+      "sfx": "tension"
+    },
+    {
+      "type": "clip",
+      "from_id": 43,
+      "to_id": 43,
+      "subs": [
+        "지금까지 고객 [4만 명], 누적 매출은 [300만 달러]예요"
+      ],
+      "sfx": "ding",
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "그러자 투자자 [5명 전부] 달려들기 시작했고",
+      "broll_id": 117,
+      "sfx": "impact"
+    },
+    {
+      "type": "clip",
+      "from_id": 117,
+      "to_id": 118,
+      "subs": [
+        "50만 달러 드리죠",
+        "대신 [7.5%] 주세요"
+      ],
+      "sfx": null,
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "지분 [3%]까지 내려간 쟁탈전 끝에 한 투자자가 판을 엎는데",
+      "broll_id": 235,
+      "sfx": "impact"
+    },
+    {
+      "type": "clip",
+      "from_id": 242,
+      "to_id": 243,
+      "subs": [
+        "[100만 달러]에 6.5% 드리죠",
+        "[cyan:와]"
+      ],
+      "sfx": "ding",
+      "tag": null
+    },
+    {
+      "type": "clip",
+      "from_id": 245,
+      "to_id": 247,
+      "subs": [
+        "[green:받겠습니다]",
+        "와 와 와!",
+        "완벽해"
+      ],
+      "sfx": "success",
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "50만 달러를 원했는데 [100만 달러]를 받아냈다고",
+      "broll_id": 250,
+      "sfx": "cheer"
+    },
+    {
+      "type": "clip",
+      "from_id": 258,
+      "to_id": 258,
+      "subs": [
+        "로버트는 방송 전부터 저희가 [제일 원하던] 투자자였어요"
+      ],
+      "sfx": null,
+      "tag": null
+    }
+  ]
+}

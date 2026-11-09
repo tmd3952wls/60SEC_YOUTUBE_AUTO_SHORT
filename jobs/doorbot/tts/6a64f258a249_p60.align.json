@@ -1,0 +1,59 @@
+{
+ "text": "원가는 약 82달러고, 출시 9달 만에 100만 달러를 팔았다고",
+ "words": [
+  {
+   "word": "원가는",
+   "start": 0.04,
+   "end": 0.342,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 0.382,
+   "end": 0.704,
+   "aligned": true
+  },
+  {
+   "word": "82달러고,",
+   "start": 0.724,
+   "end": 1.087,
+   "aligned": true
+  },
+  {
+   "word": "출시",
+   "start": 1.268,
+   "end": 1.409,
+   "aligned": true
+  },
+  {
+   "word": "9달",
+   "start": 1.429,
+   "end": 1.751,
+   "aligned": true
+  },
+  {
+   "word": "만에",
+   "start": 1.791,
+   "end": 1.952,
+   "aligned": true
+  },
+  {
+   "word": "100만",
+   "start": 2.012,
+   "end": 2.234,
+   "aligned": true
+  },
+  {
+   "word": "달러를",
+   "start": 2.294,
+   "end": 2.495,
+   "aligned": true
+  },
+  {
+   "word": "팔았다고",
+   "start": 2.556,
+   "end": 2.838,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "text": "겨우 10살 소녀의",
+    "start": 0.0,
+    "end": 0.873,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.9
+  },
+  {
+    "text": "발명품에 투자자들이",
+    "start": 0.873,
+    "end": 2.036,
+    "method": "whisperx",
+    "prop_start": 1.038,
+    "seg_start": 0.0,
+    "seg_end": 2.9
+  },
+  {
+    "text": "깜짝 놀랐습니다",
+    "start": 2.036,
+    "end": 2.9,
+    "method": "whisperx",
+    "prop_start": 1.903,
+    "seg_start": 0.0,
+    "seg_end": 2.9
+  },
+  {
+    "text": "7살 때 아기",
+    "start": 4.267,
+    "end": 4.942,
+    "method": "whisperx",
+    "prop_start": 4.267,
+    "seg_start": 4.267,
+    "seg_end": 6.567
+  },
+  {
+    "text": "숟가락에 동생이",
+    "start": 4.942,
+    "end": 5.627,
+    "method": "whisperx",
+    "prop_start": 4.959,
+    "seg_start": 4.267,
+    "seg_end": 6.567
+  },
+  {
+    "text": "다칠까 걱정돼",
+    "start": 5.627,
+    "end": 6.567,
+    "method": "whisperx",
+    "prop_start": 5.75,
+    "seg_start": 4.267,
+    "seg_end": 6.567
+  },
+  {
+    "text": "숟가락과 치발기를",
+    "start": 6.567,
+    "end": 7.482,
+    "method": "whisperx",
+    "prop_start": 6.567,
+    "seg_start": 6.567,
+    "seg_end": 8.98
+  },
+  {
+    "text": "하나로 합친 제품을",
+    "start": 7.482,
+    "end": 8.267,
+    "method": "whisperx",
+    "prop_start": 7.331,
+    "seg_start": 6.567,
+    "seg_end": 8.98
+  },
+  {
+    "text": "만들었는데요",
+    "start": 8.267,
+    "end": 8.98,
+    "method": "whisperx",
+    "prop_start": 8.35,
+    "seg_start": 6.567,
+    "seg_end": 8.98
+  },
+  {
+    "text": "벌써 매출 5천",
+    "start": 15.313,
+    "end": 16.01,
+    "method": "whisperx",
+    "prop_start": 15.313,
+    "seg_start": 15.313,
+    "seg_end": 17.48
+  },
+  {
+    "text": "달러를 올린 이 꼬마",
+    "start": 16.01,
+    "end": 16.958,
+    "method": "whisperx",
+    "prop_start": 16.047,
+    "seg_start": 15.313,
+    "seg_end": 17.48
+  },
+  {
+    "text": "CEO는",
+    "start": 16.958,
+    "end": 17.48,
+    "method": "whisperx",
+    "prop_start": 17.025,
+    "seg_start": 15.313,
+    "seg_end": 17.48
+  },
+  {
+    "text": "전문 용어까지 술술",
+    "start": 17.48,
+    "end": 18.317,
+    "method": "whisperx",
+    "prop_start": 17.48,
+    "seg_start": 17.48,
+    "seg_end": 19.113
+  },
+  {
+    "text": "설명하는데요",
+    "start": 18.317,
+    "end": 19.113,
+    "method": "whisperx",
+    "prop_start": 18.412,
+    "seg_start": 17.48,
+    "seg_end": 19.113
+  },
+  {
+    "text": "하지만 케빈과",
+    "start": 26.113,
+    "end": 26.809,
+    "method": "whisperx",
+    "prop_start": 26.113,
+    "seg_start": 26.113,
+    "seg_end": 28.246
+  },
+  {
+    "text": "바바라는 연이어",
+    "start": 26.809,
+    "end": 27.635,
+    "method": "whisperx",
+    "prop_start": 26.848,
+    "seg_start": 26.113,
+    "seg_end": 28.246
+  },
+  {
+    "text": "거절하고",
+    "start": 27.635,
+    "end": 28.246,
+    "method": "whisperx",
+    "prop_start": 27.688,
+    "seg_start": 26.113,
+    "seg_end": 28.246
+  },
+  {
+    "text": "그때 로리가 나서는데",
+    "start": 33.146,
+    "end": 34.216,
+    "method": "whisperx",
+    "prop_start": 33.146,
+    "seg_start": 33.146,
+    "seg_end": 34.216
+  },
+  {
+    "text": "꿈을 이룬 10살",
+    "start": 40.75,
+    "end": 41.366,
+    "method": "whisperx",
+    "prop_start": 40.75,
+    "seg_start": 40.75,
+    "seg_end": 42.816
+  },
+  {
+    "text": "발명가, 진짜",
+    "start": 41.366,
+    "end": 42.194,
+    "method": "whisperx",
+    "prop_start": 41.5,
+    "seg_start": 40.75,
+    "seg_end": 42.816
+  },
+  {
+    "text": "대단하네요",
+    "start": 42.194,
+    "end": 42.816,
+    "method": "whisperx",
+    "prop_start": 42.084,
+    "seg_start": 40.75,
+    "seg_end": 42.816
+  }
+]

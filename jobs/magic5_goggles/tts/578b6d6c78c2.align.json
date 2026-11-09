@@ -1,0 +1,29 @@
+{
+ "text": "매년 3배씩 성장 중이라고",
+ "words": [
+  {
+   "word": "매년",
+   "start": 0.061,
+   "end": 0.224,
+   "aligned": true
+  },
+  {
+   "word": "3배씩",
+   "start": 0.244,
+   "end": 0.57,
+   "aligned": true
+  },
+  {
+   "word": "성장",
+   "start": 0.651,
+   "end": 0.855,
+   "aligned": true
+  },
+  {
+   "word": "중이라고",
+   "start": 0.916,
+   "end": 1.201,
+   "aligned": true
+  }
+ ]
+}

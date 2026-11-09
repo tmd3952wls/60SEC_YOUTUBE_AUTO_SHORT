@@ -1,0 +1,35 @@
+{
+ "text": "도둑은 빈집인지 보려고 초인종부터 누른다는데",
+ "words": [
+  {
+   "word": "도둑은",
+   "start": 0.0,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "빈집인지",
+   "start": 0.342,
+   "end": 0.725,
+   "aligned": true
+  },
+  {
+   "word": "보려고",
+   "start": 0.805,
+   "end": 1.006,
+   "aligned": true
+  },
+  {
+   "word": "초인종부터",
+   "start": 1.087,
+   "end": 1.51,
+   "aligned": true
+  },
+  {
+   "word": "누른다는데",
+   "start": 1.55,
+   "end": 2.053,
+   "aligned": true
+  }
+ ]
+}

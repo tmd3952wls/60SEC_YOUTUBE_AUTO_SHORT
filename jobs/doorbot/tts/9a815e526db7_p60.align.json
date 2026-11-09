@@ -1,0 +1,41 @@
+{
+ "text": "전화처럼 얼굴 보고 받거나 거절하면 된다고",
+ "words": [
+  {
+   "word": "전화처럼",
+   "start": 0.387,
+   "end": 0.591,
+   "aligned": true
+  },
+  {
+   "word": "얼굴",
+   "start": 0.611,
+   "end": 0.652,
+   "aligned": true
+  },
+  {
+   "word": "보고",
+   "start": 0.693,
+   "end": 0.815,
+   "aligned": true
+  },
+  {
+   "word": "받거나",
+   "start": 0.876,
+   "end": 1.039,
+   "aligned": true
+  },
+  {
+   "word": "거절하면",
+   "start": 1.1,
+   "end": 1.243,
+   "aligned": true
+  },
+  {
+   "word": "된다고",
+   "start": 1.263,
+   "end": 1.325,
+   "aligned": true
+  }
+ ]
+}

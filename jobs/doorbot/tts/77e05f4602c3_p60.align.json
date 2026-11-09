@@ -1,0 +1,35 @@
+{
+ "text": "도난당하면 아예 무료로 새로 바꿔준다고",
+ "words": [
+  {
+   "word": "도난당하면",
+   "start": 0.04,
+   "end": 0.465,
+   "aligned": true
+  },
+  {
+   "word": "아예",
+   "start": 0.506,
+   "end": 0.688,
+   "aligned": true
+  },
+  {
+   "word": "무료로",
+   "start": 0.789,
+   "end": 0.991,
+   "aligned": true
+  },
+  {
+   "word": "새로",
+   "start": 1.052,
+   "end": 1.194,
+   "aligned": true
+  },
+  {
+   "word": "바꿔준다고",
+   "start": 1.254,
+   "end": 1.72,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+  "title_lines": [
+    {
+      "text": "투자자들 당황시킨",
+      "color": "white"
+    },
+    {
+      "text": "13살 소녀의 역제안",
+      "color": "red"
+    }
+  ],
+  "credit": "© Sony Pictures Television",
+  "upload": {
+    "title": "13살 소녀가 샤크탱크에서 역제안을 던진 결과",
+    "description": "주머니 달린 양말로 샤크탱크에 나온 13살 CEO 소피. 지분 3분의 1을 달라는 제안에 당당하게 역제안을 던지는데... #샤크탱크 #창업 #투자 #꼬마CEO",
+    "tags": [
+      "샤크탱크",
+      "Shark Tank",
+      "창업",
+      "투자",
+      "꼬마CEO",
+      "협상"
+    ]
+  },
+  "segments": [
+    {
+      "type": "narration",
+      "text": "겨우 [13살] 소녀가 투자자들에게 [역제안을] 던졌습니다",
+      "broll_id": 183,
+      "sfx": "whoosh"
+    },
+    {
+      "type": "clip",
+      "from_id": 184,
+      "to_id": 185,
+      "subs": [
+        "[3만 5천 달러에] 지분 25% 어떠세요?",
+        "와우"
+      ],
+      "sfx": "boom",
+      "tag": "(소름)"
+    },
+    {
+      "type": "narration",
+      "text": "주머니 달린 양말로 샤크탱크에 나온 소피는",
+      "broll_id": 11,
+      "sfx": "whoosh"
+    },
+    {
+      "type": "clip",
+      "from_id": 4,
+      "to_id": 4,
+      "subs": [
+        "3만 달러에 지분 15%를 제안합니다"
+      ],
+      "sfx": null,
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "11살 때 직접 시제품을 만들고 모은 돈을 투자했는데",
+      "broll_id": 70,
+      "sfx": null
+    },
+    {
+      "type": "clip",
+      "from_id": 78,
+      "to_id": 80,
+      "subs": [
+        "제 돈 [1만 달러를] 투자했어요",
+        "1만 달러?",
+        "1만 달러라고?"
+      ],
+      "sfx": "ding",
+      "tag": "(놀람)"
+    },
+    {
+      "type": "narration",
+      "text": "벌써 매출만 [1만 6천 달러였죠]",
+      "broll_id": 106,
+      "sfx": "pop"
+    },
+    {
+      "type": "narration",
+      "text": "케빈과 바바라가 투자를 거절한 뒤",
+      "broll_id": 132,
+      "sfx": null
+    },
+    {
+      "type": "narration",
+      "text": "로리와 데이먼드가 손잡고 3만 달러에 [지분 3분의 1을] 제안하는데요",
+      "broll_id": 171,
+      "sfx": "ding"
+    },
+    {
+      "type": "clip",
+      "from_id": 181,
+      "to_id": 181,
+      "subs": [
+        "역제안을 하고 싶어요"
+      ],
+      "sfx": "boom",
+      "tag": null
+    },
+    {
+      "type": "clip",
+      "from_id": 184,
+      "to_id": 186,
+      "subs": [
+        "[3만 5천 달러에] 25%요",
+        "와우",
+        "우와!"
+      ],
+      "sfx": null,
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "돈은 [더 받고] 지분은 [덜 주는] 조건이었죠",
+      "broll_id": 188,
+      "sfx": "pop"
+    },
+    {
+      "type": "clip",
+      "from_id": 190,
+      "to_id": 190,
+      "subs": [
+        "양말 속에 칼을 숨겨 왔네"
+      ],
+      "sfx": null,
+      "tag": "ㅋㅋㅋ"
+    },
+    {
+      "type": "clip",
+      "from_id": 192,
+      "to_id": 194,
+      "subs": [
+        "그 제안 받을게요",
+        "정말 감사합니다",
+        "야호!"
+      ],
+      "sfx": "ding",
+      "tag": null
+    },
+    {
+      "type": "narration",
+      "text": "원하는 조건을 따낸 13살 CEO, 진짜 똑 부러지네요",
+      "broll_id": 202,
+      "sfx": null
+    }
+  ]
+}

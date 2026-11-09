@@ -1,0 +1,278 @@
+너는 조회수 500만~1300만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+해외 방송(샤크탱크 등)의 원본 대사 전사본을 받아서, **한국어 내레이션(TTS)** 과 **원본 대사(한국어 자막)** 를 섞은 40~55초 쇼츠 대본을 만든다.
+
+## 구성 — 반드시 이 순서와 시간 배분 (참고 채널 15편 분석 결과)
+| 구간 | 시간 | 내용 | 비중 |
+|---|---|---|---|
+| ① 훅 | 0~3초 | 제품/장면을 바로 보여주며 한 줄 티저. 숫자 티저 가능 ("출시 3년 만에 140억을 벌었다는 이 제품") | 내레이션 |
+| ② 제품 소개 | 3~27초 | **어떤 불편(문제)** → **제품이 어떻게 해결하는지(원리·사용법)** → **시연 장면** → 장점 2~3개 | 내레이션 위주 + 감탄·시연 원본 대사 짧게 |
+| ③ 거래 | 27~45초 | 판매가·원가·매출 질문 → 요구 금액/지분 → 투자자 반응·제안·협상 | **원본 대사 위주** + 연결 내레이션 |
+| ④ 결과·후일담 | 마지막 5~10초 | 방송 속 결과(성사/거절) → **방송 이후 이야기**(아래 조사 결과에서만) | 내레이션 |
+
+- **②제품 소개 구간(27초 전)에는 가격·지분·투자금·기업가치·매출 이야기를 절대 하지 않는다.** (①의 숫자 티저 한 줄만 예외)
+- ② 의 내레이션 broll_id 는 **제품이 보이는 장면**(시연, 제품 클로즈업, 사용 영상, 출연자의 제품 설명)을 고른다.
+  전사본에서 출연자가 제품을 설명/시연하는 부분(대개 앞부분 피치)의 id 를 쓰고, 투자자 얼굴만 나오는 부분은 피한다.
+- ③ 에서 원본 대사는 질문과 답이 오가는 흐름을 살린다 (예: "판매가는요?" → "59달러요" → "작년 매출은요?" → "230만 달러요").
+
+## 문체
+- 내레이션은 **반말 요약체**: "~는데", "~다고", "~고", "~했고", "~자". 존댓말 금지.
+  예) "3분 내로 15리터 물을 빨아들이는 봉투가 있는데", "누르기만 하면 벽면까지 싹 긁어서 짜준다고"
+- 내레이션 한 문장 12~30자. 숫자는 구체적으로("15kg짜리", "3분 내로"). 달러는 "30만 달러", 필요하면 원화("약 4억").
+- clip 은 **연속으로 말하는 한두 줄**(1.5~5초). 중간에 긴 침묵이 있는 줄들을 한 clip 에 묶지 마라.
+- 출연자는 "대표", "남자", "여자" 등, 투자자는 "투자자"(이름은 필요할 때만). "상어/샤크" 금지.
+
+## 사실성
+- 방송 내용은 전사본에 나온 것만. 방송 이후 이야기는 **아래 '후일담 조사 결과'에 있는 사실만** 쓴다. 없으면 방송 속 결과로 끝낸다.
+- 이 문서의 예시 문장은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 색 강조 [ ]
+- 자막은 기본 흰색, [ ] 부분만 컬러. 문장마다 0~1곳, 핵심 숫자·제품명·감정 단어. [yellow:...], [cyan:...], [pink:...], [green:...], [orange:...], [red:...] 로 색 지정 가능.
+- 짧은 감탄 대사는 줄 전체를 감싸도 좋다. 예) "[cyan:오 와우]". 대괄호는 어절에 붙여 쓴다.
+
+## 상단 제목(title_lines) — 썸네일 역할
+- 2줄, 각 줄 8~12자. 1줄 = 신기한 제품/상황, 2줄 = 궁금증·반전 "~다고?!", "~한 이유", "~의 정체"
+  예) ["땅콩잼을 이제는", "안 긁어도 된다고?!"], ["홍수를 막아주는", "역대급 모래 주머니?!"]
+- **제목은 제품의 신기함에 초점** (가격·지분 숫자로 제목 짓지 마라). color: 1줄 "yellow", 2줄 "white".
+
+## 효과음(sfx) — 세그먼트 시작 시점. 아래 이름 중 하나 또는 null. 전체 5~8개
+- "whoosh": 장면 전환·빠른 등장
+- "pop": 자막/물건 톡 등장
+- "ding": 숫자·가격·정답 공개
+- "impact": 반전·충격 쾅
+- "surprise": 놀람 리액션
+- "question": 의문·황당
+- "success": 성공·계약 성사
+- "fail": 실패·거절·오답
+- "tension": 긴장·궁금증
+- "caption": 자막 강조·말풍선
+- "camera": 사진·순간 포착
+- 훅에는 "whoosh"/"pop", 제품 기능 공개엔 "pop"/"ding", 금액 공개엔 "ding", 거절엔 "fail", 성사엔 "success".
+
+## 빨간 동그라미(mark) — clip 에 "mark": true → 말하는 사람 얼굴에 빨간 원. 결정적 한마디 clip 2~3개에만.
+## 감정 태그(tag) — 사용 안 함. 항상 null.
+
+## 출력 형식 — JSON 하나만 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "yellow"}, {"text": "...", "color": "white"}],
+  "credit": "© 원본 방송사",
+  "upload": {"title": "호기심형 30자 이내", "description": "1~2문장 + 해시태그 3~5개", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "mark": false}
+  ]
+}
+- narration.broll_id: 내레이션 동안 보여줄 장면이 시작되는 전사 id (내용에 맞는 장면). 같은 id 반복 금지.
+- clip.from_id~to_id: 연속된 전사 id. subs 길이 = (to_id - from_id + 1). 빼고 싶은 줄은 "".
+- 전체 길이(내레이션 ≈ 글자수/9 초 + clip 길이 합) 40~55초.
+
+## 방송 이후 후일담 조사 결과 (웹 검색)
+- 2013년 11월 방영된 Shark Tank 시즌5에서 Jamie Siminoff는 지분 10%에 70만 달러를 요청했지만, 유일하게 남은 Kevin O'Leary와 로열티·벤처부채 조건을 합의하지 못해 투자 계약 없이 방송을 마쳤다. (출처: https://www.slashgear.com/1906933/what-happened-doorbot-shark-tank-season-5)
+- 투자는 받지 못했지만 방송 노출로 판매가 늘었고, 회사는 2014년 10월 브랜드를 Ring으로 바꿔 다시 출시했다. (출처: https://www.entrepreneur.com/business-news/business-rejected-on-shark-tank-then-sold-to-amazon-for-1-billion-ring)
+- Ring의 연 매출은 2015년 3,000만 달러, 2016년 1억 7,000만 달러, 2017년 4억 8,000만 달러로 늘었다. (출처: https://www.entrepreneur.com/business-news/business-rejected-on-shark-tank-then-sold-to-amazon-for-1-billion-ring)
+- Amazon은 2018년에 Ring을 10억 달러 이상에 인수했다. (출처: https://thenextweb.com/news/ring-shark-tank-amazons-acquisition)
+- Jamie Siminoff는 2018년 Shark Tank 시즌10 첫 회에 게스트 샤크로 출연했다. (출처: https://www.slashgear.com/1906933/what-happened-doorbot-shark-tank-season-5)
+- Siminoff는 2023년에 Ring CEO 자리에서 물러났다가 2025년 4월 Amazon 부사장으로 돌아왔고, 지금은 Ring, Blink, Amazon Key, Amazon Sidewalk 팀을 이끈다. (출처: https://www.engadget.com/big-tech/ring-founder-jamie-siminoff-is-back-at-amazon-to-run-its-video-doorbell-unit-130009731.html)
+
+## 원본 정보
+프로그램/맥락 메모: Shark Tank US 시즌5, 스마트폰으로 보는 영상 초인종 Doorbot, 창업자 Jamie Siminoff
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [2.7-7.2] First into the tank is a product to ensure you always know who's at your front door
+1 [8.9-20.6] It's Jamie
+2 [20.6-22.6] Here to pitch. Oh
+3 [22.8-35.2] It's Jamie come in sharks wouldn't have been nice to know who is behind the door before you let me in
+4 [35.3-37.1] With my product you can
+5 [37.1-43.0] My name is Jamie Semenov. I'm from Los Angeles, California. My product is the doorbot. I'm seeking
+6 [43.7-46.2] $700,000 for a 10% stake in the company
+7 [46.2-50.2] Consumers are currently spending billions of dollars
+8 [50.2-54.2] outfitting their homes with products that work with smartphones.
+9 [54.2-57.2] However, one of the most ubiquitous technologies,
+10 [57.2-62.2] the doorbell, has not changed since it was invented in 1880.
+11 [62.2-65.2] Until now, introducing the doorbot,
+12 [65.2-68.2] the first ever video doorbell built for the smartphone,
+13 [68.2-72.2] with doorbot you can see and speak with visitors from anywhere.
+14 [72.2-77.2] But I didn't invent doorbot just to make our lives more convenient.
+15 [77.2-80.2] It also adds needed security. Let me show you.
+16 [80.2-84.2] Mark, let's just say this is your house in Dallas.
+17 [84.2-88.2] You'll see on the screen here that I'm projecting the doorbot app from my smartphone
+18 [88.2-90.2] to make it easier to see the demo.
+19 [90.2-94.2] Now, just like a regular call, when someone rings the doorbot,
+20 [94.2-100.2] you can see them and decline if it's someone that you don't want to talk to
+21 [100.2-105.9] Or accept and say hello to your visitor think of it is call or ID for your front door
+22 [106.4-115.5] But looking doorbot guy
+23 [115.6-119.3] Hey mark. It's your good friend. Mr. Wonderful. I
+24 [120.0-126.3] Wanted to have you join me on this deal with doorbot. I think we can get them to go all royalties and no equity
+25 [128.4-134.0] Mark we know that no real entrepreneurs gonna accept that deal and now you can tell Mr. Wonderful to
+26 [134.0-139.0] And the best thing is you can do it without having to be face-to-face with them.
+27 [139.0-146.0] Now, sharks, join me, and the next time you hear, it'll be...
+28 [146.0-150.0] Now, who wants me first to ring my bell?
+29 [150.0-153.0] Jamie, what if you hit accept?
+30 [153.0-157.0] If you hit accept, then the light goes blue, and then you can talk to them.
+31 [157.0-158.0] So your voice comes out of it?
+32 [158.0-160.0] Your voice comes out of it. It's got a microphone and speaker.
+33 [160.0-163.0] So it's two-way audio, one-way video.
+34 [163.0-165.9] If someone came up and said, hmm, eyeball there,
+35 [165.9-167.1] can they just take it off?
+36 [167.1-169.3] Because all burglars ring the doorbell first.
+37 [169.3-170.2] Yeah.
+38 [170.2-171.2] You know what, though, Mark?
+39 [171.2-172.2] That's actually true.
+40 [172.2-174.2] Burglars are not usually violent criminals.
+41 [174.2-175.4] They want to see if someone's home.
+42 [175.4-177.5] They want the opportunity to go into a house that's not,
+43 [177.5-178.6] that does not have people in it.
+44 [178.6-179.5] So it's actually true.
+45 [179.5-180.8] People do ring the doorbell.
+46 [180.8-181.9] It's very hard to remove.
+47 [181.9-184.5] And we also have offered that any customer that
+48 [184.5-186.7] has one stolen, we will replace it for free of charge.
+49 [186.7-188.5] And how much did each one of these units sell for?
+50 [188.5-191.2] $199.
+51 [191.2-193.0] What are your costs to make it?
+52 [193.0-198.1] $81.83 is our cost landed in our warehouse in the United States.
+53 [198.1-199.6] And you sell it to retailers?
+54 [199.6-202.9] So far, we've only sold direct on our own online store.
+55 [202.9-206.2] We are launching with our first retailer in November,
+56 [206.2-207.2] which is Staples.
+57 [207.2-208.9] We launched nine months ago.
+58 [208.9-212.2] We've done an aggregate $1 million in sales so far.
+59 [212.2-213.1] Good for you.
+60 [213.1-214.7] You've done $1 million so far?
+61 [214.7-215.1] Wow.
+62 [215.1-217.5] And the last month, we've done $250,000 in sales.
+63 [217.5-218.9] Our sales have grown month over month.
+64 [218.9-220.1] All online, Jamie.
+65 [220.1-221.3] All online, all direct.
+66 [221.3-222.6] Do you have any competitors?
+67 [222.6-224.6] Currently, we do not have any direct competitors.
+68 [224.6-227.6] When I say direct, we are the first video doorbell
+69 [227.6-229.4] built for the smartphone.
+70 [229.4-231.1] Now, there are other video doorbells out there
+71 [231.1-233.2] that go to a panel.
+72 [233.2-235.4] It's not two-way, so you don't have communication from that.
+73 [235.4-236.3] You can just see who's there.
+74 [236.3-237.8] How much does your competition cost?
+75 [237.8-240.9] The lowest-priced camera would be $50 to $100,
+76 [240.9-243.0] up to thousands of dollars for some of these systems.
+77 [243.0-244.4] But we're not trying to compete
+78 [244.4-246.5] with the $100,000 systems that
+79 [246.5-248.4] integrate cameras and everything in your home.
+80 [248.4-250.0] That means a totally different market.
+81 [250.0-251.8] Well, we're trying to disrupt that market
+82 [251.8-254.4] to give that to everybody, to give it to my wife,
+83 [254.4-257.3] who's at home, who's in the bedroom with my five-year-old,
+84 [257.3-258.8] I'm away, and at eight o'clock at night,
+85 [258.8-261.1] and it's dark out, someone knocks on the door.
+86 [261.1-264.3] I like the product, but are there bigger solutions
+87 [264.3-266.9] that can come in and kind of push this out the door?
+88 [266.9-268.2] This category will exist.
+89 [268.2-269.8] I mean, the doorbell will stay there.
+90 [269.8-271.7] It doesn't get trumped by technology.
+91 [271.7-274.6] I think there's a thousand different ways to alert.
+92 [274.6-275.6] What business is not going to get
+93 [275.6-277.2] replaced by future technology?
+94 [277.2-277.9] But here's the problem.
+95 [277.9-279.4] It's about being able to be nimble
+96 [279.4-280.8] and actually be part of that change.
+97 [280.8-282.6] I'm gonna jump in here.
+98 [282.6-284.4] I think that you have potential
+99 [284.4-286.1] to do a lot more with this,
+100 [286.1-289.6] but I'm not connecting to that this does enough
+101 [289.6-291.3] at this time to distinguish itself
+102 [291.3-293.7] is different from what else is out there on the market
+103 [293.7-295.4] for the higher price point.
+104 [295.4-297.1] And so for that reason, I'm up.
+105 [301.8-305.0] We're not comparing ourselves to a cheap video doorbell
+106 [305.0-306.4] that has a little tiny-
+107 [306.4-307.9] No one's already doing the quality of the product.
+108 [307.9-308.7] I like it.
+109 [308.7-310.3] I think you're gonna do great with it.
+110 [310.3-311.9] But I've gotta be able to say, you know what?
+111 [311.9-314.4] when I jump in, I've got to add enough value
+112 [314.4-316.8] that this company, instead of being worth $7 million,
+113 [316.8-319.8] could be worth $80 million, $90 million.
+114 [319.8-321.3] I just don't see that progression,
+115 [321.3-327.9] and for that reason, I'm out.
+116 [327.9-329.0] When I look at businesses,
+117 [329.0-330.9] I look at the three tiers that could hit,
+118 [330.9-333.3] luxury, mid-tier, and lower-tier.
+119 [333.3-335.4] Obviously, we understand the luxury market
+120 [335.4-338.4] where we have the $20,000 and $30,000 systems
+121 [338.4-339.9] and all that type of stuff.
+122 [339.9-341.1] That's not for that.
+123 [341.1-343.1] The mid-tier is the ADTs of the world
+124 [343.1-346.6] that most likely will just add this to their services
+125 [346.6-347.7] in some sense.
+126 [349.5-354.7] I'm wrestling with where this goes in the market.
+127 [354.7-356.2] I just don't think it's for me.
+128 [356.2-359.1] I'm out.
+129 [359.1-360.7] Personally, I'm a security guy,
+130 [360.7-363.3] so the idea of having another access point
+131 [363.3-366.3] on my house like that freaks me out a little bit
+132 [366.3-368.2] because all those ADT and all those other ones
+133 [368.2-369.6] are hardwired.
+134 [369.6-372.0] I can't hack into those, right?
+135 [372.0-375.7] So I think you've priced a lot of value into it,
+136 [375.7-378.4] but I think my real struggle with it is,
+137 [378.4-379.7] it's really not an internet play.
+138 [379.7-383.5] It's a consumer device that you're pricing out $199.
+139 [383.5-386.3] That price point is going to start dropping quickly
+140 [386.3-388.3] as your volumes go up.
+141 [388.3-391.6] For that reason, I'm happy.
+142 [391.6-392.5] Sorry about that.
+143 [392.5-394.3] Don't send him to my house.
+144 [394.3-396.5] It's just you and you now.
+145 [396.5-399.7] Jamie, let's take stock of what's happened here.
+146 [399.7-401.8] You made a few jokes about Mr. Wonderful at the beginning
+147 [401.8-403.5] and about the royalty structure.
+148 [403.5-418.3] Am I going to regret that, Mr. Wonderful?
+149 [418.3-420.0] Four sharks are out.
+150 [420.0-423.6] Kevin is Jamie's last chance at a deal.
+151 [423.6-427.1] Jamie, let's take stock of what's happened here.
+152 [427.1-428.7] You made a few jokes about Mr. Wonderful
+153 [428.7-430.9] at the beginning and about the royalty structure.
+154 [430.9-435.4] Am I going to regret that, Mr. Wonderful?
+155 [435.4-439.6] The only person left is Mr. Wonderful.
+156 [439.6-442.9] I'll make you an offer.
+157 [442.9-445.3] I'll give you $700,000.
+158 [445.3-447.7] I want a 10% royalty.
+159 [447.7-451.1] That drops down to seven after I recoup the $700,000,
+160 [451.1-455.8] and I get 5% of the company's equity.
+161 [455.8-457.6] You know, we have a vision, I think,
+162 [457.6-460.2] to build a big company out of this.
+163 [460.2-463.1] And I can't give someone 10% of all of our sales
+164 [463.1-464.2] because it'll bleed us of cash
+165 [464.2-465.6] while we really need it the most.
+166 [465.6-467.8] I'm basically providing you factoring capital.
+167 [467.8-470.2] You need my 700,000 for inventory.
+168 [470.2-472.0] But respectfully, I can raise that money
+169 [472.0-475.1] through venture debt or line of credit or something else.
+170 [475.1-478.9] Then why don't you counter me with a venture debt offer?
+171 [478.9-482.6] So I would do $700,000 for a 10% interest rate
+172 [484.0-485.5] with a 3% equity kicker.
+173 [485.5-487.5] No, not interested.
+174 [487.5-491.1] That doesn't... It's not commensurate with the risk I'm taking.
+175 [491.2-492.9] Honestly, I do appreciate the offer,
+176 [493.0-496.6] but at the same time, that money that you'd be taking on the royalty,
+177 [496.6-498.4] I need to reinvest back in this business.
+178 [498.4-500.8] What's the difference between the interest and the royalty?
+179 [500.8-501.9] The interest is cheaper.
+180 [501.9-504.2] The interest I can get rid of. I can pay you back.
+181 [504.2-507.2] Oh, so you don't like the royalty and perpetuity aspect?
+182 [507.2-508.2] Absolutely.
+183 [508.3-509.9] I took the risk up front. I believed in you.
+184 [509.9-511.2] The only shark I might add that did.
+185 [511.3-512.9] 700,000 is a lot of money at the time.
+186 [512.9-514.2] It is a lot of money. Absolutely it is.
+187 [514.3-519.0] It's a lot of money.
+188 [519.0-522.9] Okay, Jamie, it's that moment when I say you're dead to me
+189 [523.9-527.9] Because you don't want to take my arm. I made you a very valid offer. I think I'm in circumstances
+190 [531.3-533.3] Respectfully, mr. Wonderful
+191 [533.6-535.6] They're gonna decline
+192 [536.2-538.2] Go kick some ass Jamie
+193 [539.1-542.8] sharks
+194 [542.8-544.8] Kevin he was
+195 [545.1-548.7] Wavering there was a moment where he actually considered it. I would have done that to you
+196 [548.8-551.2] Whatever happened to peeking through the window saying go away
+197 [551.2-557.6] Mr. Wonderful gave us an offer for just royalties on the company and I don't believe you can
+198 [557.6-562.4] build a big company having one person take 10% of the sales for life.

@@ -1,0 +1,41 @@
+{
+ "text": "얼굴은 다 다른데 수경은 전부 원사이즈라",
+ "words": [
+  {
+   "word": "얼굴은",
+   "start": 0.04,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "다",
+   "start": 0.383,
+   "end": 0.464,
+   "aligned": true
+  },
+  {
+   "word": "다른데",
+   "start": 0.524,
+   "end": 0.947,
+   "aligned": true
+  },
+  {
+   "word": "수경은",
+   "start": 1.25,
+   "end": 1.492,
+   "aligned": true
+  },
+  {
+   "word": "전부",
+   "start": 1.552,
+   "end": 1.754,
+   "aligned": true
+  },
+  {
+   "word": "원사이즈라",
+   "start": 1.814,
+   "end": 2.237,
+   "aligned": true
+  }
+ ]
+}

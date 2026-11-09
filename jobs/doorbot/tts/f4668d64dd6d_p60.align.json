@@ -1,0 +1,47 @@
+{
+ "text": "2017년엔 연 매출 4억 8천만 달러를 찍더니",
+ "words": [
+  {
+   "word": "2017년엔",
+   "start": 0.121,
+   "end": 0.665,
+   "aligned": true
+  },
+  {
+   "word": "연",
+   "start": 0.806,
+   "end": 0.886,
+   "aligned": true
+  },
+  {
+   "word": "매출",
+   "start": 0.967,
+   "end": 1.168,
+   "aligned": true
+  },
+  {
+   "word": "4억",
+   "start": 1.309,
+   "end": 1.47,
+   "aligned": true
+  },
+  {
+   "word": "8천만",
+   "start": 1.511,
+   "end": 1.712,
+   "aligned": true
+  },
+  {
+   "word": "달러를",
+   "start": 1.773,
+   "end": 1.954,
+   "aligned": true
+  },
+  {
+   "word": "찍더니",
+   "start": 2.034,
+   "end": 2.196,
+   "aligned": true
+  }
+ ]
+}

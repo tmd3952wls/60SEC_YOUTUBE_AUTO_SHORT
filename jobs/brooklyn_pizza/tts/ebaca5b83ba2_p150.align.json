@@ -1,0 +1,47 @@
+{
+ "text": "케빈은 지분 대신 한 조각에 25센트씩 받겠다는데",
+ "words": [
+  {
+   "word": "케빈은",
+   "start": 0.04,
+   "end": 0.361,
+   "aligned": true
+  },
+  {
+   "word": "지분",
+   "start": 0.481,
+   "end": 0.642,
+   "aligned": true
+  },
+  {
+   "word": "대신",
+   "start": 0.722,
+   "end": 0.903,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 0.983,
+   "end": 1.063,
+   "aligned": true
+  },
+  {
+   "word": "조각에",
+   "start": 1.143,
+   "end": 1.484,
+   "aligned": true
+  },
+  {
+   "word": "25센트씩",
+   "start": 1.886,
+   "end": 2.387,
+   "aligned": true
+  },
+  {
+   "word": "받겠다는데",
+   "start": 2.487,
+   "end": 2.969,
+   "aligned": true
+  }
+ ]
+}

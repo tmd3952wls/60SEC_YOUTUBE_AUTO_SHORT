@@ -1,0 +1,23 @@
+{
+ "text": "그때 로리가 나서는데",
+ "words": [
+  {
+   "word": "그때",
+   "start": 0.0,
+   "end": 0.182,
+   "aligned": true
+  },
+  {
+   "word": "로리가",
+   "start": 0.222,
+   "end": 0.424,
+   "aligned": true
+  },
+  {
+   "word": "나서는데",
+   "start": 0.485,
+   "end": 0.93,
+   "aligned": true
+  }
+ ]
+}

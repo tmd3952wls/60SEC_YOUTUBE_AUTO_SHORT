@@ -1,0 +1,53 @@
+{
+ "text": "원하는 조건을 따낸 13살 CEO, 진짜 똑 부러지네요",
+ "words": [
+  {
+   "word": "원하는",
+   "start": 0.06,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "조건을",
+   "start": 0.363,
+   "end": 0.585,
+   "aligned": true
+  },
+  {
+   "word": "따낸",
+   "start": 0.645,
+   "end": 0.786,
+   "aligned": true
+  },
+  {
+   "word": "13살",
+   "start": 0.847,
+   "end": 1.068,
+   "aligned": true
+  },
+  {
+   "word": "CEO,",
+   "start": 1.089,
+   "end": 1.33,
+   "aligned": true
+  },
+  {
+   "word": "진짜",
+   "start": 1.915,
+   "end": 2.117,
+   "aligned": true
+  },
+  {
+   "word": "똑",
+   "start": 2.177,
+   "end": 2.217,
+   "aligned": true
+  },
+  {
+   "word": "부러지네요",
+   "start": 2.298,
+   "end": 2.641,
+   "aligned": true
+  }
+ ]
+}

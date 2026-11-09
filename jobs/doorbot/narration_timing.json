@@ -1,0 +1,308 @@
+[
+  {
+    "text": "아마존이 10억 달러",
+    "start": 0.0,
+    "end": 0.917,
+    "method": "whisperx",
+    "prop_start": 0.0,
+    "seg_start": 0.0,
+    "seg_end": 2.533
+  },
+  {
+    "text": "넘게 주고 사간 회사의",
+    "start": 0.917,
+    "end": 1.986,
+    "method": "whisperx",
+    "prop_start": 1.362,
+    "seg_start": 0.0,
+    "seg_end": 2.533
+  },
+  {
+    "text": "첫 초인종",
+    "start": 1.986,
+    "end": 2.533,
+    "method": "whisperx",
+    "prop_start": 2.179,
+    "seg_start": 0.0,
+    "seg_end": 2.533
+  },
+  {
+    "text": "밤에 누가 문 두드려도",
+    "start": 2.533,
+    "end": 3.552,
+    "method": "whisperx",
+    "prop_start": 2.533,
+    "seg_start": 2.533,
+    "seg_end": 4.633
+  },
+  {
+    "text": "열기 전엔 누군지",
+    "start": 3.552,
+    "end": 4.177,
+    "method": "whisperx",
+    "prop_start": 3.53,
+    "seg_start": 2.533,
+    "seg_end": 4.633
+  },
+  {
+    "text": "모르는데",
+    "start": 4.177,
+    "end": 4.633,
+    "method": "whisperx",
+    "prop_start": 4.278,
+    "seg_start": 2.533,
+    "seg_end": 4.633
+  },
+  {
+    "text": "140년 넘게",
+    "start": 4.633,
+    "end": 5.368,
+    "method": "whisperx",
+    "prop_start": 4.633,
+    "seg_start": 4.633,
+    "seg_end": 6.933
+  },
+  {
+    "text": "그대로였던 초인종을",
+    "start": 5.368,
+    "end": 6.334,
+    "method": "whisperx",
+    "prop_start": 5.731,
+    "seg_start": 4.633,
+    "seg_end": 6.933
+  },
+  {
+    "text": "바꿨다는데",
+    "start": 6.334,
+    "end": 6.933,
+    "method": "whisperx",
+    "prop_start": 6.516,
+    "seg_start": 4.633,
+    "seg_end": 6.933
+  },
+  {
+    "text": "이 버튼을 누르면",
+    "start": 6.933,
+    "end": 7.731,
+    "method": "whisperx",
+    "prop_start": 6.933,
+    "seg_start": 6.933,
+    "seg_end": 9.033
+  },
+  {
+    "text": "스마트폰으로 영상",
+    "start": 7.731,
+    "end": 8.478,
+    "method": "whisperx",
+    "prop_start": 7.501,
+    "seg_start": 6.933,
+    "seg_end": 9.033
+  },
+  {
+    "text": "전화가 오고",
+    "start": 8.478,
+    "end": 9.033,
+    "method": "whisperx",
+    "prop_start": 8.635,
+    "seg_start": 6.933,
+    "seg_end": 9.033
+  },
+  {
+    "text": "전화처럼 얼굴 보고",
+    "start": 12.6,
+    "end": 13.426,
+    "method": "whisperx",
+    "prop_start": 12.6,
+    "seg_start": 12.6,
+    "seg_end": 13.933
+  },
+  {
+    "text": "받거나 거절하면 된다고",
+    "start": 13.426,
+    "end": 13.933,
+    "method": "whisperx",
+    "prop_start": 13.057,
+    "seg_start": 12.6,
+    "seg_end": 13.933
+  },
+  {
+    "text": "도둑은 빈집인지 보려고",
+    "start": 16.667,
+    "end": 17.704,
+    "method": "whisperx",
+    "prop_start": 16.667,
+    "seg_start": 16.667,
+    "seg_end": 18.767
+  },
+  {
+    "text": "초인종부터 누른다는데",
+    "start": 17.704,
+    "end": 18.767,
+    "method": "whisperx",
+    "prop_start": 17.444,
+    "seg_start": 16.667,
+    "seg_end": 18.767
+  },
+  {
+    "text": "도난당하면 아예 무료로",
+    "start": 24.167,
+    "end": 25.169,
+    "method": "whisperx",
+    "prop_start": 24.167,
+    "seg_start": 24.167,
+    "seg_end": 25.9
+  },
+  {
+    "text": "새로 바꿔준다고",
+    "start": 25.169,
+    "end": 25.9,
+    "method": "whisperx",
+    "prop_start": 25.395,
+    "seg_start": 24.167,
+    "seg_end": 25.9
+  },
+  {
+    "text": "집에 없어도 문 앞을",
+    "start": 25.9,
+    "end": 26.701,
+    "method": "whisperx",
+    "prop_start": 25.9,
+    "seg_start": 25.9,
+    "seg_end": 27.033
+  },
+  {
+    "text": "지킬 수 있는 셈",
+    "start": 26.701,
+    "end": 27.033,
+    "method": "whisperx",
+    "prop_start": 26.513,
+    "seg_start": 25.9,
+    "seg_end": 27.033
+  },
+  {
+    "text": "그런데 투자자 넷이",
+    "start": 34.333,
+    "end": 35.176,
+    "method": "whisperx",
+    "prop_start": 34.333,
+    "seg_start": 34.333,
+    "seg_end": 35.933
+  },
+  {
+    "text": "줄줄이 빠졌고",
+    "start": 35.176,
+    "end": 35.933,
+    "method": "whisperx",
+    "prop_start": 35.022,
+    "seg_start": 34.333,
+    "seg_end": 35.933
+  },
+  {
+    "text": "마지막 투자자는 매출",
+    "start": 35.933,
+    "end": 37.194,
+    "method": "whisperx",
+    "prop_start": 35.933,
+    "seg_start": 35.933,
+    "seg_end": 38.833
+  },
+  {
+    "text": "10% 로열티에",
+    "start": 37.194,
+    "end": 37.919,
+    "method": "whisperx",
+    "prop_start": 36.791,
+    "seg_start": 35.933,
+    "seg_end": 38.833
+  },
+  {
+    "text": "지분까지 걸었는데",
+    "start": 37.919,
+    "end": 38.833,
+    "method": "whisperx",
+    "prop_start": 38.115,
+    "seg_start": 35.933,
+    "seg_end": 38.833
+  },
+  {
+    "text": "결국 빈손으로 나왔지만",
+    "start": 44.2,
+    "end": 45.178,
+    "method": "whisperx",
+    "prop_start": 44.2,
+    "seg_start": 44.2,
+    "seg_end": 46.3
+  },
+  {
+    "text": "Ring으로 이름을",
+    "start": 45.178,
+    "end": 45.863,
+    "method": "whisperx",
+    "prop_start": 44.986,
+    "seg_start": 44.2,
+    "seg_end": 46.3
+  },
+  {
+    "text": "바꿨고",
+    "start": 45.863,
+    "end": 46.3,
+    "method": "whisperx",
+    "prop_start": 46.099,
+    "seg_start": 44.2,
+    "seg_end": 46.3
+  },
+  {
+    "text": "2017년엔 연 매출",
+    "start": 46.3,
+    "end": 47.559,
+    "method": "whisperx",
+    "prop_start": 46.3,
+    "seg_start": 46.3,
+    "seg_end": 48.633
+  },
+  {
+    "text": "4억 8천만 달러를",
+    "start": 47.559,
+    "end": 48.284,
+    "method": "whisperx",
+    "prop_start": 47.072,
+    "seg_start": 46.3,
+    "seg_end": 48.633
+  },
+  {
+    "text": "찍더니",
+    "start": 48.284,
+    "end": 48.633,
+    "method": "whisperx",
+    "prop_start": 48.406,
+    "seg_start": 46.3,
+    "seg_end": 48.633
+  },
+  {
+    "text": "2018년 아마존이",
+    "start": 48.633,
+    "end": 49.693,
+    "method": "whisperx",
+    "prop_start": 48.633,
+    "seg_start": 48.633,
+    "seg_end": 51.067
+  },
+  {
+    "text": "10억 달러 넘게 주고",
+    "start": 49.693,
+    "end": 50.56,
+    "method": "whisperx",
+    "prop_start": 49.345,
+    "seg_start": 48.633,
+    "seg_end": 51.067
+  },
+  {
+    "text": "사갔다고",
+    "start": 50.56,
+    "end": 51.067,
+    "method": "whisperx",
+    "prop_start": 50.77,
+    "seg_start": 48.633,
+    "seg_end": 51.067
+  }
+]

@@ -1,0 +1,41 @@
+{
+ "text": "한 번 놓으면 알아서 계속 잡는다는데",
+ "words": [
+  {
+   "word": "한",
+   "start": 0.0,
+   "end": 0.08,
+   "aligned": true
+  },
+  {
+   "word": "번",
+   "start": 0.181,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "놓으면",
+   "start": 0.321,
+   "end": 0.542,
+   "aligned": true
+  },
+  {
+   "word": "알아서",
+   "start": 0.602,
+   "end": 0.903,
+   "aligned": true
+  },
+  {
+   "word": "계속",
+   "start": 0.983,
+   "end": 1.123,
+   "aligned": true
+  },
+  {
+   "word": "잡는다는데",
+   "start": 1.224,
+   "end": 1.725,
+   "aligned": true
+  }
+ ]
+}

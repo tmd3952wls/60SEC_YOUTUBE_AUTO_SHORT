@@ -1,0 +1,47 @@
+{
+ "text": "석탄 화덕 피자를 냉동으로 판다는 브루클린 사장님",
+ "words": [
+  {
+   "word": "석탄",
+   "start": 0.081,
+   "end": 0.363,
+   "aligned": true
+  },
+  {
+   "word": "화덕",
+   "start": 0.443,
+   "end": 0.584,
+   "aligned": true
+  },
+  {
+   "word": "피자를",
+   "start": 0.685,
+   "end": 0.987,
+   "aligned": true
+  },
+  {
+   "word": "냉동으로",
+   "start": 1.068,
+   "end": 1.45,
+   "aligned": true
+  },
+  {
+   "word": "판다는",
+   "start": 1.531,
+   "end": 1.894,
+   "aligned": true
+  },
+  {
+   "word": "브루클린",
+   "start": 2.176,
+   "end": 2.599,
+   "aligned": true
+  },
+  {
+   "word": "사장님",
+   "start": 2.659,
+   "end": 2.941,
+   "aligned": true
+  }
+ ]
+}

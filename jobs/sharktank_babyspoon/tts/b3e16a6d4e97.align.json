@@ -1,0 +1,47 @@
+{
+ "text": "7살 때 아기 숟가락에 동생이 다칠까 걱정돼",
+ "words": [
+  {
+   "word": "7살",
+   "start": 0.141,
+   "end": 0.343,
+   "aligned": true
+  },
+  {
+   "word": "때",
+   "start": 0.403,
+   "end": 0.484,
+   "aligned": true
+  },
+  {
+   "word": "아기",
+   "start": 0.524,
+   "end": 0.685,
+   "aligned": true
+  },
+  {
+   "word": "숟가락에",
+   "start": 0.725,
+   "end": 1.028,
+   "aligned": true
+  },
+  {
+   "word": "동생이",
+   "start": 1.088,
+   "end": 1.37,
+   "aligned": true
+  },
+  {
+   "word": "다칠까",
+   "start": 1.41,
+   "end": 1.692,
+   "aligned": true
+  },
+  {
+   "word": "걱정돼",
+   "start": 1.753,
+   "end": 2.055,
+   "aligned": true
+  }
+ ]
+}

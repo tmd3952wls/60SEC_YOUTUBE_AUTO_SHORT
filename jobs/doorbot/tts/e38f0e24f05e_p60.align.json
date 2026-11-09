@@ -1,0 +1,35 @@
+{
+ "text": "그런데 투자자 넷이 줄줄이 빠졌고",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.0,
+   "end": 0.304,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 0.426,
+   "end": 0.629,
+   "aligned": true
+  },
+  {
+   "word": "넷이",
+   "start": 0.67,
+   "end": 0.832,
+   "aligned": true
+  },
+  {
+   "word": "줄줄이",
+   "start": 0.893,
+   "end": 1.137,
+   "aligned": true
+  },
+  {
+   "word": "빠졌고",
+   "start": 1.218,
+   "end": 1.482,
+   "aligned": true
+  }
+ ]
+}

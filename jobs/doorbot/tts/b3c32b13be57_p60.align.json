@@ -1,0 +1,41 @@
+{
+ "text": "누가 벨을 누르면 전화처럼 알림이 오는데",
+ "words": [
+  {
+   "word": "누가",
+   "start": 0.101,
+   "end": 0.242,
+   "aligned": true
+  },
+  {
+   "word": "벨을",
+   "start": 0.302,
+   "end": 0.524,
+   "aligned": true
+  },
+  {
+   "word": "누르면",
+   "start": 0.544,
+   "end": 0.826,
+   "aligned": true
+  },
+  {
+   "word": "전화처럼",
+   "start": 1.007,
+   "end": 1.329,
+   "aligned": true
+  },
+  {
+   "word": "알림이",
+   "start": 1.37,
+   "end": 1.611,
+   "aligned": true
+  },
+  {
+   "word": "오는데",
+   "start": 1.672,
+   "end": 1.853,
+   "aligned": true
+  }
+ ]
+}

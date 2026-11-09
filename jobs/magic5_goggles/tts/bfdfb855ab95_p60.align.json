@@ -1,0 +1,41 @@
+{
+ "text": "얼굴을 13초 스캔하면 나만의 수경이 온다는데",
+ "words": [
+  {
+   "word": "얼굴을",
+   "start": 0.04,
+   "end": 0.261,
+   "aligned": true
+  },
+  {
+   "word": "13초",
+   "start": 0.281,
+   "end": 0.482,
+   "aligned": true
+  },
+  {
+   "word": "스캔하면",
+   "start": 0.543,
+   "end": 0.985,
+   "aligned": true
+  },
+  {
+   "word": "나만의",
+   "start": 1.106,
+   "end": 1.307,
+   "aligned": true
+  },
+  {
+   "word": "수경이",
+   "start": 1.387,
+   "end": 1.568,
+   "aligned": true
+  },
+  {
+   "word": "온다는데",
+   "start": 1.628,
+   "end": 1.91,
+   "aligned": true
+  }
+ ]
+}

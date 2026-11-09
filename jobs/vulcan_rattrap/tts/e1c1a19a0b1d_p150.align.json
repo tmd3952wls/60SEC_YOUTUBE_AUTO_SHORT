@@ -1,0 +1,59 @@
+{
+ "text": "한 마리씩 잡는 덫으론 쥐 떼를 감당 못 하는데",
+ "words": [
+  {
+   "word": "한",
+   "start": 0.02,
+   "end": 0.06,
+   "aligned": true
+  },
+  {
+   "word": "마리씩",
+   "start": 0.16,
+   "end": 0.461,
+   "aligned": true
+  },
+  {
+   "word": "잡는",
+   "start": 0.541,
+   "end": 0.762,
+   "aligned": true
+  },
+  {
+   "word": "덫으론",
+   "start": 0.842,
+   "end": 1.243,
+   "aligned": true
+  },
+  {
+   "word": "쥐",
+   "start": 1.384,
+   "end": 1.484,
+   "aligned": true
+  },
+  {
+   "word": "떼를",
+   "start": 1.564,
+   "end": 1.704,
+   "aligned": true
+  },
+  {
+   "word": "감당",
+   "start": 1.764,
+   "end": 1.985,
+   "aligned": true
+  },
+  {
+   "word": "못",
+   "start": 2.045,
+   "end": 2.065,
+   "aligned": true
+  },
+  {
+   "word": "하는데",
+   "start": 2.186,
+   "end": 2.486,
+   "aligned": true
+  }
+ ]
+}

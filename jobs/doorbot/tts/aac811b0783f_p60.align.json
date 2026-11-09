@@ -1,0 +1,59 @@
+{
+ "text": "문 열기 전엔 누가 왔는지 모르고 초인종은 1880년 그대로였는데",
+ "words": [
+  {
+   "word": "문",
+   "start": 0.0,
+   "end": 0.14,
+   "aligned": true
+  },
+  {
+   "word": "열기",
+   "start": 0.221,
+   "end": 0.381,
+   "aligned": true
+  },
+  {
+   "word": "전엔",
+   "start": 0.421,
+   "end": 0.541,
+   "aligned": true
+  },
+  {
+   "word": "누가",
+   "start": 0.622,
+   "end": 0.762,
+   "aligned": true
+  },
+  {
+   "word": "왔는지",
+   "start": 0.782,
+   "end": 1.003,
+   "aligned": true
+  },
+  {
+   "word": "모르고",
+   "start": 1.083,
+   "end": 1.303,
+   "aligned": true
+  },
+  {
+   "word": "초인종은",
+   "start": 1.444,
+   "end": 1.765,
+   "aligned": true
+  },
+  {
+   "word": "1880년",
+   "start": 1.785,
+   "end": 2.507,
+   "aligned": true
+  },
+  {
+   "word": "그대로였는데",
+   "start": 2.587,
+   "end": 3.008,
+   "aligned": true
+  }
+ ]
+}

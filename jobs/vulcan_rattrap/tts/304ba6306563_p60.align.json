@@ -1,0 +1,59 @@
+{
+ "text": "더 좋은 조건도 있었지만 업계를 잘 아는 데이먼드를 골랐대요",
+ "words": [
+  {
+   "word": "더",
+   "start": 0.0,
+   "end": 0.101,
+   "aligned": true
+  },
+  {
+   "word": "좋은",
+   "start": 0.161,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "조건도",
+   "start": 0.322,
+   "end": 0.564,
+   "aligned": true
+  },
+  {
+   "word": "있었지만",
+   "start": 0.604,
+   "end": 1.007,
+   "aligned": true
+  },
+  {
+   "word": "업계를",
+   "start": 1.107,
+   "end": 1.369,
+   "aligned": true
+  },
+  {
+   "word": "잘",
+   "start": 1.409,
+   "end": 1.49,
+   "aligned": true
+  },
+  {
+   "word": "아는",
+   "start": 1.53,
+   "end": 1.671,
+   "aligned": true
+  },
+  {
+   "word": "데이먼드를",
+   "start": 1.731,
+   "end": 2.114,
+   "aligned": true
+  },
+  {
+   "word": "골랐대요",
+   "start": 2.194,
+   "end": 2.557,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "text": "평소 가장 원하던 투자자 로버트와 손잡았다고",
+ "words": [
+  {
+   "word": "평소",
+   "start": 0.02,
+   "end": 0.303,
+   "aligned": true
+  },
+  {
+   "word": "가장",
+   "start": 0.364,
+   "end": 0.546,
+   "aligned": true
+  },
+  {
+   "word": "원하던",
+   "start": 0.606,
+   "end": 0.849,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 0.93,
+   "end": 1.172,
+   "aligned": true
+  },
+  {
+   "word": "로버트와",
+   "start": 1.213,
+   "end": 1.536,
+   "aligned": true
+  },
+  {
+   "word": "손잡았다고",
+   "start": 1.617,
+   "end": 2.122,
+   "aligned": true
+  }
+ ]
+}

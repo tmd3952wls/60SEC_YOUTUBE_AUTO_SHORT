@@ -1,0 +1,47 @@
+{
+ "text": "마지막 투자자는 매출 10% 로열티에 지분까지 걸었는데",
+ "words": [
+  {
+   "word": "마지막",
+   "start": 0.06,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "투자자는",
+   "start": 0.363,
+   "end": 0.766,
+   "aligned": true
+  },
+  {
+   "word": "매출",
+   "start": 0.927,
+   "end": 1.19,
+   "aligned": true
+  },
+  {
+   "word": "10%",
+   "start": 1.311,
+   "end": 1.613,
+   "aligned": true
+  },
+  {
+   "word": "로열티에",
+   "start": 1.633,
+   "end": 1.956,
+   "aligned": true
+  },
+  {
+   "word": "지분까지",
+   "start": 2.036,
+   "end": 2.399,
+   "aligned": true
+  },
+  {
+   "word": "걸었는데",
+   "start": 2.44,
+   "end": 2.782,
+   "aligned": true
+  }
+ ]
+}

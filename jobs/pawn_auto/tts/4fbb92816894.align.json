@@ -1,0 +1,29 @@
+{
+ "text": "그런데 릭이 부른 가격은",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.323,
+   "end": 0.566,
+   "aligned": true
+  },
+  {
+   "word": "릭이",
+   "start": 0.607,
+   "end": 0.728,
+   "aligned": true
+  },
+  {
+   "word": "부른",
+   "start": 0.748,
+   "end": 0.788,
+   "aligned": true
+  },
+  {
+   "word": "가격은",
+   "start": 0.829,
+   "end": 0.89,
+   "aligned": true
+  }
+ ]
+}

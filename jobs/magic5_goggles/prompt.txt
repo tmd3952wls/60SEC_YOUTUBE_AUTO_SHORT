@@ -1,0 +1,345 @@
+너는 조회수 500만~1300만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+해외 방송(샤크탱크, 갓탤런트, 전당포 사나이들, 고든램지 등)의 원본 대사 전사본을 받아서,
+**빠른 한국어 내레이션(TTS)** 위주에 **짧은 원본 대사(한국어 자막)** 가 끼어드는 35~55초 쇼츠 대본을 만든다.
+
+## 채널 문체 (반드시)
+- 내레이션은 **반말 요약체**: "~는데", "~다고", "~고", "~했고", "~자" 로 끝내며 다음 컷으로 넘긴다.
+  "~습니다/~해요" 존댓말 금지. 예) "3분 내로 15리터 물을 빨아들이는 봉투가 있는데"
+  "홍수가 나기 전에 쌓는 모래주머니를 이걸로 대체할 수 있다고"
+- 내레이션 한 문장 12~30자.
+- **원본이 주인공이다.** 전체 길이의 55~65% 는 원본 대사(clip), 내레이션은 35~45% 이하.
+  내레이션은 원본만으로 이해가 안 되는 맥락을 잇는 다리 역할만 한다.
+- 내레이션 세그먼트는 전체 4~6개. **내레이션 두 개를 연달아 두지 마라** — 사이에 반드시 clip.
+- clip 은 2~6초. 출연자 설명·투자자 질문·협상 대사를 원본 그대로 살린다. 리액션 한마디(1초)만 잘라 붙이지 마라.
+- 숫자는 구체적으로: "15kg짜리", "3분 내로", "출시 1년 만에 50만 명". 달러는 "30만 달러" 처럼, 필요하면 원화("약 4억")도.
+
+## 구성 공식
+1. **0~2초 훅(내레이션)**: 화면 속 장면을 바로 묘사. 예) "펌프로 땅콩버터를 짜는 남자", "갑자기 출연자의 말을 끊는 투자자", "여기 물에 넣어두면"
+2. **바로 리액션 clip** (1~2초): "오 와우", "말도 안 돼" 같은 감탄
+3. **제품/상황 설명**: 내레이션 3~5문장, 사이사이 짧은 clip
+4. **반전/갈등**: "그런데 이때", "하지만" 으로 시작 → 투자자 질문·거절·논쟁 clip
+5. **결과 + 후일담**: 거래 결과, 그리고 전사본에 있는 경우 방송 이후 이야기. "~했다고" 로 끝.
+
+## 사실성 규칙
+- 결과·숫자는 전사본에 나온 것만. 지어내지 마라. 전사본에 결과가 없으면 "과연 결과는?" 식 궁금증으로 끝낸다.
+- 이 문서의 예시 문장은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 색 강조 [ ]
+- 자막은 기본 흰색 네온, [ ] 로 감싼 부분만 컬러 네온이 된다. 내레이션·대사 모두 사용.
+- 문장마다 0~1곳, 핵심 숫자·제품명·감정 단어. 예) "[15kg짜리] 방수벽을 만들 수 있고"
+- 색 지정도 가능: [yellow:...], [cyan:...], [pink:...], [green:...], [orange:...], [red:...]. 지정 없으면 자동 순환.
+- 짧은 감탄 대사는 줄 전체를 감싸도 좋다. 예) "[cyan:오 와우]", "[red:아니]"
+- 대괄호는 어절에 붙여 쓴다.
+
+## 상단 제목(title_lines) — 썸네일 역할, 가장 중요
+- 2줄, 각 줄 8~12자. 처음 보는 사람이 1초 안에 "뭐지?" 하고 멈추게.
+- 공식: 1줄 = 신기한 대상/상황, 2줄 = 결과·반전·궁금증. "~다고?!", "~한 이유", "~의 정체", "??: 대사"
+  예) ["땅콩잼을 이제는", "안 긁어도 된다고?!"], ["심사위원이 그토록", "아이를 찾았던 이유"]
+- 시청자가 바로 아는 쉬운 말만. 방송 내부 별명·직역 금지: "상어/샤크"(→ "투자자"), "탱크" 등 쓰지 마라.
+- 숫자가 강하면 넣는다("투자자 5명 전부", "13초 만에").
+- color: 1줄 "yellow", 2줄 "white".
+
+## 효과음(sfx) — 세그먼트 시작 시점에 재생. 아래 카테고리 이름 중 하나 또는 null
+- "whoosh": 장면 전환·빠른 등장
+- "pop": 자막/물건 톡 등장
+- "ding": 숫자·가격·정답 공개
+- "impact": 반전·충격 쾅
+- "surprise": 놀람 리액션
+- "question": 의문·황당
+- "laugh": 웃음 포인트
+- "cheer": 환호·박수
+- "success": 성공·계약 성사
+- "fail": 실패·거절·오답
+- "tension": 긴장·궁금증
+- "caption": 자막 강조·말풍선
+- "camera": 사진·순간 포착
+- 전체 6~10개. 훅에는 "whoosh" 나 "pop", 숫자 공개엔 "ding", 반전엔 "impact"/"surprise", 거절엔 "fail", 성사엔 "success".
+
+## 감정 태그(tag) — 사용하지 않는다. 항상 null.
+## 용어 — 내레이션·자막에서도 "상어" 대신 "투자자", 출연자는 "대표"/"남자"/"여자" 등 쉬운 말.
+
+## 출력 형식 — JSON 하나만 출력 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "yellow"}, {"text": "...", "color": "white"}],
+  "credit": "© 원본 방송사",
+  "upload": {"title": "유튜브 제목 (호기심형, 30자 이내)", "description": "1~2문장 + 해시태그 3~5개", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "tag": null}
+  ]
+}
+- narration.broll_id: 내레이션 동안 보여줄 장면이 시작되는 전사 id. 내레이션 내용과 맞는 장면(제품 시연, 말하는 사람 등)을 고르고, 같은 id 를 반복하지 마라.
+- clip.from_id~to_id: 연속된 전사 id. subs 길이 = (to_id - from_id + 1). 빼고 싶은 줄은 "".
+- 전체 길이(내레이션 ≈ 글자수/9 초 + clip 길이 합)는 55초 이하.
+
+## 원본 정보
+프로그램/맥락 메모: Shark Tank US, 얼굴 스캔 맞춤 수경 TheMagic5, 투자자 5명 모두 경쟁
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [2.3-6.3] First in the tank is a new innovation in the fitness-accessory space.
+1 [15.8-17.5] Hi Sharks, I'm Rasmus.
+2 [17.5-19.7] And I'm Bo. We're from the Magic Five.
+3 [20.5-23.4] We all know Sharks have excellent vision underwater,
+4 [23.4-25.6] but it's not easy for everyone else.
+5 [25.6-27.9] And that is why we wear swimming goggles.
+6 [27.9-31.7] But most swimming goggles today either leak or uncomfortable.
+7 [31.7-33.8] And it makes total sense, of course they do.
+8 [34.6-36.2] All of our faces are different.
+9 [36.2-38.4] Swimming goggles are one size fits all.
+10 [38.4-43.5] And that is why we have created the world's first custom-fitted swimming goggles.
+11 [43.5-44.0] Wow.
+12 [44.0-49.7] It only takes 13 seconds to scan your face and we'll deliver the goggles directly to your doorstep.
+13 [50.0-58.4] Our app-based scanning technology ensures a perfectly fitting goggle with no leakage and no marks after use.
+14 [58.8-64.8] Some of the world's very best swimmers and triathletes, they already wear our goggles.
+15 [64.8-68.6] But we want all swimmers to get a pair of our goggles.
+16 [68.6-72.4] And to accomplish that, we're seeking $500,000
+17 [72.4-74.2] for two and a half percent of our goggles.
+18 [74.2-75.4] Whoa!
+19 [75.4-76.1] Wow.
+20 [76.1-80.3] So Sharks, who wants to help create magic?
+21 [80.3-83.2] Sharks, in front of you, you have two goggles.
+22 [83.2-85.8] You can try them on, but they won't fit you
+23 [85.8-87.3] because you haven't scanned your face
+24 [87.3-89.5] so we haven't been able to produce a pair of goggles for you.
+25 [89.5-92.4] Have a look at the part of the goggle that touches your face.
+26 [92.4-96.2] You can see that gasket is different from the two goggles that you have.
+27 [96.2-98.8] And that is really our secret sauce.
+28 [98.8-99.9] And what do they sell for?
+29 [99.9-100.8] $55.
+30 [100.8-102.1] They're very dark.
+31 [102.1-103.2] That is for outdoor swimming.
+32 [103.2-107.7] So we have like ranges from super light one, totally clear to very, very dark.
+33 [107.7-111.2] And the design of the goggle means that you have a great peripheral view,
+34 [111.2-113.8] which is super useful so you can navigate better.
+35 [113.8-115.7] How big is the goggle market?
+36 [115.7-118.1] In the U.S. and Europe, $2.2 billion.
+37 [118.1-118.9] Wait, how much?
+38 [118.9-119.8] $2.2 billion?
+39 [119.8-121.0] I'm not surprised.
+40 [121.0-122.2] I'm not surprised.
+41 [122.2-127.1] I have three young sons, they wear goggles, all of their friends wear goggles, but for
+42 [127.1-131.7] a $20 million valuation, I'm guessing you've already sold a lot of these.
+43 [131.7-136.8] Yeah, so we have 40,000 customers so far, our lifetime revenue is $3 million.
+44 [136.8-137.8] When did you start?
+45 [137.8-143.1] We started in 2018, and we've been growing like three times every year.
+46 [143.1-144.1] It's so logical.
+47 [144.1-146.6] I mean, my glasses are made for me.
+48 [146.6-150.0] Why have swimming goggles never been custom made?
+49 [150.0-152.5] So we are triathletes, both of us.
+50 [152.5-154.1] I went on a vacation.
+51 [154.1-156.1] I forgot my goggles, but I had to swim.
+52 [156.1-159.6] And then I purchased all the goggles that I could find.
+53 [159.6-161.0] None of them fit me.
+54 [161.0-163.0] Then I called the best triathlete
+55 [163.0-164.1] that I knew at the time.
+56 [164.1-165.6] That was Rasmus, my nephew.
+57 [165.6-166.7] Oh, he's your nephew?
+58 [166.7-167.7] Yes.
+59 [167.7-168.8] Where are you from?
+60 [168.8-170.3] We're from Denmark.
+61 [170.3-171.2] Oh.
+62 [171.2-173.7] I don't understand why you're only charging $55.
+63 [173.7-175.4] Why aren't these $99?
+64 [175.4-178.6] So we wanted to charge in the middle
+65 [178.6-180.7] of the other high-end goggles, right?
+66 [180.7-184.4] We didn't want price to be an issue for our customers.
+67 [184.4-185.6] What does it cost to make it?
+68 [185.6-187.2] It costs $14.
+69 [187.2-189.8] Okay, and what does the customer acquisition cost?
+70 [189.8-191.5] That is $24.
+71 [191.5-193.8] Okay, so guys, nobody comes in here
+72 [193.8-197.9] asking for $500,000 for two and a half percent.
+73 [197.9-200.1] That's always to protect your previous investors.
+74 [200.1-202.2] So tell us, how much money have you raised?
+75 [202.2-204.4] We've raised $1.5 million.
+76 [204.4-205.4] What valuation?
+77 [205.4-208.8] The last valuation that we had was $9 million.
+78 [208.8-211.0] Can you walk us through how the ramp has gone
+79 [211.0-212.9] over, let's say, the last three years?
+80 [212.9-216.3] In 2018, when we delivered the first goggles,
+81 [216.3-217.8] our revenue was 180.
+82 [217.8-220.1] The year after it was 370.
+83 [220.1-222.5] Last year it was 1.2 million.
+84 [222.5-223.4] Wow.
+85 [223.4-225.8] And so far this year, we're at 1.5.
+86 [225.8-226.7] Impressive.
+87 [226.7-230.2] So where are you based and where do you manufacture?
+88 [230.2-233.1] So I moved to Charlotte and Resmuss moved to New York.
+89 [233.1-234.9] So we basically convinced our wives
+90 [234.9-237.5] to make the bet and move to the US.
+91 [237.5-239.6] Why did you choose to move to the US?
+92 [239.6-241.4] The market here is better
+93 [241.4-243.3] and the relative number of swimmers
+94 [243.3-244.7] is slightly higher than Europe.
+95 [244.7-247.6] So then you're manufacturing, where is that done?
+96 [247.6-249.7] So we get some of our parts from China
+97 [249.7-251.7] and then all the customization happens
+98 [251.7-253.2] in Charlotte, North Carolina.
+99 [253.2-255.2] Do you have any type of IP coverage?
+100 [255.2-258.7] We have a utility patent on the fitting algorithm.
+101 [258.7-260.7] So you manufacture the goggles
+102 [260.7-262.6] and you have to customize them to fit.
+103 [262.6-264.1] What is that process like?
+104 [264.1-267.4] Yeah, so we used advanced robotics technology to do it.
+105 [267.4-268.9] Are you using third-party robotics
+106 [268.9-269.7] or are you developing all yourself?
+107 [269.7-271.9] So all the software to control the robot
+108 [271.9-273.2] is, of course, made by us?
+109 [273.2-275.1] Not all companies can make robotics, right?
+110 [275.1-277.2] Mark, it's a goggle company, not a robotics company.
+111 [277.2-279.6] No, it's a robotics company that makes goggles right now.
+112 [279.6-280.4] That's exactly right.
+113 [280.4-281.3] Exactly, yes.
+114 [281.3-282.4] When you have a unique niche
+115 [282.4-284.8] and you're developing a new category,
+116 [284.8-286.7] it's not where you are, it's where you'll be.
+117 [286.7-288.6] I'll offer you the $500,000,
+118 [288.6-291.6] but I want 7.5%.
+119 [291.6-293.3] And I don't want you to negotiate with everybody
+120 [293.3-294.9] because you already know that they're flipping around.
+121 [294.9-296.2] He's putting a clock on you.
+122 [296.2-298.8] That means he doesn't want you to hear anything else.
+123 [298.8-300.8] If you're more concerned about that equity,
+124 [300.8-303.4] the two of us have an offer you may find very interesting,
+125 [303.4-304.3] okay?
+126 [304.3-306.4] Guys, I already have a robotics company
+127 [306.4-307.4] that I'm an investor in.
+128 [307.4-308.8] I have AI companies.
+129 [308.8-310.3] I have machine learning companies.
+130 [310.3-311.7] I have AR companies.
+131 [311.7-313.7] And obviously, being in the sports industry,
+132 [313.7-314.5] I have a platform.
+133 [314.5-315.7] But you may not want to give up 7.5%.
+134 [315.7-317.4] Well, that's why if that's too much, then
+135 [317.4-319.6] I'll listen to a counter.
+136 [319.6-321.1] Just so you have it,
+137 [321.1-322.0] let me give you an offer
+138 [322.0-323.4] the two sharks want to give you, okay?
+139 [323.4-326.7] And you can get both the sales and the technology.
+140 [326.7-328.9] So how about this deal, venture debt deal?
+141 [328.9-332.0] $500,000, all right, between the two of us,
+142 [332.0-334.1] and we're going to charge you $3 a unit
+143 [334.1-336.2] until we recoup one and a half million.
+144 [336.2-337.9] Then the royalty goes away,
+145 [337.9-340.5] but we're only gonna ask for 5% equity.
+146 [340.5-342.0] And you get two sharks.
+147 [342.9-344.9] Or, Rasmus, let me tell you,
+148 [344.9-347.7] so my daughter was a world-class swimmer.
+149 [347.7-350.0] In fact, she was ranked in the top 10 in the world
+150 [350.0-352.4] in the butterfly when she was 12 years old.
+151 [352.4-356.2] I've spent 18 years at swimming pools.
+152 [356.2-357.6] I get this market.
+153 [357.6-361.3] I'll do 500,000 for 5%, no royalty.
+154 [361.3-364.5] I just wanna say what you need are partners.
+155 [364.5-367.6] So with Mr. Wonderful, you know what you're gonna get.
+156 [367.6-368.4] Nothing.
+157 [368.4-369.2] Nothing.
+158 [369.2-370.6] Exactly.
+159 [370.6-373.5] Nothing except for what will help you scale your business.
+160 [373.5-375.6] I've been the CEO of three different companies
+161 [375.6-376.8] in Silicon Valley.
+162 [376.8-379.8] I know how to build extremely large audiences
+163 [379.8-381.0] cost effectively.
+164 [381.0-382.4] You have an amazing product,
+165 [382.4-385.1] but now how are we gonna bring it to the masses?
+166 [385.1-386.9] That's the kind of problem that I've solved
+167 [386.9-389.1] over the last 20 years.
+168 [391.1-392.2] Wait a minute.
+169 [392.2-394.3] You need somebody who will really help you
+170 [394.3-395.4] blast these out.
+171 [395.4-396.4] Sell them.
+172 [396.4-397.7] I'm product person.
+173 [397.7-399.1] I like to blow up sales.
+174 [399.1-401.6] I like to move fast and I like to blitz the market.
+175 [401.6-402.9] And that's what I'm good at.
+176 [402.9-404.2] So Lori, do you have an offer?
+177 [404.2-406.1] Not gonna offer you tech,
+178 [406.1-409.0] but I'm gonna offer you a lot of sales.
+179 [409.0-411.8] I mean, I have Mark and I have Robert
+180 [411.8-414.7] who have both given you offers and they're on the tech end.
+181 [414.7-417.4] And I would join either one of them to blow up a sale.
+182 [417.4-418.5] But what's your offer?
+183 [418.5-423.4] Well, I'm asking them to either of you want me to come in.
+184 [423.4-425.2] That was a very good question.
+185 [425.2-426.9] But I think that it comes down to
+186 [426.9-429.6] what were you hoping to get here today?
+187 [429.6-432.1] In the next short while,
+188 [432.1-435.0] do you need to boost sales?
+189 [435.0-436.6] Do you need to boost strategy?
+190 [436.6-438.0] Do you need to boost tech?
+191 [438.0-440.3] Guys, guys, we've all been entrepreneurs
+192 [440.3-442.6] And we know you can't choose.
+193 [442.6-444.3] You have to do both.
+194 [444.3-446.0] You need to generate sales,
+195 [446.0-448.2] and you need to answer the strategic questions
+196 [448.2-450.1] about how to best build the business.
+197 [450.1-453.0] Well, Nirov has a fantastic track record doing this.
+198 [453.0-453.8] I mean, he-
+199 [453.8-454.8] Guys, the only thing I'll tell you is,
+200 [454.8-457.6] I've been first or second investor in six unicorns.
+201 [457.6-458.9] So it's not like I don't know
+202 [458.9-461.4] how to grow companies that I've built.
+203 [461.4-464.9] Guys, look, I think I'd be happy to partner with Lori.
+204 [464.9-466.7] I'm happy with the 5%.
+205 [466.7-468.7] How do we split that 5%?
+206 [468.7-472.2] Guys, we'll drop down 1% just to be more competitive
+207 [472.2-474.5] because we're asking for five, we'll go to four.
+208 [474.5-476.2] We want that royalty structure in place,
+209 [476.2-477.7] but it's not perpetual.
+210 [477.7-478.7] We get back our capital.
+211 [478.7-480.0] It's not even that great a return,
+212 [480.0-480.9] but we stay in the game.
+213 [480.9-483.0] You get three times the capital, right?
+214 [483.0-485.9] No, we're only making a million bucks off 500,000.
+215 [485.9-488.2] So we're willing to go down on the equity.
+216 [488.2-490.8] And guys, like I said, I'll listen to a counter offer.
+217 [490.8-491.8] And we have a counter.
+218 [491.8-493.0] And so will we.
+219 [493.0-493.8] Yeah.
+220 [493.8-498.4] Robert and I are gonna do the 500,000, 6%.
+221 [498.4-499.6] No royalty.
+222 [499.6-500.7] No royalty.
+223 [500.7-502.8] Wasn't the offer five?
+224 [502.8-503.7] It was.
+225 [503.7-505.6] That was the first of us, and I had gotten worse.
+226 [505.6-508.4] Got worse by a percent, but you get two sharks.
+227 [508.4-512.0] I'm happy to do the 500,000 for 5% on my own.
+228 [512.0-514.0] I think Lori brings a tremendous amount of it
+229 [514.0-515.3] that gives you the sales,
+230 [515.3-517.0] but we need a little more equity.
+231 [518.2-520.3] All of these offers that are five and six
+232 [520.3-522.3] and seven and a half cause pain
+233 [522.3-524.0] to your existing shareholder base.
+234 [524.0-525.2] We understand that.
+235 [525.2-527.2] Nerov and I are gonna change our offer yet again
+236 [527.2-530.4] down to 3% equity, so now we're totally aligned
+237 [530.4-531.8] with existing shareholders.
+238 [531.8-534.6] If you think this company's gonna be worth a lot,
+239 [534.6-543.5] the equity is where the real value is long-term.
+240 [543.5-546.3] Guys, guys, I gotta get this deal.
+241 [546.3-549.8] I'm gonna change my offer.
+242 [549.8-553.5] I'll give you one million for six and a half.
+243 [555.0-555.8] Whoa.
+244 [555.8-560.2] It's a crazy offer for me, right now.
+245 [561.6-562.4] We'll take it.
+246 [562.4-563.3] Hey, hey, hey.
+247 [563.3-564.1] Perfect.
+248 [565.8-567.1] Good job.
+249 [567.1-568.0] Yeah.
+250 [569.0-570.4] Thank you, thank you.
+251 [570.4-571.3] I'm excited.
+252 [571.3-572.3] Good job, guys, congrats.
+253 [572.3-573.1] Nice job.
+254 [573.1-574.3] Great job, guys.
+255 [575.8-577.2] Okay, since you're perfect.
+256 [577.2-578.5] That's crazy.
+257 [578.5-579.4] Good stuff.
+258 [579.4-583.0] Robert was our favorite investor going into the show.
+259 [583.0-584.4] He can really help us take the
+260 [584.4-585.9] gockle business to the next level.
+261 [585.9-587.1] You're all in now.
+262 [587.1-588.7] I'm bummed that I lost that one.
+263 [588.7-592.2] I think where you went wrong was partnering with Kevin.
+264 [592.2-595.4] Because when you have an athletic product...
+265 [595.4-597.2] I'm a fine-tuned athlete, Robert.
+266 [597.2-597.8] BOOM!

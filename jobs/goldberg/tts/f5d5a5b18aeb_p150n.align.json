@@ -1,0 +1,35 @@
+{
+ "text": "그러자 골드버그가 케빈에게 헤드록을 거는데",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.04,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "골드버그가",
+   "start": 0.382,
+   "end": 0.966,
+   "aligned": true
+  },
+  {
+   "word": "케빈에게",
+   "start": 1.167,
+   "end": 1.57,
+   "aligned": true
+  },
+  {
+   "word": "헤드록을",
+   "start": 1.63,
+   "end": 1.993,
+   "aligned": true
+  },
+  {
+   "word": "거는데",
+   "start": 2.073,
+   "end": 2.355,
+   "aligned": true
+  }
+ ]
+}

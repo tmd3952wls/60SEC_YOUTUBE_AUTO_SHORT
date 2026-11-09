@@ -1,0 +1,47 @@
+{
+ "text": "2018년 아마존이 10억 달러 넘게 주고 사갔다고",
+ "words": [
+  {
+   "word": "2018년",
+   "start": 0.262,
+   "end": 0.646,
+   "aligned": true
+  },
+  {
+   "word": "아마존이",
+   "start": 0.726,
+   "end": 1.089,
+   "aligned": true
+  },
+  {
+   "word": "10억",
+   "start": 1.11,
+   "end": 1.352,
+   "aligned": true
+  },
+  {
+   "word": "달러",
+   "start": 1.412,
+   "end": 1.553,
+   "aligned": true
+  },
+  {
+   "word": "넘게",
+   "start": 1.594,
+   "end": 1.796,
+   "aligned": true
+  },
+  {
+   "word": "주고",
+   "start": 1.836,
+   "end": 1.917,
+   "aligned": true
+  },
+  {
+   "word": "사갔다고",
+   "start": 1.977,
+   "end": 2.32,
+   "aligned": true
+  }
+ ]
+}

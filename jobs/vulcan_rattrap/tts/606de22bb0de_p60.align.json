@@ -1,0 +1,53 @@
+{
+ "text": "올라간 쥐는 양동이로 떨어지고 덫은 저절로 다시 장전돼요",
+ "words": [
+  {
+   "word": "올라간",
+   "start": 0.04,
+   "end": 0.261,
+   "aligned": true
+  },
+  {
+   "word": "쥐는",
+   "start": 0.321,
+   "end": 0.462,
+   "aligned": true
+  },
+  {
+   "word": "양동이로",
+   "start": 0.542,
+   "end": 0.863,
+   "aligned": true
+  },
+  {
+   "word": "떨어지고",
+   "start": 0.923,
+   "end": 1.285,
+   "aligned": true
+  },
+  {
+   "word": "덫은",
+   "start": 1.425,
+   "end": 1.586,
+   "aligned": true
+  },
+  {
+   "word": "저절로",
+   "start": 1.666,
+   "end": 1.887,
+   "aligned": true
+  },
+  {
+   "word": "다시",
+   "start": 1.947,
+   "end": 2.168,
+   "aligned": true
+  },
+  {
+   "word": "장전돼요",
+   "start": 2.188,
+   "end": 2.489,
+   "aligned": true
+  }
+ ]
+}

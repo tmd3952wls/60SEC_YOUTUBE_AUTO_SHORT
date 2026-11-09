@@ -1,0 +1,53 @@
+{
+ "text": "쥐가 떨어지면 발판이 저절로 돌아와 다음 쥐를 기다린다고",
+ "words": [
+  {
+   "word": "쥐가",
+   "start": 0.06,
+   "end": 0.261,
+   "aligned": true
+  },
+  {
+   "word": "떨어지면",
+   "start": 0.341,
+   "end": 0.843,
+   "aligned": true
+  },
+  {
+   "word": "발판이",
+   "start": 1.024,
+   "end": 1.325,
+   "aligned": true
+  },
+  {
+   "word": "저절로",
+   "start": 1.405,
+   "end": 1.686,
+   "aligned": true
+  },
+  {
+   "word": "돌아와",
+   "start": 1.746,
+   "end": 2.047,
+   "aligned": true
+  },
+  {
+   "word": "다음",
+   "start": 2.308,
+   "end": 2.469,
+   "aligned": true
+  },
+  {
+   "word": "쥐를",
+   "start": 2.549,
+   "end": 2.69,
+   "aligned": true
+  },
+  {
+   "word": "기다린다고",
+   "start": 2.77,
+   "end": 3.191,
+   "aligned": true
+  }
+ ]
+}

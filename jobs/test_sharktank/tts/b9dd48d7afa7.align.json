@@ -1,0 +1,53 @@
+{
+ "text": "11살 때 직접 시제품을 만들고 모은 돈을 투자했는데",
+ "words": [
+  {
+   "word": "11살",
+   "start": 0.101,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "때",
+   "start": 0.382,
+   "end": 0.443,
+   "aligned": true
+  },
+  {
+   "word": "직접",
+   "start": 0.503,
+   "end": 0.745,
+   "aligned": true
+  },
+  {
+   "word": "시제품을",
+   "start": 0.805,
+   "end": 1.127,
+   "aligned": true
+  },
+  {
+   "word": "만들고",
+   "start": 1.188,
+   "end": 1.469,
+   "aligned": true
+  },
+  {
+   "word": "모은",
+   "start": 1.59,
+   "end": 1.651,
+   "aligned": true
+  },
+  {
+   "word": "돈을",
+   "start": 1.751,
+   "end": 1.832,
+   "aligned": true
+  },
+  {
+   "word": "투자했는데",
+   "start": 1.973,
+   "end": 2.254,
+   "aligned": true
+  }
+ ]
+}

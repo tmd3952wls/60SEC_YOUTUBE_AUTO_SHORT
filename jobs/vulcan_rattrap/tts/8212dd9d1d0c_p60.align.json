@@ -1,0 +1,29 @@
+{
+ "text": "원가는 15달러, 판매가는 90달러예요",
+ "words": [
+  {
+   "word": "원가는",
+   "start": 0.041,
+   "end": 0.365,
+   "aligned": true
+  },
+  {
+   "word": "15달러,",
+   "start": 0.446,
+   "end": 0.891,
+   "aligned": true
+  },
+  {
+   "word": "판매가는",
+   "start": 0.992,
+   "end": 1.337,
+   "aligned": true
+  },
+  {
+   "word": "90달러예요",
+   "start": 1.418,
+   "end": 1.964,
+   "aligned": true
+  }
+ ]
+}

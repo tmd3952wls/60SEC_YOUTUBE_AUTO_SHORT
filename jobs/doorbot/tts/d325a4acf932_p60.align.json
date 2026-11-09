@@ -1,0 +1,29 @@
+{
+ "text": "하지만 투자자들은 하나둘 빠지는데",
+ "words": [
+  {
+   "word": "하지만",
+   "start": 0.0,
+   "end": 0.223,
+   "aligned": true
+  },
+  {
+   "word": "투자자들은",
+   "start": 0.284,
+   "end": 0.629,
+   "aligned": true
+  },
+  {
+   "word": "하나둘",
+   "start": 0.711,
+   "end": 0.934,
+   "aligned": true
+  },
+  {
+   "word": "빠지는데",
+   "start": 1.015,
+   "end": 1.34,
+   "aligned": true
+  }
+ ]
+}

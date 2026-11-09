@@ -1,0 +1,61 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,Malgun Gothic,150,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,5,0,5,40,40,525,1
+Style: Narr,Malgun Gothic,96,&H00FFFFFF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Dial,Malgun Gothic,86,&H001AE8FF,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,1,2,40,40,525,1
+Style: Tag,Malgun Gothic,70,&H00FFE035,&H000000FF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,0,7,40,40,525,1
+Style: Credit,Malgun Gothic,30,&H009A9A9A,&H000000FF,&H00000000,&H96000000,0,0,0,0,100,100,0,0,1,0,0,5,40,40,525,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:42.84,Title,,0,0,0,,{\pos(540,207)\fs150\c&H001AE8FF}상어들도 감탄한
+Dialogue: 1,0:00:00.00,0:00:42.84,Title,,0,0,0,,{\pos(540,372)\fs150\c&H002E2EFF}10살 발명가
+Dialogue: 0,0:00:00.00,0:00:42.84,Credit,,0,0,0,,{\pos(540,1530)}© Sony Pictures Television
+Dialogue: 1,0:00:00.00,0:00:00.55,Narr,,0,0,0,,{\bord0\shad0\blur24\1c&H0066E0FF\alpha&H20&\t(0,500,\fscx155\fscy190\alpha&HFF&)}겨우 10살 소녀의
+Dialogue: 2,0:00:00.00,0:00:00.87,Narr,,0,0,0,,{\shad0\bord16\blur16\1c&H0066E0FF\3c&H0066E0FF\alpha&H30&\t(0,300,\bord22\blur24\alpha&H78&)}겨우 10살 소녀의
+Dialogue: 3,0:00:00.00,0:00:00.87,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)\bord3\3c&H0066E0FF\shad0}겨우 {\1c&H001AE8FF}10살{\1c&H00FFFFFF} 소녀의
+Dialogue: 1,0:00:00.87,0:00:01.42,Narr,,0,0,0,,{\bord0\shad0\blur24\1c&H0066E0FF\alpha&H20&\t(0,500,\fscx155\fscy190\alpha&HFF&)}발명품에 투자자들이
+Dialogue: 2,0:00:00.87,0:00:02.04,Narr,,0,0,0,,{\shad0\bord16\blur16\1c&H0066E0FF\3c&H0066E0FF\alpha&H30&\t(0,300,\bord22\blur24\alpha&H78&)}발명품에 투자자들이
+Dialogue: 3,0:00:00.87,0:00:02.04,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)\bord3\3c&H0066E0FF\shad0}발명품에 투자자들이
+Dialogue: 1,0:00:02.04,0:00:02.59,Narr,,0,0,0,,{\bord0\shad0\blur24\1c&H0066E0FF\alpha&H20&\t(0,500,\fscx155\fscy190\alpha&HFF&)}깜짝 놀랐습니다
+Dialogue: 2,0:00:02.04,0:00:02.90,Narr,,0,0,0,,{\shad0\bord16\blur16\1c&H0066E0FF\3c&H0066E0FF\alpha&H30&\t(0,300,\bord22\blur24\alpha&H78&)}깜짝 놀랐습니다
+Dialogue: 3,0:00:02.04,0:00:02.90,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)\bord3\3c&H0066E0FF\shad0}{\1c&H001AE8FF}깜짝{\1c&H00FFFFFF} 놀랐습니다
+Dialogue: 3,0:00:03.00,0:00:04.08,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}이 아가씨\N{\1c&H00FFE035}정체가{\1c&H001AE8FF} 뭐야?
+Dialogue: 2,0:00:02.90,0:00:04.27,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}(당황)
+Dialogue: 3,0:00:04.27,0:00:04.94,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}7살 때 아기
+Dialogue: 3,0:00:04.94,0:00:05.63,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}숟가락에 동생이
+Dialogue: 3,0:00:05.63,0:00:06.57,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}다칠까 걱정돼
+Dialogue: 3,0:00:06.57,0:00:07.48,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}숟가락과 치발기를
+Dialogue: 3,0:00:07.48,0:00:08.27,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H001AE8FF}하나로{\1c&H00FFFFFF} 합친 제품을
+Dialogue: 3,0:00:08.27,0:00:08.98,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}만들었는데요
+Dialogue: 3,0:00:09.08,0:00:15.12,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H00FFE035}5만 달러에 지분\N50%를{\1c&H001AE8FF} 원합니다
+Dialogue: 3,0:00:15.31,0:00:16.01,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}벌써 매출 {\1c&H001AE8FF}5천
+Dialogue: 3,0:00:16.01,0:00:16.96,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H001AE8FF}달러를{\1c&H00FFFFFF} 올린 이 꼬마
+Dialogue: 3,0:00:16.96,0:00:17.48,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}CEO는
+Dialogue: 3,0:00:17.48,0:00:18.32,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}전문 용어까지 술술
+Dialogue: 3,0:00:18.32,0:00:19.11,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}설명하는데요
+Dialogue: 3,0:00:19.21,0:00:20.25,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}경도계가 뭐죠?
+Dialogue: 3,0:00:20.25,0:00:23.21,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}실리콘이 얼마나\N{\1c&H00FFE035}단단한지{\1c&H001AE8FF} 재는 단위예요
+Dialogue: 3,0:00:23.51,0:00:24.59,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}이 아가씨 정체가 뭐야?
+Dialogue: 3,0:00:24.59,0:00:25.91,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}정확히 맞아요
+Dialogue: 2,0:00:23.41,0:00:26.11,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}ㅋㅋㅋ
+Dialogue: 3,0:00:26.11,0:00:26.81,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}하지만 케빈과
+Dialogue: 3,0:00:26.81,0:00:27.63,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}바바라는 연이어
+Dialogue: 3,0:00:27.63,0:00:28.25,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}거절하고
+Dialogue: 3,0:00:28.35,0:00:31.59,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}20년 뒤에 우리\N애랑 결혼해 준다면
+Dialogue: 3,0:00:31.59,0:00:32.99,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}정말 기쁠 것 같네요
+Dialogue: 2,0:00:28.25,0:00:33.15,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}ㅋㅋㅋ
+Dialogue: 3,0:00:33.15,0:00:34.22,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}그때 {\1c&H001AE8FF}로리가{\1c&H00FFFFFF} 나서는데
+Dialogue: 3,0:00:34.32,0:00:39.12,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H00FFE035}5만 달러에\N50%{\1c&H001AE8FF} 드릴게요
+Dialogue: 3,0:00:39.38,0:00:40.54,Dial,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}좋아요, 계약할게요!
+Dialogue: 2,0:00:39.28,0:00:40.75,Tag,,0,0,0,,{\pos(60,535)}{\fscx80\fscy80\t(0,90,\fscx100\fscy100)}(소름)
+Dialogue: 3,0:00:40.75,0:00:41.37,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}꿈을 이룬 10살
+Dialogue: 3,0:00:41.37,0:00:42.19,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}발명가, 진짜
+Dialogue: 3,0:00:42.19,0:00:42.82,Narr,,0,0,0,,{\blur7\fscx114\fscy114\alpha&H70&\t(0,110,\blur0.6\fscx100\fscy100\alpha&H00&)}{\1c&H001AE8FF}대단하네요{\1c&H00FFFFFF}

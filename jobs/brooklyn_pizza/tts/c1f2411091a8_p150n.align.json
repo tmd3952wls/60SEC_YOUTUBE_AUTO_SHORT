@@ -1,0 +1,35 @@
+{
+ "text": "사장님이 지분을 19%까지 깎아 내자",
+ "words": [
+  {
+   "word": "사장님이",
+   "start": 0.101,
+   "end": 0.544,
+   "aligned": true
+  },
+  {
+   "word": "지분을",
+   "start": 0.644,
+   "end": 0.966,
+   "aligned": true
+  },
+  {
+   "word": "19%까지",
+   "start": 1.148,
+   "end": 1.913,
+   "aligned": true
+  },
+  {
+   "word": "깎아",
+   "start": 1.973,
+   "end": 2.194,
+   "aligned": true
+  },
+  {
+   "word": "내자",
+   "start": 2.235,
+   "end": 2.376,
+   "aligned": true
+  }
+ ]
+}
