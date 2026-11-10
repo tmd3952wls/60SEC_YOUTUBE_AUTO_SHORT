@@ -1,0 +1,41 @@
+{
+ "text": "그러자 로버트는 더 큰 돈을 부르는데",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.04,
+   "end": 0.323,
+   "aligned": true
+  },
+  {
+   "word": "로버트는",
+   "start": 0.404,
+   "end": 0.829,
+   "aligned": true
+  },
+  {
+   "word": "더",
+   "start": 0.95,
+   "end": 1.051,
+   "aligned": true
+  },
+  {
+   "word": "큰",
+   "start": 1.152,
+   "end": 1.233,
+   "aligned": true
+  },
+  {
+   "word": "돈을",
+   "start": 1.293,
+   "end": 1.455,
+   "aligned": true
+  },
+  {
+   "word": "부르는데",
+   "start": 1.516,
+   "end": 2.061,
+   "aligned": true
+  }
+ ]
+}

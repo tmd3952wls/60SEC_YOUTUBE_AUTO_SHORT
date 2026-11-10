@@ -1,0 +1,41 @@
+{
+ "text": "근데 다른 투자자들이 케빈 디스를 시작하는데",
+ "words": [
+  {
+   "word": "근데",
+   "start": 0.04,
+   "end": 0.241,
+   "aligned": true
+  },
+  {
+   "word": "다른",
+   "start": 0.321,
+   "end": 0.542,
+   "aligned": true
+  },
+  {
+   "word": "투자자들이",
+   "start": 0.642,
+   "end": 1.164,
+   "aligned": true
+  },
+  {
+   "word": "케빈",
+   "start": 1.284,
+   "end": 1.525,
+   "aligned": true
+  },
+  {
+   "word": "디스를",
+   "start": 1.585,
+   "end": 1.846,
+   "aligned": true
+  },
+  {
+   "word": "시작하는데",
+   "start": 1.906,
+   "end": 2.368,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "text": "결국 케빈과 계약 성사!",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.041,
+   "end": 0.304,
+   "aligned": true
+  },
+  {
+   "word": "케빈과",
+   "start": 0.406,
+   "end": 0.811,
+   "aligned": true
+  },
+  {
+   "word": "계약",
+   "start": 0.872,
+   "end": 1.055,
+   "aligned": true
+  },
+  {
+   "word": "성사!",
+   "start": 1.156,
+   "end": 1.501,
+   "aligned": true
+  }
+ ]
+}

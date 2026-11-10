@@ -1,0 +1,41 @@
+{
+ "text": "제안이 3개나 쌓였는데 13살 대표의 선택은?",
+ "words": [
+  {
+   "word": "제안이",
+   "start": 0.06,
+   "end": 0.342,
+   "aligned": true
+  },
+  {
+   "word": "3개나",
+   "start": 0.362,
+   "end": 0.725,
+   "aligned": true
+  },
+  {
+   "word": "쌓였는데",
+   "start": 0.805,
+   "end": 1.248,
+   "aligned": true
+  },
+  {
+   "word": "13살",
+   "start": 1.268,
+   "end": 1.872,
+   "aligned": true
+  },
+  {
+   "word": "대표의",
+   "start": 1.952,
+   "end": 2.214,
+   "aligned": true
+  },
+  {
+   "word": "선택은?",
+   "start": 2.274,
+   "end": 2.616,
+   "aligned": true
+  }
+ ]
+}

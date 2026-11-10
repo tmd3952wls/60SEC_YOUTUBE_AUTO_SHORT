@@ -1,0 +1,47 @@
+{
+ "text": "평범한 박스에 스티커만 붙이면 비행기랑 레이싱카로 변신한다는데",
+ "words": [
+  {
+   "word": "평범한",
+   "start": 0.04,
+   "end": 0.361,
+   "aligned": true
+  },
+  {
+   "word": "박스에",
+   "start": 0.421,
+   "end": 0.742,
+   "aligned": true
+  },
+  {
+   "word": "스티커만",
+   "start": 0.822,
+   "end": 1.184,
+   "aligned": true
+  },
+  {
+   "word": "붙이면",
+   "start": 1.244,
+   "end": 1.585,
+   "aligned": true
+  },
+  {
+   "word": "비행기랑",
+   "start": 1.886,
+   "end": 2.247,
+   "aligned": true
+  },
+  {
+   "word": "레이싱카로",
+   "start": 2.327,
+   "end": 2.768,
+   "aligned": true
+  },
+  {
+   "word": "변신한다는데",
+   "start": 2.829,
+   "end": 3.45,
+   "aligned": true
+  }
+ ]
+}

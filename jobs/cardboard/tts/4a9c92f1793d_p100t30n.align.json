@@ -1,0 +1,53 @@
+{
+ "text": "노아는 케빈이 장난감 업계를 제일 잘 알아서 골랐다는데",
+ "words": [
+  {
+   "word": "노아는",
+   "start": 0.081,
+   "end": 0.423,
+   "aligned": true
+  },
+  {
+   "word": "케빈이",
+   "start": 0.524,
+   "end": 0.846,
+   "aligned": true
+  },
+  {
+   "word": "장난감",
+   "start": 0.906,
+   "end": 1.269,
+   "aligned": true
+  },
+  {
+   "word": "업계를",
+   "start": 1.309,
+   "end": 1.611,
+   "aligned": true
+  },
+  {
+   "word": "제일",
+   "start": 1.692,
+   "end": 1.893,
+   "aligned": true
+  },
+  {
+   "word": "잘",
+   "start": 1.994,
+   "end": 2.155,
+   "aligned": true
+  },
+  {
+   "word": "알아서",
+   "start": 2.175,
+   "end": 2.437,
+   "aligned": true
+  },
+  {
+   "word": "골랐다는데",
+   "start": 2.497,
+   "end": 2.981,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+fetched
+transcribed 277
+cuts 308
+aligned 277 lines
+ALIGN_DONE

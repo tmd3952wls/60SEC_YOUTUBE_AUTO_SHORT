@@ -1,0 +1,65 @@
+{
+ "text": "13살 꼬마가 아빠랑 차린 박스 회사로 진짜 투자자 셋을 홀렸다는데",
+ "words": [
+  {
+   "word": "13살",
+   "start": 0.04,
+   "end": 0.461,
+   "aligned": true
+  },
+  {
+   "word": "꼬마가",
+   "start": 0.561,
+   "end": 0.962,
+   "aligned": true
+  },
+  {
+   "word": "아빠랑",
+   "start": 1.042,
+   "end": 1.382,
+   "aligned": true
+  },
+  {
+   "word": "차린",
+   "start": 1.462,
+   "end": 1.663,
+   "aligned": true
+  },
+  {
+   "word": "박스",
+   "start": 1.743,
+   "end": 2.003,
+   "aligned": true
+  },
+  {
+   "word": "회사로",
+   "start": 2.023,
+   "end": 2.384,
+   "aligned": true
+  },
+  {
+   "word": "진짜",
+   "start": 2.624,
+   "end": 2.885,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 2.965,
+   "end": 3.225,
+   "aligned": true
+  },
+  {
+   "word": "셋을",
+   "start": 3.285,
+   "end": 3.505,
+   "aligned": true
+  },
+  {
+   "word": "홀렸다는데",
+   "start": 3.586,
+   "end": 4.247,
+   "aligned": true
+  }
+ ]
+}

@@ -177,3 +177,6 @@ item21 [clip] 50.73~54.10s  단어: I've@50.77 always@50.96 wanted@51.18 my@51.4
    48.23s swell     fs-503802-reverse-fx-4-wav-1       음량   +6.3dB → 목소리 대비  +0.9dB 로 들림
    52.33s whoosh    573_Whoosh(Transition)             음량   -1.3dB → 목소리 대비  -3.0dB 로 들림
   마스터 +1.5dB → -14.0 LUFS
+BGM: aura_ultra_slowed.wav (0.4초부터), 기본 -14.2dB, 말 틈 +6.6dB 덕킹, 끝 1.0초 페이드아웃
+  말하는 동안 BGM-목소리 -8.8dB (참고 -9.2dB), 말 틈 BGM 이 말할 때보다 +3.1dB
+  최종 음량 보정 -0.41dB → -14.0 LUFS

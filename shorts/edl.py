@@ -48,6 +48,24 @@ def tts_say(text):
     return " ".join(out)
 
 
+def _voice_onsets(wav, min_quiet=0.08):
+    """조용(0.08초 이상) → 소리가 나기 시작하는 시각들 (초). ㅅ·ㅎ 같은 약한 첫소리도 잡게 문턱을 낮게
+    (tools/sub_onset_check.py 와 같은 기준)."""
+    e = _env_db(wav)
+    if not len(e):
+        return np.array([])
+    loud = e > max(np.percentile(e, 10) + 10, np.percentile(e, 95) - 38)
+    out, q = [], 0
+    for i, v in enumerate(loud):
+        if not v:
+            q += 1
+        else:
+            if q >= int(min_quiet * 100):
+                out.append(i / 100)
+            q = 0
+    return np.array(out)
+
+
 def _snap_onsets(wav, wl, log, tag):
     """단어 시작을 '실제로 목소리가 다시 나는 순간'에 붙임 (2026-11-09).
     정렬기는 앞 단어 뒤 쉼(0.1~0.3초)을 다음 단어에 붙여 시작을 일찍 잡곤 함 → 자막이 말보다 먼저 뜸.
@@ -351,6 +369,20 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
         else:
             sw = [s_.get("at_word", 0) for s_ in subs]
         st = [0.0] + [round(max(0.0, wt(k) - 0.03) * 30) / 30 for k in sw[1:]]
+        # 자막을 실제 목소리 시작에 맞춤 (2026-11-10): 정렬기가 단어 시작을 0.15~0.3초 늦게/이르게 잡는 일이 있어
+        # 자막 근처(±0.35초)에서 '조용하다 소리 나는 순간'이 있으면 그 1프레임 전으로. 쉼 없이 이어지는 말은 그대로.
+        ons = _voice_onsets(wav)
+        fixed = []
+        for j, t_ in enumerate(st):
+            lo = fixed[-1] + 0.4 if fixed else 0.0
+            c = ons[(ons > max(lo, t_ - 0.35)) & (ons < t_ + 0.35)]
+            if len(c):
+                nt = round(max(0.0, float(c[np.argmin(np.abs(c - t_ - 0.03))]) - 0.03) * 30) / 30
+                if abs(nt - t_) >= 0.06:
+                    log.append(f"  ⌖ item{n} 자막{j} {t_:.2f} → {nt:.2f}s (목소리 시작 {(nt - t_) * 1000:+.0f}ms)")
+                t_ = nt
+            fixed.append(t_)
+        st = fixed
         # at_t: 말과 무관하게 항목 안 시각에 뜨는 자막 (예: 마지막 대사 끝난 뒤 따로 뜨는 '고정댓글 참조')
         st = [round(s_["at_t"] * 30) / 30 if "at_t" in s_ else t_ for s_, t_ in zip(subs, st)]
         for j, (s_, a) in enumerate(zip(subs, st)):
@@ -489,9 +521,17 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
         exp_sfx, master, mlog = sfx_opus.render(job, body, job / out_name, tmp_out, opus_ev, total, tmp / "opus")
         tmp_out.replace(job / out_name)
         log += mlog
+    exp_bgm = None
+    if edl.get("bgm", {}).get("file"):  # BGM (2026-11-10, shorts/bgm.py — 참고 4q8E4EPcgew 측정)
+        from . import bgm as bgm_mod
+        tmp_out = job / ("_bgm_" + Path(out_name).name)
+        exp_bgm, blog = bgm_mod.apply(body, job / out_name, tmp_out, total, edl["bgm"], tmp / "bgm", float(master),
+                                      cfg.get("sfx_mix", {}).get("master_lufs", -14.0))
+        tmp_out.replace(job / out_name)
+        log += blog
     write_json(tmp / "export.json", {
         "out": out_name, "total": float(total), "top": top, "panel": [PW, PH], "master_db": float(master),
-        "items": exp_items, "sfx": exp_sfx, "title_lines": T,
+        "items": exp_items, "sfx": exp_sfx, "title_lines": T, "bgm": exp_bgm,
         "subs": [{"a": x["a"], "b": x["b"], "spans": x["spans"], "krw": x.get("krw", ""), "note": x.get("note", ""),
                   "solo": x.get("solo", False), "item": x.get("item")} for x in sub_list],
         "circles": [e for e in ass_ev if e.startswith("Dialogue: 2,")],

@@ -176,6 +176,15 @@ def prepare_media(job, exp, out_dir, make=True):
         cap = e.get("max_dur", 1.7)  # 예전 효과음 폴더: 1.7초에서 끊음 / opus: 끝까지
         dur = max(0.05, (fd - e["lead"]) if cap is None else min(cap, fd - e["lead"]))
         sfx.append({**e, "file": dst, "file_dur": fd, "dur": dur})
+
+    # BGM (2026-11-10): 덕킹·크기를 미리 입힌 wav 를 프로젝트 폴더로 복사
+    if exp.get("bgm"):
+        (out_dir / "bgm").mkdir(exist_ok=True)
+        src = Path(exp["bgm"]["file"])
+        dst = out_dir / "bgm" / src.name
+        if make and src.resolve() != dst.resolve():
+            shutil.copy2(src, dst)
+        exp["bgm"]["file"] = str(dst)
     return shots, voices, sfx
 
 
@@ -350,6 +359,12 @@ def build_draft(exp, cfg, shots, voices, sfx, name, folder):
         d.add_audio(sfx_tracks[k], e["file"], e["t"], e["dur"], e["file_dur"], src_start=e["lead"],
                     volume=10 ** (e["gain_db"] / 20) * master)
 
+    # BGM: 한 트랙, 덕킹은 파일에 이미 들어 있음 → 목소리와 같은 마스터 크기만
+    if exp.get("bgm"):
+        bt = d.track("audio", "BGM")
+        bf = Path(exp["bgm"]["file"])
+        d.add_audio(bt, bf, 0.0, min(exp["total"], probe_dur(bf)), probe_dur(bf), volume=master)
+
     # 자막
     st = d.track("text", "자막")
     nsize = size_of(S["narr_size"])
@@ -371,6 +386,16 @@ def build_draft(exp, cfg, shots, voices, sfx, name, folder):
         else:
             cy = exp["sub_pos"][1]
         d.add_text(st, spans, x["a"], x["b"] - x["a"], nsize, cy, render_index=14000 + k)
+
+    # 워터마크 (2026-11-10): 렌더러와 같은 자리 — 영상 패널 바로 아래 검은 띠에 흐린 흰색 "60초쇼츠"
+    wm = cfg.get("watermark", {})
+    if wm.get("text"):
+        wt = d.track("text", "워터마크")
+        wsize = wm.get("size", 40)
+        y_top = top + ph + wm.get("gap", 22)  # 렌더러는 글자 위쪽 기준(an8)
+        seg = d.add_text(wt, [(wm["text"], "white")], 0.0, exp["total"], size_of(wsize),
+                         y_top + wsize * em * LINE_H / 2, shadow=False, render_index=13100)
+        seg["clip"]["alpha"] = round(1 - int(wm.get("alpha", "&HA8&").strip("&H"), 16) / 255, 3)
 
     # 제목 2줄 (각 줄 따로 — 렌더러와 같은 위치)
     tsize = S["title_size"]
@@ -466,7 +491,7 @@ def export(job_name, edl_name, preset="", name=""):
     else:
         msg = register(folder, meta)
     print(f"완료: '{folder.name}' ({total:.2f}초, 샷 {len(shots)}개, 자막 {len(exp['subs'])}개, "
-          f"효과음 {len(sfx)}개) — {msg}")
+          f"효과음 {len(sfx)}개{', BGM ' + exp['bgm']['name'] if exp.get('bgm') else ''}) — {msg}")
     return folder
 
 
@@ -487,7 +512,14 @@ def rebuild(job_name, media_name, preset="", name=""):
         folder, k = root / f"{base}_{k}", k + 1
     d = build_draft(exp, cfg, shots, voices, sfx, folder.name, folder)
     meta = d.write()
-    print(f"완료: '{folder.name}' — " + (register(folder, meta) if not capcut_running() else "CapCut 이 켜져 있어 목록 등록은 미룸"))
+    if capcut_running():  # export 와 같이 대기 목록에 넣어 --register-only 로 나중에 등록
+        pend = read_json(PENDING) if PENDING.exists() else []
+        pend.append(folder.as_posix())
+        write_json(PENDING, pend)
+        msg = "CapCut 이 켜져 있어 목록 등록은 미룸 (끈 뒤 --register-only)"
+    else:
+        msg = register(folder, meta)
+    print(f"완료: '{folder.name}' — " + msg)
     return folder
 
 

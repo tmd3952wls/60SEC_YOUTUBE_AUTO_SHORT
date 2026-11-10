@@ -1,0 +1,71 @@
+{
+ "text": "그러자 케빈이 약 4,700만 원에 지분 50%를 부르는데 대신 학교는 그만두라는데",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.04,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "케빈이",
+   "start": 0.361,
+   "end": 0.783,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 1.063,
+   "end": 1.505,
+   "aligned": true
+  },
+  {
+   "word": "4,700만",
+   "start": 1.525,
+   "end": 2.007,
+   "aligned": true
+  },
+  {
+   "word": "원에",
+   "start": 2.027,
+   "end": 2.227,
+   "aligned": true
+  },
+  {
+   "word": "지분",
+   "start": 2.408,
+   "end": 2.829,
+   "aligned": true
+  },
+  {
+   "word": "50%를",
+   "start": 2.849,
+   "end": 3.291,
+   "aligned": true
+  },
+  {
+   "word": "부르는데",
+   "start": 3.351,
+   "end": 3.792,
+   "aligned": true
+  },
+  {
+   "word": "대신",
+   "start": 4.053,
+   "end": 4.254,
+   "aligned": true
+  },
+  {
+   "word": "학교는",
+   "start": 4.334,
+   "end": 4.615,
+   "aligned": true
+  },
+  {
+   "word": "그만두라는데",
+   "start": 4.695,
+   "end": 5.257,
+   "aligned": true
+  }
+ ]
+}

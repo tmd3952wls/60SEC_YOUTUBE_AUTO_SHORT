@@ -29,3 +29,6 @@ assets/bgm/*
 
 # 로그
 *.log
+
+# Playwright MCP 스냅샷
+.playwright-mcp/
