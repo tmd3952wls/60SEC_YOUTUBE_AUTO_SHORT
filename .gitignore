@@ -32,3 +32,6 @@ assets/bgm/*
 
 # Playwright MCP 스냅샷
 .playwright-mcp/
+
+# 캡컷 캐시에서 복사한 글꼴 (배달의민족주아체: 각자 설치/캡컷에서 받음)
+assets/fonts/BMJUA.ttf

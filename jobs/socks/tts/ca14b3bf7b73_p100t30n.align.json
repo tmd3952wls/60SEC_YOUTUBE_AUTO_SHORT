@@ -1,0 +1,65 @@
+{
+ "text": "매달 무슨 양말이 올지 모르는 깜짝 양말을 우편함으로 보내 준다는데",
+ "words": [
+  {
+   "word": "매달",
+   "start": 0.06,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "무슨",
+   "start": 0.362,
+   "end": 0.543,
+   "aligned": true
+  },
+  {
+   "word": "양말이",
+   "start": 0.603,
+   "end": 0.844,
+   "aligned": true
+  },
+  {
+   "word": "올지",
+   "start": 0.904,
+   "end": 1.085,
+   "aligned": true
+  },
+  {
+   "word": "모르는",
+   "start": 1.146,
+   "end": 1.367,
+   "aligned": true
+  },
+  {
+   "word": "깜짝",
+   "start": 1.387,
+   "end": 1.708,
+   "aligned": true
+  },
+  {
+   "word": "양말을",
+   "start": 1.769,
+   "end": 2.07,
+   "aligned": true
+  },
+  {
+   "word": "우편함으로",
+   "start": 2.151,
+   "end": 2.613,
+   "aligned": true
+  },
+  {
+   "word": "보내",
+   "start": 2.693,
+   "end": 2.834,
+   "aligned": true
+  },
+  {
+   "word": "준다는데",
+   "start": 2.874,
+   "end": 3.236,
+   "aligned": true
+  }
+ ]
+}

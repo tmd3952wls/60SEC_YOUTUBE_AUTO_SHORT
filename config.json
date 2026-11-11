@@ -87,7 +87,16 @@
   "zoom_accel": 0.6,
   "font_bold": false,
   "glow_alpha_white": "&H90&",
-  "sub_anchor": "center"
+  "sub_anchor": "center",
+  "sub_style": "capcut_jua",
+  "sub_font": "BM JUA",
+  "sub_ass_size": 74,
+  "sub_colors": {
+   "yellow": "FFDC00",
+   "green": "2CFF23"
+  },
+  "sub_anim_ms": 133,
+  "_sub_style_why": "2026-11-11 사용자가 CapCut coconut_cocotaps_v16 에서 직접 맞춘 자막: 배달의민족주아체 13, 외곽선 없음, 그림자(0.9/거리5/흐림0.45), DeepGlow 글로우, [인>블러 입장] 0.13초. 색은 강조 규칙대로(노랑 FFDC00, 돈 초록 2CFF23)"
  },
  "render": {
   "clip_pad_before": 0.1,
@@ -170,14 +179,55 @@
  },
  "capcut": {
   "sub_anim": {
-   "name": "확대",
-   "effect_id": "672006",
-   "resource_id": "6724919499042066958",
-   "sec": 0.066666,
-   "category_id": "ruchang_fav",
-   "category_name": "즐겨찾기",
-   "path": "C:/Users/tmd39/AppData/Local/CapCut/User Data/Cache/effect/672006/43a8026720374e330daf7b70a91ac7ce",
-   "_why": "2026-11-11 사용자가 coconut_cocotaps_v15 에서 직접 고른 자막 애니메이션: 인 > 확대 0.07초(2프레임), 아웃 없음. 모든 자막 동일"
+   "name": "블러 입장",
+   "effect_id": "7594783879685328145",
+   "resource_id": "7594783879685328145",
+   "sec": 0.133333,
+   "category_id": "ruchang",
+   "category_name": "인",
+   "source_platform": 1,
+   "third_resource_id": "0",
+   "request_id": "202611112010452CFBEBA6027ECB0D9065",
+   "path": "C:/Users/tmd39/AppData/Local/CapCut/User Data/Cache/effect/7594783879685328145/65cbf137392a7ace70ca744e3e5e62f4",
+   "_why": "2026-11-11 사용자가 coconut_cocotaps_v16 에서 고른 자막 애니메이션 (그 항목 그대로 복사)"
+  },
+  "sub_font": {
+   "title": "배달의민족주아체",
+   "resource_id": "7577600442964725008",
+   "source_platform": 1,
+   "request_id": "2026111120104416E3DC700890E908B013",
+   "path": "C:/Users/tmd39/AppData/Local/CapCut/User Data/Cache/effect/7577600442964725008/c1431e2eae4fe955caa6f71a7d60e08f/font.ttf",
+   "size": 13.0
+  },
+  "sub_text": {
+   "border_width": 0.02961275540292263,
+   "border_alpha": 0.0,
+   "shadow_alpha": 0.8999999761581421,
+   "shadow_smoothing": 0.45000001788139343,
+   "shadow_distance": 5.0,
+   "shadow_angle": -45.0,
+   "shadow_point": {
+    "x": 0.6363961030678928,
+    "y": -0.6363961030678928
+   },
+   "check_flag": 111,
+   "line_max_width": 0.82
+  },
+  "sub_glow": {
+   "effect_id": "7367637998579487248",
+   "resource_id": "7367637998579487248",
+   "name": "DeepGlow",
+   "type": "bloom",
+   "panel_id": "text_glow",
+   "source_platform": 1,
+   "path": "C:/Users/tmd39/AppData/Local/CapCut/User Data/Cache/effect/7367637998579487248/9c7e9af83b4e4effc689afcd35febcd5",
+   "bloom_params": {
+    "color": "#000000",
+    "strength": 0.9330296187167286,
+    "range": 0.31469247099478875,
+    "dir_x": 0.0,
+    "dir_y": 0.0
+   }
   }
  },
  "bgm_default": {

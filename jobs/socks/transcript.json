@@ -1,0 +1,1448 @@
+[
+  {
+    "id": 0,
+    "start": 6.74,
+    "end": 9.4,
+    "text": "Hello, Sharks. It's a pleasure to make your acquaintance."
+  },
+  {
+    "id": 1,
+    "start": 9.68,
+    "end": 10.64,
+    "text": "My name's Brian DeLuca."
+  },
+  {
+    "id": 2,
+    "start": 10.88,
+    "end": 11.82,
+    "text": "And I'm Matt McClard."
+  },
+  {
+    "id": 3,
+    "start": 11.9,
+    "end": 13.9,
+    "text": "We're from the great city of Dallas, Texas,"
+  },
+  {
+    "id": 4,
+    "start": 14.3,
+    "end": 16.24,
+    "text": "and we're seeking $250,000"
+  },
+  {
+    "id": 5,
+    "start": 16.24,
+    "end": 19.6,
+    "text": "in exchange for 10% equity in our company, Footcardigan."
+  },
+  {
+    "id": 6,
+    "start": 20.26,
+    "end": 21.44,
+    "text": "What is Footcardigan?"
+  },
+  {
+    "id": 7,
+    "start": 23.88,
+    "end": 27.4,
+    "text": "Footcardigan is the raddest, baddest sock subscription company"
+  },
+  {
+    "id": 8,
+    "start": 27.4,
+    "end": 28.48,
+    "text": "in all the land."
+  },
+  {
+    "id": 9,
+    "start": 28.82,
+    "end": 31.5,
+    "text": "We design awesome socks for men, women, and kids"
+  },
+  {
+    "id": 10,
+    "start": 31.5,
+    "end": 34.08,
+    "text": "and deliver them all over the world every month."
+  },
+  {
+    "id": 11,
+    "start": 34.08,
+    "end": 36.14,
+    "text": "We take the otherwise snooze of an errand"
+  },
+  {
+    "id": 12,
+    "start": 36.14,
+    "end": 37.64,
+    "text": "of going to the store to buy socks"
+  },
+  {
+    "id": 13,
+    "start": 37.64,
+    "end": 39.76,
+    "text": "and turn it into something not only super fun,"
+  },
+  {
+    "id": 14,
+    "start": 39.94,
+    "end": 41.22,
+    "text": "but super convenient as well."
+  },
+  {
+    "id": 15,
+    "start": 41.52,
+    "end": 44.32,
+    "text": "Our sock fairy carefully selects a random pair of socks"
+  },
+  {
+    "id": 16,
+    "start": 44.32,
+    "end": 47.0,
+    "text": "to magically appear in our customers' mailboxes every month"
+  },
+  {
+    "id": 17,
+    "start": 47.0,
+    "end": 48.34,
+    "text": "so they never know what they're going to get."
+  },
+  {
+    "id": 18,
+    "start": 48.88,
+    "end": 50.94,
+    "text": "Basically, we're spreading cheer all over the planet,"
+  },
+  {
+    "id": 19,
+    "start": 51.22,
+    "end": 52.5,
+    "text": "one pair of socks at a time."
+  },
+  {
+    "id": 20,
+    "start": 52.84,
+    "end": 55.6,
+    "text": "So, Sharks, I hope you're ready to step up your sock game."
+  },
+  {
+    "id": 21,
+    "start": 56.2,
+    "end": 57.5,
+    "text": "Which is a crazy coincidence"
+  },
+  {
+    "id": 22,
+    "start": 57.5,
+    "end": 59.12,
+    "text": "because they have mailboxes right here"
+  },
+  {
+    "id": 23,
+    "start": 59.12,
+    "end": 60.2,
+    "text": "with each of your names on them."
+  },
+  {
+    "id": 24,
+    "start": 60.36,
+    "end": 62.2,
+    "text": "Let's see what the sock fairy brought you."
+  },
+  {
+    "id": 25,
+    "start": 63.08,
+    "end": 69.09,
+    "text": "Is this how they come?"
+  },
+  {
+    "id": 26,
+    "start": 69.51,
+    "end": 70.15,
+    "text": "Yes, thank you."
+  },
+  {
+    "id": 27,
+    "start": 70.47,
+    "end": 70.89,
+    "text": "You're welcome."
+  },
+  {
+    "id": 28,
+    "start": 71.13,
+    "end": 72.53,
+    "text": "Appreciate it."
+  },
+  {
+    "id": 29,
+    "start": 72.53,
+    "end": 73.63,
+    "text": "Aw."
+  },
+  {
+    "id": 30,
+    "start": 73.63,
+    "end": 75.73,
+    "text": "Heart."
+  },
+  {
+    "id": 31,
+    "start": 75.73,
+    "end": 77.93,
+    "text": "So how long have you been doing this business?"
+  },
+  {
+    "id": 32,
+    "start": 77.93,
+    "end": 79.73,
+    "text": "We just passed three years since June."
+  },
+  {
+    "id": 33,
+    "start": 79.73,
+    "end": 80.43,
+    "text": "Oh, congrats."
+  },
+  {
+    "id": 34,
+    "start": 80.43,
+    "end": 82.37,
+    "text": "And what have your sales been?"
+  },
+  {
+    "id": 35,
+    "start": 82.37,
+    "end": 85.91,
+    "text": "Overall sales, the duration of the company, 1.36 million."
+  },
+  {
+    "id": 36,
+    "start": 85.91,
+    "end": 87.31,
+    "text": "How many subscribers?"
+  },
+  {
+    "id": 37,
+    "start": 87.31,
+    "end": 89.49,
+    "text": "Currently, we have about 6,000 subscribers."
+  },
+  {
+    "id": 38,
+    "start": 89.49,
+    "end": 90.91,
+    "text": "6,000?"
+  },
+  {
+    "id": 39,
+    "start": 90.91,
+    "end": 92.69,
+    "text": "And if I go to your site and say,"
+  },
+  {
+    "id": 40,
+    "start": 92.69,
+    "end": 96.33,
+    "text": "I want to be part of this wonderful experience of a sock"
+  },
+  {
+    "id": 41,
+    "start": 96.33,
+    "end": 99.15,
+    "text": "a month, how much does it cost me?"
+  },
+  {
+    "id": 42,
+    "start": 99.15,
+    "end": 100.49,
+    "text": "$9 a month."
+  },
+  {
+    "id": 43,
+    "start": 100.49,
+    "end": 105.67,
+    "text": "$2 shipping and actually $3 shipping anywhere in the world, so we do international as well."
+  },
+  {
+    "id": 44,
+    "start": 105.87,
+    "end": 107.05,
+    "text": "How long do I have to sign up for?"
+  },
+  {
+    "id": 45,
+    "start": 107.13,
+    "end": 108.41,
+    "text": "We basically have two different options."
+  },
+  {
+    "id": 46,
+    "start": 108.53,
+    "end": 110.27,
+    "text": "You can do a month-to-month subscription."
+  },
+  {
+    "id": 47,
+    "start": 110.69,
+    "end": 113.65,
+    "text": "The other options are 3, 6, 9, and 12 months."
+  },
+  {
+    "id": 48,
+    "start": 113.73,
+    "end": 118.31,
+    "text": "They work great for gifts, you know, and that's just a prepaid subscription for each"
+  },
+  {
+    "id": 49,
+    "start": 118.31,
+    "end": 118.89,
+    "text": "of those amounts."
+  },
+  {
+    "id": 50,
+    "start": 119.49,
+    "end": 120.13,
+    "text": "I have a question."
+  },
+  {
+    "id": 51,
+    "start": 120.31,
+    "end": 122.21,
+    "text": "So one of your socks is lower than the other."
+  },
+  {
+    "id": 52,
+    "start": 122.37,
+    "end": 125.25,
+    "text": "Is that to show us that you have kid's size and adult size?"
+  },
+  {
+    "id": 53,
+    "start": 126.01,
+    "end": 127.99,
+    "text": "No, it just fell down on my cap."
+  },
+  {
+    "id": 54,
+    "start": 127.99,
+    "end": 129.13,
+    "text": "That's why I'm going to do this."
+  },
+  {
+    "id": 55,
+    "start": 129.61,
+    "end": 130.25,
+    "text": "I'm fixed."
+  },
+  {
+    "id": 56,
+    "start": 130.49,
+    "end": 132.49,
+    "text": "Walk us through your customer acquisition cost,"
+  },
+  {
+    "id": 57,
+    "start": 132.49,
+    "end": 135.49,
+    "text": "your cost of goods, lifetime value, attrition rate."
+  },
+  {
+    "id": 58,
+    "start": 135.49,
+    "end": 136.49,
+    "text": "Give it to us."
+  },
+  {
+    "id": 59,
+    "start": 136.49,
+    "end": 137.49,
+    "text": "And remember all that."
+  },
+  {
+    "id": 60,
+    "start": 137.49,
+    "end": 139.49,
+    "text": "So our cost per sock is $1.32 a pair."
+  },
+  {
+    "id": 61,
+    "start": 139.49,
+    "end": 141.49,
+    "text": "That's landed or delivered to the customer?"
+  },
+  {
+    "id": 62,
+    "start": 141.49,
+    "end": 142.49,
+    "text": "That's landed."
+  },
+  {
+    "id": 63,
+    "start": 142.49,
+    "end": 144.49,
+    "text": "And you're making them overseas?"
+  },
+  {
+    "id": 64,
+    "start": 144.49,
+    "end": 146.49,
+    "text": "Yeah, we make them currently in Turkey, China,"
+  },
+  {
+    "id": 65,
+    "start": 146.49,
+    "end": 148.49,
+    "text": "occasionally the U.S. when it makes sense."
+  },
+  {
+    "id": 66,
+    "start": 148.49,
+    "end": 151.49,
+    "text": "But the great thing about our model is that you get a random pair every month."
+  },
+  {
+    "id": 67,
+    "start": 151.49,
+    "end": 153.49,
+    "text": "So we don't really have much inventory issues"
+  },
+  {
+    "id": 68,
+    "start": 153.49,
+    "end": 155.49,
+    "text": "because we can always push through it."
+  },
+  {
+    "id": 69,
+    "start": 155.49,
+    "end": 159.49,
+    "text": "So right now it's, what, $60,000 month-over-month revenue?"
+  },
+  {
+    "id": 70,
+    "start": 159.49,
+    "end": 161.73,
+    "text": "It's a little tricky, because we're so seasonal."
+  },
+  {
+    "id": 71,
+    "start": 161.73,
+    "end": 165.53,
+    "text": "So, you know, for holidays, like, in January and February,"
+  },
+  {
+    "id": 72,
+    "start": 165.53,
+    "end": 167.03,
+    "text": "I think when Valentine's was over,"
+  },
+  {
+    "id": 73,
+    "start": 167.03,
+    "end": 168.87,
+    "text": "we ended up having about 12,000 subscribers"
+  },
+  {
+    "id": 74,
+    "start": 168.87,
+    "end": 169.91,
+    "text": "at that one given time."
+  },
+  {
+    "id": 75,
+    "start": 169.91,
+    "end": 170.91,
+    "text": "And then drop off."
+  },
+  {
+    "id": 76,
+    "start": 170.91,
+    "end": 173.51,
+    "text": "We have the ebb and flow of, like, a classic retailer."
+  },
+  {
+    "id": 77,
+    "start": 173.51,
+    "end": 175.01,
+    "text": "Who is your biggest customer?"
+  },
+  {
+    "id": 78,
+    "start": 175.01,
+    "end": 176.55,
+    "text": "Uh, definitely men."
+  },
+  {
+    "id": 79,
+    "start": 176.55,
+    "end": 178.97,
+    "text": "I mean, you're right on trend, obviously, right?"
+  },
+  {
+    "id": 80,
+    "start": 178.97,
+    "end": 181.51,
+    "text": "Men are really into these crazy socks."
+  },
+  {
+    "id": 81,
+    "start": 181.51,
+    "end": 183.35,
+    "text": "Even Mark is wearing them, right?"
+  },
+  {
+    "id": 82,
+    "start": 183.35,
+    "end": 186.19,
+    "text": "I've got, like, 500 different ones, yeah."
+  },
+  {
+    "id": 83,
+    "start": 186.19,
+    "end": 188.65,
+    "text": "What has been your sale in the last 12 months?"
+  },
+  {
+    "id": 84,
+    "start": 188.65,
+    "end": 190.31,
+    "text": "About $900,000 in the last 12 months."
+  },
+  {
+    "id": 85,
+    "start": 190.31,
+    "end": 191.31,
+    "text": "$900,000?"
+  },
+  {
+    "id": 86,
+    "start": 191.31,
+    "end": 192.65,
+    "text": "Good for you. That's a lot of socks."
+  },
+  {
+    "id": 87,
+    "start": 192.65,
+    "end": 193.99,
+    "text": "That is a lot of socks."
+  },
+  {
+    "id": 88,
+    "start": 193.99,
+    "end": 197.39,
+    "text": "So we're going to do $1.5 million this year."
+  },
+  {
+    "id": 89,
+    "start": 197.39,
+    "end": 198.29,
+    "text": "What are your backgrounds?"
+  },
+  {
+    "id": 90,
+    "start": 198.29,
+    "end": 199.63,
+    "text": "Because it sounds like the way you're talking,"
+  },
+  {
+    "id": 91,
+    "start": 199.63,
+    "end": 201.93,
+    "text": "you have a tech background or an SEO background."
+  },
+  {
+    "id": 92,
+    "start": 201.93,
+    "end": 204.59,
+    "text": "Yeah, so my background's in conversion optimization."
+  },
+  {
+    "id": 93,
+    "start": 204.59,
+    "end": 206.21,
+    "text": "I worked at a marketing agency in Dallas"
+  },
+  {
+    "id": 94,
+    "start": 206.21,
+    "end": 211.61,
+    "text": "and just loved the psychology of what are people doing"
+  },
+  {
+    "id": 95,
+    "start": 211.61,
+    "end": 212.95,
+    "text": "on the website, getting them to buy,"
+  },
+  {
+    "id": 96,
+    "start": 212.95,
+    "end": 214.05,
+    "text": "and what pushes them to buy."
+  },
+  {
+    "id": 97,
+    "start": 214.05,
+    "end": 217.05,
+    "text": "So we have almost a 7% conversion rate"
+  },
+  {
+    "id": 98,
+    "start": 217.05,
+    "end": 218.35,
+    "text": "on the Cardigan right now."
+  },
+  {
+    "id": 99,
+    "start": 218.35,
+    "end": 221.35,
+    "text": "Then why aren't your numbers higher?"
+  },
+  {
+    "id": 100,
+    "start": 221.35,
+    "end": 223.29,
+    "text": "If you had that big a conversion rate"
+  },
+  {
+    "id": 101,
+    "start": 223.29,
+    "end": 226.49,
+    "text": "and you had those margins, you should be just plowing in."
+  },
+  {
+    "id": 102,
+    "start": 226.49,
+    "end": 229.53,
+    "text": "So we just came full-time for the first two and a half years."
+  },
+  {
+    "id": 103,
+    "start": 229.53,
+    "end": 231.73,
+    "text": "We did this all on the side between the four."
+  },
+  {
+    "id": 104,
+    "start": 231.73,
+    "end": 232.83,
+    "text": "There's four co-founders."
+  },
+  {
+    "id": 105,
+    "start": 232.83,
+    "end": 233.99,
+    "text": "We have eight kids."
+  },
+  {
+    "id": 106,
+    "start": 233.99,
+    "end": 236.47,
+    "text": "We were working full-time jobs, getting this thing going."
+  },
+  {
+    "id": 107,
+    "start": 236.47,
+    "end": 238.13,
+    "text": "Why are you not making domestically?"
+  },
+  {
+    "id": 108,
+    "start": 238.13,
+    "end": 240.97,
+    "text": "Because you can turn this fairly quickly domestically."
+  },
+  {
+    "id": 109,
+    "start": 240.97,
+    "end": 243.07,
+    "text": "It'll save you from an inventory position."
+  },
+  {
+    "id": 110,
+    "start": 243.07,
+    "end": 244.41,
+    "text": "Number one, it was price."
+  },
+  {
+    "id": 111,
+    "start": 244.41,
+    "end": 248.25,
+    "text": "You know, because I invested in a company called Bombas."
+  },
+  {
+    "id": 112,
+    "start": 248.25,
+    "end": 253.09,
+    "text": "right and these guys are like on fire and their domestic challenges that they"
+  },
+  {
+    "id": 113,
+    "start": 253.09,
+    "end": 257.79,
+    "text": "can't find a certain machine that is seamless in the sock but this this sock"
+  },
+  {
+    "id": 114,
+    "start": 257.79,
+    "end": 260.69,
+    "text": "is readily available in the market it's a quality sock I like this so are you"
+  },
+  {
+    "id": 115,
+    "start": 260.69,
+    "end": 266.31,
+    "text": "open to domestic who are who are your competitors out there right now well we"
+  },
+  {
+    "id": 116,
+    "start": 266.31,
+    "end": 270.87,
+    "text": "have a lot of competitors the margins are so high everybody wants socks sure"
+  },
+  {
+    "id": 117,
+    "start": 270.87,
+    "end": 274.23,
+    "text": "but I think that's a really good point so right now we're one of the few socks"
+  },
+  {
+    "id": 118,
+    "start": 274.23,
+    "end": 278.61,
+    "text": "subscription companies that manufacture and make our own so I think we're doing"
+  },
+  {
+    "id": 119,
+    "start": 278.61,
+    "end": 281.31,
+    "text": "quite a bit better than most of our competition. Meaning they're going to"
+  },
+  {
+    "id": 120,
+    "start": 281.31,
+    "end": 284.43,
+    "text": "third parties and wholesaling them from them and so we know our margins are much"
+  },
+  {
+    "id": 121,
+    "start": 284.43,
+    "end": 289.11,
+    "text": "better. So now what if I get a pair of socks, first month I don't like it, the"
+  },
+  {
+    "id": 122,
+    "start": 289.11,
+    "end": 292.89,
+    "text": "second month I don't like say the design, is there an option for me to say you know"
+  },
+  {
+    "id": 123,
+    "start": 292.89,
+    "end": 298.71,
+    "text": "guys I want to start picking my sock? Not right now, no. I don't think you ever want to get there."
+  },
+  {
+    "id": 124,
+    "start": 298.71,
+    "end": 304.05,
+    "text": "If you have to maintain inventory skews based on demand and selection this"
+  },
+  {
+    "id": 125,
+    "start": 304.05,
+    "end": 305.05,
+    "text": "This whole model goes out the window."
+  },
+  {
+    "id": 126,
+    "start": 305.05,
+    "end": 306.93,
+    "text": "We get feedback all the time from people saying,"
+  },
+  {
+    "id": 127,
+    "start": 306.93,
+    "end": 309.43,
+    "text": "I cannot wait until I open my mailbox"
+  },
+  {
+    "id": 128,
+    "start": 309.43,
+    "end": 311.29,
+    "text": "and those footcardigan socks are there."
+  },
+  {
+    "id": 129,
+    "start": 311.29,
+    "end": 315.57,
+    "text": "Just out of interest, if I give you $250,000 for 10%,"
+  },
+  {
+    "id": 130,
+    "start": 315.57,
+    "end": 317.01,
+    "text": "how do I ever get my money back?"
+  },
+  {
+    "id": 131,
+    "start": 317.01,
+    "end": 320.67,
+    "text": "We think, honestly, with this valuation and the $250,000,"
+  },
+  {
+    "id": 132,
+    "start": 320.67,
+    "end": 324.03,
+    "text": "we believe that you could get it back in three years."
+  },
+  {
+    "id": 133,
+    "start": 324.03,
+    "end": 326.41,
+    "text": "Why do you think that it'll take three years"
+  },
+  {
+    "id": 134,
+    "start": 326.41,
+    "end": 327.39,
+    "text": "to get us back $250,000?"
+  },
+  {
+    "id": 135,
+    "start": 327.39,
+    "end": 328.83,
+    "text": "That's quite some time."
+  },
+  {
+    "id": 136,
+    "start": 328.83,
+    "end": 331.05,
+    "text": "I don't know time frames in terms of getting money back,"
+  },
+  {
+    "id": 137,
+    "start": 331.05,
+    "end": 333.33,
+    "text": "but I think that we're going to be $3 million."
+  },
+  {
+    "id": 138,
+    "start": 333.33,
+    "end": 335.43,
+    "text": "You're willing to give distributions to shareholders."
+  },
+  {
+    "id": 139,
+    "start": 335.43,
+    "end": 337.33,
+    "text": "You know, we have many options of where we deploy our capital."
+  },
+  {
+    "id": 140,
+    "start": 337.33,
+    "end": 339.97,
+    "text": "We're looking for the highest return, lowest risk."
+  },
+  {
+    "id": 141,
+    "start": 339.97,
+    "end": 342.01,
+    "text": "You know, I would say this."
+  },
+  {
+    "id": 142,
+    "start": 342.01,
+    "end": 343.65,
+    "text": "We bootstrapped this company."
+  },
+  {
+    "id": 143,
+    "start": 343.65,
+    "end": 345.95,
+    "text": "We put $6,000 of our own cash into it."
+  },
+  {
+    "id": 144,
+    "start": 345.95,
+    "end": 346.71,
+    "text": "That's it."
+  },
+  {
+    "id": 145,
+    "start": 346.71,
+    "end": 347.61,
+    "text": "In three years."
+  },
+  {
+    "id": 146,
+    "start": 347.61,
+    "end": 351.11,
+    "text": "So we're going to continue to grow that subscription model"
+  },
+  {
+    "id": 147,
+    "start": 351.11,
+    "end": 352.45,
+    "text": "with just finding new customers."
+  },
+  {
+    "id": 148,
+    "start": 352.45,
+    "end": 354.01,
+    "text": "We found early on people didn't even know"
+  },
+  {
+    "id": 149,
+    "start": 354.01,
+    "end": 355.65,
+    "text": "stock subscriptions was a thing,"
+  },
+  {
+    "id": 150,
+    "start": 355.65,
+    "end": 358.05,
+    "text": "so we've got to get in front of more people."
+  },
+  {
+    "id": 151,
+    "start": 358.05,
+    "end": 361.83,
+    "text": "I think they're cute, but it's a very crowded market."
+  },
+  {
+    "id": 152,
+    "start": 361.83,
+    "end": 363.43,
+    "text": "To me, you're not doing something different,"
+  },
+  {
+    "id": 153,
+    "start": 363.43,
+    "end": 365.47,
+    "text": "just doing it in a different way."
+  },
+  {
+    "id": 154,
+    "start": 365.47,
+    "end": 370.09,
+    "text": "I'm not sure how I would make back my $250,000 very quickly."
+  },
+  {
+    "id": 155,
+    "start": 370.09,
+    "end": 371.43,
+    "text": "I'm out."
+  },
+  {
+    "id": 156,
+    "start": 371.43,
+    "end": 372.13,
+    "text": "Thank you very much."
+  },
+  {
+    "id": 157,
+    "start": 372.13,
+    "end": 373.67,
+    "text": "Yeah, thanks, Lori."
+  },
+  {
+    "id": 158,
+    "start": 373.67,
+    "end": 375.31,
+    "text": "So you guys, you know, this never happens"
+  },
+  {
+    "id": 159,
+    "start": 375.31,
+    "end": 378.95,
+    "text": "where I actually give an offer to two guys in their underwear."
+  },
+  {
+    "id": 160,
+    "start": 381.07,
+    "end": 387.95,
+    "text": "I will give you $250,000 for 22.5%."
+  },
+  {
+    "id": 161,
+    "start": 387.95,
+    "end": 391.35,
+    "text": "And it has to be contingent that my Bombas partners"
+  },
+  {
+    "id": 162,
+    "start": 391.35,
+    "end": 393.19,
+    "text": "want to work with the deal."
+  },
+  {
+    "id": 163,
+    "start": 393.19,
+    "end": 395.13,
+    "text": "I have to be good partners to them."
+  },
+  {
+    "id": 164,
+    "start": 395.13,
+    "end": 400.07,
+    "text": "I'll give you $250,000 for 15% with some schedule of returns"
+  },
+  {
+    "id": 165,
+    "start": 400.07,
+    "end": 402.33,
+    "text": "because I don't really see a socks description business"
+  },
+  {
+    "id": 166,
+    "start": 402.33,
+    "end": 405.11,
+    "text": "doing an IPO on New York Stock Exchange."
+  },
+  {
+    "id": 167,
+    "start": 405.11,
+    "end": 406.63,
+    "text": "So what schedule?"
+  },
+  {
+    "id": 168,
+    "start": 406.63,
+    "end": 407.77,
+    "text": "Yeah, what does that look like?"
+  },
+  {
+    "id": 169,
+    "start": 407.77,
+    "end": 409.41,
+    "text": "Do quarterly distributions to everybody,"
+  },
+  {
+    "id": 170,
+    "start": 409.41,
+    "end": 410.91,
+    "text": "including yourselves."
+  },
+  {
+    "id": 171,
+    "start": 410.91,
+    "end": 413.01,
+    "text": "In other words, you start to distribute money."
+  },
+  {
+    "id": 172,
+    "start": 413.01,
+    "end": 414.71,
+    "text": "I take it out the same time you guys do."
+  },
+  {
+    "id": 173,
+    "start": 414.71,
+    "end": 416.71,
+    "text": "In the long run, that's why you invest in the business."
+  },
+  {
+    "id": 174,
+    "start": 416.71,
+    "end": 417.89,
+    "text": "Right, makes sense."
+  },
+  {
+    "id": 175,
+    "start": 417.89,
+    "end": 419.89,
+    "text": "Thanks for that offer. That's awesome."
+  },
+  {
+    "id": 176,
+    "start": 419.89,
+    "end": 421.89,
+    "text": "If you're going to value this as a tech company"
+  },
+  {
+    "id": 177,
+    "start": 421.89,
+    "end": 424.89,
+    "text": "and eventually raise venture capital,"
+  },
+  {
+    "id": 178,
+    "start": 424.89,
+    "end": 427.89,
+    "text": "it's going to be hard to justify to investors"
+  },
+  {
+    "id": 179,
+    "start": 427.89,
+    "end": 429.89,
+    "text": "that you're giving distributions"
+  },
+  {
+    "id": 180,
+    "start": 429.89,
+    "end": 432.89,
+    "text": "to a previous tier of investors."
+  },
+  {
+    "id": 181,
+    "start": 432.89,
+    "end": 434.89,
+    "text": "At my company, Atom Factory,"
+  },
+  {
+    "id": 182,
+    "start": 434.89,
+    "end": 438.89,
+    "text": "we probably invested in over about 65 technology companies,"
+  },
+  {
+    "id": 183,
+    "start": 438.89,
+    "end": 440.89,
+    "text": "also consumer packaged goods,"
+  },
+  {
+    "id": 184,
+    "start": 440.89,
+    "end": 442.89,
+    "text": "in addition to Stant Socks,"
+  },
+  {
+    "id": 185,
+    "start": 442.89,
+    "end": 445.89,
+    "text": "which, you know, is a rocket ship right now."
+  },
+  {
+    "id": 186,
+    "start": 445.89,
+    "end": 450.03,
+    "text": "right now what I like about you guys is the fact that you're going after the"
+  },
+  {
+    "id": 187,
+    "start": 450.03,
+    "end": 454.67,
+    "text": "subscription business which I think is there's a huge market there so what I'm"
+  },
+  {
+    "id": 188,
+    "start": 454.67,
+    "end": 464.23,
+    "text": "gonna offer is 250k for 15% no no distributions and I think one of the"
+  },
+  {
+    "id": 189,
+    "start": 464.23,
+    "end": 469.39,
+    "text": "things your brand is gonna need is a narrative in order to be able to make"
+  },
+  {
+    "id": 190,
+    "start": 469.39,
+    "end": 474.89,
+    "text": "your brand defensible you're gonna have to create some sort of connection with"
+  },
+  {
+    "id": 191,
+    "start": 474.89,
+    "end": 477.43,
+    "text": "with the consumer outside of the SOC."
+  },
+  {
+    "id": 192,
+    "start": 477.43,
+    "end": 481.23,
+    "text": "And that's a space I think I'm able to help you guys in."
+  },
+  {
+    "id": 193,
+    "start": 482.89,
+    "end": 484.57,
+    "text": "And then there's one."
+  },
+  {
+    "id": 194,
+    "start": 484.57,
+    "end": 486.07,
+    "text": "There's Mark. I don't know what he's doing."
+  },
+  {
+    "id": 195,
+    "start": 486.07,
+    "end": 488.61,
+    "text": "The guy left. The Dallas guy."
+  },
+  {
+    "id": 196,
+    "start": 488.61,
+    "end": 490.03,
+    "text": "See, these guys, other than Troy,"
+  },
+  {
+    "id": 197,
+    "start": 490.03,
+    "end": 491.87,
+    "text": "they're, well, can you give me back immediately?"
+  },
+  {
+    "id": 198,
+    "start": 491.87,
+    "end": 493.57,
+    "text": "I'm more interested in how big can we get."
+  },
+  {
+    "id": 199,
+    "start": 493.57,
+    "end": 496.07,
+    "text": "Right. And I think, again, now that we're full-time,"
+  },
+  {
+    "id": 200,
+    "start": 496.07,
+    "end": 498.49,
+    "text": "we finally have time to scale this thing."
+  },
+  {
+    "id": 201,
+    "start": 498.49,
+    "end": 502.45,
+    "text": "And if we did what we did for the last three years, part-time,"
+  },
+  {
+    "id": 202,
+    "start": 502.45,
+    "end": 504.69,
+    "text": "We are placing massive bets on ourselves"
+  },
+  {
+    "id": 203,
+    "start": 504.69,
+    "end": 506.49,
+    "text": "and our families' livelihoods"
+  },
+  {
+    "id": 204,
+    "start": 506.49,
+    "end": 507.55,
+    "text": "that we're gonna grow this thing."
+  },
+  {
+    "id": 205,
+    "start": 507.79,
+    "end": 508.99,
+    "text": "All right, well, I have an interest."
+  },
+  {
+    "id": 206,
+    "start": 509.31,
+    "end": 511.91,
+    "text": "I'll do a straight-up 250K for 20%."
+  },
+  {
+    "id": 207,
+    "start": 511.91,
+    "end": 513.57,
+    "text": "We've got facilities in Dallas."
+  },
+  {
+    "id": 208,
+    "start": 513.81,
+    "end": 515.13,
+    "text": "We can take over your accounting."
+  },
+  {
+    "id": 209,
+    "start": 515.47,
+    "end": 516.71,
+    "text": "We can take back office."
+  },
+  {
+    "id": 210,
+    "start": 516.81,
+    "end": 518.21,
+    "text": "You can work with all our tech guys."
+  },
+  {
+    "id": 211,
+    "start": 518.49,
+    "end": 519.91,
+    "text": "I like Troy's idea of narrative."
+  },
+  {
+    "id": 212,
+    "start": 520.31,
+    "end": 522.15,
+    "text": "I think he brings a unique skill set there."
+  },
+  {
+    "id": 213,
+    "start": 522.53,
+    "end": 524.03,
+    "text": "I think your strength is, you know,"
+  },
+  {
+    "id": 214,
+    "start": 524.07,
+    "end": 526.41,
+    "text": "the technical side, the conversion side."
+  },
+  {
+    "id": 215,
+    "start": 526.77,
+    "end": 528.33,
+    "text": "I think we, you know, we can amp up."
+  },
+  {
+    "id": 216,
+    "start": 528.39,
+    "end": 529.29,
+    "text": "We can do things with the Mavs."
+  },
+  {
+    "id": 217,
+    "start": 529.35,
+    "end": 529.85,
+    "text": "There's all kinds of..."
+  },
+  {
+    "id": 218,
+    "start": 529.85,
+    "end": 531.81,
+    "text": "So your offer's $250, $20, $50, $50,"
+  },
+  {
+    "id": 219,
+    "start": 531.89,
+    "end": 532.85,
+    "text": "Troy, if he wants that deal."
+  },
+  {
+    "id": 220,
+    "start": 532.85,
+    "end": 534.53,
+    "text": "Yeah, Troy, if you want to come in with me, we'll split it."
+  },
+  {
+    "id": 221,
+    "start": 536.25,
+    "end": 538.17,
+    "text": "Okay, Mark, I'll do that deal."
+  },
+  {
+    "id": 222,
+    "start": 538.71,
+    "end": 542.31,
+    "text": "So for you guys, split it would be 20% total."
+  },
+  {
+    "id": 223,
+    "start": 542.43,
+    "end": 544.53,
+    "text": "$250,000 for 20% total."
+  },
+  {
+    "id": 224,
+    "start": 544.89,
+    "end": 546.27,
+    "text": "Troy and I will split it down the middle."
+  },
+  {
+    "id": 225,
+    "start": 546.41,
+    "end": 547.23,
+    "text": "So expensive."
+  },
+  {
+    "id": 226,
+    "start": 550.84,
+    "end": 552.32,
+    "text": "Dudes, let's do this."
+  },
+  {
+    "id": 227,
+    "start": 552.44,
+    "end": 553.1,
+    "text": "Deal. Done."
+  },
+  {
+    "id": 228,
+    "start": 553.32,
+    "end": 553.5,
+    "text": "Woo!"
+  },
+  {
+    "id": 229,
+    "start": 554.5,
+    "end": 555.08,
+    "text": "Yeah, boy."
+  },
+  {
+    "id": 230,
+    "start": 555.26,
+    "end": 555.68,
+    "text": "Yeah, boy."
+  },
+  {
+    "id": 231,
+    "start": 556.22,
+    "end": 556.84,
+    "text": "Let's do this."
+  },
+  {
+    "id": 232,
+    "start": 557.04,
+    "end": 557.4,
+    "text": "Absolutely."
+  },
+  {
+    "id": 233,
+    "start": 557.64,
+    "end": 558.04,
+    "text": "It'll be fun."
+  },
+  {
+    "id": 234,
+    "start": 558.32,
+    "end": 558.82,
+    "text": "Thanks, guys."
+  },
+  {
+    "id": 235,
+    "start": 558.96,
+    "end": 559.3,
+    "text": "Take care."
+  },
+  {
+    "id": 236,
+    "start": 559.4,
+    "end": 560.1,
+    "text": "Thank you so much."
+  },
+  {
+    "id": 237,
+    "start": 561.16,
+    "end": 562.06,
+    "text": "Oh, my gosh."
+  },
+  {
+    "id": 238,
+    "start": 562.44,
+    "end": 564.44,
+    "text": "He's doing happiness."
+  },
+  {
+    "id": 239,
+    "start": 564.44,
+    "end": 565.44,
+    "text": "Boom!"
+  },
+  {
+    "id": 240,
+    "start": 565.44,
+    "end": 567.44,
+    "text": "Holy cow."
+  }
+]

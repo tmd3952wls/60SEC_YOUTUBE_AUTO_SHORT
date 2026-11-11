@@ -1,0 +1,71 @@
+{
+ "text": "로리는 경쟁이 너무 많다며 빠졌지만 양말 회사에 투자해 본 데이먼드가 나서는데",
+ "words": [
+  {
+   "word": "로리는",
+   "start": 0.08,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "경쟁이",
+   "start": 0.421,
+   "end": 0.722,
+   "aligned": true
+  },
+  {
+   "word": "너무",
+   "start": 0.782,
+   "end": 0.942,
+   "aligned": true
+  },
+  {
+   "word": "많다며",
+   "start": 0.982,
+   "end": 1.323,
+   "aligned": true
+  },
+  {
+   "word": "빠졌지만",
+   "start": 1.383,
+   "end": 1.865,
+   "aligned": true
+  },
+  {
+   "word": "양말",
+   "start": 2.145,
+   "end": 2.386,
+   "aligned": true
+  },
+  {
+   "word": "회사에",
+   "start": 2.446,
+   "end": 2.667,
+   "aligned": true
+  },
+  {
+   "word": "투자해",
+   "start": 2.747,
+   "end": 2.967,
+   "aligned": true
+  },
+  {
+   "word": "본",
+   "start": 3.028,
+   "end": 3.128,
+   "aligned": true
+  },
+  {
+   "word": "데이먼드가",
+   "start": 3.188,
+   "end": 3.609,
+   "aligned": true
+  },
+  {
+   "word": "나서는데",
+   "start": 3.669,
+   "end": 4.07,
+   "aligned": true
+  }
+ ]
+}

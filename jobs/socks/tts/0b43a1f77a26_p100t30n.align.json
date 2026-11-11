@@ -1,0 +1,77 @@
+{
+ "text": "양말 한 켤레 원가는 약 1,800원인데 지난 1년 매출만 약 12억 원이라는데",
+ "words": [
+  {
+   "word": "양말",
+   "start": 0.06,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 0.341,
+   "end": 0.422,
+   "aligned": true
+  },
+  {
+   "word": "켤레",
+   "start": 0.502,
+   "end": 0.663,
+   "aligned": true
+  },
+  {
+   "word": "원가는",
+   "start": 0.723,
+   "end": 1.084,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 1.165,
+   "end": 1.446,
+   "aligned": true
+  },
+  {
+   "word": "1,800원인데",
+   "start": 1.466,
+   "end": 2.089,
+   "aligned": true
+  },
+  {
+   "word": "지난",
+   "start": 2.37,
+   "end": 2.55,
+   "aligned": true
+  },
+  {
+   "word": "1년",
+   "start": 2.611,
+   "end": 2.812,
+   "aligned": true
+  },
+  {
+   "word": "매출만",
+   "start": 2.872,
+   "end": 3.233,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 3.294,
+   "end": 3.595,
+   "aligned": true
+  },
+  {
+   "word": "12억",
+   "start": 3.615,
+   "end": 3.755,
+   "aligned": true
+  },
+  {
+   "word": "원이라는데",
+   "start": 3.816,
+   "end": 4.237,
+   "aligned": true
+  }
+ ]
+}

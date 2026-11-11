@@ -201,8 +201,43 @@ def ref_sub_events(subs, cfg, pos, an=5):
         # 2026-11-11 사용자: "자막 애니메이션 전부 통일, 벤치마킹 영상처럼" → 참고 4q8E4EPcgew:
         # 들어올 때 가로 모션 블러 1프레임 → 선명, 나갈 때도 가로 블러 1프레임 (모든 자막 같게)
         # 2026-11-11 (v2) 사용자가 CapCut 에서 직접 고른 것: [인 > 확대] 0.07초(2프레임), 아웃 없음 → 모든 자막 동일
-        evs += neon_events(sp, a, b, zoom_cfg, pos=pos, an=an)
+        # 2026-11-11 (v3) 사용자가 CapCut coconut_cocotaps_v16 에서 글씨체·크기·그림자·글로우·[인 > 블러 입장]까지 맞춤
+        if cfg["subtitle"].get("sub_style") == "capcut_jua":
+            evs += jua_events(sp, a, b, cfg, pos=pos, an=an)
+        else:
+            evs += neon_events(sp, a, b, zoom_cfg, pos=pos, an=an)
     return evs
+
+
+def jua_events(spans, t0, t1, cfg, pos, an=5, layer_base=3):
+    """사용자가 CapCut(coconut_cocotaps_v16)에서 직접 맞춘 자막을 렌더러로 옮김 (2026-11-11).
+    - 배달의민족주아체 13 (CapCut 13 x 5.2px = em 67.6px → libass 74)
+    - 외곽선 없음, 오른쪽 아래로 진한 그림자(투명도 0.9, 거리 5, 흐림 0.45)
+    - 글자색 DeepGlow(번짐 0.31, 세기 0.93) → 같은 색 부드러운 빛
+    - 등장 [인 > 블러 입장] 0.13초: 흐릿하고 투명 → 선명
+    - 색: 강조 규칙 그대로, 노랑·초록만 사용자 값(sub_colors)"""
+    S = cfg["subtitle"]
+    over = S.get("sub_colors", {})
+    size, fn, ms = S.get("sub_ass_size", 74), S.get("sub_font", "BM JUA"), S.get("sub_anim_ms", 133)
+    x, y = pos
+
+    def col(c):
+        n = c.removesuffix("_s")
+        return bgr(over.get(n, n))
+
+    def body(alpha, colour, blur_in, blur_to, bord):
+        out = []
+        for txt, c in spans:
+            fs = round(size * SMALL) if c.endswith("_s") else size
+            out.append("{" + colour(c) + rf"\fs{fs}\alpha&HFF&\t(0,{ms},\alpha{alpha})}}")
+            out.append(txt.replace("\n", r"\N"))
+        return (rf"\an{an}\fn{fn}\shad0\bord{bord}\blur{blur_in}\t(0,{ms},\blur{blur_to})}}" + "".join(out))
+
+    d = 4  # 그림자 거리 (px, 오른쪽 아래 45도)
+    shadow = rf"{{\pos({x + d},{y + d})" + body("&H1A&", lambda c: r"\1c&H000000&\3c&H000000&", 18, 3, 0)
+    glow = rf"{{\pos({x},{y})" + body("&H8C&", lambda c: rf"\1c{col(c)}\3c{col(c)}", 22, 9, 5)
+    text = rf"{{\pos({x},{y})" + body("&H00&", lambda c: rf"\1c{col(c)}\3c{col(c)}", 14, 0.3, 0)
+    return [(layer_base, t0, t1, shadow), (layer_base + 1, t0, t1, glow), (layer_base + 2, t0, t1, text)]
 
 
 def _blur_frame(spans, t0, t1, pos, layer, size, an=5):

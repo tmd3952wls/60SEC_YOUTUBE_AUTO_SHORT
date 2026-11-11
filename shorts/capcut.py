@@ -26,6 +26,8 @@ from pathlib import Path
 from .common import ASSETS, JOBS, load_config, read_json, write_json
 
 TPL = Path(__file__).with_name("capcut_template.json")
+# 자막 글자 효과 DeepGlow: 사용자가 coconut_cocotaps_v16 에서 넣은 effects 항목 그대로 (2026-11-11)
+GLOW_TPL = json.loads(Path(__file__).with_name("capcut_glow_template.json").read_text(encoding="utf-8"))
 FONT = ASSETS / "fonts" / "Cafe24Anemone.ttf"  # 글꼴 이름 'Cafe24 Ohsquare' (렌더러 자막과 같은 글꼴)
 PENDING = JOBS / "_capcut_pending.json"  # 등록 못 한 프로젝트 (CapCut 이 켜져 있었을 때)
 US = 1_000_000
@@ -52,8 +54,9 @@ def uid():
     return str(uuid.uuid4()).upper()
 
 
-def rgb(name):
-    h = NEON.get(name.removesuffix("_s"), name.removesuffix("_s")).lstrip("#")
+def rgb(name, over=None):
+    n = name.removesuffix("_s")
+    h = ((over or {}).get(n) or NEON.get(n, n)).lstrip("#")
     return [int(h[i:i + 2], 16) / 255 for i in (0, 2, 4)]
 
 
@@ -267,8 +270,12 @@ class Draft:
         s["clip"] = None
         return s
 
-    def add_text(self, track, spans, start, dur, size, y_px_center, shadow=True, render_index=14000, anim=None):
-        """spans = [(글자, 색이름)] — '_s' 로 끝나는 색은 작은 글씨."""
+    def add_text(self, track, spans, start, dur, size, y_px_center, shadow=True, render_index=14000, anim=None,
+                 sub=None):
+        """spans = [(글자, 색이름)] — '_s' 로 끝나는 색은 작은 글씨.
+        sub = config capcut 자막 스타일 {font, text, glow, colors} → 사용자가 coconut_cocotaps_v16 에서 맞춘 자막 그대로."""
+        if sub:
+            return self._add_sub(track, spans, start, dur, y_px_center, render_index, anim, sub)
         text, styles = "", []
         for t, col in spans:
             if not t:
@@ -305,6 +312,47 @@ class Draft:
             s["extra_material_refs"].append(self.text_anim(anim, dur))
         return s
 
+    def _add_sub(self, track, spans, start, dur, y_px_center, render_index, anim, sub):
+        """자막 (2026-11-11 사용자 CapCut 설정 복사): 배달의민족주아체 13, 외곽선 없음, 진한 그림자,
+        글자 효과 DeepGlow, 애니메이션 [인 > 블러 입장]. 글자색만 강조 규칙대로."""
+        F, T = sub["font"], sub["text"]
+        size = float(F.get("size", 13.0))
+        text, styles = "", []
+        for t, col in spans:
+            if not t:
+                continue
+            a = u16len(text)
+            text += t
+            styles.append({"fill": {"content": {"render_type": "solid", "solid": {"color": rgb(col, sub.get("colors"))}}},
+                           "font": {"path": F["path"], "id": F["resource_id"]},
+                           "size": round(size * (SMALL if col.endswith("_s") else 1.0), 2),
+                           "useLetterColor": True, "range": [a, u16len(text)]})
+        m = copy.deepcopy(self.T["text"]["material"])
+        m.update({"id": uid(), "content": json.dumps({"text": text, "styles": styles}, ensure_ascii=False),
+                  "font_path": F["path"], "font_name": F["title"], "font_title": F["title"], "font_id": "",
+                  "font_resource_id": F["resource_id"], "font_source_platform": F.get("source_platform", 1),
+                  "font_size": size, "text_color": "#ffffff", "alignment": 1, "typesetting": 0,
+                  "line_spacing": 0.02, "border_color": "#000000", "border_mode": 0,
+                  "has_shadow": True, "shadow_color": "#000000", "use_effect_default_color": False,
+                  "fonts": [{"id": uid(), "resource_id": F["resource_id"], "third_resource_id": "", "category_id": "",
+                             "category_name": "", "source_platform": F.get("source_platform", 1), "path": F["path"],
+                             "effect_id": F["resource_id"], "title": F["title"], "team_id": "", "file_uri": "",
+                             "request_id": F.get("request_id", "")}],
+                  "is_rich_text": True})
+        m.update({k: v for k, v in T.items()})
+        mid = self.mat("texts", m)
+        s = self._segment("text", track, mid, start, dur)
+        s["clip"]["transform"] = {"x": 0.0, "y": (CANVAS_H / 2 - y_px_center) / (CANVAS_H / 2)}
+        s["render_index"] = render_index
+        if anim:
+            s["extra_material_refs"].append(self.text_anim(anim, dur))
+        if sub.get("glow"):
+            g = copy.deepcopy(GLOW_TPL)
+            g.update({k: v for k, v in sub["glow"].items()})
+            g["id"] = uid()
+            s["extra_material_refs"].append(self.mat("effects", g))
+        return s
+
     def text_anim(self, a, dur):
         """자막 '인' 애니메이션 (2026-11-11).
         사용자가 CapCut(coconut_cocotaps_v15)에서 직접 넣고 저장한 항목을 글자 그대로 복사한 형식.
@@ -313,11 +361,13 @@ class Draft:
         d = min(us(a.get("sec", 0.066666)), us(dur) // 2)
         return self.mat("material_animations", {
             "animations": [{"id": a["effect_id"], "type": "in", "start": 0, "duration": d, "path": a["path"],
-                            "platform": "all", "resource_id": a["resource_id"], "third_resource_id": "0",
-                            "source_platform": 0, "name": a["name"],
+                            "platform": "all", "resource_id": a["resource_id"],
+                            "third_resource_id": a.get("third_resource_id", "0"),
+                            "source_platform": a.get("source_platform", 0), "name": a["name"],
                             "category_id": a.get("category_id", "ruchang_fav"),
                             "category_name": a.get("category_name", "즐겨찾기"), "panel": "",
-                            "material_type": "sticker", "anim_adjust_params": None, "request_id": ""}],
+                            "material_type": "sticker", "anim_adjust_params": None,
+                            "request_id": a.get("request_id", "")}],
             "id": uid(), "type": "sticker_animation", "multi_language_current": "none"})
 
     def write(self):
@@ -386,6 +436,12 @@ def build_draft(exp, cfg, shots, voices, sfx, name, folder):
     st = d.track("text", "자막")
     nsize = size_of(S["narr_size"])
     line_px = S["narr_size"] * em * LINE_H
+    C = cfg.get("capcut", {})
+    sub_style = None
+    if C.get("sub_font") and Path(C["sub_font"]["path"]).exists():
+        sub_style = {"font": C["sub_font"], "text": C.get("sub_text", {}), "glow": C.get("sub_glow"),
+                     "colors": S.get("sub_colors")}
+        line_px = sub_style["font"].get("size", 13.0) * PX_PER_SIZE * LINE_H
     for k, x in enumerate(exp["subs"]):
         spans = [tuple(p) for p in x["spans"]]
         if x.get("krw"):
@@ -403,7 +459,7 @@ def build_draft(exp, cfg, shots, voices, sfx, name, folder):
         else:
             cy = exp["sub_pos"][1]
         d.add_text(st, spans, x["a"], x["b"] - x["a"], nsize, cy, render_index=14000 + k,
-                   anim=cfg.get("capcut", {}).get("sub_anim"))
+                   anim=cfg.get("capcut", {}).get("sub_anim"), sub=sub_style)
 
     # 워터마크 (2026-11-10): 렌더러와 같은 자리 — 영상 패널 바로 아래 검은 띠에 흐린 흰색 "60초쇼츠"
     wm = cfg.get("watermark", {})

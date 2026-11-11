@@ -1,0 +1,65 @@
+{
+ "text": "케빈과 트로이가 15%를 부르자 마크는 20%에 트로이랑 반씩 나누자고 하는데",
+ "words": [
+  {
+   "word": "케빈과",
+   "start": 0.06,
+   "end": 0.421,
+   "aligned": true
+  },
+  {
+   "word": "트로이가",
+   "start": 0.521,
+   "end": 0.842,
+   "aligned": true
+  },
+  {
+   "word": "15%를",
+   "start": 0.943,
+   "end": 1.544,
+   "aligned": true
+  },
+  {
+   "word": "부르자",
+   "start": 1.625,
+   "end": 1.905,
+   "aligned": true
+  },
+  {
+   "word": "마크는",
+   "start": 2.166,
+   "end": 2.487,
+   "aligned": true
+  },
+  {
+   "word": "20%에",
+   "start": 2.507,
+   "end": 3.209,
+   "aligned": true
+  },
+  {
+   "word": "트로이랑",
+   "start": 3.349,
+   "end": 3.711,
+   "aligned": true
+  },
+  {
+   "word": "반씩",
+   "start": 3.791,
+   "end": 4.051,
+   "aligned": true
+  },
+  {
+   "word": "나누자고",
+   "start": 4.112,
+   "end": 4.453,
+   "aligned": true
+  },
+  {
+   "word": "하는데",
+   "start": 4.513,
+   "end": 4.894,
+   "aligned": true
+  }
+ ]
+}
