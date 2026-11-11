@@ -55,7 +55,9 @@ def _voice_onsets(wav, min_quiet=0.08):
     if not len(e):
         return np.array([])
     loud = e > max(np.percentile(e, 10) + 10, np.percentile(e, 95) - 38)
-    out, q = [], 0
+    # 항목 소리 맨 앞은 '조용했던 것'으로 봄 (2026-11-11): 말 중간부터 자른 클립은 0초부터 목소리가 나는데,
+    # 앞에 쉼이 없다고 0초를 못 잡아 첫 자막이 다음 단어로 0.2초 밀리던 문제
+    out, q = [], 10 ** 6
     for i, v in enumerate(loud):
         if not v:
             q += 1
@@ -522,10 +524,13 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
         tmp_out.replace(job / out_name)
         log += mlog
     exp_bgm = None
-    if edl.get("bgm", {}).get("file"):  # BGM (2026-11-10, shorts/bgm.py — 참고 4q8E4EPcgew 측정)
+    # BGM: EDL 에 "bgm" 이 없으면 config 의 bgm_default (2026-11-11 사용자가 CapCut 에서 맞춘 곡·시작·음량),
+    # "bgm": false 면 브금 없음. EDL 에 직접 쓴 bgm 은 예전처럼 (shorts/bgm.py — 참고 4q8E4EPcgew 덕킹)
+    bcfg = edl.get("bgm", cfg.get("bgm_default"))
+    if bcfg and bcfg.get("file"):
         from . import bgm as bgm_mod
         tmp_out = job / ("_bgm_" + Path(out_name).name)
-        exp_bgm, blog = bgm_mod.apply(body, job / out_name, tmp_out, total, edl["bgm"], tmp / "bgm", float(master),
+        exp_bgm, blog = bgm_mod.apply(body, job / out_name, tmp_out, total, bcfg, tmp / "bgm", float(master),
                                       cfg.get("sfx_mix", {}).get("master_lufs", -14.0))
         tmp_out.replace(job / out_name)
         log += blog

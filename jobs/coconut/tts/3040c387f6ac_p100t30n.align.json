@@ -1,0 +1,35 @@
+{
+ "text": "결국 투자자 5명 전원 아웃!",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.041,
+   "end": 0.264,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 0.365,
+   "end": 0.608,
+   "aligned": true
+  },
+  {
+   "word": "5명",
+   "start": 0.75,
+   "end": 1.034,
+   "aligned": true
+  },
+  {
+   "word": "전원",
+   "start": 1.136,
+   "end": 1.318,
+   "aligned": true
+  },
+  {
+   "word": "아웃!",
+   "start": 1.379,
+   "end": 1.541,
+   "aligned": true
+  }
+ ]
+}

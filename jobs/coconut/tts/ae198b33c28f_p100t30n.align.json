@@ -1,0 +1,23 @@
+{
+ "text": "투자자들이 매출을 묻자",
+ "words": [
+  {
+   "word": "투자자들이",
+   "start": 0.04,
+   "end": 0.485,
+   "aligned": true
+  },
+  {
+   "word": "매출을",
+   "start": 0.525,
+   "end": 0.808,
+   "aligned": true
+  },
+  {
+   "word": "묻자",
+   "start": 0.889,
+   "end": 1.071,
+   "aligned": true
+  }
+ ]
+}

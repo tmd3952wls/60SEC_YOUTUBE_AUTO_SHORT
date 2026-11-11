@@ -8,6 +8,7 @@
 
 EDL 최상위에 "bgm": {"file": "assets/bgm/xxx.wav", "start": 0.4} 를 넣으면 깔린다.
 선택: "under_voice_db"(기본 -9), "duck_db"(기본 6.6), "fade_out"(기본 1.0초).
+"fixed_db" 가 있으면 덕킹 없이 원곡 대비 그 크기로 고정 (2026-11-11, config bgm_default = 사용자 CapCut 설정).
 """
 import subprocess
 from pathlib import Path
@@ -69,9 +70,13 @@ def apply(body, video, out, total, bcfg, work, master_db, master_lufs=-14.0):
     under, duck = bcfg.get("under_voice_db", -9.0), bcfg.get("duck_db", 6.6)
     # 말하는 동안 BGM 순간 음량 중앙값 = 목소리 중앙값 + under
     g0 = (np.median(mv[speak]) + under) - np.median(mm[:len(mv)][speak[:len(mm)]])
-    act = _smooth_activity(tv, mv, Iv - 8, n)
-    gain_db = g0 + duck * (1 - act)
-    fo = bcfg.get("fade_out", 1.0)
+    if "fixed_db" in bcfg:  # 2026-11-11 사용자 CapCut 설정 그대로: 원곡 대비 고정 크기(마스터 전), 덕킹 없음
+        g0, duck = float(bcfg["fixed_db"]), 0.0
+        gain_db = np.full(n, g0)
+    else:
+        act = _smooth_activity(tv, mv, Iv - 8, n)
+        gain_db = g0 + duck * (1 - act)
+    fo = max(bcfg.get("fade_out", 1.0), 1e-3)
     env = 10 ** (gain_db / 20)
     tail = np.arange(n) / SR > total - fo
     env[tail] *= np.clip((total - np.arange(n)[tail] / SR) / fo, 0, 1)

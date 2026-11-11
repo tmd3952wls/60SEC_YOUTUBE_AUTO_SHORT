@@ -1,0 +1,1226 @@
+[
+  {
+    "id": 0,
+    "start": 0.0,
+    "end": 2.0,
+    "text": "Aloha!"
+  },
+  {
+    "id": 1,
+    "start": 2.0,
+    "end": 5.0,
+    "text": "My name is Coco Vinnie."
+  },
+  {
+    "id": 2,
+    "start": 5.0,
+    "end": 7.0,
+    "text": "I'm from Long Beach, California,"
+  },
+  {
+    "id": 3,
+    "start": 7.0,
+    "end": 11.0,
+    "text": "and I'm the founder and chief coconut and charge at Coco Taps."
+  },
+  {
+    "id": 4,
+    "start": 11.0,
+    "end": 17.0,
+    "text": "I'm asking for 150,000 for 10% of soon-to-be our company."
+  },
+  {
+    "id": 5,
+    "start": 17.0,
+    "end": 19.0,
+    "text": "Close your eyes for a minute"
+  },
+  {
+    "id": 6,
+    "start": 19.0,
+    "end": 24.0,
+    "text": "and imagine we're on our very own Hawaiian coconut plantation."
+  },
+  {
+    "id": 7,
+    "start": 24.0,
+    "end": 26.0,
+    "text": "The sun is shining, the birds are singing."
+  },
+  {
+    "id": 8,
+    "start": 26.0,
+    "end": 29.0,
+    "text": "You feel that ocean breeze on your skin"
+  },
+  {
+    "id": 9,
+    "start": 29.0,
+    "end": 32.84,
+    "text": "and what's even better is you've got a fresh tap coconut in your hands."
+  },
+  {
+    "id": 10,
+    "start": 32.84,
+    "end": 35.88,
+    "text": "Now, Coco Ray Ray and I, we're going to get you all tapped in."
+  },
+  {
+    "id": 11,
+    "start": 35.88,
+    "end": 37.8,
+    "text": "Come on, Coco Ray Ray."
+  },
+  {
+    "id": 12,
+    "start": 37.8,
+    "end": 41.58,
+    "text": "Loha."
+  },
+  {
+    "id": 13,
+    "start": 41.58,
+    "end": 42.94,
+    "text": "Now, Coco Ro, here you go."
+  },
+  {
+    "id": 14,
+    "start": 42.94,
+    "end": 44.38,
+    "text": "Lovely. Thank you, buddy."
+  },
+  {
+    "id": 15,
+    "start": 44.38,
+    "end": 45.74,
+    "text": "Coco Lolo."
+  },
+  {
+    "id": 16,
+    "start": 45.74,
+    "end": 46.46,
+    "text": "Coco Lolo."
+  },
+  {
+    "id": 17,
+    "start": 46.46,
+    "end": 47.34,
+    "text": "Coco Lolo?"
+  },
+  {
+    "id": 18,
+    "start": 47.34,
+    "end": 49.26,
+    "text": "Coco Lolo and Coco Ro Ro."
+  },
+  {
+    "id": 19,
+    "start": 49.26,
+    "end": 50.62,
+    "text": "This is Coco B."
+  },
+  {
+    "id": 20,
+    "start": 50.62,
+    "end": 51.5,
+    "text": "Here, cheers."
+  },
+  {
+    "id": 21,
+    "start": 51.5,
+    "end": 52.3,
+    "text": "Coco B."
+  },
+  {
+    "id": 22,
+    "start": 52.3,
+    "end": 52.86,
+    "text": "Hello."
+  },
+  {
+    "id": 23,
+    "start": 52.86,
+    "end": 53.74,
+    "text": "Coco Ro."
+  },
+  {
+    "id": 24,
+    "start": 53.74,
+    "end": 54.46,
+    "text": "Coco Ro."
+  },
+  {
+    "id": 25,
+    "start": 54.46,
+    "end": 55.66,
+    "text": "Wow."
+  },
+  {
+    "id": 26,
+    "start": 55.66,
+    "end": 57.18,
+    "text": "Oh, wow."
+  },
+  {
+    "id": 27,
+    "start": 57.18,
+    "end": 60.18,
+    "text": "Now, sharks, drinking coconut water"
+  },
+  {
+    "id": 28,
+    "start": 60.18,
+    "end": 63.18,
+    "text": "out of plastic bottles and cans taste old and stale."
+  },
+  {
+    "id": 29,
+    "start": 63.18,
+    "end": 65.18,
+    "text": "I'm sure now that you're tapped in,"
+  },
+  {
+    "id": 30,
+    "start": 65.18,
+    "end": 68.18,
+    "text": "we can all agree that drinking fresh right from the source"
+  },
+  {
+    "id": 31,
+    "start": 68.18,
+    "end": 71.18,
+    "text": "is the best way to relax and hydrate."
+  },
+  {
+    "id": 32,
+    "start": 71.18,
+    "end": 74.18,
+    "text": "You know, we've all seen some crazy ways to open a coconut."
+  },
+  {
+    "id": 33,
+    "start": 74.18,
+    "end": 76.18,
+    "text": "Banging and hammering and chopping!"
+  },
+  {
+    "id": 34,
+    "start": 76.18,
+    "end": 78.18,
+    "text": "You could lose a finger."
+  },
+  {
+    "id": 35,
+    "start": 78.18,
+    "end": 80.18,
+    "text": "We've even seen some of these crazy tools pitched"
+  },
+  {
+    "id": 36,
+    "start": 80.18,
+    "end": 82.18,
+    "text": "right here in the tank."
+  },
+  {
+    "id": 37,
+    "start": 82.18,
+    "end": 85.18,
+    "text": "But what we've created is the only 100%"
+  },
+  {
+    "id": 38,
+    "start": 85.18,
+    "end": 87.88,
+    "text": "made in USA, coconut water system."
+  },
+  {
+    "id": 39,
+    "start": 87.88,
+    "end": 90.58,
+    "text": "It allows you to quickly and safely tap a coconut."
+  },
+  {
+    "id": 40,
+    "start": 90.58,
+    "end": 93.18,
+    "text": "Let me just show you how it works."
+  },
+  {
+    "id": 41,
+    "start": 93.18,
+    "end": 96.68,
+    "text": "You take the cocoa tapper, you remove the safety cover."
+  },
+  {
+    "id": 42,
+    "start": 96.68,
+    "end": 99.98,
+    "text": "You make a hole right in the coconut like so."
+  },
+  {
+    "id": 43,
+    "start": 99.98,
+    "end": 101.78,
+    "text": "Now once the hole is in the coconut,"
+  },
+  {
+    "id": 44,
+    "start": 101.78,
+    "end": 105.18,
+    "text": "you take the cocoa tap, you thread it in counterclockwise."
+  },
+  {
+    "id": 45,
+    "start": 105.18,
+    "end": 107.68,
+    "text": "Now the end of the cocoa tapper is like a wrench,"
+  },
+  {
+    "id": 46,
+    "start": 107.68,
+    "end": 110.48,
+    "text": "and you just tighten it on like so."
+  },
+  {
+    "id": 47,
+    "start": 110.48,
+    "end": 113.48,
+    "text": "Now, once the tap is secured into the coconut,"
+  },
+  {
+    "id": 48,
+    "start": 113.48,
+    "end": 115.16,
+    "text": "It's fully resealable."
+  },
+  {
+    "id": 49,
+    "start": 115.16,
+    "end": 117.88,
+    "text": "Our lab results show that the fresh tapped coconut"
+  },
+  {
+    "id": 50,
+    "start": 117.88,
+    "end": 121.08,
+    "text": "will last up to four weeks in the refrigerator."
+  },
+  {
+    "id": 51,
+    "start": 121.08,
+    "end": 124.76,
+    "text": "Now, Sharks, our mission is to get everyone tapped in"
+  },
+  {
+    "id": 52,
+    "start": 124.76,
+    "end": 127.16,
+    "text": "to this ultimate vacation beverage."
+  },
+  {
+    "id": 53,
+    "start": 127.16,
+    "end": 129.0,
+    "text": "All you got to do is say, yes!"
+  },
+  {
+    "id": 54,
+    "start": 129.0,
+    "end": 133.48,
+    "text": "And we'll start bringing in boatloads of cocoa cash."
+  },
+  {
+    "id": 55,
+    "start": 133.48,
+    "end": 134.48,
+    "text": "What are your sales?"
+  },
+  {
+    "id": 56,
+    "start": 134.48,
+    "end": 138.08,
+    "text": "In our first year, we did almost $1,500,000 in revenue."
+  },
+  {
+    "id": 57,
+    "start": 138.08,
+    "end": 139.28,
+    "text": "How long ago was that?"
+  },
+  {
+    "id": 58,
+    "start": 139.28,
+    "end": 141.36,
+    "text": "That was just January of 2016."
+  },
+  {
+    "id": 59,
+    "start": 141.36,
+    "end": 143.6,
+    "text": "And in 2017, we're trending double"
+  },
+  {
+    "id": 60,
+    "start": 143.6,
+    "end": 144.8,
+    "text": "for where we are last year."
+  },
+  {
+    "id": 61,
+    "start": 144.8,
+    "end": 145.68,
+    "text": "What's the product?"
+  },
+  {
+    "id": 62,
+    "start": 145.68,
+    "end": 147.04,
+    "text": "Is it just a tap?"
+  },
+  {
+    "id": 63,
+    "start": 147.04,
+    "end": 149.36,
+    "text": "We sell two products currently."
+  },
+  {
+    "id": 64,
+    "start": 149.36,
+    "end": 151.36,
+    "text": "We have a Do It Yourself tap kit,"
+  },
+  {
+    "id": 65,
+    "start": 151.36,
+    "end": 154.84,
+    "text": "and we have the branded tapped beverage line,"
+  },
+  {
+    "id": 66,
+    "start": 154.84,
+    "end": 157.76,
+    "text": "which is in over 20 resorts on the Las Vegas Rodin."
+  },
+  {
+    "id": 67,
+    "start": 157.76,
+    "end": 161.16,
+    "text": "It's a tap kit and a finished coconut drink."
+  },
+  {
+    "id": 68,
+    "start": 161.16,
+    "end": 161.8,
+    "text": "Yes."
+  },
+  {
+    "id": 69,
+    "start": 161.8,
+    "end": 163.44,
+    "text": "And how does it break out?"
+  },
+  {
+    "id": 70,
+    "start": 163.44,
+    "end": 164.44,
+    "text": "Is it 55th or?"
+  },
+  {
+    "id": 71,
+    "start": 164.44,
+    "end": 168.56,
+    "text": "Right now, our current sales are 80% tap branded beverage"
+  },
+  {
+    "id": 72,
+    "start": 168.56,
+    "end": 170.92,
+    "text": "and 20% kit."
+  },
+  {
+    "id": 73,
+    "start": 170.92,
+    "end": 174.88,
+    "text": "So you're selling a self-contained coconut drink."
+  },
+  {
+    "id": 74,
+    "start": 174.88,
+    "end": 177.52,
+    "text": "How often do you have to go around the Las Vegas strip"
+  },
+  {
+    "id": 75,
+    "start": 177.52,
+    "end": 179.68,
+    "text": "delivering to the 20 resorts?"
+  },
+  {
+    "id": 76,
+    "start": 179.68,
+    "end": 181.0,
+    "text": "So we're delivering daily."
+  },
+  {
+    "id": 77,
+    "start": 181.0,
+    "end": 183.16,
+    "text": "So we have, you know, major corporations,"
+  },
+  {
+    "id": 78,
+    "start": 183.16,
+    "end": 186.56,
+    "text": "Caesars, MGM Mirage, Cosmopolitan Wind, Encore."
+  },
+  {
+    "id": 79,
+    "start": 186.56,
+    "end": 188.64,
+    "text": "How much do you charge for them, Coco Vinnie?"
+  },
+  {
+    "id": 80,
+    "start": 188.64,
+    "end": 190.12,
+    "text": "A case, our cost."
+  },
+  {
+    "id": 81,
+    "start": 190.12,
+    "end": 192.72,
+    "text": "Tap branded everything ready to deliver $27."
+  },
+  {
+    "id": 82,
+    "start": 192.72,
+    "end": 193.88,
+    "text": "And then what are you selling at full?"
+  },
+  {
+    "id": 83,
+    "start": 193.88,
+    "end": 195.68,
+    "text": "$45 per case right now."
+  },
+  {
+    "id": 84,
+    "start": 195.68,
+    "end": 198.36,
+    "text": "Okay. How many cases do you typically deliver"
+  },
+  {
+    "id": 85,
+    "start": 198.36,
+    "end": 199.76,
+    "text": "at a resort at one time?"
+  },
+  {
+    "id": 86,
+    "start": 199.76,
+    "end": 201.9,
+    "text": "a minimum order is five to 10 cases."
+  },
+  {
+    "id": 87,
+    "start": 201.9,
+    "end": 206.38,
+    "text": "So you're making 90 or $180 per customer per delivery?"
+  },
+  {
+    "id": 88,
+    "start": 206.38,
+    "end": 208.54,
+    "text": "Yes, sir."
+  },
+  {
+    "id": 89,
+    "start": 208.54,
+    "end": 210.86,
+    "text": "So tell us about your background."
+  },
+  {
+    "id": 90,
+    "start": 210.86,
+    "end": 212.34,
+    "text": "Why did you come up with this?"
+  },
+  {
+    "id": 91,
+    "start": 212.34,
+    "end": 214.54,
+    "text": "So I'm a six-foot-five Mexican Jew"
+  },
+  {
+    "id": 92,
+    "start": 214.54,
+    "end": 215.74,
+    "text": "standing in front of you today."
+  },
+  {
+    "id": 93,
+    "start": 215.74,
+    "end": 216.74,
+    "text": "Nice."
+  },
+  {
+    "id": 94,
+    "start": 216.74,
+    "end": 218.38,
+    "text": "Is it everybody?"
+  },
+  {
+    "id": 95,
+    "start": 218.38,
+    "end": 219.74,
+    "text": "I'm a problem solver."
+  },
+  {
+    "id": 96,
+    "start": 219.74,
+    "end": 222.58,
+    "text": "I started solving problems when I'm really young."
+  },
+  {
+    "id": 97,
+    "start": 222.58,
+    "end": 224.62,
+    "text": "Really, I was a fat kid in the very beginning."
+  },
+  {
+    "id": 98,
+    "start": 224.62,
+    "end": 227.58,
+    "text": "I challenged with my weight, and I overcame that."
+  },
+  {
+    "id": 99,
+    "start": 227.58,
+    "end": 229.06,
+    "text": "I lost 75 pounds."
+  },
+  {
+    "id": 100,
+    "start": 229.06,
+    "end": 235.16,
+    "text": "So basically an Indonesian friend of mine said try this and I was like I don't like coconut water"
+  },
+  {
+    "id": 101,
+    "start": 235.16,
+    "end": 240.9,
+    "text": "He said just try it once I was tapped in it was over hammer a knife every time after my workouts"
+  },
+  {
+    "id": 102,
+    "start": 240.9,
+    "end": 243.94,
+    "text": "I broke my stepdad's knife. I said we got to fix this"
+  },
+  {
+    "id": 103,
+    "start": 243.94,
+    "end": 248.74,
+    "text": "So I made the coconut resealable created the toolkit took me a year and a half R&D patents"
+  },
+  {
+    "id": 104,
+    "start": 249.02,
+    "end": 251.7,
+    "text": "Manufacturing made USA beat shine on their price everything"
+  },
+  {
+    "id": 105,
+    "start": 251.7,
+    "end": 258.1,
+    "text": "I see a massive untapped market the cruise industry 60% of their revenue of 24 million passengers a year"
+  },
+  {
+    "id": 106,
+    "start": 258.1,
+    "end": 259.58,
+    "text": "are drinking."
+  },
+  {
+    "id": 107,
+    "start": 259.58,
+    "end": 260.58,
+    "text": "60%."
+  },
+  {
+    "id": 108,
+    "start": 260.58,
+    "end": 261.58,
+    "text": "That's not the challenge, Vinnie."
+  },
+  {
+    "id": 109,
+    "start": 261.58,
+    "end": 262.58,
+    "text": "That's not the challenge, right?"
+  },
+  {
+    "id": 110,
+    "start": 262.58,
+    "end": 265.9,
+    "text": "The challenge is you're a delivery service, right?"
+  },
+  {
+    "id": 111,
+    "start": 265.9,
+    "end": 268.48,
+    "text": "You've got to deal with the logistics of delivery."
+  },
+  {
+    "id": 112,
+    "start": 268.48,
+    "end": 270.22,
+    "text": "How do you scale that?"
+  },
+  {
+    "id": 113,
+    "start": 270.22,
+    "end": 276.74,
+    "text": "We invented a whole high volume production system that we set up in California and Nevada"
+  },
+  {
+    "id": 114,
+    "start": 276.74,
+    "end": 277.74,
+    "text": "already."
+  },
+  {
+    "id": 115,
+    "start": 277.74,
+    "end": 279.86,
+    "text": "And we're literally five minutes from the casinos."
+  },
+  {
+    "id": 116,
+    "start": 279.86,
+    "end": 281.94,
+    "text": "Vinnie, I'm not worried about the production issue."
+  },
+  {
+    "id": 117,
+    "start": 281.94,
+    "end": 282.94,
+    "text": "Producing it, what do you say?"
+  },
+  {
+    "id": 118,
+    "start": 282.94,
+    "end": 284.38,
+    "text": "How do you get to more resorts?"
+  },
+  {
+    "id": 119,
+    "start": 284.38,
+    "end": 287.86,
+    "text": "Not just Vegas, but the rest of America, somewhere else."
+  },
+  {
+    "id": 120,
+    "start": 287.86,
+    "end": 289.98,
+    "text": "They're calling us already from all over the world."
+  },
+  {
+    "id": 121,
+    "start": 289.98,
+    "end": 290.78,
+    "text": "They're starting to call us."
+  },
+  {
+    "id": 122,
+    "start": 290.78,
+    "end": 292.1,
+    "text": "They love this tapping system."
+  },
+  {
+    "id": 123,
+    "start": 292.1,
+    "end": 292.94,
+    "text": "Well, hold on."
+  },
+  {
+    "id": 124,
+    "start": 292.94,
+    "end": 295.66,
+    "text": "Let's be clear, because this is a critical point"
+  },
+  {
+    "id": 125,
+    "start": 295.66,
+    "end": 298.38,
+    "text": "in this entire discussion."
+  },
+  {
+    "id": 126,
+    "start": 298.38,
+    "end": 302.7,
+    "text": "The resorts are calling you for the fully-completed coconut?"
+  },
+  {
+    "id": 127,
+    "start": 302.7,
+    "end": 303.1,
+    "text": "Yes."
+  },
+  {
+    "id": 128,
+    "start": 303.1,
+    "end": 304.46,
+    "text": "Or they're calling you for the taps?"
+  },
+  {
+    "id": 129,
+    "start": 304.46,
+    "end": 306.26,
+    "text": "Yes."
+  },
+  {
+    "id": 130,
+    "start": 306.26,
+    "end": 307.46,
+    "text": "Gam lost."
+  },
+  {
+    "id": 131,
+    "start": 307.46,
+    "end": 308.3,
+    "text": "So hang on."
+  },
+  {
+    "id": 132,
+    "start": 308.3,
+    "end": 311.46,
+    "text": "Did you create the tap to help the coconut business?"
+  },
+  {
+    "id": 133,
+    "start": 311.46,
+    "end": 314.1,
+    "text": "Or do you see that as, to me,"
+  },
+  {
+    "id": 134,
+    "start": 314.1,
+    "end": 315.74,
+    "text": "it's almost two separate businesses?"
+  },
+  {
+    "id": 135,
+    "start": 315.74,
+    "end": 317.74,
+    "text": "So that is the tap business."
+  },
+  {
+    "id": 136,
+    "start": 317.74,
+    "end": 321.14,
+    "text": "The reason why it's only 20% of our sales"
+  },
+  {
+    "id": 137,
+    "start": 321.14,
+    "end": 322.66,
+    "text": "is because we just let that organically live"
+  },
+  {
+    "id": 138,
+    "start": 322.66,
+    "end": 323.86,
+    "text": "on Amazon right now."
+  },
+  {
+    "id": 139,
+    "start": 323.86,
+    "end": 326.78,
+    "text": "But Cocoa Glory, with your help,"
+  },
+  {
+    "id": 140,
+    "start": 326.78,
+    "end": 329.5,
+    "text": "we would do an infomercial, rock the world on it,"
+  },
+  {
+    "id": 141,
+    "start": 329.5,
+    "end": 331.26,
+    "text": "show them how to tap the coconut."
+  },
+  {
+    "id": 142,
+    "start": 331.26,
+    "end": 334.14,
+    "text": "And another business, it's a Cocoa Cleanse."
+  },
+  {
+    "id": 143,
+    "start": 334.14,
+    "end": 336.46,
+    "text": "It's where we send them the coconuts and everything."
+  },
+  {
+    "id": 144,
+    "start": 336.46,
+    "end": 339.06,
+    "text": "Three day Cocoa Cleanse, it works."
+  },
+  {
+    "id": 145,
+    "start": 339.06,
+    "end": 340.66,
+    "text": "I've done it."
+  },
+  {
+    "id": 146,
+    "start": 340.66,
+    "end": 342.42,
+    "text": "There's lots of business here."
+  },
+  {
+    "id": 147,
+    "start": 342.42,
+    "end": 345.22,
+    "text": "Now, with your help, Cocoa Bee,"
+  },
+  {
+    "id": 148,
+    "start": 345.22,
+    "end": 347.34,
+    "text": "you've done some amazing franchises."
+  },
+  {
+    "id": 149,
+    "start": 347.34,
+    "end": 348.42,
+    "text": "The franchise is?"
+  },
+  {
+    "id": 150,
+    "start": 348.42,
+    "end": 349.94,
+    "text": "The Cocoa Tap Shack model."
+  },
+  {
+    "id": 151,
+    "start": 349.94,
+    "end": 350.78,
+    "text": "We have another business."
+  },
+  {
+    "id": 152,
+    "start": 350.78,
+    "end": 351.9,
+    "text": "Oh, there's another business."
+  },
+  {
+    "id": 153,
+    "start": 351.9,
+    "end": 354.82,
+    "text": "There's three phases to this entire Cocoa Dream"
+  },
+  {
+    "id": 154,
+    "start": 354.82,
+    "end": 355.98,
+    "text": "that we're building."
+  },
+  {
+    "id": 155,
+    "start": 355.98,
+    "end": 358.3,
+    "text": "Phase one, ultimate vacation beverage."
+  },
+  {
+    "id": 156,
+    "start": 358.3,
+    "end": 360.34,
+    "text": "Look, Vinny, we can't get straight answers."
+  },
+  {
+    "id": 157,
+    "start": 360.34,
+    "end": 361.86,
+    "text": "I can't tell if you could scale."
+  },
+  {
+    "id": 158,
+    "start": 361.86,
+    "end": 362.26,
+    "text": "I'm sorry."
+  },
+  {
+    "id": 159,
+    "start": 362.26,
+    "end": 364.5,
+    "text": "I'm out of that way."
+  },
+  {
+    "id": 160,
+    "start": 364.5,
+    "end": 365.58,
+    "text": "Cocoa, look."
+  },
+  {
+    "id": 161,
+    "start": 365.58,
+    "end": 368.46,
+    "text": "There's a term you're drowning in opportunity."
+  },
+  {
+    "id": 162,
+    "start": 368.46,
+    "end": 370.1,
+    "text": "Every time I took a sip of my coconut,"
+  },
+  {
+    "id": 163,
+    "start": 370.1,
+    "end": 371.66,
+    "text": "it was a new business."
+  },
+  {
+    "id": 164,
+    "start": 371.66,
+    "end": 373.86,
+    "text": "I can't follow the bouncing coconut."
+  },
+  {
+    "id": 165,
+    "start": 373.86,
+    "end": 375.18,
+    "text": "I'm out."
+  },
+  {
+    "id": 166,
+    "start": 375.18,
+    "end": 375.62,
+    "text": "Wow."
+  },
+  {
+    "id": 167,
+    "start": 375.62,
+    "end": 378.7,
+    "text": "OK, well, Cocoa Love."
+  },
+  {
+    "id": 168,
+    "start": 378.7,
+    "end": 380.5,
+    "text": "I think this is a complicated business"
+  },
+  {
+    "id": 169,
+    "start": 380.5,
+    "end": 382.22,
+    "text": "with a really skinny margin."
+  },
+  {
+    "id": 170,
+    "start": 382.22,
+    "end": 385.22,
+    "text": "Although, I think this is a cute little product"
+  },
+  {
+    "id": 171,
+    "start": 385.22,
+    "end": 386.42,
+    "text": "that could sell a lot."
+  },
+  {
+    "id": 172,
+    "start": 386.42,
+    "end": 388.94,
+    "text": "But the truth of the matter is it's way, way too early,"
+  },
+  {
+    "id": 173,
+    "start": 388.94,
+    "end": 390.74,
+    "text": "and I don't believe in that product."
+  },
+  {
+    "id": 174,
+    "start": 390.74,
+    "end": 394.12,
+    "text": "So for those reasons, I'm out."
+  },
+  {
+    "id": 175,
+    "start": 394.12,
+    "end": 395.16,
+    "text": "Here's my thought."
+  },
+  {
+    "id": 176,
+    "start": 395.16,
+    "end": 398.08,
+    "text": "I understand the love of the coconut and all of that."
+  },
+  {
+    "id": 177,
+    "start": 398.08,
+    "end": 400.84,
+    "text": "The problem is it's so niche."
+  },
+  {
+    "id": 178,
+    "start": 400.84,
+    "end": 404.16,
+    "text": "If I invested in this, I'd eat Cocoa Nuts."
+  },
+  {
+    "id": 179,
+    "start": 404.16,
+    "end": 404.96,
+    "text": "OK."
+  },
+  {
+    "id": 180,
+    "start": 404.96,
+    "end": 406.44,
+    "text": "I'm out."
+  },
+  {
+    "id": 181,
+    "start": 406.44,
+    "end": 408.48,
+    "text": "Sorry, you don't get it."
+  },
+  {
+    "id": 182,
+    "start": 408.48,
+    "end": 412.8,
+    "text": "I think that you have actually a fantastic tasting product"
+  },
+  {
+    "id": 183,
+    "start": 412.8,
+    "end": 415.36,
+    "text": "because the coconut water in this thing is terrific."
+  },
+  {
+    "id": 184,
+    "start": 415.36,
+    "end": 417.8,
+    "text": "You have a wealth of opportunities,"
+  },
+  {
+    "id": 185,
+    "start": 417.8,
+    "end": 420.52,
+    "text": "but what you have to do is focus."
+  },
+  {
+    "id": 186,
+    "start": 420.52,
+    "end": 423.48,
+    "text": "During the pitch, I didn't get the clarity of focus,"
+  },
+  {
+    "id": 187,
+    "start": 423.48,
+    "end": 426.24,
+    "text": "and I didn't get the clarity on game plan operationally."
+  },
+  {
+    "id": 188,
+    "start": 426.24,
+    "end": 427.48,
+    "text": "And unfortunately, for that reason."
+  },
+  {
+    "id": 189,
+    "start": 427.48,
+    "end": 428.28,
+    "text": "Do you want to hear?"
+  },
+  {
+    "id": 190,
+    "start": 428.28,
+    "end": 429.12,
+    "text": "Do you want to just hear that?"
+  },
+  {
+    "id": 191,
+    "start": 429.12,
+    "end": 431.24,
+    "text": "I'm out, brother."
+  },
+  {
+    "id": 192,
+    "start": 431.24,
+    "end": 432.32,
+    "text": "Coco, love to you."
+  },
+  {
+    "id": 193,
+    "start": 432.32,
+    "end": 433.16,
+    "text": "Thank you, guys."
+  },
+  {
+    "id": 194,
+    "start": 433.16,
+    "end": 434.32,
+    "text": "Congratulations on what you've accomplished."
+  },
+  {
+    "id": 195,
+    "start": 434.32,
+    "end": 435.48,
+    "text": "Little love, Coco Vinnie."
+  },
+  {
+    "id": 196,
+    "start": 435.48,
+    "end": 436.48,
+    "text": "You know what?"
+  },
+  {
+    "id": 197,
+    "start": 436.48,
+    "end": 437.48,
+    "text": "Good luck."
+  },
+  {
+    "id": 198,
+    "start": 437.48,
+    "end": 438.48,
+    "text": "I'm on my way out."
+  },
+  {
+    "id": 199,
+    "start": 438.48,
+    "end": 442.48,
+    "text": "Life can be a tough nut to crack Cocoa taps to get you right on track"
+  },
+  {
+    "id": 200,
+    "start": 442.48,
+    "end": 446.48,
+    "text": "Great taste, less waste to Coconut water from the Mexican Jew"
+  },
+  {
+    "id": 201,
+    "start": 446.48,
+    "end": 449.48,
+    "text": "And it's gotta go fresh Right from the tree"
+  },
+  {
+    "id": 202,
+    "start": 449.48,
+    "end": 453.48,
+    "text": "Fresh as it fresh is the best way to be No mess and no stress too"
+  },
+  {
+    "id": 203,
+    "start": 453.48,
+    "end": 457.48,
+    "text": "Gotta tap your thirst Cocoa dreams come true"
+  }
+]

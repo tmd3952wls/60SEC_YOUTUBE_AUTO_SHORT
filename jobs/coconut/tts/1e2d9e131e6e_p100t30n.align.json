@@ -1,0 +1,59 @@
+{
+ "text": "과연 비니는 그 뒤로 어떻게 됐을까요? 뒷이야기는 고정댓글에 적어둘게요",
+ "words": [
+  {
+   "word": "과연",
+   "start": 0.06,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "비니는",
+   "start": 0.401,
+   "end": 0.762,
+   "aligned": true
+  },
+  {
+   "word": "그",
+   "start": 0.922,
+   "end": 1.003,
+   "aligned": true
+  },
+  {
+   "word": "뒤로",
+   "start": 1.063,
+   "end": 1.243,
+   "aligned": true
+  },
+  {
+   "word": "어떻게",
+   "start": 1.263,
+   "end": 1.524,
+   "aligned": true
+  },
+  {
+   "word": "됐을까요?",
+   "start": 1.564,
+   "end": 2.045,
+   "aligned": true
+  },
+  {
+   "word": "뒷이야기는",
+   "start": 2.326,
+   "end": 2.828,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 2.948,
+   "end": 3.449,
+   "aligned": true
+  },
+  {
+   "word": "적어둘게요",
+   "start": 3.489,
+   "end": 4.071,
+   "aligned": true
+  }
+ ]
+}

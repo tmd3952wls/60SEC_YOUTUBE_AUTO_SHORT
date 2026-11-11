@@ -1,0 +1,59 @@
+{
+ "text": "근데 매출의 80%가 키트가 아니라 꼭지 꽂은 코코넛 배달이었는데",
+ "words": [
+  {
+   "word": "근데",
+   "start": 0.04,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "매출의",
+   "start": 0.623,
+   "end": 0.924,
+   "aligned": true
+  },
+  {
+   "word": "80%가",
+   "start": 1.004,
+   "end": 1.848,
+   "aligned": true
+  },
+  {
+   "word": "키트가",
+   "start": 2.009,
+   "end": 2.31,
+   "aligned": true
+  },
+  {
+   "word": "아니라",
+   "start": 2.35,
+   "end": 2.651,
+   "aligned": true
+  },
+  {
+   "word": "꼭지",
+   "start": 2.912,
+   "end": 3.113,
+   "aligned": true
+  },
+  {
+   "word": "꽂은",
+   "start": 3.214,
+   "end": 3.374,
+   "aligned": true
+  },
+  {
+   "word": "코코넛",
+   "start": 3.475,
+   "end": 3.776,
+   "aligned": true
+  },
+  {
+   "word": "배달이었는데",
+   "start": 3.836,
+   "end": 4.359,
+   "aligned": true
+  }
+ ]
+}

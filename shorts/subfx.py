@@ -184,12 +184,12 @@ def merge_short(subs, min_dur=0.8, line_chars=14):
 
 def ref_sub_events(subs, cfg, pos, an=5):
     """자막 등장·교체 (참고 3편 비교 + 가독성 조정).
-    - 등장: 약한 가로 번짐 1프레임 → 선명 (크기·위치·투명도 변화 없음, 강조어도 줄과 함께)
-    - 퇴장: 다음 자막으로 즉시 교체 (번짐 없음)
-    - 확대·바운스·페이드 없음."""
+    - 등장: CapCut [인 > 확대] 0.07초 (0% → 100%, 사용자 선택 2026-11-11)
+    - 퇴장: 다음 자막으로 즉시 교체 (아웃 애니메이션 없음)
+    - 바운스·페이드 없음."""
     F = FRAME
     evs = []
-    sharp_cfg = {**cfg, "subtitle": {**cfg["subtitle"], "zoom_in_ms": 1, "zoom_from": 100}}
+    zoom_cfg = {**cfg, "subtitle": {**cfg["subtitle"], "zoom_in_ms": 67, "zoom_from": 0}}
     for s in subs:
         a, b, sp = s["a"], s["b"], s["spans"]
         if s.get("krw"):  # 달러 금액 → 아래 줄에 작은 초록 글씨로 원화 환산
@@ -198,8 +198,21 @@ def ref_sub_events(subs, cfg, pos, an=5):
             sp = [(s["note"], "5CB8FF")]
         elif s.get("note"):  # 마지막 자막 아래 작은 파란 안내 줄 (참고: 셀 인사이트 끝 자막 "(자세한 내용은 고정댓글 참조)")
             sp = sp + [("\n", "white"), (s["note"], "5CB8FF_s")]
-        evs += _smear(sp, a, a + F, pos, 5, cfg["subtitle"]["narr_size"], an)
-        evs += neon_events(sp, a + F, b, sharp_cfg, pos=pos, an=an)
+        # 2026-11-11 사용자: "자막 애니메이션 전부 통일, 벤치마킹 영상처럼" → 참고 4q8E4EPcgew:
+        # 들어올 때 가로 모션 블러 1프레임 → 선명, 나갈 때도 가로 블러 1프레임 (모든 자막 같게)
+        # 2026-11-11 (v2) 사용자가 CapCut 에서 직접 고른 것: [인 > 확대] 0.07초(2프레임), 아웃 없음 → 모든 자막 동일
+        evs += neon_events(sp, a, b, zoom_cfg, pos=pos, an=an)
+    return evs
+
+
+def _blur_frame(spans, t0, t1, pos, layer, size, an=5):
+    """가로 모션 블러 1프레임 (참고 쇼츠 4q8E4EPcgew 프레임 분석, 2026-11-11).
+    CapCut 쪽은 텍스트 애니메이션 [인 > 블러 라이트 II] 로 같은 느낌."""
+    x, y = pos
+    evs = []
+    for dx, a in ((-54, "&HE0&"), (-36, "&HC0&"), (-18, "&H90&"), (0, "&H50&"),
+                  (18, "&H90&"), (36, "&HC0&"), (54, "&HE0&")):
+        evs.append((layer, t0, t1, rf"{{\an{an}\pos({x + dx},{y})\fscx108\bord2\blur5\shad0}}" + _colored(spans, a, size)))
     return evs
 
 

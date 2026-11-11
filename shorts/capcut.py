@@ -267,7 +267,7 @@ class Draft:
         s["clip"] = None
         return s
 
-    def add_text(self, track, spans, start, dur, size, y_px_center, shadow=True, render_index=14000):
+    def add_text(self, track, spans, start, dur, size, y_px_center, shadow=True, render_index=14000, anim=None):
         """spans = [(글자, 색이름)] — '_s' 로 끝나는 색은 작은 글씨."""
         text, styles = "", []
         for t, col in spans:
@@ -301,7 +301,24 @@ class Draft:
         s = self._segment("text", track, mid, start, dur)
         s["clip"]["transform"] = {"x": 0.0, "y": (CANVAS_H / 2 - y_px_center) / (CANVAS_H / 2)}
         s["render_index"] = render_index
+        if anim:
+            s["extra_material_refs"].append(self.text_anim(anim, dur))
         return s
+
+    def text_anim(self, a, dur):
+        """자막 '인' 애니메이션 (2026-11-11).
+        사용자가 CapCut(coconut_cocotaps_v15)에서 직접 넣고 저장한 항목을 글자 그대로 복사한 형식.
+        주의: id 는 effect id(캐시 폴더 이름), third_resource_id "0", source_platform 0 이어야 CapCut 이 지우지 않음
+        (예전에 id=resource_id, source_platform 1 로 넣었더니 CapCut 이 열면서 전부 지움)."""
+        d = min(us(a.get("sec", 0.066666)), us(dur) // 2)
+        return self.mat("material_animations", {
+            "animations": [{"id": a["effect_id"], "type": "in", "start": 0, "duration": d, "path": a["path"],
+                            "platform": "all", "resource_id": a["resource_id"], "third_resource_id": "0",
+                            "source_platform": 0, "name": a["name"],
+                            "category_id": a.get("category_id", "ruchang_fav"),
+                            "category_name": a.get("category_name", "즐겨찾기"), "panel": "",
+                            "material_type": "sticker", "anim_adjust_params": None, "request_id": ""}],
+            "id": uid(), "type": "sticker_animation", "multi_language_current": "none"})
 
     def write(self):
         for t in self.c["tracks"]:
@@ -385,7 +402,8 @@ def build_draft(exp, cfg, shots, voices, sfx, name, folder):
             cy = exp["sub_pos"][1] - h / 2
         else:
             cy = exp["sub_pos"][1]
-        d.add_text(st, spans, x["a"], x["b"] - x["a"], nsize, cy, render_index=14000 + k)
+        d.add_text(st, spans, x["a"], x["b"] - x["a"], nsize, cy, render_index=14000 + k,
+                   anim=cfg.get("capcut", {}).get("sub_anim"))
 
     # 워터마크 (2026-11-10): 렌더러와 같은 자리 — 영상 패널 바로 아래 검은 띠에 흐린 흰색 "60초쇼츠"
     wm = cfg.get("watermark", {})

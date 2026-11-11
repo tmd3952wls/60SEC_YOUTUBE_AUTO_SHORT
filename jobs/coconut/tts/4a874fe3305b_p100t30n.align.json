@@ -1,0 +1,59 @@
+{
+ "text": "그러자 코코넛 클렌즈에 가게 프랜차이즈까지 사업 얘기를 계속 늘어놓는데",
+ "words": [
+  {
+   "word": "그러자",
+   "start": 0.04,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "코코넛",
+   "start": 0.421,
+   "end": 0.702,
+   "aligned": true
+  },
+  {
+   "word": "클렌즈에",
+   "start": 0.802,
+   "end": 1.243,
+   "aligned": true
+  },
+  {
+   "word": "가게",
+   "start": 1.383,
+   "end": 1.564,
+   "aligned": true
+  },
+  {
+   "word": "프랜차이즈까지",
+   "start": 1.664,
+   "end": 2.486,
+   "aligned": true
+  },
+  {
+   "word": "사업",
+   "start": 2.787,
+   "end": 2.947,
+   "aligned": true
+  },
+  {
+   "word": "얘기를",
+   "start": 3.027,
+   "end": 3.268,
+   "aligned": true
+  },
+  {
+   "word": "계속",
+   "start": 3.348,
+   "end": 3.569,
+   "aligned": true
+  },
+  {
+   "word": "늘어놓는데",
+   "start": 3.629,
+   "end": 4.291,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "text": "전용 드릴로 구멍을 뚫고 꼭지만 돌려 끼우면 끝인데",
+ "words": [
+  {
+   "word": "전용",
+   "start": 0.04,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "드릴로",
+   "start": 0.361,
+   "end": 0.642,
+   "aligned": true
+  },
+  {
+   "word": "구멍을",
+   "start": 0.742,
+   "end": 1.003,
+   "aligned": true
+  },
+  {
+   "word": "뚫고",
+   "start": 1.103,
+   "end": 1.424,
+   "aligned": true
+  },
+  {
+   "word": "꼭지만",
+   "start": 1.584,
+   "end": 1.945,
+   "aligned": true
+  },
+  {
+   "word": "돌려",
+   "start": 2.045,
+   "end": 2.226,
+   "aligned": true
+  },
+  {
+   "word": "끼우면",
+   "start": 2.326,
+   "end": 2.567,
+   "aligned": true
+  },
+  {
+   "word": "끝인데",
+   "start": 2.647,
+   "end": 3.208,
+   "aligned": true
+  }
+ ]
+}

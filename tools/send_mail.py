@@ -10,6 +10,7 @@ python tools/send_mail.py --job cardboard --video full_v9.mp4 --name 페이퍼�
 import argparse
 import re
 import smtplib
+import subprocess
 import ssl
 from email.message import EmailMessage
 from pathlib import Path
@@ -25,6 +26,24 @@ def env(key):
     if not v:
         raise SystemExit(f".env 에 {key} 가 비어 있어요")
     return v
+
+
+MAX_MB = 24.0  # 네이버 SMTP: 25MB 는 통과, 30.7MB 는 552 거절 (2026-11-11 실측)
+
+
+def fit_size(video):
+    """너무 크면 메일용 사본(<이름>_mail.mp4)을 만들어 반환. 원본은 그대로."""
+    if video.stat().st_size / 1e6 <= MAX_MB:
+        return video
+    out = video.with_name(video.stem + "_mail.mp4")
+    dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                str(video)], capture_output=True, text=True, check=True).stdout)
+    vk = int((MAX_MB - 1.5) * 8000 / dur) - 192  # 목표 크기에 맞춘 영상 kbps (음성 192k 제외)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(video), "-c:v", "libx264", "-preset", "slow",
+                    "-b:v", f"{vk}k", "-maxrate", f"{int(vk * 1.3)}k", "-bufsize", f"{vk * 2}k",
+                    "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(out)], check=True)
+    print(f"메일용 사본: {out.name} ({video.stat().st_size / 1e6:.1f}MB → {out.stat().st_size / 1e6:.1f}MB)")
+    return out
 
 
 def main():
@@ -43,6 +62,7 @@ def main():
     title = next((l.split(":", 1)[1].strip() for l in info.splitlines() if l.startswith("제목:")), a.name)
 
     video = ROOT / "jobs" / a.job / a.video
+    video = fit_size(video)
     msg = EmailMessage()
     msg["From"] = addr
     msg["To"] = addr

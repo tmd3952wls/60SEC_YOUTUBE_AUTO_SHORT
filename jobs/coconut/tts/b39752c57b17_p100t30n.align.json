@@ -1,0 +1,41 @@
+{
+ "text": "실제로 비니도 운동 끝나고 코코넛을 따다가",
+ "words": [
+  {
+   "word": "실제로",
+   "start": 0.101,
+   "end": 0.422,
+   "aligned": true
+  },
+  {
+   "word": "비니도",
+   "start": 0.503,
+   "end": 0.764,
+   "aligned": true
+  },
+  {
+   "word": "운동",
+   "start": 0.804,
+   "end": 1.025,
+   "aligned": true
+  },
+  {
+   "word": "끝나고",
+   "start": 1.086,
+   "end": 1.387,
+   "aligned": true
+  },
+  {
+   "word": "코코넛을",
+   "start": 1.468,
+   "end": 1.89,
+   "aligned": true
+  },
+  {
+   "word": "따다가",
+   "start": 1.95,
+   "end": 2.172,
+   "aligned": true
+  }
+ ]
+}
