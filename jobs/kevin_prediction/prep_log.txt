@@ -1,0 +1,6 @@
+transcribed 227
+cuts 239
+2026-11-12 20:37:59 - whisperx.alignment - WARNING - Failed to align segment ("This year?"): backtrack failed, resorting to original
+aligned 227 lines
+ALIGN_DONE
+DEMUCS_DONE

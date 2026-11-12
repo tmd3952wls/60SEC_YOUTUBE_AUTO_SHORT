@@ -1,0 +1,47 @@
+{
+ "text": "그런데 창업자가 나가자마자 케빈이 진짜 속마음을 털어놓는데",
+ "words": [
+  {
+   "word": "그런데",
+   "start": 0.04,
+   "end": 0.322,
+   "aligned": true
+  },
+  {
+   "word": "창업자가",
+   "start": 0.403,
+   "end": 0.845,
+   "aligned": true
+  },
+  {
+   "word": "나가자마자",
+   "start": 0.906,
+   "end": 1.429,
+   "aligned": true
+  },
+  {
+   "word": "케빈이",
+   "start": 1.53,
+   "end": 1.791,
+   "aligned": true
+  },
+  {
+   "word": "진짜",
+   "start": 1.872,
+   "end": 2.073,
+   "aligned": true
+  },
+  {
+   "word": "속마음을",
+   "start": 2.154,
+   "end": 2.536,
+   "aligned": true
+  },
+  {
+   "word": "털어놓는데",
+   "start": 2.616,
+   "end": 3.14,
+   "aligned": true
+  }
+ ]
+}

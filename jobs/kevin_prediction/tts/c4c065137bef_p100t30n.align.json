@@ -1,0 +1,47 @@
+{
+ "text": "과연 케빈의 예언대로 됐을까요? 뒷이야기는 고정댓글에 적어둘게요",
+ "words": [
+  {
+   "word": "과연",
+   "start": 0.04,
+   "end": 0.221,
+   "aligned": true
+  },
+  {
+   "word": "케빈의",
+   "start": 0.321,
+   "end": 0.582,
+   "aligned": true
+  },
+  {
+   "word": "예언대로",
+   "start": 0.642,
+   "end": 1.023,
+   "aligned": true
+  },
+  {
+   "word": "됐을까요?",
+   "start": 1.083,
+   "end": 1.565,
+   "aligned": true
+  },
+  {
+   "word": "뒷이야기는",
+   "start": 1.826,
+   "end": 2.348,
+   "aligned": true
+  },
+  {
+   "word": "고정댓글에",
+   "start": 2.428,
+   "end": 2.99,
+   "aligned": true
+  },
+  {
+   "word": "적어둘게요",
+   "start": 3.05,
+   "end": 3.692,
+   "aligned": true
+  }
+ ]
+}

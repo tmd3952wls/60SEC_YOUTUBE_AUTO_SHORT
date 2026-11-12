@@ -1,0 +1,2 @@
+렌더 시작: kevin_prediction/v2_edl.json → full_v2.mp4
+완료: 47.17초

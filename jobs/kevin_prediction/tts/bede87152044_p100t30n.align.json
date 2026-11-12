@@ -1,0 +1,77 @@
+{
+ "text": "아직 배송도 시작 안 한 39번째 시제품인데 선주문만 약 1억 7천만 원이라는데",
+ "words": [
+  {
+   "word": "아직",
+   "start": 0.02,
+   "end": 0.18,
+   "aligned": true
+  },
+  {
+   "word": "배송도",
+   "start": 0.24,
+   "end": 0.601,
+   "aligned": true
+  },
+  {
+   "word": "시작",
+   "start": 0.661,
+   "end": 0.982,
+   "aligned": true
+  },
+  {
+   "word": "안",
+   "start": 1.042,
+   "end": 1.062,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 1.142,
+   "end": 1.383,
+   "aligned": true
+  },
+  {
+   "word": "39번째",
+   "start": 1.403,
+   "end": 1.783,
+   "aligned": true
+  },
+  {
+   "word": "시제품인데",
+   "start": 1.863,
+   "end": 2.464,
+   "aligned": true
+  },
+  {
+   "word": "선주문만",
+   "start": 2.745,
+   "end": 3.266,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 3.346,
+   "end": 3.446,
+   "aligned": true
+  },
+  {
+   "word": "1억",
+   "start": 3.526,
+   "end": 3.687,
+   "aligned": true
+  },
+  {
+   "word": "7천만",
+   "start": 3.787,
+   "end": 4.107,
+   "aligned": true
+  },
+  {
+   "word": "원이라는데",
+   "start": 4.208,
+   "end": 4.689,
+   "aligned": true
+  }
+ ]
+}

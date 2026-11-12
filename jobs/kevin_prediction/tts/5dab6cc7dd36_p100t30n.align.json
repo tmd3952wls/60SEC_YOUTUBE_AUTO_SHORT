@@ -1,0 +1,59 @@
+{
+ "text": "나머지 투자자들도 줄줄이 빠지면서 결국 다섯 명 모두 아웃",
+ "words": [
+  {
+   "word": "나머지",
+   "start": 0.04,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "투자자들도",
+   "start": 0.401,
+   "end": 0.962,
+   "aligned": true
+  },
+  {
+   "word": "줄줄이",
+   "start": 1.062,
+   "end": 1.402,
+   "aligned": true
+  },
+  {
+   "word": "빠지면서",
+   "start": 1.483,
+   "end": 1.984,
+   "aligned": true
+  },
+  {
+   "word": "결국",
+   "start": 2.264,
+   "end": 2.504,
+   "aligned": true
+  },
+  {
+   "word": "다섯",
+   "start": 2.605,
+   "end": 2.825,
+   "aligned": true
+  },
+  {
+   "word": "명",
+   "start": 2.905,
+   "end": 3.025,
+   "aligned": true
+  },
+  {
+   "word": "모두",
+   "start": 3.106,
+   "end": 3.346,
+   "aligned": true
+  },
+  {
+   "word": "아웃",
+   "start": 3.406,
+   "end": 3.526,
+   "aligned": true
+  }
+ ]
+}
