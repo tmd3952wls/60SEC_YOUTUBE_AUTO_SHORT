@@ -66,7 +66,7 @@ def main():
     msg = EmailMessage()
     msg["From"] = addr
     msg["To"] = addr
-    msg["Subject"] = f"[쇼츠 업로드] {title}"
+    msg["Subject"] = f"[60초쇼츠] {title}"
     msg.set_content(
         "■ 업로드 정보 (제목·설명·태그)\n" + "─" * 30 + "\n" + info
         + "\n\n\n■ 고정댓글\n" + "─" * 30 + "\n" + pinned + "\n"
