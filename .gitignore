@@ -35,3 +35,5 @@ assets/bgm/*
 
 # 캡컷 캐시에서 복사한 글꼴 (배달의민족주아체: 각자 설치/캡컷에서 받음)
 assets/fonts/BMJUA.ttf
+# CapCut 에서 만든 AI 목소리 파일
+assets/voices/

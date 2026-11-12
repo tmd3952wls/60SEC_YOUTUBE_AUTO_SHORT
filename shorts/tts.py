@@ -74,7 +74,18 @@ def _sapi(text, out, c):
     subprocess.run(["powershell", "-NoProfile", "-Command", ps], check=True, capture_output=True)
 
 
-PROVIDERS = {"fish": _fish, "typecast": _typecast, "sapi": _sapi}
+def _capcut(text, out: Path, c):
+    """CapCut AI 목소리 (2026-11-12): API 가 없어 tools/capcut_voice.py 로 CapCut 안에서 만든 음성을 가져다 씀.
+    assets/voices/<voice>/<md5(문장)>.wav 가 없으면 make → CapCut 텍스트 읽기 → harvest 를 먼저."""
+    import hashlib, shutil
+    from .common import ASSETS
+    f = ASSETS / "voices" / c["voice"] / (hashlib.md5(text.strip().encode("utf-8")).hexdigest()[:16] + ".wav")
+    if not f.exists():
+        raise RuntimeError(f"CapCut 목소리 파일 없음: {text} → tools/capcut_voice.py make/harvest 먼저")
+    shutil.copy2(f, out)
+
+
+PROVIDERS = {"fish": _fish, "typecast": _typecast, "sapi": _sapi, "capcut": _capcut}
 
 
 def synth(text, tts_dir: Path, cfg):

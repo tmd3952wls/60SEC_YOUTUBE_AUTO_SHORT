@@ -1,0 +1,59 @@
+{
+ "text": "바지도 안 입고 투자자들 앞에 나타난 두 남자가 있는데",
+ "words": [
+  {
+   "word": "바지도",
+   "start": 0.04,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "안",
+   "start": 0.361,
+   "end": 0.401,
+   "aligned": true
+  },
+  {
+   "word": "입고",
+   "start": 0.482,
+   "end": 0.703,
+   "aligned": true
+  },
+  {
+   "word": "투자자들",
+   "start": 0.763,
+   "end": 1.124,
+   "aligned": true
+  },
+  {
+   "word": "앞에",
+   "start": 1.164,
+   "end": 1.365,
+   "aligned": true
+  },
+  {
+   "word": "나타난",
+   "start": 1.425,
+   "end": 1.747,
+   "aligned": true
+  },
+  {
+   "word": "두",
+   "start": 1.827,
+   "end": 1.887,
+   "aligned": true
+  },
+  {
+   "word": "남자가",
+   "start": 1.927,
+   "end": 2.228,
+   "aligned": true
+  },
+  {
+   "word": "있는데",
+   "start": 2.268,
+   "end": 2.549,
+   "aligned": true
+  }
+ ]
+}

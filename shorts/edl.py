@@ -200,6 +200,8 @@ def _shot_geom(sh, iw, ih):
 def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
     job = Path(job).resolve()
     edl = read_json(edl_file)
+    if edl.get("tts"):  # EDL 별 목소리 (2026-11-12: 예 {"provider": "capcut", "capcut": {"voice": "vibrant_baritone"}})
+        cfg = {**cfg, "tts": {**cfg["tts"], **edl["tts"]}}
     tmp = job / "edl_tmp"
     tmp.mkdir(exist_ok=True)
     words_src = read_json(job / "transcript_words.json")

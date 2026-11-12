@@ -1,0 +1,101 @@
+{
+ "text": "로리는 경쟁이 심하다며 빠졌지만 한 켤레 팔면 한 켤레를 기부하는 양말 회사 봄바스에 투자한 데이먼드가 나서는데",
+ "words": [
+  {
+   "word": "로리는",
+   "start": 0.06,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "경쟁이",
+   "start": 0.381,
+   "end": 0.722,
+   "aligned": true
+  },
+  {
+   "word": "심하다며",
+   "start": 0.802,
+   "end": 1.204,
+   "aligned": true
+  },
+  {
+   "word": "빠졌지만",
+   "start": 1.264,
+   "end": 1.785,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 2.066,
+   "end": 2.167,
+   "aligned": true
+  },
+  {
+   "word": "켤레",
+   "start": 2.287,
+   "end": 2.528,
+   "aligned": true
+  },
+  {
+   "word": "팔면",
+   "start": 2.608,
+   "end": 2.869,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 2.969,
+   "end": 3.049,
+   "aligned": true
+  },
+  {
+   "word": "켤레를",
+   "start": 3.15,
+   "end": 3.471,
+   "aligned": true
+  },
+  {
+   "word": "기부하는",
+   "start": 3.551,
+   "end": 3.912,
+   "aligned": true
+  },
+  {
+   "word": "양말",
+   "start": 4.012,
+   "end": 4.313,
+   "aligned": true
+  },
+  {
+   "word": "회사",
+   "start": 4.393,
+   "end": 4.614,
+   "aligned": true
+  },
+  {
+   "word": "봄바스에",
+   "start": 4.674,
+   "end": 5.156,
+   "aligned": true
+  },
+  {
+   "word": "투자한",
+   "start": 5.236,
+   "end": 5.497,
+   "aligned": true
+  },
+  {
+   "word": "데이먼드가",
+   "start": 5.577,
+   "end": 6.079,
+   "aligned": true
+  },
+  {
+   "word": "나서는데",
+   "start": 6.139,
+   "end": 6.56,
+   "aligned": true
+  }
+ ]
+}

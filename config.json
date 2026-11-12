@@ -17,7 +17,7 @@
   }
  },
  "tts": {
-  "provider": "typecast",
+  "provider": "capcut",
   "extra_tempo": 1.0,
   "fish": {
    "model": "s2.1-pro",
@@ -38,7 +38,12 @@
    "rate": 3
   },
   "max_pause": 0.1,
-  "pause_threshold_db": -30
+  "pause_threshold_db": -30,
+  "capcut": {
+   "voice": "vibrant_baritone",
+   "speed": 1.1,
+   "_why": "2026-11-12 사용자 고정: CapCut AI 목소리 '활기찬 바리톤(Vibrant Baritone)' 1.1배속. API 없음 → tools/capcut_voice.py make → 사용자가 CapCut 텍스트 읽기 → harvest. 예전 Typecast 김건 = provider typecast"
+  }
  },
  "layout": {
   "width": 1080,

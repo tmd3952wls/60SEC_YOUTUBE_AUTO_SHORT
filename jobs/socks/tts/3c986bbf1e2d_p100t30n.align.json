@@ -1,0 +1,59 @@
+{
+ "text": "결국 약 3억 4천만 원에 지분 20%로 거래 성사",
+ "words": [
+  {
+   "word": "결국",
+   "start": 0.04,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 0.323,
+   "end": 0.423,
+   "aligned": true
+  },
+  {
+   "word": "3억",
+   "start": 0.585,
+   "end": 0.665,
+   "aligned": true
+  },
+  {
+   "word": "4천만",
+   "start": 0.685,
+   "end": 1.169,
+   "aligned": true
+  },
+  {
+   "word": "원에",
+   "start": 1.19,
+   "end": 1.351,
+   "aligned": true
+  },
+  {
+   "word": "지분",
+   "start": 1.452,
+   "end": 1.855,
+   "aligned": true
+  },
+  {
+   "word": "20%로",
+   "start": 1.895,
+   "end": 2.319,
+   "aligned": true
+  },
+  {
+   "word": "거래",
+   "start": 2.399,
+   "end": 2.581,
+   "aligned": true
+  },
+  {
+   "word": "성사",
+   "start": 2.641,
+   "end": 2.863,
+   "aligned": true
+  }
+ ]
+}
