@@ -1,0 +1,71 @@
+{
+ "text": "창업자 앞에선 꾹 참던 투자자 케빈이 뒤에서 이렇게 말해버린 발명품이 있는데",
+ "words": [
+  {
+   "word": "창업자",
+   "start": 0.06,
+   "end": 0.362,
+   "aligned": true
+  },
+  {
+   "word": "앞에선",
+   "start": 0.382,
+   "end": 0.703,
+   "aligned": true
+  },
+  {
+   "word": "꾹",
+   "start": 0.804,
+   "end": 0.864,
+   "aligned": true
+  },
+  {
+   "word": "참던",
+   "start": 0.985,
+   "end": 1.266,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 1.347,
+   "end": 1.648,
+   "aligned": true
+  },
+  {
+   "word": "케빈이",
+   "start": 1.749,
+   "end": 2.05,
+   "aligned": true
+  },
+  {
+   "word": "뒤에서",
+   "start": 2.13,
+   "end": 2.452,
+   "aligned": true
+  },
+  {
+   "word": "이렇게",
+   "start": 2.492,
+   "end": 2.774,
+   "aligned": true
+  },
+  {
+   "word": "말해버린",
+   "start": 2.834,
+   "end": 3.296,
+   "aligned": true
+  },
+  {
+   "word": "발명품이",
+   "start": 3.397,
+   "end": 3.919,
+   "aligned": true
+  },
+  {
+   "word": "있는데",
+   "start": 3.959,
+   "end": 4.241,
+   "aligned": true
+  }
+ ]
+}

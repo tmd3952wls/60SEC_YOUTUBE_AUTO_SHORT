@@ -1,0 +1,83 @@
+{
+ "text": "하지만 마크는 아직 써 본 고객이 한 명도 없으니, 하나만 삐끗해도 끝이라는 거죠",
+ "words": [
+  {
+   "word": "하지만",
+   "start": 0.02,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "마크는",
+   "start": 0.381,
+   "end": 0.701,
+   "aligned": true
+  },
+  {
+   "word": "아직",
+   "start": 0.761,
+   "end": 0.962,
+   "aligned": true
+  },
+  {
+   "word": "써",
+   "start": 1.082,
+   "end": 1.142,
+   "aligned": true
+  },
+  {
+   "word": "본",
+   "start": 1.202,
+   "end": 1.282,
+   "aligned": true
+  },
+  {
+   "word": "고객이",
+   "start": 1.362,
+   "end": 1.623,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 1.683,
+   "end": 1.723,
+   "aligned": true
+  },
+  {
+   "word": "명도",
+   "start": 1.803,
+   "end": 2.023,
+   "aligned": true
+  },
+  {
+   "word": "없으니,",
+   "start": 2.064,
+   "end": 2.404,
+   "aligned": true
+  },
+  {
+   "word": "하나만",
+   "start": 2.665,
+   "end": 2.905,
+   "aligned": true
+  },
+  {
+   "word": "삐끗해도",
+   "start": 3.005,
+   "end": 3.466,
+   "aligned": true
+  },
+  {
+   "word": "끝이라는",
+   "start": 3.546,
+   "end": 3.987,
+   "aligned": true
+  },
+  {
+   "word": "거죠",
+   "start": 4.047,
+   "end": 4.468,
+   "aligned": true
+  }
+ ]
+}

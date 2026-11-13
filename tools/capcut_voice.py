@@ -39,10 +39,15 @@ def lines_of(edl):
 
 def make(job, edl_name, voice):
     lines = lines_of(read_json(JOBS / job / edl_name))
-    name = f"voice_{job}_{voice}"
+    # 이미 수확한 문장은 빼고 새 문장만 (EDL 수정 후 바뀐 내레이션만 다시 읽힘)
+    lines = [s for s in lines if not (ASSETS / "voices" / voice / f"{key(s)}.wav").exists()]
+    if not lines:
+        sys.exit("새로 만들 문장 없음 (전부 이미 음성 있음)")
+    name, n = f"voice_{job}_{voice}", 1
+    while (C.draft_root() / name).exists():
+        n += 1
+        name = f"voice_{job}_{voice}_{n}"
     folder = C.draft_root() / name
-    if folder.exists():
-        sys.exit(f"이미 있음: {folder} (지우거나 다른 이름으로)")
     t, spans = 0.0, []
     for s in lines:
         dur = max(2.0, len(s.replace(" ", "")) * 0.22 + 1.0)

@@ -1,0 +1,2 @@
+렌더 시작: kevin_prediction/v5_edl.json → full_v5.mp4
+완료: 53.34초

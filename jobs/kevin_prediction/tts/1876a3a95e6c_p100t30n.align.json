@@ -1,0 +1,95 @@
+{
+ "text": "아직 배송도 시작 안 한 39번째 시제품인데, 선주문만 벌써 약 1억 7천만 원이나 들어왔다고 해요",
+ "words": [
+  {
+   "word": "아직",
+   "start": 0.02,
+   "end": 0.201,
+   "aligned": true
+  },
+  {
+   "word": "배송도",
+   "start": 0.281,
+   "end": 0.602,
+   "aligned": true
+  },
+  {
+   "word": "시작",
+   "start": 0.663,
+   "end": 0.823,
+   "aligned": true
+  },
+  {
+   "word": "안",
+   "start": 0.883,
+   "end": 1.044,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 1.064,
+   "end": 1.084,
+   "aligned": true
+  },
+  {
+   "word": "39번째",
+   "start": 1.144,
+   "end": 1.887,
+   "aligned": true
+  },
+  {
+   "word": "시제품인데,",
+   "start": 1.968,
+   "end": 2.63,
+   "aligned": true
+  },
+  {
+   "word": "선주문만",
+   "start": 2.911,
+   "end": 3.373,
+   "aligned": true
+  },
+  {
+   "word": "벌써",
+   "start": 3.453,
+   "end": 3.654,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 3.694,
+   "end": 3.795,
+   "aligned": true
+  },
+  {
+   "word": "1억",
+   "start": 3.935,
+   "end": 4.035,
+   "aligned": true
+  },
+  {
+   "word": "7천만",
+   "start": 4.136,
+   "end": 4.557,
+   "aligned": true
+  },
+  {
+   "word": "원이나",
+   "start": 4.618,
+   "end": 4.859,
+   "aligned": true
+  },
+  {
+   "word": "들어왔다고",
+   "start": 4.939,
+   "end": 5.401,
+   "aligned": true
+  },
+  {
+   "word": "해요",
+   "start": 5.441,
+   "end": 5.782,
+   "aligned": true
+  }
+ ]
+}

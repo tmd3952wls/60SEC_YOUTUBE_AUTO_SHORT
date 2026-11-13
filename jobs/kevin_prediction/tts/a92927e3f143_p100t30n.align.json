@@ -1,0 +1,65 @@
+{
+ "text": "창업자 앞에선 꾹 참던 투자자 케빈이 뒤에서 몰래 한 말입니다",
+ "words": [
+  {
+   "word": "창업자",
+   "start": 0.08,
+   "end": 0.422,
+   "aligned": true
+  },
+  {
+   "word": "앞에선",
+   "start": 0.462,
+   "end": 0.784,
+   "aligned": true
+  },
+  {
+   "word": "꾹",
+   "start": 0.924,
+   "end": 1.005,
+   "aligned": true
+  },
+  {
+   "word": "참던",
+   "start": 1.125,
+   "end": 1.407,
+   "aligned": true
+  },
+  {
+   "word": "투자자",
+   "start": 1.507,
+   "end": 1.889,
+   "aligned": true
+  },
+  {
+   "word": "케빈이",
+   "start": 2.029,
+   "end": 2.351,
+   "aligned": true
+  },
+  {
+   "word": "뒤에서",
+   "start": 2.431,
+   "end": 2.753,
+   "aligned": true
+  },
+  {
+   "word": "몰래",
+   "start": 2.853,
+   "end": 3.094,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 3.114,
+   "end": 3.195,
+   "aligned": true
+  },
+  {
+   "word": "말입니다",
+   "start": 3.255,
+   "end": 3.798,
+   "aligned": true
+  }
+ ]
+}

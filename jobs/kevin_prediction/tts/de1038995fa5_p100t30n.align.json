@@ -1,0 +1,29 @@
+{
+ "text": "과연 케빈의 예언대로 됐을까요?",
+ "words": [
+  {
+   "word": "과연",
+   "start": 0.06,
+   "end": 0.262,
+   "aligned": true
+  },
+  {
+   "word": "케빈의",
+   "start": 0.362,
+   "end": 0.704,
+   "aligned": true
+  },
+  {
+   "word": "예언대로",
+   "start": 0.765,
+   "end": 1.207,
+   "aligned": true
+  },
+  {
+   "word": "됐을까요?",
+   "start": 1.288,
+   "end": 1.932,
+   "aligned": true
+  }
+ ]
+}

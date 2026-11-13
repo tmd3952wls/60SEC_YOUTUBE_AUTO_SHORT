@@ -1,0 +1,95 @@
+{
+ "text": "치즈를 썰고, 갈고, 보관까지 한 통으로 끝내는 치즈 커터. 창업자는 약 1억 원 투자를 요청합니다",
+ "words": [
+  {
+   "word": "치즈를",
+   "start": 0.06,
+   "end": 0.341,
+   "aligned": true
+  },
+  {
+   "word": "썰고,",
+   "start": 0.482,
+   "end": 0.763,
+   "aligned": true
+  },
+  {
+   "word": "갈고,",
+   "start": 0.883,
+   "end": 1.184,
+   "aligned": true
+  },
+  {
+   "word": "보관까지",
+   "start": 1.425,
+   "end": 1.907,
+   "aligned": true
+  },
+  {
+   "word": "한",
+   "start": 1.947,
+   "end": 2.007,
+   "aligned": true
+  },
+  {
+   "word": "통으로",
+   "start": 2.087,
+   "end": 2.308,
+   "aligned": true
+  },
+  {
+   "word": "끝내는",
+   "start": 2.409,
+   "end": 2.71,
+   "aligned": true
+  },
+  {
+   "word": "치즈",
+   "start": 2.79,
+   "end": 2.991,
+   "aligned": true
+  },
+  {
+   "word": "커터.",
+   "start": 3.071,
+   "end": 3.372,
+   "aligned": true
+  },
+  {
+   "word": "창업자는",
+   "start": 3.633,
+   "end": 4.135,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 4.436,
+   "end": 4.516,
+   "aligned": true
+  },
+  {
+   "word": "1억",
+   "start": 4.616,
+   "end": 4.797,
+   "aligned": true
+  },
+  {
+   "word": "원",
+   "start": 4.857,
+   "end": 4.958,
+   "aligned": true
+  },
+  {
+   "word": "투자를",
+   "start": 5.038,
+   "end": 5.319,
+   "aligned": true
+  },
+  {
+   "word": "요청합니다",
+   "start": 5.379,
+   "end": 6.122,
+   "aligned": true
+  }
+ ]
+}
