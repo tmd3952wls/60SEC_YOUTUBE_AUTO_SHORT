@@ -110,9 +110,18 @@ def _item_audio(job, it, cfg, words_src, tmp, idx):
     if it["type"] == "narration":
         say = tts_say(plain(it["text"]))
         wav = synth(say, job / "tts", cfg)
+        wav_dur = duration(wav)
         al = align_all([(str(wav), say)], cfg)[str(wav)] or []
         wl = [(w["word"], w["start"], w["end"]) for w in al]
-        return wav, duration(wav), wl, voice_gain(lufs_of(wav), R)
+        if not wl and say.split():
+            toks = say.split()
+            tot_c = sum(max(1, len(t)) for t in toks) or 1
+            cur_t = 0.0
+            for tok in toks:
+                d_tok = wav_dur * (max(1, len(tok)) / tot_c)
+                wl.append((tok, round(cur_t, 3), round(cur_t + d_tok, 3)))
+                cur_t += d_tok
+        return wav, wav_dur, wl, voice_gain(lufs_of(wav), R)
     # 원본 대사: 지정한 줄(ids)의 단어들, 단어 사이 긴 침묵은 '소리에서만' 잘라냄 (그림은 샷이 따로 채움)
     ws = [w for i in it["ids"] for w in words_src[str(i)]]
     if "word_range" in it:
@@ -378,10 +387,20 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
         ons = _voice_onsets(wav)
         fixed = []
         for j, t_ in enumerate(st):
-            lo = fixed[-1] + 0.4 if fixed else 0.0
-            c = ons[(ons > max(lo, t_ - 0.35)) & (ons < t_ + 0.35)]
+            if j == 0 and t_ <= 0.01:
+                # 첫 자막(0.00s): 0.12s 안에 이미 목소리가 시작되면 두 번째 어절 온셋으로 밀리지 않도록 0.00s 고정
+                if len(ons) and 0.12 < float(ons[0]) < 0.35:
+                    nt = round(max(0.0, float(ons[0]) - 0.03) * 30) / 30
+                    if abs(nt - t_) >= 0.06:
+                        log.append(f"  ⌖ item{n} 자막0 {t_:.2f} → {nt:.2f}s (앞무음 보정 {(nt - t_) * 1000:+.0f}ms)")
+                    t_ = nt
+                fixed.append(t_)
+                continue
+            lo = fixed[-1] + 0.32 if fixed else 0.0
+            c = ons[(ons >= max(lo, t_ - 0.35)) & (ons <= t_ + 0.35)]
             if len(c):
                 nt = round(max(0.0, float(c[np.argmin(np.abs(c - t_ - 0.03))]) - 0.03) * 30) / 30
+                nt = max(lo, nt)
                 if abs(nt - t_) >= 0.06:
                     log.append(f"  ⌖ item{n} 자막{j} {t_:.2f} → {nt:.2f}s (목소리 시작 {(nt - t_) * 1000:+.0f}ms)")
                 t_ = nt
@@ -392,13 +411,18 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
         for j, (s_, a) in enumerate(zip(subs, st)):
             b = st[j + 1] if j + 1 < len(st) else dur
             spans = money_green(parse_spans(s_["text"].replace("|", chr(10)), it.get("accent", "yellow")))  # 초록 = 돈 금액만
+            sc = float(s_.get("scale", S_.get("big_scale", 1.25) if s_.get("big") else 1.0))
             sub_list.append({"a": timeline + a, "b": timeline + b, "spans": spans, "item": n, "text": s_["text"],
                              "krw": s_.get("krw", ""), "note": s_.get("note", ""), "solo": s_.get("solo", False),
+                             "scale": sc,
                              "icon": "money" if s_.get("icon") == "money" and not money_done else ""})
             if s_.get("icon") == "money" and not money_done:  # 지폐 아이콘이 뜨는 프레임에 돈 소리 (카칭), 한 번만
                 sfx_ev.append((timeline + a, s_.get("icon_sfx", "cash")))
                 money_done = True
-            log.append(f"  자막 {timeline + a:.2f}~{timeline + b:.2f}: {plain(s_['text'])} [{s_.get('anim', 'normal')}]")
+            elif s_.get("sfx"):  # 특정 강조 자막이 뜨는 정확한 프레임에 효과음 동기화
+                sfx_ev.append((timeline + a, s_["sfx"]))
+            sz_tag = f"big x{sc:.2f}" if sc > 1.02 else s_.get("anim", "normal")
+            log.append(f"  자막 {timeline + a:.2f}~{timeline + b:.2f}: {plain(s_['text'])} [{sz_tag}]")
         if it.get("sfx_word") is not None and it.get("sfx2"):
             # 자막·컷과 같은 계산(단어 시작 0.03초 전, 30fps 프레임 경계) → 소리·자막·그림이 같은 프레임에
             sfx_ev.append((timeline + round(max(0.0, wt(it["sfx_word"]) - 0.03) * 30) / 30, it["sfx2"]))
@@ -424,7 +448,12 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
            "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "6", "-c:a", "aac", "-b:a", "320k", body)
     total = duration(body)
     sub_list = merge_short(sub_list, S_.get("min_sub_sec", 0.8))
-    log += [f"  [최종 자막] {x['a']:.2f}~{x['b']:.2f} ({x['b'] - x['a']:.2f}s): {plain(x['text'])}" for x in sub_list]
+    log += [
+        f"  [최종 자막] {x['a']:.2f}~{x['b']:.2f} ({x['b'] - x['a']:.2f}s)"
+        + (f" [BIG x{x.get('scale', 1.0):.2f}]" if x.get("scale", 1.0) > 1.02 else "")
+        + f": {plain(x['text'])}"
+        for x in sub_list
+    ]
     if S_.get("sub_anchor") == "bottom":  # 영상 패널 하단: 자막 덩어리의 아래 끝을 고정 (줄 수가 늘면 위로 자람)
         sub_pos, sub_an = (PW // 2, int(top + PH - S_.get("bottom_margin", 70))), 2
     else:
@@ -437,7 +466,7 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
     for x in sub_list:
         if x.get("icon") == "money":
             lines = "".join(t for t, _ in x["spans"]).count("\n") + 1
-            lh = S_["narr_size"] * 1.25
+            lh = S_["narr_size"] * 1.25 * float(x.get("scale", 1.0))
             top_y = sub_pos[1] + (lines * lh / 2 if sub_an == 5 else 0) + 25
             icon = (x["a"], x["b"], int(top_y))
             log.append(f"  💵 지폐 아이콘 {x['a']:.2f}~{x['b']:.2f}s (위쪽 y={top_y:.0f}): {plain(x['text'])}")
@@ -459,10 +488,18 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
     # 파일 피크로 맞추면 짧은 소리마다 체감 크기가 -11~+6dB 로 들쭉날쭉해서, 실제 10ms RMS 로 다시 맞춘다.
     vref = np.percentile((ve := _env_db(body))[ve > -45], 60)
     rel = cfg.get("sfx_mix", {}).get("rel_db", -1.8)
-    opus_ev, level_ev = [], []
+    auto_ev, opus_ev, level_ev = [], [], []
+    from auto_sfx.config import is_auto_sfx_enabled
     engine = cfg["render"].get("sfx_engine", "level")
+    auto_sfx_on = (
+        not cfg["render"].get("no_sfx")
+        and (engine == "gemini" or (is_auto_sfx_enabled(cfg) and not str(Path(edl_file).name).startswith("preview_")))
+    )
     if cfg["render"].get("no_sfx"):  # 효과음은 따로 믹스할 때 — 목소리만
         sfx_ev = []
+    elif auto_sfx_on:
+        # Gemini 멀티모달 자동 효과음 디렉터: 자막·원·아이콘이 번인된 초안 영상을 직접 시청 후 BGM 합성 직전에 믹스
+        auto_ev, sfx_ev = list(sfx_ev), []
     elif engine == "level" and sfx_ev:
         # 기본(2026-11-09~): 효과음마다 귀에 들리는 크기를 그 순간 목소리에 맞춤 (sfx_level.py)
         level_ev, sfx_ev = list(sfx_ev), []
@@ -511,7 +548,22 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
     ffmpeg(*inputs, "-filter_complex", ";".join(fc), "-map", "[v]", "-map", "[a]", "-c:v", "libx264",
            "-preset", "slow", "-crf", "16", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
            "-movflags", "+faststart", "-t", f"{total:.3f}", out_name, cwd=job)
+    if not sfx_ev:
+        ffmpeg("-i", job / out_name, "-vn", "-c:a", "copy", tmp / f"{Path(out_name).stem}_voice.m4a")
     log += ["효과음: " + "; ".join(used)]
+    if auto_sfx_on:
+        from auto_sfx.director import run_edl_auto_sfx_stage
+        exp_sfx, master, mlog = run_edl_auto_sfx_stage(
+            job=job,
+            video=job / out_name,
+            total=total,
+            edl_hints=auto_ev,
+            sub_list=sub_list,
+            exp_items=exp_items,
+            master_db=float(master),
+            repo_cfg=cfg,
+        )
+        log += mlog
     if level_ev:
         from . import sfx_level
         tmp_out = job / ("_lvl_" + Path(out_name).name)
@@ -530,17 +582,37 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
     # "bgm": false 면 브금 없음. EDL 에 직접 쓴 bgm 은 예전처럼 (shorts/bgm.py — 참고 4q8E4EPcgew 덕킹)
     bcfg = edl.get("bgm", cfg.get("bgm_default"))
     if bcfg and bcfg.get("file"):
-        from . import bgm as bgm_mod
-        tmp_out = job / ("_bgm_" + Path(out_name).name)
-        exp_bgm, blog = bgm_mod.apply(body, job / out_name, tmp_out, total, bcfg, tmp / "bgm", float(master),
-                                      cfg.get("sfx_mix", {}).get("master_lufs", -14.0))
-        tmp_out.replace(job / out_name)
-        log += blog
+        bf = Path(bcfg["file"])
+        bf = bf if bf.is_absolute() else ASSETS.parent / bf
+        if bf.exists():
+            from . import bgm as bgm_mod
+            tmp_out = job / ("_bgm_" + Path(out_name).name)
+            exp_bgm, blog = bgm_mod.apply(body, job / out_name, tmp_out, total, bcfg, tmp / "bgm", float(master),
+                                          cfg.get("sfx_mix", {}).get("master_lufs", -14.0))
+            tmp_out.replace(job / out_name)
+            log += blog
+        else:
+            log.append(f"  ⚠ BGM 파일 없음 ({bf.name}) — BGM 없이 완료")
+    exp_subs = [
+        {
+            "a": x["a"],
+            "b": x["b"],
+            "text": x.get("text", ""),
+            "spans": x["spans"],
+            "krw": x.get("krw", ""),
+            "note": x.get("note", ""),
+            "solo": x.get("solo", False),
+            "scale": float(x.get("scale", 1.0)),
+            "icon": x.get("icon", ""),
+            "item": x.get("item"),
+        }
+        for x in sub_list
+    ]
+    write_json(tmp / f"{Path(out_name).stem}_subs.json", {"out": out_name, "master_db": float(master), "subs": exp_subs, "items": exp_items})
     write_json(tmp / "export.json", {
         "out": out_name, "total": float(total), "top": top, "panel": [PW, PH], "master_db": float(master),
         "items": exp_items, "sfx": exp_sfx, "title_lines": T, "bgm": exp_bgm,
-        "subs": [{"a": x["a"], "b": x["b"], "spans": x["spans"], "krw": x.get("krw", ""), "note": x.get("note", ""),
-                  "solo": x.get("solo", False), "item": x.get("item")} for x in sub_list],
+        "subs": exp_subs,
         "circles": [e for e in ass_ev if e.startswith("Dialogue: 2,")],
         "ass_head": head, "sub_pos": list(sub_pos), "sub_an": sub_an})
     (job / "sample_log.txt").write_text("\n".join(log), encoding="utf-8")

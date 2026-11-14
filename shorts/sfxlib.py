@@ -41,10 +41,11 @@ def _lufs(path):
 
 
 def build_index(cfg):
-    lib = Path(cfg["sfx_library"]["dir"])
+    import os
+    lib = Path(os.environ.get("LOCAL_SFX_DIR") or cfg["sfx_library"]["dir"])
     S = cfg["sfx_library"]
     index = {k: [] for k in CATEGORIES}
-    files = sorted(lib.glob("*.mp3")) + sorted(lib.glob("*.wav"))
+    files = sorted(p for p in lib.rglob("*") if p.is_file() and p.suffix.lower() in {".mp3", ".wav", ".ogg", ".flac", ".m4a"}) if lib.exists() else []
     # 사람 목소리가 섞인 효과음(와우, What, 웃음 등)은 대사와 겹치면 어색 → 제외 (tools/sfx_voice_check.py 결과)
     vp = ASSETS / "sfx_voice.json"
     voice = json.loads(vp.read_text(encoding="utf-8")) if vp.exists() else {}

@@ -1,0 +1,3650 @@
+{
+  "ref_count": 15,
+  "median_duration_sec": 46.02,
+  "median_shot_count": 39.0,
+  "median_shot_duration_sec": 1.0,
+  "total_red_circles_across_15": 46,
+  "top_matched_sfx_across_15": [
+    [
+      "pop:002_뿅.mp3",
+      43
+    ],
+    [
+      "cash:cash_register_1.wav",
+      16
+    ],
+    [
+      "ding:526_화면전환효과음_01.mp3",
+      1
+    ],
+    [
+      "pop:pop.wav",
+      1
+    ],
+    [
+      "caption:267_캡션 사운드 타탁.mp3",
+      1
+    ]
+  ],
+  "videos": {
+    "YVBql8gjaUg": {
+      "title": "미스터비스트가 샤크탱크 나오면 안되는 이유",
+      "channel": "해외쇼쇼",
+      "duration_sec": 61.28,
+      "shot_count": 50,
+      "median_shot_sec": 1.0,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        1.0,
+        1.9,
+        2.9,
+        4.0,
+        4.9,
+        5.8,
+        7.3,
+        8.2,
+        10.6,
+        11.2,
+        11.6,
+        14.0,
+        15.4,
+        16.5,
+        17.9,
+        18.9,
+        20.7,
+        22.3,
+        23.1,
+        26.0,
+        27.0,
+        27.9,
+        28.7,
+        29.6,
+        30.4,
+        31.0,
+        32.2,
+        33.5,
+        34.2,
+        35.5,
+        36.3,
+        37.5,
+        39.4,
+        40.2,
+        41.8,
+        43.2,
+        46.6,
+        47.9,
+        48.7,
+        50.3,
+        50.8,
+        52.3,
+        54.9,
+        55.6,
+        56.4,
+        57.2,
+        57.9,
+        59.3,
+        59.7
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 0.9,
+          "frames": 10,
+          "box_1080p": [
+            544,
+            556,
+            372,
+            268
+          ]
+        }
+      ],
+      "ko_sec": 46.7,
+      "en_sec": 14.6,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 5.88,
+          "lang": "ko",
+          "text": "미스터 비스트가 최초로 샵크템크 규칙을 깬 순간인데"
+        },
+        {
+          "a": 5.88,
+          "b": 10.84,
+          "lang": "ko",
+          "text": "실리콘을 쏘면 대부분 사람들이 손가락으로 빈다는데"
+        },
+        {
+          "a": 10.84,
+          "b": 16.44,
+          "lang": "ko",
+          "text": "매번 손가락이 더러워지고 다칠 수도 있다는 게 문제라는 데"
+        },
+        {
+          "a": 16.44,
+          "b": 22.24,
+          "lang": "ko",
+          "text": "그래서 손가락처럼 생긴 도구를 만들었다고"
+        },
+        {
+          "a": 22.24,
+          "b": 27.72,
+          "lang": "ko",
+          "text": "그래서 영상을 준비했다는 데"
+        },
+        {
+          "a": 27.72,
+          "b": 36.86,
+          "lang": "ko",
+          "text": "제품의 가격과 원가를 묻자"
+        },
+        {
+          "a": 36.86,
+          "b": 40.1,
+          "lang": "ko",
+          "text": "반면에 원가는 이 달러도 안 된다"
+        },
+        {
+          "a": 40.1,
+          "b": 43.34,
+          "lang": "ko",
+          "text": "그러자 투자자 한 명이 제안을 하는데"
+        },
+        {
+          "a": 43.34,
+          "b": 46.66,
+          "lang": "en",
+          "text": "50,000$, 20%"
+        },
+        {
+          "a": 46.66,
+          "b": 48.64,
+          "lang": "en",
+          "text": "Well, I haven't offered"
+        },
+        {
+          "a": 48.64,
+          "b": 51.64,
+          "lang": "en",
+          "text": "I want to give you the 50,000$ you're asking for"
+        },
+        {
+          "a": 51.64,
+          "b": 55.48,
+          "lang": "en",
+          "text": "But to be honest, I just want to give it to you for free because I like you"
+        },
+        {
+          "a": 55.48,
+          "b": 57.18,
+          "lang": "en",
+          "text": "Ah, what?"
+        },
+        {
+          "a": 57.18,
+          "b": 57.92,
+          "lang": "en",
+          "text": "You got a deal!"
+        },
+        {
+          "a": 57.92,
+          "b": 61.24,
+          "lang": "ko",
+          "text": "그렇게 미스터 비스트는 7천만 원을 그냥 죽이로 약속했다고"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.0,
+          "corr": 0.675,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 미스터 비스트가 최초로 샵크템크 규칙을 깬 순간인데"
+        },
+        {
+          "t": 50.87,
+          "corr": 0.513,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": "[en] I want to give you the 50,000$ you'r"
+        }
+      ]
+    },
+    "QMJtjJz4M6w": {
+      "title": "홍수 막아주는 모래 주머니?!",
+      "channel": "해외쇼쇼",
+      "duration_sec": 50.55,
+      "shot_count": 43,
+      "median_shot_sec": 1.1,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        0.6,
+        1.2,
+        1.6,
+        2.3,
+        4.1,
+        5.1,
+        5.6,
+        6.2,
+        7.1,
+        7.7,
+        9.1,
+        11.2,
+        11.9,
+        14.2,
+        14.7,
+        15.1,
+        15.5,
+        16.5,
+        18.6,
+        20.4,
+        21.7,
+        22.9,
+        24.2,
+        28.1,
+        29.4,
+        30.3,
+        31.1,
+        32.3,
+        33.9,
+        35.3,
+        36.8,
+        37.5,
+        38.6,
+        41.1,
+        42.0,
+        43.1,
+        44.3,
+        45.6,
+        46.1,
+        47.3,
+        48.0,
+        49.3
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 0.5,
+          "frames": 6,
+          "box_1080p": [
+            288,
+            464,
+            420,
+            360
+          ]
+        },
+        {
+          "t_start": 9.3,
+          "t_end": 11.5,
+          "frames": 21,
+          "box_1080p": [
+            0,
+            448,
+            708,
+            916
+          ]
+        },
+        {
+          "t_start": 20.4,
+          "t_end": 22.9,
+          "frames": 26,
+          "box_1080p": [
+            272,
+            1124,
+            204,
+            212
+          ]
+        }
+      ],
+      "ko_sec": 26.9,
+      "en_sec": 23.4,
+      "segments": [
+        {
+          "a": 0.24,
+          "b": 1.62,
+          "lang": "ko",
+          "text": "여기 물에 넣어두면"
+        },
+        {
+          "a": 1.62,
+          "b": 2.34,
+          "lang": "ko",
+          "text": "와아아아"
+        },
+        {
+          "a": 2.34,
+          "b": 5.12,
+          "lang": "ko",
+          "text": "3분 내로 15리터부를 빨아들이는 봉투가 있는데"
+        },
+        {
+          "a": 5.12,
+          "b": 5.62,
+          "lang": "en",
+          "text": "Pretty cool"
+        },
+        {
+          "a": 5.62,
+          "b": 7.74,
+          "lang": "ko",
+          "text": "홍수가 나기 전에 싸우는 브레슴 언니를"
+        },
+        {
+          "a": 7.74,
+          "b": 9.08,
+          "lang": "ko",
+          "text": "이걸로 대체할 수 있다고"
+        },
+        {
+          "a": 9.08,
+          "b": 11.94,
+          "lang": "en",
+          "text": "traditional sandbags require back breaking labor"
+        },
+        {
+          "a": 11.94,
+          "b": 14.2,
+          "lang": "en",
+          "text": "not to mention thousands of pounds of sand"
+        },
+        {
+          "a": 14.2,
+          "b": 16.5,
+          "lang": "ko",
+          "text": "무겁고 움직이기 힘들었던 모래주머니와 달리"
+        },
+        {
+          "a": 16.5,
+          "b": 18.6,
+          "lang": "en",
+          "text": "almost takes no labor to deploy"
+        },
+        {
+          "a": 18.6,
+          "b": 20.34,
+          "lang": "en",
+          "text": "all you simply do is add water"
+        },
+        {
+          "a": 20.34,
+          "b": 21.68,
+          "lang": "ko",
+          "text": "홍수자리에 놓기만 하면"
+        },
+        {
+          "a": 21.68,
+          "b": 24.24,
+          "lang": "ko",
+          "text": "15kg 짜리 방수벽을 만들 수 있고"
+        },
+        {
+          "a": 24.24,
+          "b": 25.64,
+          "lang": "en",
+          "text": "is there any way to get it back?"
+        },
+        {
+          "a": 25.64,
+          "b": 28.04,
+          "lang": "ko",
+          "text": "햇빛에 말려두면 이 3준으로 바짝 건조 돼서"
+        },
+        {
+          "a": 28.04,
+          "b": 29.34,
+          "lang": "ko",
+          "text": "3번은 더 쓸 수 있다고"
+        },
+        {
+          "a": 29.34,
+          "b": 30.26,
+          "lang": "en",
+          "text": "너무 cool"
+        },
+        {
+          "a": 30.26,
+          "b": 32.38,
+          "lang": "en",
+          "text": "이제 90,000$"
+        },
+        {
+          "a": 32.38,
+          "b": 33.5,
+          "lang": "en",
+          "text": "but we have so far done"
+        },
+        {
+          "a": 33.5,
+          "b": 34.94,
+          "lang": "en",
+          "text": "absolutely zero marketing"
+        },
+        {
+          "a": 34.94,
+          "b": 35.26,
+          "lang": "en",
+          "text": "zero"
+        },
+        {
+          "a": 35.26,
+          "b": 37.42,
+          "lang": "ko",
+          "text": "마케팅만 잘하면 돈 벌 자신이 있다는데"
+        },
+        {
+          "a": 37.42,
+          "b": 41.14,
+          "lang": "en",
+          "text": "so we're going to offer the 200,000 but for 30%"
+        },
+        {
+          "a": 41.14,
+          "b": 42.02,
+          "lang": "en",
+          "text": "we'll do 30%"
+        },
+        {
+          "a": 42.02,
+          "b": 44.22,
+          "lang": "ko",
+          "text": "같은 조건으로 4명의 투자자가 붓게 되고"
+        },
+        {
+          "a": 44.22,
+          "b": 45.34,
+          "lang": "en",
+          "text": "more market value"
+        },
+        {
+          "a": 45.34,
+          "b": 46.22,
+          "lang": "en",
+          "text": "yes sir"
+        },
+        {
+          "a": 46.22,
+          "b": 47.98,
+          "lang": "ko",
+          "text": "방송 후 제구가 모두 다 나갔고"
+        },
+        {
+          "a": 47.98,
+          "b": 49.26,
+          "lang": "ko",
+          "text": "정부 인증까지 받게 되자"
+        },
+        {
+          "a": 49.26,
+          "b": 50.5,
+          "lang": "ko",
+          "text": "제공원을 취소했다고"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.0,
+          "corr": 0.646,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": ""
+        },
+        {
+          "t": 8.82,
+          "corr": 0.512,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[ko] 이걸로 대체할 수 있다고"
+        },
+        {
+          "t": 10.53,
+          "corr": 0.584,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] traditional sandbags require back br"
+        },
+        {
+          "t": 18.65,
+          "corr": 0.564,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[en] almost takes no labor to deploy"
+        }
+      ]
+    },
+    "2jJoIbdciDY": {
+      "title": "땅콩잼 안짜도 된다고?!",
+      "channel": "해외쇼쇼",
+      "duration_sec": 55.84,
+      "shot_count": 44,
+      "median_shot_sec": 1.0,
+      "min_shot_sec": 0.5,
+      "cuts": [
+        1.1,
+        1.8,
+        2.6,
+        3.8,
+        4.7,
+        5.2,
+        6.6,
+        7.4,
+        8.4,
+        9.7,
+        10.4,
+        11.3,
+        12.0,
+        14.1,
+        14.9,
+        16.2,
+        16.7,
+        17.3,
+        18.6,
+        19.3,
+        20.2,
+        21.4,
+        23.4,
+        24.2,
+        26.6,
+        29.2,
+        31.6,
+        32.9,
+        33.9,
+        34.4,
+        36.5,
+        37.4,
+        38.3,
+        40.9,
+        41.9,
+        44.1,
+        46.5,
+        47.6,
+        48.5,
+        49.4,
+        50.1,
+        51.0,
+        52.4
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 1.7,
+          "frames": 18,
+          "box_1080p": [
+            360,
+            692,
+            356,
+            132
+          ]
+        },
+        {
+          "t_start": 23.8,
+          "t_end": 24.1,
+          "frames": 4,
+          "box_1080p": [
+            880,
+            620,
+            108,
+            116
+          ]
+        },
+        {
+          "t_start": 34.4,
+          "t_end": 36.4,
+          "frames": 21,
+          "box_1080p": [
+            88,
+            532,
+            624,
+            316
+          ]
+        },
+        {
+          "t_start": 44.5,
+          "t_end": 46.4,
+          "frames": 20,
+          "box_1080p": [
+            792,
+            480,
+            92,
+            156
+          ]
+        },
+        {
+          "t_start": 47.6,
+          "t_end": 48.4,
+          "frames": 9,
+          "box_1080p": [
+            800,
+            448,
+            92,
+            316
+          ]
+        }
+      ],
+      "ko_sec": 23.8,
+      "en_sec": 32.0,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 1.84,
+          "lang": "ko",
+          "text": "펀프로 땅콩버터를 짜낸 남자"
+        },
+        {
+          "a": 1.84,
+          "b": 2.6,
+          "lang": "en",
+          "text": "아우 와우"
+        },
+        {
+          "a": 2.6,
+          "b": 5.2,
+          "lang": "ko",
+          "text": "전열때마다 손에 묶고 불편한 기존 통대신"
+        },
+        {
+          "a": 5.2,
+          "b": 8.4,
+          "lang": "en",
+          "text": "quicker, cleaner, and easier than ever before"
+        },
+        {
+          "a": 8.4,
+          "b": 10.4,
+          "lang": "ko",
+          "text": "훨씬 쉽고 빠르게 쓸 수 있다는데"
+        },
+        {
+          "a": 10.4,
+          "b": 14.0,
+          "lang": "en",
+          "text": "I designed it to get every last bit of peanut butter from the jar"
+        },
+        {
+          "a": 14.0,
+          "b": 16.6,
+          "lang": "ko",
+          "text": "누르기만 하면 병면까지 싹 긁어서 짜준다고"
+        },
+        {
+          "a": 16.6,
+          "b": 19.2,
+          "lang": "en",
+          "text": "I am a peanut butter connoisseur"
+        },
+        {
+          "a": 19.2,
+          "b": 23.4,
+          "lang": "ko",
+          "text": "그런데 이때 땅콩버터를 직접 만들어 먹기까지 한다는 투자자가 나서는데"
+        },
+        {
+          "a": 23.4,
+          "b": 26.6,
+          "lang": "en",
+          "text": "How big will you let the chunks be before clogs up the pump?"
+        },
+        {
+          "a": 26.6,
+          "b": 29.2,
+          "lang": "en",
+          "text": "With the peanut butter community, there's a massive debate"
+        },
+        {
+          "a": 29.2,
+          "b": 31.7,
+          "lang": "en",
+          "text": "아니, do I put that giant stack in the refrigerator?"
+        },
+        {
+          "a": 31.7,
+          "b": 34.0,
+          "lang": "ko",
+          "text": "진짜 애호가 나온 냉철한 질문들을 던지고"
+        },
+        {
+          "a": 34.0,
+          "b": 36.5,
+          "lang": "en",
+          "text": "No, it only works for stabilized peanut butter"
+        },
+        {
+          "a": 36.5,
+          "b": 38.3,
+          "lang": "ko",
+          "text": "흥대한 문제를 발견하게 되는데"
+        },
+        {
+          "a": 38.3,
+          "b": 40.9,
+          "lang": "en",
+          "text": "30% want chunky, it's a raging debate in theory"
+        },
+        {
+          "a": 40.9,
+          "b": 41.7,
+          "lang": "en",
+          "text": "Everybody knows that"
+        },
+        {
+          "a": 41.7,
+          "b": 44.2,
+          "lang": "en",
+          "text": "Let me refrigerate it to offset the rancidness"
+        },
+        {
+          "a": 44.2,
+          "b": 46.7,
+          "lang": "en",
+          "text": "Who is the leader of the peanut butter community?"
+        },
+        {
+          "a": 46.7,
+          "b": 48.5,
+          "lang": "en",
+          "text": "I am the leader"
+        },
+        {
+          "a": 48.5,
+          "b": 50.1,
+          "lang": "ko",
+          "text": "결국 남은 네도 모두 아웃"
+        },
+        {
+          "a": 50.1,
+          "b": 50.9,
+          "lang": "en",
+          "text": "Good luck"
+        },
+        {
+          "a": 50.9,
+          "b": 52.5,
+          "lang": "ko",
+          "text": "그렇게 빈손으로 돌아갔고"
+        },
+        {
+          "a": 52.5,
+          "b": 55.8,
+          "lang": "ko",
+          "text": "한대도 배송 못한 재 2024년 생산이 멈췄다고"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.0,
+          "corr": 0.575,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 펀프로 땅콩버터를 짜낸 남자"
+        },
+        {
+          "t": 0.48,
+          "corr": 0.484,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[ko] 펀프로 땅콩버터를 짜낸 남자"
+        },
+        {
+          "t": 1.85,
+          "corr": 0.583,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 펀프로 땅콩버터를 짜낸 남자"
+        },
+        {
+          "t": 4.08,
+          "corr": 0.498,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[ko] 전열때마다 손에 묶고 불편한 기존 통대신"
+        },
+        {
+          "t": 9.96,
+          "corr": 0.514,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": false,
+          "context": "[ko] 훨씬 쉽고 빠르게 쓸 수 있다는데"
+        },
+        {
+          "t": 11.45,
+          "corr": 0.545,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[en] I designed it to get every last bit "
+        },
+        {
+          "t": 18.26,
+          "corr": 0.513,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] I am a peanut butter connoisseur"
+        },
+        {
+          "t": 26.61,
+          "corr": 0.592,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[en] How big will you let the chunks be b"
+        },
+        {
+          "t": 45.06,
+          "corr": 0.525,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] Who is the leader of the peanut butt"
+        }
+      ]
+    },
+    "kmQGQNJgSVo": {
+      "title": "입기만 하면 살빠진다는 땀복",
+      "channel": "해외쇼쇼",
+      "duration_sec": 41.24,
+      "shot_count": 36,
+      "median_shot_sec": 1.0,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        0.9,
+        1.7,
+        2.7,
+        4.7,
+        5.3,
+        6.8,
+        7.5,
+        8.3,
+        9.3,
+        10.3,
+        10.8,
+        11.7,
+        12.9,
+        15.0,
+        15.4,
+        16.0,
+        16.5,
+        17.0,
+        17.9,
+        19.3,
+        20.7,
+        22.1,
+        25.1,
+        27.1,
+        27.9,
+        29.8,
+        31.0,
+        32.3,
+        33.5,
+        34.3,
+        35.5,
+        37.5,
+        38.5,
+        39.1,
+        40.6
+      ],
+      "red_circles": [
+        {
+          "t_start": 7.6,
+          "t_end": 8.3,
+          "frames": 8,
+          "box_1080p": [
+            672,
+            776,
+            404,
+            420
+          ]
+        },
+        {
+          "t_start": 9.0,
+          "t_end": 10.5,
+          "frames": 14,
+          "box_1080p": [
+            320,
+            1052,
+            684,
+            128
+          ]
+        },
+        {
+          "t_start": 29.9,
+          "t_end": 30.9,
+          "frames": 11,
+          "box_1080p": [
+            8,
+            1140,
+            404,
+            328
+          ]
+        }
+      ],
+      "ko_sec": 19.9,
+      "en_sec": 21.3,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 0.92,
+          "lang": "ko",
+          "text": "옷을 뒤집자"
+        },
+        {
+          "a": 0.92,
+          "b": 1.68,
+          "lang": "ko",
+          "text": "아야"
+        },
+        {
+          "a": 1.68,
+          "b": 3.22,
+          "lang": "ko",
+          "text": "무언가가 잔뜩 튀어나오는데"
+        },
+        {
+          "a": 3.22,
+          "b": 4.08,
+          "lang": "ko",
+          "text": "아, 마치"
+        },
+        {
+          "a": 4.08,
+          "b": 5.28,
+          "lang": "en",
+          "text": "아, 뇌, 뇌, 뇌"
+        },
+        {
+          "a": 5.28,
+          "b": 7.58,
+          "lang": "ko",
+          "text": "이게 다 땀뽁이 먹음고 있던 건 수분이라고"
+        },
+        {
+          "a": 7.58,
+          "b": 10.72,
+          "lang": "en",
+          "text": "이 1st and only single you saw the suit on the market today"
+        },
+        {
+          "a": 10.72,
+          "b": 11.56,
+          "lang": "ko",
+          "text": "입기만 하면"
+        },
+        {
+          "a": 11.56,
+          "b": 12.96,
+          "lang": "ko",
+          "text": "여름 먹음을 땀이 법발하고"
+        },
+        {
+          "a": 12.96,
+          "b": 14.2,
+          "lang": "ko",
+          "text": "이루용이라 세탁하거나"
+        },
+        {
+          "a": 14.2,
+          "b": 15.06,
+          "lang": "ko",
+          "text": "건조할 필요도 없고"
+        },
+        {
+          "a": 15.06,
+          "b": 15.98,
+          "lang": "ko",
+          "text": "위생적이라는데"
+        },
+        {
+          "a": 15.98,
+          "b": 18.02,
+          "lang": "en",
+          "text": "Explain to me the target market"
+        },
+        {
+          "a": 18.02,
+          "b": 18.88,
+          "lang": "en",
+          "text": "The ironic part is"
+        },
+        {
+          "a": 18.88,
+          "b": 20.58,
+          "lang": "en",
+          "text": "Shredskins actually does target women"
+        },
+        {
+          "a": 20.58,
+          "b": 22.06,
+          "lang": "en",
+          "text": "because women carry a ton of waterway"
+        },
+        {
+          "a": 22.06,
+          "b": 25.08,
+          "lang": "en",
+          "text": "Also, my biggest market is athletes and fighters"
+        },
+        {
+          "a": 25.08,
+          "b": 26.32,
+          "lang": "en",
+          "text": "fighters need this"
+        },
+        {
+          "a": 26.32,
+          "b": 27.92,
+          "lang": "en",
+          "text": "one to make weight all the time"
+        },
+        {
+          "a": 27.92,
+          "b": 29.8,
+          "lang": "ko",
+          "text": "수익성이 없어 보이는 것과는 다르게"
+        },
+        {
+          "a": 29.8,
+          "b": 32.36,
+          "lang": "ko",
+          "text": "틱톡과 유튜브 조회수가 대박이나면 아이러됐고"
+        },
+        {
+          "a": 32.36,
+          "b": 35.64,
+          "lang": "ko",
+          "text": "또한 코드명이네, 매출과 맞인이 생각보다 훨씬 좋았는데"
+        },
+        {
+          "a": 35.64,
+          "b": 38.6,
+          "lang": "en",
+          "text": "저 아기의 60g, 20%"
+        },
+        {
+          "a": 38.6,
+          "b": 39.12,
+          "lang": "ko",
+          "text": "와"
+        },
+        {
+          "a": 39.12,
+          "b": 40.56,
+          "lang": "en",
+          "text": "mark you got yourself a deal"
+        },
+        {
+          "a": 40.56,
+          "b": 41.16,
+          "lang": "en",
+          "text": "let's go"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.0,
+          "corr": 0.617,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 옷을 뒤집자"
+        },
+        {
+          "t": 3.25,
+          "corr": 0.569,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[ko] 무언가가 잔뜩 튀어나오는데"
+        },
+        {
+          "t": 25.12,
+          "corr": 0.493,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[en] Also, my biggest market is athletes "
+        }
+      ]
+    },
+    "h00vdwsFphw": {
+      "title": "심사위원이 그토록 찾았던 이유",
+      "channel": "해외쇼쇼",
+      "duration_sec": 55.12,
+      "shot_count": 30,
+      "median_shot_sec": 1.7,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        1.7,
+        3.1,
+        3.7,
+        5.3,
+        6.0,
+        6.4,
+        8.6,
+        10.3,
+        11.6,
+        12.7,
+        14.1,
+        15.9,
+        16.9,
+        18.0,
+        19.2,
+        22.3,
+        24.5,
+        26.4,
+        29.0,
+        33.6,
+        35.0,
+        37.8,
+        39.6,
+        41.3,
+        44.8,
+        46.6,
+        48.1,
+        48.9,
+        53.0
+      ],
+      "red_circles": [
+        {
+          "t_start": 24.5,
+          "t_end": 26.3,
+          "frames": 19,
+          "box_1080p": [
+            16,
+            492,
+            996,
+            332
+          ]
+        }
+      ],
+      "ko_sec": 6.2,
+      "en_sec": 28.8,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 6.2,
+          "lang": "ko",
+          "text": "인할 따라 유달리 친절한 심사위원, 무슨 유일가?"
+        },
+        {
+          "a": 6.2,
+          "b": 8.6,
+          "lang": "en",
+          "text": "Not to see this video, it was you."
+        },
+        {
+          "a": 8.6,
+          "b": 12.0,
+          "lang": "en",
+          "text": "I, we sent the video that they'd already found you."
+        },
+        {
+          "a": 14.0,
+          "b": 18.0,
+          "lang": "en",
+          "text": "I will be playing an original, what's it called?"
+        },
+        {
+          "a": 31.44,
+          "b": 33.44,
+          "lang": "en",
+          "text": "rain drops when you cry"
+        },
+        {
+          "a": 33.44,
+          "b": 50.47,
+          "lang": "en",
+          "text": "there without"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.01,
+          "corr": 0.675,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 인할 따라 유달리 친절한 심사위원, 무슨 유일가?"
+        },
+        {
+          "t": 1.71,
+          "corr": 0.534,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 인할 따라 유달리 친절한 심사위원, 무슨 유일가?"
+        },
+        {
+          "t": 7.22,
+          "corr": 0.513,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] Not to see this video, it was you."
+        },
+        {
+          "t": 14.05,
+          "corr": 0.547,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": "[en] I will be playing an original, what'"
+        },
+        {
+          "t": 17.46,
+          "corr": 0.512,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] I will be playing an original, what'"
+        },
+        {
+          "t": 18.12,
+          "corr": 0.707,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[en] I will be playing an original, what'"
+        },
+        {
+          "t": 30.6,
+          "corr": 0.521,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": false,
+          "context": ""
+        },
+        {
+          "t": 32.9,
+          "corr": 0.543,
+          "cat": "ding",
+          "name": "526_화면전환효과음_01.mp3",
+          "near_cut": false,
+          "context": "[en] rain drops when you cry"
+        },
+        {
+          "t": 34.89,
+          "corr": 0.575,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": "[en] there without"
+        }
+      ]
+    },
+    "vbxJ_v132ao": {
+      "title": "구멍난 벽을 쉽게 고쳐주는 제품",
+      "channel": "해외쇼쇼",
+      "duration_sec": 39.22,
+      "shot_count": 35,
+      "median_shot_sec": 0.8,
+      "min_shot_sec": 0.2,
+      "cuts": [
+        0.2,
+        1.5,
+        2.2,
+        3.0,
+        3.8,
+        4.4,
+        7.0,
+        8.6,
+        9.7,
+        11.9,
+        13.3,
+        13.8,
+        14.8,
+        15.3,
+        15.8,
+        16.4,
+        19.3,
+        20.4,
+        20.8,
+        22.1,
+        22.6,
+        24.0,
+        24.8,
+        25.3,
+        26.6,
+        29.4,
+        31.6,
+        33.3,
+        34.1,
+        34.6,
+        35.3,
+        37.0,
+        38.2,
+        38.7
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 0.8,
+          "frames": 6,
+          "box_1080p": [
+            0,
+            828,
+            136,
+            244
+          ]
+        },
+        {
+          "t_start": 5.9,
+          "t_end": 8.5,
+          "frames": 27,
+          "box_1080p": [
+            432,
+            712,
+            196,
+            104
+          ]
+        }
+      ],
+      "ko_sec": 23.2,
+      "en_sec": 15.3,
+      "segments": [
+        {
+          "a": 0.14,
+          "b": 1.54,
+          "lang": "ko",
+          "text": "이게 구멍을 떨린 남자"
+        },
+        {
+          "a": 1.54,
+          "b": 2.14,
+          "lang": "en",
+          "text": "와"
+        },
+        {
+          "a": 2.14,
+          "b": 3.34,
+          "lang": "en",
+          "text": "와, 이제 뭐지?"
+        },
+        {
+          "a": 3.34,
+          "b": 13.34,
+          "lang": "ko",
+          "text": "그"
+        },
+        {
+          "a": 13.34,
+          "b": 14.94,
+          "lang": "ko",
+          "text": "디스크 위의 특수점토를 내고"
+        },
+        {
+          "a": 14.94,
+          "b": 16.04,
+          "lang": "ko",
+          "text": "평평하게 눌러준듯이"
+        },
+        {
+          "a": 16.04,
+          "b": 17.74,
+          "lang": "ko",
+          "text": "그저 하루에서 이틀 정도 말려주는"
+        },
+        {
+          "a": 17.74,
+          "b": 18.94,
+          "lang": "ko",
+          "text": "사포질까지 해주면"
+        },
+        {
+          "a": 18.94,
+          "b": 20.44,
+          "lang": "ko",
+          "text": "새벽으로 완벽 보수가 된다고"
+        },
+        {
+          "a": 20.44,
+          "b": 22.04,
+          "lang": "ko",
+          "text": "구역사"
+        },
+        {
+          "a": 22.04,
+          "b": 23.84,
+          "lang": "ko",
+          "text": "미국은 집을 직접 고치는 문화라"
+        },
+        {
+          "a": 23.84,
+          "b": 25.14,
+          "lang": "ko",
+          "text": "대박 가능성이 보렀는데"
+        },
+        {
+          "a": 25.14,
+          "b": 26.84,
+          "lang": "en",
+          "text": "I'd like to make you an interesting offer"
+        },
+        {
+          "a": 26.84,
+          "b": 28.64,
+          "lang": "en",
+          "text": "I'll give you the 150,000"
+        },
+        {
+          "a": 28.64,
+          "b": 31.56,
+          "lang": "en",
+          "text": "No equity, you give me exclusive rights for this product"
+        },
+        {
+          "a": 31.56,
+          "b": 33.32,
+          "lang": "en",
+          "text": "I'll buy it at two dollars from you"
+        },
+        {
+          "a": 33.32,
+          "b": 34.76,
+          "lang": "en",
+          "text": "and sell it to the rest of the world"
+        },
+        {
+          "a": 35.26,
+          "b": 37.14,
+          "lang": "en",
+          "text": "Robert, your deal is phenomenal"
+        },
+        {
+          "a": 37.14,
+          "b": 38.28,
+          "lang": "en",
+          "text": "I'm there, let's do it"
+        },
+        {
+          "a": 38.28,
+          "b": 39.18,
+          "lang": "en",
+          "text": "Do I hear any S?"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.01,
+          "corr": 0.628,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": "[ko] 이게 구멍을 떨린 남자"
+        },
+        {
+          "t": 8.7,
+          "corr": 0.49,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": "[ko] 그"
+        }
+      ]
+    },
+    "hZgCO9PEnO8": {
+      "title": "낚시줄만 자르는 제품",
+      "channel": "해외쇼쇼",
+      "duration_sec": 36.57,
+      "shot_count": 29,
+      "median_shot_sec": 1.2,
+      "min_shot_sec": 0.5,
+      "cuts": [
+        0.9,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        4.5,
+        5.4,
+        7.8,
+        8.3,
+        9.8,
+        11.9,
+        12.7,
+        13.2,
+        14.4,
+        15.9,
+        17.4,
+        21.1,
+        22.1,
+        24.1,
+        24.9,
+        25.5,
+        26.9,
+        27.8,
+        29.2,
+        30.6,
+        31.9,
+        32.6,
+        34.1
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 0.8,
+          "frames": 9,
+          "box_1080p": [
+            280,
+            484,
+            428,
+            340
+          ]
+        },
+        {
+          "t_start": 3.2,
+          "t_end": 4.4,
+          "frames": 12,
+          "box_1080p": [
+            352,
+            524,
+            380,
+            300
+          ]
+        },
+        {
+          "t_start": 11.1,
+          "t_end": 11.4,
+          "frames": 4,
+          "box_1080p": [
+            48,
+            1384,
+            208,
+            72
+          ]
+        },
+        {
+          "t_start": 24.1,
+          "t_end": 24.8,
+          "frames": 8,
+          "box_1080p": [
+            320,
+            1384,
+            344,
+            84
+          ]
+        },
+        {
+          "t_start": 25.5,
+          "t_end": 26.8,
+          "frames": 14,
+          "box_1080p": [
+            588,
+            1372,
+            352,
+            84
+          ]
+        },
+        {
+          "t_start": 27.8,
+          "t_end": 29.1,
+          "frames": 13,
+          "box_1080p": [
+            528,
+            1364,
+            356,
+            104
+          ]
+        }
+      ],
+      "ko_sec": 17.4,
+      "en_sec": 16.4,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 4.52,
+          "lang": "ko",
+          "text": "10년 전 낚시줄을 자르려던 카레 손을 크게 배웠었다는 이 남자"
+        },
+        {
+          "a": 4.52,
+          "b": 7.78,
+          "lang": "ko",
+          "text": "그 뒤로 줄을 쉽게 잘라낼 수 있는 방법을 생각했다는데"
+        },
+        {
+          "a": 7.78,
+          "b": 10.22,
+          "lang": "en",
+          "text": "I thought why not just put a cutter on your finger"
+        },
+        {
+          "a": 10.22,
+          "b": 13.5,
+          "lang": "en",
+          "text": "So I busted out some welding party, broke a part of dental floss cutter,"
+        },
+        {
+          "a": 13.5,
+          "b": 16.04,
+          "lang": "en",
+          "text": "and handmade my first prototype"
+        },
+        {
+          "a": 16.04,
+          "b": 17.44,
+          "lang": "ko",
+          "text": "직접 시범을 보여주는데"
+        },
+        {
+          "a": 17.44,
+          "b": 20.28,
+          "lang": "en",
+          "text": "This is 12-pound test monofilament line"
+        },
+        {
+          "a": 21.62,
+          "b": 24.16,
+          "lang": "en",
+          "text": "This is 30-pound test fluorocarbon"
+        },
+        {
+          "a": 25.42,
+          "b": 27.98,
+          "lang": "ko",
+          "text": "다음은 상어도 잡을 수 있는 제일 놓고 온 줄"
+        },
+        {
+          "a": 27.98,
+          "b": 31.36,
+          "lang": "ko",
+          "text": "그리고 손 얼굴에 갖다 내고 문지르는데"
+        },
+        {
+          "a": 31.36,
+          "b": 34.16,
+          "lang": "en",
+          "text": "Stop the madness! I can't cut my stingles in either"
+        },
+        {
+          "a": 34.16,
+          "b": 36.48,
+          "lang": "ko",
+          "text": "오로지 줄만 끈을 수 있게 설계되었다고"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.0,
+          "corr": 0.615,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 10년 전 낚시줄을 자르려던 카레 손을 크게 배웠었다는 이 남자"
+        },
+        {
+          "t": 3.23,
+          "corr": 0.548,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[ko] 10년 전 낚시줄을 자르려던 카레 손을 크게 배웠었다는 이 남자"
+        },
+        {
+          "t": 11.53,
+          "corr": 0.485,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] So I busted out some welding party, "
+        },
+        {
+          "t": 20.65,
+          "corr": 0.545,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": ""
+        }
+      ]
+    },
+    "uRYpcMENqfo": {
+      "title": "둘중 누가 진짜 댄서일까?",
+      "channel": "해외쇼쇼",
+      "duration_sec": 35.46,
+      "shot_count": 35,
+      "median_shot_sec": 0.7,
+      "min_shot_sec": 0.1,
+      "cuts": [
+        0.1,
+        0.5,
+        0.9,
+        1.3,
+        2.8,
+        3.2,
+        5.0,
+        5.7,
+        6.2,
+        6.7,
+        7.2,
+        7.7,
+        8.4,
+        10.1,
+        11.8,
+        12.9,
+        13.3,
+        14.1,
+        14.5,
+        14.9,
+        16.2,
+        17.0,
+        18.9,
+        20.4,
+        23.8,
+        25.0,
+        26.7,
+        29.6,
+        30.2,
+        30.6,
+        31.1,
+        32.6,
+        33.1,
+        34.2
+      ],
+      "red_circles": [
+        {
+          "t_start": 25.0,
+          "t_end": 26.6,
+          "frames": 14,
+          "box_1080p": [
+            984,
+            1236,
+            92,
+            172
+          ]
+        }
+      ],
+      "ko_sec": 0,
+      "en_sec": 3.2,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 3.2,
+          "lang": "en",
+          "text": "To get onto the throne of the Earth, one way is on the face of Stepan."
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.07,
+          "corr": 0.77,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[en] To get onto the throne of the Earth,"
+        },
+        {
+          "t": 4.9,
+          "corr": 0.491,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": ""
+        }
+      ]
+    },
+    "R9UCbQRLQBc": {
+      "title": "투자자가 물 맞은 이유",
+      "channel": "해외쇼쇼",
+      "duration_sec": 43.61,
+      "shot_count": 39,
+      "median_shot_sec": 1.0,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        0.9,
+        1.7,
+        2.1,
+        3.0,
+        3.6,
+        4.2,
+        4.8,
+        5.4,
+        6.0,
+        8.2,
+        9.9,
+        11.1,
+        11.6,
+        12.9,
+        13.3,
+        14.4,
+        15.2,
+        16.2,
+        17.5,
+        18.8,
+        20.1,
+        21.1,
+        22.3,
+        24.3,
+        24.8,
+        26.4,
+        27.7,
+        30.0,
+        32.9,
+        34.8,
+        36.6,
+        37.4,
+        38.4,
+        38.9,
+        39.4,
+        40.8,
+        41.2,
+        42.1
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 1.6,
+          "frames": 17,
+          "box_1080p": [
+            292,
+            516,
+            424,
+            308
+          ]
+        }
+      ],
+      "ko_sec": 19.4,
+      "en_sec": 21.2,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 3.62,
+          "lang": "ko",
+          "text": "갑자기 출연자의 말을 끊는 투자자"
+        },
+        {
+          "a": 3.62,
+          "b": 4.82,
+          "lang": "en",
+          "text": "She's a golden girl"
+        },
+        {
+          "a": 4.82,
+          "b": 6.02,
+          "lang": "en",
+          "text": "She just call me a golden girl"
+        },
+        {
+          "a": 6.02,
+          "b": 8.26,
+          "lang": "ko",
+          "text": "그러고선 출연자에게 골드디 거라고 비난하는데"
+        },
+        {
+          "a": 8.26,
+          "b": 11.12,
+          "lang": "en",
+          "text": "Not really wanting a deal but looking to get the commercial"
+        },
+        {
+          "a": 11.12,
+          "b": 12.96,
+          "lang": "ko",
+          "text": "사실 그녀의 어플은 출시 1년 만에"
+        },
+        {
+          "a": 12.96,
+          "b": 14.44,
+          "lang": "ko",
+          "text": "사용자 50만 명을 달성하고"
+        },
+        {
+          "a": 14.44,
+          "b": 17.54,
+          "lang": "ko",
+          "text": "헌딩으로만 30억을 받아냔 잘나가는 스타트업이었고"
+        },
+        {
+          "a": 17.54,
+          "b": 19.3,
+          "lang": "en",
+          "text": "How much of the 2.8 million is life"
+        },
+        {
+          "a": 19.3,
+          "b": 21.1,
+          "lang": "en",
+          "text": "We have most of it in the bank today"
+        },
+        {
+          "a": 21.1,
+          "b": 22.3,
+          "lang": "en",
+          "text": "Oh, you like us to do that"
+        },
+        {
+          "a": 22.3,
+          "b": 24.26,
+          "lang": "en",
+          "text": "Possibility is not our main"
+        },
+        {
+          "a": 24.26,
+          "b": 26.46,
+          "lang": "ko",
+          "text": "더이상 투자가 필요 없는 상황이었는데"
+        },
+        {
+          "a": 26.46,
+          "b": 28.92,
+          "lang": "en",
+          "text": "Richard offered you 300,000 for 10%,"
+        },
+        {
+          "a": 28.92,
+          "b": 30.28,
+          "lang": "en",
+          "text": "You need $600,000."
+        },
+        {
+          "a": 30.28,
+          "b": 31.72,
+          "lang": "en",
+          "text": "I'll give you $300,000."
+        },
+        {
+          "a": 31.72,
+          "b": 32.96,
+          "lang": "en",
+          "text": "Also for 10%."
+        },
+        {
+          "a": 32.96,
+          "b": 34.8,
+          "lang": "en",
+          "text": "You just can't do 15%."
+        },
+        {
+          "a": 34.8,
+          "b": 36.52,
+          "lang": "ko",
+          "text": "투자자의 좋은 제안까지 거절하자."
+        },
+        {
+          "a": 36.52,
+          "b": 37.44,
+          "lang": "en",
+          "text": "Do you think I'm good?"
+        },
+        {
+          "a": 37.44,
+          "b": 38.52,
+          "lang": "ko",
+          "text": "폭발하고 망고신대요."
+        },
+        {
+          "a": 39.52,
+          "b": 41.6,
+          "lang": "ko",
+          "text": "물에 하다며 다른 투자자에게 물을 맞았고."
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.01,
+          "corr": 0.651,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": "[ko] 갑자기 출연자의 말을 끊는 투자자"
+        },
+        {
+          "t": 8.88,
+          "corr": 0.488,
+          "cat": "pop",
+          "name": "pop.wav",
+          "near_cut": false,
+          "context": "[en] Not really wanting a deal but lookin"
+        },
+        {
+          "t": 9.43,
+          "corr": 0.503,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": false,
+          "context": "[en] Not really wanting a deal but lookin"
+        }
+      ]
+    },
+    "aFqKN8s2cA8": {
+      "title": "케첩 소스 안부어도 된다고?!",
+      "channel": "해외쇼쇼",
+      "duration_sec": 46.02,
+      "shot_count": 36,
+      "median_shot_sec": 1.1,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        1.9,
+        3.2,
+        4.0,
+        7.0,
+        8.4,
+        8.9,
+        9.7,
+        10.1,
+        10.7,
+        11.1,
+        13.3,
+        14.2,
+        15.0,
+        17.4,
+        19.3,
+        19.8,
+        20.6,
+        22.2,
+        23.3,
+        26.6,
+        27.5,
+        28.4,
+        29.6,
+        30.7,
+        32.8,
+        33.2,
+        34.1,
+        36.5,
+        38.3,
+        39.2,
+        40.8,
+        42.0,
+        42.5,
+        43.4,
+        44.9
+      ],
+      "red_circles": [
+        {
+          "t_start": 15.0,
+          "t_end": 17.3,
+          "frames": 24,
+          "box_1080p": [
+            212,
+            740,
+            792,
+            264
+          ]
+        },
+        {
+          "t_start": 22.2,
+          "t_end": 23.2,
+          "frames": 11,
+          "box_1080p": [
+            48,
+            760,
+            180,
+            164
+          ]
+        }
+      ],
+      "ko_sec": 16.8,
+      "en_sec": 21.6,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 1.88,
+          "lang": "en",
+          "text": "That is a good idea"
+        },
+        {
+          "a": 1.88,
+          "b": 3.98,
+          "lang": "ko",
+          "text": "캐쳅을 말려 치즈처럼 썰어온 부분"
+        },
+        {
+          "a": 3.98,
+          "b": 7.14,
+          "lang": "en",
+          "text": "It's this real catch up that's just been the water's been removed?"
+        },
+        {
+          "a": 7.14,
+          "b": 8.38,
+          "lang": "en",
+          "text": "Exactly"
+        },
+        {
+          "a": 8.38,
+          "b": 10.74,
+          "lang": "ko",
+          "text": "옷에 튀기고 손에 묻는 기존 포장 대신"
+        },
+        {
+          "a": 10.74,
+          "b": 13.32,
+          "lang": "ko",
+          "text": "한 장씩 꺼내슬 수 있게 건조시킨 거라는데"
+        },
+        {
+          "a": 13.32,
+          "b": 14.38,
+          "lang": "en",
+          "text": "It tastes really good"
+        },
+        {
+          "a": 14.38,
+          "b": 15.02,
+          "lang": "en",
+          "text": "Thank you"
+        },
+        {
+          "a": 15.02,
+          "b": 17.42,
+          "lang": "ko",
+          "text": "머스타드나 3일아차 등 다양한 맛도 가능하며"
+        },
+        {
+          "a": 17.42,
+          "b": 19.32,
+          "lang": "ko",
+          "text": "유통기 한도 12개월로 넉넉하다고"
+        },
+        {
+          "a": 19.32,
+          "b": 19.88,
+          "lang": "en",
+          "text": "Oh wow"
+        },
+        {
+          "a": 19.88,
+          "b": 22.28,
+          "lang": "ko",
+          "text": "무엇보다 빵이 눅눅해지지 않는 게 장점인데"
+        },
+        {
+          "a": 22.28,
+          "b": 23.18,
+          "lang": "en",
+          "text": "What is the cost to make?"
+        },
+        {
+          "a": 23.18,
+          "b": 26.6,
+          "lang": "en",
+          "text": "Retails for $5.99, our cost is $1.75"
+        },
+        {
+          "a": 26.6,
+          "b": 29.62,
+          "lang": "ko",
+          "text": "그런데 만든지 2년이 넘도록 판매가 영원이었는데"
+        },
+        {
+          "a": 29.62,
+          "b": 38.36,
+          "lang": "en",
+          "text": "만들어 줄 공장을 찾지 못해 헤어했다."
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.01,
+          "corr": 0.651,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": "[en] That is a good idea"
+        },
+        {
+          "t": 0.68,
+          "corr": 0.522,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": false,
+          "context": "[en] That is a good idea"
+        },
+        {
+          "t": 1.17,
+          "corr": 0.529,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] That is a good idea"
+        },
+        {
+          "t": 38.78,
+          "corr": 0.481,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": ""
+        },
+        {
+          "t": 40.81,
+          "corr": 0.508,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": ""
+        }
+      ]
+    },
+    "wqAgBL7ODok": {
+      "title": "주스 가게 간 고든램지",
+      "channel": "해외쇼쇼",
+      "duration_sec": 41.42,
+      "shot_count": 41,
+      "median_shot_sec": 0.9,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        0.6,
+        1.7,
+        2.1,
+        3.1,
+        4.3,
+        5.4,
+        5.9,
+        6.9,
+        7.5,
+        8.2,
+        9.3,
+        11.3,
+        12.2,
+        14.0,
+        15.6,
+        16.1,
+        16.7,
+        17.4,
+        17.8,
+        18.4,
+        19.7,
+        20.5,
+        21.0,
+        21.7,
+        22.6,
+        23.4,
+        24.5,
+        25.8,
+        27.0,
+        27.6,
+        28.5,
+        29.3,
+        30.0,
+        31.2,
+        32.5,
+        33.3,
+        34.9,
+        37.7,
+        39.3,
+        40.5
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 0.5,
+          "frames": 6,
+          "box_1080p": [
+            0,
+            464,
+            956,
+            412
+          ]
+        },
+        {
+          "t_start": 9.3,
+          "t_end": 11.2,
+          "frames": 20,
+          "box_1080p": [
+            0,
+            528,
+            292,
+            464
+          ]
+        },
+        {
+          "t_start": 17.6,
+          "t_end": 18.3,
+          "frames": 8,
+          "box_1080p": [
+            508,
+            468,
+            528,
+            228
+          ]
+        },
+        {
+          "t_start": 20.2,
+          "t_end": 20.4,
+          "frames": 3,
+          "box_1080p": [
+            560,
+            556,
+            380,
+            776
+          ]
+        },
+        {
+          "t_start": 24.9,
+          "t_end": 29.2,
+          "frames": 42,
+          "box_1080p": [
+            104,
+            636,
+            276,
+            292
+          ]
+        },
+        {
+          "t_start": 31.2,
+          "t_end": 32.4,
+          "frames": 13,
+          "box_1080p": [
+            0,
+            448,
+            620,
+            380
+          ]
+        },
+        {
+          "t_start": 33.3,
+          "t_end": 34.8,
+          "frames": 16,
+          "box_1080p": [
+            0,
+            448,
+            752,
+            412
+          ]
+        },
+        {
+          "t_start": 37.7,
+          "t_end": 39.2,
+          "frames": 16,
+          "box_1080p": [
+            0,
+            544,
+            468,
+            516
+          ]
+        }
+      ],
+      "ko_sec": 13.9,
+      "en_sec": 25.1,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 2.2,
+          "lang": "ko",
+          "text": "고등냄지가 임직하게 방문한 순간인데"
+        },
+        {
+          "a": 3.2,
+          "b": 5.44,
+          "lang": "en",
+          "text": "10AM, 단어 너무 높은"
+        },
+        {
+          "a": 5.44,
+          "b": 7.04,
+          "lang": "ko",
+          "text": "오픈 시간부터 짐어 데려올 거"
+        },
+        {
+          "a": 8.28,
+          "b": 9.42,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 9.42,
+          "b": 11.36,
+          "lang": "en",
+          "text": "주스 대신 뭐지?"
+        },
+        {
+          "a": 11.36,
+          "b": 12.4,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 12.4,
+          "b": 13.4,
+          "lang": "en",
+          "text": "주스 대신 뭐지?"
+        },
+        {
+          "a": 13.4,
+          "b": 14.4,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 14.4,
+          "b": 15.4,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 15.4,
+          "b": 16.4,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 16.4,
+          "b": 17.4,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 17.4,
+          "b": 18.4,
+          "lang": "ko",
+          "text": "뭐지?"
+        },
+        {
+          "a": 18.4,
+          "b": 19.4,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 19.4,
+          "b": 20.4,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 20.4,
+          "b": 21.4,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 21.4,
+          "b": 22.4,
+          "lang": "ko",
+          "text": "뭐지?"
+        },
+        {
+          "a": 22.4,
+          "b": 23.4,
+          "lang": "en",
+          "text": "뭐지?"
+        },
+        {
+          "a": 23.4,
+          "b": 24.4,
+          "lang": "ko",
+          "text": "뭐지?"
+        },
+        {
+          "a": 24.4,
+          "b": 25.4,
+          "lang": "ko",
+          "text": "뭐지?"
+        },
+        {
+          "a": 25.4,
+          "b": 26.4,
+          "lang": "ko",
+          "text": "뭐지?"
+        },
+        {
+          "a": 26.4,
+          "b": 27.4,
+          "lang": "ko",
+          "text": "뭐지?"
+        },
+        {
+          "a": 27.4,
+          "b": 28.4,
+          "lang": "ko",
+          "text": "뭐지?"
+        },
+        {
+          "a": 28.4,
+          "b": 29.4,
+          "lang": "ko",
+          "text": "뭐지?"
+        },
+        {
+          "a": 29.4,
+          "b": 29.9,
+          "lang": "ko",
+          "text": "뭐지?"
+        },
+        {
+          "a": 29.9,
+          "b": 30.7,
+          "lang": "ko",
+          "text": "요리스코스 모비"
+        },
+        {
+          "a": 30.86,
+          "b": 31.26,
+          "lang": "en",
+          "text": "에스유스"
+        },
+        {
+          "a": 31.26,
+          "b": 32.62,
+          "lang": "en",
+          "text": "근데 that looks like he's been blended"
+        },
+        {
+          "a": 32.62,
+          "b": 33.46,
+          "lang": "ko",
+          "text": "네 blend it"
+        },
+        {
+          "a": 33.46,
+          "b": 34.94,
+          "lang": "en",
+          "text": "right so you don't blend juicy"
+        },
+        {
+          "a": 34.94,
+          "b": 37.74,
+          "lang": "en",
+          "text": "The blender the juicer is kind of like broken"
+        },
+        {
+          "a": 37.74,
+          "b": 39.54,
+          "lang": "en",
+          "text": "It's called the juicy boss"
+        },
+        {
+          "a": 39.54,
+          "b": 41.44,
+          "lang": "en",
+          "text": "yes alright the call is smooth"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.01,
+          "corr": 0.663,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": "[ko] 고등냄지가 임직하게 방문한 순간인데"
+        },
+        {
+          "t": 6.41,
+          "corr": 0.505,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": false,
+          "context": "[ko] 오픈 시간부터 짐어 데려올 거"
+        },
+        {
+          "t": 27.35,
+          "corr": 0.554,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[ko] 뭐지?"
+        },
+        {
+          "t": 35.94,
+          "corr": 0.585,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] The blender the juicer is kind of li"
+        },
+        {
+          "t": 40.48,
+          "corr": 0.532,
+          "cat": "caption",
+          "name": "267_캡션 사운드 타탁.mp3",
+          "near_cut": true,
+          "context": "[en] yes alright the call is smooth"
+        }
+      ]
+    },
+    "mVzrvBpMu3E": {
+      "title": "엄청 기발한 수건?!",
+      "channel": "해외쇼쇼",
+      "duration_sec": 60.51,
+      "shot_count": 50,
+      "median_shot_sec": 1.05,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        0.7,
+        1.7,
+        2.8,
+        3.6,
+        5.1,
+        5.9,
+        6.6,
+        7.0,
+        7.4,
+        8.2,
+        9.2,
+        9.9,
+        11.0,
+        12.5,
+        14.7,
+        17.1,
+        18.6,
+        20.5,
+        21.4,
+        22.0,
+        23.9,
+        25.0,
+        27.8,
+        28.9,
+        29.8,
+        30.8,
+        31.5,
+        32.4,
+        33.0,
+        33.7,
+        34.8,
+        36.4,
+        37.5,
+        38.5,
+        39.9,
+        41.0,
+        42.6,
+        44.2,
+        46.5,
+        47.0,
+        47.8,
+        48.6,
+        49.6,
+        51.5,
+        52.6,
+        53.3,
+        54.5,
+        57.0,
+        57.9
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 0.6,
+          "frames": 7,
+          "box_1080p": [
+            328,
+            560,
+            420,
+            264
+          ]
+        },
+        {
+          "t_start": 32.4,
+          "t_end": 32.6,
+          "frames": 3,
+          "box_1080p": [
+            56,
+            624,
+            84,
+            224
+          ]
+        }
+      ],
+      "ko_sec": 29.3,
+      "en_sec": 31.1,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 2.76,
+          "lang": "ko",
+          "text": "와! 난생 처음 보는 제 몸을 가지고 온 여자"
+        },
+        {
+          "a": 2.76,
+          "b": 5.14,
+          "lang": "en",
+          "text": "I'm in the business to keep him high and dry"
+        },
+        {
+          "a": 5.14,
+          "b": 5.86,
+          "lang": "en",
+          "text": "That's right?"
+        },
+        {
+          "a": 5.86,
+          "b": 6.6,
+          "lang": "en",
+          "text": "I'm sweat"
+        },
+        {
+          "a": 6.6,
+          "b": 8.24,
+          "lang": "ko",
+          "text": "이건 목에 걸었는 타월로"
+        },
+        {
+          "a": 8.24,
+          "b": 11.08,
+          "lang": "ko",
+          "text": "땀이 차는 부위를 건조하게 말려주는 제품이었는데"
+        },
+        {
+          "a": 11.08,
+          "b": 12.52,
+          "lang": "en",
+          "text": "They walk around outside like that?"
+        },
+        {
+          "a": 12.52,
+          "b": 14.98,
+          "lang": "en",
+          "text": "I came up with it just for getting out of the shower"
+        },
+        {
+          "a": 14.98,
+          "b": 16.58,
+          "lang": "en",
+          "text": "and I just figured for around the house"
+        },
+        {
+          "a": 16.58,
+          "b": 17.5,
+          "lang": "en",
+          "text": "This is all for"
+        },
+        {
+          "a": 17.5,
+          "b": 19.66,
+          "lang": "ko",
+          "text": "가격은 7만 원 정도로 저렴했고"
+        },
+        {
+          "a": 19.66,
+          "b": 21.42,
+          "lang": "en",
+          "text": "12 months I've sold 1.1밀"
+        },
+        {
+          "a": 21.42,
+          "b": 22.4,
+          "lang": "en",
+          "text": "와! 와!"
+        },
+        {
+          "a": 22.4,
+          "b": 25.02,
+          "lang": "ko",
+          "text": "바이러울 되면서 엄청난 판매량이 터졌다고"
+        },
+        {
+          "a": 25.02,
+          "b": 26.56,
+          "lang": "en",
+          "text": "It's like your girls are on vacation"
+        },
+        {
+          "a": 26.56,
+          "b": 28.12,
+          "lang": "en",
+          "text": "lounging and hammock somewhere"
+        },
+        {
+          "a": 28.12,
+          "b": 30.12,
+          "lang": "en",
+          "text": "I love a good vacation"
+        },
+        {
+          "a": 30.12,
+          "b": 31.62,
+          "lang": "en",
+          "text": "What are your sales year to date?"
+        },
+        {
+          "a": 31.62,
+          "b": 32.92,
+          "lang": "en",
+          "text": "188,000"
+        },
+        {
+          "a": 32.92,
+          "b": 34.72,
+          "lang": "ko",
+          "text": "그러나 문제는 바이러리 멈추자"
+        },
+        {
+          "a": 34.72,
+          "b": 36.42,
+          "lang": "ko",
+          "text": "판매량도 급감했다는 것인데"
+        },
+        {
+          "a": 36.42,
+          "b": 37.52,
+          "lang": "en",
+          "text": "It's not selling air"
+        },
+        {
+          "a": 37.52,
+          "b": 38.52,
+          "lang": "en",
+          "text": "When I went viral"
+        },
+        {
+          "a": 38.52,
+          "b": 40.02,
+          "lang": "en",
+          "text": "That inventory I'm sitting on"
+        },
+        {
+          "a": 40.02,
+          "b": 41.02,
+          "lang": "en",
+          "text": "would be completely"
+        },
+        {
+          "a": 41.02,
+          "b": 42.52,
+          "lang": "en",
+          "text": "You can't predict viral"
+        },
+        {
+          "a": 42.52,
+          "b": 44.22,
+          "lang": "en",
+          "text": "Well that's why I'm here, honestly"
+        },
+        {
+          "a": 44.22,
+          "b": 46.42,
+          "lang": "ko",
+          "text": "바이롤만 터지면 다 해결된다는 대답"
+        },
+        {
+          "a": 46.42,
+          "b": 48.62,
+          "lang": "ko",
+          "text": "결국 투자자들은 모두 아웃을 외치는데"
+        },
+        {
+          "a": 48.62,
+          "b": 49.52,
+          "lang": "en",
+          "text": "I know, but I'm out"
+        },
+        {
+          "a": 49.52,
+          "b": 52.22,
+          "lang": "ko",
+          "text": "한 명의 투자자만이 3억의 40% 지군으로"
+        },
+        {
+          "a": 52.22,
+          "b": 53.22,
+          "lang": "ko",
+          "text": "뒤를 성자시켰고"
+        },
+        {
+          "a": 53.22,
+          "b": 54.72,
+          "lang": "en",
+          "text": "Make you a millionaire"
+        },
+        {
+          "a": 54.72,
+          "b": 56.62,
+          "lang": "ko",
+          "text": "그렇게 좋은 파트너가 될 뻔 했지만"
+        },
+        {
+          "a": 56.62,
+          "b": 59.12,
+          "lang": "ko",
+          "text": "진짜 바이러의 성공에 판매량이 폭등했고"
+        },
+        {
+          "a": 59.12,
+          "b": 60.42,
+          "lang": "ko",
+          "text": "최종 거래를 거절했다고"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.0,
+          "corr": 0.608,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 와! 난생 처음 보는 제 몸을 가지고 온 여자"
+        },
+        {
+          "t": 2.81,
+          "corr": 0.491,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 와! 난생 처음 보는 제 몸을 가지고 온 여자"
+        },
+        {
+          "t": 41.08,
+          "corr": 0.536,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[en] would be completely"
+        },
+        {
+          "t": 43.73,
+          "corr": 0.514,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] Well that's why I'm here, honestly"
+        },
+        {
+          "t": 50.87,
+          "corr": 0.48,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": false,
+          "context": "[ko] 한 명의 투자자만이 3억의 40% 지군으로"
+        },
+        {
+          "t": 52.91,
+          "corr": 0.483,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[ko] 뒤를 성자시켰고"
+        }
+      ]
+    },
+    "r0LYu7MgCc8": {
+      "title": "3미터 크기의 vr 기계",
+      "channel": "해외쇼쇼",
+      "duration_sec": 37.78,
+      "shot_count": 27,
+      "median_shot_sec": 1.0,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        2.6,
+        3.3,
+        4.7,
+        5.2,
+        5.7,
+        6.2,
+        7.4,
+        8.0,
+        9.0,
+        9.6,
+        10.0,
+        10.4,
+        13.1,
+        14.2,
+        15.5,
+        17.3,
+        21.4,
+        27.2,
+        27.9,
+        28.9,
+        31.2,
+        32.4,
+        33.4,
+        34.6,
+        35.2,
+        36.9
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 2.5,
+          "frames": 26,
+          "box_1080p": [
+            104,
+            568,
+            380,
+            256
+          ]
+        }
+      ],
+      "ko_sec": 15.8,
+      "en_sec": 15.7,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 3.28,
+          "lang": "ko",
+          "text": "3m짜리 거대한 공을 들고 나온 남자"
+        },
+        {
+          "a": 3.28,
+          "b": 5.88,
+          "lang": "ko",
+          "text": "사람이 직접 안에 들어가서 공과 같이 돌면서"
+        },
+        {
+          "a": 5.88,
+          "b": 8.04,
+          "lang": "ko",
+          "text": "VR 세계를 돌아다닐 수 있는 기계라는 데"
+        },
+        {
+          "a": 14.2,
+          "b": 17.48,
+          "lang": "ko",
+          "text": "이렇게 크게 만든 이유는 군사들의 전소로 훈련을 돕기 위해서라고"
+        },
+        {
+          "a": 17.48,
+          "b": 19.6,
+          "lang": "en",
+          "text": "How much would it be for people's homes?"
+        },
+        {
+          "a": 19.6,
+          "b": 20.8,
+          "lang": "en",
+          "text": "Is there an application?"
+        },
+        {
+          "a": 20.8,
+          "b": 22.32,
+          "lang": "en",
+          "text": "In the future, the price could rock"
+        },
+        {
+          "a": 22.32,
+          "b": 24.04,
+          "lang": "en",
+          "text": "maybe even to 10,000"
+        },
+        {
+          "a": 24.04,
+          "b": 27.92,
+          "lang": "en",
+          "text": "but right now the price is $35,000."
+        },
+        {
+          "a": 27.92,
+          "b": 28.88,
+          "lang": "en",
+          "text": "You are one crazy."
+        },
+        {
+          "a": 28.88,
+          "b": 31.16,
+          "lang": "ko",
+          "text": "가정용으로 보급하기엔 너무 크고 비싼 기계"
+        },
+        {
+          "a": 31.16,
+          "b": 33.4,
+          "lang": "ko",
+          "text": "모든 투자자들이 거절 의사를 밝혔는데"
+        },
+        {
+          "a": 33.4,
+          "b": 35.28,
+          "lang": "en",
+          "text": "I love this much."
+        },
+        {
+          "a": 35.28,
+          "b": 36.36,
+          "lang": "en",
+          "text": "Too many questions."
+        },
+        {
+          "a": 36.36,
+          "b": 37.68,
+          "lang": "en",
+          "text": "I know."
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.0,
+          "corr": 0.668,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 3m짜리 거대한 공을 들고 나온 남자"
+        },
+        {
+          "t": 2.66,
+          "corr": 0.524,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[ko] 3m짜리 거대한 공을 들고 나온 남자"
+        },
+        {
+          "t": 9.59,
+          "corr": 0.503,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": ""
+        },
+        {
+          "t": 10.55,
+          "corr": 0.55,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": ""
+        }
+      ]
+    },
+    "CDvW0OUR22I": {
+      "title": "모두가 사용할 수 있는 반창고",
+      "channel": "해외쇼쇼",
+      "duration_sec": 46.39,
+      "shot_count": 40,
+      "median_shot_sec": 1.0,
+      "min_shot_sec": 0.5,
+      "cuts": [
+        1.2,
+        2.6,
+        3.3,
+        3.9,
+        4.9,
+        5.9,
+        7.0,
+        7.8,
+        9.7,
+        10.9,
+        11.4,
+        12.2,
+        13.7,
+        15.3,
+        16.2,
+        17.2,
+        18.3,
+        19.6,
+        20.5,
+        21.2,
+        22.7,
+        24.1,
+        25.0,
+        27.6,
+        28.5,
+        29.6,
+        30.9,
+        32.4,
+        34.6,
+        38.3,
+        39.6,
+        40.5,
+        41.1,
+        41.6,
+        42.4,
+        43.0,
+        43.7,
+        44.9,
+        45.6
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 0.9,
+          "frames": 8,
+          "box_1080p": [
+            752,
+            1120,
+            180,
+            96
+          ]
+        },
+        {
+          "t_start": 16.5,
+          "t_end": 17.1,
+          "frames": 7,
+          "box_1080p": [
+            712,
+            448,
+            212,
+            292
+          ]
+        },
+        {
+          "t_start": 17.8,
+          "t_end": 18.0,
+          "frames": 3,
+          "box_1080p": [
+            800,
+            448,
+            144,
+            72
+          ]
+        },
+        {
+          "t_start": 25.1,
+          "t_end": 25.5,
+          "frames": 3,
+          "box_1080p": [
+            292,
+            572,
+            400,
+            252
+          ]
+        },
+        {
+          "t_start": 26.2,
+          "t_end": 27.0,
+          "frames": 5,
+          "box_1080p": [
+            272,
+            616,
+            404,
+            208
+          ]
+        },
+        {
+          "t_start": 29.6,
+          "t_end": 30.8,
+          "frames": 13,
+          "box_1080p": [
+            44,
+            472,
+            104,
+            116
+          ]
+        }
+      ],
+      "ko_sec": 23.7,
+      "en_sec": 20.6,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 1.16,
+          "lang": "ko",
+          "text": "간창꼬로 붙였는데"
+        },
+        {
+          "a": 1.16,
+          "b": 3.92,
+          "lang": "en",
+          "text": "but as you can see it doesn't match my flesh at all"
+        },
+        {
+          "a": 3.92,
+          "b": 5.84,
+          "lang": "ko",
+          "text": "피부색과 맞지 않아 너무 튀는 상황"
+        },
+        {
+          "a": 5.84,
+          "b": 7.04,
+          "lang": "en",
+          "text": "so that's why we created"
+        },
+        {
+          "a": 7.04,
+          "b": 7.88,
+          "lang": "en",
+          "text": "brown it is"
+        },
+        {
+          "a": 7.88,
+          "b": 11.64,
+          "lang": "ko",
+          "text": "그래서 모든 인종이 쓸 수 있는 다양한 색깔에 밴드를 만들었다고"
+        },
+        {
+          "a": 11.64,
+          "b": 16.24,
+          "lang": "en",
+          "text": "we're on a mission to heal, uplift, and inspire the community around us"
+        },
+        {
+          "a": 16.24,
+          "b": 19.6,
+          "lang": "ko",
+          "text": "대다가 6일 만에 이어 원어치가 팔리며 모두 품절이 됐다는데"
+        },
+        {
+          "a": 19.6,
+          "b": 21.4,
+          "lang": "en",
+          "text": "in 6 days"
+        },
+        {
+          "a": 21.4,
+          "b": 22.68,
+          "lang": "en",
+          "text": "and that's when we sold out"
+        },
+        {
+          "a": 22.68,
+          "b": 25.12,
+          "lang": "ko",
+          "text": "이어 돈 좀 되겠다고 생각한 투자자들이 나섰는데"
+        },
+        {
+          "a": 25.12,
+          "b": 27.68,
+          "lang": "ko",
+          "text": "1억 투자의 지분 15%를 원하는 사람과"
+        },
+        {
+          "a": 27.68,
+          "b": 29.68,
+          "lang": "ko",
+          "text": "3명이서 1억 5천을 투자하고"
+        },
+        {
+          "a": 29.68,
+          "b": 32.52,
+          "lang": "ko",
+          "text": "지분 25%를 나눠갔겠다는 조건이 나온 상황"
+        },
+        {
+          "a": 32.52,
+          "b": 34.72,
+          "lang": "en",
+          "text": "Does that make my heart look a lot more attractive?"
+        },
+        {
+          "a": 34.72,
+          "b": 36.88,
+          "lang": "ko",
+          "text": "당연히 더 적은 지분을 달라는 조건"
+        },
+        {
+          "a": 36.88,
+          "b": 38.36,
+          "lang": "ko",
+          "text": "거래를 할 것이라 생각했지만"
+        },
+        {
+          "a": 38.36,
+          "b": 39.6,
+          "lang": "en",
+          "text": "I'll tell you exactly what I would do"
+        },
+        {
+          "a": 39.6,
+          "b": 40.72,
+          "lang": "en",
+          "text": "Then I'd go to our players"
+        },
+        {
+          "a": 40.72,
+          "b": 43.0,
+          "lang": "en",
+          "text": "and I'd say hey guys, these are the band-aids we're using"
+        },
+        {
+          "a": 44.4,
+          "b": 45.64,
+          "lang": "en",
+          "text": "You got a deal? Let's go back!"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.01,
+          "corr": 0.632,
+          "cat": "cash",
+          "name": "cash_register_1.wav",
+          "near_cut": true,
+          "context": "[ko] 간창꼬로 붙였는데"
+        },
+        {
+          "t": 3.15,
+          "corr": 0.487,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[en] but as you can see it doesn't match "
+        },
+        {
+          "t": 42.06,
+          "corr": 0.521,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": false,
+          "context": "[en] and I'd say hey guys, these are the "
+        }
+      ]
+    },
+    "0HbV-PW3ivw": {
+      "title": "이것만 있으면 그림 잘 그린다고?!",
+      "channel": "해외쇼쇼",
+      "duration_sec": 54.85,
+      "shot_count": 45,
+      "median_shot_sec": 1.0,
+      "min_shot_sec": 0.4,
+      "cuts": [
+        0.6,
+        1.2,
+        2.3,
+        2.7,
+        3.2,
+        3.7,
+        4.2,
+        4.7,
+        5.2,
+        6.3,
+        8.7,
+        9.4,
+        12.8,
+        14.5,
+        16.6,
+        17.5,
+        18.9,
+        20.4,
+        21.6,
+        23.3,
+        24.2,
+        25.2,
+        26.2,
+        27.6,
+        28.7,
+        31.8,
+        32.6,
+        34.6,
+        36.5,
+        38.1,
+        38.6,
+        39.2,
+        39.7,
+        40.2,
+        41.8,
+        43.3,
+        43.9,
+        44.9,
+        47.3,
+        48.4,
+        49.9,
+        50.7,
+        51.4,
+        53.9
+      ],
+      "red_circles": [
+        {
+          "t_start": 0.0,
+          "t_end": 0.5,
+          "frames": 6,
+          "box_1080p": [
+            232,
+            476,
+            424,
+            348
+          ]
+        },
+        {
+          "t_start": 21.6,
+          "t_end": 22.0,
+          "frames": 4,
+          "box_1080p": [
+            568,
+            1124,
+            100,
+            112
+          ]
+        },
+        {
+          "t_start": 37.0,
+          "t_end": 37.3,
+          "frames": 4,
+          "box_1080p": [
+            24,
+            448,
+            108,
+            152
+          ]
+        },
+        {
+          "t_start": 52.3,
+          "t_end": 53.7,
+          "frames": 14,
+          "box_1080p": [
+            40,
+            448,
+            116,
+            160
+          ]
+        }
+      ],
+      "ko_sec": 23.0,
+      "en_sec": 30.7,
+      "segments": [
+        {
+          "a": 0.0,
+          "b": 2.4,
+          "lang": "en",
+          "text": "10,000,000,000!"
+        },
+        {
+          "a": 2.4,
+          "b": 5.16,
+          "lang": "ko",
+          "text": "출시 3년 만에 144억 원을 벌었다는 이 제품."
+        },
+        {
+          "a": 5.16,
+          "b": 8.68,
+          "lang": "ko",
+          "text": "이 거울과 렌즈로 구성된 비융 부터를 보면"
+        },
+        {
+          "a": 8.68,
+          "b": 11.52,
+          "lang": "ko",
+          "text": "실물의 크기, 비율, 원근감이 그대로 유지된 채"
+        },
+        {
+          "a": 11.52,
+          "b": 12.76,
+          "lang": "ko",
+          "text": "종이 위에 겹쳐 보이게 되고"
+        },
+        {
+          "a": 12.76,
+          "b": 16.68,
+          "lang": "ko",
+          "text": "그 상을 따라 그리며 눈으로 본 것을 손으로 옮기는 감각을 연습하게 되는 거라고."
+        },
+        {
+          "a": 16.68,
+          "b": 18.96,
+          "lang": "en",
+          "text": "There's been used by artists for centuries."
+        },
+        {
+          "a": 18.96,
+          "b": 20.48,
+          "lang": "en",
+          "text": "They are interesting."
+        },
+        {
+          "a": 20.48,
+          "b": 21.6,
+          "lang": "ko",
+          "text": "그냥 따라 그리기보다"
+        },
+        {
+          "a": 21.6,
+          "b": 23.28,
+          "lang": "ko",
+          "text": "그림 실력 향상에 옥 적이 있고"
+        },
+        {
+          "a": 23.28,
+          "b": 25.24,
+          "lang": "ko",
+          "text": "빈 프로젝터처럼 손 그림자가 지거나"
+        },
+        {
+          "a": 25.24,
+          "b": 27.64,
+          "lang": "ko",
+          "text": "상위 외국 되거나 전기가 필요하지 않았는데"
+        },
+        {
+          "a": 27.64,
+          "b": 28.76,
+          "lang": "en",
+          "text": "What do you sell it for?"
+        },
+        {
+          "a": 28.76,
+          "b": 29.88,
+          "lang": "en",
+          "text": "πα스 ahead"
+        },
+        {
+          "a": 29.88,
+          "b": 31.92,
+          "lang": "en",
+          "text": "Mikro"
+        },
+        {
+          "a": 32.92,
+          "b": 34.0,
+          "lang": "en",
+          "text": "Give us a discount"
+        },
+        {
+          "a": 34.0,
+          "b": 35.72,
+          "lang": "en",
+          "text": "wont you have to make whatever's yours"
+        },
+        {
+          "a": 35.72,
+          "b": 42.1,
+          "lang": "en",
+          "text": "home"
+        },
+        {
+          "a": 42.1,
+          "b": 43.7,
+          "lang": "ko",
+          "text": "80%나 되는 위친상"
+        },
+        {
+          "a": 43.7,
+          "b": 48.54,
+          "lang": "en",
+          "text": "Pay us a discount"
+        },
+        {
+          "a": 48.54,
+          "b": 54.78,
+          "lang": "en",
+          "text": "87%"
+        }
+      ],
+      "sfx_hits": [
+        {
+          "t": 0.0,
+          "corr": 0.635,
+          "cat": "pop",
+          "name": "002_뿅.mp3",
+          "near_cut": true,
+          "context": "[en] 10,000,000,000!"
+        }
+      ]
+    }
+  }
+}

@@ -174,6 +174,7 @@ def merge_short(subs, min_dur=0.8, line_chars=14):
             sep = [("\n", "white")] if n > line_chars else [(" ", "white")]
             krw = " · ".join(x for x in (first.get("krw"), second.get("krw")) if x)
             merged = {**first, "krw": krw, "note": second.get("note") or first.get("note", ""), "b": second["b"], "spans": first["spans"] + sep + second["spans"],
+                      "scale": max(float(first.get("scale", 1.0)), float(second.get("scale", 1.0))),
                       "text": first.get("text", "") + (" | " if n > line_chars else " ") + second.get("text", "")}
             lo = min(j, k)
             out[lo:lo + 2] = [merged]
@@ -202,23 +203,26 @@ def ref_sub_events(subs, cfg, pos, an=5):
         # 들어올 때 가로 모션 블러 1프레임 → 선명, 나갈 때도 가로 블러 1프레임 (모든 자막 같게)
         # 2026-11-11 (v2) 사용자가 CapCut 에서 직접 고른 것: [인 > 확대] 0.07초(2프레임), 아웃 없음 → 모든 자막 동일
         # 2026-11-11 (v3) 사용자가 CapCut coconut_cocotaps_v16 에서 글씨체·크기·그림자·글로우·[인 > 블러 입장]까지 맞춤
+        sc = float(s.get("scale", 1.0))
         if cfg["subtitle"].get("sub_style") == "capcut_jua":
-            evs += jua_events(sp, a, b, cfg, pos=pos, an=an)
+            evs += jua_events(sp, a, b, cfg, pos=pos, an=an, scale=sc)
         else:
-            evs += neon_events(sp, a, b, zoom_cfg, pos=pos, an=an)
+            evs += neon_events(sp, a, b, zoom_cfg, pos=pos, an=an, scale=sc)
     return evs
 
 
-def jua_events(spans, t0, t1, cfg, pos, an=5, layer_base=3):
+def jua_events(spans, t0, t1, cfg, pos, an=5, layer_base=3, scale=1.0):
     """사용자가 CapCut(coconut_cocotaps_v16)에서 직접 맞춘 자막을 렌더러로 옮김 (2026-11-11).
-    - 배달의민족주아체 13 (CapCut 13 x 5.2px = em 67.6px → libass 74)
+    - 배달의민족주아체 13 (CapCut 13 x 5.2px = em 67.6px → libass 74), 강조(big/scale) 자막은 크기 확대 + 탄력 팝 등장
     - 외곽선 없음, 오른쪽 아래로 진한 그림자(투명도 0.9, 거리 5, 흐림 0.45)
     - 글자색 DeepGlow(번짐 0.31, 세기 0.93) → 같은 색 부드러운 빛
     - 등장 [인 > 블러 입장] 0.13초: 흐릿하고 투명 → 선명
     - 색: 강조 규칙 그대로, 노랑·초록만 사용자 값(sub_colors)"""
     S = cfg["subtitle"]
     over = S.get("sub_colors", {})
-    size, fn, ms = S.get("sub_ass_size", 74), S.get("sub_font", "BM JUA"), S.get("sub_anim_ms", 133)
+    base_size, fn, ms = S.get("sub_ass_size", 74), S.get("sub_font", "BM JUA"), S.get("sub_anim_ms", 133)
+    size = round(base_size * scale)
+    pop_tag = rf"\fscx86\fscy86\t(0,{ms},0.55,\fscx100\fscy100)" if scale > 1.02 else ""
     x, y = pos
 
     def col(c):
@@ -231,11 +235,12 @@ def jua_events(spans, t0, t1, cfg, pos, an=5, layer_base=3):
             fs = round(size * SMALL) if c.endswith("_s") else size
             out.append("{" + colour(c) + rf"\fs{fs}\alpha&HFF&\t(0,{ms},\alpha{alpha})}}")
             out.append(txt.replace("\n", r"\N"))
-        return (rf"\an{an}\fn{fn}\shad0\bord{bord}\blur{blur_in}\t(0,{ms},\blur{blur_to})}}" + "".join(out))
+        return (rf"\an{an}\fn{fn}\shad0\bord{bord}\blur{blur_in}\t(0,{ms},\blur{blur_to}){pop_tag}}}" + "".join(out))
 
-    d = 4  # 그림자 거리 (px, 오른쪽 아래 45도)
+    d = max(4, round(4 * scale))  # 그림자 거리 (px, 오른쪽 아래 45도)
+    glow_bord = max(5, round(5 * scale))
     shadow = rf"{{\pos({x + d},{y + d})" + body("&H1A&", lambda c: r"\1c&H000000&\3c&H000000&", 18, 3, 0)
-    glow = rf"{{\pos({x},{y})" + body("&H8C&", lambda c: rf"\1c{col(c)}\3c{col(c)}", 22, 9, 5)
+    glow = rf"{{\pos({x},{y})" + body("&H82&" if scale > 1.02 else "&H8C&", lambda c: rf"\1c{col(c)}\3c{col(c)}", 22, 9, glow_bord)
     text = rf"{{\pos({x},{y})" + body("&H00&", lambda c: rf"\1c{col(c)}\3c{col(c)}", 14, 0.3, 0)
     return [(layer_base, t0, t1, shadow), (layer_base + 1, t0, t1, glow), (layer_base + 2, t0, t1, text)]
 
@@ -251,7 +256,7 @@ def _blur_frame(spans, t0, t1, pos, layer, size, an=5):
     return evs
 
 
-def neon_events(spans, t0, t1, cfg, layer_base=3, pos=None, an=5):
+def neon_events(spans, t0, t1, cfg, layer_base=3, pos=None, an=5, scale=1.0):
     """한 자막 덩어리 → [(layer, start, end, text)].
 
     참고 영상 프레임 분석 결과를 그대로 옮김:
@@ -260,6 +265,7 @@ def neon_events(spans, t0, t1, cfg, layer_base=3, pos=None, an=5):
     - 빛: 크게 번지지 않는 '글자색 네온' + 가독성용 '어두운 그림자'. 등장 후엔 고정
     """
     S = cfg["subtitle"]
+    nsize = round(S["narr_size"] * scale)
     head = (rf"\an{an}\pos({pos[0]},{pos[1]})" if pos else "")
     # 캡컷 [애니메이션 > 인 > 확대]: 0% → 100% 로 커지며 등장 (zoom_in_ms, 끝으로 갈수록 감속)
     zi = S["zoom_in_ms"]
@@ -269,7 +275,7 @@ def neon_events(spans, t0, t1, cfg, layer_base=3, pos=None, an=5):
         out = []
         for txt, col in spans:
             a_to = alpha_to(col) if callable(alpha_to) else alpha_to
-            out.append("{" + color_tag(col) + _fs(col, S["narr_size"]) + rf"\alpha&HFF&\t(0,{max(1, zi // 2)},\alpha{a_to})}}")
+            out.append("{" + color_tag(col) + _fs(col, nsize) + rf"\alpha&HFF&\t(0,{max(1, zi // 2)},\alpha{a_to})}}")
             out.append(txt.replace("\n", r"\N"))
         return "".join(out)
 

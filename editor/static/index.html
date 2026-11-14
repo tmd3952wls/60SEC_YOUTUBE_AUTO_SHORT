@@ -15,6 +15,8 @@
     <symbol id="i-next" viewBox="0 0 24 24"><path d="M6 5v14l10-7zM18 5v14"/></symbol>
     <symbol id="i-save" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5zM8 4v5h7V4M8 20v-6h8v6"/></symbol>
     <symbol id="i-render" viewBox="0 0 24 24"><path d="M4 6h16v12H4zM10 9.5v5l4.5-2.5z"/></symbol>
+    <symbol id="i-capcut" viewBox="0 0 24 24"><path d="M4 7l16 10M4 17L20 7M4 5.5h5v3H4zM4 15.5h5v3H4z"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5v3.5M8.5 21h7"/></symbol>
     <symbol id="i-preview" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
     <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></symbol>
     <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
@@ -23,6 +25,8 @@
     <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 10l6 6 6-6"/></symbol>
     <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
     <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4zM15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2zM19 3v4M17 5h4"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.2l2.7 5.5 6.1.9-4.4 4.3 1 6.1L12 17.1 6.6 20l1-6.1-4.4-4.3 6.1-.9z"/></symbol>
     <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3.5L2.5 20h19zM12 10v4.5M12 17.2v.3"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
     <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
@@ -33,15 +37,104 @@
 <header class="bar">
   <div class="brand">쇼츠 편집기</div>
   <label class="pick"><span class="pick-label">작업</span><select id="sel-job" aria-label="작업"></select></label>
+  <button class="btn small new-job-btn" id="btn-new-job" type="button" title="터미널 없이 유튜브 URL과 제목 힌트만으로 새 쇼츠 작업을 바로 시작합니다"><svg><use href="#i-plus"/></svg>새 작업</button>
   <label class="pick"><span class="pick-label">편집본</span><select id="sel-edl" aria-label="편집본(EDL) 버전"></select></label>
   <label class="pick"><span class="pick-label">영상</span><select id="sel-video" aria-label="미리 볼 영상"></select></label>
   <div class="grow"></div>
   <button class="task" id="task-chip" hidden><span class="spin" aria-hidden="true"></span><span id="task-text"></span></button>
-  <button class="btn" id="btn-preview" title="선택한 박자만 빠르게 렌더링 (저장하지 않은 내용 포함)"><svg><use href="#i-preview"/></svg>이 박자 미리보기</button>
-  <button class="btn" id="btn-save" title="새 버전으로 저장 (Ctrl+S)"><svg><use href="#i-save"/></svg>새 버전 저장<span class="dirty-count" id="dirty-count" hidden></span></button>
+  <button class="btn" id="btn-voice-flow" title="CapCut AI 목소리 '활기찬 바리톤(1.1배속)' 내레이션 준비 상태 및 가져오기"><svg><use href="#i-mic"/></svg><span class="lbl-long" id="voice-btn-label">바리톤 음성</span><span class="dirty-count" id="voice-miss-count" hidden></span></button>
+  <button class="btn" id="btn-preview" title="선택한 박자만 빠르게 렌더링 (저장하지 않은 내용 포함)"><svg><use href="#i-preview"/></svg><span class="lbl-long">이 박자 미리보기</span></button>
+  <button class="btn" id="btn-save" title="새 버전으로 저장 (Ctrl+S)"><svg><use href="#i-save"/></svg><span class="lbl-long">새 버전 저장</span><span class="dirty-count" id="dirty-count" hidden></span></button>
   <button class="btn primary" id="btn-render"><svg><use href="#i-render"/></svg>전체 렌더링</button>
+  <button class="btn capcut-btn" id="btn-capcut" title="현재 영상의 효과음 리믹스 트랙·활기찬 바리톤 음성·배달의민족주아체 자막을 편집 가능한 CapCut 프로젝트로 바로 생성합니다"><svg><use href="#i-capcut"/></svg>CapCut 내보내기</button>
+  <button class="btn small ghost" id="btn-capcut-reg" hidden title="CapCut 이 켜져 있어 보류된 프로젝트를 CapCut 목록에 등록합니다 (CapCut 종료 후 클릭)">목록 등록</button>
   <button class="btn icon" id="btn-settings" title="설정" aria-label="설정"><svg><use href="#i-gear"/></svg></button>
 </header>
+
+<div class="modal-backdrop" id="newjob-modal" hidden role="dialog" aria-modal="true" aria-labelledby="nj-modal-title">
+  <form class="modal-card" id="newjob-form">
+    <div class="modal-head">
+      <h2 id="nj-modal-title">유튜브 URL로 새 쇼츠 작업 시작</h2>
+      <button type="button" class="btn icon ghost small" id="nj-close" aria-label="닫기"><svg><use href="#i-x"/></svg></button>
+    </div>
+    <p class="modal-sub">터미널을 열 필요 없이 원본 다운로드 → 영어 음성 전사 → 한국어 대본·자막 초안(<code>v1_edl.json</code>) 생성까지 한 번에 진행하고 끝나면 바로 편집 화면을 엽니다.</p>
+
+    <label class="nj-field">
+      <span class="field-label">유튜브 주소 또는 내 PC 영상 경로 <b class="req">*</b></span>
+      <input id="nj-src" class="input" required spellcheck="false" placeholder="https://www.youtube.com/watch?v=... 또는 C:\Videos\clip.mp4">
+    </label>
+
+    <label class="nj-field">
+      <span class="field-label">제목·주제 힌트 (선택 · <code>/</code> 로 나누면 상단 2줄 제목에 바로 적용)</span>
+      <input id="nj-hint" class="input" placeholder="예: 망치 없이 코코넛을 / 빨대로 뚫는다고?!">
+    </label>
+
+    <div class="nj-grid2">
+      <label class="nj-field">
+        <span class="field-label">작업 폴더 이름 (선택)</span>
+        <input id="nj-name" class="input" spellcheck="false" placeholder="비워 두면 힌트·URL에서 자동 생성">
+      </label>
+      <label class="nj-field">
+        <span class="field-label">대본 작성 엔진</span>
+        <select id="nj-mode" class="input">
+          <option value="auto">자동 선택 (설치된 CLI·API 우선, 없으면 0원 초안)</option>
+          <option value="agy-cli">Antigravity CLI (agy -p · 구독 계정 0원)</option>
+          <option value="claude-cli">Claude CLI (claude -p · 구독 계정 0원)</option>
+          <option value="gemini">Gemini API (GEMINI_API_KEY)</option>
+          <option value="claude">Claude API (ANTHROPIC_API_KEY)</option>
+          <option value="openai">OpenAI API (OPENAI_API_KEY)</option>
+          <option value="starter">API 없이 전사본 초안만 바로 열기 (0원 · 직접 편집)</option>
+        </select>
+      </label>
+    </div>
+
+    <details class="nj-more">
+      <summary>원본 구간 자르기 · 추가 맥락 메모 (선택)</summary>
+      <div class="nj-more-body">
+        <div class="nj-grid2">
+          <label class="nj-field">
+            <span class="field-label">시작 시각 (초)</span>
+            <input id="nj-start" class="input" type="number" step="0.5" min="0" placeholder="예: 60 (처음부터면 비움)">
+          </label>
+          <label class="nj-field">
+            <span class="field-label">끝 시각 (초)</span>
+            <input id="nj-end" class="input" type="number" step="0.5" min="0" placeholder="예: 420 (끝까지면 비움)">
+          </label>
+        </div>
+        <label class="nj-field">
+          <span class="field-label">프로그램·상황 메모 (대본 정확도 향상)</span>
+          <input id="nj-context" class="input" placeholder="예: 샤크탱크 시즌11 코코넛 빨대 피치, 마크 큐반 투자 성사">
+        </label>
+      </div>
+    </details>
+
+    <div class="modal-actions">
+      <button type="button" class="btn ghost" id="nj-cancel">취소</button>
+      <button type="submit" class="btn primary" id="btn-nj-start"><svg><use href="#i-spark"/></svg>새 작업 바로 시작</button>
+    </div>
+  </form>
+</div>
+
+<div class="voice-pop" id="voice-pop" hidden role="dialog" aria-label="CapCut 활기찬 바리톤 음성 준비">
+  <div class="voice-pop-head">
+    <span id="voice-pop-title">CapCut 목소리 · 활기찬 바리톤 (1.1배속)</span>
+    <button class="btn icon ghost small" id="voice-pop-close" aria-label="닫기"><svg><use href="#i-x"/></svg></button>
+  </div>
+  <div class="voice-pop-body">
+    <div id="voice-pop-summary" class="voice-summary"></div>
+    <ul id="voice-miss-list" class="voice-miss-list"></ul>
+    <ol class="voice-steps">
+      <li>아래 <b>1단계</b>를 눌러 아직 안 읽힌 새 내레이션 문장만 모은 CapCut 프로젝트를 만듭니다.</li>
+      <li>CapCut을 열어 텍스트 전체 선택 → <b>텍스트 읽기 → 활기찬 바리톤</b> 적용 후 CapCut을 닫습니다.</li>
+      <li>아래 <b>2단계</b>를 누르면 1.1배속 음성이 자동 추출되어 렌더링·미리보기에 바로 쓰입니다.</li>
+    </ol>
+    <label class="check voice-speed-chk"><input type="checkbox" id="chk-voice-speed" checked> CapCut 안에서 배속을 안 바꿨으면 자동으로 <b>1.1배속</b> 맞추기</label>
+    <div class="voice-pop-actions">
+      <button type="button" class="btn small" id="btn-voice-make">1. 새 문장 CapCut 보내기 (make)</button>
+      <button type="button" class="btn small primary" id="btn-voice-harvest">2. 읽힌 바리톤 음성 가져오기 (harvest)</button>
+    </div>
+  </div>
+</div>
 
 <div class="banner" id="draft-banner" hidden>
   <span>저장하지 않은 편집 내용이 남아 있습니다.</span>
@@ -53,9 +146,11 @@
   <aside class="side">
     <div class="tabs" role="tablist">
       <button role="tab" class="tab" aria-selected="true" data-tab="beats">박자</button>
-      <button role="tab" class="tab" aria-selected="false" data-tab="sfx">효과음</button>
-      <button role="tab" class="tab" aria-selected="false" data-tab="broll">실사용 영상</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="cuesheet">AI 효과음<span class="tab-badge" id="cue-badge" hidden></span></button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="sfx">효과음 폴더</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="broll">실사용</button>
     </div>
+
     <section class="pane" data-pane="beats">
       <div class="title-edit">
         <div class="field-label">영상 제목 (위쪽 2줄)</div>
@@ -63,10 +158,59 @@
       </div>
       <ol class="beats" id="beat-list"></ol>
     </section>
+
+    <section class="pane" data-pane="cuesheet" hidden>
+      <div class="cue-panel-top">
+        <div class="cue-preset-box">
+          <div class="cue-preset-head">
+            <span class="field-label">해외쇼쇼 강도·밀도 프리셋</span>
+            <button class="btn small ghost cue-relevel-btn" type="button" id="btn-cue-relevel" hidden title="고정해 둔 효과음 파일과 시각은 그대로 두고 볼륨(dB)만 이 프리셋 기준으로 일괄 맞춤">볼륨만 맞춤</button>
+          </div>
+          <div class="seg-group" id="cue-preset-pills" role="radiogroup" aria-label="효과음 강도·밀도 프리셋">
+            <button type="button" class="seg-btn" role="radio" aria-checked="false" data-sfx-preset="clean">깔끔형</button>
+            <button type="button" class="seg-btn active" role="radio" aria-checked="true" data-sfx-preset="balanced">해외쇼쇼 표준</button>
+            <button type="button" class="seg-btn" role="radio" aria-checked="false" data-sfx-preset="punchy">타격감 강조형</button>
+          </div>
+          <div class="cue-preset-desc" id="cue-preset-desc">레퍼런스 밸런스 · 분당 ~18개 · -15.0dB</div>
+        </div>
+
+        <div class="cue-mode-row">
+          <label class="field-label" for="cue-backend">연출 엔진 (0원 무료 모드 기본)</label>
+          <select id="cue-backend" class="input">
+            <option value="local-free">무료 로컬 자동 (0원 · API 키 불필요)</option>
+            <option value="agy-cli">Antigravity CLI 연동 (0원 · 구독 계정)</option>
+            <option value="gemini-api">Gemini 영상 시청 (AI Studio 무료 티어 호환)</option>
+            <option value="auto">자동 선택 (설정 기준)</option>
+          </select>
+        </div>
+
+        <div class="cue-actions">
+          <button class="btn small" type="button" id="btn-cue-gen" title="선택한 프리셋의 밀도·강도 기준으로 효과음 큐시트를 자동으로 짭니다"><svg><use href="#i-spark"/></svg>큐시트 자동 짜기</button>
+          <button class="btn small" type="button" id="btn-cue-add" title="지금 재생 중인 화면 시각에 효과음을 하나 추가합니다"><svg><use href="#i-plus"/></svg>지금 위치 추가</button>
+          <button class="btn small ghost" type="button" id="btn-cue-save" hidden title="큐시트 JSON 만 먼저 저장합니다">저장</button>
+        </div>
+        <button class="btn primary cue-apply-btn" type="button" id="btn-cue-apply" title="영상을 다시 인코딩하지 않고(-c:v copy) 소리만 2초 만에 새로 입혀 새 파일(_sfx1.mp4)로 만듭니다">
+          <svg><use href="#i-sound"/></svg>소리만 다시 입히기 (2초 완성)<span class="dirty-count" id="cue-dirty" hidden>수정됨</span>
+        </button>
+        <div class="cue-status" id="cue-status"></div>
+      </div>
+      <div class="cue-list" id="cue-list"></div>
+    </section>
+
     <section class="pane" data-pane="sfx" hidden>
-      <p class="hint">소리 버튼으로 들어 보고, "넣기"를 누르면 선택한 박자의 시작 효과음으로 고정됩니다.</p>
+      <p class="hint">별표(★)를 켜 둔 효과음은 목록 맨 위에 모이고, AI 큐시트 매칭·전체 렌더링 때 같은 종류 안에서 <b>최우선으로 자동 채택</b>됩니다.</p>
+      <div class="sfx-filter">
+        <input id="sfx-search" class="input" type="search" placeholder="효과음 검색 (예: cash, whoosh, 팝)...">
+        <select id="sfx-cat-filter" class="input" aria-label="효과음 종류 필터"></select>
+      </div>
+      <div class="sfx-fav-bar">
+        <button type="button" class="btn small fav-filter-btn" id="btn-sfx-favonly" aria-pressed="false">
+          <svg><use href="#i-star"/></svg><span id="sfx-favonly-text">즐겨찾기만 보기 (0)</span>
+        </button>
+      </div>
       <div id="sfx-lib"></div>
     </section>
+
     <section class="pane" data-pane="broll" hidden>
       <p class="hint">리뷰 영상 등에서 가져온 실사용 장면입니다. 장면 칸에서 "영상"을 바꿔 쓸 수 있습니다.</p>
       <div id="broll-list"></div>
@@ -123,32 +267,97 @@
   <div class="settings-inner">
     <button class="btn ghost" id="settings-back"><svg><use href="#i-back"/></svg>편집으로 돌아가기</button>
     <h1>설정</h1>
-    <p class="lead">이 설정은 이 컴퓨터에만 저장됩니다. API 키는 화면에 다시 보여 주지 않고, 다른 사람에게 프로그램을 줄 때도 포함되지 않습니다.</p>
+    <p class="lead">이 설정은 이 컴퓨터에만 저장됩니다. 내레이션(CapCut 활기찬 바리톤 1.1배속)과 무료 로컬 효과음 디렉터 모두 별도 API 과금 없이 0원으로 동작합니다.</p>
 
     <div class="set-group">
-      <h2>API 키</h2>
+      <h2>내레이션 목소리 (기본: CapCut 활기찬 바리톤 1.1배속)</h2>
+      <label class="set-row">
+        <span class="set-name">목소리 엔진</span>
+        <select id="set-tts-prov" class="input">
+          <option value="capcut">CapCut AI 목소리 — 활기찬 바리톤 (0원 · 사용자 고정 기본값)</option>
+          <option value="typecast">Typecast API (예전 김건 목소리 등)</option>
+          <option value="fish">Fish Audio API</option>
+          <option value="sapi">Windows 기본 음성 (테스트용)</option>
+        </select>
+      </label>
+      <div class="set-row" id="row-cc-voice">
+        <span class="set-name">CapCut 목소리·배속</span>
+        <div class="grid2">
+          <input id="set-cc-voice" class="input" spellcheck="false" value="vibrant_baritone" placeholder="vibrant_baritone (활기찬 바리톤)">
+          <input id="set-cc-speed" class="input" type="number" step="0.05" min="0.8" max="1.5" value="1.1" aria-label="CapCut 목소리 기본 배속">
+        </div>
+      </div>
+      <div class="set-row"><span class="set-name">보관된 음성</span><span id="set-tts-info" class="set-info"></span></div>
+      <label class="set-row"><span class="set-name">Typecast ID (선택)</span><input id="set-voice" class="input" spellcheck="false" placeholder="Typecast 로 전환할 때만 사용 (tc_...)"></label>
+    </div>
+
+    <div class="set-group">
+      <h2>AI 자동 효과음 디렉터 (과금 없는 0원 모드 지원)</h2>
+      <div class="set-row">
+        <span class="set-name">자동 연출 사용</span>
+        <label class="check"><input type="checkbox" id="set-autosfx-on"> 전체 렌더링할 때 AI 효과음 디렉터 자동 적용 (끄면 기존 엔진으로 동작)</label>
+      </div>
+      <label class="set-row">
+        <span class="set-name">기본 강도·밀도</span>
+        <select id="set-sfx-preset" class="input">
+          <option value="clean">깔끔형 (대사 집중 · 분당 ~10개 · -16.5dB 은은함)</option>
+          <option value="balanced">해외쇼쇼 표준 (레퍼런스 밸런스 · 분당 ~18개 · -15.0dB)</option>
+          <option value="punchy">타격감 강조형 (고밀도 + 차오름 라이저 빌드업 · 분당 ~28개 · -13.5dB)</option>
+        </select>
+      </label>
+      <label class="set-row">
+        <span class="set-name">기본 연출 엔진</span>
+        <select id="set-sfx-backend" class="input">
+          <option value="local-free">100% 무료 로컬 엔진 (0원 · 자막·금액·컷·파형 정밀 분석, API 키 불필요)</option>
+          <option value="agy-cli">Antigravity CLI (agy -p) 연동 (0원 · 내 구글 구독 계정 활용)</option>
+          <option value="gemini-api">Gemini API 멀티모달 (Google AI Studio 결제 미연결 무료 티어 호환)</option>
+          <option value="auto">자동 선택 (agy 또는 무료 로컬 우선)</option>
+        </select>
+      </label>
+      <div class="set-row">
+        <span class="set-name">현재 작동 상태</span>
+        <span id="set-director-info" class="set-info"></span>
+      </div>
+      <div class="free-guide">
+        <b>별도 요금 없이 0원으로 쓰는 3가지 방법</b>
+        <ul>
+          <li><b>무료 로컬 엔진 (권장 기본값):</b> API 호출 없이 대본 강조색(초록 금액·빨강 경고), 컷 전환, 10ms 음성 시작점을 분석해 0.5초 만에 큐시트를 짭니다 (완전 0원).</li>
+          <li><b>Antigravity (agy) CLI 연동:</b> PC 에 설치된 <code>agy</code> 로그인 계정을 그대로 호출하므로 별도 API 키 요금이 나가지 않습니다.</li>
+          <li><b>Google AI Studio 무료 티어:</b> 결제 카드(Cloud Billing)를 연결하지 않은 프로젝트에서 발급한 <code>GEMINI_API_KEY</code> 는 무료 한도 안에서만 동작하며 유료 결제가 절대 발생하지 않습니다.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="set-group">
+      <h2>효과음 폴더 (2,869개 로컬 라이브러리)</h2>
+      <label class="set-row"><span class="set-name">폴더 경로</span><input id="set-sfxdir" class="input" spellcheck="false" placeholder="예: C:/Users/tmd39/Desktop/효과음/효과음2869개"></label>
+      <div class="set-row"><span class="set-name">색인 상태</span><span id="set-sfxinfo" class="set-info"></span></div>
+      <div class="set-row">
+        <span class="set-name">목록 만들기</span>
+        <div class="reindex-btns">
+          <button class="btn small primary" type="button" id="set-reindex">무료 파형·이름 고속 색인 (0원)</button>
+          <button class="btn small" type="button" id="set-reindex-ai" title="Google AI Studio 무료 티어 분당 한도에 맞춰 천천히 청취 색인합니다">Gemini 청취 색인 (무료티어 안전 속도)</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="set-group">
+      <h2>API 키 (필요한 것만 선택 입력)</h2>
       <div id="set-keys"></div>
     </div>
-    <div class="set-group">
-      <h2>목소리 (Typecast)</h2>
-      <label class="set-row"><span class="set-name">목소리 ID</span><input id="set-voice" class="input" spellcheck="false" placeholder="tc_로 시작하는 ID"></label>
-    </div>
-    <div class="set-group">
-      <h2>효과음 폴더</h2>
-      <label class="set-row"><span class="set-name">폴더 경로</span><input id="set-sfxdir" class="input" spellcheck="false" placeholder="예: C:/Users/이름/Desktop/효과음"></label>
-      <div class="set-row"><span class="set-name"></span><span id="set-sfxinfo" class="set-info"></span></div>
-      <div class="set-row"><span class="set-name"></span><button class="btn small" id="set-reindex">효과음 목록 다시 만들기</button></div>
-    </div>
+
     <div class="set-group">
       <h2>렌더링 스타일</h2>
       <label class="set-row"><span class="set-name">스타일 프리셋</span><select id="set-preset" class="input"></select></label>
       <div class="set-row"><span class="set-name"></span><ul id="set-rules" class="rules"></ul></div>
     </div>
+
     <div class="set-group">
       <h2>필요한 프로그램</h2>
       <div id="set-tools"></div>
       <div class="set-row"><span class="set-name">작업 폴더</span><span id="set-jobs" class="set-info"></span></div>
     </div>
+
     <div class="set-actions"><button class="btn primary" id="set-save"><svg><use href="#i-save"/></svg>설정 저장</button><span id="set-msg" class="set-info"></span></div>
   </div>
 </section>

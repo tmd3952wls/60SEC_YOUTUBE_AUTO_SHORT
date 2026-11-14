@@ -1,0 +1,986 @@
+{
+  "director_backend": "local-free",
+  "style_preset": "balanced",
+  "mode": "local_only",
+  "catalog_sync": {
+    "total": 2877,
+    "added_or_updated": 0,
+    "skipped_cached": 2877,
+    "pruned": 0
+  },
+  "cuesheet_path": "C:\\Users\\tmd39\\Desktop\\60SEC_YOUTUBE_AUTO_SHORT\\jobs\\zipstring\\full_v2_sfx_cuesheet.json",
+  "cues_applied": 17,
+  "resolved_cues": [
+    {
+      "cue": {
+        "cue_id": "cue_01",
+        "timestamp": "00:00.00",
+        "timestamp_sec": 0.0,
+        "trigger_type": "hook_0_3s",
+        "sfx_category": "whoosh",
+        "desired_sfx_query_en": "fast clean whoosh swipe transition",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(whoosh) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_e873af1c4f",
+        "file_name": "009_쉭.mp3",
+        "relative_path": "009_쉭.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\009_쉭.mp3",
+        "fingerprint": "8e3891a6f182c106",
+        "file_size_bytes": 32310,
+        "mtime_ns": 1793932761580978100,
+        "duration_sec": 1.2288,
+        "lead_silence_sec": 0.25,
+        "peak_offset_sec": 0.295,
+        "peak_dbfs": -5.68,
+        "rms_dbfs": -31.67,
+        "category": "whoosh",
+        "sub_type": "쉭",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 3,
+        "description_ko": "쉭 (1.23초, 타격피크 0.29초)",
+        "search_tags_en": [
+          "whoosh",
+          "009",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "whoosh"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.295,
+      "insert_delay_ms": 0,
+      "effective_gain_db": -6.52
+    },
+    {
+      "cue": {
+        "cue_id": "cue_02",
+        "timestamp": "00:04.07",
+        "timestamp_sec": 4.067,
+        "trigger_type": "scene_cut",
+        "sfx_category": "pop",
+        "desired_sfx_query_en": "crisp cartoon bubble pop click",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(pop) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_2874e6eff6",
+        "file_name": "002_뿅.mp3",
+        "relative_path": "002_뿅.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\002_뿅.mp3",
+        "fingerprint": "0af95c72468befe1",
+        "file_size_bytes": 3438,
+        "mtime_ns": 1793932761489851500,
+        "duration_sec": 0.3135,
+        "lead_silence_sec": 0.05,
+        "peak_offset_sec": 0.065,
+        "peak_dbfs": -2.01,
+        "rms_dbfs": -18.85,
+        "category": "pop",
+        "sub_type": "뿅",
+        "has_human_voice": true,
+        "moods": [
+          "punchy"
+        ],
+        "intensity": 4,
+        "description_ko": "뿅 (0.31초, 타격피크 0.07초)",
+        "search_tags_en": [
+          "pop",
+          "002",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "pop"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.035,
+      "insert_delay_ms": 4037,
+      "effective_gain_db": -12.08
+    },
+    {
+      "cue": {
+        "cue_id": "cue_03",
+        "timestamp": "00:08.87",
+        "timestamp_sec": 8.867,
+        "trigger_type": "scene_cut",
+        "sfx_category": "pop",
+        "desired_sfx_query_en": "crisp cartoon bubble pop click",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(pop) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_331d78eeb2",
+        "file_name": "008_팝.mp3",
+        "relative_path": "008_팝.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\008_팝.mp3",
+        "fingerprint": "283b1c9286d05b12",
+        "file_size_bytes": 16457,
+        "mtime_ns": 1793932761567327900,
+        "duration_sec": 0.58,
+        "lead_silence_sec": 0.17,
+        "peak_offset_sec": 0.185,
+        "peak_dbfs": -6.39,
+        "rms_dbfs": -28.0,
+        "category": "pop",
+        "sub_type": "팝",
+        "has_human_voice": false,
+        "moods": [
+          "punchy"
+        ],
+        "intensity": 3,
+        "description_ko": "팝 (0.58초, 타격피크 0.18초)",
+        "search_tags_en": [
+          "pop",
+          "008",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "pop"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.155,
+      "insert_delay_ms": 8837,
+      "effective_gain_db": -6.17
+    },
+    {
+      "cue": {
+        "cue_id": "cue_04",
+        "timestamp": "00:10.30",
+        "timestamp_sec": 10.3,
+        "trigger_type": "scene_cut",
+        "sfx_category": "ding",
+        "desired_sfx_query_en": "bright bell ding chime accent",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(ding) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_950fe29854",
+        "file_name": "001_띵.mp3",
+        "relative_path": "001_띵.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\001_띵.mp3",
+        "fingerprint": "34ffffd9a838cfd5",
+        "file_size_bytes": 54899,
+        "mtime_ns": 1793932761471679000,
+        "duration_sec": 2.1692,
+        "lead_silence_sec": 1.0,
+        "peak_offset_sec": 1.075,
+        "peak_dbfs": -9.6,
+        "rms_dbfs": -29.49,
+        "category": "ding",
+        "sub_type": "띵",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 3,
+        "description_ko": "띵 (2.17초, 타격피크 1.07초)",
+        "search_tags_en": [
+          "ding",
+          "001",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "ding"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.985,
+      "insert_delay_ms": 10210,
+      "effective_gain_db": -3.52
+    },
+    {
+      "cue": {
+        "cue_id": "cue_05",
+        "timestamp": "00:12.03",
+        "timestamp_sec": 12.033,
+        "trigger_type": "scene_cut",
+        "sfx_category": "whoosh",
+        "desired_sfx_query_en": "fast clean whoosh swipe transition",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(whoosh) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_85cc5f64a8",
+        "file_name": "053_샤스륵 효과음.mp3",
+        "relative_path": "053_샤스륵 효과음.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\053_샤스륵 효과음.mp3",
+        "fingerprint": "2395080fd38ecd36",
+        "file_size_bytes": 42855,
+        "mtime_ns": 1793932762207612600,
+        "duration_sec": 1.032,
+        "lead_silence_sec": 0.09,
+        "peak_offset_sec": 0.285,
+        "peak_dbfs": -4.67,
+        "rms_dbfs": -21.65,
+        "category": "whoosh",
+        "sub_type": "샤스륵 효과음",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 3,
+        "description_ko": "샤스륵 효과음 (1.03초, 타격피크 0.28초)",
+        "search_tags_en": [
+          "whoosh",
+          "053",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "whoosh"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.075,
+      "insert_delay_ms": 11823,
+      "effective_gain_db": -9.38
+    },
+    {
+      "cue": {
+        "cue_id": "cue_06",
+        "timestamp": "00:14.67",
+        "timestamp_sec": 14.667,
+        "trigger_type": "scene_cut",
+        "sfx_category": "whoosh",
+        "desired_sfx_query_en": "fast clean whoosh swipe transition",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(whoosh) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_9bc0ec09a5",
+        "file_name": "086_후욱 -b중간1.mp3",
+        "relative_path": "086_후욱 -b중간1.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\086_후욱 -b중간1.mp3",
+        "fingerprint": "2f87015ef0b9f53f",
+        "file_size_bytes": 27808,
+        "mtime_ns": 1793932762728825100,
+        "duration_sec": 0.5805,
+        "lead_silence_sec": 0.0,
+        "peak_offset_sec": 0.265,
+        "peak_dbfs": -11.42,
+        "rms_dbfs": -26.86,
+        "category": "whoosh",
+        "sub_type": "후욱 -b중간1",
+        "has_human_voice": false,
+        "moods": [
+          "punchy"
+        ],
+        "intensity": 3,
+        "description_ko": "후욱 -b중간1 (0.58초, 타격피크 0.27초)",
+        "search_tags_en": [
+          "whoosh",
+          "086",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "whoosh"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.0,
+      "insert_delay_ms": 14402,
+      "effective_gain_db": -3.12
+    },
+    {
+      "cue": {
+        "cue_id": "cue_07",
+        "timestamp": "00:16.40",
+        "timestamp_sec": 16.4,
+        "trigger_type": "scene_cut",
+        "sfx_category": "surprise",
+        "desired_sfx_query_en": "dramatic shock sting impact",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(surprise) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_dcdd051f7f",
+        "file_name": "021_놀람.발견.mp3",
+        "relative_path": "021_놀람.발견.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\021_놀람.발견.mp3",
+        "fingerprint": "7f47876cb567f0c2",
+        "file_size_bytes": 22768,
+        "mtime_ns": 1793932761751263300,
+        "duration_sec": 0.888,
+        "lead_silence_sec": 0.15,
+        "peak_offset_sec": 0.415,
+        "peak_dbfs": 0.0,
+        "rms_dbfs": -13.65,
+        "category": "surprise",
+        "sub_type": "놀람.발견",
+        "has_human_voice": false,
+        "moods": [
+          "punchy"
+        ],
+        "intensity": 4,
+        "description_ko": "놀람.발견 (0.89초, 타격피크 0.41초)",
+        "search_tags_en": [
+          "surprise",
+          "021",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "surprise"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.135,
+      "insert_delay_ms": 16120,
+      "effective_gain_db": -15.11
+    },
+    {
+      "cue": {
+        "cue_id": "cue_08",
+        "timestamp": "00:19.97",
+        "timestamp_sec": 19.967,
+        "trigger_type": "scene_cut",
+        "sfx_category": "whoosh",
+        "desired_sfx_query_en": "fast clean whoosh swipe transition",
+        "desired_mood": "snappy",
+        "intensity": 3,
+        "target_db": -15.5,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.2,
+        "pinned_name": "",
+        "anchor_source": "visual_cut",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "[해외쇼쇼 표준] 장면 전환(19.97s) 리듬 보강"
+      },
+      "sfx": {
+        "sfx_id": "sfx_ead40cf674",
+        "file_name": "100_후욱 -a짧은2.mp3",
+        "relative_path": "100_후욱 -a짧은2.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\100_후욱 -a짧은2.mp3",
+        "fingerprint": "4da969886f2652fd",
+        "file_size_bytes": 18176,
+        "mtime_ns": 1793932762940154000,
+        "duration_sec": 0.3658,
+        "lead_silence_sec": 0.08,
+        "peak_offset_sec": 0.125,
+        "peak_dbfs": -6.65,
+        "rms_dbfs": -21.16,
+        "category": "whoosh",
+        "sub_type": "후욱 -a짧은2",
+        "has_human_voice": false,
+        "moods": [
+          "punchy"
+        ],
+        "intensity": 3,
+        "description_ko": "후욱 -a짧은2 (0.37초, 타격피크 0.12초)",
+        "search_tags_en": [
+          "whoosh",
+          "100",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "whoosh"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.065,
+      "insert_delay_ms": 19907,
+      "effective_gain_db": -8.69
+    },
+    {
+      "cue": {
+        "cue_id": "cue_09",
+        "timestamp": "00:23.97",
+        "timestamp_sec": 23.967,
+        "trigger_type": "money_stat",
+        "sfx_category": "ding",
+        "desired_sfx_query_en": "bright bell ding chime accent",
+        "desired_mood": "exciting",
+        "intensity": 4,
+        "target_db": -14.8,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.6,
+        "pinned_name": "",
+        "anchor_source": "subtitle_onset",
+        "matched_subtitle_text": "그리하여 투자자가 총매출을 물어보자",
+        "director_reason_ko": "핵심 매출·금액 자막('그리하여 투자자가 총매출을 물어보') 강조"
+      },
+      "sfx": {
+        "sfx_id": "sfx_c814225cd4",
+        "file_name": "185_Ting.mp3",
+        "relative_path": "185_Ting.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\185_Ting.mp3",
+        "fingerprint": "f52aa8c4b8027f5c",
+        "file_size_bytes": 49338,
+        "mtime_ns": 1793932842244625000,
+        "duration_sec": 1.1334,
+        "lead_silence_sec": 0.13,
+        "peak_offset_sec": 0.195,
+        "peak_dbfs": -7.21,
+        "rms_dbfs": -21.0,
+        "category": "ding",
+        "sub_type": "Ting",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 3,
+        "description_ko": "Ting (1.13초, 타격피크 0.20초)",
+        "search_tags_en": [
+          "ding",
+          "185",
+          "ting",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "ding"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.959,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.115,
+      "insert_delay_ms": 23887,
+      "effective_gain_db": -7.66
+    },
+    {
+      "cue": {
+        "cue_id": "cue_10",
+        "timestamp": "00:25.83",
+        "timestamp_sec": 25.833,
+        "trigger_type": "money_stat",
+        "sfx_category": "cash",
+        "desired_sfx_query_en": "cash register cha ching coin ding",
+        "desired_mood": "punchy",
+        "intensity": 4,
+        "target_db": -14.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(cash) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_d6d14de8eb",
+        "file_name": "010_철컥띵 (캐셔).mp3",
+        "relative_path": "010_철컥띵 (캐셔).mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\010_철컥띵 (캐셔).mp3",
+        "fingerprint": "40710c667c507215",
+        "file_size_bytes": 63687,
+        "mtime_ns": 1793932761594098600,
+        "duration_sec": 2.2466,
+        "lead_silence_sec": 0.13,
+        "peak_offset_sec": 0.445,
+        "peak_dbfs": -1.78,
+        "rms_dbfs": -25.45,
+        "category": "cash",
+        "sub_type": "철컥띵 (캐셔)",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 4,
+        "description_ko": "철컥띵 (캐셔) (2.25초, 타격피크 0.45초)",
+        "search_tags_en": [
+          "cash",
+          "010",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "cash"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.115,
+      "insert_delay_ms": 25503,
+      "effective_gain_db": -9.42
+    },
+    {
+      "cue": {
+        "cue_id": "cue_11",
+        "timestamp": "00:27.43",
+        "timestamp_sec": 27.433,
+        "trigger_type": "caption_pop",
+        "sfx_category": "surprise",
+        "desired_sfx_query_en": "dramatic shock sting impact",
+        "desired_mood": "tense",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.4,
+        "pinned_name": "",
+        "anchor_source": "subtitle_onset",
+        "matched_subtitle_text": "왜 그것밖에 안 돼요?",
+        "director_reason_ko": "빨간 강조어('왜 그것밖에 안 돼요?') 경고·반전 강조"
+      },
+      "sfx": {
+        "sfx_id": "sfx_6f741956ad",
+        "file_name": "255_놀람_반전.mp3",
+        "relative_path": "255_놀람_반전.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\255_놀람_반전.mp3",
+        "fingerprint": "25494c57fce93e8c",
+        "file_size_bytes": 260867,
+        "mtime_ns": 1793932843386746500,
+        "duration_sec": 1.632,
+        "lead_silence_sec": 0.15,
+        "peak_offset_sec": 0.335,
+        "peak_dbfs": -5.6,
+        "rms_dbfs": -26.46,
+        "category": "surprise",
+        "sub_type": "놀람_반전",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 3,
+        "description_ko": "놀람_반전 (1.63초, 타격피크 0.34초)",
+        "search_tags_en": [
+          "surprise",
+          "255",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "surprise"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.135,
+      "insert_delay_ms": 27233,
+      "effective_gain_db": -7.2
+    },
+    {
+      "cue": {
+        "cue_id": "cue_12",
+        "timestamp": "00:28.80",
+        "timestamp_sec": 28.8,
+        "trigger_type": "caption_pop",
+        "sfx_category": "surprise",
+        "desired_sfx_query_en": "dramatic shock sting impact",
+        "desired_mood": "tense",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.4,
+        "pinned_name": "",
+        "anchor_source": "subtitle_onset",
+        "matched_subtitle_text": "주문이 폭주했지만 물량을 못 만들었고",
+        "director_reason_ko": "빨간 강조어('주문이 폭주했지만 물량을 못 만들') 경고·반전 강조"
+      },
+      "sfx": {
+        "sfx_id": "sfx_53fd493a1f",
+        "file_name": "1177_깜짝 놀라는 전자음 1.mp3",
+        "relative_path": "1177_깜짝 놀라는 전자음 1.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\1177_깜짝 놀라는 전자음 1.mp3",
+        "fingerprint": "74a86c539341d0c9",
+        "file_size_bytes": 36520,
+        "mtime_ns": 1794570612092514300,
+        "duration_sec": 1.5209,
+        "lead_silence_sec": 0.11,
+        "peak_offset_sec": 0.235,
+        "peak_dbfs": -1.49,
+        "rms_dbfs": -13.6,
+        "category": "surprise",
+        "sub_type": "깜짝 놀라는 전자음 1",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 4,
+        "description_ko": "깜짝 놀라는 전자음 1 (1.52초, 타격피크 0.23초)",
+        "search_tags_en": [
+          "surprise",
+          "1177",
+          "1",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "surprise"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.959,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.095,
+      "insert_delay_ms": 28660,
+      "effective_gain_db": -14.11
+    },
+    {
+      "cue": {
+        "cue_id": "cue_13",
+        "timestamp": "00:30.77",
+        "timestamp_sec": 30.767,
+        "trigger_type": "scene_cut",
+        "sfx_category": "pop",
+        "desired_sfx_query_en": "crisp cartoon bubble pop click",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(pop) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_862f46f3f5",
+        "file_name": "032_뽀욕 (고무장난감 누르는).mp3",
+        "relative_path": "032_뽀욕 (고무장난감 누르는).mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\032_뽀욕 (고무장난감 누르는).mp3",
+        "fingerprint": "010d7b9ec9a50a5c",
+        "file_size_bytes": 19994,
+        "mtime_ns": 1793932761904290000,
+        "duration_sec": 0.4963,
+        "lead_silence_sec": 0.07,
+        "peak_offset_sec": 0.115,
+        "peak_dbfs": -6.53,
+        "rms_dbfs": -25.26,
+        "category": "pop",
+        "sub_type": "뽀욕 (고무장난감 누르는)",
+        "has_human_voice": false,
+        "moods": [
+          "punchy"
+        ],
+        "intensity": 3,
+        "description_ko": "뽀욕 (고무장난감 누르는) (0.50초, 타격피크 0.12초)",
+        "search_tags_en": [
+          "pop",
+          "032",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "pop"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.055,
+      "insert_delay_ms": 30707,
+      "effective_gain_db": -6.96
+    },
+    {
+      "cue": {
+        "cue_id": "cue_14",
+        "timestamp": "00:34.77",
+        "timestamp_sec": 34.767,
+        "trigger_type": "scene_cut",
+        "sfx_category": "whoosh",
+        "desired_sfx_query_en": "fast clean whoosh swipe transition",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(whoosh) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_a465ed7203",
+        "file_name": "089_후욱 -b중간2.mp3",
+        "relative_path": "089_후욱 -b중간2.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\089_후욱 -b중간2.mp3",
+        "fingerprint": "38cd6ccf5b594d9a",
+        "file_size_bytes": 34334,
+        "mtime_ns": 1793932762773730000,
+        "duration_sec": 0.7549,
+        "lead_silence_sec": 0.0,
+        "peak_offset_sec": 0.275,
+        "peak_dbfs": -0.0,
+        "rms_dbfs": -15.25,
+        "category": "whoosh",
+        "sub_type": "후욱 -b중간2",
+        "has_human_voice": false,
+        "moods": [
+          "punchy"
+        ],
+        "intensity": 4,
+        "description_ko": "후욱 -b중간2 (0.75초, 타격피크 0.28초)",
+        "search_tags_en": [
+          "whoosh",
+          "089",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "whoosh"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.0,
+      "insert_delay_ms": 34492,
+      "effective_gain_db": -14.6
+    },
+    {
+      "cue": {
+        "cue_id": "cue_15",
+        "timestamp": "00:39.03",
+        "timestamp_sec": 39.033,
+        "trigger_type": "scene_cut",
+        "sfx_category": "ding",
+        "desired_sfx_query_en": "bright bell ding chime accent",
+        "desired_mood": "punchy",
+        "intensity": 3,
+        "target_db": -15.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(ding) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_03f7618b93",
+        "file_name": "192_티딩_효과음.mp3",
+        "relative_path": "192_티딩_효과음.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\192_티딩_효과음.mp3",
+        "fingerprint": "ae14675b3fc0b892",
+        "file_size_bytes": 219309,
+        "mtime_ns": 1793932842333313900,
+        "duration_sec": 1.0914,
+        "lead_silence_sec": 0.17,
+        "peak_offset_sec": 0.265,
+        "peak_dbfs": -4.88,
+        "rms_dbfs": -24.12,
+        "category": "ding",
+        "sub_type": "티딩_효과음",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 3,
+        "description_ko": "티딩_효과음 (1.09초, 타격피크 0.27초)",
+        "search_tags_en": [
+          "ding",
+          "192",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "ding"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.155,
+      "insert_delay_ms": 38923,
+      "effective_gain_db": -8.44
+    },
+    {
+      "cue": {
+        "cue_id": "cue_16",
+        "timestamp": "00:42.30",
+        "timestamp_sec": 42.3,
+        "trigger_type": "scene_cut",
+        "sfx_category": "impact",
+        "desired_sfx_query_en": "deep punchy cinematic bass hit boom",
+        "desired_mood": "punchy",
+        "intensity": 4,
+        "target_db": -13.5,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "edl_exact",
+        "matched_subtitle_text": "",
+        "director_reason_ko": "EDL 지정 이벤트(impact) 동기화"
+      },
+      "sfx": {
+        "sfx_id": "sfx_80d1200423",
+        "file_name": "007_쿵 효과음.mp3",
+        "relative_path": "007_쿵 효과음.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\007_쿵 효과음.mp3",
+        "fingerprint": "164ca1628d9314a0",
+        "file_size_bytes": 90900,
+        "mtime_ns": 1793932761555251800,
+        "duration_sec": 2.232,
+        "lead_silence_sec": 0.51,
+        "peak_offset_sec": 0.615,
+        "peak_dbfs": -4.34,
+        "rms_dbfs": -16.39,
+        "category": "impact",
+        "sub_type": "쿵 효과음",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 3,
+        "description_ko": "쿵 효과음 (2.23초, 타격피크 0.61초)",
+        "search_tags_en": [
+          "impact",
+          "007",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "impact"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.959,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.495,
+      "insert_delay_ms": 42180,
+      "effective_gain_db": -9.78
+    },
+    {
+      "cue": {
+        "cue_id": "cue_17",
+        "timestamp": "00:53.43",
+        "timestamp_sec": 53.433,
+        "trigger_type": "mood_shift",
+        "sfx_category": "success",
+        "desired_sfx_query_en": "positive level up chime success",
+        "desired_mood": "celebratory",
+        "intensity": 4,
+        "target_db": -14.0,
+        "duck_under_speech": true,
+        "max_duration_sec": 1.8,
+        "pinned_name": "",
+        "anchor_source": "subtitle_onset",
+        "matched_subtitle_text": "방송 직후 완판되며",
+        "director_reason_ko": "거래 성사·성공 포인트('방송 직후 완판되며') 강조"
+      },
+      "sfx": {
+        "sfx_id": "sfx_2b7b54eb6f",
+        "file_name": "0604_짜잔.mp3",
+        "relative_path": "0604_짜잔.mp3",
+        "absolute_path": "C:\\Users\\tmd39\\Desktop\\효과음\\효과음2869개\\0604_짜잔.mp3",
+        "fingerprint": "4ac1449ab8d69e92",
+        "file_size_bytes": 21314,
+        "mtime_ns": 1794570600525856400,
+        "duration_sec": 0.984,
+        "lead_silence_sec": 0.03,
+        "peak_offset_sec": 0.105,
+        "peak_dbfs": -0.24,
+        "rms_dbfs": -14.99,
+        "category": "success",
+        "sub_type": "짜잔",
+        "has_human_voice": false,
+        "moods": [
+          "dramatic"
+        ],
+        "intensity": 4,
+        "description_ko": "짜잔 (0.98초, 타격피크 0.10초)",
+        "search_tags_en": [
+          "success",
+          "0604",
+          "mp3"
+        ],
+        "recommended_situations": [
+          "success"
+        ],
+        "source": "local",
+        "license_info": "local_asset",
+        "analyzed_by": "acoustic_filename_heuristic"
+      },
+      "match_score": 0.98,
+      "resolution_method": "local_catalog",
+      "trim_start_sec": 0.015,
+      "insert_delay_ms": 53343,
+      "effective_gain_db": -13.52
+    }
+  ]
+}

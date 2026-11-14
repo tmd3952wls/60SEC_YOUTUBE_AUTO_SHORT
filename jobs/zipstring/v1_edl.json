@@ -1,0 +1,159 @@
+{
+  "title_lines": [
+    {
+      "text": "해외에서 난리 난",
+      "color": "yellow"
+    },
+    {
+      "text": "신기한 아이디어?!",
+      "color": "white"
+    }
+  ],
+  "items": [
+    {
+      "type": "narration",
+      "text": "출시하자마자 화제가 된 [yellow:화제의 제품] 이야기인데",
+      "subs": [
+        {
+          "text": "출시하자마자 화제가 된"
+        },
+        {
+          "text": "[yellow:화제의 제품] 이야기인데"
+        }
+      ],
+      "shots": [
+        {
+          "src": 3.5,
+          "crop": [
+            960,
+            495,
+            950
+          ],
+          "why": "초안 자동 배치"
+        }
+      ],
+      "sfx": "whoosh"
+    },
+    {
+      "type": "narration",
+      "text": "기존의 불편함을 간단한 아이디어 하나로 해결했다고 해",
+      "subs": [
+        {
+          "text": "기존의 불편함을 간단한"
+        },
+        {
+          "text": "아이디어 하나로"
+        },
+        {
+          "text": "해결했다고 해"
+        }
+      ],
+      "shots": [
+        {
+          "src": 17.6,
+          "crop": [
+            960,
+            495,
+            950
+          ],
+          "why": "초안 자동 배치"
+        }
+      ],
+      "sfx": "pop"
+    },
+    {
+      "type": "clip",
+      "ids": [
+        71
+      ],
+      "subs": [
+        {
+          "text": "20 million views, national tour, all",
+          "at_word": 0
+        }
+      ],
+      "shots": [
+        {
+          "src": "sync",
+          "crop": [
+            960,
+            495,
+            950
+          ],
+          "why": "원본 대사 장면"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "과연 투자자들의 반응은 어땠을까",
+      "subs": [
+        {
+          "text": "과연 투자자들의 반응은"
+        },
+        {
+          "text": "어땠을까"
+        }
+      ],
+      "shots": [
+        {
+          "src": 386.9,
+          "crop": [
+            960,
+            495,
+            950
+          ],
+          "why": "초안 자동 배치"
+        }
+      ],
+      "sfx": "ding"
+    },
+    {
+      "type": "clip",
+      "ids": [
+        142
+      ],
+      "subs": [
+        {
+          "text": "What you guys have done is great, ri",
+          "at_word": 0
+        }
+      ],
+      "shots": [
+        {
+          "src": "sync",
+          "crop": [
+            960,
+            495,
+            950
+          ],
+          "why": "원본 대사 장면"
+        }
+      ]
+    },
+    {
+      "type": "narration",
+      "text": "방송 이후에도 꾸준히 주목받고 있다고 하네",
+      "subs": [
+        {
+          "text": "방송 이후에도 꾸준히"
+        },
+        {
+          "text": "주목받고 있다고 하네"
+        }
+      ],
+      "shots": [
+        {
+          "src": 514.57,
+          "crop": [
+            960,
+            495,
+            950
+          ],
+          "why": "초안 자동 배치"
+        }
+      ],
+      "sfx": "success"
+    }
+  ]
+}

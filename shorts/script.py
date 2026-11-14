@@ -2,10 +2,12 @@
 
 모드
 - claude-cli : Claude Code CLI 헤드리스(claude -p). Claude Max 구독 사용, 키 불필요 ← auto 의 1순위
-- claude : ANTHROPIC_API_KEY 로 Claude API 호출
-- openai : OPENAI_API_KEY 로 OpenAI API 호출
-- manual : prompt.txt 만 만들어 둠 → ChatGPT/Claude 창에 붙여넣고 결과를 plan.json 으로 저장
-- auto   : 키가 있는 API 를 쓰고, 없으면 manual
+- agy-cli    : Google Antigravity CLI 헤드리스(agy -p). 구글 구독 계정 사용, 키 불필요 ← auto 의 2순위
+- claude     : ANTHROPIC_API_KEY 로 Claude API 호출
+- gemini     : GEMINI_API_KEY 로 Gemini API 호출
+- openai     : OPENAI_API_KEY 로 OpenAI API 호출
+- manual     : prompt.txt 만 만들어 둠 → ChatGPT/Claude/Gemini 창에 붙여넣고 결과를 plan.json 으로 저장
+- auto       : 설치된 CLI 또는 API 키를 자동 선택하고, 없으면 manual
 """
 import json
 import os
@@ -16,6 +18,7 @@ import tempfile
 import urllib.request
 from pathlib import Path
 
+from auto_sfx.config import find_agy_cli
 from .common import ROOT, read_json, write_json
 
 
@@ -56,6 +59,8 @@ def find_claude_cli(cfg):
 def call_claude_cli(prompt, cfg):
     """Claude Code 헤드리스 실행 (Max 구독 사용, API 키 불필요). 도구·스킬·MCP 모두 끈 순수 텍스트 생성."""
     exe = find_claude_cli(cfg)
+    if not exe:
+        raise RuntimeError("claude CLI 가 설치되어 있지 않습니다.")
     cmd = [exe, "-p", "--output-format", "text", "--tools", "", "--disable-slash-commands",
            "--strict-mcp-config", "--no-session-persistence"]
     if cfg["script"].get("cli_model"):
@@ -66,6 +71,38 @@ def call_claude_cli(prompt, cfg):
                            errors="replace", cwd=td, timeout=cfg["script"].get("cli_timeout", 600))
     if r.returncode != 0 or not r.stdout.strip():
         raise RuntimeError(f"claude CLI 실패 (코드 {r.returncode}): {(r.stderr or r.stdout)[-800:]}")
+    return r.stdout
+
+
+def call_agy_cli(prompt, cfg):
+    """Google Antigravity(agy) 헤드리스 실행 (구독 로그인 계정 사용, 별도 API 과금 0원)."""
+    exe = find_agy_cli()
+    if not exe:
+        raise RuntimeError("Antigravity CLI (agy) 가 설치되어 있지 않습니다.")
+    timeout_sec = cfg.get("script", {}).get("cli_timeout", 420)
+    with tempfile.TemporaryDirectory() as td:
+        r = subprocess.run(
+            [exe, "-p", prompt],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            cwd=td,
+            timeout=timeout_sec,
+        )
+        if (r.returncode != 0 or not r.stdout.strip()):
+            r = subprocess.run(
+                [exe],
+                input=prompt,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                cwd=td,
+                timeout=timeout_sec,
+            )
+    if r.returncode != 0 or not r.stdout.strip():
+        raise RuntimeError(f"agy CLI 실패 (코드 {r.returncode}): {(r.stderr or r.stdout)[-800:]}")
     return r.stdout
 
 
@@ -107,6 +144,19 @@ def research(job: Path, cfg, context=""):
     return data
 
 
+def call_gemini(prompt, model="gemini-2.5-pro"):
+    from google import genai
+    from google.genai import types
+    api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    client = genai.Client(api_key=api_key)
+    resp = client.models.generate_content(
+        model=model,
+        contents=prompt,
+        config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.35),
+    )
+    return resp.text
+
+
 def call_openai(prompt, model):
     data = _post("https://api.openai.com/v1/chat/completions",
                  {"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}",
@@ -123,6 +173,23 @@ def parse_json(text):
     return json.loads(m.group(0))
 
 
+def resolve_script_mode(cfg) -> str:
+    mode = (cfg.get("script", {}).get("mode") or "auto").strip().lower()
+    if mode == "auto":
+        if find_claude_cli(cfg):
+            return "claude-cli"
+        if find_agy_cli():
+            return "agy-cli"
+        if os.environ.get("ANTHROPIC_API_KEY"):
+            return "claude"
+        if os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY"):
+            return "gemini"
+        if os.environ.get("OPENAI_API_KEY"):
+            return "openai"
+        return "manual"
+    return mode
+
+
 def generate(job: Path, cfg, context=""):
     """plan.json 을 만들면 True, manual 모드라 사람이 채워야 하면 False."""
     print("      방송 이후 후일담 웹 조사...")
@@ -130,11 +197,7 @@ def generate(job: Path, cfg, context=""):
     if rd.get("facts"):
         print(f"      → {rd.get('company', '')}: 사실 {len(rd['facts'])}개 확보")
     prompt = build_prompt(job, context, rd)
-    mode = cfg["script"]["mode"]
-    if mode == "auto":
-        mode = "claude-cli" if find_claude_cli(cfg) else \
-               "claude" if os.environ.get("ANTHROPIC_API_KEY") else \
-               "openai" if os.environ.get("OPENAI_API_KEY") else "manual"
+    mode = resolve_script_mode(cfg)
     if mode == "manual":
         return False
     transcript = read_json(job / "transcript.json")
@@ -145,9 +208,18 @@ def generate(job: Path, cfg, context=""):
         try:
             print(f"      대본 생성: {mode} (시도 {attempt})")
             p = prompt + (f"\n\n## 이전 초안의 문제 — 반드시 고쳐서 다시 써라\n{feedback}" if feedback else "")
-            text = call_claude_cli(p, cfg) if mode == "claude-cli" else \
-                call_claude(p, cfg["script"]["claude_model"]) if mode == "claude" else \
-                call_openai(p, cfg["script"]["openai_model"])
+            if mode == "claude-cli":
+                text = call_claude_cli(p, cfg)
+            elif mode == "agy-cli":
+                text = call_agy_cli(p, cfg)
+            elif mode == "claude":
+                text = call_claude(p, cfg["script"]["claude_model"])
+            elif mode == "gemini":
+                text = call_gemini(p, cfg["script"].get("gemini_model", "gemini-2.5-pro"))
+            elif mode == "openai":
+                text = call_openai(p, cfg["script"]["openai_model"])
+            else:
+                return False
             (job / "llm_raw.txt").write_text(text, encoding="utf-8")
             plan = validate(parse_json(text), transcript)
             best = plan
@@ -165,7 +237,7 @@ def generate(job: Path, cfg, context=""):
         print("      ⚠ 구성 경고가 남은 초안을 사용합니다")
         write_json(job / "plan.json", best)
         return True
-    print(f"      대본 자동 생성 실패 → 수동 모드로 전환 ({last_err})"[:400])
+    print(f"      대본 자동 생성 실패 → 수동 초안 모드로 전환 ({last_err})"[:400])
     return False
 
 
@@ -180,7 +252,7 @@ def validate(plan, transcript):
         if s["type"] == "narration":
             assert s.get("text"), f"segment {i}: 내레이션 text 없음"
             if s.get("broll_id") not in ids:
-                s["broll_id"] = min(ids)
+                s["broll_id"] = min(ids) if ids else 0
         elif s["type"] == "clip":
             assert s["from_id"] in ids and s["to_id"] in ids and s["from_id"] <= s["to_id"], \
                 f"segment {i}: clip id 범위 오류 {s['from_id']}~{s['to_id']}"

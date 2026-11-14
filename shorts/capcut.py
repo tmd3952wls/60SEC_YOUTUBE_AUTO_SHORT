@@ -523,27 +523,80 @@ def register_pending():
 
 # ---------------------------------------------------------------- 실행
 
-def export(job_name, edl_name, preset="", name=""):
+def _apply_remix_sfx_override(job: Path, exp: dict, sfx_video: str):
+    """웹 에디터에서 2초 리믹스한 영상(<stem>_sfx_mix_report.json)이 있으면 CapCut 효과음 트랙을 그 결과로 교체."""
+    if not sfx_video:
+        return exp
+    rep_p = job / f"{Path(sfx_video).stem}_sfx_mix_report.json"
+    if not rep_p.is_file():
+        return exp
+    rep = read_json(rep_p) or {}
+    rc_list = rep.get("resolved_cues")
+    if rc_list is None:
+        return exp
+    master_db = float(exp.get("master_db", 0.0))
+    new_sfx = []
+    for rc in rc_list:
+        cue = rc.get("cue") or {}
+        sfx_ent = rc.get("sfx") or {}
+        fp = Path(sfx_ent.get("absolute_path", ""))
+        if not fp.is_file():
+            continue
+        new_sfx.append({
+            "t": round(float(rc.get("insert_delay_ms", 0)) / 1000.0, 4),
+            "cat": cue.get("sfx_category", "pop"),
+            "name": Path(sfx_ent.get("file_name", fp.name)).stem,
+            "file": str(fp),
+            "lead": round(float(rc.get("trim_start_sec", 0.0)), 4),
+            "gain_db": round(float(rc.get("effective_gain_db", -15.0)) - master_db, 2),
+            "max_dur": round(float(cue.get("max_duration_sec", 1.7)), 3),
+        })
+    exp["sfx"] = new_sfx
+    print(f"  ↳ 선택 영상({sfx_video})의 리믹스 효과음 {len(new_sfx)}개 트랙 반영", flush=True)
+    return exp
+
+
+def export(job_name, edl_name, preset="", name="", sfx_video="", fast_if_ready=False):
     job = JOBS / job_name
     cfg = load_config()
-    if preset:
+    if preset and (Path(__file__).resolve().parent.parent / "editor" / "presets" / f"{preset}.json").is_file():
         p = Path(__file__).resolve().parent.parent / "editor" / "presets" / f"{preset}.json"
         deep_merge(cfg, read_json(p).get("config", {}))
     stem = Path(edl_name).stem.removesuffix("_edl")
     base = name or f"{job_name}_{stem}"
     root = draft_root()
+    root.mkdir(parents=True, exist_ok=True)
     folder, k = root / base, 2
     while folder.exists():
         folder, k = root / f"{base}_{k}", k + 1
 
-    out_name, k = f"capcut_{stem}.mp4", 2
-    while (job / out_name).exists():
-        out_name, k = f"capcut_{stem}_{k}.mp4", k + 1
-    print(f"1/3 렌더링 (재료 만들기): {job_name}/{edl_name} → {out_name}", flush=True)
-    from .edl import render_edl
-    _, total, log = render_edl(job, job / edl_name, cfg, out_name=out_name)
-    (job / out_name.replace(".mp4", "_log.txt")).write_text("\n".join(log), encoding="utf-8")
-    exp = read_json(job / "edl_tmp" / "export.json")
+    exp_path = job / "edl_tmp" / "export.json"
+    body_path = job / "edl_tmp" / "body.mp4"
+    edl_path = job / edl_name
+    edl_doc = read_json(edl_path) or {}
+    reused = False
+    if fast_if_ready and exp_path.is_file() and body_path.is_file():
+        cand = read_json(exp_path) or {}
+        if (
+            len(cand.get("items") or []) == len(edl_doc.get("items") or [])
+            and exp_path.stat().st_mtime >= edl_path.stat().st_mtime - 1.0
+        ):
+            exp = cand
+            total = float(exp["total"])
+            reused = True
+            print(f"1/3 기존 렌더 재료 고속 재사용 ({total:.2f}초 · 재렌더링 생략)", flush=True)
+
+    if not reused:
+        out_name, k = f"capcut_{stem}.mp4", 2
+        while (job / out_name).exists():
+            out_name, k = f"capcut_{stem}_{k}.mp4", k + 1
+        print(f"1/3 렌더링 (재료 만들기): {job_name}/{edl_name} → {out_name}", flush=True)
+        from .edl import render_edl
+        _, total, log = render_edl(job, edl_path, cfg, out_name=out_name)
+        (job / out_name.replace(".mp4", "_log.txt")).write_text("\n".join(log), encoding="utf-8")
+        exp = read_json(exp_path)
+
+    exp = _apply_remix_sfx_override(job, exp, sfx_video)
 
     media_dir = job / "capcut" / folder.name
     if media_dir.exists():
@@ -561,7 +614,7 @@ def export(job_name, edl_name, preset="", name=""):
         pend.append(folder.as_posix())
         write_json(PENDING, pend)
         msg = ("CapCut 이 켜져 있어 목록 등록은 미뤘습니다. CapCut 을 끈 뒤 "
-               "`python -m shorts.capcut --register-only` 를 실행하세요.")
+               "상단 '목록 등록 마무리' 또는 `python -m shorts.capcut --register-only` 를 실행하세요.")
     else:
         msg = register(folder, meta)
     print(f"완료: '{folder.name}' ({total:.2f}초, 샷 {len(shots)}개, 자막 {len(exp['subs'])}개, "
@@ -574,19 +627,20 @@ def rebuild(job_name, media_name, preset="", name=""):
     job = JOBS / job_name
     media_dir = job / "capcut" / media_name
     cfg = load_config()
-    if preset:
+    if preset and (Path(__file__).resolve().parent.parent / "editor" / "presets" / f"{preset}.json").is_file():
         p = Path(__file__).resolve().parent.parent / "editor" / "presets" / f"{preset}.json"
         deep_merge(cfg, read_json(p).get("config", {}))
     exp = read_json(media_dir / "export.json")
     shots, voices, sfx = prepare_media(job, exp, media_dir, make=False)
     root = draft_root()
+    root.mkdir(parents=True, exist_ok=True)
     base = name or media_name
     folder, k = root / base, 2
     while folder.exists():
         folder, k = root / f"{base}_{k}", k + 1
     d = build_draft(exp, cfg, shots, voices, sfx, folder.name, folder)
     meta = d.write()
-    if capcut_running():  # export 와 같이 대기 목록에 넣어 --register-only 로 나중에 등록
+    if capcut_running():
         pend = read_json(PENDING) if PENDING.exists() else []
         pend.append(folder.as_posix())
         write_json(PENDING, pend)
@@ -604,6 +658,8 @@ def main():
     ap.add_argument("--edl")
     ap.add_argument("--preset", default="해외쇼쇼")
     ap.add_argument("--name", default="")
+    ap.add_argument("--sfx-video", default="", help="리믹스 효과음 리포트(<stem>_sfx_mix_report.json)를 가져올 영상 파일명")
+    ap.add_argument("--fast-if-ready", action="store_true", help="edl_tmp/export.json 과 body.mp4 가 최신이면 재렌더링 생략")
     ap.add_argument("--register-only", action="store_true")
     ap.add_argument("--reuse", default="", help="렌더 없이 jobs/<작업>/capcut/<이름> 재료로 프로젝트만 다시 씀")
     a = ap.parse_args()
@@ -615,7 +671,7 @@ def main():
         return
     if not (a.job and a.edl):
         ap.error("--job 과 --edl 이 필요합니다")
-    export(a.job, a.edl, a.preset, a.name)
+    export(a.job, a.edl, a.preset, a.name, sfx_video=a.sfx_video, fast_if_ready=a.fast_if_ready)
 
 
 if __name__ == "__main__":

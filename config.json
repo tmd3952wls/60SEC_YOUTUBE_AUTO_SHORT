@@ -96,6 +96,7 @@
   "sub_style": "capcut_jua",
   "sub_font": "BM JUA",
   "sub_ass_size": 74,
+  "big_scale": 1.25,
   "sub_colors": {
    "yellow": "FFDC00",
    "green": "2CFF23"
@@ -141,7 +142,7 @@
   "blur_radius": 6
  },
  "sfx_library": {
-  "dir": "C:/Users/tmd39/Desktop/효과음/효과음600개",
+  "dir": "C:/Users/tmd39/Desktop/효과음/효과음2869개",
   "max_sec": 1.2,
   "voice_max": 0.5,
   "target_peak_db": -9,
@@ -241,5 +242,26 @@
   "fixed_db": -12.64,
   "fade_out": 0.02,
   "_why": "2026-11-11 사용자가 CapCut(coconut_cocotaps_v16)에서 직접 맞춤: Ogryzek AURA (Ultra Slowed) 4.07초부터, 볼륨 0.2885(목소리 트랙 1.2358 대비 → 원곡 -12.64dB, 마스터 전), 덕킹·페이드 없음, 영상 끝에서 같이 끊김. EDL 에 \"bgm\": false 면 브금 없음"
+ },
+ "auto_sfx": {
+  "enabled": true,
+  "local_sfx_dir": "C:/Users/tmd39/Desktop/효과음/효과음2869개",
+  "catalog_path": "assets/sfx_catalog.json",
+  "cuesheet_dir": "jobs/_cuesheets",
+  "gemini_audio_model": "gemini-2.5-flash",
+  "gemini_video_model": "gemini-2.5-flash",
+  "fallback_order": [
+   "freesound",
+   "elevenlabs"
+  ],
+  "local_match_threshold": 0.52,
+  "target_db_default": -15.0,
+  "target_db_min": -18.0,
+  "target_db_max": -12.0,
+  "ducking": true,
+  "_why": "0원 무료 로컬 엔진(local-free) 기본 탑재 · agy CLI 및 Google AI Studio 무료 티어 전환 지원 (.env 의 AUTO_SFX_ENABLED=false 로 언제든 비활성화)",
+  "director_backend": "local-free",
+  "free_tier_rpm_safe": true,
+  "style_preset": "balanced"
  }
 }

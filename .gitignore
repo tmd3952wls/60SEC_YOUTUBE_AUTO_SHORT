@@ -29,6 +29,7 @@ assets/bgm/*
 
 # 로그
 *.log
+desktop.ini
 
 # Playwright MCP 스냅샷
 .playwright-mcp/

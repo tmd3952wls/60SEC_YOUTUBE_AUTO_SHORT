@@ -1,0 +1,1320 @@
+{
+  "venvs": {},
+  "main_python_pkgs": "['faster_whisper', 'librosa', 'yt_dlp', 'scipy', 'cv2']",
+  "ext_dirs": [],
+  "voices": {},
+  "existing_ref_files": [
+    ".agents/skills/remotion-best-practices/remotion-captions/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-create/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-docs/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-interactivity/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-license/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-maps/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-markup/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-multimedia/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-render/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-saas/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-studio/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-upgrade/REFERENCE.md",
+    ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/REFERENCE.md",
+    ".agents/skills/remotion-markup/remotion-maps/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-captions/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-create/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-docs/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-interactivity/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-license/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-maps/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-markup/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-multimedia/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-render/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-saas/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-studio/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-upgrade/REFERENCE.md",
+    ".claude/skills/remotion-best-practices/remotion-markup/remotion-maps/REFERENCE.md",
+    ".claude/skills/remotion-markup/remotion-maps/REFERENCE.md"
+  ],
+  "jobs": {
+    "brooklyn_pizza": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "v1_edl.json",
+        "v2_edl.json",
+        "v3_edl.json",
+        "v4_edl.json",
+        "v5_edl.json",
+        "v6_edl.json",
+        "v7_edl.json"
+      ],
+      "mp4s": [],
+      "latest": {
+        "edl": "v7_edl.json",
+        "title": [
+          "투자자 셋이 달려든",
+          "냉동 피자의 정체?!"
+        ],
+        "items": 21,
+        "shots": 32
+      }
+    },
+    "cardboard": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "v1_edl.json",
+        "v2_edl.json",
+        "v3_edl.json",
+        "v4_edl.json",
+        "v5_edl.json",
+        "v6_edl.json",
+        "v7_edl.json",
+        "v8_edl.json",
+        "v9_edl.json"
+      ],
+      "mp4s": [],
+      "latest": {
+        "edl": "v9_edl.json",
+        "title": [
+          "13살 꼬마가 들고 온",
+          "종이 박스의 정체?!"
+        ],
+        "items": 18,
+        "shots": 26
+      }
+    },
+    "coconut": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "v10_edl.json",
+        "v11_edl.json",
+        "v12_edl.json",
+        "v13_edl.json",
+        "v14_edl.json",
+        "v15_edl.json",
+        "v16_edl.json",
+        "v17_edl.json",
+        "v1_edl.json",
+        "v2_edl.json",
+        "v3_edl.json",
+        "v4_edl.json",
+        "v5_edl.json",
+        "v6_edl.json",
+        "v7_edl.json",
+        "v8_edl.json",
+        "v9_edl.json"
+      ],
+      "mp4s": [],
+      "latest": {
+        "edl": "v9_edl.json",
+        "title": [
+          "망치 없이 코코넛 따는",
+          "남자의 최후?!"
+        ],
+        "items": 18,
+        "shots": 23
+      }
+    },
+    "doorbot": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "full_edl.json",
+        "full_v2_edl.json",
+        "full_v3_edl.json",
+        "full_v4_edl.json",
+        "preview3_edl.json",
+        "preview_edl.json",
+        "preview_preview_v3b_edl.json",
+        "preview_preview_v4_edl.json",
+        "preview_v3_edl.json",
+        "sample_edl.json"
+      ],
+      "mp4s": [],
+      "latest": {
+        "edl": "sample_edl.json",
+        "title": [
+          "스마트폰으로 받는",
+          "초인종의 정체?!"
+        ],
+        "items": 6,
+        "shots": 10
+      }
+    },
+    "goldberg": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "test10_edl.json",
+        "v1_edl.json",
+        "v2_edl.json",
+        "v3_edl.json",
+        "v4_edl.json",
+        "v5_edl.json",
+        "v6_edl.json",
+        "v7_nobgm_edl.json"
+      ],
+      "mp4s": [],
+      "latest": {
+        "edl": "v7_nobgm_edl.json",
+        "title": [
+          "WWE 전설이 들고 온",
+          "자동차 덮개의 정체?!"
+        ],
+        "items": 22,
+        "shots": 34
+      }
+    },
+    "kevin_prediction": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "v1_edl.json",
+        "v2_edl.json",
+        "v3_edl.json",
+        "v4_edl.json",
+        "v5_edl.json"
+      ],
+      "mp4s": [],
+      "latest": {
+        "edl": "v5_edl.json",
+        "title": [
+          "창업자 나가자마자",
+          "케빈이 한 말ㄷㄷ"
+        ],
+        "items": 16,
+        "shots": 28
+      }
+    },
+    "magic5_goggles": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [],
+      "mp4s": [],
+      "latest": null
+    },
+    "pawn_auto": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [],
+      "mp4s": [],
+      "latest": null
+    },
+    "polygons": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "v1_edl.json"
+      ],
+      "mp4s": [],
+      "latest": {
+        "edl": "v1_edl.json",
+        "title": [
+          "접으면 숟가락이 되는",
+          "납작한 판의 정체?!"
+        ],
+        "items": 15,
+        "shots": 33
+      }
+    },
+    "sharktank_babyspoon": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [],
+      "mp4s": [],
+      "latest": null
+    },
+    "socks": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "v10_edl.json",
+        "v1_edl.json",
+        "v2_edl.json",
+        "v3_edl.json",
+        "v4_edl.json",
+        "v5_edl.json",
+        "v6_edl.json",
+        "v7_edl.json",
+        "v8_edl.json",
+        "v9_edl.json"
+      ],
+      "mp4s": [],
+      "latest": {
+        "edl": "v9_edl.json",
+        "title": [
+          "바지 안 입고 나타난",
+          "양말 사장님들?!"
+        ],
+        "items": 13,
+        "shots": 27
+      }
+    },
+    "test_sharktank": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [],
+      "mp4s": [],
+      "latest": null
+    },
+    "vulcan_rattrap": {
+      "has_source": false,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "preview_pilot_v5_edl.json",
+        "preview_preview_v1_edl.json",
+        "preview_preview_v1b_edl.json",
+        "v1_edl.json",
+        "v2_edl.json",
+        "v3_edl.json",
+        "v4_edl.json",
+        "v5_edl.json"
+      ],
+      "mp4s": [],
+      "latest": {
+        "edl": "v5_edl.json",
+        "title": [
+          "투자자 3명이 탐낸",
+          "쥐덫의 정체?!"
+        ],
+        "items": 19,
+        "shots": 38
+      }
+    },
+    "zipstring": {
+      "has_source": true,
+      "has_source_vocals": false,
+      "broll_count": 0,
+      "edls": [
+        "v1_edl.json",
+        "v2_edl.json"
+      ],
+      "mp4s": [
+        "full_v2.mp4",
+        "preview_v2.mp4"
+      ],
+      "latest": {
+        "edl": "v2_edl.json",
+        "title": [
+          "공중에 실을 띄운",
+          "장난감의 최후?!"
+        ],
+        "items": 16,
+        "shots": 31
+      }
+    }
+  },
+  "circles_in_edls": [
+    {
+      "job": "doorbot",
+      "edl": "full_edl.json",
+      "crop": [
+        975,
+        500,
+        720
+      ],
+      "circle": {
+        "box": [
+          947,
+          432,
+          196,
+          196
+        ],
+        "target": "폰 화면 속 방문자(케빈) 얼굴 — 얼굴 추적",
+        "why": "'문 앞 손님을' — 초인종이 보여주는 대상",
+        "at_word": 0,
+        "hold": 1.7,
+        "pad": 1.45,
+        "track": "face",
+        "dy": -0.12
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_edl.json",
+      "crop": [
+        960,
+        520,
+        640
+      ],
+      "circle": {
+        "box": [
+          966,
+          741,
+          138,
+          33
+        ],
+        "target": "폰 화면의 초록 '수락(Accept)' 버튼",
+        "why": "'accept'라고 말하는 순간 그 버튼을 가리킴",
+        "at_word": 1,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "ding"
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_edl.json",
+      "crop": [
+        820,
+        450,
+        840
+      ],
+      "circle": {
+        "box": [
+          560,
+          90,
+          120,
+          140
+        ],
+        "track": "face",
+        "target": "와이드샷 속 케빈 얼굴",
+        "why": "두 사람이 나오는 와이드샷에서 지금 제안하는 사람이 누구인지",
+        "at_word": 0,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_v2_edl.json",
+      "crop": [
+        975,
+        500,
+        720
+      ],
+      "circle": {
+        "box": [
+          947,
+          432,
+          196,
+          196
+        ],
+        "target": "폰 화면 속 방문자(케빈) 얼굴 — 얼굴 추적",
+        "why": "'문 앞 손님을' — 초인종이 보여주는 대상",
+        "at_word": 0,
+        "hold": 1.7,
+        "pad": 1.45,
+        "track": "face",
+        "dy": -0.12
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_v2_edl.json",
+      "crop": [
+        960,
+        520,
+        640
+      ],
+      "circle": {
+        "box": [
+          966,
+          741,
+          138,
+          33
+        ],
+        "target": "폰 화면의 초록 '수락(Accept)' 버튼",
+        "why": "'accept'라고 말하는 순간 그 버튼을 가리킴",
+        "at_word": 1,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "ding"
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_v2_edl.json",
+      "crop": [
+        820,
+        450,
+        840
+      ],
+      "circle": {
+        "box": [
+          560,
+          90,
+          120,
+          140
+        ],
+        "track": "face",
+        "target": "와이드샷 속 케빈 얼굴",
+        "why": "두 사람이 나오는 와이드샷에서 지금 제안하는 사람이 누구인지",
+        "at_word": 0,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_v3_edl.json",
+      "crop": [
+        975,
+        500,
+        720
+      ],
+      "circle": {
+        "box": [
+          947,
+          432,
+          196,
+          196
+        ],
+        "target": "폰 화면 속 방문자(케빈) 얼굴 — 얼굴 추적",
+        "why": "'문 앞 손님을' — 초인종이 보여주는 대상",
+        "at_word": 0,
+        "hold": 1.7,
+        "pad": 1.45,
+        "track": "face",
+        "dy": -0.12
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_v3_edl.json",
+      "crop": [
+        960,
+        650,
+        640
+      ],
+      "circle": {
+        "box": [
+          966,
+          741,
+          138,
+          33
+        ],
+        "target": "폰 화면의 초록 '수락(Accept)' 버튼",
+        "why": "'accept'라고 말하는 순간 그 버튼을 가리킴",
+        "at_word": 1,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "ding"
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_v3_edl.json",
+      "crop": [
+        820,
+        450,
+        840
+      ],
+      "circle": {
+        "box": [
+          560,
+          90,
+          120,
+          140
+        ],
+        "track": "face",
+        "target": "와이드샷 속 케빈 얼굴",
+        "why": "두 사람이 나오는 와이드샷에서 지금 제안하는 사람이 누구인지",
+        "at_word": 0,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_v4_edl.json",
+      "crop": [
+        975,
+        500,
+        720
+      ],
+      "circle": {
+        "box": [
+          947,
+          432,
+          196,
+          196
+        ],
+        "target": "폰 화면 속 방문자(케빈) 얼굴 — 얼굴 추적",
+        "why": "'문 앞 손님을' — 초인종이 보여주는 대상",
+        "at_word": 0,
+        "hold": 1.7,
+        "pad": 1.45,
+        "track": "face",
+        "dy": -0.12
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_v4_edl.json",
+      "crop": [
+        960,
+        650,
+        640
+      ],
+      "circle": {
+        "box": [
+          966,
+          741,
+          138,
+          33
+        ],
+        "target": "폰 화면의 초록 '수락(Accept)' 버튼",
+        "why": "'accept'라고 말하는 순간 그 버튼을 가리킴",
+        "at_word": 1,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "ding"
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "full_v4_edl.json",
+      "crop": [
+        820,
+        450,
+        840
+      ],
+      "circle": {
+        "box": [
+          560,
+          90,
+          120,
+          140
+        ],
+        "track": "face",
+        "target": "와이드샷 속 케빈 얼굴",
+        "why": "두 사람이 나오는 와이드샷에서 지금 제안하는 사람이 누구인지",
+        "at_word": 0,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "preview3_edl.json",
+      "crop": [
+        960,
+        520,
+        640
+      ],
+      "circle": {
+        "box": [
+          966,
+          741,
+          138,
+          33
+        ],
+        "target": "폰 화면의 초록 '수락(Accept)' 버튼",
+        "why": "'accept'라고 말하는 순간 그 버튼을 가리킴",
+        "at_word": 1,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "ding"
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "preview_edl.json",
+      "crop": [
+        975,
+        500,
+        720
+      ],
+      "circle": {
+        "box": [
+          947,
+          432,
+          196,
+          196
+        ],
+        "target": "폰 화면 속 방문자(케빈) 얼굴 — 얼굴 추적",
+        "why": "'문 앞 손님을' — 초인종이 보여주는 대상",
+        "at_word": 0,
+        "hold": 1.7,
+        "pad": 1.45,
+        "track": "face",
+        "dy": -0.12
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "sample_edl.json",
+      "crop": [
+        975,
+        500,
+        720
+      ],
+      "circle": {
+        "box": [
+          947,
+          432,
+          196,
+          196
+        ],
+        "target": "폰 화면 속 방문자(케빈) 얼굴 — 얼굴 추적",
+        "why": "'문 앞 손님을' — 초인종이 보여주는 대상",
+        "at_word": 0,
+        "hold": 1.7,
+        "pad": 1.45,
+        "track": "face",
+        "dy": -0.12
+      }
+    },
+    {
+      "job": "doorbot",
+      "edl": "sample_edl.json",
+      "crop": [
+        960,
+        520,
+        640
+      ],
+      "circle": {
+        "box": [
+          966,
+          741,
+          138,
+          33
+        ],
+        "target": "폰 화면의 초록 '수락(Accept)' 버튼",
+        "why": "'accept'라고 말하는 순간 그 버튼을 가리킴",
+        "at_word": 1,
+        "hold": 1.4,
+        "pad": 1.6,
+        "sfx": "ding"
+      }
+    },
+    {
+      "job": "polygons",
+      "edl": "v1_edl.json",
+      "crop": [
+        740,
+        570,
+        1080
+      ],
+      "circle": {
+        "box": [
+          340,
+          290,
+          240,
+          590
+        ],
+        "at_word": 0,
+        "hold": 1.4,
+        "pad": 1.2,
+        "target": "펼친 판 (TABLESPOON FLAT)",
+        "why": "이 납작한 판을 접으면 옆의 숟가락 세 개가 됨",
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "preview_pilot_v5_edl.json",
+      "crop": [
+        1000,
+        560,
+        840
+      ],
+      "circle": {
+        "box": [
+          1160,
+          655,
+          140,
+          135
+        ],
+        "target": "양동이에 잡힌 쥐",
+        "why": "30마리=잡힌 결과",
+        "at_word": 3,
+        "hold": 1.0,
+        "pad": 1.5
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "preview_preview_v1_edl.json",
+      "crop": [
+        1000,
+        560,
+        760
+      ],
+      "circle": {
+        "box": [
+          1190,
+          570,
+          150,
+          130
+        ],
+        "target": "양동이 안에 잡힌 쥐",
+        "why": "'30마리' = 잡힌 결과",
+        "at_word": 3,
+        "hold": 1.0,
+        "pad": 1.5
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "preview_preview_v1_edl.json",
+      "crop": [
+        960,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          880,
+          250,
+          200,
+          220
+        ],
+        "track": "face",
+        "target": "케빈 얼굴",
+        "why": "누가 제안하는지",
+        "at_word": 6,
+        "hold": 1.2,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "preview_preview_v1_edl.json",
+      "crop": [
+        1000,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          880,
+          200,
+          220,
+          260
+        ],
+        "track": "face",
+        "target": "데이먼드 얼굴",
+        "why": "'데이먼드에게'",
+        "at_word": 5,
+        "hold": 1.2,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "preview_preview_v1b_edl.json",
+      "crop": [
+        1000,
+        560,
+        760
+      ],
+      "circle": {
+        "box": [
+          1160,
+          655,
+          140,
+          135
+        ],
+        "target": "양동이 안에 잡힌 쥐",
+        "why": "'30마리' = 잡힌 결과",
+        "at_word": 3,
+        "hold": 1.0,
+        "pad": 1.5
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "preview_preview_v1b_edl.json",
+      "crop": [
+        960,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          870,
+          180,
+          275,
+          275
+        ],
+        "target": "케빈 얼굴",
+        "why": "누가 제안하는지",
+        "at_word": 6,
+        "hold": 1.2,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "preview_preview_v1b_edl.json",
+      "crop": [
+        820,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          680,
+          80,
+          290,
+          370
+        ],
+        "target": "데이먼드 얼굴",
+        "why": "'데이먼드에게'",
+        "at_word": 5,
+        "hold": 1.2,
+        "pad": 1.5,
+        "sfx": "pop",
+        "dy": 0
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v1_edl.json",
+      "crop": [
+        1000,
+        560,
+        760
+      ],
+      "circle": {
+        "box": [
+          1160,
+          655,
+          140,
+          135
+        ],
+        "target": "양동이 안에 잡힌 쥐",
+        "why": "'30마리' = 잡힌 결과",
+        "at_word": 3,
+        "hold": 1.0,
+        "pad": 1.5
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v1_edl.json",
+      "crop": [
+        960,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          870,
+          180,
+          275,
+          275
+        ],
+        "target": "케빈 얼굴",
+        "why": "누가 제안하는지",
+        "at_word": 6,
+        "hold": 1.2,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v1_edl.json",
+      "crop": [
+        1420,
+        430,
+        800
+      ],
+      "circle": {
+        "box": [
+          1290,
+          170,
+          130,
+          150
+        ],
+        "track": "face",
+        "target": "바바라 얼굴",
+        "why": "투샷에서 지금 제안하는 사람",
+        "at_word": 0,
+        "hold": 0.85,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v1_edl.json",
+      "crop": [
+        820,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          690,
+          90,
+          270,
+          330
+        ],
+        "target": "데이먼드 얼굴",
+        "why": "'데이먼드에게'",
+        "at_word": 5,
+        "hold": 1.2,
+        "pad": 1.15,
+        "sfx": "pop",
+        "dy": 0
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v2_edl.json",
+      "crop": [
+        1000,
+        560,
+        760
+      ],
+      "circle": {
+        "box": [
+          1160,
+          655,
+          140,
+          135
+        ],
+        "target": "양동이 안에 잡힌 쥐",
+        "why": "'30마리' = 잡힌 결과",
+        "at_word": 3,
+        "hold": 1.0,
+        "pad": 1.5
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v2_edl.json",
+      "crop": [
+        960,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          870,
+          180,
+          275,
+          275
+        ],
+        "target": "케빈 얼굴",
+        "why": "누가 제안하는지",
+        "at_word": 6,
+        "hold": 1.2,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v2_edl.json",
+      "crop": [
+        1420,
+        430,
+        800
+      ],
+      "circle": {
+        "box": [
+          1290,
+          170,
+          130,
+          150
+        ],
+        "track": "face",
+        "target": "바바라 얼굴",
+        "why": "투샷에서 지금 제안하는 사람",
+        "at_word": 0,
+        "hold": 0.85,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v2_edl.json",
+      "crop": [
+        820,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          690,
+          90,
+          270,
+          330
+        ],
+        "target": "데이먼드 얼굴",
+        "why": "'데이먼드에게'",
+        "at_word": 5,
+        "hold": 1.2,
+        "pad": 1.15,
+        "sfx": "pop",
+        "dy": 0
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v3_edl.json",
+      "crop": [
+        1000,
+        560,
+        760
+      ],
+      "circle": {
+        "box": [
+          1160,
+          655,
+          140,
+          135
+        ],
+        "target": "양동이 안에 잡힌 쥐",
+        "why": "'30마리' = 잡힌 결과",
+        "at_word": 3,
+        "hold": 1.0,
+        "pad": 1.5
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v3_edl.json",
+      "crop": [
+        960,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          870,
+          180,
+          275,
+          275
+        ],
+        "target": "케빈 얼굴",
+        "why": "누가 제안하는지",
+        "at_word": 0,
+        "hold": 1.0,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v3_edl.json",
+      "crop": [
+        1420,
+        430,
+        800
+      ],
+      "circle": {
+        "box": [
+          1290,
+          170,
+          130,
+          150
+        ],
+        "track": "face",
+        "target": "바바라 얼굴",
+        "why": "투샷에서 지금 제안하는 사람",
+        "at_word": 0,
+        "hold": 0.85,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v3_edl.json",
+      "crop": [
+        820,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          690,
+          90,
+          270,
+          330
+        ],
+        "target": "데이먼드 얼굴",
+        "why": "'데이먼드에게'",
+        "at_word": 5,
+        "hold": 1.2,
+        "pad": 1.15,
+        "sfx": "pop",
+        "dy": 0
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v4_edl.json",
+      "crop": [
+        1000,
+        560,
+        760
+      ],
+      "circle": {
+        "box": [
+          1160,
+          655,
+          140,
+          135
+        ],
+        "target": "양동이 안에 잡힌 쥐",
+        "why": "'30마리' = 잡힌 결과",
+        "at_word": 4,
+        "hold": 1.0,
+        "pad": 1.5
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v4_edl.json",
+      "crop": [
+        960,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          870,
+          180,
+          275,
+          275
+        ],
+        "target": "케빈 얼굴",
+        "why": "누가 제안하는지",
+        "at_word": 0,
+        "hold": 1.0,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v4_edl.json",
+      "crop": [
+        1420,
+        430,
+        800
+      ],
+      "circle": {
+        "box": [
+          1290,
+          170,
+          130,
+          150
+        ],
+        "track": "face",
+        "target": "바바라 얼굴",
+        "why": "투샷에서 지금 제안하는 사람",
+        "at_word": 0,
+        "hold": 0.85,
+        "pad": 1.5,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v4_edl.json",
+      "crop": [
+        820,
+        450,
+        800
+      ],
+      "circle": {
+        "box": [
+          690,
+          90,
+          270,
+          330
+        ],
+        "target": "데이먼드 얼굴",
+        "why": "'데이먼드에게'",
+        "at_word": 6,
+        "hold": 1.2,
+        "pad": 1.15,
+        "sfx": "pop",
+        "dy": 0
+      }
+    },
+    {
+      "job": "vulcan_rattrap",
+      "edl": "v5_edl.json",
+      "crop": [
+        1000,
+        560,
+        840
+      ],
+      "circle": {
+        "box": [
+          1160,
+          655,
+          140,
+          135
+        ],
+        "target": "양동이에 잡힌 쥐",
+        "why": "30마리=잡힌 결과",
+        "at_word": 3,
+        "hold": 1.0,
+        "pad": 1.5
+      }
+    },
+    {
+      "job": "zipstring",
+      "edl": "v2_edl.json",
+      "crop": [
+        820,
+        480,
+        880
+      ],
+      "circle": {
+        "box": [
+          515,
+          480,
+          460,
+          420
+        ],
+        "target": "공중에 떠 있는 형광 실 루프",
+        "why": "실이 공중에 둥둥 떠 있는 핵심 시각 포인트 강조",
+        "hold": 1.35,
+        "sfx": "pop"
+      }
+    },
+    {
+      "job": "zipstring",
+      "edl": "v2_edl.json",
+      "crop": [
+        920,
+        490,
+        880
+      ],
+      "circle": {
+        "box": [
+          410,
+          490,
+          430,
+          390
+        ],
+        "target": "포털 모양으로 공중에 뜬 실",
+        "why": "중력을 거스르듯 공중에 떠서 손짓을 따라가는 모습 강조",
+        "hold": 1.3,
+        "sfx": "ding"
+      }
+    }
+  ]
+}

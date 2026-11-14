@@ -1,0 +1,22 @@
+{
+ "title_lines": [
+  {
+   "text": "공중에 실을 띄운",
+   "color": "yellow"
+  },
+  {
+   "text": "장난감의 최후?!",
+   "color": "white"
+  }
+ ],
+ "product": "ZipString (집스트링)",
+ "source_url": "https://www.youtube.com/watch?v=chm92UZAmbs",
+ "edl": "v2_edl.json",
+ "capcut_voice_project": "voice_zipstring_vibrant_baritone",
+ "summary": [
+  "훅(0~3초): 공중에 형광 실 루프를 둥둥 띄우며 손을 통과시키는 시연",
+  "제품 소개(3~25초): 물리 실험 장치를 손바닥 크기로 소형화, 시속 56km 안전 작동, 투자자 체험 및 하루 2천만 뷰 돌파(가격·지분 미언급)",
+  "거래 및 반전(25~48초): 매출 약 3억 8천만 원(지폐 아이콘 1회) 공개 → 지분 10%·9% 경쟁 → 망설이는 사이 두 투자자 연합 20% 역제안",
+  "결말 및 근황(48~54초): 케빈·로버트와 공동 계약 체결, 방송 직후 전 물량 완판 및 누적 판매 100만 개 돌파"
+ ]
+}

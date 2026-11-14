@@ -1,7 +1,7 @@
 """쇼츠 자동 생성 CLI.
 
   python make_short.py new <유튜브URL|파일> [--start 초] [--end 초] [--name 이름] [--context "메모"]
-      → 다운로드/자르기 → 영어 전사 → 대본(API 있으면 자동) → TTS → 렌더
+      → 다운로드/자르기 → 영어 전사 → 대본(API 있으면 자동) + v1_edl.json → TTS → 렌더
   python make_short.py render <jobs/이름>
       → plan.json 을 고친 뒤 다시 렌더 (TTS 는 캐시 재사용)
 """
@@ -12,8 +12,24 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-from shorts.common import JOBS, load_config  # noqa: E402
+from shorts.common import JOBS, load_config, read_json, write_json  # noqa: E402
 from shorts import render as R, script as S, source  # noqa: E402
+
+
+def _ensure_edl_from_plan(job: Path, cfg: dict, title_hint: str = "") -> None:
+    edl_path = job / "v1_edl.json"
+    if edl_path.exists() or not (job / "plan.json").exists():
+        return
+    try:
+        from editor.new_job_worker import ensure_words_with_fallback, plan_to_edl
+
+        tr = read_json(job / "transcript.json")
+        words_map = ensure_words_with_fallback(job, tr, cfg)
+        edl_doc = plan_to_edl(read_json(job / "plan.json"), tr, words_map, cfg, title_hint=title_hint)
+        write_json(edl_path, edl_doc)
+        print(f"      웹 에디터용 편집본 저장: {edl_path.name}")
+    except Exception as exc:
+        print(f"      ⚠ v1_edl.json 자동 변환 건너뜀: {exc}")
 
 
 def cmd_new(a, cfg):
@@ -32,12 +48,24 @@ def cmd_new(a, cfg):
               f"  2) 받은 JSON 을 {job / 'plan.json'} 로 저장\n"
               f"  3) python make_short.py render {job}")
         return
+    _ensure_edl_from_plan(job, cfg)
     do_render(job, cfg)
 
 
 def do_render(job, cfg):
-    from shorts.common import read_json
     S.validate(read_json(job / "plan.json"), read_json(job / "transcript.json"))
+    _ensure_edl_from_plan(job, cfg)
+    if cfg.get("tts", {}).get("provider") == "capcut":
+        from editor.server import capcut_tts_status
+
+        edl_doc = read_json(job / "v1_edl.json") if (job / "v1_edl.json").exists() else None
+        st = capcut_tts_status(job, edl_doc, cfg=cfg)
+        if st.get("missing"):
+            print(
+                f"\n[안내] CapCut '{st['voice_ko']}' 내레이션 {len(st['missing'])}문장의 음성 수확이 필요합니다.\n"
+                f"  웹 에디터(python editor/server.py)를 열어 상단 '바리톤 음성' 버튼으로 음성을 가져온 뒤 전체 렌더링하세요."
+            )
+            return
     print(f"[4/4] TTS({cfg['tts']['provider']}) + 렌더")
     out, total = R.render(job, cfg)
     warn = "  ⚠ 60초 초과 — plan.json 에서 clip/내레이션을 줄이세요" if total > 59.5 else ""
@@ -75,6 +103,7 @@ def main():
         job = Path(a.job).resolve()
         print("[3/4] 대본 다시 생성")
         if S.generate(job, cfg, a.context):
+            (job / "v1_edl.json").unlink(missing_ok=True)
             do_render(job, cfg)
     elif a.cmd == "voices":
         cmd_voices(a, cfg)

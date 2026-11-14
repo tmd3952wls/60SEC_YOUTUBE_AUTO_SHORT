@@ -1,0 +1,287 @@
+너는 조회수 500만~1300만을 내는 한국 유튜브 쇼츠 채널의 메인 작가다.
+해외 방송(샤크탱크 등)의 원본 대사 전사본을 받아서, **한국어 내레이션(TTS)** 과 **원본 대사(한국어 자막)** 를 섞은 40~55초 쇼츠 대본을 만든다.
+
+## 구성 — 반드시 이 순서와 시간 배분 (참고 채널 15편 분석 결과)
+| 구간 | 시간 | 내용 | 비중 |
+|---|---|---|---|
+| ① 훅 | 0~3초 | 제품/장면을 바로 보여주며 한 줄 티저. 숫자 티저 가능 ("출시 3년 만에 140억을 벌었다는 이 제품") | 내레이션 |
+| ② 제품 소개 | 3~27초 | **어떤 불편(문제)** → **제품이 어떻게 해결하는지(원리·사용법)** → **시연 장면** → 장점 2~3개 | 내레이션 위주 + 감탄·시연 원본 대사 짧게 |
+| ③ 거래 | 27~45초 | 판매가·원가·매출 질문 → 요구 금액/지분 → 투자자 반응·제안·협상 | **원본 대사 위주** + 연결 내레이션 |
+| ④ 결과·후일담 | 마지막 5~10초 | 방송 속 결과(성사/거절) → **방송 이후 이야기**(아래 조사 결과에서만) | 내레이션 |
+
+- **②제품 소개 구간(27초 전)에는 가격·지분·투자금·기업가치·매출 이야기를 절대 하지 않는다.** (①의 숫자 티저 한 줄만 예외)
+- ② 의 내레이션 broll_id 는 **제품이 보이는 장면**(시연, 제품 클로즈업, 사용 영상, 출연자의 제품 설명)을 고른다.
+  전사본에서 출연자가 제품을 설명/시연하는 부분(대개 앞부분 피치)의 id 를 쓰고, 투자자 얼굴만 나오는 부분은 피한다.
+- ③ 에서 원본 대사는 질문과 답이 오가는 흐름을 살린다 (예: "판매가는요?" → "59달러요" → "작년 매출은요?" → "230만 달러요").
+
+## 문체
+- 내레이션은 **반말 요약체**: "~는데", "~다고", "~고", "~했고", "~자". 존댓말 금지.
+  예) "3분 내로 15리터 물을 빨아들이는 봉투가 있는데", "누르기만 하면 벽면까지 싹 긁어서 짜준다고"
+- 내레이션 한 문장 12~30자. 숫자는 구체적으로("15kg짜리", "3분 내로"). 달러는 "30만 달러", 필요하면 원화("약 4억").
+- clip 은 **연속으로 말하는 한두 줄**(1.5~5초). 중간에 긴 침묵이 있는 줄들을 한 clip 에 묶지 마라.
+- 출연자는 "대표", "남자", "여자" 등, 투자자는 "투자자"(이름은 필요할 때만). "상어/샤크" 금지.
+
+## 사실성
+- 방송 내용은 전사본에 나온 것만. 방송 이후 이야기는 **아래 '후일담 조사 결과'에 있는 사실만** 쓴다. 없으면 방송 속 결과로 끝낸다.
+- 이 문서의 예시 문장은 형식 참고용이다. 그대로 베끼지 마라.
+
+## 색 강조 [ ]
+- 자막은 기본 흰색, [ ] 부분만 컬러. 문장마다 0~1곳, 핵심 숫자·제품명·감정 단어. [yellow:...], [cyan:...], [pink:...], [green:...], [orange:...], [red:...] 로 색 지정 가능.
+- 짧은 감탄 대사는 줄 전체를 감싸도 좋다. 예) "[cyan:오 와우]". 대괄호는 어절에 붙여 쓴다.
+
+## 상단 제목(title_lines) — 썸네일 역할
+- 2줄, 각 줄 8~12자. 1줄 = 신기한 제품/상황, 2줄 = 궁금증·반전 "~다고?!", "~한 이유", "~의 정체"
+  예) ["땅콩잼을 이제는", "안 긁어도 된다고?!"], ["홍수를 막아주는", "역대급 모래 주머니?!"]
+- **제목은 제품의 신기함에 초점** (가격·지분 숫자로 제목 짓지 마라). color: 1줄 "yellow", 2줄 "white".
+
+## 효과음(sfx) — 세그먼트 시작 시점. 아래 이름 중 하나 또는 null. 전체 5~8개
+- "whoosh": 장면 전환·빠른 등장
+- "pop": 자막/물건 톡 등장
+- "ding": 숫자·가격·정답 공개
+- "impact": 반전·충격 쾅
+- "surprise": 놀람 리액션
+- "question": 의문·황당
+- "success": 성공·계약 성사
+- "fail": 실패·거절·오답
+- "tension": 긴장·궁금증
+- "caption": 자막 강조·말풍선
+- "camera": 사진·순간 포착
+- 훅에는 "whoosh"/"pop", 제품 기능 공개엔 "pop"/"ding", 금액 공개엔 "ding", 거절엔 "fail", 성사엔 "success".
+
+## 빨간 동그라미(mark) — clip 에 "mark": true → 말하는 사람 얼굴에 빨간 원. 결정적 한마디 clip 2~3개에만.
+## 감정 태그(tag) — 사용 안 함. 항상 null.
+
+## 출력 형식 — JSON 하나만 (설명, 코드블록 표시 없이)
+{
+  "title_lines": [{"text": "...", "color": "yellow"}, {"text": "...", "color": "white"}],
+  "credit": "© 원본 방송사",
+  "upload": {"title": "호기심형 30자 이내", "description": "1~2문장 + 해시태그 3~5개", "tags": ["...", "..."]},
+  "segments": [
+    {"type": "narration", "text": "내레이션 문장", "broll_id": 12, "sfx": "whoosh"},
+    {"type": "clip", "from_id": 3, "to_id": 4, "subs": ["id 3 번역", "id 4 번역"], "sfx": null, "mark": false}
+  ]
+}
+- narration.broll_id: 내레이션 동안 보여줄 장면이 시작되는 전사 id (내용에 맞는 장면). 같은 id 반복 금지.
+- clip.from_id~to_id: 연속된 전사 id. subs 길이 = (to_id - from_id + 1). 빼고 싶은 줄은 "".
+- 전체 길이(내레이션 ≈ 글자수/9 초 + clip 길이 합) 40~55초.
+
+## 방송 이후 후일담 조사 결과 (웹 검색)
+(조사 결과 없음 — 후일담은 쓰지 말 것)
+
+## 원본 정보
+프로그램/맥락 메모: (없음)
+
+## 원본 전사본 (id [시작-끝 초] 대사)
+0 [3.5-7.5] is what the entrepreneurs believe will be the next big hip talk.
+1 [17.6-18.9] I'm Austin Hillam.
+2 [19.2-20.6] And I'm Stephen Fazio.
+3 [21.2-24.2] Throughout the decades, we have been introduced to objects
+4 [24.2-27.2] that have entertained and engaged millions.
+5 [28.0-30.7] Early on, it was the yo-yo.
+6 [31.3-33.9] In the 60s, we had the Etcher sketch.
+7 [34.8-37.1] In the 80s, there was the Rubik's Cube.
+8 [38.0-42.5] Now introducing the toy of the future.
+9 [44.0-53.8] Fuser does, zip string follows.
+10 [54.6-57.4] The string flies around 35 miles per hour,
+11 [57.7-59.0] and yet is safe to the touch.
+12 [59.8-61.7] Ice Sharks, watch this trick.
+13 [62.0-63.3] It's called the swirl.
+14 [65.6-67.2] This one's the corkscrew.
+15 [68.1-69.6] This one's the step-through.
+16 [74.0-75.6] Presenting the portal.
+17 [78.8-82.0] Zip string glides around smooth objects.
+18 [83.4-84.9] All smooth objects.
+19 [86.9-88.8] Zip string is taking the world by storm.
+20 [89.0-90.2] Oh my god, it's so cool.
+21 [91.0-94.2] We are here for a $100,000 investment
+22 [94.2-96.0] for 10% of our business.
+23 [96.7-98.8] Sharks, who's ready to zip?
+24 [100.8-102.2] Let's show you guys how it works.
+25 [102.3-103.4] Some of you have already figured it out.
+26 [104.0-105.7] So what you want to do is you want to hold it
+27 [105.7-108.2] upright like this with the logo facing outwards.
+28 [108.2-109.5] Oh, yeah!
+29 [114.0-114.8] Do you like some movements?
+30 [115.5-116.2] Guys, come on.
+31 [116.4-119.2] I love it too!
+32 [119.9-120.8] Did you invent it?
+33 [121.1-121.4] Yes.
+34 [121.7-123.4] Tell us the story, how you came up with it.
+35 [123.8-125.3] I'm super passionate about electronics.
+36 [125.7-128.5] A couple years ago, I watched a physics teacher
+37 [128.5-131.4] demonstrate a Benchtop string launcher.
+38 [131.8-135.4] He had this device that would launch a string in a loop.
+39 [135.9-137.6] And I took that Benchtop version,
+40 [138.0-140.3] I compacted it, made it handheld,
+41 [140.7-142.2] and I made this prototype.
+42 [143.3-148.9] Everybody loved it, but I knew I couldn't make a scalable business out of it, until I had Austin over.
+43 [149.4-151.0] We were just nerding out about this device.
+44 [151.6-155.3] My father had some great input, and we turned it into a toy.
+45 [155.9-161.0] I put that toy on my social media, and by the end of the day it had over 20 million views.
+46 [161.3-161.8] What?
+47 [162.6-164.2] It hit the front page of Reddit.
+48 [164.7-165.9] Oh my gosh.
+49 [166.0-167.6] It went just absolutely nuts.
+50 [167.7-169.6] We had everybody reaching out to us.
+51 [169.8-170.4] When was that?
+52 [170.4-172.5] was just over a year ago.
+53 [172.9-174.3] So how many of you sold from all that?
+54 [174.7-176.0] We sold over 10,000.
+55 [176.6-178.9] That's it? How much did you charge for them?
+56 [179.0-180.0] We started $25.
+57 [180.7-183.5] Why would 20 million views you only sold that well?
+58 [183.6-184.6] There's a cost to make them.
+59 [184.8-186.1] It cost $635.
+60 [186.3-187.1] So here's what happened.
+61 [187.6-189.9] So we did a Kickstarter, ran that successfully,
+62 [190.5-192.9] an all-American comedy group known as Dude Perfect
+63 [192.9-194.7] reached out. They loved it.
+64 [194.9-196.9] They took it on a nationwide stage tour,
+65 [197.4-198.2] showed it around the world.
+66 [198.2-202.0] Today, ZipString is in over 50 countries.
+67 [202.6-204.3] We've had so much exposure.
+68 [204.8-206.6] Over 200 million views in total.
+69 [206.8-208.0] Austin, after the Kickstarter.
+70 [208.3-208.5] Yeah.
+71 [208.7-211.7] 20 million views, national tour, all of that.
+72 [211.9-212.1] Yeah.
+73 [212.4-214.5] What were the total sales in dollars?
+74 [214.8-215.0] Yeah.
+75 [216.9-217.9] $277,000.
+76 [218.5-219.7] Why so little?
+77 [219.9-220.6] With all due respect.
+78 [220.8-222.6] If we didn't have the 20 million views
+79 [222.6-223.5] and all the other stuff.
+80 [223.5-223.9] Sure, sure, sure.
+81 [223.9-225.0] I'd say, hey, great start.
+82 [225.5-227.9] Why this and only this?
+83 [227.9-232.8] Supply chain we are struggling to figure that out the demand was there pre-orders were coming
+84 [232.8-238.1] We couldn't make them fast enough. We weren't ready. Have you solved your supply chain problems?
+85 [238.3-241.5] Supply chain is all set up and you do an order for a hundred thousand units
+86 [241.5-246.7] We can as long as we have the case that reduced the price because right now you're paying 635 to make them
+87 [246.7-248.6] I know we can get it down to 587
+88 [249.2-250.7] $25 is too expensive
+89 [252.1-255.5] Spends in this a battery. That's the largest expense. That's correct
+90 [255.5-258.0] Why, you think $25 for this is expensive?
+91 [258.2-258.5] Yeah, I do.
+92 [258.8-259.4] Yeah, I do.
+93 [259.7-260.5] For little kids, yeah.
+94 [260.6-261.8] For parents to buy for their little kids,
+95 [262.0-262.7] to keep them entertained.
+96 [262.8-263.7] In 1995, it's five times the sales.
+97 [263.7-263.8] Are you kidding?
+98 [264.2-266.3] Have you guys not bought stuffed animals lately?
+99 [266.3-270.0] Well, if you could be $9.95, you would sell them, like, billions.
+100 [270.1-271.0] And here's what's happened.
+101 [271.4-274.9] We've talked to him and have a verbal commitment with Walmart, Canada, to start
+102 [274.9-276.3] shipping and selling these.
+103 [277.0-278.7] There, it'll be $14.97.
+104 [279.7-280.8] I'll make you an offer.
+105 [281.0-284.4] I'll take no equity whatsoever if I've ever seen a royalty deal as this one.
+106 [284.4-290.4] I want a bucket unit and I'll give you the hundred thousand dollars and watch what I can do in blowing this thing up.
+107 [290.7-292.0] There's only one Mr. Wonderful.
+108 [292.6-293.5] Kevin is that in perpetuity?
+109 [293.5-295.2] Kevin, they don't have that big a margin.
+110 [295.6-296.6] What's perpetuity, Robert?
+111 [297.0-297.2] Huge.
+112 [297.3-297.5] Forever.
+113 [298.0-298.9] Oh, yes it is.
+114 [299.9-301.3] Here's what you're investing in.
+115 [301.7-305.1] You're investing in a new category of toys.
+116 [305.8-306.5] Really awesome.
+117 [306.6-307.8] I've heard this my whole life.
+118 [308.0-309.1] New categories of everything.
+119 [309.6-310.8] This is a new category.
+120 [311.3-312.7] We are the category kings.
+121 [312.9-313.3] What do you think?
+122 [313.3-318.8] am I off? If there's no other offer, all of a sudden I'm feeling even more
+123 [318.8-325.2] wonderful. Let me jump in. I mean, I love the innovation, love you guys. I think it's
+124 [325.2-330.3] early, so I am taking myself out. I wish you good luck. It's nothing I could help
+125 [330.3-338.4] with, honestly. It's not for me to come out. All right, guys. Couldn't love them more.
+126 [339.5-344.6] Seriously, the key for me is you got to keep going, right? You got to be
+127 [344.6-347.9] the cool, stringy, floaty,
+128 [348.5-350.1] scientisty, geeky product.
+129 [350.6-352.1] That's the investment I want to make.
+130 [352.5-353.7] That's the ride I want to go on.
+131 [353.7-354.6] Is there an offer involved?
+132 [355.0-355.2] Yeah.
+133 [355.6-360.2] I will give you 100,000 for 20%.
+134 [360.8-363.8] I'll do 100,000 for 15%.
+135 [363.8-366.1] I'll do 100,000 for 10%.
+136 [367.2-369.9] Exactly what you offered if you take the deal.
+137 [372.1-373.5] I'll give you extra.
+138 [373.8-375.0] I'll do it for 9%.
+139 [381.8-383.4] Can we take a second to talk real quick?
+140 [383.5-384.3] Wait, wait, wait, wait, wait.
+141 [384.8-386.2] Guys, let me step in.
+142 [386.9-388.6] What you guys have done is great, right?
+143 [388.8-389.4] It's creative.
+144 [390.0-391.3] You've got a chance to make some money.
+145 [391.6-395.0] But as an investment, I think if Peter's out at some point,
+146 [395.2-396.4] I don't really see it as being investable,
+147 [396.8-398.0] so for those reasons, I'm out.
+148 [398.2-398.6] Oh!
+149 [398.7-399.5] Thank you, Mike.
+150 [401.3-402.7] Robert, just thinking here,
+151 [403.6-406.4] you and me together for 20%...
+152 [406.4-407.1] For $100,000?
+153 [407.6-408.6] I like it!
+154 [408.6-409.3] You know why?
+155 [409.4-410.0] I like it, Kevin.
+156 [410.0-411.8] You double your social media fall.
+157 [411.9-414.5] You get two sharks, and we're a little sharky.
+158 [414.7-417.7] Together, instead of us killing each other, we help you.
+159 [418.0-418.5] Double trouble.
+160 [418.8-419.4] Double trouble.
+161 [419.6-421.8] So basically, we give you 100,000 for 20 cents.
+162 [421.9-422.4] You get two sharks.
+163 [422.9-423.7] Oh, I love that, Kevin.
+164 [424.3-425.1] Guys, what's your chance?
+165 [425.1-426.3] $100,000 or 20%.
+166 [426.3-428.2] 100,000, 20% two of us.
+167 [428.5-430.1] Your previous offers.
+168 [430.7-431.4] Are those still available?
+169 [431.8-433.0] Are those still on the table?
+170 [433.3-435.7] There is no rear view mirror in my life.
+171 [435.9-436.7] You got to let go.
+172 [437.0-438.7] This is the deal in front of you right now.
+173 [438.7-439.7] What do you want to do?
+174 [444.6-445.4] We're going to counter.
+175 [447.5-451.2] The counter is, would you be willing to go for 15% together?
+176 [451.7-451.9] No!
+177 [452.3-452.8] You know why?
+178 [452.9-455.2] I want to get up in the morning and feel like I own a piece of it.
+179 [455.2-456.3] Come on, we each own 10%.
+180 [456.3-456.6] Yeah.
+181 [456.8-459.9] This is a toy that's going to be in every house in America.
+182 [459.9-461.8] We agree, which is why we made you the offer.
+183 [462.0-466.9] You guys realized that you had an offer before at 9%, but you didn't grab it.
+184 [467.1-468.4] So now you're sitting here 20.
+185 [469.2-470.6] That happens to the shark sanctum.
+186 [470.6-471.4] Yes, it does, Lord.
+187 [471.4-473.4] Once you walk out with a deal, you get two sharks.
+188 [473.5-474.7] That's extremely valuable.
+189 [475.2-476.1] All right, uh-oh.
+190 [477.3-478.2] What's going on?
+191 [479.2-479.6] Robert?
+192 [480.7-481.0] Kevin?
+193 [482.7-483.5] You got a deal.
+194 [483.8-484.1] Whoa!
+195 [486.6-487.2] Let's zip around.
+196 [489.6-490.5] That's absolutely fantastic.
+197 [490.7-491.2] I'm very excited.
+198 [491.5-491.8] Thank you very much.
+199 [491.8-493.1] This is the next thing that's going to happen.
+200 [493.5-494.0] Yeah, yeah, yeah.
+201 [494.2-495.0] Absolutely amazing.
+202 [495.4-496.4] Let's build a big business.
+203 [496.8-497.4] All right, guys.
+204 [498.0-498.1] Let's go, guys.
+205 [498.1-499.0] Let's go, guys.
+206 [499.6-500.2] Take care, guys.
+207 [500.7-501.2] What do you think, man?
+208 [501.6-502.6] Dude, two sharks.
+209 [503.7-504.1] 20%.
+210 [504.1-508.6] You know $100,000 to 9% would have been the deal and we probably should have just grabbed it up
+211 [508.6-514.6] But you know, I don't think we lost it all in the end, but two sharks joining. I think this is gonna be exciting for us
+212 [514.6-515.5] Good day in the tank

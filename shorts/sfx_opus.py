@@ -26,7 +26,7 @@ SR = 48000
 #    '띵'(글로켄슈필·종, 컷 50ms 안 30% — 우연 8%) > 휙(24%)·역재생 심벌 스웰(19%) > 낮은 쿵(38%) 순.
 #  - 예전 판(거품 팝·나무 톡·천 스치는 소리 같은 실제 녹음)은 참고 영상과 결이 달라 사용자가 '별로'라고 함.
 #  - 소리 파일은 earshot rank(설명 문장 검색, z>=3.8 'strong')로 사용자 효과음 폴더 + opus 키트에서 고름.
-PACK = Path(os.environ.get("SHORTS_SFX_PACK", r"C:\Users\tmd39\Desktop\효과음\효과음600개"))
+PACK = Path(os.environ.get("LOCAL_SFX_DIR") or os.environ.get("SHORTS_SFX_PACK") or (r"C:\Users\tmd39\Desktop\효과음\효과음2869개" if Path(r"C:\Users\tmd39\Desktop\효과음\효과음2869개").exists() else r"C:\Users\tmd39\Desktop\효과음\효과음600개"))
 
 
 def _p(name):
@@ -35,22 +35,27 @@ def _p(name):
 
 FAMILY = {
     "ding": [_p("001_띵.mp3"), _p("185_Ting.mp3"), _p("265_딩 다음 페이지 넘기기.mp3"), _p("400_전화 메시지 소리3.mp3"),
-             _p("526_화면전환효과음_01.mp3"), "chime/fs-159011-ding2-wav-1", _p("042_마법봉.mp3")],
+             _p("526_화면전환효과음_01.mp3"), "chime/fs-159011-ding2-wav-1", _p("042_마법봉.mp3"), _p("016_띠링.mp3")],
     "whoosh": [_p("573_Whoosh(Transition).mp3"), "whoosh/fs-449988-whoosh-med-high-1", _p("190_훅.mp3"),
+               _p("003_휘익.mp3"), _p("009_쉭.mp3"), _p("086_후욱 -b중간1.mp3"), _p("100_후욱 -a짧은2.mp3"),
                "whoosh/fs-60004-fast-sword-swing-sound-1", "whoosh/fs-449992-whoosh-short-low-wav-1",
                "whoosh/fs-60011-whoosh-24-2"],
-    "swell": ["riser/fs-503802-reverse-fx-4-wav-1", "riser/fs-503799-reverse-fx-9-wav-1", _p("087_스르륵 효과음.mp3")],
-    "impact": ["boom/fs-81145-sub-oceano-a-wav-1", "boom/fs-236956-boom-mp3-1"],
-    "pop": [_p("002_뿅.mp3")],
-    "question": [_p("015_띠동띠동(물음표).mp3")],
-    "success": [_p("468_또잉(정답소리).mp3"), _p("379_Correct.mp3")],
-    "surprise": [_p("042_마법봉.mp3"), "riser/fs-503799-reverse-fx-9-wav-1"],
-    "fail": ["boom/fs-81149-sub-oceano-g-sharp-wav-1"],
-    "tension": ["tick/fs-403001-clock-tick-tik-tak-2", "tick/fs-130388-clock-ticking-1"],
-    "caption": [_p("267_캡션 사운드 타탁.mp3"), "key/fs-194795-vintage-keyboard-1-1"],
-    "camera": [_p("502_카메라 플래시 셔터.mp3"), "click/kenney-ui-audio-switch16"],
-    # 돈 금액 + 지폐 아이콘 (2026-11-10): Freesound CC0 금전등록기 — sfx.py search 로 찾아 add
-    "cash": ["chime/own-ov-deafdf72", "chime/own-ov-62dd2f8f"],
+    "swell": ["riser/fs-503802-reverse-fx-4-wav-1", "riser/fs-503799-reverse-fx-9-wav-1",
+              _p("087_스르륵 효과음.mp3"), _p("053_샤스륵 효과음.mp3")],
+    "impact": ["boom/fs-81145-sub-oceano-a-wav-1", "boom/fs-236956-boom-mp3-1",
+               str(ROOT / "assets" / "sfx" / "boom.wav"), _p("405_쿠웅_떨어지며_울리는.mp3"), _p("085_둥(큰북소리).mp3")],
+    "pop": [_p("002_뿅.mp3"), _p("008_팝.mp3"), _p("037_카툰 팝.mp3")],
+    "question": [_p("015_띠동띠동(물음표).mp3"), _p("144_띠용(빠른).mp3")],
+    "success": [_p("468_또잉(정답소리).mp3"), _p("379_Correct.mp3"), _p("414_Correct Answer.mp3")],
+    "surprise": [_p("042_마법봉.mp3"), _p("021_놀람.발견.mp3"), _p("255_놀람_반전.mp3"), "riser/fs-503799-reverse-fx-9-wav-1"],
+    "fail": ["boom/fs-81149-sub-oceano-g-sharp-wav-1", _p("019_삐삑 (오답 -짧은).mp3"), str(ROOT / "assets" / "sfx" / "boom.wav")],
+    "tension": ["tick/fs-403001-clock-tick-tik-tak-2", "tick/fs-130388-clock-ticking-1",
+                _p("0915_Clock Tick.mp3"), _p("1106_Suspense1.mp3")],
+    "caption": [_p("267_캡션 사운드 타탁.mp3"), _p("505_일반 캡션.mp3"), _p("310_핑거 스냅(딱).mp3"), "key/fs-194795-vintage-keyboard-1-1"],
+    "camera": [_p("502_카메라 플래시 셔터.mp3"), _p("018_찰칵 (카메라).mp3"), "click/kenney-ui-audio-switch16"],
+    # 돈 금액 + 지폐 아이콘 (2026-11-10): Freesound CC0 금전등록기 + 15편 레퍼런스 검증 캐셔음
+    "cash": ["chime/own-ov-deafdf72", "chime/own-ov-62dd2f8f",
+             str(ROOT / "assets" / "sfx" / "cash_register_1.wav"), _p("010_철컥띵 (캐셔).mp3"), _p("292_Cash Register.mp3")],
 }
 HERO = {"impact"}  # 한 영상의 큰 한 방: 직전 정적 + 짧게 차오르는 소리
 BUILD = "riser/fs-503802-reverse-fx-4-wav-1"  # 큰 한 방 직전: 역재생 심벌 스웰 (참고 영상에 많음)

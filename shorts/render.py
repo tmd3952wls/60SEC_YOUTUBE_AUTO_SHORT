@@ -529,8 +529,10 @@ def render(job: Path, cfg):
         idx += 1
     else:
         fc.append("[0:a]anull[voice]")
+    from auto_sfx.config import is_auto_sfx_enabled
+    auto_sfx_on = is_auto_sfx_enabled(cfg) and not R.get("no_sfx")
     used_sfx = []
-    for n, (t, name) in enumerate(sfx_events):
+    for n, (t, name) in enumerate([] if auto_sfx_on else sfx_events):
         cat = LEGACY_SFX.get(name, name)
         item = pick_sfx(cat, f"{job.name}-{n}")  # 사용자 효과음 라이브러리 우선
         if item:
@@ -560,6 +562,26 @@ def render(job: Path, cfg):
            "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-r", "30",
            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", f"{total:.3f}",
            out.name, cwd=job)
+    if auto_sfx_on:
+        from auto_sfx.director import apply_auto_sfx_if_enabled
+        sfx_rep = apply_auto_sfx_if_enabled(
+            draft_video_path=out,
+            output_video_path=out,
+            subtitle_path=job / "subs.ass",
+            cuesheet_out_path=job / "final_sfx_cuesheet.json",
+            edl_hints=sfx_events,
+            repo_cfg=cfg,
+        )
+        used_sfx = [
+            {
+                "t": round(rc["cue"]["timestamp_sec"], 2),
+                "category": rc["cue"]["sfx_category"],
+                "name": rc["sfx"]["file_name"],
+                "method": rc["resolution_method"],
+            }
+            for rc in sfx_rep.get("resolved_cues", [])
+        ]
+        write_json(job / "sfx_used.json", used_sfx)
 
     up = plan.get("upload", {})
     (job / "upload.txt").write_text(

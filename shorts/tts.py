@@ -1,6 +1,7 @@
 """3단계: 내레이션 TTS.
 
 provider
+- capcut   : CapCut '활기찬 바리톤' (1.1배속) 전용 (assets/voices/<voice>/<md5>.wav 수확본 최우선 + 공식 ELEVENLABS_API_KEY 연동 지원; 타 음성 대체 금지)
 - fish     : Fish Audio API  (FISH_API_KEY, config tts.fish.reference_id)
 - typecast : Typecast API    (TYPECAST_API_KEY, config tts.typecast.voice_id)
 - sapi     : Windows 기본 한국어 음성(Heami). 무료 테스트용, 품질 낮음.
@@ -8,14 +9,20 @@ provider
 """
 import hashlib
 import json
-import re
 import os
+import re
+import shutil
 import subprocess
 import urllib.error
 import urllib.request
 from pathlib import Path
 
 from .common import ffmpeg
+
+# CapCut '활기찬 바리톤' 실제 내부 보이스 메타데이터 (draft_content.json 기준: tone_platform=11labs)
+CAPCUT_ELEVENLABS_VOICES = {
+    "vibrant_baritone": "rKZCRTvCRsUjB3zmsrOY",
+}
 
 
 def _post_audio(url, headers, body):
@@ -74,18 +81,62 @@ def _sapi(text, out, c):
     subprocess.run(["powershell", "-NoProfile", "-Command", ps], check=True, capture_output=True)
 
 
+def _elevenlabs_capcut_voice(text: str, dst_wav: Path, voice_id: str, speed: float, api_key: str) -> None:
+    """공식 ElevenLabs REST API 로 CapCut 동일 보이스(rKZCRTvCRsUjB3zmsrOY) 생성 후 1.1배속 48kHz 스테레오 저장."""
+    url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}?output_format=mp3_44100_128"
+    headers = {
+        "xi-api-key": api_key.strip(),
+        "Content-Type": "application/json",
+        "Accept": "audio/mpeg",
+    }
+    body = {
+        "text": text.strip(),
+        "model_id": "eleven_multilingual_v2",
+    }
+    mp3_bytes = _post_audio(url, headers, body)
+    tmp_mp3 = dst_wav.with_suffix(".11labs.mp3")
+    dst_wav.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        tmp_mp3.write_bytes(mp3_bytes)
+        af = ["-af", f"atempo={speed}"] if abs(speed - 1.0) > 1e-3 else []
+        ffmpeg("-i", tmp_mp3, *af, "-ar", "48000", "-ac", "2", dst_wav)
+    finally:
+        tmp_mp3.unlink(missing_ok=True)
+
+
 def _capcut(text, out: Path, c):
-    """CapCut AI 목소리 (2026-11-12): API 가 없어 tools/capcut_voice.py 로 CapCut 안에서 만든 음성을 가져다 씀.
-    assets/voices/<voice>/<md5(문장)>.wav 가 없으면 make → CapCut 텍스트 읽기 → harvest 를 먼저."""
-    import hashlib, shutil
+    """CapCut AI 목소리 ('활기찬 바리톤' vibrant_baritone 1.1배속 전용 — 타 음성 대체 엄격 금지):
+    1) assets/voices/<voice>/<md5(문장)>.wav 수확본이 있으면 즉시 사용
+    2) ELEVENLABS_API_KEY 가 설정된 경우 CapCut 동일 성우 ID(rKZCRTvCRsUjB3zmsrOY) 공식 API 로 생성·캐시 후 사용
+    3) 둘 다 없으면 다른 목소리(여성 SAPI·타 TTS)로 절대 대체하지 않고 명시적 오류를 발생시킴
+    """
     from .common import ASSETS
-    f = ASSETS / "voices" / c["voice"] / (hashlib.md5(text.strip().encode("utf-8")).hexdigest()[:16] + ".wav")
-    if not f.exists():
-        raise RuntimeError(f"CapCut 목소리 파일 없음: {text} → tools/capcut_voice.py make/harvest 먼저")
-    shutil.copy2(f, out)
+    voice = c.get("voice", "vibrant_baritone")
+    speed = float(c.get("speed", 1.1))
+    f = ASSETS / "voices" / voice / (hashlib.md5(text.strip().encode("utf-8")).hexdigest()[:16] + ".wav")
+    if f.exists():
+        shutil.copy2(f, out)
+        return
+    api_key = os.environ.get("ELEVENLABS_API_KEY", "").strip()
+    voice_id = c.get("elevenlabs_voice_id") or CAPCUT_ELEVENLABS_VOICES.get(voice, "")
+    if api_key and voice_id:
+        _elevenlabs_capcut_voice(text, f, voice_id, speed, api_key)
+        shutil.copy2(f, out)
+        return
+    raise RuntimeError(
+        f"CapCut '{voice}' ({speed}x) 전용 음성 파일이 없습니다 (타 음성 대체 금지): {text}\n"
+        f"  → CapCut Desktop 'voice_<작업>_{voice}' 프로젝트에서 '활기찬 바리톤' 텍스트 읽기 후 "
+        f"`python tools/capcut_voice.py harvest --job <작업> --voice {voice} --fallback-speed {speed}` 를 실행하거나, "
+        f".env 에 ELEVENLABS_API_KEY 를 설정하세요."
+    )
 
 
-PROVIDERS = {"fish": _fish, "typecast": _typecast, "sapi": _sapi, "capcut": _capcut}
+PROVIDERS = {
+    "fish": _fish,
+    "typecast": _typecast,
+    "sapi": _sapi,
+    "capcut": _capcut,
+}
 
 
 def synth(text, tts_dir: Path, cfg):
@@ -106,8 +157,6 @@ def synth(text, tts_dir: Path, cfg):
     trim = "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.03"
     squeeze = (f"silenceremove=stop_periods=-1:stop_duration={pause}:stop_threshold={thr}dB:"
                f"stop_silence={pause}")
-    # TTS 원본이 아주 작게 오는 경우(최고 -19dB)가 있어, 고정 -35dB 기준으로는 조용한 말끝("던지는데")까지
-    # 무음으로 잘려 나갔음 → 먼저 최고 음량을 -1dB 로 맞춘 뒤 무음을 판정
     vd = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(raw), "-af", "volumedetect", "-f", "null", "-"],
                         capture_output=True, text=True, encoding="utf-8", errors="replace").stderr
     m = re.search(r"max_volume: (-?[\d.]+) dB", vd)
