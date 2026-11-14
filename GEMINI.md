@@ -14,8 +14,9 @@
 
 1. **원클릭 신규 작업 시작 (`+ 새 작업` 모달 → `POST /api/jobs/create` → `editor/new_job_worker.py`)**
    - 상단바 **`+ 새 작업`** 버튼에 유튜브 URL(또는 로컬 영상 경로)과 제목·주제 힌트(`/`로 2줄 분리 가능)만 입력하면 `yt-dlp` 다운로드(1920x1080 30fps 정규화) → Whisper 음성 전사 → 어절 타임스탬프 정렬 → 한국어 대본 작성(`claude-cli` / `agy-cli` / API / 0원 스타터 초안) → `v1_edl.json` 변환까지 완료한 뒤 자동으로 편집 화면을 엽니다.
-2. **내레이션 목소리 (`CapCut 활기찬 바리톤` · `vibrant_baritone` 1.1배속)**
-   - 상단바 **`바리톤 음성`** 버튼에서 미준비 내레이션 문장만 모은 CapCut 프로젝트를 생성(`make`)하고, 읽힌 음성을 1.1배속으로 수확(`harvest`)해 즉시 렌더링·미리보기에 사용합니다.
+2. **내레이션 목소리 (`CapCut 활기찬 바리톤` · `vibrant_baritone` 1.1배속 · 100% 무인 자동화 지원)**
+   - CLI/에이전트에서는 **`python -X utf8 tools/capcut_auto_tts.py --job <작업명> --edl <vN_edl.json>`** 한 줄로 CapCut 실행(`QSG_RHI_BACKEND=opengl`, `QT_OPENGL=software` + `PrintWindow` / `PostMessageW`) → `'활기찬 바리톤'` 일괄 음성 생성 → `1.1x` 배속 수확(`harvest`)까지 사용자 클릭 없이 100% 무인 자동 수행합니다. (`PIL.ImageGrab` / `win32gui.EnumWindows` 오류는 Windows GDI 특성이며 샌드박스 차단이 아니므로 항상 `tools/capcut_auto_tts.py`를 사용합니다.)
+   - 웹 에디터 상단바 **`바리톤 음성`** 버튼에서도 동일하게 생성(`make`) 및 수확(`harvest`)을 지원합니다.
 3. **해외쇼쇼 강도·밀도 프리셋 · ★ 즐겨찾기 · 2초 오디오 리믹스**
    - **AI 효과음** 탭에서 `깔끔형` / `해외쇼쇼 표준` / `타격감 강조형` 프리셋을 선택하고 **`소리만 다시 입히기 (2초 완성)`**(`-c:v copy`)으로 `full_vN_sfx1.mp4`를 무손실 생성합니다. **효과음 폴더** 탭에서 별표(★)를 찍은 효과음(`assets/sfx_favorites.json`)은 큐시트 매칭 시 최우선 채택됩니다.
 4. **원클릭 CapCut 프로젝트 내보내기 (`CapCut 내보내기`)**
