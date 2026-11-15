@@ -583,9 +583,16 @@ def render(job: Path, cfg):
         ]
         write_json(job / "sfx_used.json", used_sfx)
 
-    up = plan.get("upload", {})
-    (job / "upload.txt").write_text(
-        f"제목: {up.get('title', '')}\n\n설명:\n{up.get('description', '')}\n\n태그: {', '.join(up.get('tags', []))}\n",
-        encoding="utf-8")
+    write_upload_txt(job, plan.get("upload", {}))
     write_json(job / "timeline.json", [{"kind": s["kind"], "dur": round(s["dur"], 2)} for s in segs])
     return out, total
+
+
+def write_upload_txt(job: Path, up: dict, pinned_comment: str = ""):
+    """upload.txt (제목·설명·태그) + 고정댓글 초안이 있으면 하단에 '고정댓글 초안' 섹션."""
+    up = up or {}
+    pinned = (pinned_comment or up.get("pinned_comment") or "").strip()
+    text = f"제목: {up.get('title', '')}\n\n설명:\n{up.get('description', '')}\n\n태그: {', '.join(up.get('tags', []))}\n"
+    if pinned:
+        text += f"\n고정댓글 초안:\n{pinned}\n"
+    (Path(job) / "upload.txt").write_text(text, encoding="utf-8")

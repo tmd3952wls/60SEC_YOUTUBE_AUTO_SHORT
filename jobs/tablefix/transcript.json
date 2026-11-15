@@ -1,0 +1,944 @@
+[
+  {
+    "id": 0,
+    "start": 7.25,
+    "end": 11.23,
+    "text": "Hello, Sharks. My name is Steve Christian, proudly from Houston, Texas."
+  },
+  {
+    "id": 1,
+    "start": 11.93,
+    "end": 16.95,
+    "text": "I'm asking for $100,000 for 25% of my business, the Table Jacks."
+  },
+  {
+    "id": 2,
+    "start": 17.41,
+    "end": 22.89,
+    "text": "I've been in the restaurant industry for 18 years, and I hate the same things that my customers do."
+  },
+  {
+    "id": 3,
+    "start": 23.53,
+    "end": 24.51,
+    "text": "Wobbly tables."
+  },
+  {
+    "id": 4,
+    "start": 25.75,
+    "end": 26.69,
+    "text": "It's an outrage."
+  },
+  {
+    "id": 5,
+    "start": 27.35,
+    "end": 28.99,
+    "text": "Number one complaint in the restaurants."
+  },
+  {
+    "id": 6,
+    "start": 29.31,
+    "end": 34.09,
+    "text": "Normally we would get down and put products underneath the table so that we could stable them out."
+  },
+  {
+    "id": 7,
+    "start": 34.09,
+    "end": 40.73,
+    "text": "What I've invented is the longest-lasting, most cost-efficient, durable stabilizer ever made."
+  },
+  {
+    "id": 8,
+    "start": 43.04,
+    "end": 44.1,
+    "text": "The table jack."
+  },
+  {
+    "id": 9,
+    "start": 44.4,
+    "end": 51.36,
+    "text": "With the press of the foot, now the waitstaff, watch closely, it works fast."
+  },
+  {
+    "id": 10,
+    "start": 51.74,
+    "end": 56.48,
+    "text": "With the press of the foot, the waitress can drop the table down and stabilize the table,"
+  },
+  {
+    "id": 11,
+    "start": 56.64,
+    "end": 59.7,
+    "text": "serve the customers instead of looking for something to fix the furniture."
+  },
+  {
+    "id": 12,
+    "start": 59.9,
+    "end": 60.52,
+    "text": "Well done."
+  },
+  {
+    "id": 13,
+    "start": 60.8,
+    "end": 62.1,
+    "text": "And here's how it works."
+  },
+  {
+    "id": 14,
+    "start": 62.1,
+    "end": 65.76,
+    "text": "By using three stationary glides that come in the kit"
+  },
+  {
+    "id": 15,
+    "start": 66.58,
+    "end": 68.4,
+    "text": "and one table jack,"
+  },
+  {
+    "id": 16,
+    "start": 68.96,
+    "end": 72.48,
+    "text": "we can stabilize the table no matter which way it wobbles,"
+  },
+  {
+    "id": 17,
+    "start": 72.52,
+    "end": 73.66,
+    "text": "left or right, front or back,"
+  },
+  {
+    "id": 18,
+    "start": 73.78,
+    "end": 75.08,
+    "text": "or simply with the press of the foot."
+  },
+  {
+    "id": 19,
+    "start": 76.6,
+    "end": 78.64,
+    "text": "You know, Sharks, we've been to get inquiries"
+  },
+  {
+    "id": 20,
+    "start": 78.64,
+    "end": 82.92,
+    "text": "from all over North America, United Kingdom, Japan, Guam."
+  },
+  {
+    "id": 21,
+    "start": 83.02,
+    "end": 84.36,
+    "text": "Not sure exactly where that is."
+  },
+  {
+    "id": 22,
+    "start": 87.52,
+    "end": 90.02,
+    "text": "If you'd like, I've got some here I can pass out to you."
+  },
+  {
+    "id": 23,
+    "start": 90.12,
+    "end": 90.56,
+    "text": "Please do."
+  },
+  {
+    "id": 24,
+    "start": 90.56,
+    "end": 94.52,
+    "text": "Sure. You're welcome to open the packages up."
+  },
+  {
+    "id": 25,
+    "start": 96.85,
+    "end": 97.49,
+    "text": "Thank you."
+  },
+  {
+    "id": 26,
+    "start": 97.93,
+    "end": 98.63,
+    "text": "Thank you."
+  },
+  {
+    "id": 27,
+    "start": 100.49,
+    "end": 102.21,
+    "text": "This is one of the mysteries of life."
+  },
+  {
+    "id": 28,
+    "start": 102.45,
+    "end": 102.53,
+    "text": "Right."
+  },
+  {
+    "id": 29,
+    "start": 102.65,
+    "end": 105.91,
+    "text": "There's where's the other sock, and why do tables wobble?"
+  },
+  {
+    "id": 30,
+    "start": 106.01,
+    "end": 109.79,
+    "text": "So explain to us what's going on with the floor and how that causes it to wobble."
+  },
+  {
+    "id": 31,
+    "start": 109.91,
+    "end": 112.05,
+    "text": "Well, there is no perfectly level concrete."
+  },
+  {
+    "id": 32,
+    "start": 112.49,
+    "end": 117.05,
+    "text": "If you look at this wood right here, when this wood starts settling in, it's going to have the humps in it."
+  },
+  {
+    "id": 33,
+    "start": 117.51,
+    "end": 120.87,
+    "text": "That's what drove me in, me walking into my restaurants and seeing this stuff,"
+  },
+  {
+    "id": 34,
+    "start": 120.87,
+    "end": 122.31,
+    "text": "is what drove me in eight years ago"
+  },
+  {
+    "id": 35,
+    "start": 122.31,
+    "end": 124.21,
+    "text": "to start designing the table jacks."
+  },
+  {
+    "id": 36,
+    "start": 124.27,
+    "end": 125.43,
+    "text": "What are your sales, Steve?"
+  },
+  {
+    "id": 37,
+    "start": 125.73,
+    "end": 126.57,
+    "text": "Well, our sales right now,"
+  },
+  {
+    "id": 38,
+    "start": 126.69,
+    "end": 128.25,
+    "text": "within the two-year period of time of business,"
+  },
+  {
+    "id": 39,
+    "start": 128.39,
+    "end": 130.35,
+    "text": "we're nearing $200,000 in sales."
+  },
+  {
+    "id": 40,
+    "start": 130.51,
+    "end": 132.07,
+    "text": "But you started eight years ago."
+  },
+  {
+    "id": 41,
+    "start": 132.25,
+    "end": 134.55,
+    "text": "No, I started working on it eight years ago, okay?"
+  },
+  {
+    "id": 42,
+    "start": 134.69,
+    "end": 136.41,
+    "text": "Now, let me tell you the reason about that."
+  },
+  {
+    "id": 43,
+    "start": 136.75,
+    "end": 138.65,
+    "text": "Again, I own three restaurants."
+  },
+  {
+    "id": 44,
+    "start": 138.91,
+    "end": 140.31,
+    "text": "I'm doing this by myself."
+  },
+  {
+    "id": 45,
+    "start": 140.89,
+    "end": 144.35,
+    "text": "Six months ago, I sold two of my restaurants..."
+  },
+  {
+    "id": 46,
+    "start": 144.35,
+    "end": 145.57,
+    "text": "Your own restaurants. ...for a profit,"
+  },
+  {
+    "id": 47,
+    "start": 145.61,
+    "end": 147.03,
+    "text": "and when I put them on the market,"
+  },
+  {
+    "id": 48,
+    "start": 147.11,
+    "end": 148.17,
+    "text": "everybody was, why are you selling?"
+  },
+  {
+    "id": 49,
+    "start": 148.27,
+    "end": 149.49,
+    "text": "It's a positive cash flow business"
+  },
+  {
+    "id": 50,
+    "start": 149.49,
+    "end": 152.77,
+    "text": "that I put from the ground up with 94 employees."
+  },
+  {
+    "id": 51,
+    "start": 153.03,
+    "end": 154.15,
+    "text": "So why did you sell them?"
+  },
+  {
+    "id": 52,
+    "start": 154.29,
+    "end": 156.37,
+    "text": "I sold them because I see more value than in here."
+  },
+  {
+    "id": 53,
+    "start": 156.39,
+    "end": 157.27,
+    "text": "Let me ask you a question."
+  },
+  {
+    "id": 54,
+    "start": 157.37,
+    "end": 158.19,
+    "text": "I see the opportunity."
+  },
+  {
+    "id": 55,
+    "start": 158.19,
+    "end": 159.29,
+    "text": "I see the value."
+  },
+  {
+    "id": 56,
+    "start": 159.53,
+    "end": 161.13,
+    "text": "Better mouse trap on table legs."
+  },
+  {
+    "id": 57,
+    "start": 161.25,
+    "end": 161.81,
+    "text": "Got it, all that."
+  },
+  {
+    "id": 58,
+    "start": 162.19,
+    "end": 163.03,
+    "text": "Two options here."
+  },
+  {
+    "id": 59,
+    "start": 163.19,
+    "end": 165.45,
+    "text": "One is I retrofit the whole world of tables"
+  },
+  {
+    "id": 60,
+    "start": 165.45,
+    "end": 167.97,
+    "text": "by finding each table one at a time."
+  },
+  {
+    "id": 61,
+    "start": 168.23,
+    "end": 170.45,
+    "text": "I die of old age before I ever make any money."
+  },
+  {
+    "id": 62,
+    "start": 170.89,
+    "end": 174.21,
+    "text": "Option two is I go to the manufacturer of tables and say,"
+  },
+  {
+    "id": 63,
+    "start": 174.27,
+    "end": 176.85,
+    "text": "Look, Steve, my buddy in Houston, solved the problem."
+  },
+  {
+    "id": 64,
+    "start": 176.85,
+    "end": 180.37,
+    "text": "and by having you install these on new tables every time you ship one,"
+  },
+  {
+    "id": 65,
+    "start": 180.95,
+    "end": 183.75,
+    "text": "you've got to pay me a royalty because I have a patent, right?"
+  },
+  {
+    "id": 66,
+    "start": 183.95,
+    "end": 186.15,
+    "text": "I have a utility patent, a very strong utility patent."
+  },
+  {
+    "id": 67,
+    "start": 186.15,
+    "end": 191.05,
+    "text": "Okay, is it better for you to put all of your time going to the manufacturers of the table?"
+  },
+  {
+    "id": 68,
+    "start": 191.07,
+    "end": 194.17,
+    "text": "No, because if there's 9,000 restaurants, whoever the number is, right,"
+  },
+  {
+    "id": 69,
+    "start": 194.35,
+    "end": 197.31,
+    "text": "and they all have a table, they're not going to immediately replace those tables."
+  },
+  {
+    "id": 70,
+    "start": 197.31,
+    "end": 197.67,
+    "text": "I don't care."
+  },
+  {
+    "id": 71,
+    "start": 197.69,
+    "end": 200.11,
+    "text": "Well, what happened when you went to the trade show?"
+  },
+  {
+    "id": 72,
+    "start": 200.53,
+    "end": 201.43,
+    "text": "But there's distributors that sell all of them."
+  },
+  {
+    "id": 73,
+    "start": 201.45,
+    "end": 203.25,
+    "text": "I can't answer y'all's questions real easy right now."
+  },
+  {
+    "id": 74,
+    "start": 203.53,
+    "end": 204.87,
+    "text": "Well, we're fighting amongst ourselves."
+  },
+  {
+    "id": 75,
+    "start": 204.91,
+    "end": 205.81,
+    "text": "Please stay out of it."
+  },
+  {
+    "id": 76,
+    "start": 205.93,
+    "end": 206.49,
+    "text": "Please stay out of it."
+  },
+  {
+    "id": 77,
+    "start": 207.55,
+    "end": 212.85,
+    "text": "the whole point is that there's this kind of a binary decision because trying to get to every"
+  },
+  {
+    "id": 78,
+    "start": 212.85,
+    "end": 218.65,
+    "text": "table that's already in a restaurant is a huge hassle I'm already doing it I just now put I've"
+  },
+  {
+    "id": 79,
+    "start": 218.65,
+    "end": 223.55,
+    "text": "got right now I got Phoenix Miami Las Vegas LA for the past two days I've been selling out here"
+  },
+  {
+    "id": 80,
+    "start": 223.55,
+    "end": 227.91,
+    "text": "in LA I'd rodeo Boulevard yesterday I saw it at Venice Beach I sold restaurant wait wait you went"
+  },
+  {
+    "id": 81,
+    "start": 227.91,
+    "end": 232.73,
+    "text": "door-to-door I love it I've got a guy in Texas that is putting 100 to 300 of these a week on"
+  },
+  {
+    "id": 82,
+    "start": 232.73,
+    "end": 237.31,
+    "text": "right now there's a very very famous piece of literature i want you to hear me on this story"
+  },
+  {
+    "id": 83,
+    "start": 237.31,
+    "end": 242.27,
+    "text": "that i think will define your business it's going to help you what's it called dante and he wrote"
+  },
+  {
+    "id": 84,
+    "start": 242.27,
+    "end": 248.89,
+    "text": "the versions of hell there's seven different levels of hell the seventh level is you in a"
+  },
+  {
+    "id": 85,
+    "start": 248.89,
+    "end": 257.34,
+    "text": "restaurant changing out the bottom of a table i don't need to hear any more i'm out okay what do"
+  },
+  {
+    "id": 86,
+    "start": 257.34,
+    "end": 258.0,
+    "text": "What do they cost?"
+  },
+  {
+    "id": 87,
+    "start": 258.36,
+    "end": 260.94,
+    "text": "Nobody's even asking what a package costs."
+  },
+  {
+    "id": 88,
+    "start": 261.44,
+    "end": 262.36,
+    "text": "Yeah, that's right."
+  },
+  {
+    "id": 89,
+    "start": 262.78,
+    "end": 263.86,
+    "text": "So it's $15."
+  },
+  {
+    "id": 90,
+    "start": 264.26,
+    "end": 264.84,
+    "text": "This kit is $15."
+  },
+  {
+    "id": 91,
+    "start": 264.84,
+    "end": 266.18,
+    "text": "And what does it cost you to make it?"
+  },
+  {
+    "id": 92,
+    "start": 266.32,
+    "end": 267.8,
+    "text": "$3 is 65 cents."
+  },
+  {
+    "id": 93,
+    "start": 268.3,
+    "end": 271.12,
+    "text": "Steve, they work in a lot of bars, and we use sugar packets."
+  },
+  {
+    "id": 94,
+    "start": 271.28,
+    "end": 272.6,
+    "text": "And sugar packs cost me money."
+  },
+  {
+    "id": 95,
+    "start": 272.72,
+    "end": 273.82,
+    "text": "That's why it's a great product."
+  },
+  {
+    "id": 96,
+    "start": 273.82,
+    "end": 276.22,
+    "text": "But I'm listening to you, and I'm not clear."
+  },
+  {
+    "id": 97,
+    "start": 276.62,
+    "end": 277.8,
+    "text": "How do you make it bigger?"
+  },
+  {
+    "id": 98,
+    "start": 278.06,
+    "end": 280.28,
+    "text": "You could take a dog off a meat wagon, I'm telling you."
+  },
+  {
+    "id": 99,
+    "start": 283.46,
+    "end": 285.84,
+    "text": "Can it work on a four-legged table,"
+  },
+  {
+    "id": 100,
+    "start": 285.84,
+    "end": 289.56,
+    "text": "are only with this kind of a base well it's a four-legged i'm talking about four separate legs"
+  },
+  {
+    "id": 101,
+    "start": 289.56,
+    "end": 294.06,
+    "text": "it doesn't work it has to have this configuration well a four-legged table is going to be different"
+  },
+  {
+    "id": 102,
+    "start": 294.06,
+    "end": 299.66,
+    "text": "that is that is something right now we're only on the cabinet i got it got it no was that a no"
+  },
+  {
+    "id": 103,
+    "start": 299.66,
+    "end": 304.54,
+    "text": "that was a no i think well i mean i could mount and i could design it to fit to this okay okay"
+  },
+  {
+    "id": 104,
+    "start": 304.54,
+    "end": 309.96,
+    "text": "here's what i'm thinking okay i was working as a waitress when i got my thousand dollar"
+  },
+  {
+    "id": 105,
+    "start": 309.96,
+    "end": 315.52,
+    "text": "loan to start my business and that was a constant problem but let me tell you what was key"
+  },
+  {
+    "id": 106,
+    "start": 315.84,
+    "end": 320.28,
+    "text": "to making the tips, I would pretend the table was a problem and bend on it."
+  },
+  {
+    "id": 107,
+    "start": 320.66,
+    "end": 322.24,
+    "text": "Oh, and you would hit on the customers?"
+  },
+  {
+    "id": 108,
+    "start": 322.24,
+    "end": 324.18,
+    "text": "Well, let me tell you, my tips were through the roof."
+  },
+  {
+    "id": 109,
+    "start": 324.68,
+    "end": 328.22,
+    "text": "Now, do you really think that was because of the table or because you're bending over?"
+  },
+  {
+    "id": 110,
+    "start": 328.38,
+    "end": 328.92,
+    "text": "Yeah, exactly."
+  },
+  {
+    "id": 111,
+    "start": 330.16,
+    "end": 333.12,
+    "text": "But if not for that little gimmick, I could have never gotten the $1,000."
+  },
+  {
+    "id": 112,
+    "start": 333.12,
+    "end": 335.22,
+    "text": "I could have never built my billion-dollar business."
+  },
+  {
+    "id": 113,
+    "start": 335.52,
+    "end": 336.76,
+    "text": "None of that would have happened."
+  },
+  {
+    "id": 114,
+    "start": 337.08,
+    "end": 338.64,
+    "text": "In principle, I can't go in."
+  },
+  {
+    "id": 115,
+    "start": 340.3,
+    "end": 340.88,
+    "text": "I'm out."
+  },
+  {
+    "id": 116,
+    "start": 343.16,
+    "end": 344.36,
+    "text": "It's really clever."
+  },
+  {
+    "id": 117,
+    "start": 344.36,
+    "end": 345.4,
+    "text": "It really works."
+  },
+  {
+    "id": 118,
+    "start": 345.4,
+    "end": 346.84,
+    "text": "But just on one type of table."
+  },
+  {
+    "id": 119,
+    "start": 346.84,
+    "end": 353.1,
+    "text": "You've gone knocking on doors, but in all these years, you don't have that big of sales."
+  },
+  {
+    "id": 120,
+    "start": 353.58,
+    "end": 359.1,
+    "text": "And I think it might be because you created something very clever for a problem that not enough people have,"
+  },
+  {
+    "id": 121,
+    "start": 359.28,
+    "end": 360.82,
+    "text": "where they want to pay for it."
+  },
+  {
+    "id": 122,
+    "start": 361.48,
+    "end": 364.22,
+    "text": "I don't see a big market for it. I'm out."
+  },
+  {
+    "id": 123,
+    "start": 366.86,
+    "end": 369.76,
+    "text": "Great invention. It obviously certainly works."
+  },
+  {
+    "id": 124,
+    "start": 369.92,
+    "end": 376.36,
+    "text": "It's going to be a long, long journey to get it into a lot of restaurants where you can make money,"
+  },
+  {
+    "id": 125,
+    "start": 376.36,
+    "end": 378.82,
+    "text": "and then I, as an investor, can't make money."
+  },
+  {
+    "id": 126,
+    "start": 379.48,
+    "end": 380.58,
+    "text": "I don't want to be there."
+  },
+  {
+    "id": 127,
+    "start": 380.76,
+    "end": 381.76,
+    "text": "I worked in a restaurant,"
+  },
+  {
+    "id": 128,
+    "start": 381.78,
+    "end": 383.92,
+    "text": "so I would never go back there in any way."
+  },
+  {
+    "id": 129,
+    "start": 384.22,
+    "end": 384.68,
+    "text": "I'm out."
+  },
+  {
+    "id": 130,
+    "start": 385.98,
+    "end": 386.38,
+    "text": "Okay."
+  },
+  {
+    "id": 131,
+    "start": 386.88,
+    "end": 389.0,
+    "text": "So, Mark, you're the last shark that has an opportunity."
+  },
+  {
+    "id": 132,
+    "start": 389.0,
+    "end": 389.62,
+    "text": "I'm the last shark?"
+  },
+  {
+    "id": 133,
+    "start": 389.76,
+    "end": 390.22,
+    "text": "Oh, man."
+  },
+  {
+    "id": 134,
+    "start": 390.22,
+    "end": 390.9,
+    "text": "And you're from Texas."
+  },
+  {
+    "id": 135,
+    "start": 391.38,
+    "end": 392.36,
+    "text": "Throw this guy a bone."
+  },
+  {
+    "id": 136,
+    "start": 392.66,
+    "end": 394.54,
+    "text": "Give him $100,000, please."
+  },
+  {
+    "id": 137,
+    "start": 395.34,
+    "end": 396.14,
+    "text": "I beg you."
+  },
+  {
+    "id": 138,
+    "start": 396.68,
+    "end": 398.72,
+    "text": "I'm so close to getting over the hill on this"
+  },
+  {
+    "id": 139,
+    "start": 398.72,
+    "end": 401.04,
+    "text": "because once we get, we've gotten some of the big people,"
+  },
+  {
+    "id": 140,
+    "start": 401.12,
+    "end": 403.6,
+    "text": "I need to get past that gatekeeper"
+  },
+  {
+    "id": 141,
+    "start": 403.6,
+    "end": 405.02,
+    "text": "and where they can see him"
+  },
+  {
+    "id": 142,
+    "start": 405.02,
+    "end": 406.82,
+    "text": "Because them people sitting up in that office,"
+  },
+  {
+    "id": 143,
+    "start": 406.94,
+    "end": 409.54,
+    "text": "they don't know that they have wobbly tables in the restaurants."
+  },
+  {
+    "id": 144,
+    "start": 409.8,
+    "end": 411.22,
+    "text": "They're so busy doing those things."
+  },
+  {
+    "id": 145,
+    "start": 411.48,
+    "end": 414.38,
+    "text": "To get this thing to go, it's not going to take that much."
+  },
+  {
+    "id": 146,
+    "start": 414.4,
+    "end": 415.74,
+    "text": "Steve, look, I love you, right?"
+  },
+  {
+    "id": 147,
+    "start": 415.92,
+    "end": 418.54,
+    "text": "Anybody who goes door-to-door is just close to my heart"
+  },
+  {
+    "id": 148,
+    "start": 418.54,
+    "end": 420.9,
+    "text": "because I grew up selling magazines door-to-door."
+  },
+  {
+    "id": 149,
+    "start": 421.12,
+    "end": 423.66,
+    "text": "And if you're willing to go door-to-door, you can sell anything."
+  },
+  {
+    "id": 150,
+    "start": 423.88,
+    "end": 424.06,
+    "text": "Anything."
+  },
+  {
+    "id": 151,
+    "start": 424.5,
+    "end": 430.22,
+    "text": "But the problem is I'm not ready to invest $100,000 to be a partner."
+  },
+  {
+    "id": 152,
+    "start": 430.34,
+    "end": 432.86,
+    "text": "I'm not ready to make the commitment or the investments."
+  },
+  {
+    "id": 153,
+    "start": 433.14,
+    "end": 434.92,
+    "text": "And for that reason, I'm out."
+  },
+  {
+    "id": 154,
+    "start": 435.02,
+    "end": 438.12,
+    "text": "Thank you Steve."
+  },
+  {
+    "id": 155,
+    "start": 438.34,
+    "end": 439.54,
+    "text": "Thank you Steve."
+  },
+  {
+    "id": 156,
+    "start": 439.9,
+    "end": 440.06,
+    "text": "A lot of fun."
+  }
+]

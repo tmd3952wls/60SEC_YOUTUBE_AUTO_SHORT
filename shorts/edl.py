@@ -33,19 +33,7 @@ def _env_db(path, hop=160):
 
 PW, PH = 1080, 1050  # 영상 패널
 
-# 자막에만 쓰는 재미 표현 (참고: 셀 인사이트 쇼츠 "ㄹㅇ 간단한 아이디어죠", "괜찮아용;;", "보시죠 ㅎ")
-# TTS 에는 읽을 말로 바꾸거나 빼고, 자막 어절 수 셀 때도 같은 규칙으로 → 자막·목소리 싱크 유지
-SAY = {"ㄹㅇ": "진짜"}
-
-
-def tts_say(text):
-    out = []
-    for w in text.split():
-        w = SAY.get(w, w)
-        w = re.sub(r"[ㄱ-ㅎㅏ-ㅣ;@~]+", "", w)  # ㅎㅎ ㅋㅋ ㅠㅠ ;; @ 같은 건 소리 내지 않음
-        if w.strip():
-            out.append(w)
-    return " ".join(out)
+from .textnorm import SAY, tts_say  # noqa: E402,F401  (화면 자막 → TTS 발화 정규화, capcut_voice 와 공통)
 
 
 def _voice_onsets(wav, min_quiet=0.08):
@@ -615,6 +603,14 @@ def render_edl(job: Path, edl_file: Path, cfg, out_name="sample.mp4"):
         "subs": exp_subs,
         "circles": [e for e in ass_ev if e.startswith("Dialogue: 2,")],
         "ass_head": head, "sub_pos": list(sub_pos), "sub_an": sub_an})
+    # upload.txt 갱신: EDL 에 upload/pinned_comment 가 직접 있으면 그 내용으로. plan.json 의 upload 는
+    # upload.txt 가 아직 없을 때만 (손으로 다듬은 기존 업로드 정보를 덮어쓰지 않게)
+    from .render import write_upload_txt
+    plan_up = (read_json(job / "plan.json") or {}).get("upload") if (job / "plan.json").exists() else None
+    if edl.get("upload") or edl.get("pinned_comment"):
+        write_upload_txt(job, edl.get("upload") or plan_up or {}, edl.get("pinned_comment", ""))
+    elif plan_up and not (job / "upload.txt").exists():
+        write_upload_txt(job, plan_up)
     (job / "sample_log.txt").write_text("\n".join(log), encoding="utf-8")
     return job / out_name, total, log
 

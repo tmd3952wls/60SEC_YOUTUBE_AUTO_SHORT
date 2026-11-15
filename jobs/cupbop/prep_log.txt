@@ -1,0 +1,8 @@
+fetched
+transcribed 264
+cuts 381
+2026-11-16 04:04:58 - whisperx.alignment - WARNING - Failed to align segment ("Oh, these are a lot."): backtrack failed, resorting to original
+2026-11-16 04:05:21 - whisperx.alignment - WARNING - Failed to align segment ("It's interesting."): backtrack failed, resorting to original
+aligned 264 lines
+ALIGN_DONE
+DEMUCS_DONE

@@ -1,0 +1,772 @@
+{
+ "title_lines": [
+  {
+   "text": "케빈이 극찬한",
+   "color": "yellow"
+  },
+  {
+   "text": "한국인의 컵밥?!",
+   "color": "white"
+  }
+ ],
+ "flash_alpha": 0.6,
+ "flash_sec": 0.4,
+ "krw_rate": "1달러=1,356원. 금액은 원화만",
+ "structure_ref": "11-16 규칙: 극찬 콜드 오픈, 내레이션 ~요 금지(~데/~고), 자막 2~3단어 1줄(solo), 대사 사이 숨 구간 자르기, 무음 고정댓글 컷",
+ "source": "https://www.youtube.com/watch?v=nPsxcrIk8Y8 (Shark Tank Global, 2025-08-18, 170만) — Cupbop S13E22 (주제 우선순위 4: 1~2년·100만+)",
+ "tts": {
+  "provider": "capcut",
+  "capcut": {
+   "voice": "vibrant_baritone",
+   "speed": 1.1
+  }
+ },
+ "items": [
+  {
+   "type": "clip",
+   "ids": [
+    48,
+    49
+   ],
+   "subs": [
+    {
+     "text": "이건 인정할게요",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "[yellow:먹어본 것 중]",
+     "solo": true,
+     "at_word": 7
+    },
+    {
+     "text": "[yellow:최고]예요",
+     "solo": true,
+     "at_word": 12,
+     "big": true,
+     "scale": 1.28
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 사람: 케빈",
+     "sfx": "ding"
+    }
+   ],
+   "note": "H1 케빈 극찬"
+  },
+  {
+   "type": "narration",
+   "text": "깐깐한 케빈이 극찬한 건 한국인 사장 둘이 만든 컵밥인데",
+   "subs": [
+    {
+     "text": "깐깐한 케빈이",
+     "solo": true
+    },
+    {
+     "text": "극찬한 건",
+     "solo": true
+    },
+    {
+     "text": "[yellow:한국인 사장] 둘이",
+     "solo": true
+    },
+    {
+     "text": "만든 [yellow:컵밥]인데",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 22.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "무대 위 두 사장"
+    },
+    {
+     "src": 125.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "at_word": 7,
+     "why": "컵밥 클로즈업"
+    }
+   ],
+   "sfx": "whoosh",
+   "note": "B2 소개"
+  },
+  {
+   "type": "narration",
+   "text": "컵에 담은 코리안 바비큐로 미국에서 대박이 났다고",
+   "subs": [
+    {
+     "text": "컵에 담은",
+     "solo": true
+    },
+    {
+     "text": "[cyan:코리안 바비큐]로",
+     "solo": true
+    },
+    {
+     "text": "미국에서 [yellow:대박이 났다고]",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 543.05,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "컵밥 컵 클로즈업"
+    },
+    {
+     "src": 145.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "당면·고기 클로즈업",
+     "at_t": 1.33
+    }
+   ],
+   "note": "B3 제품"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    13
+   ],
+   "subs": [
+    {
+     "text": "저희가 드릴 건",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "지분 [yellow:3%]!",
+     "solo": true,
+     "at_word": 5
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 사람: 두 사장"
+    }
+   ],
+   "word_range": [
+    3,
+    9
+   ],
+   "note": "B4 요구"
+  },
+  {
+   "type": "narration",
+   "text": "무려 약 13억 6천만 원을 부르자",
+   "subs": [
+    {
+     "text": "무려 [green:약 13억 6천만 원]을",
+     "solo": true,
+     "big": true,
+     "scale": 1.25
+    },
+    {
+     "text": "부르자",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 52.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "힘자랑하는 두 사장"
+    }
+   ],
+   "sfx": "ding",
+   "note": "B5 금액"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    16
+   ],
+   "subs": [
+    {
+     "text": "[cyan:바비큐 엄청]",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "팔아야겠네ㅋㅋ",
+     "solo": true,
+     "at_word": 2
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 사람: 마크"
+    }
+   ],
+   "audio_end": 90.65,
+   "note": "B6 마크 반응"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    60
+   ],
+   "subs": [
+    {
+     "text": "1년 매출이",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "[green:약 254억 원]",
+     "solo": true,
+     "at_word": 3,
+     "big": true,
+     "scale": 1.28,
+     "icon": "money"
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 사람: 사장"
+    }
+   ],
+   "word_range": [
+    4,
+    9
+   ],
+   "max_gap": 0.5,
+   "note": "B7 매출"
+  },
+  {
+   "type": "narration",
+   "text": "푸드트럭 한 대로 시작해 매장 27곳까지 늘렸다는데",
+   "subs": [
+    {
+     "text": "푸드트럭 한 대로",
+     "solo": true
+    },
+    {
+     "text": "시작해",
+     "solo": true
+    },
+    {
+     "text": "매장 [yellow:27곳]까지 늘렸다는데",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 112.0,
+     "crop": [
+      960,
+      430,
+      860
+     ],
+     "why": "무대 위 컵밥 트럭"
+    },
+    {
+     "src": 430.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "at_word": 4,
+     "why": "트럭 앞 두 사장"
+    }
+   ],
+   "note": "B8 성장"
+  },
+  {
+   "type": "narration",
+   "text": "한국에선 평생 F학점만 받았고",
+   "subs": [
+    {
+     "text": "한국에선 평생",
+     "solo": true
+    },
+    {
+     "text": "[red:F학점]만 받았고",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 340.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "손을 든 정 사장"
+    }
+   ],
+   "note": "B9 정 사장 과거"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    119
+   ],
+   "subs": [
+    {
+     "text": "다들 저를",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "[red:실패자]라고 불렀죠",
+     "solo": true,
+     "at_word": 3,
+     "big": true,
+     "scale": 1.24
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 사람: 정 사장"
+    }
+   ],
+   "word_range": [
+    7,
+    13
+   ],
+   "note": "B10 실패자"
+  },
+  {
+   "type": "narration",
+   "text": "공동대표 독은 11살 때 미국에 홀로 남겨졌다고",
+   "subs": [
+    {
+     "text": "공동대표 독은",
+     "solo": true
+    },
+    {
+     "text": "11살 때 미국에",
+     "solo": true
+    },
+    {
+     "text": "[red:홀로 남겨졌다고]",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 463.1,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "독 클로즈업"
+    }
+   ],
+   "note": "B11 독 사연"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    135
+   ],
+   "subs": [
+    {
+     "text": "너희는 우리랑",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "[red:같이 못 가]",
+     "solo": true,
+     "at_word": 3
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 사람: 독"
+    }
+   ],
+   "word_range": [
+    2,
+    9
+   ],
+   "note": "B12 독 부모님"
+  },
+  {
+   "type": "narration",
+   "text": "감동한 투자자들의 입찰 전쟁이 시작되는데",
+   "subs": [
+    {
+     "text": "감동한 투자자들의",
+     "solo": true
+    },
+    {
+     "text": "[red:입찰 전쟁]이 시작되는데",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 230.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 로리"
+    },
+    {
+     "src": 690.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "at_word": 2,
+     "why": "웃는 마크"
+    }
+   ],
+   "sfx": "whoosh",
+   "note": "B13 경쟁"
+  },
+  {
+   "type": "narration",
+   "text": "케빈은 대출에 지분 3%, 로버트는 약 68억 원에 28%를 부르고",
+   "subs": [
+    {
+     "text": "케빈은 대출에",
+     "solo": true
+    },
+    {
+     "text": "지분 [yellow:3%],",
+     "solo": true
+    },
+    {
+     "text": "로버트는",
+     "solo": true,
+     "at_t": 1.8
+    },
+    {
+     "text": "[green:약 68억 원]에",
+     "solo": true
+    },
+    {
+     "text": "[yellow:28%]를 부르고",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 188.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "케빈 클로즈업"
+    },
+    {
+     "src": 611.0,
+     "at_word": 4,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 로버트"
+    }
+   ],
+   "note": "B14 제안들"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    237
+   ],
+   "subs": [
+    {
+     "text": "[green:약 13억 6천만 원]",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "전부 [yellow:지분]으로",
+     "solo": true,
+     "at_word": 5
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 사람: 마크"
+    }
+   ],
+   "word_range": [
+    5,
+    11
+   ],
+   "note": "B15 마크 제안"
+  },
+  {
+   "type": "narration",
+   "text": "마크가 지분 7%를 부르자 사장님들은 5%로 맞받아치고",
+   "subs": [
+    {
+     "text": "마크가 지분 [yellow:7%]를",
+     "solo": true
+    },
+    {
+     "text": "부르자",
+     "solo": true
+    },
+    {
+     "text": "사장님들은 [yellow:5%]로",
+     "solo": true
+    },
+    {
+     "text": "맞받아치고",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 720.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "두 사장"
+    },
+    {
+     "src": 750.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "at_word": 4,
+     "why": "로고 앞 두 사장"
+    }
+   ],
+   "note": "B16 역제안"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    250
+   ],
+   "subs": [
+    {
+     "text": "[green:약 13억 6천만 원]에",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "지분 [yellow:5%]!",
+     "solo": true,
+     "at_word": 4,
+     "big": true,
+     "scale": 1.25
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      430,
+      860
+     ],
+     "why": "말하는 사람: 사장 (하단 자막띠 제외)"
+    }
+   ],
+   "word_range": [
+    1,
+    7
+   ],
+   "note": "B17 5% 역제안"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    251
+   ],
+   "subs": [
+    {
+     "text": "좋아요,",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "[cyan:할게요!]",
+     "solo": true,
+     "at_word": 2
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "말하는 사람: 마크"
+    }
+   ],
+   "word_range": [
+    13,
+    17
+   ],
+   "audio_end": 793.4,
+   "note": "B18 마크 수락"
+  },
+  {
+   "type": "narration",
+   "text": "하지만 방송 뒤 이 거래는 끝내 성사되지 않았고",
+   "subs": [
+    {
+     "text": "하지만 방송 뒤",
+     "solo": true
+    },
+    {
+     "text": "이 거래는",
+     "solo": true,
+     "at_t": 1.13
+    },
+    {
+     "text": "[red:끝내 성사되지] 않았고",
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 795.85,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "환호하는 두 사장"
+    },
+    {
+     "src": 812.9,
+     "at_word": 4,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "복도로 나가는 두 사장"
+    }
+   ],
+   "note": "B20 반전"
+  },
+  {
+   "type": "narration",
+   "text": "그래도 지금은 매장 200곳이 넘는 브랜드가 됐다고",
+   "subs": [
+    {
+     "text": "그래도 지금은",
+     "solo": true
+    },
+    {
+     "text": "[yellow:매장 200곳]이 넘는",
+     "solo": true,
+     "big": true,
+     "scale": 1.24
+    },
+    {
+     "text": "브랜드가 됐다고ㄷㄷ",
+     "solo": true
+    },
+    {
+     "text": "",
+     "at_t": 3.03,
+     "note": "(자세한 내용은 고정댓글 참조)"
+    }
+   ],
+   "shots": [
+    {
+     "src": 815.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "why": "복도를 걷는 두 사장"
+    },
+    {
+     "src": 822.0,
+     "crop": [
+      960,
+      480,
+      950
+     ],
+     "at_t": 3.03,
+     "why": "인터뷰하는 두 사장 (무음 안내 컷)"
+    }
+   ],
+   "tail": 1.6,
+   "note": "B21 근황 + 무음 고정댓글 안내"
+  }
+ ]
+}

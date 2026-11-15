@@ -24,21 +24,11 @@ sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
 from shorts import capcut as C  # noqa: E402
 from shorts.common import ASSETS, JOBS, read_json, write_json  # noqa: E402
 
-SAY = {"ㄹㅇ": "진짜"}
+from shorts.textnorm import SAY, tts_say  # noqa: E402,F401  (렌더러와 같은 발화 정규화 → 음성 파일 이름 일치)
 
 
 def plain_text(text):
     return re.sub(r"\[(\w+:)?|\]", "", str(text or ""))
-
-
-def tts_say(text):
-    out = []
-    for w in text.split():
-        w = SAY.get(w, w)
-        w = re.sub(r"[ㄱ-ㅎㅏ-ㅣ;@~]+", "", w)
-        if w.strip():
-            out.append(w)
-    return " ".join(out)
 
 
 def key(text):

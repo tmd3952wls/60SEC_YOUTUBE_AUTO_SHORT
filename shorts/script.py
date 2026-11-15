@@ -22,10 +22,29 @@ from auto_sfx.config import find_agy_cli
 from .common import ROOT, read_json, write_json
 
 
-def build_prompt(job: Path, context="", research_data=None):
+def channel_style(cfg=None) -> str:
+    """채널 스타일: 'haewae_shosho'(기본, 기존 동작) | 'sell_insight'.
+    cfg 최상위 channel_style 또는 cfg['script']['channel_style'] 로 지정."""
+    cfg = cfg or {}
+    return cfg.get("channel_style") or cfg.get("script", {}).get("channel_style") or "haewae_shosho"
+
+
+def prompt_template_path(cfg=None) -> Path:
+    """대본 프롬프트 파일: prompt_template 지정값 > 셀 인사이트 전용 > 기본(해외쇼쇼)."""
+    cfg = cfg or {}
+    tpl = cfg.get("prompt_template") or cfg.get("script", {}).get("prompt_template")
+    if tpl:
+        p = Path(tpl)
+        return p if p.is_absolute() else ROOT / p
+    if channel_style(cfg) == "sell_insight":
+        return ROOT / "prompts" / "script_prompt_insight.md"
+    return ROOT / "prompts" / "script_prompt.md"
+
+
+def build_prompt(job: Path, context="", research_data=None, cfg=None):
     tr = read_json(job / "transcript.json")
     lines = "\n".join(f"{t['id']} [{t['start']:.1f}-{t['end']:.1f}] {t['text']}" for t in tr)
-    tpl = (ROOT / "prompts" / "script_prompt.md").read_text(encoding="utf-8")
+    tpl = prompt_template_path(cfg).read_text(encoding="utf-8")
     from .sfxlib import category_help
     facts = (research_data or {}).get("facts") or []
     rtext = "\n".join(f"- {f['fact']} (출처: {f.get('source', '')})" for f in facts) or "(조사 결과 없음 — 후일담은 쓰지 말 것)"
@@ -196,7 +215,7 @@ def generate(job: Path, cfg, context=""):
     rd = research(job, cfg, context)
     if rd.get("facts"):
         print(f"      → {rd.get('company', '')}: 사실 {len(rd['facts'])}개 확보")
-    prompt = build_prompt(job, context, rd)
+    prompt = build_prompt(job, context, rd, cfg=cfg)
     mode = resolve_script_mode(cfg)
     if mode == "manual":
         return False
@@ -222,6 +241,9 @@ def generate(job: Path, cfg, context=""):
                 return False
             (job / "llm_raw.txt").write_text(text, encoding="utf-8")
             plan = validate(parse_json(text), transcript)
+            if channel_style(cfg) == "sell_insight":
+                from .notes_helper import add_finance_notes
+                add_finance_notes(plan)
             best = plan
             problems = check_structure(plan, transcript, cfg, words)
             if problems:
@@ -249,6 +271,15 @@ def validate(plan, transcript):
     for i, s in enumerate(plan["segments"]):
         if s.get("sfx") and s["sfx"] not in CATEGORIES and s["sfx"] != "boom":
             s["sfx"] = None  # 모르는 효과음 이름은 무시
+        # 선택 필드: note(2단 보조 주석 문자열) · solo(감탄사 단독 자막) — 있으면 형식만 정규화해 유지
+        if "note" in s:
+            note = str(s.get("note") or "").strip()
+            if note:
+                s["note"] = note
+            else:
+                s.pop("note")
+        if "solo" in s:
+            s["solo"] = bool(s["solo"])
         if s["type"] == "narration":
             assert s.get("text"), f"segment {i}: 내레이션 text 없음"
             if s.get("broll_id") not in ids:
@@ -287,9 +318,10 @@ def check_structure(plan, transcript, cfg, words=None):
     (첫 세그먼트의 훅 티저는 예외). 문제 있으면 다시 쓰게 할 피드백 문구 반환."""
     tr = {t["id"]: t for t in transcript}
     T = cfg["script"]["structure"]
-    t, problems, timeline = 0.0, [], []
+    t, problems, timeline, starts = 0.0, [], [], []
     first_deal = None
     for i, s in enumerate(plan["segments"]):
+        starts.append(t)
         if s["type"] == "narration":
             txt = s["text"]
             d = len(re.sub(r"\[(\w+:)?|\]|\s", "", txt)) / T["chars_per_sec"]
@@ -301,14 +333,69 @@ def check_structure(plan, transcript, cfg, words=None):
         if i > 0 and first_deal is None and DEAL_WORDS.search(txt):
             first_deal = (t, clean[:30])
         t += d
-    if first_deal and first_deal[0] < T["intro_sec"]:
-        need = T["intro_sec"] - first_deal[0]
+    # 셀 인사이트는 초반 시연 직후 바로 매출로 들어가도 됨 (프리셋 없이 channel_style 만 줘도 intro 0)
+    intro = T.get("insight_intro_sec", 0) if channel_style(cfg) == "sell_insight" else T.get("intro_sec", 25)
+    if intro > 0 and first_deal and first_deal[0] < intro:  # 해외쇼쇼: 앞부분은 제품 소개만 (셀 인사이트는 intro_sec 0)
+        need = intro - first_deal[0]
         problems.append(
-            f"가격/투자/매출 이야기('{first_deal[1]}')가 {first_deal[0]:.0f}초에 나옴 → {T['intro_sec']}초 이후로 미뤄라. "
+            f"가격/투자/매출 이야기('{first_deal[1]}')가 {first_deal[0]:.0f}초에 나옴 → {intro}초 이후로 미뤄라. "
             f"그 앞의 제품 소개를 약 {need:.0f}초({int(need * T['chars_per_sec'])}자) 늘려라: "
             "불편했던 상황 묘사, 작동 원리, 실제 사용·시연 장면 clip, 장점을 추가.")
     if t < T["min_total"] or t > T["max_total"]:
         problems.append(f"예상 길이 {t:.0f}초 → {T['min_total']}~{T['max_total']}초로 맞춰라.")
+    if channel_style(cfg) == "sell_insight":  # 후일담은 본편에서 숨기고 고정댓글로
+        for st, s in zip(starts, plan["segments"]):
+            if s is not plan["segments"][-1] and st < 56:
+                continue
+            seg_txt = s.get("text", "") if s["type"] == "narration" else " ".join(s.get("subs") or [])
+            seg_clean = re.sub(r"\[(\w+:)?|\]", "", seg_txt)
+            if SPOILER_WORDS.search(seg_clean):
+                problems.append(f"방송 이후 근황('{seg_clean[:30]}')이 본편에 나옴 → "
+                                "후일담은 본편에서 숨기고 upload.pinned_comment로 옮겨라.")
+                break
+    problems += rhythm_problems(plan, cfg)
     if problems:
         problems.append("예상 타임라인(침묵 제거 후 실제 길이 기준):\n" + "\n".join(timeline))
     return problems
+
+
+# 셀 인사이트: 본편 마지막에 나오면 안 되는 방송 이후 근황 표현
+SPOILER_WORDS = re.compile(r"20[12]\d\s*년|폐업|현재\s*매출|현재는|근황|방송\s*(?:이후|후)|파산|문을\s*닫")
+# 해외쇼쇼 내레이션의 '~요' 어미 (2026-11-16 사용자: 바리톤 TTS 가 '~해요/~이에요' 를 어색하게 읽음.
+# '~데', '~고' 는 반복돼도 괜찮음)
+YO_END = re.compile(r"요[\s.!?~,ㄷㅋㅎ]*$")
+
+
+def _narr_len(text):
+    return len(re.sub(r"\[(\w+:)?|\]|\s", "", text))
+
+
+def rhythm_problems(plan, cfg):
+    """레퍼런스 호흡 검사: 내레이션 길이 · 연속 내레이션 수 · 전체 박자 수 · (해외쇼쇼) '~요' 어미."""
+    T = cfg["script"]["structure"]
+    max_chars = T.get("max_narr_chars", 32)
+    max_run = T.get("max_consecutive_narr", 3)
+    segs = plan["segments"]
+    banmal = channel_style(cfg) != "sell_insight"  # 셀 인사이트는 존댓말 내레이션이 정상
+    out, run, run_start = [], 0, 0
+    for i, s in enumerate(segs):
+        if s["type"] != "narration":
+            run = 0
+            continue
+        txt = s.get("text", "")
+        n = _narr_len(txt)
+        if n > max_chars:
+            out.append(f"segment {i} 내레이션이 {n}자('{re.sub(r'[\[\]]', '', txt)[:24]}…') → {max_chars}자 이내로 "
+                       "두 세그먼트로 쪼개거나 사이에 짧은 clip 리액션을 넣어라.")
+        run += 1
+        if run == 1:
+            run_start = i
+        if run == max_run + 1:
+            out.append(f"segment {run_start}~{i}: 내레이션이 {run}개 연속 → {max_run}개마다 원본 clip 대사/감탄사를 끼워 넣어라.")
+        plain_txt = re.sub(r"\[(\w+:)?|\]", "", txt).strip()
+        if banmal and YO_END.search(plain_txt):
+            out.append(f"segment {i} 내레이션이 '~요'로 끝남('{plain_txt[-12:]}') → '~는데', '~고', '~다고', '~했고' "
+                       "또는 명사로 끝내라 (바리톤 TTS 가 존댓말 어미를 어색하게 읽음).")
+    if len(segs) < 10:
+        out.append(f"세그먼트가 {len(segs)}개뿐 → 호흡이 루즈하다. 최소 10개 이상으로 내레이션과 원본 clip 을 잘게 교차 편집하라.")
+    return out

@@ -83,9 +83,9 @@ def is_solo_interjection(text: str) -> bool:
     return norm in SOLO_INTERJECTIONS
 
 
-def parse_title_hint(title_hint: str) -> list[dict] | None:
+def parse_title_hint(title_hint: str, brand: bool = True) -> list[dict] | None:
     """사용자 제목 힌트를 2줄 상단 제목([{text, color}, {text, color}])으로 파싱."""
-    raw = sanitize_brand_rules((title_hint or "").strip())
+    raw = (sanitize_brand_rules if brand else str)((title_hint or "").strip())
     if not raw:
         return None
     if "/" in raw or "\n" in raw:
@@ -242,11 +242,13 @@ def build_starter_plan(transcript: list[dict], title_hint: str = "", context: st
     return {"title_lines": parsed_titles, "segments": segments}
 
 
-def normalize_title_lines(raw_titles: list, title_hint: str = "") -> list[dict]:
-    """상단 2줄 제목 정규화 ('/' 나 줄바꿈으로 직접 2줄을 지정한 경우 사용자 힌트 우선)."""
+def normalize_title_lines(raw_titles: list, title_hint: str = "", brand: bool = True) -> list[dict]:
+    """상단 2줄 제목 정규화 ('/' 나 줄바꿈으로 직접 2줄을 지정한 경우 사용자 힌트 우선).
+    brand=False(셀 인사이트)면 '샤크' 표현을 그대로 둔다."""
+    san = sanitize_brand_rules if brand else (lambda x: str(x or ""))
     explicit_two_line = ("/" in (title_hint or "")) or ("\n" in (title_hint or ""))
     if explicit_two_line:
-        parsed = parse_title_hint(title_hint)
+        parsed = parse_title_hint(title_hint, brand=brand)
         if parsed:
             return parsed
 
@@ -254,16 +256,16 @@ def normalize_title_lines(raw_titles: list, title_hint: str = "") -> list[dict]:
     default_colors = ["yellow", "white"]
     for idx, item in enumerate(raw_titles or []):
         if isinstance(item, dict):
-            txt = sanitize_brand_rules(item.get("text", "")).strip()
+            txt = san(item.get("text", "")).strip()
             col = item.get("color") or default_colors[min(idx, 1)]
         else:
-            txt = sanitize_brand_rules(str(item)).strip()
+            txt = san(str(item)).strip()
             col = default_colors[min(idx, 1)]
         if txt:
             norm.append({"text": txt, "color": col})
 
     if not norm and title_hint:
-        parsed = parse_title_hint(title_hint)
+        parsed = parse_title_hint(title_hint, brand=brand)
         if parsed:
             return parsed
 
@@ -284,12 +286,18 @@ def plan_to_edl(
     cfg: dict,
     title_hint: str = "",
 ) -> dict:
-    """plan.json 구조를 웹 에디터·EDL 렌더러 호환 v1_edl.json 으로 변환."""
+    """plan.json 구조를 웹 에디터·EDL 렌더러 호환 v1_edl.json 으로 변환.
+    셀 인사이트(channel_style == 'sell_insight')는 '샤크' 치환을 건너뛰고, 세그먼트 note·solo 와
+    upload.pinned_comment 를 EDL 자막·최상위 키로 그대로 넘긴다."""
+    from shorts.script import channel_style
+    style = channel_style(cfg)
+    brand = style != "sell_insight"
+    san = sanitize_brand_rules if brand else (lambda x: str(x or ""))
     tr_by_id = {int(r["id"]): r for r in transcript}
     fallback_start = float(transcript[0]["start"]) if transcript else 0.0
     sub_cfg = cfg.get("subtitle", {})
     max_chars = int(sub_cfg.get("narr_max_chars", sub_cfg.get("max_chars", 12)))
-    title_lines = normalize_title_lines(plan.get("title_lines") or [], title_hint=title_hint)
+    title_lines = normalize_title_lines(plan.get("title_lines") or [], title_hint=title_hint, brand=brand)
 
     edl_items: list[dict] = []
     for seg in plan.get("segments") or []:
@@ -298,15 +306,21 @@ def plan_to_edl(
         sfx = LEGACY_SFX_MAP.get(raw_sfx, raw_sfx) if raw_sfx else None
 
         if seg_type == "narration":
-            text = sanitize_brand_rules(seg.get("text", "")).strip()
+            text = san(seg.get("text", "")).strip()
             if not text:
                 continue
             broll_id = seg.get("broll_id")
             src_sec = float(tr_by_id[int(broll_id)]["start"]) if broll_id in tr_by_id else fallback_start
+            narr_subs = split_narration_subs(text, max_chars=max_chars)
+            if seg.get("note"):  # 2단 보조 주석 → 마지막 자막 아래 작은 줄
+                narr_subs[-1]["note"] = str(seg["note"])
+            if seg.get("solo"):
+                for sb in narr_subs:
+                    sb["solo"] = True
             item: dict = {
                 "type": "narration",
                 "text": text,
-                "subs": split_narration_subs(text, max_chars=max_chars),
+                "subs": narr_subs,
                 "shots": [
                     {
                         "src": round(max(0.0, src_sec), 2),
@@ -331,10 +345,10 @@ def plan_to_edl(
             word_cursor = 0
             for idx_offset, line_id in enumerate(ids):
                 line_words = words_map.get(str(line_id)) or []
-                sub_str = sanitize_brand_rules(raw_subs[idx_offset] if idx_offset < len(raw_subs) else "").strip()
+                sub_str = san(raw_subs[idx_offset] if idx_offset < len(raw_subs) else "").strip()
                 if sub_str:
                     sub_obj: dict = {"text": sub_str, "at_word": word_cursor}
-                    if is_solo_interjection(sub_str):
+                    if is_solo_interjection(sub_str) or seg.get("solo"):
                         sub_obj["solo"] = True
                     clip_subs.append(sub_obj)
                 word_cursor += len(line_words)
@@ -344,6 +358,8 @@ def plan_to_edl(
                 clip_subs = [{"text": first_txt, "at_word": 0}]
             else:
                 clip_subs[0]["at_word"] = 0
+            if seg.get("note"):
+                clip_subs[-1]["note"] = str(seg["note"])
 
             item = {
                 "type": "clip",
@@ -373,6 +389,10 @@ def plan_to_edl(
         edl_doc["credit"] = plan["credit"]
     if plan.get("upload"):
         edl_doc["upload"] = plan["upload"]
+        if plan["upload"].get("pinned_comment"):
+            edl_doc["pinned_comment"] = plan["upload"]["pinned_comment"]
+    if not brand:
+        edl_doc["channel_style"] = style
     return edl_doc
 
 
@@ -384,10 +404,13 @@ def create_new_job(
     start: float | None = None,
     end: float | None = None,
     script_mode: str = "auto",
+    channel_style: str = "",
 ) -> Path:
     from shorts import script, source
 
     cfg = load_config()
+    if channel_style:
+        cfg = {**cfg, "channel_style": channel_style}
     if script_mode and script_mode != "starter":
         cfg = {**cfg, "script": {**cfg.get("script", {}), "mode": script_mode}}
 
@@ -421,7 +444,7 @@ def create_new_job(
     used_starter = False
     if script_mode == "starter":
         print("[3/4] 0원 스타터 초안 구성 모드 선택 → 전사본 기반 초안 생성 중...")
-        script.build_prompt(job_dir, combined_ctx)
+        script.build_prompt(job_dir, combined_ctx, cfg=cfg)
         plan = build_starter_plan(transcript, title_hint=title_hint, context=context)
         write_json(plan_path, plan)
         used_starter = True
@@ -461,6 +484,8 @@ def main() -> None:
         default="auto",
         choices=["auto", "claude-cli", "agy-cli", "claude", "gemini", "openai", "starter"],
     )
+    ap.add_argument("--channel-style", default="", choices=["", "haewae_shosho", "sell_insight"],
+                    help="대본 스타일 (기본: 해외쇼쇼). sell_insight = 셀 인사이트 프롬프트·주석·고정댓글 클리프행어")
     args = ap.parse_args()
 
     try:
@@ -472,6 +497,7 @@ def main() -> None:
             start=args.start,
             end=args.end,
             script_mode=args.script_mode,
+            channel_style=args.channel_style,
         )
     except Exception as exc:
         print(f"오류: {exc}", file=sys.stderr)

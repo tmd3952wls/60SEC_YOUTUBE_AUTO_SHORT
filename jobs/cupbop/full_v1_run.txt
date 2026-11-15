@@ -1,0 +1,2 @@
+렌더 시작: cupbop/v1_edl.json → full_v1.mp4
+완료: 50.97초

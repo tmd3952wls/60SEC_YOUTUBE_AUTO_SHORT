@@ -1,0 +1,2 @@
+렌더 시작: tablefix/v1_edl.json → full_v1.mp4
+완료: 42.00초
