@@ -1,0 +1,47 @@
+{
+ "text": "기업가치가 너무 높다며 세 명이 연달아 빠졌는데",
+ "words": [
+  {
+   "word": "기업가치가",
+   "start": 0.06,
+   "end": 0.604,
+   "aligned": true
+  },
+  {
+   "word": "너무",
+   "start": 0.664,
+   "end": 0.825,
+   "aligned": true
+  },
+  {
+   "word": "높다며",
+   "start": 0.865,
+   "end": 1.308,
+   "aligned": true
+  },
+  {
+   "word": "세",
+   "start": 1.429,
+   "end": 1.51,
+   "aligned": true
+  },
+  {
+   "word": "명이",
+   "start": 1.57,
+   "end": 1.731,
+   "aligned": true
+  },
+  {
+   "word": "연달아",
+   "start": 1.811,
+   "end": 2.133,
+   "aligned": true
+  },
+  {
+   "word": "빠졌는데",
+   "start": 2.194,
+   "end": 2.697,
+   "aligned": true
+  }
+ ]
+}

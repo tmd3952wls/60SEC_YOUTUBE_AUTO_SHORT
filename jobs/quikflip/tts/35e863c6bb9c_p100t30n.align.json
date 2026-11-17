@@ -1,0 +1,47 @@
+{
+ "text": "특수 끈으로 고정돼 격하게 굴러도 안 흔들리고",
+ "words": [
+  {
+   "word": "특수",
+   "start": 0.04,
+   "end": 0.301,
+   "aligned": true
+  },
+  {
+   "word": "끈으로",
+   "start": 0.401,
+   "end": 0.642,
+   "aligned": true
+  },
+  {
+   "word": "고정돼",
+   "start": 0.722,
+   "end": 1.083,
+   "aligned": true
+  },
+  {
+   "word": "격하게",
+   "start": 1.163,
+   "end": 1.504,
+   "aligned": true
+  },
+  {
+   "word": "굴러도",
+   "start": 1.564,
+   "end": 1.845,
+   "aligned": true
+  },
+  {
+   "word": "안",
+   "start": 1.905,
+   "end": 2.086,
+   "aligned": true
+  },
+  {
+   "word": "흔들리고",
+   "start": 2.106,
+   "end": 2.426,
+   "aligned": true
+  }
+ ]
+}

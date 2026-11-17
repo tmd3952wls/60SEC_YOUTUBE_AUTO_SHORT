@@ -1,0 +1,47 @@
+{
+ "text": "하지만 방송 뒤 최종 계약은 끝내 무산됐고",
+ "words": [
+  {
+   "word": "하지만",
+   "start": 0.02,
+   "end": 0.261,
+   "aligned": true
+  },
+  {
+   "word": "방송",
+   "start": 0.321,
+   "end": 0.583,
+   "aligned": true
+  },
+  {
+   "word": "뒤",
+   "start": 0.643,
+   "end": 0.723,
+   "aligned": true
+  },
+  {
+   "word": "최종",
+   "start": 0.803,
+   "end": 1.024,
+   "aligned": true
+  },
+  {
+   "word": "계약은",
+   "start": 1.085,
+   "end": 1.366,
+   "aligned": true
+  },
+  {
+   "word": "끝내",
+   "start": 1.446,
+   "end": 1.647,
+   "aligned": true
+  },
+  {
+   "word": "무산됐고",
+   "start": 1.707,
+   "end": 2.19,
+   "aligned": true
+  }
+ ]
+}

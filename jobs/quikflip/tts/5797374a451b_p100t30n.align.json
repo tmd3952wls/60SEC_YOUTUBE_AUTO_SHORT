@@ -1,0 +1,47 @@
+{
+ "text": "물벼락을 맞아도 속은 멀쩡한 방수 모델까지 있는데",
+ "words": [
+  {
+   "word": "물벼락을",
+   "start": 0.081,
+   "end": 0.483,
+   "aligned": true
+  },
+  {
+   "word": "맞아도",
+   "start": 0.564,
+   "end": 0.967,
+   "aligned": true
+  },
+  {
+   "word": "속은",
+   "start": 1.289,
+   "end": 1.511,
+   "aligned": true
+  },
+  {
+   "word": "멀쩡한",
+   "start": 1.611,
+   "end": 1.974,
+   "aligned": true
+  },
+  {
+   "word": "방수",
+   "start": 2.054,
+   "end": 2.336,
+   "aligned": true
+  },
+  {
+   "word": "모델까지",
+   "start": 2.377,
+   "end": 2.86,
+   "aligned": true
+  },
+  {
+   "word": "있는데",
+   "start": 2.88,
+   "end": 3.182,
+   "aligned": true
+  }
+ ]
+}

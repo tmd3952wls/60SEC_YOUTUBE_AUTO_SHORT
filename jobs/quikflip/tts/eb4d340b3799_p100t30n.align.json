@@ -1,0 +1,41 @@
+{
+ "text": "더워서 벗은 후드티는 들고 다니기 귀찮은데",
+ "words": [
+  {
+   "word": "더워서",
+   "start": 0.04,
+   "end": 0.382,
+   "aligned": true
+  },
+  {
+   "word": "벗은",
+   "start": 0.462,
+   "end": 0.723,
+   "aligned": true
+  },
+  {
+   "word": "후드티는",
+   "start": 0.804,
+   "end": 1.205,
+   "aligned": true
+  },
+  {
+   "word": "들고",
+   "start": 1.306,
+   "end": 1.527,
+   "aligned": true
+  },
+  {
+   "word": "다니기",
+   "start": 1.567,
+   "end": 1.848,
+   "aligned": true
+  },
+  {
+   "word": "귀찮은데",
+   "start": 1.909,
+   "end": 2.371,
+   "aligned": true
+  }
+ ]
+}

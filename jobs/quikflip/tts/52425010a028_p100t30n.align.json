@@ -1,0 +1,53 @@
+{
+ "text": "주짓수 가문 출신 대표가 야심 차게 내놓은 제품인데",
+ "words": [
+  {
+   "word": "주짓수",
+   "start": 0.061,
+   "end": 0.444,
+   "aligned": true
+  },
+  {
+   "word": "가문",
+   "start": 0.504,
+   "end": 0.706,
+   "aligned": true
+  },
+  {
+   "word": "출신",
+   "start": 0.766,
+   "end": 1.029,
+   "aligned": true
+  },
+  {
+   "word": "대표가",
+   "start": 1.089,
+   "end": 1.412,
+   "aligned": true
+  },
+  {
+   "word": "야심",
+   "start": 1.472,
+   "end": 1.755,
+   "aligned": true
+  },
+  {
+   "word": "차게",
+   "start": 1.835,
+   "end": 1.997,
+   "aligned": true
+  },
+  {
+   "word": "내놓은",
+   "start": 2.057,
+   "end": 2.279,
+   "aligned": true
+  },
+  {
+   "word": "제품인데",
+   "start": 2.36,
+   "end": 2.783,
+   "aligned": true
+  }
+ ]
+}

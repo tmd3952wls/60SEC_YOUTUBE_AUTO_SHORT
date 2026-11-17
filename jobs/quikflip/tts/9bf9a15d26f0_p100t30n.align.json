@@ -1,0 +1,47 @@
+{
+ "text": "원가 2만 원짜리를 6만 원에 팔아 완판시켰다고",
+ "words": [
+  {
+   "word": "원가",
+   "start": 0.06,
+   "end": 0.362,
+   "aligned": true
+  },
+  {
+   "word": "2만",
+   "start": 0.483,
+   "end": 0.624,
+   "aligned": true
+  },
+  {
+   "word": "원짜리를",
+   "start": 0.664,
+   "end": 1.107,
+   "aligned": true
+  },
+  {
+   "word": "6만",
+   "start": 1.167,
+   "end": 1.409,
+   "aligned": true
+  },
+  {
+   "word": "원에",
+   "start": 1.449,
+   "end": 1.61,
+   "aligned": true
+  },
+  {
+   "word": "팔아",
+   "start": 1.67,
+   "end": 1.932,
+   "aligned": true
+  },
+  {
+   "word": "완판시켰다고",
+   "start": 1.952,
+   "end": 2.676,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "text": "그래도 타임지 발명품에 뽑혀 연 54억 브랜드가 됐다고",
+ "words": [
+  {
+   "word": "그래도",
+   "start": 0.02,
+   "end": 0.302,
+   "aligned": true
+  },
+  {
+   "word": "타임지",
+   "start": 0.382,
+   "end": 0.684,
+   "aligned": true
+  },
+  {
+   "word": "발명품에",
+   "start": 0.744,
+   "end": 1.287,
+   "aligned": true
+  },
+  {
+   "word": "뽑혀",
+   "start": 1.388,
+   "end": 1.689,
+   "aligned": true
+  },
+  {
+   "word": "연",
+   "start": 1.991,
+   "end": 2.433,
+   "aligned": true
+  },
+  {
+   "word": "54억",
+   "start": 2.574,
+   "end": 2.675,
+   "aligned": true
+  },
+  {
+   "word": "브랜드가",
+   "start": 2.836,
+   "end": 3.198,
+   "aligned": true
+  },
+  {
+   "word": "됐다고",
+   "start": 3.278,
+   "end": 3.6,
+   "aligned": true
+  }
+ ]
+}

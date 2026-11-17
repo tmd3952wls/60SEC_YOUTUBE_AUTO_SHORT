@@ -1,0 +1,53 @@
+{
+ "text": "안쪽 주머니로 뒤집어 털면 3초 만에 가방이 된다고",
+ "words": [
+  {
+   "word": "안쪽",
+   "start": 0.02,
+   "end": 0.222,
+   "aligned": true
+  },
+  {
+   "word": "주머니로",
+   "start": 0.322,
+   "end": 0.645,
+   "aligned": true
+  },
+  {
+   "word": "뒤집어",
+   "start": 0.705,
+   "end": 1.008,
+   "aligned": true
+  },
+  {
+   "word": "털면",
+   "start": 1.088,
+   "end": 1.37,
+   "aligned": true
+  },
+  {
+   "word": "3초",
+   "start": 1.391,
+   "end": 1.713,
+   "aligned": true
+  },
+  {
+   "word": "만에",
+   "start": 1.753,
+   "end": 1.935,
+   "aligned": true
+  },
+  {
+   "word": "가방이",
+   "start": 2.015,
+   "end": 2.318,
+   "aligned": true
+  },
+  {
+   "word": "된다고",
+   "start": 2.378,
+   "end": 2.68,
+   "aligned": true
+  }
+ ]
+}

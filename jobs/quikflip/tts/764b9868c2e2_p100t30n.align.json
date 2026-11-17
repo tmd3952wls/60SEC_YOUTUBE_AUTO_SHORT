@@ -1,0 +1,47 @@
+{
+ "text": "투자자들도 직접 해보며 감탄했지만 말이 안 끝나자",
+ "words": [
+  {
+   "word": "투자자들도",
+   "start": 0.04,
+   "end": 0.602,
+   "aligned": true
+  },
+  {
+   "word": "직접",
+   "start": 0.682,
+   "end": 0.943,
+   "aligned": true
+  },
+  {
+   "word": "해보며",
+   "start": 1.004,
+   "end": 1.345,
+   "aligned": true
+  },
+  {
+   "word": "감탄했지만",
+   "start": 1.425,
+   "end": 2.087,
+   "aligned": true
+  },
+  {
+   "word": "말이",
+   "start": 2.168,
+   "end": 2.368,
+   "aligned": true
+  },
+  {
+   "word": "안",
+   "start": 2.388,
+   "end": 2.449,
+   "aligned": true
+  },
+  {
+   "word": "끝나자",
+   "start": 2.529,
+   "end": 2.85,
+   "aligned": true
+  }
+ ]
+}

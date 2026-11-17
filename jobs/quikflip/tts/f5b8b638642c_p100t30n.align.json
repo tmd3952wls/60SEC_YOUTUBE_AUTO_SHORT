@@ -1,0 +1,59 @@
+{
+ "text": "이 회사가 지분 5%에 약 6억 8천만 원을 부르자",
+ "words": [
+  {
+   "word": "이",
+   "start": 0.02,
+   "end": 0.06,
+   "aligned": true
+  },
+  {
+   "word": "회사가",
+   "start": 0.141,
+   "end": 0.422,
+   "aligned": true
+  },
+  {
+   "word": "지분",
+   "start": 0.482,
+   "end": 0.704,
+   "aligned": true
+  },
+  {
+   "word": "5%에",
+   "start": 0.764,
+   "end": 1.246,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 1.307,
+   "end": 1.387,
+   "aligned": true
+  },
+  {
+   "word": "6억",
+   "start": 1.467,
+   "end": 1.669,
+   "aligned": true
+  },
+  {
+   "word": "8천만",
+   "start": 1.769,
+   "end": 2.171,
+   "aligned": true
+  },
+  {
+   "word": "원을",
+   "start": 2.191,
+   "end": 2.352,
+   "aligned": true
+  },
+  {
+   "word": "부르자",
+   "start": 2.432,
+   "end": 2.633,
+   "aligned": true
+  }
+ ]
+}
