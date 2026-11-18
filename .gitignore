@@ -31,8 +31,10 @@ assets/bgm/*
 *.log
 desktop.ini
 
-# Playwright MCP 스냅샷
+# Playwright MCP 스냅샷 / 유튜브 업로드 전용 크롬 프로필
 .playwright-mcp/
+.yt_chrome/
+jobs/_yt_upload_debug/
 
 # 캡컷 캐시에서 복사한 글꼴 (배달의민족주아체: 각자 설치/캡컷에서 받음)
 assets/fonts/BMJUA.ttf
