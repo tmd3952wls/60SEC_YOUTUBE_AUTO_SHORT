@@ -308,31 +308,42 @@ def main():
             if not video_url and link_loc.count():
                 video_url = link_loc.first.get_attribute("href") or ""
 
-            # 7. Wait until raw file upload finishes (progress text no longer says Uploading / 업로드 중)
+            # 7. Wait until raw file upload reaches 100% BEFORE clicking Save or closing tab!
+            # Korean UI shows "31% 업로드 중", English UI shows "Uploading 31%"
+            def is_still_uploading() -> tuple[bool, str]:
+                txts = []
+                for sel in ["ytcp-video-upload-progress", "ytcp-uploads-still-processing-dialog", "tp-yt-paper-dialog"]:
+                    loc = page.locator(sel)
+                    for i in range(loc.count()):
+                        try:
+                            if loc.nth(i).is_visible():
+                                txts.append(loc.nth(i).inner_text())
+                        except Exception:
+                            pass
+                joined = " | ".join(txts)
+                busy = bool(re.search(r"(\d+%\s*업로드|Uploading\s*\d+%|동영상 업로드 중|아직 업로드하는 중|업로드 중\s*\.\.\.)", joined, re.I))
+                return busy, joined.replace("\n", " ")[:120]
+
             deadline = time.time() + a.timeout_min * 60
             tick = 0
             while time.time() < deadline:
-                prog_txt = ""
-                prog_loc = page.locator("ytcp-video-upload-progress")
-                if prog_loc.count():
-                    try:
-                        prog_txt = prog_loc.first.inner_text()
-                    except Exception:
-                        pass
-                still_uploading = bool(re.search(r"(Uploading|업로드 중)\s*\d+%", prog_txt, re.I))
+                still_up, status_line = is_still_uploading()
                 done_btn = page.locator("ytcp-button#done-button").first
                 disabled = done_btn.get_attribute("disabled") is not None
-                if not still_uploading and not disabled:
+                if not still_up and not disabled:
                     break
                 tick += 1
-                if tick % 6 == 0:
-                    print(f"  ..유튜브 파일 전송 대기 ({prog_txt.strip() or '...'})", flush=True)
+                if tick % 3 == 0:
+                    print(f"  ..파일 전송 중 ({status_line})", flush=True)
                     shot(page, dbg, f"up_{tick:03d}")
-                page.wait_for_timeout(5000)
+                page.wait_for_timeout(4000)
             else:
                 shot(page, dbg, "timeout_upload")
                 print("FAIL: 유튜브 파일 업로드 대기 시간 초과", flush=True)
                 sys.exit(5)
+
+            if not video_url and link_loc.count():
+                video_url = link_loc.first.get_attribute("href") or ""
 
             if a.dry:
                 print(f"DRY: 저장 직전에 멈춤 (URL={video_url})", flush=True)
@@ -340,6 +351,15 @@ def main():
 
             page.locator("ytcp-button#done-button").first.click()
             page.wait_for_timeout(5000)
+
+            # Double-check post-save dialog: if YouTube still says "비공개 동영상을 아직 업로드하는 중입니다", wait until it finishes!
+            while time.time() < deadline:
+                still_up, status_line = is_still_uploading()
+                if not still_up:
+                    break
+                print(f"  ..저장 후 전송 마무리 대기 ({status_line})", flush=True)
+                page.wait_for_timeout(4000)
+
             shot(page, dbg, "05_saved")
 
             # Close share/processing dialog if shown
