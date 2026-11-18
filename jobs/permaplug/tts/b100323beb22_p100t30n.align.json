@@ -1,0 +1,47 @@
+{
+ "text": "그래서 아예 충전기를 통째로 잠그는 덮개를 만들었는데",
+ "words": [
+  {
+   "word": "그래서",
+   "start": 0.04,
+   "end": 0.322,
+   "aligned": true
+  },
+  {
+   "word": "아예",
+   "start": 0.342,
+   "end": 0.523,
+   "aligned": true
+  },
+  {
+   "word": "충전기를",
+   "start": 0.623,
+   "end": 1.126,
+   "aligned": true
+  },
+  {
+   "word": "통째로",
+   "start": 1.227,
+   "end": 1.629,
+   "aligned": true
+  },
+  {
+   "word": "잠그는",
+   "start": 1.689,
+   "end": 2.031,
+   "aligned": true
+  },
+  {
+   "word": "덮개를",
+   "start": 2.112,
+   "end": 2.474,
+   "aligned": true
+  },
+  {
+   "word": "만들었는데",
+   "start": 2.534,
+   "end": 3.097,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "text": "로리는 지분 20%에 원금 회수 때까지만 수수료를 달라고 했고",
+ "words": [
+  {
+   "word": "로리는",
+   "start": 0.06,
+   "end": 0.362,
+   "aligned": true
+  },
+  {
+   "word": "지분",
+   "start": 0.463,
+   "end": 0.684,
+   "aligned": true
+  },
+  {
+   "word": "20%에",
+   "start": 0.705,
+   "end": 1.369,
+   "aligned": true
+  },
+  {
+   "word": "원금",
+   "start": 1.449,
+   "end": 1.711,
+   "aligned": true
+  },
+  {
+   "word": "회수",
+   "start": 1.791,
+   "end": 1.973,
+   "aligned": true
+  },
+  {
+   "word": "때까지만",
+   "start": 2.073,
+   "end": 2.496,
+   "aligned": true
+  },
+  {
+   "word": "수수료를",
+   "start": 2.617,
+   "end": 2.999,
+   "aligned": true
+  },
+  {
+   "word": "달라고",
+   "start": 3.1,
+   "end": 3.402,
+   "aligned": true
+  },
+  {
+   "word": "했고",
+   "start": 3.442,
+   "end": 3.643,
+   "aligned": true
+  }
+ ]
+}

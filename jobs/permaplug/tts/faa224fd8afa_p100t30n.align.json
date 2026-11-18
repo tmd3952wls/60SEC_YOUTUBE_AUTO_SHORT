@@ -1,0 +1,59 @@
+{
+ "text": "기존 덮개 대신 나사만 조이면 힘껏 당겨도 안 뽑힌다고",
+ "words": [
+  {
+   "word": "기존",
+   "start": 0.04,
+   "end": 0.282,
+   "aligned": true
+  },
+  {
+   "word": "덮개",
+   "start": 0.342,
+   "end": 0.584,
+   "aligned": true
+  },
+  {
+   "word": "대신",
+   "start": 0.644,
+   "end": 0.865,
+   "aligned": true
+  },
+  {
+   "word": "나사만",
+   "start": 0.926,
+   "end": 1.248,
+   "aligned": true
+  },
+  {
+   "word": "조이면",
+   "start": 1.328,
+   "end": 1.67,
+   "aligned": true
+  },
+  {
+   "word": "힘껏",
+   "start": 1.972,
+   "end": 2.254,
+   "aligned": true
+  },
+  {
+   "word": "당겨도",
+   "start": 2.375,
+   "end": 2.717,
+   "aligned": true
+  },
+  {
+   "word": "안",
+   "start": 2.777,
+   "end": 2.838,
+   "aligned": true
+  },
+  {
+   "word": "뽑힌다고",
+   "start": 2.918,
+   "end": 3.361,
+   "aligned": true
+  }
+ ]
+}

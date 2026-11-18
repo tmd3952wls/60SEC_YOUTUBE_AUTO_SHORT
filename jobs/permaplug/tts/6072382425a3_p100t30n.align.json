@@ -1,0 +1,35 @@
+{
+ "text": "가정집뿐 아니라 호텔과 학교에서도 찾는다는데",
+ "words": [
+  {
+   "word": "가정집뿐",
+   "start": 0.04,
+   "end": 0.541,
+   "aligned": true
+  },
+  {
+   "word": "아니라",
+   "start": 0.561,
+   "end": 0.862,
+   "aligned": true
+  },
+  {
+   "word": "호텔과",
+   "start": 0.942,
+   "end": 1.303,
+   "aligned": true
+  },
+  {
+   "word": "학교에서도",
+   "start": 1.364,
+   "end": 1.825,
+   "aligned": true
+  },
+  {
+   "word": "찾는다는데",
+   "start": 1.905,
+   "end": 2.466,
+   "aligned": true
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "text": "배터리가 1% 남았는데 충전기가 또 사라지면 답답한데",
+ "words": [
+  {
+   "word": "배터리가",
+   "start": 0.04,
+   "end": 0.422,
+   "aligned": true
+  },
+  {
+   "word": "1%",
+   "start": 0.442,
+   "end": 0.924,
+   "aligned": true
+  },
+  {
+   "word": "남았는데",
+   "start": 0.984,
+   "end": 1.446,
+   "aligned": true
+  },
+  {
+   "word": "충전기가",
+   "start": 1.526,
+   "end": 2.008,
+   "aligned": true
+  },
+  {
+   "word": "또",
+   "start": 2.089,
+   "end": 2.169,
+   "aligned": true
+  },
+  {
+   "word": "사라지면",
+   "start": 2.249,
+   "end": 2.651,
+   "aligned": true
+  },
+  {
+   "word": "답답한데",
+   "start": 2.731,
+   "end": 3.274,
+   "aligned": true
+  }
+ ]
+}

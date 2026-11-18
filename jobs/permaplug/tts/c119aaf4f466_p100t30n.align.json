@@ -1,0 +1,47 @@
+{
+ "text": "세 명의 투자자가 동시에 뛰어들며 쟁탈전이 벌어졌는데",
+ "words": [
+  {
+   "word": "세",
+   "start": 0.081,
+   "end": 0.161,
+   "aligned": true
+  },
+  {
+   "word": "명의",
+   "start": 0.221,
+   "end": 0.423,
+   "aligned": true
+  },
+  {
+   "word": "투자자가",
+   "start": 0.503,
+   "end": 0.906,
+   "aligned": true
+  },
+  {
+   "word": "동시에",
+   "start": 0.946,
+   "end": 1.269,
+   "aligned": true
+  },
+  {
+   "word": "뛰어들며",
+   "start": 1.349,
+   "end": 1.832,
+   "aligned": true
+  },
+  {
+   "word": "쟁탈전이",
+   "start": 1.913,
+   "end": 2.517,
+   "aligned": true
+  },
+  {
+   "word": "벌어졌는데",
+   "start": 2.598,
+   "end": 3.182,
+   "aligned": true
+  }
+ ]
+}

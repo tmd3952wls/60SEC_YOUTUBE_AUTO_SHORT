@@ -1,0 +1,47 @@
+{
+ "text": "케빈이 비웃으며 독설을 날리려던 바로 그 순간",
+ "words": [
+  {
+   "word": "케빈이",
+   "start": 0.04,
+   "end": 0.343,
+   "aligned": true
+  },
+  {
+   "word": "비웃으며",
+   "start": 0.424,
+   "end": 0.848,
+   "aligned": true
+  },
+  {
+   "word": "독설을",
+   "start": 0.928,
+   "end": 1.292,
+   "aligned": true
+  },
+  {
+   "word": "날리려던",
+   "start": 1.352,
+   "end": 1.776,
+   "aligned": true
+  },
+  {
+   "word": "바로",
+   "start": 1.897,
+   "end": 2.099,
+   "aligned": true
+  },
+  {
+   "word": "그",
+   "start": 2.159,
+   "end": 2.24,
+   "aligned": true
+  },
+  {
+   "word": "순간",
+   "start": 2.341,
+   "end": 2.503,
+   "aligned": true
+  }
+ ]
+}

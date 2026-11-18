@@ -1,0 +1,65 @@
+{
+ "text": "원가 9천 원에 마진율 58%라며 약 4억 7천만 원을 부르자",
+ "words": [
+  {
+   "word": "원가",
+   "start": 0.04,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "9천",
+   "start": 0.362,
+   "end": 0.583,
+   "aligned": true
+  },
+  {
+   "word": "원에",
+   "start": 0.643,
+   "end": 0.864,
+   "aligned": true
+  },
+  {
+   "word": "마진율",
+   "start": 0.965,
+   "end": 1.588,
+   "aligned": true
+  },
+  {
+   "word": "58%라며",
+   "start": 1.648,
+   "end": 2.472,
+   "aligned": true
+  },
+  {
+   "word": "약",
+   "start": 2.754,
+   "end": 2.854,
+   "aligned": true
+  },
+  {
+   "word": "4억",
+   "start": 2.995,
+   "end": 3.136,
+   "aligned": true
+  },
+  {
+   "word": "7천만",
+   "start": 3.236,
+   "end": 3.658,
+   "aligned": true
+  },
+  {
+   "word": "원을",
+   "start": 3.679,
+   "end": 3.839,
+   "aligned": true
+  },
+  {
+   "word": "부르자",
+   "start": 3.94,
+   "end": 4.141,
+   "aligned": true
+  }
+ ]
+}

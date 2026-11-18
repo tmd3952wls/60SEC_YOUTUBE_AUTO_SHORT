@@ -1,0 +1,59 @@
+{
+ "text": "방송 뒤 주문이 폭발해 병원과 상업 시설까지 싹쓸이 중이라고",
+ "words": [
+  {
+   "word": "방송",
+   "start": 0.04,
+   "end": 0.281,
+   "aligned": true
+  },
+  {
+   "word": "뒤",
+   "start": 0.341,
+   "end": 0.421,
+   "aligned": true
+  },
+  {
+   "word": "주문이",
+   "start": 0.521,
+   "end": 0.742,
+   "aligned": true
+  },
+  {
+   "word": "폭발해",
+   "start": 0.822,
+   "end": 1.203,
+   "aligned": true
+  },
+  {
+   "word": "병원과",
+   "start": 1.504,
+   "end": 1.905,
+   "aligned": true
+  },
+  {
+   "word": "상업",
+   "start": 1.985,
+   "end": 2.126,
+   "aligned": true
+  },
+  {
+   "word": "시설까지",
+   "start": 2.266,
+   "end": 2.787,
+   "aligned": true
+  },
+  {
+   "word": "싹쓸이",
+   "start": 2.928,
+   "end": 3.289,
+   "aligned": true
+  },
+  {
+   "word": "중이라고",
+   "start": 3.389,
+   "end": 3.75,
+   "aligned": true
+  }
+ ]
+}
