@@ -40,3 +40,8 @@ jobs/_yt_upload_debug/
 assets/fonts/BMJUA.ttf
 # CapCut 에서 만든 AI 목소리 파일
 assets/voices/
+# vmake 화질 업그레이드·네이버 대용량 메일 (브라우저 프로필·디버그 캡처)
+.vmake_chrome/
+.vmake_profile/
+jobs/_mail_debug/
+**/vmake_debug/
