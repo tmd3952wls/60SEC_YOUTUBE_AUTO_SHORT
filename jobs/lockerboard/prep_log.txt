@@ -1,0 +1,8 @@
+fetched
+transcribed 225
+cuts 245
+2026-11-21 08:45:04 - whisperx.alignment - WARNING - Failed to align segment ("Yeah."): backtrack failed, resorting to original
+2026-11-21 08:45:06 - whisperx.alignment - WARNING - Failed to align segment ("Yeah."): backtrack failed, resorting to original
+aligned 225 lines
+ALIGN_DONE
+DEMUCS_DONE

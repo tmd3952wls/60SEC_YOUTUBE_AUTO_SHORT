@@ -1,0 +1,2 @@
+렌더 시작: lockerboard/v6_edl.json → full_v6.mp4
+완료: 53.67초

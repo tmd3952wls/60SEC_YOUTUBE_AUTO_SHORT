@@ -234,6 +234,13 @@ def run_auto_tts(job: str, edl_name: str, voice: str = "vibrant_baritone", speed
     try:
         time.sleep(9.0)
         wins = find_capcut_windows()
+        for _ in range(20):
+            if wins:
+                break
+            time.sleep(2.0)
+            wins = find_capcut_windows()
+        time.sleep(2.0)
+        wins = find_capcut_windows()
         if not wins:
             raise RuntimeError("CapCut 창을 찾지 못했습니다.")
         main_win = max(wins, key=lambda x: x[5] * x[6])[0]

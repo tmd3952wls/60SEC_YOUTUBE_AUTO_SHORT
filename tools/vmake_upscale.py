@@ -1,4 +1,4 @@
-"""Vmake 화질 업그레이드 자동화 (QUALITY 모델 4K → 4K 월 한도 초과 시 8K).
+"""Vmake 화질 업그레이드 자동화 (기본 FAST 모델 4K, --model quality 가능; 예전 기본 QUALITY 4K → 4K 월 한도 초과 시 8K).
 
 사용법:
   python tools/vmake_upscale.py --video jobs/<작업명>/final.mp4 --out jobs/<작업명>/final_4k.mp4
@@ -155,6 +155,7 @@ def main():
     ap.add_argument("--video")
     ap.add_argument("--out")
     ap.add_argument("--res", default="4k", choices=["4k", "8k"])
+    ap.add_argument("--model", default="fast", choices=["fast", "quality", "master"], help="11-21 사용자 기본값: fast")
     ap.add_argument("--dry", action="store_true")
     ap.add_argument("--fetch-label", help="이미 변환한 카드(업로드 파일 이름)에서 다운로드만 다시 받기")
     ap.add_argument("--timeout-min", type=float, default=30)
@@ -226,7 +227,7 @@ def main():
         if a.fetch_label:
             print("다운로드만 다시 받기:", uname, flush=True)
         else:
-            card.get_by_text("Quality", exact=True).first.click(timeout=60000)
+            card.get_by_text(a.model.capitalize(), exact=True).first.click(timeout=60000)
             page.wait_for_timeout(1500)
             res_label = "4K" if a.res == "4k" else "8K"
             try:
@@ -236,7 +237,7 @@ def main():
             page.wait_for_timeout(1500)
             shot(page, dbg, "02_settings")
             txt = body_text(page)
-            print("설정 완료: Quality /", res_label, flush=True)
+            print("설정 완료:", a.model.capitalize(), "/", res_label, flush=True)
             if a.dry:
                 print("DRY: 다운로드 직전에 멈춤"); page.wait_for_timeout(2000); page.close(); return
 
@@ -271,6 +272,8 @@ def main():
         while time.time() < deadline:
             page.wait_for_timeout(10000)
             n += 1
+            if "Subscribe Now" in body_text(page) or "Compare All Plans" in body_text(page):
+                shot(page, dbg, "paywall"); print("PAYWALL: 결제 창이 떠서 멈춤 (paywall.png)"); page.close(); sys.exit(4)
             # 변환이 끝나면 나타나는 Download 버튼만 누른다 (Apply는 다시 누르지 않음)
             dl_btn = card.get_by_text("Download", exact=True)
             vis = [dl_btn.nth(i) for i in range(dl_btn.count()) if dl_btn.nth(i).is_visible()]
@@ -280,6 +283,9 @@ def main():
                         vis[-1].click()
                     dl.value.save_as(str(out))
                     save_state(ctx)
+                    if out.stat().st_size == 0:  # 11-21: 변환 직후 첫 다운로드가 0바이트로 온 적 있음 → 다시 받기
+                        out.unlink(); print("빈 파일(0바이트) → 20초 뒤 다시 받기", flush=True)
+                        page.wait_for_timeout(20000); continue
                     d_src, d_out = probe_dur(video), probe_dur(out)
                     if abs(d_src - d_out) > 0.3:
                         bad = out.with_suffix(".wrong.mp4"); out.replace(bad)

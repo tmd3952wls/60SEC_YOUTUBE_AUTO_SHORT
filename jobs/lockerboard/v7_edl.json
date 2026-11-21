@@ -1,0 +1,686 @@
+{
+ "title_lines": [
+  {
+   "text": "억만장자 브랜슨이",
+   "color": "yellow"
+  },
+  {
+   "text": "11살 꼬마에게 반한 이유",
+   "color": "white"
+  }
+ ],
+ "flash_alpha": 0.58,
+ "flash_sec": 0.38,
+ "krw_rate": "1달러=1,356원. 금액은 원화만",
+ "structure_ref": "11-16/11-21 규칙: 리처드 극찬 콜드오픈(케빈 아님), 내레이션 ~요 금지, 자막 2~3단어 1줄 solo, 무음 고정댓글 안내 | v2: 짧은 자막·컷 정리, 컷 가드로 밀린 샷 교체, 마크 클립 끝 무음 제거 | v3: 마크 클립 okay 제거(무음), 로버트·리처드 샷 길이 맞춤 | v4: 리처드 샷 교체(엄마·와이드로 밀리던 것) | v5: 231개 컷 와이드→카슨, 리처드 샷 재배치 | v6: 231개 컷 = 카슨 클로즈업 | v7: 사용자 \"TTS 대본 너무 길다\" → 내레이션 12→5줄, 카슨·데이먼드·마크·리처드·로버트 원본 대사 클립으로 교체",
+ "source": "https://www.youtube.com/watch?v=oGoY8Zqm9lo (Shark Tank Global, 2024-12-20, 639만) 40:11~ Locker Board S9E1 (주제 우선순위 2단계: 1~2년·500만+)",
+ "tts": {
+  "provider": "capcut",
+  "capcut": {
+   "voice": "vibrant_baritone",
+   "speed": 1.1
+  }
+ },
+ "items": [
+  {
+   "type": "clip",
+   "ids": [
+    201
+   ],
+   "max_gap": 0.25,
+   "sfx": "whoosh",
+   "subs": [
+    {
+     "text": "솔직히 [yellow:어릴 적 내가]",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "보이는 것 같아요",
+     "solo": true,
+     "at_word": 8,
+     "big": true,
+     "scale": 1.24
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      860,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "말하는 사람: 리처드 브랜슨 클로즈업"
+    },
+    {
+     "src": 395.0,
+     "crop": [
+      860,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "리처드 미소 클로즈업(원본이 엄마·아이로 넘어가서 같은 사람으로 덮음)",
+     "at_word": 7
+    }
+   ],
+   "note": "H1 훅: 리처드 극찬"
+  },
+  {
+   "type": "narration",
+   "text": "억만장자 브랜슨이 반한 상대는 11살 꼬마였는데",
+   "subs": [
+    {
+     "text": "억만장자 브랜슨이",
+     "solo": true
+    },
+    {
+     "text": "반한 상대는",
+     "solo": true
+    },
+    {
+     "text": "[yellow:11살 꼬마]였는데ㄷㄷ",
+     "solo": true,
+     "big": true,
+     "scale": 1.24
+    }
+   ],
+   "shots": [
+    {
+     "src": 100.85,
+     "crop": [
+      860,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "말하는 리처드 클로즈업"
+    },
+    {
+     "src": 425.0,
+     "crop": [
+      1150,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "카슨 얼굴 클로즈업",
+     "at_word": 3
+    }
+   ],
+   "sfx": "pop",
+   "note": "B1 정체"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    25,
+    26,
+    27
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "보드가 [red:안 들어가서]",
+     "at_word": 0,
+     "solo": true
+    },
+    {
+     "text": "에라 모르겠다",
+     "at_word": 9,
+     "solo": true
+    },
+    {
+     "text": "[yellow:직접 만들었죠]",
+     "at_word": 15,
+     "big": true,
+     "scale": 1.22,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 43.3,
+     "crop": [
+      820,
+      540,
+      1080
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "사물함 안 락커보드 클로즈업"
+    },
+    {
+     "src": 53.2,
+     "crop": [
+      1150,
+      600,
+      960
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "락커보드 실물 든 카슨 손",
+     "at_word": 9
+    }
+   ],
+   "note": "말하는 사람: 카슨 (발명 계기)"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    60
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "가방에 쏙 들어가는",
+     "solo": true,
+     "at_word": 0
+    },
+    {
+     "text": "[yellow:유일한 보드예요]",
+     "solo": true,
+     "at_word": 5,
+     "big": true,
+     "scale": 1.24
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      980,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "말하는 사람: 카슨 단독 클로즈업"
+    }
+   ],
+   "note": "B3 카슨 설명"
+  },
+  {
+   "type": "narration",
+   "text": "버려진 보드로 만들어 벌써 231개나 팔았고",
+   "subs": [
+    {
+     "text": "버려진 보드로 만들어",
+     "solo": true
+    },
+    {
+     "text": "벌써 [yellow:231개]나 팔았고",
+     "solo": true,
+     "big": true,
+     "scale": 1.22
+    }
+   ],
+   "shots": [
+    {
+     "src": 70.25,
+     "crop": [
+      1000,
+      540,
+      1080
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "리처드에게 보드 건네는 카슨"
+    },
+    {
+     "src": 110.6,
+     "crop": [
+      980,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "카슨 클로즈업",
+     "at_word": 4
+    }
+   ],
+   "sfx": "ding",
+   "note": "B5 숫자"
+  },
+  {
+   "type": "narration",
+   "text": "지분 15%에 약 8천만 원을 부르자",
+   "subs": [
+    {
+     "text": "지분 [yellow:15%]에",
+     "solo": true
+    },
+    {
+     "text": "[green:약 8천만 원]을 부르자",
+     "solo": true,
+     "big": true,
+     "scale": 1.22
+    }
+   ],
+   "shots": [
+    {
+     "src": 19.0,
+     "crop": [
+      1220,
+      450,
+      900
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "엄마와 선 카슨 (헬멧)"
+    }
+   ],
+   "note": "B6 요구액"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    151,
+    152
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "지금 지분을 파는 건",
+     "at_word": 0,
+     "solo": true
+    },
+    {
+     "text": "[red:말도 안 돼요]",
+     "at_word": 11,
+     "big": true,
+     "scale": 1.22,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 316.8,
+     "crop": [
+      760,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "데이먼드 클로즈업"
+    },
+    {
+     "src": "sync",
+     "crop": [
+      780,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "말하는 데이먼드",
+     "at_word": 9
+    }
+   ],
+   "note": "말하는 사람: 데이먼드 만류",
+   "sfx": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    156,
+    157
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "카슨, [yellow:마음에 들어요]",
+     "at_word": 0,
+     "solo": true
+    },
+    {
+     "text": "제안 하나 할게요",
+     "at_word": 6,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      920,
+      470,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "말하는 사람: 마크 제안"
+    }
+   ],
+   "note": "말하는 사람: 마크 제안",
+   "word_range": [
+    0,
+    13
+   ]
+  },
+  {
+   "type": "clip",
+   "ids": [
+    158
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "[green:약 8천만 원]에 [yellow:지분 20%]",
+     "solo": true,
+     "at_word": 0
+    }
+   ],
+   "shots": [
+    {
+     "src": 337.4,
+     "crop": [
+      1000,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "제안하는 마크 클로즈업"
+    }
+   ],
+   "note": "말하는 사람: 마크 금액"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    176
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "[green:약 8천 8백만 원]에 20%",
+     "at_word": 0,
+     "big": true,
+     "scale": 1.22,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 100.85,
+     "crop": [
+      860,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "리처드 클로즈업"
+    }
+   ],
+   "note": "말하는 사람: 리처드 역제안",
+   "sfx": "ding"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    183
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "[green:8천만 원]을 [cyan:빌려줄게요]",
+     "at_word": 0,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 380.15,
+     "crop": [
+      880,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "로버트 클로즈업"
+    }
+   ],
+   "note": "말하는 사람: 로버트 대출 제안"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    189,
+    190
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "리처드, 투자하시면",
+     "at_word": 1,
+     "solo": true
+    },
+    {
+     "text": "[yellow:어떻게 도와줄 거예요?]",
+     "at_word": 6,
+     "big": true,
+     "scale": 1.24,
+     "solo": true
+    }
+   ],
+   "shots": [
+    {
+     "src": 401.4,
+     "crop": [
+      1280,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "엄마 옆 카슨 클로즈업"
+    }
+   ],
+   "note": "말하는 사람: 카슨 역면접",
+   "word_range": [
+    1,
+    12
+   ],
+   "sfx": "whoosh"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    191,
+    192
+   ],
+   "word_range": [
+    3,
+    8
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "[cyan:면접을 보시네ㅋㅋ]",
+     "solo": true,
+     "at_word": 0,
+     "big": true,
+     "scale": 1.26
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      780,
+      470,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "말하는 사람: 로버트 클로즈업"
+    }
+   ],
+   "note": "B12 로버트 리액션"
+  },
+  {
+   "type": "narration",
+   "text": "결국 꼬마가 고른 건 리처드였는데",
+   "subs": [
+    {
+     "text": "결국 꼬마가 고른 건",
+     "solo": true
+    },
+    {
+     "text": "[yellow:리처드였는데]",
+     "solo": true,
+     "big": true,
+     "scale": 1.26,
+     "sfx": "success"
+    }
+   ],
+   "shots": [
+    {
+     "src": 442.4,
+     "crop": [
+      1250,
+      480,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "웃는 카슨 클로즈업"
+    }
+   ],
+   "note": "B14 결과"
+  },
+  {
+   "type": "clip",
+   "ids": [
+    221
+   ],
+   "word_range": [
+    0,
+    12
+   ],
+   "max_gap": 0.25,
+   "subs": [
+    {
+     "text": "[yellow:해외 진출] 때문에 골랐어요",
+     "solo": true,
+     "at_word": 0
+    }
+   ],
+   "shots": [
+    {
+     "src": "sync",
+     "crop": [
+      1080,
+      470,
+      950
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "말하는 사람: 카슨 인터뷰"
+    }
+   ],
+   "note": "B15 이유"
+  },
+  {
+   "type": "narration",
+   "text": "과연 꼬마의 보드는 지금 어떻게 됐을까",
+   "subs": [
+    {
+     "text": "과연 꼬마의 보드는",
+     "solo": true
+    },
+    {
+     "text": "[yellow:지금 어떻게 됐을까]",
+     "solo": true
+    },
+    {
+     "text": "",
+     "at_t": 2.6,
+     "note": "(뒷이야기는 고정댓글에 적어둘게요)"
+    }
+   ],
+   "shots": [
+    {
+     "src": 466.0,
+     "crop": [
+      960,
+      540,
+      1080
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "복도로 나가는 모자"
+    },
+    {
+     "src": 468.6,
+     "crop": [
+      960,
+      540,
+      1080
+     ],
+     "zoom": [
+      1.0,
+      1.04
+     ],
+     "why": "보드 타고 나가는 카슨",
+     "at_t": 1.4
+    }
+   ],
+   "tail": 1.6,
+   "note": "B16 엔딩 질문 + 무음 안내"
+  }
+ ]
+}
